@@ -1,0 +1,491 @@
+---
+description: 春秋项目区域和建筑系统详细设计
+globs: ["**/game-core/**", "**/district/**", "**/building/**"]
+alwaysApply: false
+---
+
+# 区域与建筑系统 (Districts & Buildings)
+
+## 概述
+
+区域是城市的专业化发展方向，每个区域可以建造特定的建筑。区域系统是文明6的核心创新，取代了传统的城市建筑堆叠模式。
+
+---
+
+## 一、区域系统
+
+### 区域建造规则
+
+```typescript
+interface DistrictBuildRules {
+  // 每个城市可建造的区域数量
+  maxDistricts: (population: number) => number;
+  
+  // 区域成本计算
+  districtCost: (baseProduction: number, techsResearched: number, civicsResearched: number) => number;
+  
+  // 区域不能重复建造（每城市每种区域最多1个）
+  uniquePerCity: boolean;
+}
+
+const DISTRICT_RULES: DistrictBuildRules = {
+  // 可建区域数 = 1 + floor(人口/3)
+  maxDistricts: (pop) => 1 + Math.floor(pop / 3),
+  
+  // 区域成本随游戏进度递增
+  // 基础成本 × (1 + 已研究科技数×0.02 + 已研究市政数×0.02)
+  districtCost: (base, techs, civics) => Math.floor(base * (1 + techs * 0.02 + civics * 0.02)),
+  
+  uniquePerCity: true,
+};
+
+// 可建区域数示例:
+// 人口 1-2: 1 个区域
+// 人口 3-5: 2 个区域
+// 人口 6-8: 3 个区域
+// 人口 9-11: 4 个区域
+// 人口 12-14: 5 个区域
+```
+
+### 区域放置限制
+
+```typescript
+interface DistrictPlacementRules {
+  terrain: string[];       // 可放置地形
+  features: string[];      // 可放置特征
+  adjacentTo?: string[];   // 必须相邻（如港口需要海岸）
+  notOn?: string[];        // 不能放置（如不能放在资源上）
+}
+
+const PLACEMENT_RULES: Record<string, DistrictPlacementRules> = {
+  campus: {
+    terrain: ['grass', 'plains', 'desert', 'tundra', 'snow'],
+    features: ['forest', 'rainforest'], // 可以清除后建造
+    notOn: ['floodplain', 'oasis'],
+  },
+  harbor: {
+    terrain: ['coast'],
+    features: [],
+    adjacentTo: ['land'], // 必须相邻陆地
+  },
+  holy_site: {
+    terrain: ['grass', 'plains', 'desert', 'tundra', 'snow'],
+    features: ['forest', 'rainforest'],
+  },
+  // ... 其他区域
+};
+```
+
+---
+
+## 二、区域详细数据
+
+### 1. 学院 (Campus) 📚
+
+**基础信息**:
+| 属性 | 值 |
+|-----|-----|
+| 基础生产力 | 54 |
+| 解锁科技 | 文字 |
+| 主要产出 | 科研 |
+| 伟人点数 | 大科学家 +1/回合 |
+
+**邻接加成**:
+| 相邻地形/区域 | 加成 |
+|-------------|------|
+| 山脉 | +1 科研/每个 |
+| 礁石 | +2 科研/每个 |
+| 雨林 | +0.5 科研/每个 (每2个+1) |
+| 其他区域 | +0.5 科研/每个 |
+| 地热裂缝 | +2 科研/每个 |
+
+**建筑列表**:
+| 建筑 | 生产力 | 效果 | 维护 | 前置 |
+|-----|--------|------|------|------|
+| 图书馆 | 90 | +2 科研，+1 大科学家点 | 1 | 无 |
+| 大学 | 250 | +4 科研，+1 大科学家点，+1 住房 | 2 | 图书馆，教育 |
+| 研究所 | 360 | +5 科研，+2 大科学家点，+1 公民槽 | 3 | 大学，化学 |
+
+```typescript
+const CAMPUS: District = {
+  id: 'campus',
+  name: '学院',
+  baseProduction: 54,
+  unlockedBy: 'writing',
+  yieldType: 'science',
+  greatPersonType: 'great_scientist',
+  greatPersonPoints: 1,
+  
+  adjacencyRules: [
+    { type: 'terrain', target: 'mountain', bonus: 1 },
+    { type: 'feature', target: 'reef', bonus: 2 },
+    { type: 'feature', target: 'rainforest', bonus: 0.5 },
+    { type: 'feature', target: 'geothermal_fissure', bonus: 2 },
+    { type: 'district', target: 'any', bonus: 0.5 },
+  ],
+  
+  buildings: ['library', 'university', 'research_lab'],
+};
+```
+
+---
+
+### 2. 圣地 (Holy Site) ⛩️
+
+**基础信息**:
+| 属性 | 值 |
+|-----|-----|
+| 基础生产力 | 54 |
+| 解锁科技 | 占星术 |
+| 主要产出 | 信仰 |
+| 伟人点数 | 大预言家 +1/回合 |
+
+**邻接加成**:
+| 相邻地形/区域 | 加成 |
+|-------------|------|
+| 自然奇观 | +2 信仰/每个 |
+| 山脉 | +1 信仰/每个 |
+| 森林 | +0.5 信仰/每个 |
+| 其他区域 | +0.5 信仰/每个 |
+
+**建筑列表**:
+| 建筑 | 生产力 | 效果 | 维护 | 前置 |
+|-----|--------|------|------|------|
+| 神祠 | 70 | +2 信仰，+1 大预言家点 | 1 | 无 |
+| 寺庙 | 120 | +4 信仰，+1 大预言家点，1 遗物槽 | 2 | 神祠，占星术 |
+| 崇拜建筑* | 信仰购买 | +3 信仰，特殊效果 | 0 | 寺庙，选择崇拜信条 |
+
+*崇拜建筑根据宗教信条决定（大教堂/宝塔/清真寺/佛寺）
+
+---
+
+### 3. 商业中心 (Commercial Hub) 🏪
+
+**基础信息**:
+| 属性 | 值 |
+|-----|-----|
+| 基础生产力 | 54 |
+| 解锁市政 | 对外贸易 |
+| 主要产出 | 金币 |
+| 伟人点数 | 大商人 +1/回合 |
+| 特殊 | +1 贸易路线容量 |
+
+**邻接加成**:
+| 相邻地形/区域 | 加成 |
+|-------------|------|
+| 河流 | +2 金币 (整个区域相邻即可) |
+| 港口 | +2 金币/每个 |
+| 其他区域 | +0.5 金币/每个 |
+
+**建筑列表**:
+| 建筑 | 生产力 | 效果 | 维护 | 前置 |
+|-----|--------|------|------|------|
+| 市场 | 90 | +3 金币，+1 大商人点 | 0 | 无 |
+| 银行 | 220 | +5 金币，+1 大商人点 | 0 | 市场，银行业 |
+| 证券交易所 | 330 | +5 金币，+5% 国库，+1 大商人点 | 0 | 银行，经济学 |
+
+---
+
+### 4. 工业区 (Industrial Zone) 🏭
+
+**基础信息**:
+| 属性 | 值 |
+|-----|-----|
+| 基础生产力 | 54 |
+| 解锁科技 | 学徒制 |
+| 主要产出 | 生产力 |
+| 伟人点数 | 大工程师 +1/回合 |
+
+**邻接加成**:
+| 相邻地形/区域 | 加成 |
+|-------------|------|
+| 矿山 | +1 生产/每个 |
+| 采石场 | +1 生产/每个 |
+| 其他区域 | +0.5 生产/每个 |
+| 水渠 | +2 生产/每个 |
+| 运河 | +2 生产/每个 |
+| 水坝 | +2 生产/每个 |
+
+**建筑列表**:
+| 建筑 | 生产力 | 效果 | 维护 | 前置 |
+|-----|--------|------|------|------|
+| 作坊 | 150 | +2 生产，+1 大工程师点 | 1 | 无 |
+| 工厂 | 330 | +3 生产（+2 到6格内城市），+1 大工程师点，+1 公民槽 | 2 | 作坊，工业化 |
+| 发电厂 | 440 | +4 生产（+2 到6格内城市），+2 大工程师点 | 3 | 工厂，电力 |
+
+**区域效果**:
+```typescript
+// 工厂和发电厂的区域效果
+interface RegionalEffect {
+  radius: number;      // 影响范围（格子数）
+  yieldBonus: number;  // 产出加成
+  yieldType: string;   // 产出类型
+  stackable: boolean;  // 是否可叠加
+}
+
+const FACTORY_REGIONAL: RegionalEffect = {
+  radius: 6,
+  yieldBonus: 2,
+  yieldType: 'production',
+  stackable: false, // 同类型效果不叠加，取最高
+};
+```
+
+---
+
+### 5. 剧院广场 (Theater Square) 🎭
+
+**基础信息**:
+| 属性 | 值 |
+|-----|-----|
+| 基础生产力 | 54 |
+| 解锁市政 | 戏剧与诗歌 |
+| 主要产出 | 文化 |
+| 伟人点数 | 大作家/艺术家/音乐家 各+1/回合 |
+
+**邻接加成**:
+| 相邻地形/区域 | 加成 |
+|-------------|------|
+| 奇观 | +2 文化/每个 |
+| 娱乐中心 | +2 文化/每个 |
+| 水上乐园 | +2 文化/每个 |
+| 其他区域 | +0.5 文化/每个 |
+
+**建筑列表**:
+| 建筑 | 生产力 | 效果 | 维护 | 前置 |
+|-----|--------|------|------|------|
+| 露天剧场 | 150 | +2 文化，+1 大作家点，+1 大音乐家点，2 著作槽 | 1 | 无 |
+| 考古博物馆 | 290 | +2 文化，+1 大艺术家点，3 文物槽 | 2 | 露天剧场，人文主义 |
+| 艺术博物馆 | 290 | +2 文化，+1 大艺术家点，3 艺术品槽 | 2 | 露天剧场，人文主义 |
+| 广播中心 | 360 | +4 文化，+1 大音乐家点，1 乐曲槽 | 3 | 博物馆，大众传媒 |
+
+---
+
+### 6. 军营 (Encampment) ⚔️
+
+**基础信息**:
+| 属性 | 值 |
+|-----|-----|
+| 基础生产力 | 54 |
+| 解锁科技 | 青铜冶炼 |
+| 主要产出 | 伟人点数 |
+| 伟人点数 | 大将军 +1/回合 |
+| 特殊 | 不能相邻市中心 |
+
+**邻接加成**: 无
+
+**建筑列表**:
+| 建筑 | 生产力 | 效果 | 维护 | 前置 |
+|-----|--------|------|------|------|
+| 兵营 | 90 | +1 住房，+25% 战斗经验，+1 大将军点 | 1 | 无 |
+| 军械库 | 195 | +25% 战斗经验，+1 大将军点 | 2 | 兵营，军事工程 |
+| 军事学院 | 330 | +25% 战斗经验，+1 大将军点，可建造军团/军队 | 3 | 军械库，弹道学 |
+
+**特殊功能**:
+- 城市遭受攻击时，军营可以进行远程攻击
+- 城市被占领后，军营单独沦陷（需要额外攻击）
+
+---
+
+### 7. 港口 (Harbor) ⚓
+
+**基础信息**:
+| 属性 | 值 |
+|-----|-----|
+| 基础生产力 | 54 |
+| 解锁科技 | 天文航行 |
+| 主要产出 | 金币 |
+| 伟人点数 | 大海军统帅 +1/回合 |
+| 特殊 | +1 贸易路线容量，必须建在海岸 |
+
+**邻接加成**:
+| 相邻地形/区域 | 加成 |
+|-------------|------|
+| 海洋资源 | +1 金币/每个 |
+| 其他区域 | +0.5 金币/每个 |
+
+**建筑列表**:
+| 建筑 | 生产力 | 效果 | 维护 | 前置 |
+|-----|--------|------|------|------|
+| 灯塔 | 105 | +1 粮食，+1 住房，+1 大海军统帅点 | 0 | 无 |
+| 船坞 | 220 | +25% 海军单位生产，+1 大海军统帅点 | 0 | 灯塔，造船术 |
+| 海港 | 330 | +2 金币（相邻资源），+25% 海军单位生产，+1 大海军统帅点 | 0 | 船坞，电力 |
+
+---
+
+### 8. 娱乐中心 (Entertainment Complex) 🎪
+
+**基础信息**:
+| 属性 | 值 |
+|-----|-----|
+| 基础生产力 | 54 |
+| 解锁市政 | 娱乐竞技 |
+| 主要产出 | 宜居度 |
+| 特殊 | +1 宜居度 (仅本城市) |
+
+**邻接加成**: 无
+
+**建筑列表**:
+| 建筑 | 生产力 | 效果 | 维护 | 前置 |
+|-----|--------|------|------|------|
+| 竞技场 | 135 | +2 宜居度 (6格内城市) | 1 | 无 |
+| 动物园 | 275 | +1 文化，+1 宜居度 (6格内城市) | 2 | 竞技场，自然历史 |
+| 体育场 | 440 | +2 宜居度 (6格内城市) | 3 | 动物园，职业体育 |
+
+---
+
+## 三、建筑完整列表
+
+### 城市中心建筑
+
+| 建筑 | 生产力 | 效果 | 维护 | 前置科技/市政 |
+|-----|--------|------|------|--------------|
+| 纪念碑 | 60 | +2 文化 | 0 | 无 |
+| 粮仓 | 65 | +1 粮食，+2 住房 | 0 | 陶器 |
+| 水车磨坊 | 80 | +1 粮食，+1 生产 | 0 | 需临河，灌溉 |
+| 古代城墙 | 80 | +50 外城防御 | 0 | 石工 |
+| 中世纪城墙 | 225 | +100 外城防御 | 0 | 古代城墙，城堡 |
+| 文艺复兴城墙 | 305 | +100 外城防御 | 0 | 中世纪城墙，攻城战术 |
+| 污水系统 | 200 | +2 住房 | 0 | 卫生设备 |
+
+### 特殊建筑
+
+| 建筑 | 生产力 | 效果 | 前置 |
+|-----|--------|------|------|
+| 宫殿 | 首都专属 | +2 所有产出，+1 住房，+3 防御 | 游戏开始 |
+| 政府区域建筑 | 变化 | 根据选择不同 | 政府广场区域 |
+
+---
+
+## 四、邻接加成计算代码
+
+```typescript
+interface AdjacencyBonus {
+  districtType: string;
+  yieldType: 'science' | 'culture' | 'gold' | 'production' | 'faith';
+  amount: number;
+}
+
+function calculateDistrictAdjacency(
+  district: District,
+  position: Coord,
+  map: GameMap
+): AdjacencyBonus {
+  const rules = district.adjacencyRules;
+  const neighbors = getNeighbors(position.row, position.col, map.width, map.height);
+  
+  let totalBonus = 0;
+  const typeCounts: Record<string, number> = {};
+  
+  for (const neighborPos of neighbors) {
+    const tile = map.getTile(neighborPos);
+    
+    for (const rule of rules) {
+      let matches = false;
+      
+      switch (rule.type) {
+        case 'terrain':
+          matches = tile.terrain === rule.target;
+          break;
+        case 'feature':
+          matches = tile.feature === rule.target;
+          break;
+        case 'resource':
+          matches = tile.resource?.type === rule.target;
+          break;
+        case 'district':
+          matches = tile.district !== null && 
+                    (rule.target === 'any' || tile.district.type === rule.target);
+          break;
+        case 'improvement':
+          matches = tile.improvement === rule.target;
+          break;
+        case 'river':
+          // 特殊处理：检查整个区域是否相邻河流
+          matches = isAdjacentToRiver(position, map);
+          break;
+      }
+      
+      if (matches) {
+        const key = `${rule.type}_${rule.target}`;
+        typeCounts[key] = (typeCounts[key] || 0) + 1;
+        
+        if (rule.divisor) {
+          // 每N个+X的规则
+          if (typeCounts[key] % rule.divisor === 0) {
+            totalBonus += rule.bonus;
+          }
+        } else {
+          totalBonus += rule.bonus;
+        }
+      }
+    }
+  }
+  
+  return {
+    districtType: district.id,
+    yieldType: district.yieldType,
+    amount: Math.floor(totalBonus), // 向下取整
+  };
+}
+
+// 政策对邻接加成的倍率
+function applyAdjacencyPolicy(bonus: number, districtType: string, policies: string[]): number {
+  let multiplier = 1;
+  
+  // 自然哲学：学院邻接+100%
+  if (districtType === 'campus' && policies.includes('natural_philosophy')) {
+    multiplier = 2;
+  }
+  
+  // 大教堂：剧院广场邻接+100%
+  if (districtType === 'theater_square' && policies.includes('grand_opera')) {
+    multiplier = 2;
+  }
+  
+  // 工业规划：工业区邻接+100%
+  if (districtType === 'industrial_zone' && policies.includes('industrial_planning')) {
+    multiplier = 2;
+  }
+  
+  return bonus * multiplier;
+}
+```
+
+---
+
+## 五、区域放置最佳实践
+
+### 学院 (Campus)
+```
+最佳位置: 山脉环绕的地块
+  🏔️ 🏔️ 🏔️
+  🏔️ 📚 🏔️   = +4 科研邻接
+  🏔️ 🏔️
+```
+
+### 工业区 (Industrial Zone)
+```
+最佳位置: 矿山和采石场包围
+  ⛏️ ⛏️ ⛏️
+  ⛏️ 🏭 ⛏️   = +5 生产邻接
+  ⛏️ ⛏️
+  
+或: 水渠+水坝组合
+  🌊 💧 🌊
+  🌊 🏭 🌊   = +6 生产邻接
+```
+
+### 商业中心 (Commercial Hub)
+```
+最佳位置: 河流 + 港口相邻
+  ～～～
+  🏪 ⚓     = +4 金币邻接 (河流+2, 港口+2)
+```
+
+### 圣地 (Holy Site)
+```
+最佳位置: 自然奇观旁 + 森林
+  🌲 🌲 🌲
+  🏔️ ⛩️ 🌟   = +5 信仰邻接 (自然奇观+2, 山脉+1, 森林+1)
+```

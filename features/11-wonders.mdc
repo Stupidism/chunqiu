@@ -1,0 +1,432 @@
+---
+description: 春秋项目奇观系统详细设计
+globs: ["**/game-core/**", "**/wonder/**", "**/wonders/**"]
+alwaysApply: false
+---
+
+# 奇观系统 (Wonders)
+
+## 概述
+
+奇观是独一无二的伟大建筑，全世界只能建造一座。奇观提供强力的加成效果，但需要大量生产力和特定条件。春秋主题下，奇观融合了中国古代著名建筑和世界奇观。
+
+---
+
+## 一、奇观数据结构
+
+```typescript
+interface Wonder {
+  id: string;
+  name: string;
+  era: Era;
+  
+  // 建造要求
+  productionCost: number;
+  requiredTech?: string;        // 需要科技
+  requiredCivic?: string;       // 需要市政
+  placement: PlacementRequirement;
+  
+  // 效果
+  yields: Yields;               // 产出
+  effects: WonderEffect[];      // 特殊效果
+  slots?: GreatWorkSlot[];      // 杰作槽位
+  
+  // 展示
+  quote: string;                // 建成时的名言
+  historicalInfo: string;
+}
+
+interface PlacementRequirement {
+  terrain?: TerrainType[];      // 必须建在特定地形
+  feature?: FeatureType[];      // 必须有特定地貌
+  adjacent?: {
+    type: 'terrain' | 'feature' | 'district' | 'resource' | 'wonder';
+    target: string;
+    count?: number;
+  }[];
+  district?: string;            // 必须在特定区域
+  coastal?: boolean;            // 必须沿海
+  river?: boolean;              // 必须临河
+  flat?: boolean;               // 必须平地
+  hills?: boolean;              // 必须丘陵
+  notFeature?: FeatureType[];   // 不能有特定地貌
+}
+```
+
+---
+
+## 二、远古时代奇观 (Ancient Era)
+
+### 1. 巨石阵 (Stonehenge)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 180 生产力 |
+| **解锁** | 占星术 |
+| **位置** | 平地，临近石材 |
+| **产出** | +2 信仰 |
+| **效果** | 免费获得一位大预言家 |
+| **名言** | "仰观天象，以授人时" |
+
+### 2. 金字塔 (Pyramids)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 220 生产力 |
+| **解锁** | 石工 |
+| **位置** | 沙漠（无丘陵） |
+| **产出** | +2 文化 |
+| **效果** | 工人+1建造次数，免费获得1个工人 |
+| **名言** | "建此丰碑，永垂不朽" |
+
+### 3. 空中花园 (Hanging Gardens)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 180 生产力 |
+| **解锁** | 灌溉 |
+| **位置** | 临河 |
+| **产出** | +2 住房 |
+| **效果** | 所有城市+15%人口增长速度 |
+| **名言** | "悬圃之上，草木蔚然" |
+
+### 4. 大浴场 (Great Bath)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 180 生产力 |
+| **解锁** | 陶器 |
+| **位置** | 泛滥平原 |
+| **产出** | +3 住房，+1 宜居度 |
+| **效果** | 洪水发生时+1信仰（每个泛滥平原） |
+| **名言** | "沐浴净身，祈福苍生" |
+
+### 5. 神谕所 (Oracle)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 290 生产力 |
+| **解锁** | 神秘主义 |
+| **位置** | 丘陵 |
+| **产出** | +1 文化，+1 信仰 |
+| **效果** | 招募伟人时-25%信仰/金币消耗，区域项目+2伟人点数 |
+| **名言** | "卜筮问天，神明昭示" |
+
+---
+
+## 三、古典时代奇观 (Classical Era)
+
+### 6. 罗马竞技场 (Colosseum)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 400 生产力 |
+| **解锁** | 娱乐竞技 |
+| **位置** | 娱乐中心区域，平地 |
+| **产出** | +2 文化，+2 宜居度 |
+| **效果** | 6格内所有城市+2宜居度 |
+| **名言** | "角力竞技，万民欢腾" |
+
+### 7. 佩特拉 (Petra)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 400 生产力 |
+| **解锁** | 数学 |
+| **位置** | 沙漠，临山 |
+| **产出** | +2 粮食，+2 金币，+1 生产力 |
+| **效果** | 该城市所有沙漠地块+2粮食+2金币+1生产力 |
+| **名言** | "凿山为城，沙海明珠" |
+
+### 8. 兵马俑 (Terracotta Army) 🏮
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 400 生产力 |
+| **解锁** | 建筑学 |
+| **位置** | 军营区域，平地 |
+| **产出** | +2 文化 |
+| **效果** | 所有陆军单位免费获得1次晋升。训练考古学家时获得兵马俑复制品（+4文化杰作）|
+| **名言** | "千军万马，陪葬于此" |
+
+### 9. 巨像 (Colossus)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 400 生产力 |
+| **解锁** | 造船术 |
+| **位置** | 港口区域，沿海 |
+| **产出** | +3 金币，+1 大商人点数 |
+| **效果** | +1贸易路线容量，免费获得1个商人 |
+| **名言** | "巨像屹立，照耀四海" |
+
+### 10. 长城 (Great Wall) 🏮
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 400 生产力 |
+| **解锁** | 建筑学 |
+| **位置** | 边境地块（与未开发土地相邻） |
+| **产出** | +2 金币 |
+| **效果** | 所有长城段落提供防御加成，与其他长城相邻+2金币+1文化 |
+| **名言** | "万里长城，拒敌于外" |
+
+---
+
+## 四、中世纪奇观 (Medieval Era)
+
+### 11. 紫禁城 (Forbidden City) 🏮
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 920 生产力 |
+| **解锁** | 印刷 |
+| **位置** | 平地，临近城市中心 |
+| **产出** | +5 文化 |
+| **效果** | +1通用政策槽位 |
+| **名言** | "紫禁之巅，天子居所" |
+
+### 12. 圣索菲亚大教堂 (Hagia Sophia)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 710 生产力 |
+| **解锁** | 教育 |
+| **位置** | 圣地区域 |
+| **产出** | +4 信仰 |
+| **效果** | 传教士和使徒+1传播次数 |
+| **名言** | "圣殿高耸，信仰永恒" |
+
+### 13. 吴哥窟 (Angkor Wat)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 710 生产力 |
+| **解锁** | 中世纪集市 |
+| **位置** | 临近水渠 |
+| **产出** | +2 信仰 |
+| **效果** | 所有城市+1人口+1住房 |
+| **名言** | "神殿深处，王国永存" |
+
+### 14. 京杭大运河 (Grand Canal) 🏮
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 710 生产力 |
+| **解锁** | 军事工程 |
+| **位置** | 平地，临河，非沿海 |
+| **产出** | +3 金币，+2 粮食 |
+| **效果** | 国内贸易路线+3粮食+3生产力 |
+| **名言** | "开河通漕，南北贯通" |
+
+---
+
+## 五、文艺复兴奇观 (Renaissance Era)
+
+### 15. 紫光阁 (Ziguang Pavilion) 🏮
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 920 生产力 |
+| **解锁** | 火药 |
+| **位置** | 政府广场区域 |
+| **产出** | +5 文化 |
+| **效果** | 击杀敌方单位时+10%战斗经验，+3大将军点数 |
+| **名言** | "紫光阁内，功臣挂像" |
+
+### 16. 牛津大学 (Oxford University)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 1060 生产力 |
+| **解锁** | 天文学 |
+| **位置** | 学院区域，需大学 |
+| **产出** | +3 科研，+2 杰作槽（文学） |
+| **效果** | 免费获得2项随机科技（当前或下一时代） |
+| **名言** | "学府巍峨，真理之殿" |
+
+### 17. 威尼斯军械库 (Venetian Arsenal)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 920 生产力 |
+| **解锁** | 大规模生产 |
+| **位置** | 港口区域，沿海 |
+| **产出** | +2 大工程师点数 |
+| **效果** | 训练海军单位时免费获得一个相同单位 |
+| **名言** | "造船之都，舰队摇篮" |
+
+### 18. 泰姬陵 (Taj Mahal)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 920 生产力 |
+| **解锁** | 人文主义 |
+| **位置** | 临河 |
+| **产出** | +1 文化 |
+| **效果** | 完成市政后+4时代分数 |
+| **名言** | "永恒之泪，爱的丰碑" |
+
+---
+
+## 六、工业时代奇观 (Industrial Era)
+
+### 19. 大本钟 (Big Ben)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 1450 生产力 |
+| **解锁** | 经济学 |
+| **位置** | 商业中心区域，临河 |
+| **产出** | +6 金币，+3 大商人点数 |
+| **效果** | 当前国库+50%金币，+1经济政策槽 |
+| **名言** | "钟声悠扬，时代脉搏" |
+
+### 20. 鲁尔工业区 (Ruhr Valley)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 1240 生产力 |
+| **解锁** | 工业化 |
+| **位置** | 工业区区域，临河 |
+| **产出** | +1 生产力/每矿山和采石场 |
+| **效果** | 该城市+30%生产力 |
+| **名言** | "钢铁洪流，工业心脏" |
+
+### 21. 自由女神像 (Statue of Liberty)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 1240 生产力 |
+| **解锁** | 殖民主义 |
+| **位置** | 沿海，临港口 |
+| **产出** | +2 文化 |
+| **效果** | +4外交胜利点，招募定居者-25%金币 |
+| **名言** | "自由火炬，普照万方" |
+
+---
+
+## 七、现代及以后奇观 (Modern+)
+
+### 22. 埃菲尔铁塔 (Eiffel Tower)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 1620 生产力 |
+| **解锁** | 钢铁 |
+| **位置** | 平地，城市中心旁 |
+| **产出** | +2 文化 |
+| **效果** | 所有地块魅力+2 |
+| **名言** | "铁塔凌空，现代象征" |
+
+### 23. 悉尼歌剧院 (Sydney Opera House)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 1850 生产力 |
+| **解锁** | 文化遗产 |
+| **位置** | 沿海，临港口 |
+| **产出** | +8 文化，+5 大音乐家点数 |
+| **效果** | +3杰作槽（乐曲） |
+| **名言** | "白帆竞发，乐音绕梁" |
+
+### 24. 联合国 (United Nations)
+
+| 属性 | 内容 |
+|-----|------|
+| **代价** | 1740 生产力 |
+| **解锁** | 全球化 |
+| **位置** | 平地 |
+| **产出** | +3 文化 |
+| **效果** | +2外交胜利点/回合，所有城邦使者+2 |
+| **名言** | "联合万邦，和平永续" |
+
+---
+
+## 八、奇观建造逻辑
+
+```typescript
+function canBuildWonder(city: City, wonder: Wonder, player: Player): BuildResult {
+  // 1. 检查是否已被建造
+  if (isWonderBuilt(wonder.id)) {
+    return { canBuild: false, reason: '该奇观已被其他文明建造' };
+  }
+  
+  // 2. 检查科技/市政要求
+  if (wonder.requiredTech && !player.hasTech(wonder.requiredTech)) {
+    return { canBuild: false, reason: `需要科技：${getTechName(wonder.requiredTech)}` };
+  }
+  if (wonder.requiredCivic && !player.hasCivic(wonder.requiredCivic)) {
+    return { canBuild: false, reason: `需要市政：${getCivicName(wonder.requiredCivic)}` };
+  }
+  
+  // 3. 检查位置要求
+  const validTiles = findValidTilesForWonder(city, wonder);
+  if (validTiles.length === 0) {
+    return { canBuild: false, reason: '没有符合条件的地块' };
+  }
+  
+  return { canBuild: true, validTiles };
+}
+
+function findValidTilesForWonder(city: City, wonder: Wonder): Tile[] {
+  const placement = wonder.placement;
+  
+  return city.ownedTiles.filter(tile => {
+    // 地形检查
+    if (placement.terrain && !placement.terrain.includes(tile.terrain)) return false;
+    
+    // 地貌检查
+    if (placement.feature && tile.feature && !placement.feature.includes(tile.feature)) return false;
+    if (placement.notFeature && tile.feature && placement.notFeature.includes(tile.feature)) return false;
+    
+    // 高度检查
+    if (placement.flat && tile.elevation !== Elevation.FLAT) return false;
+    if (placement.hills && tile.elevation !== Elevation.HILLS) return false;
+    
+    // 沿海/临河
+    if (placement.coastal && !isCoastal(tile)) return false;
+    if (placement.river && !isAdjacentToRiver(tile)) return false;
+    
+    // 区域检查
+    if (placement.district && tile.district !== placement.district) return false;
+    
+    // 邻接检查
+    if (placement.adjacent) {
+      for (const adj of placement.adjacent) {
+        const neighbors = getNeighbors(tile.position);
+        const count = neighbors.filter(n => matchesAdjacency(n, adj)).length;
+        if (count < (adj.count || 1)) return false;
+      }
+    }
+    
+    // 确保地块为空
+    if (tile.improvement || tile.district || tile.wonder) return false;
+    
+    return true;
+  });
+}
+```
+
+---
+
+## 九、奇观竞争
+
+```typescript
+// 奇观被抢时的处理
+function onWonderStolen(city: City, wonder: Wonder, stolenBy: Player): void {
+  // 返还部分生产力
+  const refund = Math.floor(city.wonderProgress[wonder.id] * 0.5);
+  city.accumulatedProduction += refund;
+  
+  // 清除进度
+  delete city.wonderProgress[wonder.id];
+  
+  // 通知玩家
+  sendNotification(city.owner, {
+    type: 'WONDER_STOLEN',
+    message: `${wonder.name} 已被 ${stolenBy.civilization.name} 建造完成`,
+    refund,
+  });
+}
+```

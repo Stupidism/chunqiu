@@ -1,0 +1,503 @@
+---
+description: 春秋项目项目系统详细设计
+globs: ["**/game-core/**", "**/project/**", "**/projects/**"]
+alwaysApply: false
+---
+
+# 项目系统 (Projects)
+
+## 概述
+
+项目是城市可以进行的特殊生产活动，消耗生产力但不产生实体建筑或单位。项目通常用于获得伟人点数、触发特殊效果或推进胜利条件。
+
+---
+
+## 一、项目数据结构
+
+```typescript
+interface Project {
+  id: string;
+  name: string;
+  category: ProjectCategory;
+  
+  // 建造要求
+  productionCost: number;
+  requiredDistrict?: string;      // 需要特定区域
+  requiredTech?: string;
+  requiredCivic?: string;
+  requiredBuilding?: string;
+  repeatable: boolean;             // 是否可重复建造
+  
+  // 效果
+  onComplete: ProjectEffect[];
+  
+  // 特殊
+  turnsRequired?: number;          // 固定回合数（不受生产力影响）
+}
+
+enum ProjectCategory {
+  DISTRICT = 'district',           // 区域项目（伟人点数）
+  VICTORY = 'victory',             // 胜利条件项目
+  CONVERSION = 'conversion',       // 转化项目（核武器等）
+  MILITARY = 'military',           // 军事项目
+  SPECIAL = 'special',             // 特殊项目
+}
+
+interface ProjectEffect {
+  type: ProjectEffectType;
+  value: number;
+  target?: string;
+}
+
+enum ProjectEffectType {
+  GREAT_PERSON_POINTS = 'great_person_points',
+  GOLD = 'gold',
+  SCIENCE = 'science',
+  CULTURE = 'culture',
+  FAITH = 'faith',
+  PRODUCTION = 'production',
+  UNIT_SPAWN = 'unit_spawn',
+  TRIGGER_EVENT = 'trigger_event',
+  VICTORY_PROGRESS = 'victory_progress',
+}
+```
+
+---
+
+## 二、区域项目 (District Projects)
+
+区域项目在对应区域完成后可建造，用于累积伟人点数。
+
+### 学院项目
+
+| 项目 | 生产力 | 区域 | 效果 |
+|-----|--------|------|------|
+| **学院研究补助** | 可变 | 学院 | +2大科学家点数/100生产力，完成时额外+100科研 |
+
+### 圣地项目
+
+| 项目 | 生产力 | 区域 | 效果 |
+|-----|--------|------|------|
+| **圣地祈祷** | 可变 | 圣地 | +2大预言家点数/100生产力，完成时额外+100信仰 |
+
+### 剧院广场项目
+
+| 项目 | 生产力 | 区域 | 效果 |
+|-----|--------|------|------|
+| **艺术节** | 可变 | 剧院广场 | +2大艺术家点数/100生产力 |
+| **音乐节** | 可变 | 剧院广场 | +2大音乐家点数/100生产力 |
+| **文学作品展** | 可变 | 剧院广场 | +2大作家点数/100生产力 |
+
+### 商业中心项目
+
+| 项目 | 生产力 | 区域 | 效果 |
+|-----|--------|------|------|
+| **商业投资** | 可变 | 商业中心 | +2大商人点数/100生产力，完成时额外+100金币 |
+
+### 港口项目
+
+| 项目 | 生产力 | 区域 | 效果 |
+|-----|--------|------|------|
+| **航海远征** | 可变 | 港口 | +2大将军点数/100生产力，完成时+1贸易路线（10回合） |
+
+### 工业区项目
+
+| 项目 | 生产力 | 区域 | 效果 |
+|-----|--------|------|------|
+| **工业奖励** | 可变 | 工业区 | +2大工程师点数/100生产力 |
+
+### 军营项目
+
+| 项目 | 生产力 | 区域 | 效果 |
+|-----|--------|------|------|
+| **军事演习** | 可变 | 军营 | +2大将军点数/100生产力，所有单位+5经验 |
+
+```typescript
+const DISTRICT_PROJECTS: Project[] = [
+  {
+    id: 'campus_research_grants',
+    name: '学院研究补助',
+    category: ProjectCategory.DISTRICT,
+    productionCost: 0, // 可变，投入多少生产力就是多少
+    requiredDistrict: 'campus',
+    repeatable: true,
+    onComplete: [
+      { type: ProjectEffectType.GREAT_PERSON_POINTS, value: 2, target: 'great_scientist' },
+      { type: ProjectEffectType.SCIENCE, value: 100 },
+    ],
+  },
+  {
+    id: 'holy_site_prayers',
+    name: '圣地祈祷',
+    category: ProjectCategory.DISTRICT,
+    productionCost: 0,
+    requiredDistrict: 'holy_site',
+    repeatable: true,
+    onComplete: [
+      { type: ProjectEffectType.GREAT_PERSON_POINTS, value: 2, target: 'great_prophet' },
+      { type: ProjectEffectType.FAITH, value: 100 },
+    ],
+  },
+  {
+    id: 'theater_festival',
+    name: '艺术节',
+    category: ProjectCategory.DISTRICT,
+    productionCost: 0,
+    requiredDistrict: 'theater_square',
+    repeatable: true,
+    onComplete: [
+      { type: ProjectEffectType.GREAT_PERSON_POINTS, value: 2, target: 'great_artist' },
+    ],
+  },
+  {
+    id: 'commercial_hub_investment',
+    name: '商业投资',
+    category: ProjectCategory.DISTRICT,
+    productionCost: 0,
+    requiredDistrict: 'commercial_hub',
+    repeatable: true,
+    onComplete: [
+      { type: ProjectEffectType.GREAT_PERSON_POINTS, value: 2, target: 'great_merchant' },
+      { type: ProjectEffectType.GOLD, value: 100 },
+    ],
+  },
+  {
+    id: 'industrial_zone_logistics',
+    name: '工业奖励',
+    category: ProjectCategory.DISTRICT,
+    productionCost: 0,
+    requiredDistrict: 'industrial_zone',
+    repeatable: true,
+    onComplete: [
+      { type: ProjectEffectType.GREAT_PERSON_POINTS, value: 2, target: 'great_engineer' },
+    ],
+  },
+  {
+    id: 'encampment_training',
+    name: '军事演习',
+    category: ProjectCategory.DISTRICT,
+    productionCost: 0,
+    requiredDistrict: 'encampment',
+    repeatable: true,
+    onComplete: [
+      { type: ProjectEffectType.GREAT_PERSON_POINTS, value: 2, target: 'great_general' },
+    ],
+  },
+];
+```
+
+---
+
+## 三、胜利条件项目 (Victory Projects)
+
+### 科技胜利项目链
+
+需要航天港区域，按顺序完成：
+
+| 项目 | 生产力 | 前置 | 效果 |
+|-----|--------|------|------|
+| **发射地球卫星** | 1500 | 火箭科技 | 科技胜利第1步，全地图可见 |
+| **登月任务** | 1500 | 卫星科技 | 科技胜利第2步 |
+| **发射火星殖民舱** | 1800 | 核聚变 | 科技胜利第3步 |
+| **系外行星探测** | 1500 | 激光科技 | 科技胜利第4步 |
+| **发射地球生存飞船** | 2000 | 纳米技术 | 科技胜利第5步（最终） |
+
+```typescript
+const SCIENCE_VICTORY_PROJECTS: Project[] = [
+  {
+    id: 'launch_earth_satellite',
+    name: '发射地球卫星',
+    category: ProjectCategory.VICTORY,
+    productionCost: 1500,
+    requiredDistrict: 'spaceport',
+    requiredTech: 'rocketry',
+    repeatable: false,
+    onComplete: [
+      { type: ProjectEffectType.VICTORY_PROGRESS, value: 1, target: 'science' },
+      { type: ProjectEffectType.TRIGGER_EVENT, value: 1, target: 'reveal_map' },
+    ],
+  },
+  {
+    id: 'moon_landing',
+    name: '登月任务',
+    category: ProjectCategory.VICTORY,
+    productionCost: 1500,
+    requiredDistrict: 'spaceport',
+    requiredTech: 'satellites',
+    repeatable: false,
+    onComplete: [
+      { type: ProjectEffectType.VICTORY_PROGRESS, value: 1, target: 'science' },
+    ],
+  },
+  {
+    id: 'mars_colony',
+    name: '发射火星殖民舱',
+    category: ProjectCategory.VICTORY,
+    productionCost: 1800,
+    requiredDistrict: 'spaceport',
+    requiredTech: 'nuclear_fusion',
+    repeatable: false,
+    onComplete: [
+      { type: ProjectEffectType.VICTORY_PROGRESS, value: 1, target: 'science' },
+    ],
+  },
+  {
+    id: 'exoplanet_expedition',
+    name: '系外行星探测',
+    category: ProjectCategory.VICTORY,
+    productionCost: 1500,
+    requiredDistrict: 'spaceport',
+    requiredTech: 'lasers',
+    repeatable: false,
+    onComplete: [
+      { type: ProjectEffectType.VICTORY_PROGRESS, value: 1, target: 'science' },
+    ],
+  },
+  {
+    id: 'terrestrial_laser_station',
+    name: '发射地球生存飞船',
+    category: ProjectCategory.VICTORY,
+    productionCost: 2000,
+    requiredDistrict: 'spaceport',
+    requiredTech: 'nanotechnology',
+    repeatable: false,
+    onComplete: [
+      { type: ProjectEffectType.VICTORY_PROGRESS, value: 1, target: 'science' },
+      { type: ProjectEffectType.TRIGGER_EVENT, value: 1, target: 'check_science_victory' },
+    ],
+  },
+];
+```
+
+---
+
+## 四、军事/核武器项目 (Military Projects)
+
+### 曼哈顿计划
+
+| 项目 | 生产力 | 前置 | 效果 |
+|-----|--------|------|------|
+| **曼哈顿计划** | 1500 | 核裂变 | 解锁核弹生产，全文明可见 |
+
+### 核装置项目
+
+| 项目 | 生产力 | 前置 | 效果 |
+|-----|--------|------|------|
+| **建造核弹** | 600 | 曼哈顿计划 | 生产1枚核弹 |
+| **建造热核装置** | 900 | 核聚变 | 生产1枚热核弹 |
+
+```typescript
+const MILITARY_PROJECTS: Project[] = [
+  {
+    id: 'manhattan_project',
+    name: '曼哈顿计划',
+    category: ProjectCategory.MILITARY,
+    productionCost: 1500,
+    requiredTech: 'nuclear_fission',
+    requiredDistrict: 'industrial_zone',
+    repeatable: false,
+    onComplete: [
+      { type: ProjectEffectType.TRIGGER_EVENT, value: 1, target: 'unlock_nuclear_weapons' },
+    ],
+  },
+  {
+    id: 'build_nuclear_device',
+    name: '建造核弹',
+    category: ProjectCategory.MILITARY,
+    productionCost: 600,
+    requiredTech: 'nuclear_fission',
+    repeatable: true,
+    onComplete: [
+      { type: ProjectEffectType.UNIT_SPAWN, value: 1, target: 'nuclear_bomb' },
+    ],
+  },
+  {
+    id: 'build_thermonuclear_device',
+    name: '建造热核装置',
+    category: ProjectCategory.MILITARY,
+    productionCost: 900,
+    requiredTech: 'nuclear_fusion',
+    repeatable: true,
+    onComplete: [
+      { type: ProjectEffectType.UNIT_SPAWN, value: 1, target: 'thermonuclear_bomb' },
+    ],
+  },
+];
+```
+
+---
+
+## 五、转化项目 (Conversion Projects)
+
+将资源或产出转化为其他形式。
+
+| 项目 | 生产力 | 效果 |
+|-----|--------|------|
+| **面包与马戏** | 可变 | 将生产力转化为宜居度（临时） |
+| **粮食配给** | 可变 | 将生产力转化为粮食 |
+| **征兵动员** | 可变 | 将粮食转化为生产力（训练军事单位时） |
+
+---
+
+## 六、特殊项目 (Special Projects)
+
+### 修复类项目
+
+| 项目 | 生产力 | 条件 | 效果 |
+|-----|--------|------|------|
+| **城市修复** | 可变 | 城市被劫掠后 | 修复受损建筑 |
+| **去污染** | 300 | 核弹影响区域 | 清除核辐射 |
+
+### 世界大会项目
+
+| 项目 | 生产力 | 效果 |
+|-----|--------|------|
+| **申办世博会** | 1000 | 竞争主办世博会，获胜者+大量旅游 |
+| **申办奥运会** | 1000 | 竞争主办奥运会，获胜者+大量文化/宜居度 |
+
+```typescript
+const SPECIAL_PROJECTS: Project[] = [
+  {
+    id: 'repair_city',
+    name: '城市修复',
+    category: ProjectCategory.SPECIAL,
+    productionCost: 0, // 根据受损程度
+    repeatable: false,
+    onComplete: [
+      { type: ProjectEffectType.TRIGGER_EVENT, value: 1, target: 'repair_pillaged' },
+    ],
+  },
+  {
+    id: 'clean_nuclear_fallout',
+    name: '去污染',
+    category: ProjectCategory.SPECIAL,
+    productionCost: 300,
+    repeatable: true,
+    onComplete: [
+      { type: ProjectEffectType.TRIGGER_EVENT, value: 1, target: 'remove_fallout' },
+    ],
+  },
+];
+```
+
+---
+
+## 七、项目生产逻辑
+
+```typescript
+// 区域项目的伟人点数计算
+function calculateDistrictProjectRewards(
+  project: Project,
+  productionInvested: number
+): ProjectReward {
+  const rewards: ProjectReward = {
+    greatPersonPoints: {},
+    yields: {},
+  };
+  
+  // 每100生产力 = 2伟人点数
+  const gpPointsMultiplier = Math.floor(productionInvested / 100);
+  
+  for (const effect of project.onComplete) {
+    if (effect.type === ProjectEffectType.GREAT_PERSON_POINTS) {
+      rewards.greatPersonPoints[effect.target!] = effect.value * gpPointsMultiplier;
+    } else if (effect.type === ProjectEffectType.SCIENCE) {
+      rewards.yields.science = effect.value;
+    } else if (effect.type === ProjectEffectType.FAITH) {
+      rewards.yields.faith = effect.value;
+    } else if (effect.type === ProjectEffectType.GOLD) {
+      rewards.yields.gold = effect.value;
+    }
+  }
+  
+  return rewards;
+}
+
+// 项目完成处理
+function completeProject(city: City, project: Project): void {
+  for (const effect of project.onComplete) {
+    switch (effect.type) {
+      case ProjectEffectType.GREAT_PERSON_POINTS:
+        addGreatPersonPoints(city.owner, effect.target!, effect.value);
+        break;
+        
+      case ProjectEffectType.UNIT_SPAWN:
+        spawnUnit(city, effect.target!, effect.value);
+        break;
+        
+      case ProjectEffectType.VICTORY_PROGRESS:
+        incrementVictoryProgress(city.owner, effect.target!, effect.value);
+        break;
+        
+      case ProjectEffectType.TRIGGER_EVENT:
+        triggerGameEvent(effect.target!, { city, player: city.owner });
+        break;
+        
+      default:
+        // 产出效果
+        addYieldToCity(city, effect.type, effect.value);
+    }
+  }
+  
+  // 检查胜利条件
+  checkVictoryConditions(city.owner);
+}
+```
+
+---
+
+## 八、春秋特色项目 🏮
+
+### 祭祀类项目
+
+| 项目 | 生产力 | 区域 | 效果 |
+|-----|--------|------|------|
+| **郊祀天地** | 400 | 圣地 | +200信仰，全城市+1宜居度（5回合） |
+| **宗庙祭祖** | 300 | 城市中心 | +2忠诚度（永久），+100文化 |
+| **社稷大典** | 500 | 政府广场 | +3外交胜利点，与所有文明+5关系 |
+
+### 变法类项目
+
+| 项目 | 生产力 | 条件 | 效果 |
+|-----|--------|------|------|
+| **变法图强** | 800 | 拥有3座城市 | 所有城市+20%生产力（20回合），期间无法更换政策 |
+| **招贤纳士** | 600 | 有政府广场 | 下一位伟人免费获得 |
+| **兴修水利** | 500 | 有水渠 | 该城市所有农场+1粮食（永久） |
+
+```typescript
+const CHUNQIU_PROJECTS: Project[] = [
+  {
+    id: 'heaven_earth_sacrifice',
+    name: '郊祀天地',
+    category: ProjectCategory.SPECIAL,
+    productionCost: 400,
+    requiredDistrict: 'holy_site',
+    repeatable: true,
+    onComplete: [
+      { type: ProjectEffectType.FAITH, value: 200 },
+      { type: ProjectEffectType.TRIGGER_EVENT, value: 5, target: 'city_amenity_boost' },
+    ],
+  },
+  {
+    id: 'reform_movement',
+    name: '变法图强',
+    category: ProjectCategory.SPECIAL,
+    productionCost: 800,
+    repeatable: false,
+    onComplete: [
+      { type: ProjectEffectType.TRIGGER_EVENT, value: 20, target: 'production_boost_all_cities' },
+    ],
+  },
+  {
+    id: 'recruit_talents',
+    name: '招贤纳士',
+    category: ProjectCategory.SPECIAL,
+    productionCost: 600,
+    requiredDistrict: 'government_plaza',
+    repeatable: true,
+    onComplete: [
+      { type: ProjectEffectType.TRIGGER_EVENT, value: 1, target: 'free_next_great_person' },
+    ],
+  },
+];
+```

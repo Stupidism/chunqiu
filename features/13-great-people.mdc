@@ -1,0 +1,502 @@
+---
+description: 春秋项目伟人系统详细设计
+globs: ["**/game-core/**", "**/great-people/**", "**/greatPerson/**"]
+alwaysApply: false
+---
+
+# 伟人系统 (Great People)
+
+## 概述
+
+伟人是历史上杰出的人物，可通过累积伟人点数招募。每位伟人都有独特的能力，使用后永久退休。伟人按类型和时代分组，每个时代有多位伟人供所有文明竞争。
+
+---
+
+## 一、伟人数据结构
+
+```typescript
+interface GreatPerson {
+  id: string;
+  name: string;
+  type: GreatPersonType;
+  era: Era;
+  
+  // 招募成本
+  recruitCost: {
+    points: number;     // 伟人点数
+    faith?: number;     // 或用信仰购买
+    gold?: number;      // 或用金币购买
+  };
+  
+  // 能力
+  abilities: GreatPersonAbility[];
+  passiveBonus?: PassiveBonus;  // 被动加成（某些伟人）
+  
+  // 展示
+  quote: string;
+  historicalInfo: string;
+  portrait: string;
+}
+
+enum GreatPersonType {
+  GREAT_GENERAL = 'great_general',       // 大将军
+  GREAT_ADMIRAL = 'great_admiral',       // 大海军提督
+  GREAT_SCIENTIST = 'great_scientist',   // 大科学家
+  GREAT_ENGINEER = 'great_engineer',     // 大工程师
+  GREAT_MERCHANT = 'great_merchant',     // 大商人
+  GREAT_PROPHET = 'great_prophet',       // 大预言家
+  GREAT_WRITER = 'great_writer',         // 大作家
+  GREAT_ARTIST = 'great_artist',         // 大艺术家
+  GREAT_MUSICIAN = 'great_musician',     // 大音乐家
+}
+
+interface GreatPersonAbility {
+  type: AbilityType;
+  description: string;
+  uses: number;          // 可使用次数（通常为1）
+  target: AbilityTarget; // 目标类型
+  effect: any;
+}
+
+enum AbilityTarget {
+  SELF = 'self',           // 伟人自身位置
+  CITY = 'city',           // 城市
+  DISTRICT = 'district',   // 区域
+  TILE = 'tile',           // 地块
+  UNIT = 'unit',           // 单位
+  WONDER = 'wonder',       // 奇观
+}
+```
+
+---
+
+## 二、伟人类型与产出
+
+### 伟人点数来源
+
+| 伟人类型 | 主要区域 | 建筑加成 |
+|---------|---------|---------|
+| 大科学家 | 学院 | 图书馆+1, 大学+2, 研究所+3 |
+| 大工程师 | 工业区 | 作坊+1, 工厂+2, 发电厂+3 |
+| 大商人 | 商业中心 | 市场+1, 银行+2, 证券交易所+3 |
+| 大将军 | 军营 | 兵营+1, 军械库+2, 军事学院+3 |
+| 大海军提督 | 港口 | 灯塔+1, 船坞+2, 海港+3 |
+| 大预言家 | 圣地 | 神殿+1, 寺庙+2 |
+| 大作家 | 剧院广场 | 露天剧场+1, 作家驻地+3 |
+| 大艺术家 | 剧院广场 | 博物馆+2, 艺术家驻地+3 |
+| 大音乐家 | 剧院广场 | 广播中心+2, 音乐家驻地+3 |
+
+---
+
+## 三、大科学家 (Great Scientists)
+
+### 远古/古典时代
+
+| 伟人 | 成本 | 能力 |
+|-----|------|------|
+| **欧几里得** | 60 | 触发3项科技的尤里卡 |
+| **阿基米德** | 60 | +100科研，建造攻城塔/破城锤时+50%生产力 |
+| **希帕提娅** | 60 | +100科研，免费建造图书馆 |
+
+### 中世纪/文艺复兴
+
+| 伟人 | 成本 | 能力 |
+|-----|------|------|
+| **沈括** 🏮 | 100 | +200科研，工业区+1邻接（永久） |
+| **哥白尼** | 100 | +200科研，触发天文学尤里卡 |
+| **伽利略** | 100 | +250科研/相邻山脉 |
+
+### 工业/现代
+
+| 伟人 | 成本 | 能力 |
+|-----|------|------|
+| **达尔文** | 200 | 在自然奇观旁使用，+500科研 |
+| **牛顿** | 200 | +300科研，免费建造大学 |
+| **爱因斯坦** | 300 | 免费研究一项现代科技 |
+| **居里夫人** | 300 | +500科研，铀矿产量+100% |
+
+```typescript
+const GREAT_SCIENTISTS: GreatPerson[] = [
+  {
+    id: 'shen_kuo',
+    name: '沈括',
+    type: GreatPersonType.GREAT_SCIENTIST,
+    era: 'medieval',
+    recruitCost: { points: 100, faith: 400, gold: 800 },
+    abilities: [{
+      type: 'instant_science',
+      description: '获得200点科研',
+      uses: 1,
+      target: AbilityTarget.SELF,
+      effect: { science: 200 },
+    }, {
+      type: 'permanent_bonus',
+      description: '该城市工业区+1邻接加成',
+      uses: 1,
+      target: AbilityTarget.DISTRICT,
+      effect: { districtAdjacency: { industrial_zone: 1 } },
+    }],
+    quote: '《梦溪笔谈》，百科全书',
+    historicalInfo: '北宋科学家、政治家，著有《梦溪笔谈》',
+  },
+  {
+    id: 'darwin',
+    name: '达尔文',
+    type: GreatPersonType.GREAT_SCIENTIST,
+    era: 'industrial',
+    recruitCost: { points: 200, faith: 800, gold: 1600 },
+    abilities: [{
+      type: 'science_from_wonder',
+      description: '在自然奇观2格内使用：+500科研',
+      uses: 1,
+      target: AbilityTarget.TILE,
+      effect: { science: 500, requiresNearNaturalWonder: true },
+    }],
+    quote: '物竞天择，适者生存',
+    historicalInfo: '进化论奠基人',
+  },
+];
+```
+
+---
+
+## 四、大工程师 (Great Engineers)
+
+### 远古/古典时代
+
+| 伟人 | 成本 | 能力 |
+|-----|------|------|
+| **鲁班** 🏮 | 60 | +100生产力，工人+2建造次数（永久） |
+| **伊姆霍特普** | 60 | 奇观+15%生产力（永久），+100生产力 |
+
+### 中世纪/文艺复兴
+
+| 伟人 | 成本 | 能力 |
+|-----|------|------|
+| **李春** 🏮 | 100 | 免费建造水渠，桥梁改良设施+50%效果 |
+| **达芬奇** | 100 | 解锁文艺复兴时代单位的图纸，+1通用政策槽（10回合） |
+
+### 工业/现代
+
+| 伟人 | 成本 | 能力 |
+|-----|------|------|
+| **詹姆斯·瓦特** | 200 | 工厂+2生产力（所有城市），+200生产力 |
+| **居斯塔夫·埃菲尔** | 200 | +500生产力（仅限奇观） |
+| **尼古拉·特斯拉** | 300 | 所有工业区+3生产力，+400生产力 |
+
+```typescript
+const GREAT_ENGINEERS: GreatPerson[] = [
+  {
+    id: 'lu_ban',
+    name: '鲁班',
+    type: GreatPersonType.GREAT_ENGINEER,
+    era: 'ancient',
+    recruitCost: { points: 60, faith: 240, gold: 480 },
+    abilities: [{
+      type: 'instant_production',
+      description: '获得100点生产力',
+      uses: 1,
+      target: AbilityTarget.CITY,
+      effect: { production: 100 },
+    }, {
+      type: 'permanent_bonus',
+      description: '工人+2建造次数',
+      uses: 1,
+      target: AbilityTarget.SELF,
+      effect: { builderCharges: 2 },
+    }],
+    quote: '工匠之祖，百艺之师',
+    historicalInfo: '春秋时期著名工匠，被视为木匠鼻祖',
+  },
+  {
+    id: 'li_chun',
+    name: '李春',
+    type: GreatPersonType.GREAT_ENGINEER,
+    era: 'medieval',
+    recruitCost: { points: 100, faith: 400, gold: 800 },
+    abilities: [{
+      type: 'free_building',
+      description: '免费建造一座水渠',
+      uses: 1,
+      target: AbilityTarget.CITY,
+      effect: { freeBuilding: 'aqueduct' },
+    }],
+    quote: '赵州桥上行人过，千年不倒因巧工',
+    historicalInfo: '隋代工匠，设计建造了著名的赵州桥',
+  },
+];
+```
+
+---
+
+## 五、大将军 (Great Generals)
+
+大将军提供被动光环效果，并可激活一次性能力。
+
+### 光环效果
+
+所有大将军：**2格内陆军单位+5战斗力，+1移动力**
+
+### 远古/古典时代
+
+| 伟人 | 成本 | 激活能力 |
+|-----|------|---------|
+| **孙武** 🏮 | 60 | 获得《孙子兵法》杰作，所有单位+10%经验（永久） |
+| **汉尼拔** | 60 | 2格内所有单位完全治愈，+1移动力（本回合） |
+| **亚历山大** | 60 | 2格内所有单位升级免费，+战斗经验 |
+
+### 中世纪
+
+| 伟人 | 成本 | 激活能力 |
+|-----|------|---------|
+| **吴起** 🏮 | 100 | 创建一支军团（合并2个同类型单位） |
+| **白起** 🏮 | 100 | 2格内所有敌军单位-5战斗力（3回合） |
+
+### 工业/现代
+
+| 伟人 | 成本 | 激活能力 |
+|-----|------|---------|
+| **拿破仑** | 200 | 所有骑兵单位+7战斗力（10回合） |
+| **巴顿** | 300 | 创建一支军队（合并3个同类型单位） |
+
+```typescript
+const GREAT_GENERALS: GreatPerson[] = [
+  {
+    id: 'sun_tzu',
+    name: '孙武',
+    type: GreatPersonType.GREAT_GENERAL,
+    era: 'ancient',
+    recruitCost: { points: 60, faith: 240, gold: 480 },
+    passiveBonus: {
+      range: 2,
+      effects: [
+        { type: 'combat_bonus', value: 5, unitClass: 'land' },
+        { type: 'movement_bonus', value: 1, unitClass: 'land' },
+      ],
+    },
+    abilities: [{
+      type: 'create_great_work',
+      description: '创造《孙子兵法》杰作（+4文化），所有单位+10%经验',
+      uses: 1,
+      target: AbilityTarget.SELF,
+      effect: { 
+        greatWork: { name: '孙子兵法', type: 'writing', culture: 4 },
+        experienceBonus: 10,
+      },
+    }],
+    quote: '知彼知己，百战不殆',
+    historicalInfo: '春秋时期军事家，著有《孙子兵法》',
+  },
+  {
+    id: 'bai_qi',
+    name: '白起',
+    type: GreatPersonType.GREAT_GENERAL,
+    era: 'medieval',
+    recruitCost: { points: 100, faith: 400, gold: 800 },
+    passiveBonus: {
+      range: 2,
+      effects: [
+        { type: 'combat_bonus', value: 5, unitClass: 'land' },
+        { type: 'movement_bonus', value: 1, unitClass: 'land' },
+      ],
+    },
+    abilities: [{
+      type: 'debuff_enemies',
+      description: '2格内所有敌军-5战斗力，持续3回合',
+      uses: 1,
+      target: AbilityTarget.SELF,
+      effect: { 
+        range: 2,
+        debuff: { combatPenalty: 5, duration: 3 },
+      },
+    }],
+    quote: '战神白起，杀神无敌',
+    historicalInfo: '战国时期秦国名将，长平之战坑杀赵军四十万',
+  },
+];
+```
+
+---
+
+## 六、大商人 (Great Merchants)
+
+### 古典/中世纪
+
+| 伟人 | 成本 | 能力 |
+|-----|------|------|
+| **范蠡** 🏮 | 60 | +200金币，+1贸易路线容量 |
+| **马可·波罗** | 100 | +200金币，解锁中国/蒙古贸易路线（+50%产出） |
+
+### 文艺复兴/工业
+
+| 伟人 | 成本 | 能力 |
+|-----|------|------|
+| **雅各布·福格尔** | 150 | +400金币，可用金币购买区域建筑 |
+| **亚当·斯密** | 200 | +500金币，经济政策效果+50% |
+
+```typescript
+const GREAT_MERCHANTS: GreatPerson[] = [
+  {
+    id: 'fan_li',
+    name: '范蠡',
+    type: GreatPersonType.GREAT_MERCHANT,
+    era: 'classical',
+    recruitCost: { points: 60, faith: 240, gold: 480 },
+    abilities: [{
+      type: 'instant_gold',
+      description: '获得200金币',
+      uses: 1,
+      target: AbilityTarget.SELF,
+      effect: { gold: 200 },
+    }, {
+      type: 'trade_route_capacity',
+      description: '+1贸易路线容量',
+      uses: 1,
+      target: AbilityTarget.SELF,
+      effect: { tradeRouteCapacity: 1 },
+    }],
+    quote: '陶朱公，三散三聚',
+    historicalInfo: '春秋时期越国大夫，辅佐勾践灭吴后经商致富',
+  },
+];
+```
+
+---
+
+## 七、大预言家 (Great Prophets)
+
+大预言家用于创建宗教，数量有限（玩家数+2）。
+
+| 伟人 | 成本 | 能力 |
+|-----|------|------|
+| **老子** 🏮 | 60 | 创建道教，或+300信仰 |
+| **孔子** 🏮 | 60 | 创建儒学，或+300信仰+100文化 |
+| **墨子** 🏮 | 60 | 创建墨家，或+300信仰+城防+100 |
+
+```typescript
+// 大预言家特殊处理
+function canRecruitGreatProphet(player: Player, game: Game): boolean {
+  // 检查是否还有剩余大预言家
+  const maxProphets = game.players.filter(p => !p.eliminated).length + 2;
+  const usedProphets = game.religions.length;
+  
+  return usedProphets < maxProphets && !player.hasReligion;
+}
+```
+
+---
+
+## 八、大作家/艺术家/音乐家
+
+这些伟人主要用于创作杰作。
+
+### 大作家
+
+| 伟人 | 成本 | 能力 |
+|-----|------|------|
+| **屈原** 🏮 | 60 | 创作《离骚》《九歌》（文学杰作各+4文化） |
+| **荷马** | 60 | 创作《伊利亚特》《奥德赛》 |
+| **莎士比亚** | 150 | 创作《哈姆雷特》《罗密欧与朱丽叶》 |
+
+### 大艺术家
+
+| 伟人 | 成本 | 能力 |
+|-----|------|------|
+| **顾恺之** 🏮 | 100 | 创作《洛神赋图》《女史箴图》（艺术杰作各+4文化） |
+| **达芬奇** | 150 | 创作《蒙娜丽莎》《最后的晚餐》 |
+
+### 大音乐家
+
+| 伟人 | 成本 | 能力 |
+|-----|------|------|
+| **师旷** 🏮 | 60 | 创作《阳春》《白雪》（乐曲杰作各+4文化） |
+| **莫扎特** | 200 | 创作《魔笛》《安魂曲》 |
+| **贝多芬** | 200 | 创作《命运交响曲》《月光奏鸣曲》 |
+
+---
+
+## 九、伟人招募机制
+
+```typescript
+interface GreatPersonPool {
+  type: GreatPersonType;
+  currentPerson: GreatPerson;           // 当前可招募的伟人
+  nextPersons: GreatPerson[];           // 下一批伟人
+  patronageCosts: Record<PlayerId, number>; // 各玩家累积的点数
+}
+
+// 伟人竞争
+function processGreatPersonRecruitment(pool: GreatPersonPool, game: Game): void {
+  const current = pool.currentPerson;
+  
+  for (const player of game.players) {
+    const points = pool.patronageCosts[player.id] || 0;
+    
+    // 检查是否达到招募成本
+    if (points >= current.recruitCost.points) {
+      // 招募伟人
+      recruitGreatPerson(player, current);
+      
+      // 重置点数
+      pool.patronageCosts[player.id] = 0;
+      
+      // 推进到下一位伟人
+      pool.currentPerson = pool.nextPersons.shift()!;
+      
+      // 通知所有玩家
+      broadcastGreatPersonRecruited(player, current);
+      
+      return;
+    }
+  }
+}
+
+// 金币/信仰购买
+function purchaseGreatPerson(
+  player: Player,
+  person: GreatPerson,
+  currency: 'gold' | 'faith'
+): boolean {
+  const cost = currency === 'gold' 
+    ? person.recruitCost.gold 
+    : person.recruitCost.faith;
+    
+  if (!cost) return false;
+  
+  // 检查是否有足够货币
+  if (player[currency] < cost) return false;
+  
+  // 扣除货币
+  player[currency] -= cost;
+  
+  // 招募伟人
+  recruitGreatPerson(player, person);
+  
+  return true;
+}
+
+// 使用伟人能力
+function activateGreatPerson(
+  person: GreatPersonUnit,
+  ability: GreatPersonAbility,
+  target: any
+): boolean {
+  // 验证使用次数
+  if (person.usedAbilities.includes(ability.type)) {
+    return false;
+  }
+  
+  // 执行能力效果
+  executeAbilityEffect(ability, person, target);
+  
+  // 记录使用
+  person.usedAbilities.push(ability.type);
+  
+  // 如果所有能力都已使用，伟人退休
+  if (person.usedAbilities.length >= person.abilities.length) {
+    retireGreatPerson(person);
+  }
+  
+  return true;
+}
+```

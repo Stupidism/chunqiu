@@ -1,0 +1,123 @@
+---
+description: 春秋项目目录结构
+globs: ["**/*"]
+alwaysApply: false
+---
+
+# 目录结构
+
+## Monorepo 完整结构
+
+```
+chunqiu/
+├── apps/
+│   ├── lobby/                        # Next.js 大厅应用
+│   │   ├── app/
+│   │   │   ├── (auth)/               # 登录/注册
+│   │   │   ├── lobby/                # 大厅主页
+│   │   │   ├── rankings/             # 排位与积分
+│   │   │   ├── saves/                # 存档列表
+│   │   │   └── replays/              # 回放列表
+│   │   ├── components/
+│   │   ├── hooks/
+│   │   └── styles/
+│   │
+│   ├── game/                         # Next.js 游戏应用
+│   │   ├── app/
+│   │   │   ├── lobby/                # 对局准备/房间
+│   │   │   ├── game/[id]/            # 游戏主界面
+│   │   │   └── replay/[id]/          # 回放播放
+│   │   ├── components/
+│   │   │   ├── game/
+│   │   │   │   ├── Map/
+│   │   │   │   ├── Tile/
+│   │   │   │   ├── Unit/
+│   │   │   │   ├── City/
+│   │   │   │   ├── UI/
+│   │   │   │   └── FogOfWar/
+│   │   │   └── shared/
+│   │   ├── hooks/
+│   │   ├── stores/
+│   │   └── styles/
+│   │
+│   ├── editor/                       # Next.js 地图编辑器
+│   │   ├── app/
+│   │   │   ├── editor/               # 编辑器主页
+│   │   │   ├── editor/[id]/          # 地图编辑
+│   │   │   └── preview/[id]/         # 预览模式
+│   │   ├── components/
+│   │   │   ├── editor/
+│   │   │   │   ├── MapCanvas/         # HTML 网格渲染
+│   │   │   │   ├── ToolBar/
+│   │   │   │   ├── TilePalette/
+│   │   │   │   └── Inspector/
+│   │   │   └── shared/
+│   │   ├── hooks/
+│   │   └── styles/
+│   │
+│   └── server/                       # 游戏后端服务
+│       ├── src/
+│       │   ├── engine/               # 游戏引擎入口
+│       │   ├── ai/                   # AI 系统
+│       │   ├── ws/                   # WebSocket 处理
+│       │   └── api/                  # HTTP API (可选)
+│       ├── Dockerfile
+│       └── package.json
+│
+├── packages/
+│   ├── ui/                           # 共享 UI 组件库
+│   ├── game-core/                    # 游戏核心逻辑 (前后端共享)
+│   ├── db/                           # Prisma 数据库层
+│   ├── types/                        # 共享类型定义 (API/WS)
+│   ├── assets/                       # 甲骨文图标与资源索引
+│   └── config/                       # 共享配置
+│
+├── turbo.json                        # Turborepo 配置
+├── package.json                      # 根 package.json
+├── pnpm-workspace.yaml               # pnpm workspace 配置
+├── .env.example                      # 环境变量示例
+└── README.md
+```
+
+## 关键目录说明
+
+### `apps/lobby`
+大厅与账号入口，负责：
+- AI 难度进度与 PVP 解锁
+- 匹配与排位入口
+- 存档与回放列表
+
+### `apps/game`
+游戏主界面与回放播放，负责：
+- 地图渲染与交互
+- 单位/城市操作
+- 回合控制
+- PVP 实时结算的 UI 表达
+
+### `apps/editor`
+地图编辑器（纯 HTML 元素渲染），负责：
+- 地图创建与编辑
+- 地形/资源/装饰层
+- 预览与发布流程
+
+### `apps/server`
+权威后端服务，负责：
+- WebSocket 实时结算
+- AI 决策与回合处理
+- 存档与回放持久化
+
+### `packages/game-core`
+游戏核心逻辑，保持与 UI/Node 环境无关，便于前后端共享。
+
+### `packages/ui`
+shadcn/ui 基础组件 + 甲骨文主题，供多 app 复用。
+
+### `packages/db`
+Prisma schema 与数据库客户端。
+
+### `packages/types`
+共享类型定义，涵盖 API、WebSocket、游戏状态结构。
+
+### `packages/assets`
+甲骨文图标与资源索引，供 UI 统一引用。
+

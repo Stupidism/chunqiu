@@ -1,0 +1,397 @@
+---
+description: 燕国文明详细设计
+globs: ["**/civilization/yan/**", "**/civ/yan/**"]
+alwaysApply: false
+---
+
+# 燕国 (Yan) - 北疆之国
+
+> *"风萧萧兮易水寒，壮士一去兮不复还"*
+
+## 文明概述
+
+| 属性 | 内容 |
+|-----|------|
+| **图标** | 燕（甲骨文） |
+| **主色调** | 玄青 `#191970` |
+| **辅色调** | 霜白 `#f0ffff` |
+| **游戏风格** | 伟人导向型 |
+| **难度评级** | ★★★★☆ (4/5) |
+| **适合胜利** | 科技胜利、文化胜利 |
+
+---
+
+## 历史背景
+
+### 建国渊源
+
+燕国由周武王之弟召公奭所建，封于蓟（今北京一带）。燕国地处北疆，与山戎、东胡等游牧民族为邻，长期处于中原文明与草原文明的交汇地带。
+
+燕国远离中原纷争，相对偏安一隅，但在战国时期燕昭王招贤纳士，使燕国一度崛起，差点灭亡齐国。
+
+### 疆域变迁
+
+- **初封**：蓟（今北京）
+- **春秋时期**：河北北部、北京、辽宁西部
+- **燕昭王时期**：大破齐国，几乎灭齐
+- **末期**：公元前222年被秦国所灭
+
+### 文化特色
+
+燕国文化具有北方边疆特色：
+- **慷慨悲歌**：燕赵之地多慷慨悲歌之士
+- **招贤纳士**：燕昭王筑黄金台
+- **边塞文化**：长城防线始于燕国
+- **侠义精神**：荆轲刺秦的故事
+
+### 著名人物
+
+| 人物 | 时期 | 贡献 |
+|-----|------|------|
+| 召公奭 | 西周 | 燕国始祖 |
+| 燕昭王 | 战国 | 千金买骨，招贤纳士 |
+| 乐毅 | 战国 | 名将，五国伐齐 |
+| 郭隗 | 战国 | 千金买骨典故主角 |
+| 荆轲 | 战国 | 刺客，图穷匕见 |
+| 高渐离 | 战国 | 乐师，击筑刺秦 |
+
+---
+
+## 领袖：燕昭王
+
+### 基本信息
+
+| 属性 | 内容 |
+|-----|------|
+| **姓名** | 姬职 |
+| **在位** | 公元前311年—前279年（共33年） |
+| **头衔** | 中兴之主 |
+| **谥号** | 昭 |
+
+### 生平简介
+
+燕昭王即位时，燕国刚遭受齐国入侵，国力衰微。昭王立志复仇，采纳郭隗的建议"千金买骨"——先厚待普通人才，天下贤士自然会来投奔。
+
+燕昭王筑黄金台，以优厚待遇招揽人才。乐毅、剧辛、邹衍等名士纷纷来投。经过二十余年的休养生息，燕国国力大增。公元前284年，燕昭王以乐毅为将，联合五国伐齐，连下七十余城，齐国几乎灭亡。
+
+### 领袖能力：千金买骨
+
+> *广招贤才，伟人辈出*
+
+| 效果类型 | 详细说明 |
+|---------|---------|
+| **伟人招募** | 招募伟人成本-25% |
+| **伟人效果** | 伟人效果+50% |
+| **黄金台** | 每个伟人+1该类型伟人点数/回合 |
+| **人才吸引** | 其他文明的伟人有5%几率叛逃到你这里 |
+
+```typescript
+const KING_ZHAO_ABILITY: Ability = {
+  name: '千金买骨',
+  description: '厚待人才，贤士来投',
+  detailedDescription: `
+    • 招募伟人成本 -25%
+    • 伟人效果 +50%
+    • 每拥有一个伟人：+1 该类型伟人点数/回合
+    • 其他文明伟人有 5% 几率叛逃
+  `,
+  effects: [
+    { type: 'great_people_cost_discount', value: 25 },
+    { type: 'great_people_effect_multiplier', value: 50 },
+    { type: 'great_people_points_per_great_person', value: 1 },
+    { type: 'great_person_defection_chance', value: 5 },
+  ],
+};
+```
+
+### AI 议程：求贤若渴
+
+| 属性 | 内容 |
+|-----|------|
+| **喜欢** | 重视伟人、文化繁荣的文明 |
+| **讨厌** | 忽视人才、不招募伟人的文明 |
+| **外交权重** | 7/10 |
+
+### 名言
+
+- *"千金买马骨"*
+- *"先生坐上座，寡人愿为弟子"*
+- *"士为知己者死"*
+
+---
+
+## 文明特性：北地之风
+
+> *"燕赵之地，多慷慨悲歌之士"*
+
+### 效果详解
+
+| 效果 | 数值 | 说明 |
+|-----|------|------|
+| **苔原生产** | +1 | 苔原地块+1生产力 |
+| **苔原粮食** | +1 | 苔原地块+1粮食 |
+| **雪地加成** | +1/+1 | 雪地+1生产力+1粮食 |
+| **寒冷免疫** | 特殊 | 城市不受寒冷气候惩罚 |
+| **北疆战士** | +5 | 在苔原/雪地作战+5战斗力 |
+
+### 北方适应机制
+
+```typescript
+const NORTHERN_WIND: Ability = {
+  name: '北地之风',
+  description: '适应北方严寒环境',
+  detailedDescription: `
+    • 苔原地块 +1 生产力 +1 粮食
+    • 雪地地块 +1 生产力 +1 粮食
+    • 城市不受寒冷气候惩罚
+    • 在苔原/雪地作战 +5 战斗力
+  `,
+  effects: [
+    { type: 'terrain_yield_modifier', terrain: 'tundra', yield: 'production', value: 1 },
+    { type: 'terrain_yield_modifier', terrain: 'tundra', yield: 'food', value: 1 },
+    { type: 'terrain_yield_modifier', terrain: 'snow', yield: 'production', value: 1 },
+    { type: 'terrain_yield_modifier', terrain: 'snow', yield: 'food', value: 1 },
+    { type: 'climate_immunity', climate: 'cold' },
+    { type: 'combat_bonus_in_terrain', terrain: ['tundra', 'snow'], value: 5 },
+  ],
+};
+```
+
+### 历史背景
+
+燕国地处北方，气候寒冷。长期与游牧民族为邻的生活，使燕人适应了严酷的自然环境，形成了坚韧不拔的性格。燕赵之地"多慷慨悲歌之士"，荆轲、高渐离等人的故事流传千古。
+
+---
+
+## 特色单位：燕云骑士
+
+### 单位数据
+
+| 属性 | 数值 | 对比骑兵 |
+|-----|------|---------|
+| **战斗力** | 50 | 48 (+2) |
+| **移动力** | 5 | 4 (+1) |
+| **生产成本** | 230 | 220 (+10) |
+| **时代** | 中世纪 | 中世纪 |
+| **科技需求** | 骑术 | 骑术 |
+
+### 特殊能力
+
+| 能力 | 效果 |
+|-----|------|
+| **北疆铁骑** | 在苔原/雪地+10战斗力 |
+| **长途奔袭** | 忽略地形移动惩罚 |
+| **骑射** | 可进行1次远程攻击（射程1，伤害15） |
+
+```typescript
+const YAN_CAVALRY: UniqueUnit = {
+  id: 'yan_cavalry',
+  name: '燕云骑士',
+  replaces: 'knight',
+  
+  stats: {
+    combatStrength: 50,
+    movement: 5,
+    productionCost: 230,
+    maintenanceCost: 3,
+    sight: 3,
+  },
+  
+  requirements: {
+    technology: 'stirrups',
+    resource: 'horses',
+    era: 'medieval',
+  },
+  
+  abilities: [
+    {
+      id: 'northern_rider',
+      name: '北疆铁骑',
+      description: '在苔原/雪地+10战斗力',
+      combatModifier: { inTerrain: ['tundra', 'snow'], value: 10 },
+    },
+    {
+      id: 'long_raid',
+      name: '长途奔袭',
+      description: '忽略地形移动惩罚',
+      effect: 'ignore_terrain_movement_cost',
+    },
+    {
+      id: 'horse_archery',
+      name: '骑射',
+      description: '可进行1次远程攻击',
+      rangedAttack: { range: 1, damage: 15, charges: 1 },
+    },
+  ],
+  
+  promotionClass: 'heavy_cavalry',
+  
+  historicalNote: `
+    燕国骑兵吸收了北方游牧民族的骑术和战法，
+    善于长途奔袭和骑射，是战国时期最强大的骑兵之一。
+    乐毅伐齐时，燕国骑兵发挥了关键作用。
+  `,
+};
+```
+
+---
+
+## 特色建筑：黄金台
+
+### 建筑数据
+
+| 属性 | 数值 |
+|-----|------|
+| **类型** | 建筑 |
+| **生产成本** | 200 |
+| **维护费用** | 2 |
+| **区域** | 市中心 |
+| **市政需求** | 国家劳动力 |
+
+### 效果
+
+| 效果 | 数值 |
+|-----|------|
+| **金币** | +4 |
+| **伟人点数** | +2（所有类型） |
+| **人才招揽** | 招募伟人时，该城市+20生产力（1回合） |
+| **忠诚度** | +5 |
+
+```typescript
+const GOLDEN_TERRACE: UniqueBuilding = {
+  id: 'golden_terrace',
+  name: '黄金台',
+  
+  stats: {
+    productionCost: 200,
+    maintenanceCost: 2,
+  },
+  
+  requirements: {
+    civic: 'state_workforce',
+  },
+  
+  effects: [
+    { type: 'gold', value: 4 },
+    { type: 'great_people_points_all', value: 2 },
+    { type: 'production_on_great_person_recruit', value: 20, duration: 1 },
+    { type: 'loyalty', value: 5 },
+  ],
+  
+  historicalNote: `
+    黄金台是燕昭王为招揽人才而修建的高台。
+    昭王在台上以黄金铺地，礼贤下士，
+    天下贤才闻风来投，燕国由此复兴。
+    "黄金台"后来成为礼贤下士的象征。
+  `,
+};
+```
+
+---
+
+## 起始偏好
+
+```typescript
+const YAN_START_BIAS: StartBias = {
+  terrain: [TerrainType.TUNDRA],
+  tier: 4, // 强偏好
+};
+```
+
+| 偏好 | 强度 | 原因 |
+|-----|------|------|
+| 苔原 | ★★★★ | 文明特性核心 |
+| 雪地 | ★★★ | 同样有加成 |
+
+---
+
+## 战略指南
+
+### 早期发展 (古代-古典)
+
+1. **苔原建城**：苔原变成可用地形
+2. **黄金台**：尽早获取伟人点数
+3. **伟人积累**：-25%成本优势显著
+
+### 中期发展 (古典-中世纪)
+
+1. **伟人收集**：每个伟人+1点数，滚雪球
+2. **燕云骑士**：苔原/雪地+10战斗力
+3. **效果增强**：伟人效果+50%
+
+### 后期决战 (文艺复兴+)
+
+1. **科技胜利**：大科学家效果+50%
+2. **文化胜利**：大艺术家/作家效果+50%
+3. **军事优势**：北方地形作战优势
+
+### 克制与被克制
+
+| 对手 | 关系 | 说明 |
+|-----|------|------|
+| 齐国 | 历史宿敌 | 乐毅伐齐，差点灭齐 |
+| 秦国 | 被克制 | 最终被秦所灭 |
+| 越国 | 中立 | 地理上较远 |
+
+### 特殊策略：伟人滚雪球
+
+燕国的核心策略是"伟人滚雪球"：
+1. 每招募一个伟人，+1该类型伟人点数/回合
+2. 招募成本-25%，更容易获得
+3. 伟人效果+50%，价值更高
+4. 叠加后期可以垄断大部分伟人
+
+---
+
+## 完整代码定义
+
+```typescript
+const YAN: Civilization = {
+  id: 'yan',
+  name: '燕国',
+  adjective: '燕',
+  icon: '燕', // 甲骨文
+  colors: { 
+    primary: '#191970', // 玄青
+    secondary: '#f0ffff', // 霜白
+  },
+  
+  leader: {
+    id: 'king_zhao_of_yan',
+    name: '燕昭王',
+    title: '中兴之主',
+    era: '公元前311年-前279年',
+    ability: KING_ZHAO_ABILITY,
+    agenda: {
+      name: '求贤若渴',
+      likes: '重视伟人的文明',
+      dislikes: '不招募伟人的文明',
+      weight: 7,
+    },
+    quotes: [
+      '千金买马骨',
+      '士为知己者死',
+    ],
+    biography: '筑黄金台招贤纳士，任用乐毅伐齐，几乎灭亡齐国。',
+  },
+  
+  civilizationAbility: NORTHERN_WIND,
+  
+  uniqueUnits: [YAN_CAVALRY],
+  uniqueBuildings: [GOLDEN_TERRACE],
+  uniqueImprovements: [],
+  uniqueDistricts: [],
+  
+  startBias: YAN_START_BIAS,
+  
+  historicalInfo: {
+    founding: '周武王封召公奭于蓟',
+    territory: '河北北部、北京、辽宁西部',
+    culture: '慷慨悲歌、招贤纳士、边塞精神',
+    legacy: '黄金台成为礼贤下士的象征，荆轲刺秦流传千古',
+    famousFigures: ['召公奭', '燕昭王', '乐毅', '郭隗', '荆轲', '高渐离'],
+  },
+};
+
+export default YAN;
+```

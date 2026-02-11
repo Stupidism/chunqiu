@@ -1,0 +1,289 @@
+---
+description: 春秋项目数据库设计
+globs: ["**/prisma/**", "**/db/**"]
+alwaysApply: false
+---
+
+# 数据库设计
+
+## Prisma Schema
+
+```prisma
+// packages/db/prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ==================== 用户系统 ====================
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String?
+  avatar        String?
+  passwordHash  String
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  
+  games         GamePlayer[]
+  createdGames  Game[]        @relation("GameCreator")
+  stats         PlayerStats?
+}
+
+// ==================== 游戏系统 ====================
+
+model Game {
+  id            String      @id @default(cuid())
+  name          String
+  status        GameStatus  @default(LOBBY)
+  
+  // 游戏设置
+  settings      Json        // { mapSize, gameSpeed, difficulty, ... }
+  
+  // 地图数据
+  mapSeed       String      // 地图生成种子（用于重现）
+  mapData       Json?       // 生成后的完整地图数据
+  
+  // 回合信息
+  currentTurn   Int         @default(0)
+  currentPhase  TurnPhase   @default(WAITING)
+  
+  // 关联
+  creatorId     String
+  creator       User        @relation("GameCreator", fields: [creatorId], references: [id])
+  players       GamePlayer[]
+  turns         TurnRecord[]
+  
+  // 时间戳
+  startedAt     DateTime?
+  finishedAt    DateTime?
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+}
+
+enum GameStatus {
+  LOBBY       // 等待玩家加入
+  STARTING    // 正在初始化（生成地图等）
+  IN_PROGRESS // 游戏进行中
+  PAUSED      // 暂停
+  FINISHED    // 游戏结束
+  ABANDONED   // 游戏被放弃
+}
+
+enum TurnPhase {
+  WAITING     // 等待玩家操作
+  PROCESSING  // 处理回合结算
+  AI_TURN     // AI 回合
+}
+
+// ==================== 玩家系统 ====================
+
+model GamePlayer {
+  id              String    @id @default(cuid())
+  
+  // 关联
+  gameId          String
+  game            Game      @relation(fields: [gameId], references: [id], onDelete: Cascade)
+  userId          String?   // null 表示 AI 玩家
+  user            User?     @relation(fields: [userId], references: [id])
+  
+  // 玩家信息
+  civilization    String    // 文明 ID (如 'qin', 'chu', 'qi')
+  playerIndex     Int       // 玩家顺序 (0-based)
+  color           String    // 玩家颜色
+  
+  // AI 配置
+  isAI            Boolean   @default(false)
+  aiDifficulty    Int?      // AI 难度 1-5
+  aiPersonality   String?   // AI 性格类型
+  
+  // 游戏状态
+  stateSnapshot   Json?     // 当前回合的玩家状态快照
+  isReady         Boolean   @default(false)  // 在大厅中是否准备好
+  hasEndedTurn    Boolean   @default(false)  // 本回合是否已结束
+  
+  // 游戏结果
+  isEliminated    Boolean   @default(false)
+  eliminatedTurn  Int?
+  victoryType     String?   // 胜利类型（如果获胜）
+  finalScore      Int?
+  
+  @@unique([gameId, playerIndex])
+  @@index([gameId])
+  @@index([userId])
+}
+
+// ==================== 回合记录 ====================
+
+model TurnRecord {
+  id          String    @id @default(cuid())
+  
+  gameId      String
+  game        Game      @relation(fields: [gameId], references: [id], onDelete: Cascade)
+  
+  turnNumber  Int
+  
+  // 回合数据
+  actions     Json      // 该回合所有玩家的操作列表
+  events      Json      // 该回合发生的事件
+  gameState   Json      // 回合结束时的完整游戏状态（用于回放/存档）
+  
+  // 元数据
+  duration    Int?      // 回合耗时（毫秒）
+  createdAt   DateTime  @default(now())
+  
+  @@unique([gameId, turnNumber])
+  @@index([gameId])
+}
+
+// ==================== 玩家统计 ====================
+
+model PlayerStats {
+  id              String    @id @default(cuid())
+  
+  userId          String    @unique
+  user            User      @relation(fields: [userId], references: [id])
+  
+  // 基础统计
+  gamesPlayed     Int       @default(0)
+  gamesWon        Int       @default(0)
+  gamesLost       Int       @default(0)
+  totalTurns      Int       @default(0)
+  totalPlayTime   Int       @default(0)  // 分钟
+  
+  // 胜利类型统计
+  conquestWins    Int       @default(0)  // 征服胜利
+  cultureWins     Int       @default(0)  // 文化胜利
+  scienceWins     Int       @default(0)  // 科技胜利
+  diplomacyWins   Int       @default(0)  // 外交胜利
+  
+  // 成就统计
+  citiesFounded   Int       @default(0)
+  unitsKilled     Int       @default(0)
+  techsResearched Int       @default(0)
+  
+  // 最高分
+  highestScore    Int       @default(0)
+  
+  updatedAt       DateTime  @updatedAt
+}
+```
+
+## 关键设计决策
+
+### 0. JSON vs 关系型：为什么选择混合方案
+
+#### 方案对比
+
+| 方案 | 优点 | 缺点 |
+|-----|------|------|
+| **纯关系型** (Tile/Unit/City 各自建表) | 精细查询、索引优化、事务一致性 | 读取完整状态需多次 JOIN、Schema 变更复杂 |
+| **纯 JSON** (全部存 JSON 字段) | 读写简单、Schema 灵活、存档方便 | 无法跨游戏查询、大数据量时效率低 |
+| **混合方案** ✅ | 兼顾两者优势 | 需要设计好边界 |
+
+#### 为什么选择混合方案
+
+1. **回合制游戏特性**：每回合需要读取/写入完整游戏状态，JSON 一次读写更高效
+2. **无跨游戏查询需求**：不需要"找出所有游戏中攻击力最高的单位"这类查询
+3. **状态变化频繁**：游戏进行中每秒可能多次状态变化，放内存/Redis 更快
+4. **存档/回放需求**：JSON 天然适合完整快照
+
+#### 最终方案
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    数据存储分层                              │
+├─────────────────────────────────────────────────────────────┤
+│  关系型表 (PostgreSQL)                                       │
+│  ├── User, PlayerStats (用户数据，跨游戏)                    │
+│  ├── Game, GamePlayer (游戏元数据)                           │
+│  └── TurnRecord (历史记录，用于回放)                         │
+├─────────────────────────────────────────────────────────────┤
+│  JSON 字段 (PostgreSQL JSONB)                               │
+│  ├── Game.mapData (地图静态数据)                             │
+│  ├── Game.settings (游戏设置)                                │
+│  ├── GamePlayer.stateSnapshot (玩家动态状态)                 │
+│  └── TurnRecord.gameState (回合快照)                         │
+├─────────────────────────────────────────────────────────────┤
+│  运行时缓存 (可选 Redis / 内存)                              │
+│  └── 活跃游戏的完整状态对象，定期持久化到 DB                  │
+└─────────────────────────────────────────────────────────────┘
+```
+
+### 1. 游戏状态存储
+
+游戏状态采用 **快照 + 增量** 的方式存储：
+
+- `Game.mapData`: 存储地图的静态数据（地形、资源位置等）
+- `GamePlayer.stateSnapshot`: 每个玩家的当前状态（单位、城市、科技等）
+- `TurnRecord.gameState`: 每回合完整快照，用于回放和存档
+
+### 2. JSON 字段结构
+
+#### `Game.settings`
+```typescript
+interface GameSettings {
+  mapSize: 'small' | 'standard' | 'large';  // 地图大小
+  mapType: 'continents' | 'pangaea' | 'islands';  // 地图类型
+  gameSpeed: 'quick' | 'standard' | 'epic';  // 游戏速度
+  difficulty: 1 | 2 | 3 | 4 | 5;  // AI 难度
+  maxPlayers: number;
+  victoryConditions: string[];  // 启用的胜利条件
+}
+```
+
+#### `GamePlayer.stateSnapshot`
+```typescript
+interface PlayerState {
+  resources: {
+    gold: number;
+    food: number;
+    production: number;
+    science: number;
+    culture: number;
+    faith: number;
+  };
+  cities: City[];
+  units: Unit[];
+  techs: string[];  // 已研究的科技 ID
+  civics: string[];  // 已完成的市政 ID
+  currentResearch: { techId: string; progress: number } | null;
+  currentCivic: { civicId: string; progress: number } | null;
+  visibility: number[][];  // 可见格子
+  explored: number[][];  // 已探索格子
+}
+```
+
+#### `TurnRecord.actions`
+```typescript
+interface TurnActions {
+  playerId: string;
+  actions: GameAction[];
+}[]
+```
+
+### 3. 索引策略
+
+- `GamePlayer` 按 `gameId` 和 `userId` 建立索引，加速查询
+- `TurnRecord` 按 `gameId` 建立索引，支持回放功能
+- 使用复合唯一索引防止数据重复
+
+### 4. 级联删除
+
+删除游戏时，自动级联删除：
+- 所有 `GamePlayer` 记录
+- 所有 `TurnRecord` 记录
+
+## PVP 解锁与积分制扩展 (规划)
+
+- PlayerStats.maxAIDifficultyBeaten: 记录最高击败的 AI 难度
+- PlayerStats.pvpRating 或 pvpPoints: 排位积分
+- User.pvpUnlocked: 是否已解锁 PVP (也可由统计派生)
+- RankHistory / MatchResult: 赛季与战绩历史 (可选)
+

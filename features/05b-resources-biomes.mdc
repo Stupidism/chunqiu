@@ -1,0 +1,681 @@
+---
+description: 春秋项目资源与生物群落系统详细设计
+globs: ["**/map/**", "**/resource/**", "**/biome/**"]
+alwaysApply: false
+---
+
+# 资源与生物群落系统 (Resources & Biomes)
+
+## 概述
+
+资源系统为地块提供额外产出和战略价值。生物群落（Biomes）决定了地图不同区域的气候特征，影响地形、资源和动植物分布。
+
+---
+
+## 一、资源分类
+
+资源分为三大类：
+- **奖励资源 (Bonus)**: 提供产出但可被收获消耗
+- **奢侈资源 (Luxury)**: 提供宜居度，可交易
+- **战略资源 (Strategic)**: 生产特定单位所需
+
+---
+
+## 二、奖励资源 (Bonus Resources)
+
+奖励资源提供额外产出，可被工人"收获"获得一次性产出。
+
+| 资源 | 基础产出 | 改良后 | 改良设施 | 出现地形 |
+|-----|---------|--------|---------|---------|
+| **稻米** | +1 粮食 | +1 粮食 | 农场 | 草原(泛滥) |
+| **小麦** | +1 粮食 | +1 粮食 | 农场 | 平原 |
+| **玉米** | +1 粮食 | +1 粮食 | 农场 | 草原/平原 |
+| **牛** | +1 粮食 | +1 粮食 | 牧场 | 草原 |
+| **羊** | +1 粮食 | +1 粮食 | 牧场 | 草原/平原丘陵 |
+| **鹿** | +1 生产 | +1 生产 | 营地 | 苔原/森林 |
+| **鱼** | +1 粮食 | +1 粮食 | 渔船 | 海岸 |
+| **蟹** | +1 金币 | +1 金币 | 渔船 | 海岸 |
+| **香蕉** | +1 粮食 | +1 粮食 | 种植园 | 雨林 |
+| **铜** | +2 金币 | +1 金币 | 矿山 | 丘陵 |
+| **石材** | +1 生产 | +1 生产 | 采石场 | 丘陵/草原 |
+
+```typescript
+enum ResourceCategory {
+  BONUS = 'bonus',
+  LUXURY = 'luxury',
+  STRATEGIC = 'strategic',
+}
+
+interface ResourceDefinition {
+  id: string;
+  name: string;
+  category: ResourceCategory;
+  
+  // 基础产出（未改良）
+  baseYields: {
+    food?: number;
+    production?: number;
+    gold?: number;
+    science?: number;
+    culture?: number;
+    faith?: number;
+  };
+  
+  // 改良后额外产出
+  improvedYields: {
+    food?: number;
+    production?: number;
+    gold?: number;
+  };
+  
+  // 需要的改良设施
+  improvement: string;
+  
+  // 出现条件
+  validTerrains: TerrainType[];
+  validFeatures: FeatureType[];
+  validElevations: Elevation[];
+  
+  // 揭示科技（战略资源）
+  revealTech?: string;
+  
+  // 奢侈资源相关
+  amenities?: number;  // 提供的宜居度
+  
+  // 是否可收获
+  harvestable: boolean;
+  harvestYield?: { type: string; amount: number };
+}
+
+const BONUS_RESOURCES: ResourceDefinition[] = [
+  {
+    id: 'rice',
+    name: '稻米',
+    category: ResourceCategory.BONUS,
+    baseYields: { food: 1 },
+    improvedYields: { food: 1 },
+    improvement: 'farm',
+    validTerrains: [TerrainType.GRASSLAND],
+    validFeatures: [FeatureType.FLOODPLAINS, FeatureType.MARSH],
+    validElevations: [Elevation.FLAT],
+    harvestable: true,
+    harvestYield: { type: 'food', amount: 50 },
+  },
+  {
+    id: 'wheat',
+    name: '小麦',
+    category: ResourceCategory.BONUS,
+    baseYields: { food: 1 },
+    improvedYields: { food: 1 },
+    improvement: 'farm',
+    validTerrains: [TerrainType.PLAINS],
+    validFeatures: [FeatureType.FLOODPLAINS],
+    validElevations: [Elevation.FLAT],
+    harvestable: true,
+    harvestYield: { type: 'food', amount: 50 },
+  },
+  {
+    id: 'cattle',
+    name: '牛',
+    category: ResourceCategory.BONUS,
+    baseYields: { food: 1 },
+    improvedYields: { food: 1 },
+    improvement: 'pasture',
+    validTerrains: [TerrainType.GRASSLAND],
+    validFeatures: [],
+    validElevations: [Elevation.FLAT],
+    harvestable: true,
+    harvestYield: { type: 'food', amount: 50 },
+  },
+  {
+    id: 'sheep',
+    name: '羊',
+    category: ResourceCategory.BONUS,
+    baseYields: { food: 1 },
+    improvedYields: { food: 1 },
+    improvement: 'pasture',
+    validTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS, TerrainType.DESERT, TerrainType.TUNDRA],
+    validFeatures: [],
+    validElevations: [Elevation.FLAT, Elevation.HILLS],
+    harvestable: true,
+    harvestYield: { type: 'food', amount: 50 },
+  },
+  {
+    id: 'deer',
+    name: '鹿',
+    category: ResourceCategory.BONUS,
+    baseYields: { production: 1 },
+    improvedYields: { production: 1 },
+    improvement: 'camp',
+    validTerrains: [TerrainType.TUNDRA, TerrainType.GRASSLAND, TerrainType.PLAINS],
+    validFeatures: [FeatureType.WOODS],
+    validElevations: [Elevation.FLAT, Elevation.HILLS],
+    harvestable: true,
+    harvestYield: { type: 'production', amount: 50 },
+  },
+  {
+    id: 'fish',
+    name: '鱼',
+    category: ResourceCategory.BONUS,
+    baseYields: { food: 1 },
+    improvedYields: { food: 1 },
+    improvement: 'fishing_boats',
+    validTerrains: [TerrainType.COAST],
+    validFeatures: [],
+    validElevations: [Elevation.FLAT],
+    harvestable: false,
+  },
+  {
+    id: 'stone',
+    name: '石材',
+    category: ResourceCategory.BONUS,
+    baseYields: { production: 1 },
+    improvedYields: { production: 1 },
+    improvement: 'quarry',
+    validTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS, TerrainType.DESERT],
+    validFeatures: [],
+    validElevations: [Elevation.FLAT, Elevation.HILLS],
+    harvestable: true,
+    harvestYield: { type: 'production', amount: 75 },
+  },
+];
+```
+
+---
+
+## 三、奢侈资源 (Luxury Resources)
+
+奢侈资源提供宜居度，每种奢侈资源对前4个城市各+1宜居度。
+
+| 资源 | 金币 | 其他 | 改良 | 出现地形 |
+|-----|------|------|------|---------|
+| **丝绸** | +1 | +1文化 | 种植园 | 森林 |
+| **棉花** | +1 | +1粮食 | 种植园 | 草原/平原 |
+| **染料** | +1 | +1信仰 | 种植园 | 雨林 |
+| **香料** | +2 | - | 种植园 | 雨林 |
+| **糖** | +2 | - | 种植园 | 泛滥平原 |
+| **茶叶** | +1 | +1文化 | 种植园 | 丘陵 |
+| **咖啡** | +1 | +1文化 | 种植园 | 丘陵 |
+| **烟草** | +1 | +1信仰 | 种植园 | 草原/平原 |
+| **可可** | +3 | - | 种植园 | 雨林 |
+| **香** | +1 | +1信仰 | 种植园 | 沙漠 |
+| **葡萄酒** | +1 | +1粮食 | 种植园 | 草原/平原 |
+| **黄金** | +3 | - | 矿山 | 丘陵 |
+| **白银** | +2 | - | 矿山 | 丘陵/沙漠 |
+| **钻石** | +3 | - | 矿山 | 雨林/丘陵 |
+| **翡翠** | +2 | +1信仰 | 矿山 | 雨林 |
+| **宝石** | +3 | - | 矿山 | 丘陵 |
+| **大理石** | +1 | +1文化 | 采石场 | 丘陵/草原 |
+| **象牙** | +1 | +1生产 | 营地 | 草原/平原 |
+| **皮草** | +1 | +1粮食 | 营地 | 苔原/森林 |
+| **鲸** | +1 | +1生产 | 渔船 | 海岸 |
+| **珍珠** | +1 | +1信仰 | 渔船 | 海岸/礁石 |
+| **珊瑚** | +2 | - | 渔船 | 海岸/礁石 |
+| **龟** | +1 | +1科研 | 渔船 | 海岸/礁石 |
+| **盐** | +1 | +1粮食 | 矿山 | 平原/沙漠 |
+| **蜂蜜** | +2 | - | 营地 | 草原/平原 |
+| **鸢尾** | +3 | - | 种植园 | 沼泽 |
+| **松露** | +3 | - | 营地 | 森林/雨林 |
+
+```typescript
+const LUXURY_RESOURCES: ResourceDefinition[] = [
+  {
+    id: 'silk',
+    name: '丝绸',
+    category: ResourceCategory.LUXURY,
+    baseYields: { gold: 1, culture: 1 },
+    improvedYields: { gold: 1 },
+    improvement: 'plantation',
+    validTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS],
+    validFeatures: [FeatureType.WOODS],
+    validElevations: [Elevation.FLAT],
+    amenities: 1,
+    harvestable: false,
+  },
+  {
+    id: 'cotton',
+    name: '棉花',
+    category: ResourceCategory.LUXURY,
+    baseYields: { gold: 1, food: 1 },
+    improvedYields: { gold: 1 },
+    improvement: 'plantation',
+    validTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS],
+    validFeatures: [],
+    validElevations: [Elevation.FLAT],
+    amenities: 1,
+    harvestable: false,
+  },
+  {
+    id: 'gold_ore',
+    name: '黄金',
+    category: ResourceCategory.LUXURY,
+    baseYields: { gold: 3 },
+    improvedYields: { gold: 2 },
+    improvement: 'mine',
+    validTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS, TerrainType.DESERT],
+    validFeatures: [],
+    validElevations: [Elevation.HILLS],
+    amenities: 1,
+    harvestable: false,
+  },
+  {
+    id: 'silver',
+    name: '白银',
+    category: ResourceCategory.LUXURY,
+    baseYields: { gold: 2 },
+    improvedYields: { gold: 2 },
+    improvement: 'mine',
+    validTerrains: [TerrainType.DESERT, TerrainType.TUNDRA],
+    validFeatures: [],
+    validElevations: [Elevation.HILLS, Elevation.FLAT],
+    amenities: 1,
+    harvestable: false,
+  },
+  {
+    id: 'diamonds',
+    name: '钻石',
+    category: ResourceCategory.LUXURY,
+    baseYields: { gold: 3 },
+    improvedYields: { gold: 2 },
+    improvement: 'mine',
+    validTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS],
+    validFeatures: [FeatureType.RAINFOREST],
+    validElevations: [Elevation.HILLS],
+    amenities: 1,
+    harvestable: false,
+  },
+  {
+    id: 'ivory',
+    name: '象牙',
+    category: ResourceCategory.LUXURY,
+    baseYields: { gold: 1, production: 1 },
+    improvedYields: { gold: 1 },
+    improvement: 'camp',
+    validTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS, TerrainType.DESERT],
+    validFeatures: [],
+    validElevations: [Elevation.FLAT],
+    amenities: 1,
+    harvestable: false,
+  },
+  {
+    id: 'furs',
+    name: '皮草',
+    category: ResourceCategory.LUXURY,
+    baseYields: { gold: 1, food: 1 },
+    improvedYields: { gold: 1 },
+    improvement: 'camp',
+    validTerrains: [TerrainType.TUNDRA, TerrainType.GRASSLAND],
+    validFeatures: [FeatureType.WOODS],
+    validElevations: [Elevation.FLAT, Elevation.HILLS],
+    amenities: 1,
+    harvestable: false,
+  },
+  {
+    id: 'whales',
+    name: '鲸',
+    category: ResourceCategory.LUXURY,
+    baseYields: { gold: 1, production: 1 },
+    improvedYields: { gold: 1 },
+    improvement: 'fishing_boats',
+    validTerrains: [TerrainType.COAST, TerrainType.OCEAN],
+    validFeatures: [],
+    validElevations: [Elevation.FLAT],
+    amenities: 1,
+    harvestable: false,
+  },
+  {
+    id: 'pearls',
+    name: '珍珠',
+    category: ResourceCategory.LUXURY,
+    baseYields: { gold: 1, faith: 1 },
+    improvedYields: { gold: 1 },
+    improvement: 'fishing_boats',
+    validTerrains: [TerrainType.COAST],
+    validFeatures: [FeatureType.REEF],
+    validElevations: [Elevation.FLAT],
+    amenities: 1,
+    harvestable: false,
+  },
+];
+```
+
+---
+
+## 四、战略资源 (Strategic Resources)
+
+战略资源用于生产特定单位，需要科技揭示。
+
+| 资源 | 产出 | 改良 | 出现地形 | 揭示科技 | 用于单位 |
+|-----|------|------|---------|---------|---------|
+| **马** | +1生产 +1粮食 | 牧场 | 草原/平原 | 畜牧 | 骑兵类 |
+| **铁** | +1科研 | 矿山 | 丘陵/沙漠 | 青铜冶炼 | 剑士、骑士 |
+| **硝石** | +1生产 +1粮食 | 矿山 | 沙漠/苔原 | 火药 | 火枪手等 |
+| **煤** | +2生产 | 矿山 | 丘陵 | 科学理论 | 铁甲舰等 |
+| **石油** | +3生产 | 油井/海上平台 | 沙漠/苔原/海岸 | 电力 | 坦克等 |
+| **铝** | +1科研 | 矿山 | 沙漠/平原 | 钢铁 | 飞机等 |
+| **铀** | +2生产 | 矿山 | 雨林/沙漠 | 核裂变 | 核武器 |
+
+```typescript
+const STRATEGIC_RESOURCES: ResourceDefinition[] = [
+  {
+    id: 'horses',
+    name: '马',
+    category: ResourceCategory.STRATEGIC,
+    baseYields: { production: 1, food: 1 },
+    improvedYields: { production: 1 },
+    improvement: 'pasture',
+    validTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS],
+    validFeatures: [],
+    validElevations: [Elevation.FLAT],
+    revealTech: 'animal_husbandry',
+    harvestable: false,
+  },
+  {
+    id: 'iron',
+    name: '铁',
+    category: ResourceCategory.STRATEGIC,
+    baseYields: { science: 1 },
+    improvedYields: { production: 1 },
+    improvement: 'mine',
+    validTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS, TerrainType.DESERT, TerrainType.TUNDRA, TerrainType.SNOW],
+    validFeatures: [],
+    validElevations: [Elevation.HILLS, Elevation.FLAT],
+    revealTech: 'bronze_working',
+    harvestable: false,
+  },
+  {
+    id: 'niter',
+    name: '硝石',
+    category: ResourceCategory.STRATEGIC,
+    baseYields: { production: 1, food: 1 },
+    improvedYields: { production: 1 },
+    improvement: 'mine',
+    validTerrains: [TerrainType.DESERT, TerrainType.TUNDRA],
+    validFeatures: [],
+    validElevations: [Elevation.FLAT],
+    revealTech: 'gunpowder',
+    harvestable: false,
+  },
+  {
+    id: 'coal',
+    name: '煤',
+    category: ResourceCategory.STRATEGIC,
+    baseYields: { production: 2 },
+    improvedYields: { production: 1 },
+    improvement: 'mine',
+    validTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS],
+    validFeatures: [],
+    validElevations: [Elevation.HILLS],
+    revealTech: 'scientific_theory',
+    harvestable: false,
+  },
+  {
+    id: 'oil',
+    name: '石油',
+    category: ResourceCategory.STRATEGIC,
+    baseYields: { production: 3 },
+    improvedYields: { production: 2 },
+    improvement: 'oil_well', // 或 offshore_platform
+    validTerrains: [TerrainType.DESERT, TerrainType.TUNDRA, TerrainType.SNOW, TerrainType.COAST, TerrainType.OCEAN],
+    validFeatures: [FeatureType.MARSH, FeatureType.RAINFOREST],
+    validElevations: [Elevation.FLAT],
+    revealTech: 'electricity',
+    harvestable: false,
+  },
+  {
+    id: 'aluminum',
+    name: '铝',
+    category: ResourceCategory.STRATEGIC,
+    baseYields: { science: 1 },
+    improvedYields: { production: 1 },
+    improvement: 'mine',
+    validTerrains: [TerrainType.DESERT, TerrainType.PLAINS],
+    validFeatures: [],
+    validElevations: [Elevation.HILLS],
+    revealTech: 'steel',
+    harvestable: false,
+  },
+  {
+    id: 'uranium',
+    name: '铀',
+    category: ResourceCategory.STRATEGIC,
+    baseYields: { production: 2 },
+    improvedYields: { production: 1 },
+    improvement: 'mine',
+    validTerrains: [TerrainType.DESERT, TerrainType.TUNDRA, TerrainType.SNOW],
+    validFeatures: [FeatureType.RAINFOREST, FeatureType.MARSH],
+    validElevations: [Elevation.FLAT, Elevation.HILLS],
+    revealTech: 'nuclear_fission',
+    harvestable: false,
+  },
+];
+```
+
+---
+
+## 五、生物群落 (Biomes)
+
+生物群落定义了地图不同区域的气候和生态特征。
+
+### 气候带分布
+
+```
+极地        苔原        温带        热带        温带        苔原        极地
+├──────────┼───────────┼───────────┼───────────┼───────────┼───────────┤
+北极        北方        中纬度      赤道        中纬度      南方        南极
+(雪地)      (苔原)      (草原/平原) (雨林)      (草原/平原) (苔原)      (雪地)
+```
+
+### 生物群落类型
+
+| 生物群落 | 主要地形 | 特征 | 典型资源 | 动物 |
+|---------|---------|------|---------|------|
+| **热带雨林** | 草原 | 雨林覆盖 | 香蕉、可可、染料、钻石 | 大象、猴子 |
+| **热带草原** | 草原/平原 | 稀树草原 | 象牙、棉花 | 狮子、斑马 |
+| **沙漠** | 沙漠 | 干旱少雨 | 盐、香、绿洲 | 骆驼 |
+| **地中海** | 草原/平原 | 温和气候 | 葡萄酒、橄榄、柑橘 | - |
+| **温带森林** | 草原/平原 | 森林覆盖 | 鹿、皮草、丝绸、松露 | 鹿、熊 |
+| **温带草原** | 平原 | 开阔草原 | 小麦、牛、马 | 野牛 |
+| **针叶林** | 苔原 | 针叶森林 | 皮草、鹿 | 驯鹿、狼 |
+| **苔原** | 苔原/雪地 | 永冻土 | 皮草、石油、铀 | 驯鹿、海豹 |
+| **极地冰原** | 雪地 | 冰雪覆盖 | - | 企鹅、北极熊 |
+
+```typescript
+enum BiomeType {
+  TROPICAL_RAINFOREST = 'tropical_rainforest',
+  TROPICAL_SAVANNA = 'tropical_savanna',
+  DESERT = 'desert',
+  MEDITERRANEAN = 'mediterranean',
+  TEMPERATE_FOREST = 'temperate_forest',
+  TEMPERATE_GRASSLAND = 'temperate_grassland',
+  BOREAL_FOREST = 'boreal_forest',
+  TUNDRA = 'tundra',
+  POLAR_ICE = 'polar_ice',
+}
+
+interface BiomeDefinition {
+  type: BiomeType;
+  name: string;
+  latitudeRange: { min: number; max: number }; // 纬度范围 (0=赤道, 90=极地)
+  terrains: TerrainType[];
+  features: FeatureType[];
+  commonResources: string[];
+  rareResources: string[];
+  wildAnimals: string[];  // 装饰性动物
+  temperature: 'hot' | 'warm' | 'temperate' | 'cold' | 'freezing';
+  precipitation: 'arid' | 'dry' | 'moderate' | 'wet' | 'very_wet';
+}
+
+const BIOME_DEFINITIONS: BiomeDefinition[] = [
+  {
+    type: BiomeType.TROPICAL_RAINFOREST,
+    name: '热带雨林',
+    latitudeRange: { min: 0, max: 15 },
+    terrains: [TerrainType.GRASSLAND, TerrainType.PLAINS],
+    features: [FeatureType.RAINFOREST],
+    commonResources: ['bananas', 'dyes', 'spices'],
+    rareResources: ['diamonds', 'jade', 'cocoa', 'truffles'],
+    wildAnimals: ['elephant', 'monkey', 'parrot', 'jaguar'],
+    temperature: 'hot',
+    precipitation: 'very_wet',
+  },
+  {
+    type: BiomeType.TROPICAL_SAVANNA,
+    name: '热带草原',
+    latitudeRange: { min: 10, max: 25 },
+    terrains: [TerrainType.GRASSLAND, TerrainType.PLAINS],
+    features: [],
+    commonResources: ['cotton', 'cattle', 'ivory'],
+    rareResources: ['gold_ore'],
+    wildAnimals: ['lion', 'zebra', 'giraffe', 'elephant'],
+    temperature: 'hot',
+    precipitation: 'dry',
+  },
+  {
+    type: BiomeType.DESERT,
+    name: '沙漠',
+    latitudeRange: { min: 20, max: 35 },
+    terrains: [TerrainType.DESERT],
+    features: [FeatureType.OASIS, FeatureType.FLOODPLAINS],
+    commonResources: ['incense', 'salt'],
+    rareResources: ['oil', 'niter', 'gold_ore'],
+    wildAnimals: ['camel', 'scorpion', 'snake'],
+    temperature: 'hot',
+    precipitation: 'arid',
+  },
+  {
+    type: BiomeType.MEDITERRANEAN,
+    name: '地中海气候',
+    latitudeRange: { min: 30, max: 45 },
+    terrains: [TerrainType.GRASSLAND, TerrainType.PLAINS],
+    features: [],
+    commonResources: ['wine', 'olives', 'citrus'],
+    rareResources: ['marble'],
+    wildAnimals: ['deer', 'boar'],
+    temperature: 'warm',
+    precipitation: 'moderate',
+  },
+  {
+    type: BiomeType.TEMPERATE_FOREST,
+    name: '温带森林',
+    latitudeRange: { min: 40, max: 55 },
+    terrains: [TerrainType.GRASSLAND, TerrainType.PLAINS],
+    features: [FeatureType.WOODS],
+    commonResources: ['deer', 'furs', 'silk'],
+    rareResources: ['truffles', 'honey'],
+    wildAnimals: ['deer', 'bear', 'wolf', 'fox'],
+    temperature: 'temperate',
+    precipitation: 'moderate',
+  },
+  {
+    type: BiomeType.TEMPERATE_GRASSLAND,
+    name: '温带草原',
+    latitudeRange: { min: 35, max: 55 },
+    terrains: [TerrainType.PLAINS],
+    features: [],
+    commonResources: ['wheat', 'cattle', 'horses'],
+    rareResources: ['iron', 'coal'],
+    wildAnimals: ['bison', 'prairie_dog'],
+    temperature: 'temperate',
+    precipitation: 'dry',
+  },
+  {
+    type: BiomeType.BOREAL_FOREST,
+    name: '针叶林',
+    latitudeRange: { min: 50, max: 65 },
+    terrains: [TerrainType.TUNDRA, TerrainType.PLAINS],
+    features: [FeatureType.WOODS],
+    commonResources: ['furs', 'deer'],
+    rareResources: ['silver'],
+    wildAnimals: ['reindeer', 'wolf', 'moose', 'bear'],
+    temperature: 'cold',
+    precipitation: 'moderate',
+  },
+  {
+    type: BiomeType.TUNDRA,
+    name: '苔原',
+    latitudeRange: { min: 60, max: 75 },
+    terrains: [TerrainType.TUNDRA, TerrainType.SNOW],
+    features: [],
+    commonResources: ['furs'],
+    rareResources: ['oil', 'uranium'],
+    wildAnimals: ['reindeer', 'seal', 'polar_bear', 'arctic_fox'],
+    temperature: 'freezing',
+    precipitation: 'dry',
+  },
+  {
+    type: BiomeType.POLAR_ICE,
+    name: '极地冰原',
+    latitudeRange: { min: 70, max: 90 },
+    terrains: [TerrainType.SNOW],
+    features: [FeatureType.ICE],
+    commonResources: [],
+    rareResources: [],
+    wildAnimals: ['penguin', 'polar_bear', 'seal'],
+    temperature: 'freezing',
+    precipitation: 'arid',
+  },
+];
+```
+
+---
+
+## 六、野生动物系统 (装饰性)
+
+野生动物为地图增添生机，仅作装饰无游戏影响。
+
+```typescript
+interface WildAnimal {
+  id: string;
+  name: string;
+  biomes: BiomeType[];  // 出现的生物群落
+  sprite: string;       // 动画精灵
+  movementPattern: 'stationary' | 'roaming' | 'herd';
+  groupSize: { min: number; max: number };
+}
+
+const WILD_ANIMALS: WildAnimal[] = [
+  {
+    id: 'deer',
+    name: '鹿',
+    biomes: [BiomeType.TEMPERATE_FOREST, BiomeType.BOREAL_FOREST],
+    sprite: 'deer',
+    movementPattern: 'roaming',
+    groupSize: { min: 2, max: 5 },
+  },
+  {
+    id: 'elephant',
+    name: '大象',
+    biomes: [BiomeType.TROPICAL_RAINFOREST, BiomeType.TROPICAL_SAVANNA],
+    sprite: 'elephant',
+    movementPattern: 'herd',
+    groupSize: { min: 3, max: 8 },
+  },
+  {
+    id: 'wolf',
+    name: '狼',
+    biomes: [BiomeType.TEMPERATE_FOREST, BiomeType.BOREAL_FOREST, BiomeType.TUNDRA],
+    sprite: 'wolf',
+    movementPattern: 'roaming',
+    groupSize: { min: 3, max: 6 },
+  },
+  // ... 更多动物
+];
+```
+
+---
+
+## 七、改良设施 (Improvements)
+
+| 改良 | 解锁 | 产出 | 可建地形 |
+|-----|------|------|---------|
+| **农场** | 灌溉 | +1粮食 (+1封建主义后相邻农场) | 平地 |
+| **矿山** | 采矿 | +1生产 (+1学徒制后) | 丘陵/资源 |
+| **牧场** | 畜牧 | +1生产 | 马/牛/羊资源 |
+| **种植园** | 灌溉 | +2金币 | 奢侈资源 |
+| **营地** | 畜牧 | +1金币 | 鹿/皮草/象牙 |
+| **采石场** | 石工 | +1生产 | 石材/大理石 |
+| **渔船** | 航海 | +1粮食 | 海洋资源 |
+| **伐木场** | 建筑学 | +1生产 | 森林 |
+| **油井** | 电力 | +2生产 | 陆地石油 |
+| **海上平台** | 塑料 | +2生产 | 海洋石油 |

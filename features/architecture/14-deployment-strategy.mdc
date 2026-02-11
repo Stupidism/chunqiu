@@ -1,0 +1,71 @@
+---
+description: 架构文档 - 14 多应用部署与域名策略
+globs: ["**/*"]
+alwaysApply: false
+---
+
+# 14 多应用部署与域名策略
+
+本文件描述在多 app 架构下的部署与域名组织方式。本文为设计文档，不包含实现代码。
+
+## 目标
+- 多应用独立部署与回滚
+- 共享认证与会话
+- WebSocket 低延迟与稳定性
+- 便于扩容与区域化
+
+## 方案 A: 子域名分离 (推荐)
+
+### 域名规划
+- lobby.example.com
+- game.example.com
+- editor.example.com
+- server.example.com (HTTP API)
+- ws.example.com (WebSocket)
+
+### 优点
+- 应用边界清晰，独立发布与扩容
+- 缓存与 CDN 规则可分离
+- 故障隔离更好
+
+### 注意事项
+- 认证 Cookie 需设置 Domain 为顶级域名 (例如 `.example.com`)
+- server/ws 需要配置 CORS，允许 lobby/game/editor
+- WebSocket 需开启长连接与心跳
+
+## 方案 B: 单域名子路径
+
+### 域名规划
+- example.com/lobby
+- example.com/game
+- example.com/editor
+- example.com/api
+- example.com/ws
+
+### 优点
+- 认证与跳转更简单
+- SEO 与统一入口更清晰
+
+### 缺点
+- 部署拆分与缓存策略更复杂
+- 容易出现路由与静态资源冲突
+
+## 推荐实践
+- 前端多应用独立部署到不同子域
+- 后端服务使用独立部署，提供 HTTP + WS
+- `apps/server` 运行在稳定的长连接环境 (容器或常驻实例)
+- 关键环境变量在各 app 内统一注入：
+  - NEXT_PUBLIC_API_URL
+  - NEXT_PUBLIC_WS_URL
+  - NEXT_PUBLIC_ASSET_CDN
+
+## 认证与会话
+- 统一登录入口在 lobby
+- 使用 HttpOnly Cookie + 顶级域名共享
+- game/editor 通过共享 Cookie 自动登录
+
+## WebSocket 连接策略
+- 连接建立后发送 JOIN_GAME
+- 心跳 30 秒，60 秒无响应断线重连
+- PVP 实时结算需低延迟与稳定连接
+

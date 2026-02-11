@@ -1,0 +1,33 @@
+---
+description: 架构文档 - 12 协议与事件概念
+globs: ["**/*"]
+alwaysApply: false
+---
+
+# 12 协议与事件概念
+
+本文件描述客户端与服务器通信的概念结构。本文为设计文档，不包含实现代码。
+
+## HTTP API 范畴
+- 地图创建与发布
+- 存档管理
+- 回放查询
+- 排位与统计
+
+## WebSocket 事件范畴
+- JOIN_GAME / LEAVE_GAME
+- GAME_ACTION
+- END_TURN
+- GAME_STATE / STATE_PATCH
+- TURN_START / TURN_END
+- AI_TURN_PROGRESS
+- CHAT
+
+## 类型归属
+- 共享类型定义放在 packages/types
+
+## 一致性原则
+- 客户端只提交意图
+- 服务器权威结算
+- 事件按服务器时间序列化
+

@@ -1,0 +1,119 @@
+---
+description: Fetching data from the API using openapi-react-query
+globs: 
+alwaysApply: false
+---
+
+# Data Fetching
+
+使用 `openapi-react-query` + `@tanstack/react-query` 进行类型安全的数据获取。
+
+## 项目结构
+
+```
+src/lib/api/
+├── openapi-types.d.ts   # 从 OpenAPI spec 自动生成的类型
+├── client.ts            # openapi-fetch + openapi-react-query 客户端
+└── hooks.ts             # 封装好的 React Query hooks
+```
+
+## 生成类型
+
+当 API 接口变更时，更新 `openapi.yaml` 后运行：
+
+```bash
+npm run generate:api
+```
+
+这会从 `openapi.yaml` 生成 `src/lib/api/openapi-types.d.ts`。
+
+## 使用方式
+
+### 1. 使用封装好的 Hooks（推荐）
+
+```tsx
+import { useActivities, useCreateActivity, useBabyProfile } from '@/lib/api/hooks'
+
+function ActivityList() {
+  // GET 请求
+  const { data: activities, isLoading } = useActivities({ date: '2024-01-01' })
+  
+  // POST 请求
+  const createActivity = useCreateActivity()
+  
+  const handleSubmit = () => {
+    createActivity.mutate({
+      body: {
+        type: 'SLEEP',
+        recordTime: new Date().toISOString(),
+      },
+    })
+  }
+}
+```
+
+### 2. 直接使用 $api 客户端
+
+```tsx
+import { $api } from '@/lib/api/client'
+
+function MyComponent() {
+  // GET
+  const { data } = $api.useQuery("get", "/activities", {
+    params: { query: { date: "2024-01-01" } },
+  })
+
+  // POST/PATCH/DELETE
+  const mutation = $api.useMutation("post", "/activities")
+  mutation.mutate({
+    body: { type: 'SLEEP', recordTime: new Date().toISOString() },
+  })
+}
+```
+
+## Hooks 列表
+
+### Activities
+- `useActivities(params?)` - 获取活动列表
+- `useLatestActivity(types)` - 获取某类活动的最新记录
+- `useActivity(id)` - 获取单个活动
+- `useCreateActivity()` - 创建活动
+- `useUpdateActivity()` - 更新活动
+- `useDeleteActivity()` - 删除活动
+- `useBatchDeleteActivities()` - 批量删除活动
+- `useSleepState()` - 获取睡眠状态
+
+### Baby Profile
+- `useBabyProfile()` - 获取宝宝资料
+- `useUpdateBabyProfile()` - 更新宝宝资料
+
+## Cache Invalidation
+
+Mutations 自动 invalidate 相关的 queries：
+
+```tsx
+const createActivity = useCreateActivity()
+
+// 创建成功后会自动刷新 activities 列表
+createActivity.mutate(data, {
+  onSuccess: () => {
+    toast.success('记录成功')
+  },
+  onError: (error) => {
+    toast.error(error.message)
+  },
+})
+```
+
+## 添加新 API
+
+1. 在 `openapi.yaml` 添加新的 endpoint
+2. 运行 `npm run generate:api` 生成类型
+3. 在 `src/lib/api/hooks.ts` 添加新的 hook（可选，方便复用）
+
+## Dependencies
+
+```bash
+npm install @tanstack/react-query openapi-fetch openapi-react-query
+npm install -D openapi-typescript
+```

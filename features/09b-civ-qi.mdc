@@ -1,0 +1,444 @@
+---
+description: 齐国文明详细设计
+globs: ["**/civilization/qi/**", "**/civ/qi/**"]
+alwaysApply: false
+---
+
+# 齐国 (Qi) - 工商之国
+
+> *"九合诸侯，一匡天下"*
+
+## 文明概述
+
+| 属性 | 内容 |
+|-----|------|
+| **图标** | 齊（甲骨文） |
+| **主色调** | 靛蓝 `#1e90ff` |
+| **辅色调** | 金黄 `#ffd700` |
+| **游戏风格** | 经济外交型 |
+| **难度评级** | ★★★☆☆ (3/5) |
+| **适合胜利** | 外交胜利、经济胜利 |
+
+---
+
+## 历史背景
+
+### 建国渊源
+
+齐国由姜太公（姜子牙）所建。周武王灭商后，封功臣姜尚于齐，都城营丘（后迁临淄）。姜太公是中国历史上著名的军事家和政治家，《六韬》《三略》据传为其所著。
+
+齐国地处山东半岛，东临大海，拥有丰富的盐铁资源和渔业资源。姜太公因地制宜，"通商工之业，便鱼盐之利"，使齐国迅速富庶。
+
+### 疆域变迁
+
+- **初封**：营丘（今山东淄博）
+- **春秋**：控制山东半岛大部，势力延伸至河南、河北
+- **全盛**：齐桓公时期，"九合诸侯，一匡天下"
+- **田氏代齐**：公元前386年，田氏取代姜氏，史称田齐
+
+### 文化特色
+
+齐国文化开放包容，工商业发达：
+- **渔盐之利**：垄断盐业，富甲天下
+- **工商重镇**：临淄是当时最大的城市
+- **稷下学宫**：百家争鸣的学术中心
+- **尚武精神**：技击之士闻名天下
+
+### 著名人物
+
+| 人物 | 时期 | 贡献 |
+|-----|------|------|
+| 姜太公 | 西周 | 开国始祖，兵圣 |
+| 管仲 | 春秋 | 经济改革，尊王攘夷 |
+| 齐桓公 | 春秋 | 春秋首霸 |
+| 晏婴 | 春秋 | 名相，外交家 |
+| 孙武 | 春秋 | 兵圣，《孙子兵法》 |
+| 孟子 | 战国 | 稷下学宫代表 |
+
+---
+
+## 领袖：齐桓公
+
+### 基本信息
+
+| 属性 | 内容 |
+|-----|------|
+| **姓名** | 姜小白 |
+| **在位** | 公元前685年—前643年（共43年） |
+| **头衔** | 春秋五霸之首 |
+| **谥号** | 桓 |
+
+### 生平简介
+
+齐桓公姜小白是齐国第十六代国君，在位期间任用管仲为相，进行经济和军事改革，使齐国成为春秋时期最强大的诸侯国。
+
+管仲改革的核心是"相地而衰征"（按土地肥沃程度征税）和"官山海"（国家垄断盐铁），极大增强了齐国的财政实力。
+
+齐桓公打着"尊王攘夷"的旗号，率领诸侯联军北击戎狄、南伐楚国，"九合诸侯，一匡天下"，被周天子正式承认为方伯（霸主）。
+
+### 领袖能力：尊王攘夷
+
+> *与城邦结盟，共同繁荣*
+
+| 效果类型 | 详细说明 |
+|---------|---------|
+| **城邦同盟战力** | 与城邦建立同盟时，你和城邦的单位各+5战斗力 |
+| **使者效率** | 每位使者提供的影响力+50% |
+| **宗主收益** | 作为宗主时，从城邦获得的产出+100% |
+| **外交偏好** | 每个同盟城邦+2外交偏好点数 |
+
+```typescript
+const DUKE_HUAN_ABILITY: Ability = {
+  name: '尊王攘夷',
+  description: '与城邦建立强大的同盟关系',
+  detailedDescription: `
+    • 与城邦同盟时：你和城邦单位各 +5 战斗力
+    • 使者影响力 +50%
+    • 宗主收益翻倍（+100%）
+    • 每个同盟城邦 +2 外交偏好点数
+  `,
+  effects: [
+    { type: 'city_state_alliance_combat', value: 5 },
+    { type: 'envoy_influence_multiplier', value: 50 },
+    { type: 'suzerain_yield_bonus', value: 100 },
+    { type: 'diplomatic_favor_per_city_state_ally', value: 2 },
+  ],
+};
+```
+
+### AI 议程：霸主外交
+
+| 属性 | 内容 |
+|-----|------|
+| **喜欢** | 与城邦保持良好关系、不攻击城邦的文明 |
+| **讨厌** | 征服城邦、抢夺宗主地位的文明 |
+| **外交权重** | 8/10 |
+
+### 名言
+
+- *"九合诸侯，一匡天下"*
+- *"管夷吾，吾之仲父也"*
+- *"不以兵车，管仲之力也"*
+
+---
+
+## 文明特性：管仲之法
+
+> *"仓廪实则知礼节，衣食足则知荣辱"*
+
+### 效果详解
+
+| 效果 | 数值 | 说明 |
+|-----|------|------|
+| **商业中心邻接** | +100% | 商业中心邻接加成翻倍 |
+| **国际贸易** | +2 金币 | 每条国际贸易路线额外金币 |
+| **盐铁专营** | 特殊 | 拥有盐、铁资源时+3金币 |
+| **市场效率** | +50% | 市场建筑效果+50% |
+
+### 官山海详细机制
+
+```typescript
+// 盐铁专营机制
+interface SaltIronMonopoly {
+  // 资源加成
+  resourceBonus: {
+    salt: { gold: 3, production: 1 },
+    iron: { gold: 3, production: 2 },
+  };
+  
+  // 有改良设施时的额外加成
+  improvedBonus: {
+    salt: { gold: 2 },
+    iron: { gold: 2, production: 1 },
+  };
+}
+
+const GUAN_ZHONG_REFORM: Ability = {
+  name: '管仲之法',
+  description: '商业繁荣，贸易兴盛',
+  detailedDescription: `
+    • 商业中心邻接加成 +100%（翻倍）
+    • 国际贸易路线 +2 金币
+    • 拥有盐/铁资源时 +3 金币（官山海）
+    • 市场类建筑效果 +50%
+  `,
+  effects: [
+    { type: 'adjacency_bonus_multiplier', district: 'commercial_hub', value: 100 },
+    { type: 'international_trade_gold', value: 2 },
+    { type: 'resource_yield_bonus', resource: ['salt', 'iron'], yield: 'gold', value: 3 },
+    { type: 'building_effect_multiplier', buildingClass: 'market', value: 50 },
+  ],
+};
+```
+
+### 历史背景
+
+管仲改革是中国历史上第一次系统的经济改革：
+
+1. **相地而衰征**：按土地质量差别征税
+2. **官山海**：国家垄断盐铁
+3. **四民分业**：士、农、工、商各安其业
+4. **通货积财**：发展货币经济
+5. **轻重之术**：通过价格调控管理经济
+
+---
+
+## 特色单位：技击之士
+
+### 单位数据
+
+| 属性 | 数值 | 对比弩手 |
+|-----|------|---------|
+| **近战战斗力** | 30 | 30 |
+| **远程战斗力** | 40 | 40 |
+| **射程** | 2 | 2 |
+| **移动力** | 2 | 2 |
+| **生产成本** | 180 | 180 |
+| **时代** | 中世纪 | 中世纪 |
+| **科技需求** | 机械 | 机械 |
+
+### 特殊能力
+
+| 能力 | 效果 |
+|-----|------|
+| **射后移动** | 攻击后可移动1格 |
+| **技击** | 被近战攻击时，先进行一次远程反击 |
+| **高机动** | 穿越友军单位不消耗额外移动力 |
+
+```typescript
+const JIJI_WARRIOR: UniqueUnit = {
+  id: 'jiji_warrior',
+  name: '技击之士',
+  replaces: 'crossbowman',
+  
+  stats: {
+    combatStrength: 30,
+    rangedStrength: 40,
+    range: 2,
+    movement: 2,
+    productionCost: 180,
+    maintenanceCost: 3,
+    sight: 2,
+  },
+  
+  requirements: {
+    technology: 'machinery',
+    era: 'medieval',
+  },
+  
+  abilities: [
+    {
+      id: 'shoot_and_move',
+      name: '射后移动',
+      description: '攻击后可移动1格',
+      effect: 'can_move_after_attack',
+      movementAfterAttack: 1,
+    },
+    {
+      id: 'counter_shot',
+      name: '技击',
+      description: '被近战攻击时先进行远程反击',
+      effect: 'ranged_counterattack_on_melee',
+    },
+    {
+      id: 'nimble',
+      name: '高机动',
+      description: '穿越友军不消耗额外移动力',
+      effect: 'ignore_zone_of_control_friendly',
+    },
+  ],
+  
+  promotionClass: 'ranged',
+  
+  historicalNote: `
+    "技击之士"是齐国独特的武士阶层。
+    《荀子》记载齐国"隆技击"，即重视个人武艺。
+    这些武士精通剑术和射术，作战灵活多变，
+    注重个人技艺的发挥而非阵列配合。
+  `,
+};
+```
+
+### 历史背景
+
+技击之士是齐国特有的武士制度。齐国"隆技击"，重视个人武艺的培养和比试。这些武士以高超的格斗技巧闻名，但因过于注重个人勇武，在大规模战争中反而不如秦国的军阵制度有效。
+
+《荀子·议兵》评价："齐之技击不可以遇魏氏之武卒，魏氏之武卒不可以遇秦之锐士。"
+
+---
+
+## 特色区域：稷下学宫
+
+### 区域数据
+
+| 属性 | 数值 |
+|-----|------|
+| **替代** | 学院 |
+| **生产成本** | 54（与学院相同） |
+| **维护费用** | 1 |
+| **邻接加成** | 标准学院邻接 |
+| **市民槽位** | 2 |
+
+### 效果
+
+| 效果 | 数值 |
+|-----|------|
+| **伟人点数** | +2/回合（所有类型） |
+| **科研** | 标准学院产出 |
+| **百家争鸣** | 每个不同学派（建筑）+1文化 |
+| **人才吸引** | 招募伟人成本-15% |
+
+```typescript
+const JIXIA_ACADEMY: UniqueDistrict = {
+  id: 'jixia_academy',
+  name: '稷下学宫',
+  replaces: 'campus',
+  
+  stats: {
+    productionCost: 54,
+    maintenanceCost: 1,
+    citizenSlots: 2,
+  },
+  
+  adjacencyBonuses: [
+    { source: 'mountain', yield: 'science', value: 1 },
+    { source: 'rainforest', yield: 'science', value: 0.5 },
+    { source: 'geothermal_fissure', yield: 'science', value: 2 },
+    { source: 'reef', yield: 'science', value: 2 },
+  ],
+  
+  effects: [
+    { type: 'great_people_points_all', value: 2 },
+    { type: 'culture_per_building', scope: 'this_district', value: 1 },
+    { type: 'great_people_cost_discount', value: 15 },
+  ],
+  
+  buildings: ['library', 'university', 'research_lab'],
+  
+  historicalNote: `
+    稷下学宫是战国时期齐国的官办高等学府，
+    位于齐国都城临淄稷门附近。
+    百家争鸣的学术氛围在此达到顶峰，
+    儒、道、法、墨、名、阴阳等各家学者汇聚于此，
+    自由讲学辩论，形成了中国学术史上最辉煌的时代。
+  `,
+};
+```
+
+### 历史背景
+
+稷下学宫创建于齐威王时期（约公元前374年），是世界上最早的官办高等学府。学宫位于齐国都城临淄的稷门附近，故名"稷下"。
+
+稷下学宫实行"不治而议论"的方针，学者们可以自由讲学、著书立说、参与政治咨询，却不必承担行政职责。这种制度吸引了当时几乎所有重要学派的代表人物：
+
+- 儒家：孟子、荀子
+- 道家：田骈、慎到
+- 法家：申不害
+- 名家：公孙龙
+- 阴阳家：邹衍
+
+---
+
+## 起始偏好
+
+```typescript
+const QI_START_BIAS: StartBias = {
+  coastal: true,
+  river: true,
+  resource: ['salt', 'fish'],
+  terrain: [TerrainType.PLAINS],
+  tier: 3,
+};
+```
+
+| 偏好 | 强度 | 原因 |
+|-----|------|------|
+| 海岸 | ★★★ | 山东半岛三面环海 |
+| 河流 | ★★★ | 便于贸易 |
+| 盐资源 | ★★★ | "官山海"需要盐 |
+| 平原 | ★★☆ | 农业基础 |
+
+---
+
+## 战略指南
+
+### 早期发展 (古代-古典)
+
+1. **抢占城邦**：使者效率+50%，优先派遣使者
+2. **发展商业**：尽早建造商业中心
+3. **寻找盐铁**：盐铁资源提供额外金币
+
+### 中期扩张 (古典-中世纪)
+
+1. **建造稷下学宫**：获得全类型伟人点数
+2. **发展贸易网络**：利用国际贸易+2金币
+3. **城邦外交**：争取成为多个城邦宗主
+
+### 后期决战 (文艺复兴+)
+
+1. **外交胜利路线**：利用外交偏好点数优势
+2. **经济碾压**：金币优势转化为军事优势
+3. **技击之士**：灵活作战，骚扰敌方后勤
+
+### 克制与被克制
+
+| 对手 | 关系 | 说明 |
+|-----|------|------|
+| 郑国 | 竞争 | 同为商贸型，争夺贸易路线 |
+| 秦国 | 被克制 | 军事进攻难以抵挡 |
+| 宋国 | 克制 | 经济优势可压制宗教发展 |
+
+---
+
+## 完整代码定义
+
+```typescript
+const QI: Civilization = {
+  id: 'qi',
+  name: '齐国',
+  adjective: '齐',
+  icon: '齊', // 甲骨文
+  colors: { 
+    primary: '#1e90ff', // 靛蓝
+    secondary: '#ffd700', // 金黄
+  },
+  
+  leader: {
+    id: 'duke_huan_of_qi',
+    name: '齐桓公',
+    title: '春秋五霸之首',
+    era: '公元前685年-前643年',
+    ability: DUKE_HUAN_ABILITY,
+    agenda: {
+      name: '霸主外交',
+      likes: '与城邦保持良好关系的文明',
+      dislikes: '征服城邦的文明',
+      weight: 8,
+    },
+    quotes: [
+      '九合诸侯，一匡天下',
+      '管夷吾，吾之仲父也',
+    ],
+    biography: '任用管仲为相，尊王攘夷，成为春秋首霸。',
+  },
+  
+  civilizationAbility: GUAN_ZHONG_REFORM,
+  
+  uniqueUnits: [JIJI_WARRIOR],
+  uniqueBuildings: [],
+  uniqueImprovements: [],
+  uniqueDistricts: [JIXIA_ACADEMY],
+  
+  startBias: QI_START_BIAS,
+  
+  historicalInfo: {
+    founding: '周武王封姜太公于齐',
+    territory: '山东半岛（今山东省大部）',
+    culture: '工商发达、百家争鸣、尚武好勇',
+    legacy: '春秋首霸，稷下学宫开创学术自由传统',
+    famousFigures: ['姜太公', '管仲', '齐桓公', '晏婴', '孙武', '孟子'],
+  },
+};
+
+export default QI;
+```

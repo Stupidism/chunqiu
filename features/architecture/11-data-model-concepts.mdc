@@ -1,0 +1,30 @@
+---
+description: 架构文档 - 11 数据模型概念设计
+globs: ["**/*"]
+alwaysApply: false
+---
+
+# 11 数据模型概念设计
+
+本文件描述核心数据实体与字段方向。本文为设计文档，不包含实现代码。
+
+## 核心实体
+- User
+- Game
+- GamePlayer
+- TurnRecord
+- PlayerStats
+- Map (可内嵌于 Game.settings 或 mapData)
+- SaveSlot (可选)
+- Replay (可由 TurnRecord 事件流生成)
+
+## 关键字段方向
+- Game.settings: mapSize, gameSpeed, difficulty, turnTimer
+- Game.currentTurn: 当前回合数
+- Game.currentPhase: WAITING / PROCESSING / AI_TURN
+- GamePlayer.hasEndedTurn: 回合结束标记
+- TurnRecord.actions: 回合内动作列表
+- TurnRecord.events: 回合事件流
+- TurnRecord.gameState: 回合结束快照
+- Replay.visibility_mode: Global 或 Player
+

@@ -1,0 +1,574 @@
+---
+description: 春秋项目改良设施详细设计
+globs: ["**/map/**", "**/improvement/**", "**/improvements/**"]
+alwaysApply: false
+---
+
+# 改良设施系统 (Improvements)
+
+## 概述
+
+改良设施由工人单位建造在地块上，用于开发资源、增加产出或提供特殊效果。改良设施可被敌人劫掠，劫掠后需要工人修复。
+
+---
+
+## 一、改良设施数据结构
+
+```typescript
+interface Improvement {
+  id: string;
+  name: string;
+  
+  // 建造条件
+  unlockedBy: string;           // 解锁科技/市政
+  buildTime: number;            // 建造回合（工人次数消耗通常为1）
+  
+  // 位置要求
+  validTerrains: TerrainType[];
+  validFeatures: FeatureType[];
+  validElevations: Elevation[];
+  requiredResource?: string[];   // 必须有指定资源
+  requiresAdjacentResource?: string; // 必须相邻指定资源
+  coastal?: boolean;             // 必须沿海
+  river?: boolean;               // 必须临河
+  
+  // 产出
+  baseYields: Yields;
+  bonusYields?: BonusYield[];    // 科技/市政解锁的额外产出
+  adjacencyBonus?: AdjacencyBonus[]; // 邻接加成
+  
+  // 效果
+  removesFeature?: FeatureType[]; // 会移除哪些地貌
+  providesHousing?: number;
+  providesDefense?: number;
+  
+  // 其他
+  pillageYield?: { type: string; amount: number }; // 被劫掠时敌人获得
+  cannotBePillaged?: boolean;
+  obsoleteBy?: string;           // 被淘汰的科技
+  replacedBy?: string;           // 升级为
+}
+
+interface BonusYield {
+  unlockedBy: string;           // 科技或市政
+  yields: Yields;
+}
+
+interface AdjacencyBonus {
+  adjacent: string;             // 相邻什么
+  yields: Yields;
+}
+```
+
+---
+
+## 二、基础改良设施
+
+### 农场 (Farm)
+
+| 属性 | 内容 |
+|-----|------|
+| **解锁** | 灌溉 |
+| **位置** | 草原/平原（非丘陵），或资源（稻米/小麦/玉米） |
+| **基础产出** | +1 粮食 |
+| **额外产出** | 封建主义：相邻2+农场+1粮食；可替换零件：+1粮食 |
+| **特殊** | 在泛滥平原可建造（不移除地貌） |
+
+```typescript
+const FARM: Improvement = {
+  id: 'farm',
+  name: '农场',
+  unlockedBy: 'irrigation',
+  buildTime: 1,
+  validTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS],
+  validFeatures: [FeatureType.FLOODPLAINS],
+  validElevations: [Elevation.FLAT],
+  requiredResource: ['rice', 'wheat', 'maize'], // 可选
+  baseYields: { food: 1 },
+  bonusYields: [
+    { unlockedBy: 'feudalism', yields: { food: 1 } }, // 相邻2+农场
+    { unlockedBy: 'replaceable_parts', yields: { food: 1 } },
+  ],
+  adjacencyBonus: [{
+    adjacent: 'farm',
+    yields: { food: 0.5 }, // 2个相邻农场=+1粮食
+  }],
+  removesFeature: [FeatureType.MARSH],
+  pillageYield: { type: 'healing', amount: 50 },
+};
+```
+
+### 矿山 (Mine)
+
+| 属性 | 内容 |
+|-----|------|
+| **解锁** | 采矿 |
+| **位置** | 丘陵，或资源（铁/铜/金/银/煤/铝/钻石等） |
+| **基础产出** | +1 生产力 |
+| **额外产出** | 学徒制+1生产；工业化+1生产 |
+| **特殊** | 可在任何有矿物资源的地块建造 |
+
+```typescript
+const MINE: Improvement = {
+  id: 'mine',
+  name: '矿山',
+  unlockedBy: 'mining',
+  buildTime: 1,
+  validTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS, TerrainType.DESERT, TerrainType.TUNDRA, TerrainType.SNOW],
+  validFeatures: [],
+  validElevations: [Elevation.HILLS],
+  requiredResource: ['iron', 'copper', 'gold_ore', 'silver', 'coal', 'aluminum', 'diamonds', 'jade', 'gems', 'salt', 'niter', 'uranium'],
+  baseYields: { production: 1 },
+  bonusYields: [
+    { unlockedBy: 'apprenticeship', yields: { production: 1 } },
+    { unlockedBy: 'industrialization', yields: { production: 1 } },
+  ],
+  removesFeature: [FeatureType.WOODS, FeatureType.RAINFOREST],
+  pillageYield: { type: 'gold', amount: 25 },
+};
+```
+
+### 牧场 (Pasture)
+
+| 属性 | 内容 |
+|-----|------|
+| **解锁** | 畜牧 |
+| **位置** | 马/牛/羊资源 |
+| **基础产出** | +1 生产力 |
+| **额外产出** | 马镫+1生产；机器人+1粮食 |
+| **特殊** | 揭示马资源后可建造 |
+
+```typescript
+const PASTURE: Improvement = {
+  id: 'pasture',
+  name: '牧场',
+  unlockedBy: 'animal_husbandry',
+  buildTime: 1,
+  validTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS, TerrainType.DESERT, TerrainType.TUNDRA],
+  validFeatures: [],
+  validElevations: [Elevation.FLAT, Elevation.HILLS],
+  requiredResource: ['horses', 'cattle', 'sheep'],
+  baseYields: { production: 1 },
+  bonusYields: [
+    { unlockedBy: 'stirrups', yields: { production: 1 } },
+    { unlockedBy: 'robotics', yields: { food: 1 } },
+  ],
+  pillageYield: { type: 'gold', amount: 25 },
+};
+```
+
+### 种植园 (Plantation)
+
+| 属性 | 内容 |
+|-----|------|
+| **解锁** | 灌溉 |
+| **位置** | 奢侈资源（香蕉/丝绸/棉花/染料/糖/香料/烟草/茶叶/咖啡/可可/葡萄酒/香） |
+| **基础产出** | +2 金币 |
+| **额外产出** | 封建主义+1粮食；全球化+2金币 |
+
+```typescript
+const PLANTATION: Improvement = {
+  id: 'plantation',
+  name: '种植园',
+  unlockedBy: 'irrigation',
+  buildTime: 1,
+  validTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS],
+  validFeatures: [FeatureType.RAINFOREST, FeatureType.MARSH],
+  validElevations: [Elevation.FLAT, Elevation.HILLS],
+  requiredResource: ['bananas', 'silk', 'cotton', 'dyes', 'sugar', 'spices', 'tobacco', 'tea', 'coffee', 'cocoa', 'wine', 'incense', 'citrus', 'olives'],
+  baseYields: { gold: 2 },
+  bonusYields: [
+    { unlockedBy: 'feudalism', yields: { food: 1 } },
+    { unlockedBy: 'globalization', yields: { gold: 2 } },
+  ],
+  pillageYield: { type: 'gold', amount: 50 },
+};
+```
+
+### 营地 (Camp)
+
+| 属性 | 内容 |
+|-----|------|
+| **解锁** | 畜牧 |
+| **位置** | 鹿/皮草/象牙/松露/蜂蜜 |
+| **基础产出** | +1 金币 |
+| **额外产出** | 重商主义+2金币；合成材料+1生产 |
+
+```typescript
+const CAMP: Improvement = {
+  id: 'camp',
+  name: '营地',
+  unlockedBy: 'animal_husbandry',
+  buildTime: 1,
+  validTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS, TerrainType.TUNDRA],
+  validFeatures: [FeatureType.WOODS, FeatureType.RAINFOREST],
+  validElevations: [Elevation.FLAT, Elevation.HILLS],
+  requiredResource: ['deer', 'furs', 'ivory', 'truffles', 'honey'],
+  baseYields: { gold: 1 },
+  bonusYields: [
+    { unlockedBy: 'mercantilism', yields: { gold: 2 } },
+    { unlockedBy: 'synthetic_materials', yields: { production: 1 } },
+  ],
+  pillageYield: { type: 'gold', amount: 25 },
+};
+```
+
+### 采石场 (Quarry)
+
+| 属性 | 内容 |
+|-----|------|
+| **解锁** | 石工 |
+| **位置** | 石材/大理石/石膏 |
+| **基础产出** | +1 生产力 |
+| **额外产出** | 火箭+1生产 |
+
+```typescript
+const QUARRY: Improvement = {
+  id: 'quarry',
+  name: '采石场',
+  unlockedBy: 'masonry',
+  buildTime: 1,
+  validTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS, TerrainType.DESERT],
+  validFeatures: [],
+  validElevations: [Elevation.FLAT, Elevation.HILLS],
+  requiredResource: ['stone', 'marble', 'gypsum'],
+  baseYields: { production: 1 },
+  bonusYields: [
+    { unlockedBy: 'rocketry', yields: { production: 1 } },
+  ],
+  pillageYield: { type: 'gold', amount: 25 },
+};
+```
+
+---
+
+## 三、海洋改良设施
+
+### 渔船 (Fishing Boats)
+
+| 属性 | 内容 |
+|-----|------|
+| **解锁** | 航海 |
+| **位置** | 海岸资源（鱼/蟹/鲸/珍珠/珊瑚/龟） |
+| **基础产出** | +1 粮食 |
+| **额外产出** | 制图学+1粮食；塑料+1生产 |
+| **特殊** | 需要在海洋资源上建造 |
+
+```typescript
+const FISHING_BOATS: Improvement = {
+  id: 'fishing_boats',
+  name: '渔船',
+  unlockedBy: 'sailing',
+  buildTime: 1,
+  validTerrains: [TerrainType.COAST],
+  validFeatures: [FeatureType.REEF],
+  validElevations: [Elevation.FLAT],
+  requiredResource: ['fish', 'crabs', 'whales', 'pearls', 'coral', 'turtles'],
+  baseYields: { food: 1 },
+  bonusYields: [
+    { unlockedBy: 'cartography', yields: { food: 1 } },
+    { unlockedBy: 'plastics', yields: { production: 1 } },
+  ],
+  coastal: true,
+  pillageYield: { type: 'gold', amount: 25 },
+};
+```
+
+### 海上石油平台 (Offshore Platform)
+
+| 属性 | 内容 |
+|-----|------|
+| **解锁** | 塑料 |
+| **位置** | 海洋石油 |
+| **基础产出** | +2 生产力 |
+
+```typescript
+const OFFSHORE_PLATFORM: Improvement = {
+  id: 'offshore_platform',
+  name: '海上石油平台',
+  unlockedBy: 'plastics',
+  buildTime: 1,
+  validTerrains: [TerrainType.COAST, TerrainType.OCEAN],
+  validFeatures: [],
+  validElevations: [Elevation.FLAT],
+  requiredResource: ['oil'],
+  baseYields: { production: 2 },
+  coastal: true,
+  pillageYield: { type: 'gold', amount: 50 },
+};
+```
+
+---
+
+## 四、特殊改良设施
+
+### 伐木场 (Lumber Mill)
+
+| 属性 | 内容 |
+|-----|------|
+| **解锁** | 建筑学 |
+| **位置** | 森林 |
+| **基础产出** | +1 生产力 |
+| **额外产出** | 钢铁+1生产 |
+| **特殊** | 不移除森林 |
+
+```typescript
+const LUMBER_MILL: Improvement = {
+  id: 'lumber_mill',
+  name: '伐木场',
+  unlockedBy: 'construction',
+  buildTime: 1,
+  validTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS, TerrainType.TUNDRA],
+  validFeatures: [FeatureType.WOODS],
+  validElevations: [Elevation.FLAT, Elevation.HILLS],
+  baseYields: { production: 1 },
+  bonusYields: [
+    { unlockedBy: 'steel', yields: { production: 1 } },
+  ],
+  removesFeature: [], // 不移除森林
+  pillageYield: { type: 'gold', amount: 25 },
+};
+```
+
+### 油井 (Oil Well)
+
+| 属性 | 内容 |
+|-----|------|
+| **解锁** | 电力 |
+| **位置** | 陆地石油 |
+| **基础产出** | +2 生产力 |
+
+### 堡垒 (Fort)
+
+| 属性 | 内容 |
+|-----|------|
+| **解锁** | 攻城战术 |
+| **位置** | 任意陆地（友方领土） |
+| **效果** | +4防御加成，单位驻守时无法被侵入 |
+| **特殊** | 不提供产出，纯军事用途 |
+
+```typescript
+const FORT: Improvement = {
+  id: 'fort',
+  name: '堡垒',
+  unlockedBy: 'siege_tactics',
+  buildTime: 2,
+  validTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS, TerrainType.DESERT, TerrainType.TUNDRA, TerrainType.SNOW],
+  validFeatures: [],
+  validElevations: [Elevation.FLAT, Elevation.HILLS],
+  baseYields: {},
+  providesDefense: 4,
+  removesFeature: [FeatureType.WOODS, FeatureType.RAINFOREST, FeatureType.MARSH],
+  cannotBePillaged: false,
+  pillageYield: { type: 'gold', amount: 25 },
+};
+```
+
+### 机场 (Airstrip)
+
+| 属性 | 内容 |
+|-----|------|
+| **解锁** | 飞行 |
+| **位置** | 任意平地（友方领土） |
+| **效果** | 可驻扎1个飞机单位，提供补给 |
+
+### 导弹发射井 (Missile Silo)
+
+| 属性 | 内容 |
+|-----|------|
+| **解锁** | 火箭 |
+| **位置** | 任意陆地（友方领土） |
+| **效果** | 可存储核武器，可从此发射导弹 |
+
+---
+
+## 五、道路系统
+
+道路是连接城市的特殊改良，减少移动消耗。
+
+### 道路类型
+
+| 类型 | 解锁 | 移动消耗 | 特点 |
+|-----|------|---------|------|
+| **古代道路** | 轮子 | 1移动力=2格 | 自动由商人创建 |
+| **工业道路** | 蒸汽动力 | 1移动力=3格 | 可建造桥梁跨河 |
+| **现代道路** | 内燃机 | 1移动力=4格 | - |
+
+```typescript
+enum RoadLevel {
+  NONE = 0,
+  ANCIENT_ROAD = 1,
+  INDUSTRIAL_ROAD = 2,
+  MODERN_ROAD = 3,
+}
+
+const ROAD_DEFINITIONS: Record<RoadLevel, { movementBonus: number; crossRiver: boolean }> = {
+  [RoadLevel.NONE]: { movementBonus: 1, crossRiver: false },
+  [RoadLevel.ANCIENT_ROAD]: { movementBonus: 0.5, crossRiver: false },
+  [RoadLevel.INDUSTRIAL_ROAD]: { movementBonus: 0.33, crossRiver: true },
+  [RoadLevel.MODERN_ROAD]: { movementBonus: 0.25, crossRiver: true },
+};
+
+// 商人自动铺设道路
+function onTradeRouteComplete(route: TradeRoute): void {
+  const roadLevel = getRoadLevelForEra(route.origin.owner.era);
+  
+  for (const tile of route.path) {
+    if (tile.road < roadLevel) {
+      tile.road = roadLevel;
+    }
+  }
+}
+```
+
+---
+
+## 六、文明特色改良设施
+
+### 秦国 - 郑国渠（替代水渠）
+
+在 `09-civilizations.mdc` 中定义。
+
+### 越国 - 越王铸剑坊
+
+| 属性 | 内容 |
+|-----|------|
+| **解锁** | 青铜冶炼 |
+| **位置** | 丘陵 |
+| **基础产出** | +2 生产力 |
+| **相邻加成** | 相邻铁矿+2生产力 |
+| **特殊** | 仅越国可建 |
+
+---
+
+## 七、改良设施建造与劫掠
+
+```typescript
+// 工人建造改良设施
+function buildImprovement(
+  worker: Unit,
+  improvement: Improvement,
+  tile: Tile
+): boolean {
+  // 验证建造条件
+  if (!canBuildImprovement(worker, improvement, tile)) {
+    return false;
+  }
+  
+  // 消耗建造次数
+  worker.buildCharges--;
+  
+  // 移除冲突地貌
+  if (improvement.removesFeature && tile.feature) {
+    if (improvement.removesFeature.includes(tile.feature)) {
+      // 砍伐森林/雨林获得一次性产出
+      if (tile.feature === FeatureType.WOODS) {
+        addYieldToCity(tile.city!, { production: 50 });
+      } else if (tile.feature === FeatureType.RAINFOREST) {
+        addYieldToCity(tile.city!, { production: 30 });
+      }
+      tile.feature = null;
+    }
+  }
+  
+  // 建造改良
+  tile.improvement = improvement.id;
+  tile.pillaged = false;
+  
+  // 检查工人是否用完建造次数
+  if (worker.buildCharges <= 0) {
+    removeUnit(worker);
+  }
+  
+  return true;
+}
+
+// 劫掠改良设施
+function pillageImprovement(unit: Unit, tile: Tile): PillageResult {
+  if (!tile.improvement || tile.pillaged) {
+    return { success: false };
+  }
+  
+  const improvement = getImprovement(tile.improvement);
+  
+  // 标记为劫掠状态
+  tile.pillaged = true;
+  
+  // 劫掠收益
+  const reward = improvement.pillageYield;
+  
+  if (reward) {
+    if (reward.type === 'gold') {
+      unit.owner.treasury += reward.amount;
+    } else if (reward.type === 'healing') {
+      unit.damage = Math.max(0, unit.damage - reward.amount);
+    }
+  }
+  
+  // 消耗移动力
+  unit.movementRemaining = 0;
+  
+  return { success: true, reward };
+}
+
+// 修复劫掠的改良设施
+function repairImprovement(worker: Unit, tile: Tile): boolean {
+  if (!tile.pillaged) return false;
+  
+  tile.pillaged = false;
+  worker.buildCharges--;
+  
+  if (worker.buildCharges <= 0) {
+    removeUnit(worker);
+  }
+  
+  return true;
+}
+```
+
+---
+
+## 八、改良设施产出计算
+
+```typescript
+function calculateImprovementYields(tile: Tile, player: Player): Yields {
+  if (!tile.improvement || tile.pillaged) {
+    return {};
+  }
+  
+  const improvement = getImprovement(tile.improvement);
+  let yields = { ...improvement.baseYields };
+  
+  // 科技/市政加成
+  for (const bonus of improvement.bonusYields || []) {
+    if (player.hasTech(bonus.unlockedBy) || player.hasCivic(bonus.unlockedBy)) {
+      yields = addYields(yields, bonus.yields);
+    }
+  }
+  
+  // 邻接加成
+  if (improvement.adjacencyBonus) {
+    const neighbors = getNeighbors(tile.position);
+    for (const adj of improvement.adjacencyBonus) {
+      const count = neighbors.filter(n => {
+        const neighborTile = getTile(n);
+        return neighborTile.improvement === adj.adjacent;
+      }).length;
+      
+      if (count > 0) {
+        yields = addYields(yields, multiplyYields(adj.yields, count));
+      }
+    }
+  }
+  
+  // 资源加成（如果有资源且已改良）
+  if (tile.resource) {
+    const resource = getResource(tile.resource);
+    if (resource.improvement === improvement.id) {
+      yields = addYields(yields, resource.improvedYields);
+    }
+  }
+  
+  return yields;
+}
+```

@@ -1,0 +1,934 @@
+---
+description: 春秋项目经济与贸易系统详细设计
+globs: ["**/game-core/**", "**/economy/**", "**/trade/**"]
+alwaysApply: false
+---
+
+# 经济与贸易系统 (Economy & Trade)
+
+## 概述
+
+经济系统管理文明的金币收支、贸易路线、城邦外交等。金币是游戏中最灵活的资源，可以用于购买单位、建筑、升级、外交交易等。
+
+---
+
+## 一、金币收支
+
+### 收入来源
+
+```typescript
+interface GoldIncome {
+  tiles: number;           // 地块产出
+  buildings: number;       // 建筑产出
+  districtAdjacency: number; // 区域邻接
+  tradeRoutes: number;     // 贸易路线
+  cityStates: number;      // 城邦进贡
+  deals: number;           // 外交交易
+  pillage: number;         // 劫掠所得
+  greatPeople: number;     // 伟人能力
+}
+
+function calculateGoldIncome(player: Player): GoldIncome {
+  const income: GoldIncome = {
+    tiles: 0,
+    buildings: 0,
+    districtAdjacency: 0,
+    tradeRoutes: 0,
+    cityStates: 0,
+    deals: 0,
+    pillage: 0,
+    greatPeople: 0,
+  };
+  
+  // 1. 地块产出
+  for (const city of player.cities) {
+    for (const tile of city.workedTiles) {
+      income.tiles += getTileYields(tile).gold;
+    }
+  }
+  
+  // 2. 建筑产出
+  for (const city of player.cities) {
+    for (const building of city.buildings) {
+      income.buildings += getBuildingYields(building).gold;
+    }
+  }
+  
+  // 3. 区域邻接
+  for (const city of player.cities) {
+    const commercialHub = city.getDistrict('commercial_hub');
+    if (commercialHub) {
+      income.districtAdjacency += commercialHub.adjacencyBonus;
+    }
+    const harbor = city.getDistrict('harbor');
+    if (harbor) {
+      income.districtAdjacency += harbor.adjacencyBonus;
+    }
+  }
+  
+  // 4. 贸易路线
+  for (const route of player.tradeRoutes) {
+    income.tradeRoutes += route.yields.gold;
+  }
+  
+  // 5. 城邦进贡
+  for (const cityState of player.suzerainCityStates) {
+    income.cityStates += getCityStateGoldBonus(cityState, player);
+  }
+  
+  // 6. 外交交易
+  for (const deal of player.activeDeals) {
+    if (deal.receiving.gold) {
+      income.deals += deal.receiving.goldPerTurn;
+    }
+  }
+  
+  return income;
+}
+```
+
+### 支出项目
+
+```typescript
+interface GoldExpenses {
+  unitMaintenance: number;     // 单位维护
+  buildingMaintenance: number; // 建筑维护
+  deals: number;               // 外交支付
+  policies: number;            // 政策切换
+}
+
+// 单位维护费用表
+const UNIT_MAINTENANCE: Record<string, number> = {
+  // 远古
+  warrior: 0,
+  slinger: 0,
+  scout: 0,
+  archer: 1,
+  spearman: 1,
+  heavy_chariot: 1,
+  galley: 1,
+  settler: 0,
+  builder: 0,
+  
+  // 古典
+  swordsman: 2,
+  horseman: 2,
+  catapult: 2,
+  quadrireme: 2,
+  
+  // 中世纪
+  pikeman: 2,
+  crossbowman: 2,
+  knight: 3,
+  trebuchet: 3,
+  
+  // 文艺复兴
+  musketman: 3,
+  cavalry: 3,
+  bombard: 3,
+  
+  // 工业
+  infantry: 4,
+  artillery: 4,
+  cavalry_modern: 4,
+  
+  // 现代
+  tank: 5,
+  mechanized_infantry: 5,
+  rocket_artillery: 5,
+  
+  // 原子/信息
+  modern_armor: 6,
+  helicopter: 6,
+  jet_fighter: 6,
+  jet_bomber: 6,
+};
+
+// 建筑维护费用表
+const BUILDING_MAINTENANCE: Record<string, number> = {
+  // 城市中心
+  granary: 0,
+  monument: 0,
+  water_mill: 0,
+  ancient_walls: 0,
+  medieval_walls: 0,
+  renaissance_walls: 0,
+  sewer: 0,
+  
+  // 学院
+  library: 1,
+  university: 2,
+  research_lab: 3,
+  
+  // 圣地
+  shrine: 1,
+  temple: 2,
+  worship_building: 0, // 崇拜建筑无维护
+  
+  // 商业中心
+  market: 0,
+  bank: 0,
+  stock_exchange: 0,
+  
+  // 工业区
+  workshop: 1,
+  factory: 2,
+  power_plant: 3,
+  
+  // 剧院广场
+  amphitheater: 1,
+  museum: 2,
+  broadcast_center: 3,
+  
+  // 军营
+  barracks: 1,
+  armory: 2,
+  military_academy: 3,
+  
+  // 港口
+  lighthouse: 0,
+  shipyard: 0,
+  seaport: 0,
+  
+  // 娱乐中心
+  arena: 1,
+  zoo: 2,
+  stadium: 3,
+};
+
+function calculateGoldExpenses(player: Player): GoldExpenses {
+  const expenses: GoldExpenses = {
+    unitMaintenance: 0,
+    buildingMaintenance: 0,
+    deals: 0,
+    policies: 0,
+  };
+  
+  // 单位维护
+  for (const unit of player.units) {
+    const baseMaintenance = UNIT_MAINTENANCE[unit.type] || 0;
+    let maintenance = baseMaintenance;
+    
+    // 政府加成
+    if (player.government === 'communism') {
+      maintenance *= 0.75; // 共产主义陆军维护-25%
+    }
+    
+    expenses.unitMaintenance += maintenance;
+  }
+  
+  // 建筑维护
+  for (const city of player.cities) {
+    for (const building of city.buildings) {
+      expenses.buildingMaintenance += BUILDING_MAINTENANCE[building] || 0;
+    }
+  }
+  
+  // 外交支付
+  for (const deal of player.activeDeals) {
+    if (deal.giving.gold) {
+      expenses.deals += deal.giving.goldPerTurn;
+    }
+  }
+  
+  return expenses;
+}
+```
+
+### 金币平衡
+
+```typescript
+interface GoldBalance {
+  income: GoldIncome;
+  expenses: GoldExpenses;
+  totalIncome: number;
+  totalExpenses: number;
+  netIncome: number;
+  treasury: number;
+}
+
+function calculateGoldBalance(player: Player): GoldBalance {
+  const income = calculateGoldIncome(player);
+  const expenses = calculateGoldExpenses(player);
+  
+  const totalIncome = Object.values(income).reduce((a, b) => a + b, 0);
+  const totalExpenses = Object.values(expenses).reduce((a, b) => a + b, 0);
+  
+  return {
+    income,
+    expenses,
+    totalIncome,
+    totalExpenses,
+    netIncome: totalIncome - totalExpenses,
+    treasury: player.treasury,
+  };
+}
+
+// 破产处理
+function handleBankruptcy(player: Player): void {
+  if (player.treasury < 0) {
+    // 随机解散一个单位
+    const disbandableUnits = player.units.filter(u => 
+      u.type !== 'settler' && 
+      UNIT_MAINTENANCE[u.type] > 0
+    );
+    
+    if (disbandableUnits.length > 0) {
+      const unitToDisband = disbandableUnits[Math.floor(Math.random() * disbandableUnits.length)];
+      removeUnit(unitToDisband);
+      
+      // 通知玩家
+      sendNotification(player, {
+        type: 'UNIT_DISBANDED',
+        message: `由于国库为负，${unitToDisband.name} 被解散`,
+        unitId: unitToDisband.id,
+      });
+    }
+  }
+}
+```
+
+---
+
+## 二、金币购买
+
+### 购买成本计算
+
+```typescript
+interface PurchaseCost {
+  type: 'unit' | 'building' | 'tile';
+  id: string;
+  goldCost: number;
+  faithCost?: number; // 如果支持信仰购买
+}
+
+function calculatePurchaseCost(
+  type: 'unit' | 'building',
+  id: string,
+  city: City,
+  player: Player
+): PurchaseCost {
+  let productionCost: number;
+  
+  if (type === 'unit') {
+    productionCost = getUnitProductionCost(id);
+  } else {
+    productionCost = getBuildingProductionCost(id);
+  }
+  
+  // 基础金币成本 = 生产力 × 4
+  let goldCost = productionCost * 4;
+  
+  // 政府加成
+  if (player.government === 'democracy') {
+    goldCost *= 0.85; // 民主制项目生产+15%
+  }
+  
+  // 政策加成
+  if (player.policies.includes('mercantilism')) {
+    goldCost *= 0.85; // 重商主义-15%购买成本
+  }
+  
+  return {
+    type,
+    id,
+    goldCost: Math.floor(goldCost),
+  };
+}
+
+// 地块购买成本
+function calculateTilePurchaseCost(city: City, tile: Tile): number {
+  // 基础成本 = 50 + 已购买地块数 × 20
+  const tilesOwned = city.purchasedTiles.length;
+  let cost = 50 + tilesOwned * 20;
+  
+  // 距离修正
+  const distance = getDistance(city.position, tile.position);
+  cost += (distance - 1) * 10;
+  
+  // 资源加成
+  if (tile.resource) {
+    cost += 20;
+  }
+  
+  return cost;
+}
+```
+
+### 单位升级
+
+```typescript
+interface UpgradeCost {
+  fromUnit: string;
+  toUnit: string;
+  goldCost: number;
+  resourceCost?: { resource: string; amount: number };
+}
+
+function calculateUpgradeCost(unit: Unit, toType: string, player: Player): UpgradeCost {
+  const fromCost = getUnitProductionCost(unit.type);
+  const toCost = getUnitProductionCost(toType);
+  
+  // 基础升级成本 = (新单位成本 - 旧单位成本) × 3
+  let goldCost = (toCost - fromCost) * 3;
+  
+  // 最低成本
+  goldCost = Math.max(goldCost, 25);
+  
+  // 政策加成
+  if (player.policies.includes('professional_army')) {
+    goldCost *= 0.5; // 职业军队-50%升级成本
+  }
+  if (player.policies.includes('conscription')) {
+    goldCost *= 0.5; // 征兵-50%升级成本
+  }
+  
+  // 资源需求
+  const toUnitDef = getUnitDefinition(toType);
+  let resourceCost;
+  if (toUnitDef.requiredResource) {
+    resourceCost = {
+      resource: toUnitDef.requiredResource,
+      amount: toUnitDef.resourceCost || 1,
+    };
+  }
+  
+  return {
+    fromUnit: unit.type,
+    toUnit: toType,
+    goldCost: Math.floor(goldCost),
+    resourceCost,
+  };
+}
+```
+
+---
+
+## 三、贸易路线
+
+### 贸易路线机制
+
+```typescript
+interface TradeRoute {
+  id: string;
+  origin: City;           // 起点城市
+  destination: City;      // 终点城市
+  type: 'domestic' | 'international';
+  trader: Unit;           // 商人单位
+  
+  // 产出
+  yields: {
+    food: number;
+    production: number;
+    gold: number;
+    science: number;
+    culture: number;
+    faith: number;
+  };
+  
+  // 路线信息
+  path: Coord[];          // 路径
+  turnsRemaining: number; // 剩余回合
+  totalTurns: number;     // 总回合数
+}
+
+// 贸易路线容量
+function getTradeRouteCapacity(player: Player): number {
+  let capacity = 0;
+  
+  // 商业中心+1
+  for (const city of player.cities) {
+    if (city.hasDistrict('commercial_hub')) {
+      capacity++;
+    }
+    // 港口+1
+    if (city.hasDistrict('harbor')) {
+      capacity++;
+    }
+  }
+  
+  // 政府加成
+  if (player.government === 'merchant_republic') {
+    capacity += 2;
+  }
+  
+  // 奇观加成
+  if (player.hasWonder('colossus')) {
+    capacity++;
+  }
+  if (player.hasWonder('great_zimbabwe')) {
+    capacity++;
+  }
+  
+  return capacity;
+}
+```
+
+### 贸易收益计算
+
+```typescript
+function calculateTradeYields(
+  origin: City,
+  destination: City,
+  player: Player
+): TradeRoute['yields'] {
+  const yields = {
+    food: 0,
+    production: 0,
+    gold: 0,
+    science: 0,
+    culture: 0,
+    faith: 0,
+  };
+  
+  const isDomestic = origin.owner === destination.owner;
+  
+  if (isDomestic) {
+    // 国内贸易
+    // 基础: +1粮食 +1生产力
+    yields.food = 1;
+    yields.production = 1;
+    
+    // 政策加成
+    if (player.policies.includes('caravansaries')) {
+      yields.food++;
+      yields.production++;
+    }
+    
+    // 目的地区域加成
+    if (destination.hasDistrict('commercial_hub')) {
+      yields.gold += 1;
+    }
+    if (destination.hasDistrict('harbor')) {
+      yields.gold += 1;
+    }
+    if (destination.hasDistrict('campus')) {
+      yields.science += 1;
+    }
+    if (destination.hasDistrict('holy_site')) {
+      yields.faith += 1;
+    }
+    if (destination.hasDistrict('theater_square')) {
+      yields.culture += 1;
+    }
+    if (destination.hasDistrict('industrial_zone')) {
+      yields.production += 1;
+    }
+    
+  } else {
+    // 国际贸易
+    // 基础: +3金币
+    yields.gold = 3;
+    
+    // 目的地区域加成（更高）
+    if (destination.hasDistrict('commercial_hub')) {
+      yields.gold += 2;
+    }
+    if (destination.hasDistrict('harbor')) {
+      yields.gold += 2;
+    }
+    if (destination.hasDistrict('campus')) {
+      yields.science += 1;
+    }
+    if (destination.hasDistrict('holy_site')) {
+      yields.faith += 1;
+    }
+    if (destination.hasDistrict('theater_square')) {
+      yields.culture += 1;
+    }
+    if (destination.hasDistrict('industrial_zone')) {
+      yields.production += 1;
+    }
+    
+    // 目的地资源加成
+    const destinationLuxuries = destination.getLuxuryResources();
+    yields.gold += destinationLuxuries.length;
+    
+    // 奇观加成
+    if (player.hasWonder('great_zimbabwe')) {
+      yields.gold += destination.getBonusResources().length;
+    }
+  }
+  
+  // 政府加成
+  if (player.government === 'merchant_republic') {
+    yields.gold += 2;
+  }
+  
+  return yields;
+}
+```
+
+### 商人单位
+
+```typescript
+const TRADER: Unit = {
+  id: 'trader',
+  name: '商人',
+  type: UnitType.CIVILIAN,
+  class: UnitClass.CIVILIAN,
+  era: 'ancient',
+  combatStrength: 0,
+  movement: 2,
+  sight: 2,
+  productionCost: 40,
+  goldCost: 160,
+  maintenanceCost: 0,
+  unlockedBy: 'foreign_trade', // 对外贸易市政
+  abilities: ['establish_trade_route'],
+};
+
+// 建立贸易路线
+function establishTradeRoute(
+  trader: Unit,
+  destination: City,
+  player: Player
+): TradeRoute | null {
+  const origin = getClosestCity(trader.position, player);
+  
+  // 验证
+  if (!origin) return null;
+  if (origin === destination) return null;
+  
+  // 检查容量
+  if (player.tradeRoutes.length >= getTradeRouteCapacity(player)) {
+    return null;
+  }
+  
+  // 计算路径和回合数
+  const path = findTradePath(origin.position, destination.position);
+  const totalTurns = calculateTradeDuration(path.length);
+  
+  const route: TradeRoute = {
+    id: generateId(),
+    origin,
+    destination,
+    type: origin.owner === destination.owner ? 'domestic' : 'international',
+    trader,
+    yields: calculateTradeYields(origin, destination, player),
+    path,
+    turnsRemaining: totalTurns,
+    totalTurns,
+  };
+  
+  player.tradeRoutes.push(route);
+  
+  return route;
+}
+
+// 贸易路线持续时间
+function calculateTradeDuration(pathLength: number): number {
+  // 基础: 20回合
+  // 距离修正: 每5格+1回合
+  return 20 + Math.floor(pathLength / 5);
+}
+```
+
+---
+
+## 四、城邦系统
+
+### 城邦类型
+
+```typescript
+interface CityState {
+  id: string;
+  name: string;
+  type: CityStateType;
+  position: Coord;
+  
+  // 关系
+  suzerain: string | null;     // 宗主国玩家ID
+  envoys: Record<string, number>; // 各玩家使者数量
+  
+  // 状态
+  isAlive: boolean;
+  tribute: boolean;            // 是否被征收贡金
+}
+
+enum CityStateType {
+  CULTURAL = 'cultural',       // 文化型
+  INDUSTRIAL = 'industrial',   // 工业型
+  MILITARISTIC = 'militaristic', // 军事型
+  RELIGIOUS = 'religious',     // 宗教型
+  SCIENTIFIC = 'scientific',   // 科研型
+  TRADE = 'trade',             // 商业型
+}
+
+// 城邦加成
+interface CityStateBonus {
+  tier1: string; // 1使者
+  tier2: string; // 3使者
+  tier3: string; // 6使者
+  suzerain: string; // 宗主国特殊加成
+}
+
+const CITY_STATE_BONUSES: Record<CityStateType, CityStateBonus> = {
+  cultural: {
+    tier1: '首都+2文化',
+    tier2: '每座有剧院广场的城市+2文化',
+    tier3: '每座有剧院广场的城市+4文化',
+    suzerain: '解锁独特建筑/单位（因城邦而异）',
+  },
+  industrial: {
+    tier1: '首都+2生产力',
+    tier2: '每座有工业区的城市+2生产力',
+    tier3: '每座有工业区的城市+4生产力',
+    suzerain: '解锁独特建筑/单位（因城邦而异）',
+  },
+  militaristic: {
+    tier1: '首都+2战斗经验',
+    tier2: '每座有军营的城市+2战斗经验',
+    tier3: '每座有军营的城市+4战斗经验',
+    suzerain: '解锁独特单位（因城邦而异）',
+  },
+  religious: {
+    tier1: '首都+2信仰',
+    tier2: '每座有圣地的城市+2信仰',
+    tier3: '每座有圣地的城市+4信仰',
+    suzerain: '解锁独特建筑/单位（因城邦而异）',
+  },
+  scientific: {
+    tier1: '首都+2科研',
+    tier2: '每座有学院的城市+2科研',
+    tier3: '每座有学院的城市+4科研',
+    suzerain: '解锁独特建筑/单位（因城邦而异）',
+  },
+  trade: {
+    tier1: '首都+4金币',
+    tier2: '每座有商业中心的城市+4金币',
+    tier3: '每座有商业中心的城市+8金币',
+    suzerain: '解锁独特建筑/单位（因城邦而异）',
+  },
+};
+```
+
+### 使者系统
+
+```typescript
+// 使者来源
+interface EnvoySource {
+  type: 'influence' | 'civic' | 'policy' | 'great_person' | 'wonder';
+  amount: number;
+}
+
+// 外交影响力
+function calculateInfluencePerTurn(player: Player): number {
+  let influence = 0;
+  
+  // 政府类型
+  if (player.government === 'monarchy') {
+    influence += 3;
+  }
+  
+  // 总督
+  for (const governor of player.governors) {
+    if (governor.title === 'Amani' && governor.established) {
+      influence += 2;
+    }
+  }
+  
+  // 政策
+  if (player.policies.includes('charismatic_leader')) {
+    influence += 2;
+  }
+  
+  return influence;
+}
+
+// 累积100外交影响力获得1使者
+function processInfluence(player: Player): void {
+  player.influence += calculateInfluencePerTurn(player);
+  
+  while (player.influence >= 100) {
+    player.influence -= 100;
+    player.availableEnvoys++;
+    
+    sendNotification(player, {
+      type: 'ENVOY_EARNED',
+      message: '获得1名使者可派遣到城邦',
+    });
+  }
+}
+
+// 派遣使者
+function sendEnvoy(player: Player, cityState: CityState): boolean {
+  if (player.availableEnvoys <= 0) return false;
+  
+  player.availableEnvoys--;
+  cityState.envoys[player.id] = (cityState.envoys[player.id] || 0) + 1;
+  
+  // 检查宗主国变化
+  updateSuzerain(cityState);
+  
+  return true;
+}
+
+// 更新宗主国
+function updateSuzerain(cityState: CityState): void {
+  let maxEnvoys = 0;
+  let newSuzerain: string | null = null;
+  
+  for (const [playerId, envoys] of Object.entries(cityState.envoys)) {
+    if (envoys >= 3 && envoys > maxEnvoys) {
+      maxEnvoys = envoys;
+      newSuzerain = playerId;
+    }
+  }
+  
+  // 必须比第二名多至少1个使者
+  const sortedEnvoys = Object.values(cityState.envoys).sort((a, b) => b - a);
+  if (sortedEnvoys.length >= 2 && sortedEnvoys[0] <= sortedEnvoys[1]) {
+    newSuzerain = null;
+  }
+  
+  if (cityState.suzerain !== newSuzerain) {
+    const oldSuzerain = cityState.suzerain;
+    cityState.suzerain = newSuzerain;
+    
+    // 通知
+    if (newSuzerain) {
+      sendNotification(getPlayer(newSuzerain), {
+        type: 'SUZERAIN_GAINED',
+        cityState: cityState.name,
+      });
+    }
+    if (oldSuzerain) {
+      sendNotification(getPlayer(oldSuzerain), {
+        type: 'SUZERAIN_LOST',
+        cityState: cityState.name,
+      });
+    }
+  }
+}
+```
+
+### 城邦进贡
+
+```typescript
+// 宗主国可以征收城邦贡金
+interface TributeOptions {
+  gold: number;      // 一次性金币
+  resources: string[]; // 战略/奢侈资源
+}
+
+function demandTribute(player: Player, cityState: CityState): TributeOptions | null {
+  if (cityState.suzerain !== player.id) {
+    return null;
+  }
+  
+  // 计算可获得的贡金
+  const gold = 50 + cityState.envoys[player.id] * 10;
+  const resources = cityState.ownedResources.filter(r => 
+    !player.hasResource(r)
+  );
+  
+  return {
+    gold,
+    resources: resources.slice(0, 1), // 最多1种资源
+  };
+}
+```
+
+---
+
+## 五、外交交易
+
+### 交易类型
+
+```typescript
+interface DiplomaticDeal {
+  id: string;
+  proposer: string;
+  receiver: string;
+  status: 'proposed' | 'accepted' | 'rejected' | 'active' | 'expired';
+  
+  // 提议方给予
+  giving: DealTerms;
+  // 提议方获得
+  receiving: DealTerms;
+  
+  // 持续时间
+  duration: number;        // 回合数，0表示一次性
+  turnsRemaining: number;
+}
+
+interface DealTerms {
+  gold?: number;           // 一次性金币
+  goldPerTurn?: number;    // 每回合金币
+  resources?: {
+    type: string;
+    amount: number;
+    duration: number;
+  }[];
+  cities?: string[];       // 割让城市
+  openBorders?: boolean;   // 开放边境
+  alliance?: boolean;      // 同盟
+  peace?: boolean;         // 和平条约
+  jointWar?: string;       // 联合宣战目标
+  delegation?: boolean;    // 代表团
+  embassy?: boolean;       // 大使馆
+}
+
+// 交易价值估算（用于AI判断）
+function evaluateDealValue(terms: DealTerms, player: Player): number {
+  let value = 0;
+  
+  if (terms.gold) value += terms.gold;
+  if (terms.goldPerTurn) value += terms.goldPerTurn * 10; // 假设10回合
+  
+  for (const resource of terms.resources || []) {
+    if (resource.type === 'luxury') {
+      value += 50 * resource.amount;
+    } else if (resource.type === 'strategic') {
+      value += 30 * resource.amount;
+    }
+  }
+  
+  if (terms.cities) {
+    for (const cityId of terms.cities) {
+      const city = getCity(cityId);
+      value += city.population * 100 + city.districts.length * 50;
+    }
+  }
+  
+  if (terms.openBorders) value += 25;
+  if (terms.delegation) value += 25;
+  if (terms.embassy) value += 50;
+  
+  return value;
+}
+```
+
+### 资源交易
+
+```typescript
+// 奢侈资源效果
+// 每种奢侈资源为前4个城市各提供+1宜居度
+// 重复的奢侈资源只能用于交易
+
+// 战略资源效果
+// 用于生产需要该资源的单位
+// 每个战略资源有库存上限
+
+interface ResourceInventory {
+  resource: string;
+  amount: number;          // 当前库存
+  perTurn: number;         // 每回合获取
+  maxStorage: number;      // 最大库存
+}
+
+function calculateResourceIncome(player: Player): Record<string, number> {
+  const income: Record<string, number> = {};
+  
+  for (const city of player.cities) {
+    for (const tile of city.workedTiles) {
+      if (tile.resource && tile.improved) {
+        income[tile.resource] = (income[tile.resource] || 0) + 1;
+      }
+    }
+  }
+  
+  return income;
+}
+```

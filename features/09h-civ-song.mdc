@@ -1,0 +1,396 @@
+---
+description: 宋国文明详细设计
+globs: ["**/civilization/song/**", "**/civ/song/**"]
+alwaysApply: false
+---
+
+# 宋国 (Song) - 殷商遗民
+
+> *"虽败犹荣，仁义之师"*
+
+## 文明概述
+
+| 属性 | 内容 |
+|-----|------|
+| **图标** | 宋（甲骨文） |
+| **主色调** | 纯白 `#f5f5f5` |
+| **辅色调** | 玄黑 `#1a1a1a` |
+| **游戏风格** | 宗教传播型 |
+| **难度评级** | ★★★★★ (5/5) |
+| **适合胜利** | 宗教胜利 |
+
+---
+
+## 历史背景
+
+### 建国渊源
+
+宋国是殷商王族的后裔。周武王灭商后，封商纣王的庶兄微子启于宋（今河南商丘），以延续商朝的祭祀。宋国因此保留了大量商代礼仪和文化传统。
+
+宋国虽然国力不强，但因为是前朝王族，地位特殊，在诸侯中享有较高的礼仪待遇。
+
+### 疆域变迁
+
+- **初封**：商丘（今河南商丘）
+- **春秋时期**：河南东部、山东西南部
+- **全盛**：宋襄公时期短暂强盛
+- **末期**：公元前286年被齐、楚、魏三国瓜分
+
+### 文化特色
+
+宋国文化保留了大量商代传统：
+- **殷商礼仪**：保留商代祭祀传统
+- **重祀尚神**：宗教色彩浓厚
+- **仁义传统**：宋襄公的"仁义"精神
+- **守旧保守**："守株待兔"的典故
+
+### 著名人物
+
+| 人物 | 时期 | 贡献 |
+|-----|------|------|
+| 微子启 | 西周 | 宋国始祖 |
+| 宋襄公 | 春秋 | 仁义之师 |
+| 墨子 | 战国 | 墨家创始人 |
+| 庄子 | 战国 | 道家代表 |
+| 惠施 | 战国 | 名家代表 |
+
+---
+
+## 领袖：宋襄公
+
+### 基本信息
+
+| 属性 | 内容 |
+|-----|------|
+| **姓名** | 子兹甫 |
+| **在位** | 公元前650年—前637年（共14年） |
+| **头衔** | 春秋五霸之一（有争议） |
+| **谥号** | 襄 |
+
+### 生平简介
+
+宋襄公以"仁义"著称。齐桓公死后，中原霸主之位空缺，宋襄公欲继承霸业。公元前638年，宋楚泓水之战，宋襄公坚持"不鼓不成列"（不攻击正在渡河和列阵的敌军），结果大败，自己也身受重伤，次年去世。
+
+后人对宋襄公评价两极分化：批评者认为他迂腐，赞扬者认为他坚守道义。无论如何，"宋襄之仁"成为一个著名的历史典故。
+
+### 领袖能力：仁义之师
+
+> *坚守道义，获得信仰*
+
+| 效果类型 | 详细说明 |
+|---------|---------|
+| **道义约束** | 不攻击正在渡河或未列阵的敌军（自动生效） |
+| **信仰奖励** | 因此每回合+2信仰 |
+| **道德声望** | 其他文明对你的好感度+10 |
+| **仁者无敌** | 当敌方主动攻击时，你的单位+5战斗力 |
+
+```typescript
+const DUKE_XIANG_ABILITY: Ability = {
+  name: '仁义之师',
+  description: '坚守道义，以德服人',
+  detailedDescription: `
+    • 不主动攻击正在渡河或刚进入战斗的敌军（限制）
+    • 每回合 +2 信仰（道义奖励）
+    • 其他文明好感度 +10
+    • 被攻击时 +5 战斗力
+  `,
+  effects: [
+    { type: 'combat_restriction', restriction: 'no_attack_crossing_or_unprepared' },
+    { type: 'faith_per_turn', value: 2 },
+    { type: 'global_diplomacy_bonus', value: 10 },
+    { type: 'combat_bonus_when_attacked', value: 5 },
+  ],
+};
+```
+
+### AI 议程：仁者之道
+
+| 属性 | 内容 |
+|-----|------|
+| **喜欢** | 遵守战争礼仪、不使用卑鄙手段的文明 |
+| **讨厌** | 偷袭、背信弃义的文明 |
+| **外交权重** | 9/10 |
+
+### 名言
+
+- *"君子不重伤，不禽二毛"*
+- *"不鼓不成列"*
+- *"仁义者，天下之大柄也"*
+
+---
+
+## 文明特性：殷商之礼
+
+> *"国之大事，在祀与戎"*
+
+### 效果详解
+
+| 效果 | 数值 | 说明 |
+|-----|------|------|
+| **圣地邻接** | +100% | 圣地邻接加成翻倍 |
+| **宗教传播** | +25% | 宗教单位传播效率+25% |
+| **神权政治** | 特殊 | 圣地建筑可用信仰购买军事单位 |
+| **祭祀加成** | +1 信仰 | 每座城市基础+1信仰 |
+
+### 宗教体系机制
+
+```typescript
+const SHANG_RITES: Ability = {
+  name: '殷商之礼',
+  description: '继承商代的祭祀传统',
+  detailedDescription: `
+    • 圣地邻接加成 +100%（翻倍）
+    • 宗教单位传播效率 +25%
+    • 神殿可用信仰购买陆军单位
+    • 每座城市基础 +1 信仰
+  `,
+  effects: [
+    { type: 'adjacency_bonus_multiplier', district: 'holy_site', value: 100 },
+    { type: 'religious_spread_efficiency', value: 25 },
+    { type: 'faith_purchase_units', building: 'temple', unitClass: 'land_military' },
+    { type: 'base_faith_per_city', value: 1 },
+  ],
+};
+```
+
+### 历史背景
+
+宋国作为商朝王族的后裔，保留了商代完整的祭祀体系。商人崇拜上帝和祖先，祭祀活动频繁而隆重。宋国将这一传统完整继承下来，使宋国成为春秋时期宗教色彩最浓厚的诸侯国。
+
+---
+
+## 特色单位：宋国御戎
+
+### 单位数据
+
+| 属性 | 数值 | 对比骑兵 |
+|-----|------|---------|
+| **战斗力** | 48 | 48 |
+| **移动力** | 4 | 4 |
+| **生产成本** | 220 | 220 |
+| **时代** | 中世纪 | 中世纪 |
+| **科技需求** | 骑术 | 骑术 |
+
+### 特殊能力
+
+| 能力 | 效果 |
+|-----|------|
+| **护法使者** | 可携带一个宗教单位 |
+| **圣战** | 与异教徒作战时+7战斗力 |
+| **祭祀加成** | 击杀敌人后+10信仰 |
+
+```typescript
+const SONG_CHARIOTEER: UniqueUnit = {
+  id: 'song_charioteer',
+  name: '宋国御戎',
+  replaces: 'knight',
+  
+  stats: {
+    combatStrength: 48,
+    movement: 4,
+    productionCost: 220,
+    maintenanceCost: 3,
+    sight: 2,
+  },
+  
+  requirements: {
+    technology: 'stirrups',
+    resource: 'horses',
+    era: 'medieval',
+  },
+  
+  abilities: [
+    {
+      id: 'religious_escort',
+      name: '护法使者',
+      description: '可携带一个宗教单位',
+      effect: 'can_carry_unit',
+      carryType: 'religious',
+      carryCount: 1,
+    },
+    {
+      id: 'holy_war',
+      name: '圣战',
+      description: '与异教徒作战时+7战斗力',
+      combatModifier: { vs: 'different_religion', value: 7 },
+    },
+    {
+      id: 'sacrifice_bonus',
+      name: '祭祀加成',
+      description: '击杀敌人后+10信仰',
+      effect: 'faith_on_kill',
+      value: 10,
+    },
+  ],
+  
+  promotionClass: 'heavy_cavalry',
+  
+  historicalNote: `
+    宋国作为商朝后裔，军队保留了商代战车的传统。
+    "御戎"指驾驭战车的士兵，是军队的精锐。
+    宋国御戎常常护送祭司和宗教人员，执行宗教使命。
+  `,
+};
+```
+
+---
+
+## 特色建筑：商汤祠
+
+### 建筑数据
+
+| 属性 | 数值 |
+|-----|------|
+| **替代** | 神殿 |
+| **生产成本** | 120 |
+| **维护费用** | 2 |
+| **区域** | 圣地 |
+| **科技需求** | 神秘主义 |
+
+### 效果
+
+| 效果 | 数值 |
+|-----|------|
+| **信仰** | +4（神殿为+4） |
+| **信仰购买** | 可购买陆军单位 |
+| **遗物槽** | +1 |
+| **大预言家点数** | +2/回合 |
+
+```typescript
+const SHANG_TANG_SHRINE: UniqueBuilding = {
+  id: 'shang_tang_shrine',
+  name: '商汤祠',
+  replaces: 'temple',
+  
+  stats: {
+    productionCost: 120,
+    maintenanceCost: 2,
+  },
+  
+  requirements: {
+    civic: 'mysticism',
+    district: 'holy_site',
+  },
+  
+  effects: [
+    { type: 'faith', value: 4 },
+    { type: 'faith_purchase', unitClass: 'land_military' },
+    { type: 'relic_slot', value: 1 },
+    { type: 'great_prophet_points', value: 2 },
+  ],
+  
+  historicalNote: `
+    商汤祠是宋国祭祀商朝开国君主商汤的祠堂。
+    商汤以仁德著称，"网开三面"的典故即出自商汤。
+    宋国人在此祭祀先祖，祈求保佑。
+  `,
+};
+```
+
+---
+
+## 起始偏好
+
+```typescript
+const SONG_START_BIAS: StartBias = {
+  terrain: [TerrainType.PLAINS],
+  tier: 1, // 无特殊偏好
+};
+```
+
+| 偏好 | 强度 | 原因 |
+|-----|------|------|
+| 平原 | ★☆☆ | 中原腹地，无特殊需求 |
+
+---
+
+## 战略指南
+
+### 早期发展 (古代-古典)
+
+1. **优先圣地**：邻接加成翻倍
+2. **创立宗教**：大预言家点数加成
+3. **信仰积累**：每城+1基础信仰
+
+### 中期发展 (古典-中世纪)
+
+1. **商汤祠**：信仰购买军事单位
+2. **宗教传播**：+25%传播效率
+3. **宋国御戎**：护送宗教单位
+
+### 后期决战 (文艺复兴+)
+
+1. **宗教胜利**：信仰优势转化为宗教胜利
+2. **神权军队**：用信仰购买军队
+3. **道德优势**：外交好感度+10
+
+### 克制与被克制
+
+| 对手 | 关系 | 说明 |
+|-----|------|------|
+| 鲁国 | 竞争 | 同为文化/宗教型 |
+| 秦国 | 被克制 | 法治压制宗教 |
+| 齐国 | 被克制 | 经济压制宗教 |
+
+### 特殊注意
+
+**"仁义之师"的限制**是双刃剑：
+- 不能攻击渡河中或刚进入战斗的敌军
+- 这意味着错过一些进攻时机
+- 但获得持续的信仰和外交加成
+- 被攻击时有战斗力加成作为补偿
+
+---
+
+## 完整代码定义
+
+```typescript
+const SONG: Civilization = {
+  id: 'song',
+  name: '宋国',
+  adjective: '宋',
+  icon: '宋', // 甲骨文
+  colors: { 
+    primary: '#f5f5f5', // 纯白
+    secondary: '#1a1a1a', // 玄黑
+  },
+  
+  leader: {
+    id: 'duke_xiang_of_song',
+    name: '宋襄公',
+    title: '仁义之君',
+    era: '公元前650年-前637年',
+    ability: DUKE_XIANG_ABILITY,
+    agenda: {
+      name: '仁者之道',
+      likes: '遵守战争礼仪的文明',
+      dislikes: '偷袭、背信弃义的文明',
+      weight: 9,
+    },
+    quotes: [
+      '君子不重伤，不禽二毛',
+      '不鼓不成列',
+    ],
+    biography: '坚守仁义，虽败犹荣，成为道德典范。',
+  },
+  
+  civilizationAbility: SHANG_RITES,
+  
+  uniqueUnits: [SONG_CHARIOTEER],
+  uniqueBuildings: [SHANG_TANG_SHRINE],
+  uniqueImprovements: [],
+  uniqueDistricts: [],
+  
+  startBias: SONG_START_BIAS,
+  
+  historicalInfo: {
+    founding: '周武王封微子启于宋，延续商祀',
+    territory: '河南东部、山东西南',
+    culture: '殷商礼仪、重祀尚神、仁义传统',
+    legacy: '"宋襄之仁"成为道德典范与反面教材',
+    famousFigures: ['微子启', '宋襄公', '墨子', '庄子', '惠施'],
+  },
+};
+
+export default SONG;
+```

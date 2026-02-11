@@ -1,0 +1,397 @@
+---
+description: 越国文明详细设计
+globs: ["**/civilization/yue/**", "**/civ/yue/**"]
+alwaysApply: false
+---
+
+# 越国 (Yue) - 卧薪尝胆
+
+> *"苦心人，天不负，卧薪尝胆，三千越甲可吞吴"*
+
+## 文明概述
+
+| 属性 | 内容 |
+|-----|------|
+| **图标** | 越（甲骨文） |
+| **主色调** | 青绿 `#2e8b57` |
+| **辅色调** | 暗金 `#b8860b` |
+| **游戏风格** | 防守反击型 |
+| **难度评级** | ★★★★☆ (4/5) |
+| **适合胜利** | 统治胜利 |
+
+---
+
+## 历史背景
+
+### 建国渊源
+
+越国先祖为夏禹的后裔，封于会稽（今浙江绍兴）。越人是百越民族的一支，长期被中原视为"蛮夷"。越国地处东南沿海，山地丘陵众多，民风剽悍尚武。
+
+越国与吴国长期对峙，最终在勾践的领导下，"十年生聚，十年教训"，成功灭吴，成为春秋最后一位霸主。
+
+### 疆域变迁
+
+- **初封**：会稽（今浙江绍兴）
+- **春秋早期**：浙江东部沿海
+- **灭吴后**：控制整个江南地区
+- **北上争霸**：势力延伸至山东、淮泗
+
+### 文化特色
+
+越国文化具有鲜明的百越特色：
+- **断发文身**：保留百越习俗
+- **铸剑工艺**：越王剑闻名天下
+- **山地战术**：擅长丘陵山地作战
+- **忍辱负重**：勾践精神成为典范
+
+### 著名人物
+
+| 人物 | 时期 | 贡献 |
+|-----|------|------|
+| 勾践 | 春秋 | 卧薪尝胆，灭吴称霸 |
+| 范蠡 | 春秋 | 名相，功成身退 |
+| 文种 | 春秋 | 辅佐勾践，后被赐死 |
+| 西施 | 春秋 | 四大美女之首 |
+| 欧冶子 | 春秋 | 铸剑大师 |
+
+---
+
+## 领袖：勾践
+
+### 基本信息
+
+| 属性 | 内容 |
+|-----|------|
+| **姓名** | 姒勾践 |
+| **在位** | 公元前496年—前465年（共32年） |
+| **头衔** | 春秋最后一位霸主 |
+| **谥号** | 无（越国不用谥号） |
+
+### 生平简介
+
+勾践继位后与吴国交战，在檇李之战中射伤吴王阖闾，阖闾伤重而死。此后夫差继位，大败越军于夫椒。勾践被迫求和，亲自入吴为奴三年。
+
+回国后，勾践卧薪尝胆，励精图治。他任用范蠡、文种等人，"十年生聚，十年教训"。同时使用美人计（西施）、疲敌计等手段削弱吴国。
+
+公元前473年，越国灭吴，勾践北上会盟诸侯于徐州，成为春秋最后一位霸主。
+
+### 领袖能力：卧薪尝胆
+
+> *逆境中崛起，防守反击*
+
+| 效果类型 | 详细说明 |
+|---------|---------|
+| **被宣战加成** | 被宣战时+15%战斗力 |
+| **敌占城市** | 被占领的城市忠诚度-50（更快叛变回来） |
+| **复仇之战** | 收复被占城市时，该城市立即+10生产力/回合（5回合） |
+| **十年生聚** | 和平时期每回合+1%金库（复利积累） |
+
+```typescript
+const KING_GOUJIAN_ABILITY: Ability = {
+  name: '卧薪尝胆',
+  description: '逆境中积蓄力量，绝地反击',
+  detailedDescription: `
+    • 被宣战时：+15% 战斗力
+    • 被占城市：敌方忠诚度 -50
+    • 收复城市：立即 +10 生产力/回合（持续 5 回合）
+    • 和平时期：每回合 +1% 金库（复利）
+  `,
+  effects: [
+    { type: 'defensive_war_combat_bonus', value: 15 },
+    { type: 'occupied_city_loyalty_penalty', value: -50 },
+    { type: 'liberated_city_production', value: 10, duration: 5 },
+    { type: 'peace_gold_interest', value: 1 },
+  ],
+};
+```
+
+### AI 议程：忍辱负重
+
+| 属性 | 内容 |
+|-----|------|
+| **喜欢** | 能屈能伸、善于等待时机的文明 |
+| **讨厌** | 急躁冒进、不顾后果的文明 |
+| **外交权重** | 8/10 |
+
+### 名言
+
+- *"苦心人，天不负"*
+- *"十年生聚，十年教训"*
+- *"飞鸟尽，良弓藏；狡兔死，走狗烹"*
+
+---
+
+## 文明特性：越山之民
+
+> *"越人善于山战，剽悍尚武"*
+
+### 效果详解
+
+| 效果 | 数值 | 说明 |
+|-----|------|------|
+| **丘陵生产** | +1 | 丘陵地块+1生产力 |
+| **丘陵移动** | -1 | 丘陵移动消耗减少1 |
+| **山地防御** | +5 | 在丘陵/山脚防御+5战斗力 |
+| **铸剑工艺** | 特殊 | 近战单位战斗力+2 |
+
+### 山地作战机制
+
+```typescript
+const MOUNTAIN_PEOPLE: Ability = {
+  name: '越山之民',
+  description: '山地丘陵中的强大战斗力',
+  detailedDescription: `
+    • 丘陵地块 +1 生产力
+    • 丘陵移动消耗 -1
+    • 在丘陵/山脚防御时 +5 战斗力
+    • 所有近战单位 +2 战斗力（铸剑工艺）
+  `,
+  effects: [
+    { type: 'terrain_yield_modifier', terrain: 'hills', yield: 'production', value: 1 },
+    { type: 'terrain_movement_modifier', terrain: 'hills', value: -1 },
+    { type: 'combat_bonus_defending', terrain: ['hills', 'adjacent_to_mountain'], value: 5 },
+    { type: 'melee_combat_bonus', value: 2 },
+  ],
+};
+```
+
+### 历史背景
+
+越国地处浙江，境内多山地丘陵。越人世代生活在山区，擅长在复杂地形中作战。越国的铸剑工艺也是天下一绝，越王勾践剑出土时仍然锋利如新。
+
+---
+
+## 特色单位：越女剑客
+
+### 单位数据
+
+| 属性 | 数值 | 对比弓箭手 |
+|-----|------|---------|
+| **近战战斗力** | 22 | 15 (+7) |
+| **远程战斗力** | 25 | 25 |
+| **射程** | 2 | 2 |
+| **移动力** | 2 | 2 |
+| **生产成本** | 65 | 60 (+5) |
+| **时代** | 古代 | 古代 |
+
+### 特殊能力
+
+| 能力 | 效果 |
+|-----|------|
+| **剑舞** | 近战攻击时不受反击伤害 |
+| **灵动** | 攻击后可移动1格 |
+| **越女剑法** | 对近战单位攻击时+5战斗力 |
+
+```typescript
+const YUE_SWORDSWOMAN: UniqueUnit = {
+  id: 'yue_swordswoman',
+  name: '越女剑客',
+  replaces: 'archer',
+  
+  stats: {
+    combatStrength: 22,
+    rangedStrength: 25,
+    range: 2,
+    movement: 2,
+    productionCost: 65,
+    maintenanceCost: 1,
+    sight: 2,
+  },
+  
+  requirements: {
+    technology: 'archery',
+    era: 'ancient',
+  },
+  
+  abilities: [
+    {
+      id: 'sword_dance',
+      name: '剑舞',
+      description: '近战攻击时不受反击',
+      effect: 'no_retaliation_damage_melee',
+    },
+    {
+      id: 'agile',
+      name: '灵动',
+      description: '攻击后可移动1格',
+      effect: 'can_move_after_attack',
+      movementAfterAttack: 1,
+    },
+    {
+      id: 'yue_swordsmanship',
+      name: '越女剑法',
+      description: '对近战单位+5战斗力',
+      combatModifier: { vs: 'melee', value: 5 },
+    },
+  ],
+  
+  promotionClass: 'ranged',
+  
+  historicalNote: `
+    "越女剑"是中国古代著名的剑术流派。
+    据《吴越春秋》记载，越王勾践曾请一位山中越女教授士兵剑术。
+    越女剑法以轻灵飘逸著称，"一人当百，百人当万"。
+  `,
+};
+```
+
+### 历史背景
+
+《吴越春秋》记载了"越女论剑"的故事。勾践为灭吴准备军队时，请一位住在山中的越女教授士兵剑术。这位越女的剑法神乎其技，成为后世武侠小说中"越女剑"的原型。
+
+---
+
+## 特色改良：越王铸剑坊
+
+### 改良数据
+
+| 属性 | 数值 |
+|-----|------|
+| **生产成本** | 3 回合 |
+| **维护费用** | 0 |
+| **可建造地形** | 丘陵、平地 |
+| **科技需求** | 青铜冶炼 |
+
+### 效果
+
+| 效果 | 数值 |
+|-----|------|
+| **生产力** | +2 |
+| **邻接铁矿** | +2 生产力 |
+| **单位加成** | 该城市训练的近战单位+3战斗力 |
+| **伟人点数** | +1 大工程师点数 |
+
+```typescript
+const SWORD_FORGE: UniqueImprovement = {
+  id: 'sword_forge',
+  name: '越王铸剑坊',
+  
+  stats: {
+    buildTime: 3,
+    maintenanceCost: 0,
+  },
+  
+  requirements: {
+    technology: 'bronze_working',
+    validTerrain: [TerrainType.PLAINS, TerrainType.GRASSLAND],
+    validElevation: [Elevation.FLAT, Elevation.HILLS],
+  },
+  
+  effects: [
+    { type: 'production', value: 2 },
+    { type: 'adjacent_resource_bonus', resource: 'iron', yield: 'production', value: 2 },
+    { type: 'city_unit_combat_bonus', unitClass: 'melee', value: 3 },
+    { type: 'great_engineer_points', value: 1 },
+  ],
+  
+  historicalNote: `
+    越国的铸剑工艺冠绝天下，欧冶子、干将等铸剑大师都与越国有关。
+    越王勾践剑是中国出土的最著名的古剑之一，
+    历经两千多年仍然锋利无比，展现了越国卓越的青铜铸造技术。
+  `,
+};
+```
+
+---
+
+## 起始偏好
+
+```typescript
+const YUE_START_BIAS: StartBias = {
+  terrain: [TerrainType.PLAINS],
+  feature: [FeatureType.HILLS],
+  coastal: true,
+  tier: 3,
+};
+```
+
+| 偏好 | 强度 | 原因 |
+|-----|------|------|
+| 丘陵 | ★★★ | 文明特性核心 |
+| 海岸 | ★★★ | 浙江沿海地区 |
+| 平原 | ★★☆ | 需要可耕地 |
+
+---
+
+## 战略指南
+
+### 早期发展 (古代-古典)
+
+1. **选择丘陵起始**：文明特性加成最大化
+2. **越女剑客**：古代强力混合单位
+3. **建造铸剑坊**：提升军事产能
+
+### 中期发展 (古典-中世纪)
+
+1. **防守为主**：利用被宣战+15%战斗力
+2. **积累金币**：和平时期+1%复利
+3. **等待时机**：不主动开战，反击更强
+
+### 后期决战 (文艺复兴+)
+
+1. **反击作战**：被宣战后全力反击
+2. **收复失地**：收复城市获得生产力加成
+3. **近战优势**：全体近战+2战斗力持续有效
+
+### 克制与被克制
+
+| 对手 | 关系 | 说明 |
+|-----|------|------|
+| 吴国 | 历史宿敌 | 卧薪尝胆，最终灭吴 |
+| 秦国 | 克制 | 防守反击能力克制进攻型 |
+| 齐国 | 中立 | 各有优势领域 |
+
+---
+
+## 完整代码定义
+
+```typescript
+const YUE: Civilization = {
+  id: 'yue',
+  name: '越国',
+  adjective: '越',
+  icon: '越', // 甲骨文
+  colors: { 
+    primary: '#2e8b57', // 青绿
+    secondary: '#b8860b', // 暗金
+  },
+  
+  leader: {
+    id: 'king_goujian',
+    name: '勾践',
+    title: '春秋最后一位霸主',
+    era: '公元前496年-前465年',
+    ability: KING_GOUJIAN_ABILITY,
+    agenda: {
+      name: '忍辱负重',
+      likes: '能屈能伸、善于等待的文明',
+      dislikes: '急躁冒进的文明',
+      weight: 8,
+    },
+    quotes: [
+      '苦心人，天不负',
+      '十年生聚，十年教训',
+    ],
+    biography: '卧薪尝胆二十年，灭吴雪耻，成就霸业。',
+  },
+  
+  civilizationAbility: MOUNTAIN_PEOPLE,
+  
+  uniqueUnits: [YUE_SWORDSWOMAN],
+  uniqueBuildings: [],
+  uniqueImprovements: [SWORD_FORGE],
+  uniqueDistricts: [],
+  
+  startBias: YUE_START_BIAS,
+  
+  historicalInfo: {
+    founding: '夏禹后裔封于会稽',
+    territory: '浙江东部沿海及会稽山区',
+    culture: '断发文身、铸剑工艺、山地作战',
+    legacy: '卧薪尝胆成为忍辱负重的精神象征',
+    famousFigures: ['勾践', '范蠡', '文种', '西施', '欧冶子'],
+  },
+};
+
+export default YUE;
+```

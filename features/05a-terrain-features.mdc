@@ -1,0 +1,746 @@
+---
+description: 春秋项目地形与地貌系统详细设计
+globs: ["**/map/**", "**/terrain/**", "**/Tile/**"]
+alwaysApply: false
+---
+
+# 地形与地貌系统 (Terrain & Features)
+
+## 概述
+
+地图由地块组成，每个地块包含多个层次的信息：
+- **基础地形 (Terrain)**: 地块的基础类型，决定基础产出
+- **地形高度 (Elevation)**: 平地、丘陵、山脉
+- **地貌特征 (Feature)**: 森林、雨林、沼泽等
+- **河流 (River)**: 地块边缘的河流
+- **悬崖 (Cliff)**: 沿海地区的悬崖
+
+---
+
+## 一、基础地形 (Terrain)
+
+### 陆地地形
+
+| 地形 | 粮食 | 生产 | 金币 | 移动消耗 | 防御加成 | 特点 |
+|-----|------|------|------|----------|---------|------|
+| **草原** (Grassland) | 2 | 0 | 0 | 1 | 0 | 适合农业 |
+| **平原** (Plains) | 1 | 1 | 0 | 1 | 0 | 均衡地形 |
+| **沙漠** (Desert) | 0 | 0 | 0 | 1 | 0 | 贫瘠但可能有绿洲 |
+| **苔原** (Tundra) | 1 | 0 | 0 | 1 | 0 | 寒冷地区 |
+| **雪地** (Snow) | 0 | 0 | 0 | 1 | 0 | 极寒地区 |
+
+### 水域地形
+
+| 地形 | 粮食 | 生产 | 金币 | 移动消耗 | 特点 |
+|-----|------|------|------|----------|------|
+| **海岸** (Coast) | 1 | 0 | 1 | 1 | 近海浅水区 |
+| **海洋** (Ocean) | 1 | 0 | 0 | 1 | 深海，需科技通行 |
+| **湖泊** (Lake) | 1 | 0 | 1 | 1 | 内陆水域 |
+
+```typescript
+enum TerrainType {
+  // 陆地
+  GRASSLAND = 'grassland',
+  PLAINS = 'plains',
+  DESERT = 'desert',
+  TUNDRA = 'tundra',
+  SNOW = 'snow',
+  
+  // 水域
+  COAST = 'coast',
+  OCEAN = 'ocean',
+  LAKE = 'lake',
+}
+
+interface TerrainDefinition {
+  type: TerrainType;
+  name: string;
+  yields: {
+    food: number;
+    production: number;
+    gold: number;
+  };
+  movementCost: number;
+  defenseBonus: number;
+  isWater: boolean;
+  isImpassable: boolean;
+}
+
+const TERRAIN_DEFINITIONS: Record<TerrainType, TerrainDefinition> = {
+  [TerrainType.GRASSLAND]: {
+    type: TerrainType.GRASSLAND,
+    name: '草原',
+    yields: { food: 2, production: 0, gold: 0 },
+    movementCost: 1,
+    defenseBonus: 0,
+    isWater: false,
+    isImpassable: false,
+  },
+  [TerrainType.PLAINS]: {
+    type: TerrainType.PLAINS,
+    name: '平原',
+    yields: { food: 1, production: 1, gold: 0 },
+    movementCost: 1,
+    defenseBonus: 0,
+    isWater: false,
+    isImpassable: false,
+  },
+  [TerrainType.DESERT]: {
+    type: TerrainType.DESERT,
+    name: '沙漠',
+    yields: { food: 0, production: 0, gold: 0 },
+    movementCost: 1,
+    defenseBonus: 0,
+    isWater: false,
+    isImpassable: false,
+  },
+  [TerrainType.TUNDRA]: {
+    type: TerrainType.TUNDRA,
+    name: '苔原',
+    yields: { food: 1, production: 0, gold: 0 },
+    movementCost: 1,
+    defenseBonus: 0,
+    isWater: false,
+    isImpassable: false,
+  },
+  [TerrainType.SNOW]: {
+    type: TerrainType.SNOW,
+    name: '雪地',
+    yields: { food: 0, production: 0, gold: 0 },
+    movementCost: 1,
+    defenseBonus: 0,
+    isWater: false,
+    isImpassable: false,
+  },
+  [TerrainType.COAST]: {
+    type: TerrainType.COAST,
+    name: '海岸',
+    yields: { food: 1, production: 0, gold: 1 },
+    movementCost: 1,
+    defenseBonus: 0,
+    isWater: true,
+    isImpassable: false,
+  },
+  [TerrainType.OCEAN]: {
+    type: TerrainType.OCEAN,
+    name: '海洋',
+    yields: { food: 1, production: 0, gold: 0 },
+    movementCost: 1,
+    defenseBonus: 0,
+    isWater: true,
+    isImpassable: false, // 需要科技才能通行
+  },
+  [TerrainType.LAKE]: {
+    type: TerrainType.LAKE,
+    name: '湖泊',
+    yields: { food: 1, production: 0, gold: 1 },
+    movementCost: 1,
+    defenseBonus: 0,
+    isWater: true,
+    isImpassable: false,
+  },
+};
+```
+
+---
+
+## 二、地形高度 (Elevation)
+
+| 高度 | 产出修正 | 移动消耗 | 防御加成 | 特点 |
+|-----|---------|----------|---------|------|
+| **平地** (Flat) | - | 1 | 0 | 标准地形 |
+| **丘陵** (Hills) | +1 生产 | 2 | +3 | 可开采矿山 |
+| **山脉** (Mountain) | - | ∞ | - | 不可通行（飞行除外） |
+
+```typescript
+enum Elevation {
+  FLAT = 'flat',
+  HILLS = 'hills',
+  MOUNTAIN = 'mountain',
+}
+
+interface ElevationDefinition {
+  type: Elevation;
+  name: string;
+  yieldModifier: { production: number };
+  movementCost: number;  // 额外移动消耗
+  defenseBonus: number;
+  isImpassable: boolean;
+  blocksVision: boolean;  // 阻挡视线
+}
+
+const ELEVATION_DEFINITIONS: Record<Elevation, ElevationDefinition> = {
+  [Elevation.FLAT]: {
+    type: Elevation.FLAT,
+    name: '平地',
+    yieldModifier: { production: 0 },
+    movementCost: 0,
+    defenseBonus: 0,
+    isImpassable: false,
+    blocksVision: false,
+  },
+  [Elevation.HILLS]: {
+    type: Elevation.HILLS,
+    name: '丘陵',
+    yieldModifier: { production: 1 },
+    movementCost: 1,  // 额外+1，总共2
+    defenseBonus: 3,
+    isImpassable: false,
+    blocksVision: true,
+  },
+  [Elevation.MOUNTAIN]: {
+    type: Elevation.MOUNTAIN,
+    name: '山脉',
+    yieldModifier: { production: 0 },
+    movementCost: Infinity,
+    defenseBonus: 0,
+    isImpassable: true,
+    blocksVision: true,
+  },
+};
+```
+
+### 丘陵地形组合
+
+| 组合 | 粮食 | 生产 | 金币 |
+|-----|------|------|------|
+| 草原丘陵 | 2 | 1 | 0 |
+| 平原丘陵 | 1 | 2 | 0 |
+| 沙漠丘陵 | 0 | 1 | 0 |
+| 苔原丘陵 | 1 | 1 | 0 |
+| 雪地丘陵 | 0 | 1 | 0 |
+
+---
+
+## 三、地貌特征 (Features)
+
+地貌特征叠加在基础地形上，修改产出和移动。
+
+### 植被特征
+
+| 特征 | 粮食 | 生产 | 金币 | 移动 | 防御 | 可出现地形 |
+|-----|------|------|------|------|------|-----------|
+| **森林** (Woods) | 0 | +1 | 0 | +1 | +3 | 草原/平原/苔原/丘陵 |
+| **雨林** (Rainforest) | +1 | +1 | 0 | +1 | +3 | 草原/平原 |
+| **沼泽** (Marsh) | +1 | 0 | 0 | +1 | -2 | 草原 |
+
+### 水体特征
+
+| 特征 | 粮食 | 生产 | 金币 | 特点 |
+|-----|------|------|------|------|
+| **泛滥平原** (Floodplains) | +3 | 0 | 0 | 沙漠专属，不可建区域 |
+| **绿洲** (Oasis) | +3 | 0 | +1 | 沙漠专属 |
+| **礁石** (Reef) | +1 | +1 | 0 | 海岸专属，学院邻接+2 |
+
+### 地质特征
+
+| 特征 | 产出 | 特点 |
+|-----|------|------|
+| **悬崖** (Cliffs) | - | 沿海不可登陆 |
+| **火山** (Volcano) | 特殊 | 可爆发，灾害/肥沃 |
+| **地热裂缝** (Geothermal) | +2 科研 | 学院邻接+2 |
+
+```typescript
+enum FeatureType {
+  // 植被
+  WOODS = 'woods',
+  RAINFOREST = 'rainforest',
+  MARSH = 'marsh',
+  
+  // 水体
+  FLOODPLAINS = 'floodplains',
+  OASIS = 'oasis',
+  REEF = 'reef',
+  
+  // 地质
+  CLIFFS = 'cliffs',
+  VOLCANO = 'volcano',
+  GEOTHERMAL_FISSURE = 'geothermal_fissure',
+  
+  // 极地
+  ICE = 'ice',
+}
+
+interface FeatureDefinition {
+  type: FeatureType;
+  name: string;
+  yieldModifier: {
+    food?: number;
+    production?: number;
+    gold?: number;
+    science?: number;
+    culture?: number;
+    faith?: number;
+  };
+  movementCost: number;  // 额外移动消耗
+  defenseBonus: number;
+  allowedTerrains: TerrainType[];
+  allowedElevations: Elevation[];
+  removable: boolean;  // 可被工人移除
+  blocksDistrict: boolean;  // 阻止区域建设
+}
+
+const FEATURE_DEFINITIONS: Record<FeatureType, FeatureDefinition> = {
+  [FeatureType.WOODS]: {
+    type: FeatureType.WOODS,
+    name: '森林',
+    yieldModifier: { production: 1 },
+    movementCost: 1,
+    defenseBonus: 3,
+    allowedTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS, TerrainType.TUNDRA],
+    allowedElevations: [Elevation.FLAT, Elevation.HILLS],
+    removable: true,
+    blocksDistrict: true,
+  },
+  [FeatureType.RAINFOREST]: {
+    type: FeatureType.RAINFOREST,
+    name: '雨林',
+    yieldModifier: { food: 1, production: 1 },
+    movementCost: 1,
+    defenseBonus: 3,
+    allowedTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS],
+    allowedElevations: [Elevation.FLAT, Elevation.HILLS],
+    removable: true,
+    blocksDistrict: true,
+  },
+  [FeatureType.MARSH]: {
+    type: FeatureType.MARSH,
+    name: '沼泽',
+    yieldModifier: { food: 1 },
+    movementCost: 1,
+    defenseBonus: -2,
+    allowedTerrains: [TerrainType.GRASSLAND],
+    allowedElevations: [Elevation.FLAT],
+    removable: true,
+    blocksDistrict: true,
+  },
+  [FeatureType.FLOODPLAINS]: {
+    type: FeatureType.FLOODPLAINS,
+    name: '泛滥平原',
+    yieldModifier: { food: 3 },
+    movementCost: 0,
+    defenseBonus: -2,
+    allowedTerrains: [TerrainType.DESERT],
+    allowedElevations: [Elevation.FLAT],
+    removable: false,
+    blocksDistrict: true,  // 不可建区域
+  },
+  [FeatureType.OASIS]: {
+    type: FeatureType.OASIS,
+    name: '绿洲',
+    yieldModifier: { food: 3, gold: 1 },
+    movementCost: 0,
+    defenseBonus: 0,
+    allowedTerrains: [TerrainType.DESERT],
+    allowedElevations: [Elevation.FLAT],
+    removable: false,
+    blocksDistrict: true,
+  },
+  [FeatureType.REEF]: {
+    type: FeatureType.REEF,
+    name: '礁石',
+    yieldModifier: { food: 1, production: 1 },
+    movementCost: 0,
+    defenseBonus: 0,
+    allowedTerrains: [TerrainType.COAST],
+    allowedElevations: [Elevation.FLAT],
+    removable: false,
+    blocksDistrict: false,
+  },
+  [FeatureType.GEOTHERMAL_FISSURE]: {
+    type: FeatureType.GEOTHERMAL_FISSURE,
+    name: '地热裂缝',
+    yieldModifier: { science: 2 },
+    movementCost: 0,
+    defenseBonus: 0,
+    allowedTerrains: [TerrainType.GRASSLAND, TerrainType.PLAINS, TerrainType.DESERT, TerrainType.TUNDRA, TerrainType.SNOW],
+    allowedElevations: [Elevation.FLAT, Elevation.HILLS],
+    removable: false,
+    blocksDistrict: false,
+  },
+  [FeatureType.ICE]: {
+    type: FeatureType.ICE,
+    name: '冰层',
+    yieldModifier: {},
+    movementCost: Infinity,
+    defenseBonus: 0,
+    allowedTerrains: [TerrainType.COAST, TerrainType.OCEAN],
+    allowedElevations: [Elevation.FLAT],
+    removable: false,
+    blocksDistrict: true,
+  },
+};
+```
+
+---
+
+## 四、河流系统
+
+河流存在于地块边缘，而非地块本身。
+
+### 河流效果
+
+| 效果 | 说明 |
+|-----|------|
+| +1 宜居度 | 城市中心临河 |
+| +2 金币邻接 | 商业中心临河 |
+| 农场加成 | 封建主义后相邻农场+1粮食 |
+| 移动惩罚 | 穿越河流消耗全部移动力 |
+| 战斗惩罚 | 跨河攻击-3战斗力 |
+| 允许水渠 | 城市可建造水渠连接河流 |
+
+```typescript
+interface RiverEdge {
+  tileA: Coord;
+  tileB: Coord;
+  name?: string;  // 河流名称
+}
+
+interface RiverSystem {
+  id: string;
+  name: string;
+  edges: RiverEdge[];
+  source: Coord;  // 河流源头（山脉）
+  mouth: Coord;   // 河流入海口
+}
+
+// 检查地块是否临河
+function isAdjacentToRiver(position: Coord, rivers: RiverEdge[]): boolean {
+  return rivers.some(edge =>
+    (edge.tileA.row === position.row && edge.tileA.col === position.col) ||
+    (edge.tileB.row === position.row && edge.tileB.col === position.col)
+  );
+}
+
+// 检查两个地块之间是否有河流
+function hasRiverBetween(a: Coord, b: Coord, rivers: RiverEdge[]): boolean {
+  return rivers.some(edge =>
+    (edge.tileA.row === a.row && edge.tileA.col === a.col &&
+     edge.tileB.row === b.row && edge.tileB.col === b.col) ||
+    (edge.tileA.row === b.row && edge.tileA.col === b.col &&
+     edge.tileB.row === a.row && edge.tileB.col === a.col)
+  );
+}
+```
+
+---
+
+## 五、自然奇观 (Natural Wonders)
+
+自然奇观是特殊的地貌，提供强大的产出和加成。首个发现自然奇观的文明获得时代分数和一次性奖励。
+
+### 发现奖励
+
+| 奖励类型 | 数值 |
+|---------|------|
+| 首次发现时代分数 | +3 |
+| 首次发现金币 | +50 |
+| 拥有地块时额外信仰 | +2/地块 |
+
+---
+
+### 中国特色自然奇观
+
+> 春秋地图优先生成以下中国特色自然奇观
+
+| 奇观 | 占地 | 粮食 | 生产 | 金币 | 科研 | 文化 | 信仰 | 特殊效果 |
+|-----|------|------|------|------|------|------|------|---------|
+| **泰山** | 2 | 0 | 0 | 0 | 0 | +2 | +4 | 相邻圣地+3信仰，首个发现者获得大预言家点数+25 |
+| **黄河壶口瀑布** | 2 | +2 | +1 | 0 | 0 | +2 | 0 | 相邻地块+1粮食，城市临近时宜居度+2 |
+| **长江三峡** | 3 | +1 | +2 | +1 | 0 | +1 | 0 | 穿过此地的贸易路线+3金币 |
+| **桂林山水** | 2 | +1 | 0 | 0 | 0 | +4 | +1 | 相邻剧院广场+3文化，吸引力+4 |
+| **华山** | 1 | 0 | +1 | 0 | 0 | +1 | +3 | 相邻军营单位+5战斗力（防御时） |
+| **嵩山** | 1 | 0 | 0 | 0 | +2 | +1 | +2 | 相邻学院+2科研 |
+| **恒山** | 1 | 0 | +1 | 0 | 0 | 0 | +3 | 相邻圣地宗教单位+1移动力 |
+| **衡山** | 1 | +1 | 0 | 0 | 0 | +2 | +2 | 相邻农场+1粮食 |
+| **洞庭湖** | 2 | +3 | 0 | +1 | 0 | +1 | 0 | 内陆湖泊，相邻渔船产量翻倍 |
+| **太湖** | 2 | +2 | 0 | +2 | 0 | +2 | 0 | 相邻城市+1贸易路线容量 |
+| **昆仑山** | 3 | 0 | 0 | 0 | +1 | +2 | +4 | 传说中的仙山，全局大预言家点数+1 |
+| **青海湖** | 2 | +2 | 0 | 0 | +1 | 0 | +3 | 相邻牧场+2生产力 |
+
+---
+
+### 世界自然奇观
+
+| 奇观 | 占地 | 粮食 | 生产 | 金币 | 科研 | 文化 | 信仰 | 特殊效果 |
+|-----|------|------|------|------|------|------|------|---------|
+| 珠穆朗玛峰 | 3 | 0 | 0 | 0 | 0 | +1 | +4 | 相邻宗教单位+10神学战斗 |
+| 死海 | 2 | +2 | 0 | +2 | 0 | +2 | +2 | 相邻单位+10治疗/回合 |
+| 乞力马扎罗山 | 1 | 0 | 0 | 0 | 0 | +2 | 0 | 相邻单位+1移动力 |
+| 马特洪峰 | 1 | 0 | 0 | +2 | 0 | +2 | 0 | 首个发现+1文化/回合 |
+| 乌卢鲁 | 1 | 0 | 0 | 0 | 0 | +2 | +2 | 沙漠城市+4信仰 |
+| 加拉帕戈斯群岛 | 2 | +2 | 0 | 0 | +2 | 0 | 0 | 相邻学院+2科研 |
+| 大堡礁 | 2 | +2 | 0 | 0 | +2 | 0 | 0 | 海洋资源+2粮食 |
+| 潘塔纳尔湿地 | 4 | +2 | 0 | 0 | 0 | +2 | 0 | 不消耗移动力 |
+
+---
+
+### 数据结构
+
+```typescript
+interface NaturalWonder {
+  id: string;
+  name: string;
+  chineseName: string;
+  tiles: number;  // 占用地块数
+  yields: {
+    food: number;
+    production: number;
+    gold: number;
+    science: number;
+    culture: number;
+    faith: number;
+  };
+  discoveryBonus: {
+    gold: number;
+    eraScore: number;
+    greatPersonPoints?: { type: GreatPersonType; amount: number };
+  };
+  effect?: string;
+  adjacencyBonus?: AdjacencyBonus[];
+  impassable: boolean;
+  validTerrains: TerrainType[];
+  validElevations: Elevation[];
+  isChinese: boolean;  // 中国特色奇观优先生成
+}
+
+interface AdjacencyBonus {
+  target: 'tile' | 'district' | 'unit' | 'city';
+  targetType?: string;  // 具体类型，如 'holy_site', 'campus'
+  yield?: YieldType;
+  amount: number;
+  condition?: string;
+}
+
+const NATURAL_WONDERS: NaturalWonder[] = [
+  {
+    id: 'mount_tai',
+    name: 'Mount Tai',
+    chineseName: '泰山',
+    tiles: 2,
+    yields: { food: 0, production: 0, gold: 0, science: 0, culture: 2, faith: 4 },
+    discoveryBonus: { gold: 50, eraScore: 3, greatPersonPoints: { type: 'prophet', amount: 25 } },
+    effect: '五岳之首，封禅圣地',
+    adjacencyBonus: [
+      { target: 'district', targetType: 'holy_site', yield: 'faith', amount: 3 },
+    ],
+    impassable: true,
+    validTerrains: [TerrainType.PLAINS, TerrainType.GRASSLAND],
+    validElevations: [Elevation.MOUNTAIN],
+    isChinese: true,
+  },
+  {
+    id: 'yellow_river_hukou',
+    name: 'Hukou Waterfall',
+    chineseName: '黄河壶口瀑布',
+    tiles: 2,
+    yields: { food: 2, production: 1, gold: 0, science: 0, culture: 2, faith: 0 },
+    discoveryBonus: { gold: 50, eraScore: 3 },
+    effect: '黄河之水天上来',
+    adjacencyBonus: [
+      { target: 'tile', yield: 'food', amount: 1 },
+    ],
+    impassable: false,
+    validTerrains: [TerrainType.PLAINS],
+    validElevations: [Elevation.FLAT, Elevation.HILLS],
+    isChinese: true,
+  },
+  {
+    id: 'three_gorges',
+    name: 'Three Gorges',
+    chineseName: '长江三峡',
+    tiles: 3,
+    yields: { food: 1, production: 2, gold: 1, science: 0, culture: 1, faith: 0 },
+    discoveryBonus: { gold: 75, eraScore: 3 },
+    effect: '两岸猿声啼不住，轻舟已过万重山',
+    impassable: false,
+    validTerrains: [TerrainType.PLAINS, TerrainType.GRASSLAND],
+    validElevations: [Elevation.HILLS],
+    isChinese: true,
+  },
+  {
+    id: 'guilin_karst',
+    name: 'Guilin Karst',
+    chineseName: '桂林山水',
+    tiles: 2,
+    yields: { food: 1, production: 0, gold: 0, science: 0, culture: 4, faith: 1 },
+    discoveryBonus: { gold: 50, eraScore: 3 },
+    effect: '桂林山水甲天下',
+    adjacencyBonus: [
+      { target: 'district', targetType: 'theater_square', yield: 'culture', amount: 3 },
+    ],
+    impassable: false,
+    validTerrains: [TerrainType.GRASSLAND],
+    validElevations: [Elevation.FLAT, Elevation.HILLS],
+    isChinese: true,
+  },
+  {
+    id: 'kunlun_mountains',
+    name: 'Kunlun Mountains',
+    chineseName: '昆仑山',
+    tiles: 3,
+    yields: { food: 0, production: 0, gold: 0, science: 1, culture: 2, faith: 4 },
+    discoveryBonus: { gold: 100, eraScore: 4 },
+    effect: '西王母之地，众神居所',
+    impassable: true,
+    validTerrains: [TerrainType.TUNDRA, TerrainType.SNOW],
+    validElevations: [Elevation.MOUNTAIN],
+    isChinese: true,
+  },
+  // ... 更多自然奇观
+];
+```
+
+---
+
+### 生成规则
+
+1. **数量**：根据地图大小决定
+   - 小地图：4-6 个
+   - 标准地图：6-8 个
+   - 大地图：8-12 个
+   - 巨大地图：12-16 个
+
+2. **间距**：自然奇观之间至少相距 10 个地块
+
+3. **优先级**：中国特色奇观优先生成（`isChinese: true`）
+
+4. **地形适配**：必须符合 `validTerrains` 和 `validElevations`
+
+5. **平衡分布**：尽量分散在地图各处，避免集中
+
+```typescript
+function placeNaturalWonders(map: GameMap, count: number): void {
+  const wonders = [...NATURAL_WONDERS]
+    .sort((a, b) => (b.isChinese ? 1 : 0) - (a.isChinese ? 1 : 0)); // 中国奇观优先
+  
+  const placed: Coord[] = [];
+  
+  for (const wonder of wonders) {
+    if (placed.length >= count) break;
+    
+    const position = findValidPosition(map, wonder, placed);
+    if (position) {
+      placeWonderAt(map, wonder, position);
+      placed.push(position);
+    }
+  }
+}
+
+function findValidPosition(
+  map: GameMap, 
+  wonder: NaturalWonder, 
+  existing: Coord[]
+): Coord | null {
+  const MIN_DISTANCE = 10;
+  
+  for (let attempt = 0; attempt < 100; attempt++) {
+    const pos = randomPosition(map);
+    
+    // 检查地形是否合适
+    if (!isValidTerrain(map, pos, wonder)) continue;
+    
+    // 检查与现有奇观的距离
+    if (existing.some(e => distance(pos.row, pos.col, e.row, e.col) < MIN_DISTANCE)) continue;
+    
+    // 检查是否有足够空间放置多地块奇观
+    if (!hasEnoughSpace(map, pos, wonder.tiles)) continue;
+    
+    return pos;
+  }
+  
+  return null;
+}
+```
+
+---
+
+## 六、地块产出计算
+
+```typescript
+interface TileYields {
+  food: number;
+  production: number;
+  gold: number;
+  science: number;
+  culture: number;
+  faith: number;
+}
+
+function calculateTileYields(tile: Tile): TileYields {
+  // 1. 基础地形产出
+  const terrain = TERRAIN_DEFINITIONS[tile.terrain];
+  let yields: TileYields = {
+    food: terrain.yields.food,
+    production: terrain.yields.production,
+    gold: terrain.yields.gold,
+    science: 0,
+    culture: 0,
+    faith: 0,
+  };
+  
+  // 2. 高度修正（丘陵+1生产）
+  if (tile.elevation === Elevation.HILLS) {
+    yields.production += ELEVATION_DEFINITIONS[Elevation.HILLS].yieldModifier.production;
+  }
+  
+  // 3. 地貌特征修正
+  if (tile.feature) {
+    const feature = FEATURE_DEFINITIONS[tile.feature];
+    yields.food += feature.yieldModifier.food || 0;
+    yields.production += feature.yieldModifier.production || 0;
+    yields.gold += feature.yieldModifier.gold || 0;
+    yields.science += feature.yieldModifier.science || 0;
+    yields.culture += feature.yieldModifier.culture || 0;
+    yields.faith += feature.yieldModifier.faith || 0;
+  }
+  
+  // 4. 资源修正（见 05b-resources-biomes.mdc）
+  if (tile.resource) {
+    const resource = getResourceDefinition(tile.resource);
+    yields = addYields(yields, resource.yields);
+    
+    // 改良设施加成
+    if (tile.improvement === resource.requiredImprovement) {
+      yields = addYields(yields, resource.improvedYields);
+    }
+  }
+  
+  // 5. 改良设施修正
+  if (tile.improvement) {
+    yields = addYields(yields, getImprovementYields(tile.improvement, tile));
+  }
+  
+  return yields;
+}
+```
+
+---
+
+## 七、地图生成考量
+
+### 地形分布比例（标准）
+
+| 地形类型 | 比例 |
+|---------|------|
+| 草原 | 25% |
+| 平原 | 20% |
+| 沙漠 | 10% |
+| 苔原 | 10% |
+| 雪地 | 5% |
+| 海岸 | 15% |
+| 海洋 | 10% |
+| 山脉 | 5% |
+
+### 丘陵分布
+
+- 陆地约 30% 是丘陵
+- 山脉通常成链/带状分布
+- 山脉周围更容易出现丘陵
+
+### 特征分布
+
+- 森林：温带地区 40%
+- 雨林：热带地区 60%
+- 沼泽：河流/湖泊附近
+- 泛滥平原：沙漠河流沿岸

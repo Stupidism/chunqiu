@@ -1,0 +1,397 @@
+---
+description: 郑国文明详细设计
+globs: ["**/civilization/zheng/**", "**/civ/zheng/**"]
+alwaysApply: false
+---
+
+# 郑国 (Zheng) - 商贾之国
+
+> *"郑人善贾，天下莫能与之争利"*
+
+## 文明概述
+
+| 属性 | 内容 |
+|-----|------|
+| **图标** | 鄭（甲骨文） |
+| **主色调** | 翠绿 `#228b22` |
+| **辅色调** | 金黄 `#daa520` |
+| **游戏风格** | 商贸情报型 |
+| **难度评级** | ★★★★☆ (4/5) |
+| **适合胜利** | 经济胜利、外交胜利 |
+
+---
+
+## 历史背景
+
+### 建国渊源
+
+郑国由周宣王之弟姬友所建，初封于郑（今陕西华县）。后郑桓公东迁至今河南新郑一带，建立新郑国。郑国地处中原交通要道，商业繁荣，是春秋早期最活跃的诸侯国之一。
+
+郑国虽然国小，但因地理位置优越，商业发达，在春秋时期扮演了重要角色。
+
+### 疆域变迁
+
+- **初封**：郑（今陕西华县）
+- **东迁**：新郑（今河南新郑）
+- **全盛**：郑庄公时期，"小霸"中原
+- **末期**：夹在晋楚之间，左右逢源
+
+### 文化特色
+
+郑国文化以商业和外交著称：
+- **商业繁荣**：郑国商人遍布天下
+- **外交艺术**：子产等外交家辈出
+- **法治思想**：子产铸刑书，开成文法先河
+- **诗歌传统**：《诗经·郑风》多情歌
+
+### 著名人物
+
+| 人物 | 时期 | 贡献 |
+|-----|------|------|
+| 郑庄公 | 春秋 | 春秋小霸 |
+| 子产 | 春秋 | 名相，铸刑书 |
+| 弦高 | 春秋 | 商人救国 |
+| 邓析 | 春秋 | 名家先驱 |
+
+---
+
+## 领袖：郑庄公
+
+### 基本信息
+
+| 属性 | 内容 |
+|-----|------|
+| **姓名** | 姬寤生 |
+| **在位** | 公元前743年—前701年（共43年） |
+| **头衔** | 春秋小霸 |
+| **谥号** | 庄 |
+
+### 生平简介
+
+郑庄公名寤生，因出生时难产（寤生=逆生），母亲武姜不喜欢他。武姜偏爱小儿子共叔段，多次请求将其立为太子。庄公即位后，共叔段叛乱，庄公一举平定，并将母亲安置于城颍，发誓"不及黄泉，无相见也"。
+
+后来庄公后悔，挖掘地道至地下水（黄泉），在隧道中与母亲相见，这就是"黄泉见母"的典故。
+
+郑庄公在位期间，善于运用外交手段和间谍策略，使郑国在大国夹缝中生存并强盛。
+
+### 领袖能力：黄泉见母
+
+> *间谍大师，情报至上*
+
+| 效果类型 | 详细说明 |
+|---------|---------|
+| **间谍效率** | 间谍行动成功率+50% |
+| **反间谍** | 敌方间谍行动成功率-50% |
+| **情报网络** | 每座城市的间谍视野范围+2 |
+| **外交情报** | 可看到其他文明的外交关系 |
+
+```typescript
+const DUKE_ZHUANG_ABILITY: Ability = {
+  name: '黄泉见母',
+  description: '精通间谍与情报战',
+  detailedDescription: `
+    • 间谍行动成功率 +50%
+    • 敌方间谍行动成功率 -50%
+    • 间谍视野范围 +2
+    • 可查看其他文明的外交关系
+  `,
+  effects: [
+    { type: 'spy_success_rate', value: 50 },
+    { type: 'counter_spy_effectiveness', value: 50 },
+    { type: 'spy_vision_range', value: 2 },
+    { type: 'diplomatic_visibility', value: true },
+  ],
+};
+```
+
+### AI 议程：纵横捭阖
+
+| 属性 | 内容 |
+|-----|------|
+| **喜欢** | 善于外交、不轻易开战的文明 |
+| **讨厌** | 好战、无视外交的文明 |
+| **外交权重** | 8/10 |
+
+### 名言
+
+- *"多行不义必自毙"*
+- *"不及黄泉，无相见也"*
+- *"制人者，智也；受制于人者，愚也"*
+
+---
+
+## 文明特性：郑商天下
+
+> *"弦高犒师，商人救国"*
+
+### 效果详解
+
+| 效果 | 数值 | 说明 |
+|-----|------|------|
+| **贸易路线** | +1 | 商人单位+1贸易路线容量 |
+| **国内贸易** | +3 金币 | 国内贸易路线额外金币 |
+| **商路情报** | 特殊 | 贸易路线提供目的地城市情报 |
+| **商人外交** | 特殊 | 贸易可提升外交关系 |
+
+### 商业网络机制
+
+```typescript
+interface CommercialNetwork {
+  // 贸易路线加成
+  tradeRouteCapacity: {
+    perTrader: 1, // 每个商人+1贸易路线
+  };
+  
+  // 国内贸易加成
+  domesticTradeBonus: {
+    gold: 3,
+  };
+  
+  // 商路情报
+  tradeIntelligence: {
+    providesVision: true,
+    visibilityLevel: 'full', // 完整情报
+  };
+}
+
+const ZHENG_COMMERCE: Ability = {
+  name: '郑商天下',
+  description: '商业网络遍布天下',
+  detailedDescription: `
+    • 每个商人 +1 贸易路线容量
+    • 国内贸易路线 +3 金币
+    • 贸易路线提供目的地城市完整情报
+    • 与贸易对象外交关系 +5/回合
+  `,
+  effects: [
+    { type: 'trade_route_per_trader', value: 1 },
+    { type: 'domestic_trade_gold', value: 3 },
+    { type: 'trade_route_provides_vision', value: true },
+    { type: 'trade_diplomacy_bonus', value: 5 },
+  ],
+};
+```
+
+### 历史背景
+
+郑国商人弦高的故事是商人爱国的典范。公元前627年，秦国军队偷袭郑国，途中遇到郑国商人弦高。弦高假装是郑国使者，以自己的货物犒劳秦军，同时派人回国报信。秦军以为郑国已有准备，遂撤军而回。
+
+---
+
+## 特色单位：郑国商队
+
+### 单位数据
+
+| 属性 | 数值 | 对比商人 |
+|-----|------|---------|
+| **移动力** | 5 | 4 (+1) |
+| **贸易路线** | 2 | 1 (+1) |
+| **生产成本** | 75 | 65 (+10) |
+| **视野** | 3 | 2 (+1) |
+
+### 特殊能力
+
+| 能力 | 效果 |
+|-----|------|
+| **商路开拓** | 建立贸易路线时获得一次性金币（距离×5） |
+| **情报收集** | 提供贸易伙伴城市的完整情报 |
+| **外交使节** | 贸易期间双方关系+10 |
+
+```typescript
+const ZHENG_CARAVAN: UniqueUnit = {
+  id: 'zheng_caravan',
+  name: '郑国商队',
+  replaces: 'trader',
+  
+  stats: {
+    movement: 5,
+    tradeRoutes: 2,
+    productionCost: 75,
+    sight: 3,
+  },
+  
+  abilities: [
+    {
+      id: 'trade_pioneer',
+      name: '商路开拓',
+      description: '建立贸易路线时获得金币（距离×5）',
+      effect: 'gold_on_trade_route_establish',
+      goldPerTile: 5,
+    },
+    {
+      id: 'intelligence_gathering',
+      name: '情报收集',
+      description: '提供贸易伙伴城市完整情报',
+      effect: 'provides_full_city_intelligence',
+    },
+    {
+      id: 'diplomatic_envoy',
+      name: '外交使节',
+      description: '贸易期间双方关系+10',
+      effect: 'diplomacy_bonus_during_trade',
+      value: 10,
+    },
+  ],
+  
+  historicalNote: `
+    郑国商人以精明能干著称，足迹遍布中原各国。
+    他们不仅从事贸易，还经常充当外交使节和情报人员。
+    "郑人买履"虽是讽刺故事，却也反映了郑商的影响力。
+  `,
+};
+```
+
+---
+
+## 特色建筑：子产书院
+
+### 建筑数据
+
+| 属性 | 数值 |
+|-----|------|
+| **类型** | 建筑 |
+| **生产成本** | 180 |
+| **维护费用** | 2 |
+| **区域** | 市中心 |
+| **市政需求** | 政治哲学 |
+
+### 效果
+
+| 效果 | 数值 |
+|-----|------|
+| **科研** | +2 |
+| **文化** | +2 |
+| **政策槽** | 解锁后每10回合可免费更换一次政策 |
+| **伟人点数** | +1 大商人点数 |
+
+```typescript
+const ZICHAN_ACADEMY: UniqueBuilding = {
+  id: 'zichan_academy',
+  name: '子产书院',
+  
+  stats: {
+    productionCost: 180,
+    maintenanceCost: 2,
+  },
+  
+  requirements: {
+    civic: 'political_philosophy',
+  },
+  
+  effects: [
+    { type: 'science', value: 2 },
+    { type: 'culture', value: 2 },
+    { type: 'free_policy_change_interval', turns: 10 },
+    { type: 'great_merchant_points', value: 1 },
+  ],
+  
+  historicalNote: `
+    子产是春秋时期著名的政治家、思想家。
+    他首创"铸刑书"，将法律条文铸在青铜器上公示于民，
+    开创了中国成文法的先河。
+    子产治郑二十年，"门不夜关，道不拾遗"。
+  `,
+};
+```
+
+---
+
+## 起始偏好
+
+```typescript
+const ZHENG_START_BIAS: StartBias = {
+  terrain: [TerrainType.PLAINS],
+  river: true,
+  tier: 2,
+};
+```
+
+| 偏好 | 强度 | 原因 |
+|-----|------|------|
+| 平原 | ★★☆ | 中原腹地 |
+| 河流 | ★★★ | 便于商贸 |
+
+---
+
+## 战略指南
+
+### 早期发展 (古代-古典)
+
+1. **优先商人**：每个商人+1贸易路线
+2. **建立贸易网**：国内贸易+3金币
+3. **情报收集**：通过贸易获取敌方情报
+
+### 中期发展 (古典-中世纪)
+
+1. **间谍行动**：+50%成功率优势巨大
+2. **子产书院**：免费政策更换保持灵活
+3. **外交经营**：贸易提升外交关系
+
+### 后期决战 (文艺复兴+)
+
+1. **经济优势**：金币转化为任何优势
+2. **情报战**：完整掌握敌方情报
+3. **外交胜利**：贸易建立的关系网络
+
+### 克制与被克制
+
+| 对手 | 关系 | 说明 |
+|-----|------|------|
+| 秦国 | 被克制 | 军事弱小难以抵抗 |
+| 齐国 | 竞争 | 同为商贸型文明 |
+| 鲁国 | 中立 | 各有侧重领域 |
+
+---
+
+## 完整代码定义
+
+```typescript
+const ZHENG: Civilization = {
+  id: 'zheng',
+  name: '郑国',
+  adjective: '郑',
+  icon: '鄭', // 甲骨文
+  colors: { 
+    primary: '#228b22', // 翠绿
+    secondary: '#daa520', // 金黄
+  },
+  
+  leader: {
+    id: 'duke_zhuang_of_zheng',
+    name: '郑庄公',
+    title: '春秋小霸',
+    era: '公元前743年-前701年',
+    ability: DUKE_ZHUANG_ABILITY,
+    agenda: {
+      name: '纵横捭阖',
+      likes: '善于外交的文明',
+      dislikes: '好战的文明',
+      weight: 8,
+    },
+    quotes: [
+      '多行不义必自毙',
+      '不及黄泉，无相见也',
+    ],
+    biography: '平定弟弟叛乱，黄泉见母，成为春秋小霸。',
+  },
+  
+  civilizationAbility: ZHENG_COMMERCE,
+  
+  uniqueUnits: [ZHENG_CARAVAN],
+  uniqueBuildings: [ZICHAN_ACADEMY],
+  uniqueImprovements: [],
+  uniqueDistricts: [],
+  
+  startBias: ZHENG_START_BIAS,
+  
+  historicalInfo: {
+    founding: '周宣王封其弟姬友于郑',
+    territory: '河南中部（今新郑一带）',
+    culture: '商业发达、外交艺术、法治先河',
+    legacy: '子产铸刑书开成文法先河，郑商闻名天下',
+    famousFigures: ['郑庄公', '子产', '弦高', '邓析'],
+  },
+};
+
+export default ZHENG;
+```

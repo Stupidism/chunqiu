@@ -1,0 +1,474 @@
+---
+description: 春秋项目产出系统详细设计
+globs: ["**/game-core/**", "**/yields/**", "**/systems/**"]
+alwaysApply: false
+---
+
+# 产出系统 (Yields System)
+
+## 概述
+
+产出是春秋游戏的核心资源系统，所有游戏机制都围绕产出运转。游戏共有 **6 种基础产出**。
+
+---
+
+## 一、六种基础产出
+
+### 1. 粮食 (Food) 🌾
+
+**图标**: 禾 (甲骨文禾字象形)
+
+**用途**:
+- 城市人口增长的唯一来源
+- 超出人口消耗的粮食会累积为"粮食储备"
+- 粮食储备达到阈值时，人口+1
+
+**来源**:
+| 来源类型 | 示例 | 产出量 |
+|---------|------|--------|
+| 基础地形 | 草原 | +2 |
+| 基础地形 | 平原 | +1 |
+| 地形特征 | 泛滥平原 | +3 |
+| 地形特征 | 绿洲 | +3 |
+| 资源 | 稻米 | +1 |
+| 资源 | 小麦 | +1 |
+| 资源 | 牛 | +1 |
+| 改良设施 | 农场 | +1 (+2 封建主义后) |
+| 改良设施 | 牧场 | +1 (畜牧后) |
+| 建筑 | 粮仓 | +1 (+2 人口上限) |
+| 建筑 | 水车磨坊 | +1 |
+| 贸易路线 | 国内贸易 | +1~+4 |
+
+**消耗**:
+```typescript
+// 每个人口每回合消耗 2 粮食
+const FOOD_CONSUMPTION_PER_POP = 2;
+
+// 人口增长所需粮食
+function getFoodForGrowth(population: number): number {
+  // 基础公式: 15 + 8*(人口-1) + (人口-1)^1.5
+  return Math.floor(15 + 8 * (population - 1) + Math.pow(population - 1, 1.5));
+}
+
+// 示例:
+// 人口 1→2: 15 粮食
+// 人口 2→3: 24 粮食
+// 人口 5→6: 52 粮食
+// 人口 10→11: 103 粮食
+```
+
+**人口增长修正**:
+| 来源 | 效果 |
+|-----|------|
+| 粮仓 | +1 人口上限 |
+| 医院 | +人口增长速度 |
+| 住房不足 | 人口增长减半 |
+| 满意度"不满" | 人口增长-75% |
+| 满意度"愤怒" | 人口增长停止 |
+
+---
+
+### 2. 生产力 (Production) ⚒️
+
+**图标**: 斤 (甲骨文斧头象形)
+
+**用途**:
+- 建造单位、建筑、奇观、区域
+- 是最核心的产出，可以转化为其他一切
+
+**来源**:
+| 来源类型 | 示例 | 产出量 |
+|---------|------|--------|
+| 基础地形 | 丘陵 | +1 |
+| 基础地形 | 平原丘陵 | +2 (含粮食) |
+| 地形特征 | 森林 | +1 |
+| 地形特征 | 雨林 | +1 |
+| 资源 | 石材 | +1 |
+| 资源 | 铁矿 | +1 |
+| 资源 | 铜矿 | +2 |
+| 改良设施 | 矿山 | +1 (+1 学徒制后) |
+| 改良设施 | 采石场 | +1 |
+| 改良设施 | 伐木场 | +1 |
+| 建筑 | 作坊 | +2 |
+| 建筑 | 工厂 | +3 (+2 邻近6格城市) |
+| 区域邻接 | 工业区 | +1~+6 |
+
+**生产力计算**:
+```typescript
+interface ProductionItem {
+  type: 'unit' | 'building' | 'district' | 'wonder' | 'project';
+  id: string;
+  baseCost: number;
+  currentProgress: number;
+}
+
+function calculateTurnsToComplete(item: ProductionItem, productionPerTurn: number): number {
+  const remaining = item.baseCost - item.currentProgress;
+  return Math.ceil(remaining / productionPerTurn);
+}
+
+// 生产力倍率修正
+interface ProductionModifier {
+  type: string;        // 'policy' | 'wonder' | 'leader' | 'great_person'
+  target: string;      // 适用目标，如 'ancient_unit', 'wonder', 'all'
+  multiplier: number;  // 如 1.5 表示 +50%
+}
+```
+
+**溢出机制**:
+- 生产完成后多余的生产力会转移到下一个生产项目
+- 溢出上限 = 当前项目成本的 50% 或 下一项目成本，取较小值
+
+---
+
+### 3. 金币 (Gold) 💰
+
+**图标**: 金 (甲骨文金字)
+
+**用途**:
+- 购买单位（成本 = 生产力 × 4）
+- 购买建筑（成本 = 生产力 × 4）
+- 购买地块（成本递增）
+- 支付单位维护费
+- 支付建筑维护费
+- 外交交易
+- 升级单位
+
+**来源**:
+| 来源类型 | 示例 | 产出量 |
+|---------|------|--------|
+| 基础地形 | 海岸 | +1 |
+| 地形特征 | 绿洲 | +1 |
+| 资源 | 黄金 | +3 |
+| 资源 | 白银 | +2 |
+| 资源 | 钻石 | +3 |
+| 改良设施 | 矿山(奢侈) | +2 |
+| 建筑 | 市场 | +3 |
+| 建筑 | 银行 | +5 |
+| 建筑 | 证券交易所 | +5 (+5% 国库) |
+| 区域邻接 | 商业中心 | +2~+8 |
+| 贸易路线 | 国际贸易 | +3~+10 |
+
+**金币收支**:
+```typescript
+interface GoldBalance {
+  // 收入
+  income: {
+    tiles: number;           // 地块产出
+    buildings: number;       // 建筑产出
+    districtAdjacency: number; // 区域邻接
+    tradeRoutes: number;     // 贸易路线
+    cityStates: number;      // 城邦进贡
+    deals: number;           // 外交交易
+    pillage: number;         // 劫掠所得
+  };
+  
+  // 支出
+  expenses: {
+    unitMaintenance: number;     // 单位维护
+    buildingMaintenance: number; // 建筑维护
+    deals: number;               // 外交支付
+  };
+  
+  // 结算
+  netIncome: number;  // 净收入
+  treasury: number;   // 国库存量
+}
+
+// 破产惩罚
+// 如果国库为负，每回合随机解散一个单位，直到收支平衡
+```
+
+---
+
+### 4. 科研 (Science) 📜
+
+**图标**: 册 (甲骨文竹简象形)
+
+**用途**:
+- 推进科技树研究进度
+- 每回合的科研点数累积到当前研究的科技
+
+**来源**:
+| 来源类型 | 示例 | 产出量 |
+|---------|------|--------|
+| 人口 | 每个人口 | +0.5 (基础) |
+| 建筑 | 图书馆 | +2 |
+| 建筑 | 大学 | +4 |
+| 建筑 | 研究所 | +5 |
+| 区域邻接 | 学院 | +1~+6 |
+| 伟人 | 大科学家 | 一次性 / 持续加成 |
+| 城邦 | 科研型城邦 | +2~+6 (使者数) |
+
+**科研计算**:
+```typescript
+interface ResearchState {
+  currentTech: string | null;
+  progress: number;
+  eurekaTriggered: boolean;
+}
+
+function processTurnScience(player: Player): void {
+  const state = player.research;
+  if (!state.currentTech) return;
+  
+  const tech = getTechnology(state.currentTech);
+  const sciencePerTurn = calculateTotalScience(player);
+  
+  // 计算实际成本
+  let cost = tech.baseCost * getGameSpeedModifier();
+  
+  // 尤里卡减免 (默认50%)
+  if (state.eurekaTriggered) {
+    cost *= 0.5;
+  }
+  
+  state.progress += sciencePerTurn;
+  
+  if (state.progress >= cost) {
+    completeTechnology(player, tech);
+  }
+}
+```
+
+---
+
+### 5. 文化 (Culture) 🎭
+
+**图标**: 文 (甲骨文纹样象形)
+
+**用途**:
+- 推进市政树研究进度
+- 扩展城市领土边界
+- 累积旅游业绩（文化胜利）
+
+**来源**:
+| 来源类型 | 示例 | 产出量 |
+|---------|------|--------|
+| 宫殿 | 首都 | +1 |
+| 建筑 | 纪念碑 | +2 |
+| 建筑 | 露天剧场 | +2 |
+| 建筑 | 博物馆 | +2 (+艺术品加成) |
+| 建筑 | 广播中心 | +4 |
+| 区域邻接 | 剧院广场 | +2~+8 |
+| 奇观 | 各种奇观 | +1~+4 |
+| 伟人 | 大作家/艺术家/音乐家 | 创造杰作 |
+
+**领土扩张**:
+```typescript
+// 文化扩张成本
+function getCultureForNextTile(tilesOwned: number): number {
+  // 公式: 10 + 5 * 已拥有地块数
+  return 10 + 5 * tilesOwned;
+}
+
+// 每回合领土扩张检查
+function checkTerritoryExpansion(city: City): Coord | null {
+  const cultureCost = getCultureForNextTile(city.territory.length);
+  
+  if (city.cultureAccumulated >= cultureCost) {
+    city.cultureAccumulated -= cultureCost;
+    return selectNextTile(city); // 选择最高优先级的相邻地块
+  }
+  
+  return null;
+}
+
+// 地块优先级
+// 1. 有资源的地块
+// 2. 有地形特征的地块（森林、丘陵）
+// 3. 基础产出高的地块
+// 4. 距离城市中心较近的地块
+```
+
+---
+
+### 6. 信仰 (Faith) ⛩️
+
+**图标**: 示 (甲骨文祭坛象形)
+
+**用途**:
+- 创建万神殿（累积 25 信仰）
+- 购买宗教单位（传教士、使徒、审判官）
+- 购买大预言家
+- 特定信条允许用信仰购买建筑/单位
+- 岩石教堂等特殊奇观需要信仰购买
+
+**来源**:
+| 来源类型 | 示例 | 产出量 |
+|---------|------|--------|
+| 自然奇观 | 多数自然奇观 | +2~+4 |
+| 建筑 | 神祠 | +2 |
+| 建筑 | 寺庙 | +4 |
+| 建筑 | 崇拜建筑 | +3 |
+| 区域邻接 | 圣地 | +1~+8 |
+| 万神殿 | 舞蹈之神等 | +1~+2 条件 |
+| 遗物 | 遗物槽位 | +4 每个 |
+
+**信仰购买**:
+```typescript
+interface FaithPurchase {
+  type: 'unit' | 'building' | 'great_person';
+  id: string;
+  baseCost: number;
+  requirements?: string[]; // 需要特定信条
+}
+
+const FAITH_PURCHASES: FaithPurchase[] = [
+  { type: 'unit', id: 'missionary', baseCost: 100 },
+  { type: 'unit', id: 'apostle', baseCost: 200 },
+  { type: 'unit', id: 'inquisitor', baseCost: 150 },
+  { type: 'great_person', id: 'great_prophet', baseCost: 200 },
+  
+  // 需要"耶稣会教育"信条
+  { type: 'building', id: 'library', baseCost: 200, requirements: ['jesuit_education'] },
+  { type: 'building', id: 'university', baseCost: 400, requirements: ['jesuit_education'] },
+];
+```
+
+---
+
+## 二、产出计算总公式
+
+```typescript
+interface CityYields {
+  food: number;
+  production: number;
+  gold: number;
+  science: number;
+  culture: number;
+  faith: number;
+}
+
+function calculateCityYields(city: City, player: Player): CityYields {
+  // 1. 城市中心基础产出
+  let yields: CityYields = {
+    food: 2,       // 城市中心固定 +2 粮食
+    production: 1, // 城市中心固定 +1 生产力
+    gold: 0,
+    science: 0,
+    culture: 0,
+    faith: 0,
+  };
+  
+  // 2. 工作地块产出
+  for (const tile of city.workedTiles) {
+    const tileYields = calculateTileYields(tile);
+    yields = addYields(yields, tileYields);
+  }
+  
+  // 3. 建筑产出
+  for (const building of city.buildings) {
+    const buildingYields = getBuildingYields(building);
+    yields = addYields(yields, buildingYields);
+  }
+  
+  // 4. 区域邻接加成
+  for (const district of city.districts) {
+    const adjacencyBonus = calculateDistrictAdjacency(district, city.position);
+    yields = addYields(yields, adjacencyBonus);
+  }
+  
+  // 5. 宗教信条加成
+  if (city.religion) {
+    const beliefYields = calculateBeliefYields(city, city.religion);
+    yields = addYields(yields, beliefYields);
+  }
+  
+  // 6. 贸易路线产出
+  for (const route of city.outgoingTradeRoutes) {
+    yields = addYields(yields, route.yields);
+  }
+  
+  // 7. 伟人加成
+  for (const greatPerson of city.stationedGreatPeople) {
+    yields = addYields(yields, greatPerson.passiveYields);
+  }
+  
+  // 8. 政策百分比加成 (最后应用)
+  yields = applyPolicyModifiers(yields, player.policies);
+  
+  // 9. 政府固有加成
+  yields = applyGovernmentBonus(yields, player.government, city);
+  
+  return yields;
+}
+```
+
+---
+
+## 三、地块产出表
+
+### 基础地形
+
+| 地形 | 粮食 | 生产 | 金币 | 可通行 |
+|-----|------|------|------|--------|
+| 草原 | 2 | 0 | 0 | ✓ |
+| 平原 | 1 | 1 | 0 | ✓ |
+| 沙漠 | 0 | 0 | 0 | ✓ |
+| 苔原 | 1 | 0 | 0 | ✓ |
+| 雪地 | 0 | 0 | 0 | ✓ |
+| 草原丘陵 | 2 | 1 | 0 | ✓ |
+| 平原丘陵 | 1 | 2 | 0 | ✓ |
+| 沙漠丘陵 | 0 | 1 | 0 | ✓ |
+| 苔原丘陵 | 1 | 1 | 0 | ✓ |
+| 雪地丘陵 | 0 | 1 | 0 | ✓ |
+| 山脉 | 0 | 0 | 0 | ✗ |
+| 海岸 | 1 | 0 | 1 | 船只 |
+| 海洋 | 1 | 0 | 0 | 远洋 |
+
+### 地形特征
+
+| 特征 | 粮食 | 生产 | 金币 | 信仰 | 附加效果 |
+|-----|------|------|------|------|---------|
+| 森林 | 0 | +1 | 0 | 0 | 防御+3 |
+| 雨林 | +1 | +1 | 0 | 0 | 防御+3 |
+| 沼泽 | +1 | 0 | 0 | 0 | 移动-1 |
+| 泛滥平原 | +3 | 0 | 0 | 0 | 无法建区域 |
+| 绿洲 | +3 | 0 | +1 | 0 | 沙漠专属 |
+| 礁石 | +1 | +1 | 0 | 0 | 海岸专属 |
+| 冰 | 0 | 0 | 0 | 0 | 不可通行 |
+
+### 自然奇观 (示例)
+
+| 奇观 | 粮食 | 生产 | 金币 | 科研 | 文化 | 信仰 |
+|-----|------|------|------|------|------|------|
+| 珠穆朗玛峰 | 0 | 0 | 0 | 0 | +1 | +4 |
+| 大堡礁 | +2 | 0 | 0 | +2 | 0 | 0 |
+| 死海 | +2 | 0 | +2 | 0 | +2 | +2 |
+| 黄石公园 | 0 | 0 | 0 | +2 | 0 | +2 |
+
+---
+
+## 四、产出修正因素
+
+### 满意度影响
+
+| 满意度等级 | 效果 |
+|-----------|------|
+| 欣喜 (Ecstatic) | 非粮食产出 +10% |
+| 满足 (Happy) | 无效果 |
+| 不满 (Displeased) | 非粮食产出 -10%，人口增长 -75% |
+| 愤怒 (Unhappy) | 非粮食产出 -20%，人口增长停止 |
+| 暴动 (Unrest) | 非粮食产出 -30%，可能叛军生成 |
+
+### 政策加成示例
+
+| 政策 | 产出加成 |
+|-----|---------|
+| 城市规划 | 所有城市 +1 生产力 |
+| 神王 | 首都 +1 信仰，+1 金币 |
+| 自然哲学 | 学院 +100% 邻接加成 |
+| 理性主义 | 大学 +50% 科研 |
+| 大教堂 | 剧院广场 +100% 邻接加成 |
+
+### 游戏速度影响
+
+| 速度 | 生产力倍率 | 说明 |
+|-----|-----------|------|
+| 快速 | ×0.67 | 建造更快 |
+| 标准 | ×1.0 | 基准 |
+| 史诗 | ×1.5 | 建造更慢 |
+| 马拉松 | ×3.0 | 建造很慢 |
+
+注意：游戏速度影响的是建造成本，而非产出本身。

@@ -1,0 +1,28 @@
+---
+description: 架构文档 - 01 Monorepo 结构
+globs: ["**/*"]
+alwaysApply: false
+---
+
+# 01 Monorepo 结构
+
+本文件描述 Turborepo 的目录与职责分配。本文为设计文档，不包含实现代码。
+
+## Apps
+- apps/lobby: 游戏大厅
+- apps/game: 游戏界面
+- apps/editor: 地图编辑器
+- apps/server: 后端服务器
+
+## Packages
+- packages/db: Prisma schema、migrations、client
+- packages/ui: 设计系统与 UI 组件库
+- packages/game-core: 规则、行动合法性、结算逻辑
+- packages/types: API 与实时消息类型
+- packages/assets: 资源索引与图标映射
+- packages/config: 共享配置 (ESLint, TypeScript, Tailwind)
+
+## 依赖关系原则
+- apps 只依赖 packages，不跨 app 依赖
+- apps/server 为权威状态源
+- packages/game-core 与 packages/types 被 apps/server 与 apps/game 共享

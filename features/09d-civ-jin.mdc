@@ -1,0 +1,426 @@
+---
+description: 晋国文明详细设计
+globs: ["**/civilization/jin/**", "**/civ/jin/**"]
+alwaysApply: false
+---
+
+# 晋国 (Jin) - 中原霸主
+
+> *"表里山河，形胜之国"*
+
+## 文明概述
+
+| 属性 | 内容 |
+|-----|------|
+| **图标** | 晉（甲骨文） |
+| **主色调** | 紫红 `#800020` |
+| **辅色调** | 银灰 `#c0c0c0` |
+| **游戏风格** | 政治军事型 |
+| **难度评级** | ★★★★☆ (4/5) |
+| **适合胜利** | 统治胜利 |
+
+---
+
+## 历史背景
+
+### 建国渊源
+
+晋国由周成王之弟叔虞所建，封地在唐（今山西翼城一带），后改国号为晋。晋国地处太行山与黄河之间，"表里山河"，形势险要，是春秋时期持续时间最长的霸主。
+
+晋国政治制度独特，实行"六卿制度"，由六大家族轮流执政，这既保证了人才辈出，也为后来的三家分晋埋下了祸根。
+
+### 疆域变迁
+
+- **初封**：唐地（今山西翼城）
+- **春秋早期**：兼并周边小国，迁都绛（曲沃代翼）
+- **晋文公时期**：称霸中原，成为诸侯盟主
+- **末期**：韩、赵、魏三家分晋（公元前403年）
+
+### 文化特色
+
+晋国文化融合了周礼与戎狄风俗：
+- **尚武传统**：长期与戎狄作战
+- **政治创新**：六卿制度、三军制度
+- **人才辈出**：大量名臣良将
+- **战车强国**：拥有最强大的战车部队
+
+### 著名人物
+
+| 人物 | 时期 | 贡献 |
+|-----|------|------|
+| 晋文公 | 春秋 | 春秋五霸之一，城濮之战 |
+| 赵衰 | 春秋 | 文公重臣 |
+| 先轸 | 春秋 | 军事家，城濮之战主帅 |
+| 赵盾 | 春秋 | 权臣，"赵盾弑其君" |
+| 魏绛 | 春秋 | 和戎政策创始人 |
+| 智伯 | 战国 | 最后的晋国权臣 |
+
+---
+
+## 领袖：晋文公
+
+### 基本信息
+
+| 属性 | 内容 |
+|-----|------|
+| **姓名** | 姬重耳 |
+| **在位** | 公元前636年—前628年（共9年） |
+| **头衔** | 春秋五霸之一 |
+| **谥号** | 文 |
+
+### 生平简介
+
+晋文公重耳是晋献公的儿子。因骊姬之乱，重耳在外流亡十九年，历经艰辛。他先后流亡狄、卫、齐、曹、宋、郑、楚、秦等国，积累了丰富的政治和外交经验。
+
+公元前636年，在秦穆公的帮助下，重耳回国即位，是为晋文公。即位后他励精图治，任用贤臣，使晋国迅速强大。
+
+公元前632年，晋楚城濮之战，晋文公"退避三舍"（兑现流亡楚国时的承诺），随后大败楚军，确立了晋国的霸主地位。
+
+### 领袖能力：退避三舍
+
+> *首战示弱，后战必胜*
+
+| 效果类型 | 详细说明 |
+|---------|---------|
+| **首战加成** | 首次与每个文明交战时，获得3回合+20%战斗力 |
+| **承诺加成** | 履行外交承诺后，获得一次性金币和外交偏好 |
+| **信义** | 从不主动毁约，外交信誉+50 |
+
+```typescript
+const DUKE_WEN_ABILITY: Ability = {
+  name: '退避三舍',
+  description: '首战示弱，积蓄力量后决战',
+  detailedDescription: `
+    • 首次与每个文明交战：获得 3 回合 +20% 战斗力
+    • 履行外交承诺后：+100 金币，+10 外交偏好
+    • 外交信誉 +50（AI更信任你的承诺）
+    • 从不主动背弃和约
+  `,
+  effects: [
+    { type: 'first_war_combat_bonus', value: 20, duration: 3 },
+    { type: 'promise_reward', gold: 100, favorability: 10 },
+    { type: 'diplomatic_credibility', value: 50 },
+  ],
+};
+```
+
+### AI 议程：霸主信义
+
+| 属性 | 内容 |
+|-----|------|
+| **喜欢** | 遵守承诺、履行条约的文明 |
+| **讨厌** | 背信弃义、主动毁约的文明 |
+| **外交权重** | 9/10 |
+
+### 名言
+
+- *"退避三舍，以报楚王之惠"*
+- *"仁义之师，战无不胜"*
+- *"表里山河，晋国无恙"*
+
+---
+
+## 文明特性：六卿分政
+
+> *"六卿强而公室卑"*
+
+### 效果详解
+
+| 效果 | 数值 | 说明 |
+|-----|------|------|
+| **总督数量** | +3 | 可同时拥有6位总督（默认3位） |
+| **总督晋升** | -50% | 晋升成本减半 |
+| **分权效率** | 特殊 | 每位已任命总督+3%所有产出 |
+| **人才济济** | 特殊 | 总督所在城市+2伟人点数 |
+
+### 六卿制度机制
+
+```typescript
+interface SixMinistersSystem {
+  // 总督上限提升
+  maxGovernors: 6; // 默认3
+  
+  // 晋升成本减免
+  promotionCostDiscount: 50;
+  
+  // 分权效率
+  yieldBonusPerGovernor: {
+    type: 'all_yields',
+    value: 3, // 百分比
+    scope: 'empire',
+  };
+  
+  // 人才济济
+  greatPeoplePointsPerGovernor: {
+    type: 'all_great_people',
+    value: 2,
+    scope: 'governor_city',
+  };
+}
+
+const SIX_MINISTERS: Ability = {
+  name: '六卿分政',
+  description: '强大的总督系统',
+  detailedDescription: `
+    • 最大总督数量：6（默认 3）
+    • 总督晋升成本 -50%
+    • 每位已任命总督：全局 +3% 所有产出
+    • 总督所在城市：+2 伟人点数（所有类型）
+  `,
+  effects: [
+    { type: 'max_governors', value: 6 },
+    { type: 'governor_promotion_discount', value: 50 },
+    { type: 'yield_per_governor', yield: 'all', value: 3 },
+    { type: 'great_people_in_governor_city', value: 2 },
+  ],
+};
+```
+
+### 历史背景
+
+晋国的六卿制度是春秋时期最独特的政治制度。六大家族（赵、魏、韩、智、范、中行）轮流执政，形成了一种制度化的权力分享机制。
+
+这种制度的优点是保证了人才的持续供给，避免了昏君误国；缺点是公室权力被架空，最终导致三家分晋，晋国灭亡。
+
+---
+
+## 特色单位：晋国战车
+
+### 单位数据
+
+| 属性 | 数值 | 对比重战车 |
+|-----|------|---------|
+| **战斗力** | 40 | 38 (+2) |
+| **移动力** | 3 | 2 (+1) |
+| **生产成本** | 120 | 120 |
+| **时代** | 古代 | 古代 |
+| **科技需求** | 车轮 | 车轮 |
+
+### 特殊能力
+
+| 能力 | 效果 |
+|-----|------|
+| **光环指挥** | 相邻友军+5战斗力 |
+| **三军将领** | 可携带一个近战单位 |
+| **高速突击** | 移动后攻击不受惩罚 |
+
+```typescript
+const JIN_CHARIOT: UniqueUnit = {
+  id: 'jin_chariot',
+  name: '晋国战车',
+  replaces: 'heavy_chariot',
+  
+  stats: {
+    combatStrength: 40,
+    movement: 3,
+    productionCost: 120,
+    maintenanceCost: 2,
+    sight: 2,
+  },
+  
+  requirements: {
+    technology: 'wheel',
+    resource: 'horses',
+    era: 'ancient',
+  },
+  
+  abilities: [
+    {
+      id: 'command_aura',
+      name: '光环指挥',
+      description: '相邻友军+5战斗力',
+      aura: {
+        range: 1,
+        effect: { type: 'combat_bonus', value: 5 },
+        targets: 'friendly_units',
+      },
+    },
+    {
+      id: 'three_armies',
+      name: '三军将领',
+      description: '可携带一个近战单位',
+      effect: 'can_carry_unit',
+      carryType: 'melee',
+      carryCount: 1,
+    },
+    {
+      id: 'charge',
+      name: '高速突击',
+      description: '移动后攻击不受惩罚',
+      effect: 'no_movement_attack_penalty',
+    },
+  ],
+  
+  promotionClass: 'heavy_cavalry',
+  
+  historicalNote: `
+    晋国战车是春秋时期最强大的战争机器。
+    每辆战车配备三名甲士（御者、车左、车右），
+    后跟步卒若干。晋国组建了"三军"编制，
+    是春秋时期军事制度的创新。
+  `,
+};
+```
+
+### 历史背景
+
+晋国首创"三军"编制（上军、中军、下军），每军战车数百乘，是春秋时期最强大的军事力量。城濮之战中，晋国战车部队以精妙的战术击败楚军，奠定了晋国霸业。
+
+---
+
+## 特色建筑：公卿府邸
+
+### 建筑数据
+
+| 属性 | 数值 |
+|-----|------|
+| **替代** | 政府广场建筑（祠堂） |
+| **生产成本** | 290 |
+| **维护费用** | 2 |
+| **区域** | 政府广场 |
+| **市政需求** | 国家劳动力 |
+
+### 效果
+
+| 效果 | 数值 |
+|-----|------|
+| **总督头衔** | +1 |
+| **产出加成** | 该城市所有产出+10% |
+| **忠诚度** | +4 |
+| **伟人点数** | +3 大将军点数 |
+
+```typescript
+const GONGQING_MANSION: UniqueBuilding = {
+  id: 'gongqing_mansion',
+  name: '公卿府邸',
+  replaces: 'ancestral_hall',
+  
+  stats: {
+    productionCost: 290,
+    maintenanceCost: 2,
+  },
+  
+  requirements: {
+    civic: 'state_workforce',
+    district: 'government_plaza',
+  },
+  
+  effects: [
+    { type: 'governor_titles', value: 1 },
+    { type: 'city_yield_percentage', yield: 'all', value: 10 },
+    { type: 'loyalty', value: 4 },
+    { type: 'great_general_points', value: 3 },
+  ],
+  
+  historicalNote: `
+    晋国六卿各有府邸，势力庞大。
+    卿大夫的府邸不仅是居所，更是政治和军事中心。
+    每位卿大夫都拥有自己的军队、属地和附庸，
+    形成了国中之国的格局。
+  `,
+};
+```
+
+---
+
+## 起始偏好
+
+```typescript
+const JIN_START_BIAS: StartBias = {
+  terrain: [TerrainType.PLAINS],
+  feature: [FeatureType.HILLS],
+  river: true,
+  tier: 2,
+};
+```
+
+| 偏好 | 强度 | 原因 |
+|-----|------|------|
+| 平原 | ★★☆ | 战车需要平坦地形 |
+| 丘陵 | ★★☆ | 山西多山地 |
+| 河流 | ★★★ | 汾河流域是核心 |
+
+---
+
+## 战略指南
+
+### 早期发展 (古代-古典)
+
+1. **快速晋升总督**：利用-50%成本优势
+2. **晋国战车**：古代最强单位之一
+3. **分散总督**：每位总督提供3%产出加成
+
+### 中期扩张 (古典-中世纪)
+
+1. **六位总督全任命**：总计+18%全产出
+2. **利用"退避三舍"**：首战20%加成
+3. **建造公卿府邸**：核心城市产出+10%
+
+### 后期决战 (文艺复兴+)
+
+1. **总督协同**：伟人点数优势
+2. **军事统一**：战车升级后仍保持光环能力
+3. **信义外交**：利用外交信誉建立联盟
+
+### 克制与被克制
+
+| 对手 | 关系 | 说明 |
+|-----|------|------|
+| 秦国 | 历史宿敌 | 秦晋之好后反目成仇 |
+| 楚国 | 竞争 | 城濮之战奠定霸业 |
+| 齐国 | 中立 | 两强并立，互有攻守 |
+
+---
+
+## 完整代码定义
+
+```typescript
+const JIN: Civilization = {
+  id: 'jin',
+  name: '晋国',
+  adjective: '晋',
+  icon: '晉', // 甲骨文
+  colors: { 
+    primary: '#800020', // 紫红
+    secondary: '#c0c0c0', // 银灰
+  },
+  
+  leader: {
+    id: 'duke_wen_of_jin',
+    name: '晋文公',
+    title: '春秋五霸之一',
+    era: '公元前636年-前628年',
+    ability: DUKE_WEN_ABILITY,
+    agenda: {
+      name: '霸主信义',
+      likes: '遵守承诺、履行条约的文明',
+      dislikes: '背信弃义的文明',
+      weight: 9,
+    },
+    quotes: [
+      '退避三舍，以报楚王之惠',
+      '表里山河，晋国无恙',
+    ],
+    biography: '流亡十九年后回国称霸，城濮之战奠定霸业。',
+  },
+  
+  civilizationAbility: SIX_MINISTERS,
+  
+  uniqueUnits: [JIN_CHARIOT],
+  uniqueBuildings: [GONGQING_MANSION],
+  uniqueImprovements: [],
+  uniqueDistricts: [],
+  
+  startBias: JIN_START_BIAS,
+  
+  historicalInfo: {
+    founding: '周成王封叔虞于唐，后改国号为晋',
+    territory: '山西及周边地区',
+    culture: '尚武、重信、六卿制度、三军编制',
+    legacy: '春秋最持久的霸主，三家分晋开启战国时代',
+    famousFigures: ['晋文公', '赵衰', '先轸', '魏绛', '智伯'],
+  },
+};
+
+export default JIN;
+```

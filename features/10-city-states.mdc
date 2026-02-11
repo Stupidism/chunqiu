@@ -1,0 +1,433 @@
+---
+description: 春秋项目城邦系统详细设计
+globs: ["**/game-core/**", "**/city-state/**", "**/envoy/**"]
+alwaysApply: false
+---
+
+# 城邦系统 (City-States)
+
+## 概述
+
+城邦是独立的小型文明，不追求胜利条件，但可以通过派遣使者获得其加成。成为城邦的宗主国可获得独特的宗主国加成。春秋背景下，城邦代表各种小国、部落和方国。
+
+---
+
+## 一、城邦数据结构
+
+```typescript
+interface CityState {
+  id: string;
+  name: string;
+  type: CityStateType;
+  
+  // 位置与状态
+  position: Coord;
+  territory: Coord[];
+  population: number;
+  isAlive: boolean;
+  
+  // 外交关系
+  suzerain: PlayerId | null;      // 宗主国
+  envoys: Record<PlayerId, number>; // 各玩家使者数量
+  
+  // 加成
+  tier1Bonus: Bonus;   // 1使者加成
+  tier2Bonus: Bonus;   // 3使者加成  
+  tier3Bonus: Bonus;   // 6使者加成
+  suzerainBonus: SuzerainBonus; // 宗主国特殊加成
+  
+  // 独特内容
+  uniqueUnit?: UniqueUnit;
+  uniqueBuilding?: UniqueBuilding;
+  
+  // 资源
+  resources: string[];
+  
+  // 历史背景
+  historicalInfo: string;
+}
+
+enum CityStateType {
+  CULTURAL = 'cultural',         // 文化型
+  INDUSTRIAL = 'industrial',     // 工业型
+  MILITARISTIC = 'militaristic', // 军事型
+  RELIGIOUS = 'religious',       // 宗教型
+  SCIENTIFIC = 'scientific',     // 科研型
+  TRADE = 'trade',               // 商业型
+}
+```
+
+---
+
+## 二、城邦类型与加成
+
+### 加成层级
+
+| 使者数量 | 效果范围 |
+|---------|---------|
+| 1 | 仅首都 |
+| 3 | 每座拥有相关区域的城市 |
+| 6 | 每座拥有相关区域的城市（双倍） |
+| 宗主国 | 独特加成 |
+
+---
+
+## 三、文化型城邦 (Cultural)
+
+> 剧院广场相关加成
+
+### 1. 曹国 (Cao)
+
+| 属性 | 内容 |
+|-----|------|
+| **1使者** | 首都+2文化 |
+| **3使者** | 每座有剧院广场的城市+2文化 |
+| **6使者** | 每座有剧院广场的城市+4文化 |
+| **宗主国** | 杰作产生的旅游+50% |
+| **历史** | 周文王之后，以诗书传家 |
+
+### 2. 滕国 (Teng)
+
+| 属性 | 内容 |
+|-----|------|
+| **1使者** | 首都+2文化 |
+| **3使者** | 每座有剧院广场的城市+2文化 |
+| **6使者** | 每座有剧院广场的城市+4文化 |
+| **宗主国** | 获得大艺术家/大音乐家/大作家时额外获得100金币 |
+| **历史** | 周武王之弟的封国，仁政之邦 |
+
+### 3. 蔡国 (Cai)
+
+| 属性 | 内容 |
+|-----|------|
+| **1使者** | 首都+2文化 |
+| **3使者** | 每座有剧院广场的城市+2文化 |
+| **6使者** | 每座有剧院广场的城市+4文化 |
+| **宗主国** | 考古学家可多发掘1次 |
+| **历史** | 周武王之弟蔡叔之后 |
+
+---
+
+## 四、工业型城邦 (Industrial)
+
+> 工业区相关加成
+
+### 4. 邓国 (Deng)
+
+| 属性 | 内容 |
+|-----|------|
+| **1使者** | 首都+2生产力 |
+| **3使者** | 每座有工业区的城市+2生产力 |
+| **6使者** | 每座有工业区的城市+4生产力 |
+| **宗主国** | 奇观建造+15%生产力 |
+| **历史** | 殷商时期的冶炼重镇 |
+
+### 5. 杞国 (Qi-Guo)
+
+| 属性 | 内容 |
+|-----|------|
+| **1使者** | 首都+2生产力 |
+| **3使者** | 每座有工业区的城市+2生产力 |
+| **6使者** | 每座有工业区的城市+4生产力 |
+| **宗主国** | 工人+2建造次数 |
+| **历史** | 夏禹之后，工匠之国 |
+
+### 6. 虢国 (Guo)
+
+| 属性 | 内容 |
+|-----|------|
+| **1使者** | 首都+2生产力 |
+| **3使者** | 每座有工业区的城市+2生产力 |
+| **6使者** | 每座有工业区的城市+4生产力 |
+| **宗主国** | 军营区域建筑+50%生产力 |
+| **历史** | 周文王之弟的封国，以兵器锻造闻名 |
+
+---
+
+## 五、军事型城邦 (Militaristic)
+
+> 军营相关加成与单位
+
+### 7. 莒国 (Ju)
+
+| 属性 | 内容 |
+|-----|------|
+| **1使者** | 首都单位+2经验 |
+| **3使者** | 每座有军营的城市单位+2经验 |
+| **6使者** | 每座有军营的城市单位+4经验 |
+| **宗主国** | 解锁莒国长矛手（+5战斗力vs骑兵） |
+| **历史** | 东夷强国，以武立国 |
+
+### 8. 巴国 (Ba)
+
+| 属性 | 内容 |
+|-----|------|
+| **1使者** | 首都单位+2经验 |
+| **3使者** | 每座有军营的城市单位+2经验 |
+| **6使者** | 每座有军营的城市单位+4经验 |
+| **宗主国** | 解锁巴蜀武士（丘陵+7战斗力） |
+| **历史** | 西南强族，骁勇善战 |
+
+### 9. 中山国 (Zhongshan)
+
+| 属性 | 内容 |
+|-----|------|
+| **1使者** | 首都单位+2经验 |
+| **3使者** | 每座有军营的城市单位+2经验 |
+| **6使者** | 每座有军营的城市单位+4经验 |
+| **宗主国** | 近战单位攻击时+5战斗力 |
+| **历史** | 白狄建立的国家，以步兵闻名 |
+
+---
+
+## 六、宗教型城邦 (Religious)
+
+> 圣地相关加成
+
+### 10. 陈国 (Chen)
+
+| 属性 | 内容 |
+|-----|------|
+| **1使者** | 首都+2信仰 |
+| **3使者** | 每座有圣地的城市+2信仰 |
+| **6使者** | 每座有圣地的城市+4信仰 |
+| **宗主国** | 宗教单位+1移动力 |
+| **历史** | 舜帝后裔，巫文化盛行 |
+
+### 11. 薛国 (Xue)
+
+| 属性 | 内容 |
+|-----|------|
+| **1使者** | 首都+2信仰 |
+| **3使者** | 每座有圣地的城市+2信仰 |
+| **6使者** | 每座有圣地的城市+4信仰 |
+| **宗主国** | 传教士+1传播次数 |
+| **历史** | 奚仲故里，祭祀传统深厚 |
+
+### 12. 纪国 (Ji-Guo)
+
+| 属性 | 内容 |
+|-----|------|
+| **1使者** | 首都+2信仰 |
+| **3使者** | 每座有圣地的城市+2信仰 |
+| **6使者** | 每座有圣地的城市+4信仰 |
+| **宗主国** | 使徒神学战斗+10 |
+| **历史** | 炎帝后裔，崇拜火神 |
+
+---
+
+## 七、科研型城邦 (Scientific)
+
+> 学院相关加成
+
+### 13. 邾国 (Zhu)
+
+| 属性 | 内容 |
+|-----|------|
+| **1使者** | 首都+2科研 |
+| **3使者** | 每座有学院的城市+2科研 |
+| **6使者** | 每座有学院的城市+4科研 |
+| **宗主国** | 图书馆+2科研 |
+| **历史** | 鲁国近邻，学术氛围浓厚 |
+
+### 14. 莱国 (Lai)
+
+| 属性 | 内容 |
+|-----|------|
+| **1使者** | 首都+2科研 |
+| **3使者** | 每座有学院的城市+2科研 |
+| **6使者** | 每座有学院的城市+4科研 |
+| **宗主国** | 尤里卡触发时额外获得10%进度 |
+| **历史** | 东夷部落，以天文观测闻名 |
+
+### 15. 鄫国 (Zeng)
+
+| 属性 | 内容 |
+|-----|------|
+| **1使者** | 首都+2科研 |
+| **3使者** | 每座有学院的城市+2科研 |
+| **6使者** | 每座有学院的城市+4科研 |
+| **宗主国** | 大科学家点数+25% |
+| **历史** | 夏禹之后，历史悠久 |
+
+---
+
+## 八、商业型城邦 (Trade)
+
+> 商业中心相关加成
+
+### 16. 卫国 (Wei)
+
+| 属性 | 内容 |
+|-----|------|
+| **1使者** | 首都+4金币 |
+| **3使者** | 每座有商业中心的城市+4金币 |
+| **6使者** | 每座有商业中心的城市+8金币 |
+| **宗主国** | 贸易路线+2金币 |
+| **历史** | 周武王之弟康叔封国，商贸发达 |
+
+### 17. 许国 (Xu)
+
+| 属性 | 内容 |
+|-----|------|
+| **1使者** | 首都+4金币 |
+| **3使者** | 每座有商业中心的城市+4金币 |
+| **6使者** | 每座有商业中心的城市+8金币 |
+| **宗主国** | 与此城邦贸易时+4金币 |
+| **历史** | 炎帝后裔，中原交通要道 |
+
+### 18. 刑国 (Xing)
+
+| 属性 | 内容 |
+|-----|------|
+| **1使者** | 首都+4金币 |
+| **3使者** | 每座有商业中心的城市+4金币 |
+| **6使者** | 每座有商业中心的城市+8金币 |
+| **宗主国** | 购买单位/建筑成本-10% |
+| **历史** | 周公之后的封国，工商业繁荣 |
+
+---
+
+## 九、使者系统
+
+```typescript
+interface EnvoySystem {
+  // 使者获取来源
+  sources: EnvoySource[];
+  
+  // 使者派遣
+  sendEnvoy(playerId: PlayerId, cityStateId: string): boolean;
+  
+  // 宗主国计算
+  calculateSuzerain(cityState: CityState): PlayerId | null;
+  
+  // 加成计算
+  calculateBonuses(playerId: PlayerId): CityStateBonus[];
+}
+
+enum EnvoySource {
+  CIVIC_COMPLETED = 'civic_completed',       // 完成市政
+  GOVERNMENT_CHANGE = 'government_change',   // 更换政府
+  WONDER = 'wonder',                         // 奇观效果
+  GREAT_PERSON = 'great_person',             // 伟人效果
+  POLICY = 'policy',                         // 政策卡
+  FIRST_MEET = 'first_meet',                 // 首次遇见
+}
+
+// 外交影响力 → 使者
+function processInfluence(player: Player): void {
+  const influencePerTurn = calculateInfluencePerTurn(player);
+  player.influence += influencePerTurn;
+  
+  // 每100点外交影响力获得1使者
+  while (player.influence >= 100) {
+    player.influence -= 100;
+    player.availableEnvoys++;
+  }
+}
+
+// 宗主国判定
+function calculateSuzerain(cityState: CityState): PlayerId | null {
+  const envoyEntries = Object.entries(cityState.envoys);
+  
+  // 至少需要3使者才能成为宗主国
+  const qualified = envoyEntries.filter(([_, count]) => count >= 3);
+  if (qualified.length === 0) return null;
+  
+  // 排序
+  qualified.sort((a, b) => b[1] - a[1]);
+  
+  // 必须比第二名多
+  if (qualified.length > 1 && qualified[0][1] === qualified[1][1]) {
+    return null; // 平局，无宗主国
+  }
+  
+  return qualified[0][0] as PlayerId;
+}
+```
+
+---
+
+## 十、城邦任务系统
+
+城邦会发布任务，完成后获得额外使者。
+
+```typescript
+interface CityStateQuest {
+  id: string;
+  cityStateId: string;
+  type: QuestType;
+  target: any;
+  reward: number;  // 使者数量
+  expiresIn: number;  // 剩余回合
+}
+
+enum QuestType {
+  SEND_TRADE_ROUTE = 'send_trade_route',   // 派遣贸易路线
+  DESTROY_BARBARIAN = 'destroy_barbarian', // 消灭附近野蛮人
+  TRAIN_UNIT = 'train_unit',               // 训练指定单位
+  BUILD_WONDER = 'build_wonder',           // 建造奇观
+  CONVERT_CITY = 'convert_city',           // 传播宗教
+  GREAT_PERSON = 'great_person',           // 获得伟人
+  RESEARCH_TECH = 'research_tech',         // 研究科技
+  DISCOVER_NATURAL_WONDER = 'discover',    // 发现自然奇观
+}
+
+const QUEST_TEMPLATES: Record<CityStateType, QuestType[]> = {
+  cultural: [QuestType.GREAT_PERSON, QuestType.BUILD_WONDER],
+  industrial: [QuestType.TRAIN_UNIT, QuestType.BUILD_WONDER],
+  militaristic: [QuestType.DESTROY_BARBARIAN, QuestType.TRAIN_UNIT],
+  religious: [QuestType.CONVERT_CITY, QuestType.GREAT_PERSON],
+  scientific: [QuestType.RESEARCH_TECH, QuestType.DISCOVER_NATURAL_WONDER],
+  trade: [QuestType.SEND_TRADE_ROUTE, QuestType.GREAT_PERSON],
+};
+```
+
+---
+
+## 十一、城邦战争与征服
+
+```typescript
+// 宣战城邦
+function declareWarOnCityState(player: Player, cityState: CityState): void {
+  // 与该城邦宗主国关系恶化
+  if (cityState.suzerain && cityState.suzerain !== player.id) {
+    modifyRelationship(player, cityState.suzerain, -30);
+  }
+  
+  // 失去所有使者
+  cityState.envoys[player.id] = 0;
+  
+  // 与所有派遣使者的文明关系略微恶化
+  for (const [playerId, envoys] of Object.entries(cityState.envoys)) {
+    if (envoys > 0 && playerId !== player.id) {
+      modifyRelationship(player, playerId, -5);
+    }
+  }
+}
+
+// 征服城邦
+function conquerCityState(player: Player, cityState: CityState): void {
+  // 城邦变为玩家城市
+  const newCity = convertToCity(cityState, player);
+  
+  // 城邦从游戏中移除
+  cityState.isAlive = false;
+  
+  // 所有该城邦的加成失效
+  // ...
+}
+
+// 解放城邦
+function liberateCityState(player: Player, city: City): void {
+  if (!city.originalCityState) return;
+  
+  // 恢复城邦
+  const cityState = reviveCityState(city.originalCityState);
+  
+  // 解放者获得大量使者
+  cityState.envoys[player.id] = (cityState.envoys[player.id] || 0) + 6;
+  
+  // 解放者自动成为宗主国
+}
+```

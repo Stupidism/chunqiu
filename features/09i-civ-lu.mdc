@@ -1,0 +1,372 @@
+---
+description: 鲁国文明详细设计
+globs: ["**/civilization/lu/**", "**/civ/lu/**"]
+alwaysApply: false
+---
+
+# 鲁国 (Lu) - 礼乐之邦
+
+> *"周礼尽在鲁矣"*
+
+## 文明概述
+
+| 属性 | 内容 |
+|-----|------|
+| **图标** | 魯（甲骨文） |
+| **主色调** | 赭红 `#8b4513` |
+| **辅色调** | 象牙 `#fffff0` |
+| **游戏风格** | 文化科技型 |
+| **难度评级** | ★★★☆☆ (3/5) |
+| **适合胜利** | 文化胜利、科技胜利 |
+
+---
+
+## 历史背景
+
+### 建国渊源
+
+鲁国由周公旦之子伯禽所建，封于曲阜。周公是周文王之子、周武王之弟，是周朝礼乐制度的主要创制者。因此鲁国被认为是周礼的正统传承者，"周礼尽在鲁矣"。
+
+鲁国虽然国力不强，但因为文化地位特殊，在诸侯中享有崇高的声望。孔子就诞生于鲁国，使鲁国成为儒家文化的发源地。
+
+### 疆域变迁
+
+- **初封**：曲阜（今山东曲阜）
+- **春秋时期**：山东西南部
+- **末期**：公元前256年被楚国所灭
+
+### 文化特色
+
+鲁国是周代礼乐文化的中心：
+- **周礼传承**：完整保存周代礼仪
+- **儒学发源**：孔子创立儒家学派
+- **六艺教育**：礼、乐、射、御、书、数
+- **修史传统**：《春秋》鲁史
+
+### 著名人物
+
+| 人物 | 时期 | 贡献 |
+|-----|------|------|
+| 周公旦 | 西周 | 制礼作乐 |
+| 孔子 | 春秋 | 儒家创始人 |
+| 曾子 | 春秋 | 儒家代表 |
+| 子思 | 战国 | 《中庸》作者 |
+| 孟子 | 战国 | 儒家亚圣 |
+| 鲁班 | 春秋 | 工匠祖师 |
+
+---
+
+## 领袖：鲁隐公 / 孔子（顾问）
+
+### 基本信息
+
+| 属性 | 内容 |
+|-----|------|
+| **领袖** | 鲁隐公 |
+| **顾问** | 孔子 |
+| **在位** | 公元前722年—前712年 |
+| **头衔** | 礼乐之君 |
+
+### 领袖能力：有教无类
+
+> *教育兴邦，文化繁荣*
+
+| 效果类型 | 详细说明 |
+|---------|---------|
+| **大学加成** | 大学每回合+2文化 |
+| **游客吸引** | 文化胜利所需游客-25% |
+| **杰作产出** | 杰作产出+50% |
+| **教育系统** | 图书馆免维护费 |
+
+```typescript
+const CONFUCIUS_ABILITY: Ability = {
+  name: '有教无类',
+  description: '教育与文化的双重繁荣',
+  detailedDescription: `
+    • 大学每回合 +2 文化
+    • 文化胜利所需游客 -25%
+    • 所有杰作产出 +50%
+    • 图书馆免维护费
+  `,
+  effects: [
+    { type: 'building_yield', building: 'university', yield: 'culture', value: 2 },
+    { type: 'tourism_victory_requirement', value: -25 },
+    { type: 'great_work_yield_multiplier', value: 50 },
+    { type: 'building_maintenance_free', building: 'library' },
+  ],
+};
+```
+
+### AI 议程：礼乐之道
+
+| 属性 | 内容 |
+|-----|------|
+| **喜欢** | 重视文化和教育、尊重传统的文明 |
+| **讨厌** | 蛮横无礼、破坏文化遗产的文明 |
+| **外交权重** | 7/10 |
+
+### 名言
+
+- *"学而时习之，不亦说乎"*
+- *"有朋自远方来，不亦乐乎"*
+- *"己所不欲，勿施于人"*
+
+---
+
+## 文明特性：周礼之邦
+
+> *"礼乐文明，教化天下"*
+
+### 效果详解
+
+| 效果 | 数值 | 说明 |
+|-----|------|------|
+| **建筑文化** | +1 | 所有建筑+1文化 |
+| **杰作加成** | +50% | 杰作（文学、艺术、音乐）产出+50% |
+| **剧院邻接** | +100% | 剧院广场邻接加成翻倍 |
+| **考古优势** | 特殊 | 考古博物馆额外+1文物槽位 |
+
+### 文化系统机制
+
+```typescript
+const ZHOU_RITES: Ability = {
+  name: '周礼之邦',
+  description: '礼乐文明的完美传承',
+  detailedDescription: `
+    • 所有建筑 +1 文化
+    • 杰作产出 +50%
+    • 剧院广场邻接加成 +100%（翻倍）
+    • 考古博物馆 +1 文物槽位
+  `,
+  effects: [
+    { type: 'building_culture_bonus', value: 1 },
+    { type: 'great_work_yield_multiplier', value: 50 },
+    { type: 'adjacency_bonus_multiplier', district: 'theater_square', value: 100 },
+    { type: 'museum_artifact_slots', value: 1 },
+  ],
+};
+```
+
+### 历史背景
+
+鲁国是周礼的正统传承者。周公制礼作乐，其子伯禽将这套完整的礼乐制度带到鲁国。直到春秋末年，鲁国仍然保存着最完整的周代典章制度，成为各国学习的对象。
+
+孔子在鲁国创立儒学，整理六经，使鲁国成为中华文明的精神家园。
+
+---
+
+## 特色单位：儒生
+
+### 单位数据
+
+| 属性 | 数值 | 对比传教士 |
+|-----|------|---------|
+| **传播次数** | 4 | 3 (+1) |
+| **移动力** | 4 | 4 |
+| **生产成本** | 150 信仰 | 150 信仰 |
+
+### 特殊能力
+
+| 能力 | 效果 |
+|-----|------|
+| **传道授业** | 可传播宗教（标准传教士功能） |
+| **文化讲学** | 消耗1次传播，使目标城市+50%文化（1回合） |
+| **有教无类** | 在自己城市可免费使用（不消耗传播次数） |
+
+```typescript
+const CONFUCIAN_SCHOLAR: UniqueUnit = {
+  id: 'confucian_scholar',
+  name: '儒生',
+  replaces: 'missionary',
+  
+  stats: {
+    spreadCharges: 4,
+    movement: 4,
+    faithCost: 150,
+  },
+  
+  abilities: [
+    {
+      id: 'teaching',
+      name: '传道授业',
+      description: '传播宗教（标准功能）',
+      effect: 'spread_religion',
+    },
+    {
+      id: 'cultural_lecture',
+      name: '文化讲学',
+      description: '消耗1次传播，目标城市+50%文化（1回合）',
+      effect: 'city_culture_boost',
+      charges: 1,
+      cultureBonus: 50,
+      duration: 1,
+    },
+    {
+      id: 'free_teaching',
+      name: '有教无类',
+      description: '在自己城市免费使用',
+      effect: 'no_charge_in_own_cities',
+    },
+  ],
+  
+  historicalNote: `
+    儒生是学习和传播儒家思想的知识分子。
+    他们周游列国，传播礼乐文明，教化民众。
+    孔子的弟子们"传道授业解惑"，将儒学推广到各国。
+  `,
+};
+```
+
+---
+
+## 特色建筑：杏坛
+
+### 建筑数据
+
+| 属性 | 数值 |
+|-----|------|
+| **替代** | 大学 |
+| **生产成本** | 250 |
+| **维护费用** | 2 |
+| **区域** | 学院 |
+| **科技需求** | 教育 |
+
+### 效果
+
+| 效果 | 数值 |
+|-----|------|
+| **科研** | +6（大学为+4） |
+| **文化** | +3（大学为0） |
+| **住房** | +1 |
+| **杰作槽** | +1 文学杰作槽 |
+
+```typescript
+const APRICOT_ALTAR: UniqueBuilding = {
+  id: 'apricot_altar',
+  name: '杏坛',
+  replaces: 'university',
+  
+  stats: {
+    productionCost: 250,
+    maintenanceCost: 2,
+  },
+  
+  requirements: {
+    technology: 'education',
+    district: 'campus',
+  },
+  
+  effects: [
+    { type: 'science', value: 6 },
+    { type: 'culture', value: 3 },
+    { type: 'housing', value: 1 },
+    { type: 'great_work_slot', workType: 'writing', slots: 1 },
+  ],
+  
+  historicalNote: `
+    杏坛是孔子讲学的地方，位于今山东曲阜孔庙内。
+    相传孔子在杏树下设坛讲学，弟子三千，贤人七十二。
+    杏坛成为中国教育的象征，"设杏坛"即开办学校。
+  `,
+};
+```
+
+---
+
+## 起始偏好
+
+```typescript
+const LU_START_BIAS: StartBias = {
+  terrain: [TerrainType.PLAINS],
+  tier: 1, // 无特殊偏好
+};
+```
+
+| 偏好 | 强度 | 原因 |
+|-----|------|------|
+| 平原 | ★☆☆ | 无特殊地形需求 |
+
+---
+
+## 战略指南
+
+### 早期发展 (古代-古典)
+
+1. **建筑文化**：所有建筑+1文化，尽早多建
+2. **图书馆免维护**：无负担地发展科研
+3. **剧院广场**：邻接加成翻倍
+
+### 中期发展 (古典-中世纪)
+
+1. **杏坛**：+6科研+3文化的超强建筑
+2. **儒生**：既能传教又能加文化
+3. **杰作收集**：+50%产出优势巨大
+
+### 后期决战 (文艺复兴+)
+
+1. **文化胜利**：-25%游客需求
+2. **考古优势**：额外文物槽位
+3. **科技领先**：杏坛带来的科研优势
+
+### 克制与被克制
+
+| 对手 | 关系 | 说明 |
+|-----|------|------|
+| 宋国 | 竞争 | 同为文化/宗教型 |
+| 楚国 | 被克制 | 军事扩张难以抵抗 |
+| 燕国 | 中立 | 各有侧重 |
+
+---
+
+## 完整代码定义
+
+```typescript
+const LU: Civilization = {
+  id: 'lu',
+  name: '鲁国',
+  adjective: '鲁',
+  icon: '魯', // 甲骨文
+  colors: { 
+    primary: '#8b4513', // 赭红
+    secondary: '#fffff0', // 象牙
+  },
+  
+  leader: {
+    id: 'duke_of_lu',
+    name: '鲁隐公',
+    title: '礼乐之君',
+    era: '公元前722年-前712年',
+    ability: CONFUCIUS_ABILITY,
+    agenda: {
+      name: '礼乐之道',
+      likes: '重视文化教育的文明',
+      dislikes: '蛮横无礼的文明',
+      weight: 7,
+    },
+    quotes: [
+      '学而时习之，不亦说乎',
+      '己所不欲，勿施于人',
+    ],
+    biography: '鲁国之君，孔子故里，礼乐文明的守护者。',
+  },
+  
+  civilizationAbility: ZHOU_RITES,
+  
+  uniqueUnits: [CONFUCIAN_SCHOLAR],
+  uniqueBuildings: [APRICOT_ALTAR],
+  uniqueImprovements: [],
+  uniqueDistricts: [],
+  
+  startBias: LU_START_BIAS,
+  
+  historicalInfo: {
+    founding: '周公旦之子伯禽封于鲁',
+    territory: '山东西南（今曲阜一带）',
+    culture: '周礼传承、儒学发源、六艺教育',
+    legacy: '孔子创立儒学，影响中华文明两千年',
+    famousFigures: ['周公旦', '孔子', '曾子', '子思', '孟子', '鲁班'],
+  },
+};
+
+export default LU;
+```

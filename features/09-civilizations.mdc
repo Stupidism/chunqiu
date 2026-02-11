@@ -1,0 +1,233 @@
+---
+description: 春秋项目文明系统 - 总览索引
+globs: ["**/game-core/**", "**/civilization/**", "**/civ/**"]
+alwaysApply: false
+---
+
+# 文明系统 - 总览
+
+## 概述
+
+春秋以中国春秋战国时期为背景，玩家可选择 **10个诸侯国** 作为可玩文明。每个文明拥有独特的：
+- **领袖** 及其专属能力
+- **文明特性** 影响整体发展方向
+- **特色单位** 替代标准单位
+- **特色建筑/区域/改良** 提供独特优势
+
+---
+
+## 详细文档索引
+
+| 文档 | 文明 | 游戏风格 | 适合胜利 |
+|-----|------|---------|---------|
+| [09a-civ-qin.mdc](./09a-civ-qin.mdc) | 秦国 | 征服扩张 | 统治胜利 |
+| [09b-civ-qi.mdc](./09b-civ-qi.mdc) | 齐国 | 经济外交 | 外交/经济胜利 |
+| [09c-civ-chu.mdc](./09c-civ-chu.mdc) | 楚国 | 文化扩张 | 统治/文化胜利 |
+| [09d-civ-jin.mdc](./09d-civ-jin.mdc) | 晋国 | 政治军事 | 统治胜利 |
+| [09e-civ-wu.mdc](./09e-civ-wu.mdc) | 吴国 | 海军进攻 | 统治胜利 |
+| [09f-civ-yue.mdc](./09f-civ-yue.mdc) | 越国 | 防守反击 | 统治胜利 |
+| [09g-civ-zheng.mdc](./09g-civ-zheng.mdc) | 郑国 | 商贸情报 | 经济/外交胜利 |
+| [09h-civ-song.mdc](./09h-civ-song.mdc) | 宋国 | 宗教传播 | 宗教胜利 |
+| [09i-civ-lu.mdc](./09i-civ-lu.mdc) | 鲁国 | 文化科技 | 文化/科技胜利 |
+| [09j-civ-yan.mdc](./09j-civ-yan.mdc) | 燕国 | 伟人导向 | 科技/文化胜利 |
+
+---
+
+## 文明数据结构
+
+```typescript
+interface Civilization {
+  id: string;
+  name: string;
+  adjective: string;           // 形容词（如"秦"→"秦国的"）
+  icon: string;                // 国旗/图腾（甲骨文字符）
+  colors: {
+    primary: string;           // 主色
+    secondary: string;         // 辅色
+  };
+  
+  // 领袖
+  leader: Leader;
+  
+  // 文明特性
+  civilizationAbility: Ability;
+  
+  // 特色内容
+  uniqueUnits: UniqueUnit[];
+  uniqueBuildings: UniqueBuilding[];
+  uniqueImprovements: UniqueImprovement[];
+  uniqueDistricts: UniqueDistrict[];
+  
+  // 起始偏好
+  startBias: StartBias;
+  
+  // 历史背景
+  historicalInfo: HistoricalInfo;
+}
+
+interface Leader {
+  id: string;
+  name: string;
+  title: string;               // 头衔
+  era: string;                 // 在位时期
+  ability: Ability;            // 领袖能力
+  agenda: Agenda;              // AI行为倾向
+  quotes: string[];            // 名言
+  biography: string;           // 生平简介
+}
+
+interface Ability {
+  name: string;
+  description: string;
+  detailedDescription: string; // 详细机制说明
+  effects: AbilityEffect[];
+}
+
+interface HistoricalInfo {
+  founding: string;            // 建国历史
+  territory: string;           // 疆域描述
+  culture: string;             // 文化特色
+  legacy: string;              // 历史遗产
+  famousFigures: string[];     // 著名人物
+}
+
+interface StartBias {
+  terrain?: TerrainType[];     // 偏好地形
+  feature?: FeatureType[];     // 偏好地貌
+  resource?: string[];         // 偏好资源
+  coastal?: boolean;           // 偏好沿海
+  river?: boolean;             // 偏好河流
+  tier: 1 | 2 | 3 | 4 | 5;    // 偏好强度（5最强）
+}
+```
+
+---
+
+## 文明能力效果类型
+
+```typescript
+enum AbilityEffectType {
+  // 产出加成
+  PRODUCTION_BONUS = 'production_bonus',
+  GOLD_BONUS = 'gold_bonus',
+  SCIENCE_BONUS = 'science_bonus',
+  CULTURE_BONUS = 'culture_bonus',
+  FAITH_BONUS = 'faith_bonus',
+  FOOD_BONUS = 'food_bonus',
+  
+  // 战斗加成
+  COMBAT_BONUS = 'combat_bonus',
+  COMBAT_BONUS_VS_TYPE = 'combat_bonus_vs_type',
+  COMBAT_BONUS_IN_TERRAIN = 'combat_bonus_in_terrain',
+  COMBAT_BONUS_DEFENDING = 'combat_bonus_defending',
+  
+  // 成本减免
+  UNIT_PRODUCTION_DISCOUNT = 'unit_production_discount',
+  UNIT_UPGRADE_DISCOUNT = 'unit_upgrade_discount',
+  UNIT_MAINTENANCE_DISCOUNT = 'unit_maintenance_discount',
+  DISTRICT_COST_DISCOUNT = 'district_cost_discount',
+  
+  // 邻接加成
+  ADJACENCY_BONUS = 'adjacency_bonus',
+  ADJACENCY_BONUS_MULTIPLIER = 'adjacency_bonus_multiplier',
+  
+  // 地形修正
+  TERRAIN_YIELD_MODIFIER = 'terrain_yield_modifier',
+  FEATURE_YIELD_MODIFIER = 'feature_yield_modifier',
+  
+  // 伟人相关
+  GREAT_PEOPLE_POINTS = 'great_people_points',
+  GREAT_PEOPLE_COST_DISCOUNT = 'great_people_cost_discount',
+  
+  // 贸易相关
+  TRADE_ROUTE_YIELD = 'trade_route_yield',
+  TRADE_ROUTE_CAPACITY = 'trade_route_capacity',
+  
+  // 外交相关
+  ENVOY_BONUS = 'envoy_bonus',
+  CITY_STATE_INFLUENCE = 'city_state_influence',
+  
+  // 触发效果
+  ON_KILL_GOLD = 'on_kill_gold',
+  ON_CONQUER_BONUS = 'on_conquer_bonus',
+  ON_TECHNOLOGY_BONUS = 'on_technology_bonus',
+}
+```
+
+---
+
+## AI 议程系统
+
+```typescript
+interface Agenda {
+  name: string;
+  likes: string;      // 喜欢什么样的文明
+  dislikes: string;   // 讨厌什么样的文明
+  weight: number;     // 影响外交的权重 (1-10)
+}
+
+// AI根据议程评估外交关系
+function evaluateDiplomacy(ai: Player, target: Player): number {
+  let score = 0;
+  const agenda = ai.civilization.leader.agenda;
+  
+  // 根据议程评估
+  switch (agenda.name) {
+    case '霸主雄心': // 秦穆公
+      score += target.militaryStrength > ai.militaryStrength ? 10 : -10;
+      break;
+    case '霸主外交': // 齐桓公
+      score += target.cityStateRelations > 0 ? 10 : 0;
+      score -= target.hasConqueredCityState ? 20 : 0;
+      break;
+    case '南方霸主': // 楚庄王
+      score += target.cities.length > 5 ? 10 : -5;
+      break;
+    // ... 其他议程
+  }
+  
+  return score;
+}
+```
+
+---
+
+## 文明选择界面
+
+```typescript
+interface CivilizationPreview {
+  id: string;
+  name: string;
+  leader: string;
+  leaderPortrait: string;       // 领袖头像
+  civilizationIcon: string;     // 文明图标（甲骨文）
+  
+  // 简要描述
+  tagline: string;              // 一句话描述
+  playstyle: string;            // 游戏风格
+  difficulty: 1 | 2 | 3 | 4 | 5; // 推荐难度（新手友好度）
+  victoryFocus: VictoryType[];  // 适合的胜利类型
+  
+  // 特色预览
+  uniqueAbilityName: string;
+  uniqueUnitName: string;
+  uniqueBuildingName: string;
+}
+
+// 难度说明
+// 1 = 新手推荐（能力直观、容错高）
+// 2 = 较易上手
+// 3 = 中等难度
+// 4 = 需要经验
+// 5 = 高手向（能力复杂、需要规划）
+```
+
+---
+
+## 文明平衡设计原则
+
+1. **特色鲜明**：每个文明的能力应引导独特的玩法风格
+2. **历史还原**：能力设计应反映该诸侯国的历史特色
+3. **强度均衡**：早期强/晚期强/全期均衡的合理分布
+4. **反制关系**：文明之间存在软克制关系，避免绝对优势
+5. **可玩性**：能力应有明显的游戏体验差异，而非数值堆叠

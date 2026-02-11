@@ -1,0 +1,300 @@
+---
+description: 春秋项目地图系统设计 - 总览索引
+globs: ["**/map/**", "**/Map/**", "**/Tile/**"]
+alwaysApply: false
+---
+
+# 地图系统 - 总览
+
+## 设计决策
+
+春秋采用 **错位四边形网格 (Staggered Grid)** 而非真六边形：
+- 每个地块是正方形
+- 奇数行向右偏移半格
+- 每个地块有 **6 个相邻地块**，保留文明系列的核心玩法
+
+---
+
+## 详细文档索引
+
+| 文档 | 描述 | 主要内容 |
+|-----|------|---------|
+| [05a-terrain-features.mdc](./05a-terrain-features.mdc) | 地形与地貌 | 基础地形、高度、地貌特征、河流 |
+| [05a-terrain-features.mdc#自然奇观](./05a-terrain-features.mdc) | 自然奇观 | 中国特色奇观（泰山、三峡等）、世界奇观、生成规则 |
+| [05b-resources-biomes.mdc](./05b-resources-biomes.mdc) | 资源与生物群落 | 三类资源、生物群落、野生动物、改良设施 |
+
+---
+
+## 一、网格结构
+
+### 视觉效果
+
+```
+偶数行:  ■ ■ ■ ■ ■ ■ ■ ■
+奇数行:   ■ ■ ■ ■ ■ ■ ■ ■
+偶数行:  ■ ■ ■ ■ ■ ■ ■ ■
+奇数行:   ■ ■ ■ ■ ■ ■ ■ ■
+```
+
+### 邻居关系
+
+```
+偶数行 [r,c] 的邻居:          奇数行 [r,c] 的邻居:
+    [r-1,c-1] [r-1,c]           [r-1,c] [r-1,c+1]
+         ↖   ↗                     ↖   ↗
+  [r,c-1] ← ■ → [r,c+1]     [r,c-1] ← ■ → [r,c+1]
+         ↙   ↘                     ↙   ↘
+    [r+1,c-1] [r+1,c]           [r+1,c] [r+1,c+1]
+```
+
+---
+
+## 二、地块数据结构
+
+```typescript
+interface Tile {
+  // 位置
+  position: Coord;
+  
+  // 地形层次（详见 05a-terrain-features.mdc）
+  terrain: TerrainType;       // 基础地形（草原/平原/沙漠等）
+  elevation: Elevation;        // 高度（平地/丘陵/山脉）
+  feature: FeatureType | null; // 地貌特征（森林/雨林/沼泽等）
+  
+  // 资源（详见 05b-resources-biomes.mdc）
+  resource: ResourceType | null;
+  hiddenResource: ResourceType | null; // 未揭示的战略资源
+  
+  // 人造物
+  improvement: ImprovementType | null;
+  district: DistrictType | null;
+  wonder: WonderType | null;
+  road: RoadLevel;            // 0=无, 1=古代道路, 2=铁路
+  
+  // 边缘元素
+  rivers: Direction[];        // 哪些边有河流
+  cliffs: Direction[];        // 哪些边有悬崖
+  
+  // 归属
+  owner: PlayerId | null;     // 领土归属
+  city: CityId | null;        // 所属城市
+  
+  // 状态
+  pillaged: boolean;          // 是否被劫掠
+  contaminated: boolean;      // 核污染
+  appealModifier: number;     // 魅力修正
+}
+
+interface Coord {
+  row: number;
+  col: number;
+}
+```
+
+---
+
+## 三、坐标与距离计算
+
+```typescript
+// 获取6个相邻地块
+function getNeighbors(row: number, col: number): Coord[] {
+  const isOddRow = row % 2 === 1;
+  const offsets = isOddRow
+    ? [[-1,0], [-1,1], [0,-1], [0,1], [1,0], [1,1]]
+    : [[-1,-1], [-1,0], [0,-1], [0,1], [1,-1], [1,0]];
+  
+  return offsets.map(([dr, dc]) => ({ row: row + dr, col: col + dc }));
+}
+
+// 立方体坐标转换（用于距离计算）
+function offsetToCube(row: number, col: number): { x: number; y: number; z: number } {
+  const x = col - Math.floor(row / 2);
+  const z = row;
+  const y = -x - z;
+  return { x, y, z };
+}
+
+// 计算两点距离
+function distance(r1: number, c1: number, r2: number, c2: number): number {
+  const a = offsetToCube(r1, c1);
+  const b = offsetToCube(r2, c2);
+  return Math.max(Math.abs(a.x - b.x), Math.abs(a.y - b.y), Math.abs(a.z - b.z));
+}
+```
+
+---
+
+## 四、地形产出速查表
+
+| 地形 | 粮食 | 生产 | 金币 | 备注 |
+|-----|------|------|------|------|
+| 草原 | 2 | 0 | 0 | 最适合农业 |
+| 草原丘陵 | 2 | 1 | 0 | +丘陵生产 |
+| 平原 | 1 | 1 | 0 | 均衡地形 |
+| 平原丘陵 | 1 | 2 | 0 | 高生产力 |
+| 沙漠 | 0 | 0 | 0 | 贫瘠 |
+| 沙漠丘陵 | 0 | 1 | 0 | - |
+| 苔原 | 1 | 0 | 0 | 寒冷 |
+| 苔原丘陵 | 1 | 1 | 0 | - |
+| 雪地 | 0 | 0 | 0 | 极寒 |
+| 海岸 | 1 | 0 | 1 | 近海 |
+| 海洋 | 1 | 0 | 0 | 深海 |
+
+### 地貌修正
+
+| 特征 | 粮食 | 生产 | 其他 | 移动+1 | 防御+3 |
+|-----|------|------|------|--------|--------|
+| 森林 | 0 | +1 | - | ✓ | ✓ |
+| 雨林 | +1 | +1 | - | ✓ | ✓ |
+| 沼泽 | +1 | 0 | 防御-2 | ✓ | ✗ |
+| 泛滥平原 | +3 | 0 | 不可建区域 | - | - |
+| 绿洲 | +3 | 0 | +1金币 | - | - |
+| 礁石 | +1 | +1 | 学院邻接+2 | - | - |
+
+---
+
+## 五、移动力消耗
+
+| 地形/特征 | 移动消耗 | 备注 |
+|----------|----------|------|
+| 平地 | 1 | 基础消耗 |
+| 丘陵 | 2 | +1额外 |
+| 森林 | 2 | +1额外 |
+| 雨林 | 2 | +1额外 |
+| 沼泽 | 2 | +1额外 |
+| 森林丘陵 | 3 | 丘陵+森林 |
+| 山脉 | ∞ | 不可通行 |
+| 河流穿越 | 全部 | 消耗剩余移动力 |
+| 道路 | 0.5~1 | 减少消耗 |
+| 铁路 | 0.25 | 大幅减少 |
+
+---
+
+## 六、战斗修正
+
+| 地形条件 | 防御加成 |
+|---------|---------|
+| 丘陵 | +3 |
+| 森林 | +3 |
+| 雨林 | +3 |
+| 森林丘陵 | +6 |
+| 沼泽 | -2 |
+| 河流穿越（攻击方） | -3 |
+| 城市中心 | +城防 |
+
+---
+
+## 七、视野与迷雾
+
+```typescript
+enum VisibilityState {
+  UNEXPLORED = 'unexplored',  // 未探索（黑色）
+  FOG = 'fog',                // 迷雾（曾探索但当前不可见）
+  VISIBLE = 'visible',        // 可见
+}
+
+interface VisibilityMap {
+  tiles: VisibilityState[][];
+}
+
+// 单位视野计算
+function calculateVisibility(unit: Unit, map: GameMap): Coord[] {
+  const visible: Coord[] = [];
+  const center = unit.position;
+  const range = unit.sight;
+  
+  // 获取范围内所有地块
+  const tilesInRange = getTilesInRange(center.row, center.col, range, map.width, map.height);
+  
+  for (const tile of tilesInRange) {
+    // 检查视线是否被阻挡（山脉、森林丘陵）
+    if (!isLineOfSightBlocked(center, tile, map)) {
+      visible.push(tile);
+    }
+  }
+  
+  return visible;
+}
+```
+
+---
+
+## 八、地图生成
+
+### 地图尺寸
+
+| 规模 | 尺寸 | 地块数 | 推荐玩家 |
+|-----|------|--------|---------|
+| 小 | 54×44 | ~2,400 | 2-4 |
+| 标准 | 80×52 | ~4,160 | 4-6 |
+| 大 | 104×64 | ~6,656 | 6-8 |
+| 巨大 | 128×80 | ~10,240 | 8-12 |
+
+### 生成步骤
+
+1. **生成大陆** - 使用噪声算法生成陆地轮廓
+2. **设置气候带** - 根据纬度确定生物群落
+3. **放置地形** - 根据气候带分配基础地形
+4. **添加高度** - 生成山脉带、丘陵区域
+5. **添加地貌** - 放置森林、雨林、沼泽等
+6. **生成河流** - 从山脉到海洋生成河流
+7. **放置资源** - 根据地形和生物群落放置资源
+8. **放置自然奇观** - 确保间距和合理分布
+9. **设置玩家起始位置** - 平衡的起始位置
+
+---
+
+## 九、性能优化
+
+### 虚拟滚动
+
+对于大地图，只渲染可视区域内的地块：
+
+```typescript
+function getVisibleTiles(
+  scrollX: number,
+  scrollY: number,
+  viewportWidth: number,
+  viewportHeight: number,
+  tileSize: number,
+  mapWidth: number,
+  mapHeight: number
+): { startRow: number; endRow: number; startCol: number; endCol: number } {
+  const buffer = 2;  // 缓冲区
+  
+  return {
+    startCol: Math.max(0, Math.floor(scrollX / tileSize) - buffer),
+    endCol: Math.min(mapWidth, Math.ceil((scrollX + viewportWidth) / tileSize) + buffer),
+    startRow: Math.max(0, Math.floor(scrollY / tileSize) - buffer),
+    endRow: Math.min(mapHeight, Math.ceil((scrollY + viewportHeight) / tileSize) + buffer),
+  };
+}
+```
+
+---
+
+## 十、CSS 样式
+
+```css
+.map-container {
+  --tile-size: 48px;
+  --tile-gap: 2px;
+  --row-offset: calc(var(--tile-size) / 2 + var(--tile-gap) / 2);
+}
+
+.map-row:nth-child(odd) {
+  margin-left: var(--row-offset);
+}
+
+.tile {
+  width: var(--tile-size);
+  height: var(--tile-size);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* 缩放级别 */
+.map-container[data-zoom="small"] { --tile-size: 32px; }
+.map-container[data-zoom="medium"] { --tile-size: 48px; }
+.map-container[data-zoom="large"] { --tile-size: 64px; }
+```

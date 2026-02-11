@@ -1,0 +1,358 @@
+---
+description: 春秋项目 WebSocket 通信协议
+globs: ["**/ws/**", "**/api/**", "**/hooks/useWebSocket**"]
+alwaysApply: false
+---
+
+# WebSocket 通信协议
+
+## 概述
+
+春秋使用 WebSocket 实现客户端与服务器的实时通信，主要用于：
+- 游戏状态同步
+- 多人游戏实时交互
+- AI 回合进度通知
+- 聊天功能
+
+在 PVP 同步回合制中，`GAME_ACTION` 实时生效并广播，`END_TURN` 仅用于标记玩家准备完成回合，回合结束由“超时或全员结束”触发。
+
+## 连接管理
+
+### 连接流程
+
+```
+客户端                                     服务器
+   │                                         │
+   │  ──── WebSocket 连接请求 ────────────▶  │
+   │                                         │
+   │  ◀──── 连接确认 ─────────────────────   │
+   │                                         │
+   │  ──── JOIN_GAME (gameId, token) ─────▶  │
+   │                                         │
+   │  ◀──── GAME_STATE (完整状态) ─────────  │
+   │                                         │
+   │  ──── PING ──────────────────────────▶  │
+   │  ◀──── PONG ─────────────────────────   │
+   │                                         │
+```
+
+### 心跳机制
+
+- 客户端每 30 秒发送 `PING`
+- 服务器响应 `PONG`
+- 超过 60 秒无响应则断开重连
+
+## 消息类型定义
+
+### 客户端 → 服务器
+
+```typescript
+// packages/types/src/ws.ts
+
+// 客户端发送的消息类型
+type ClientMessage =
+  | { type: 'JOIN_GAME'; gameId: string; token: string }
+  | { type: 'LEAVE_GAME' }
+  | { type: 'GAME_ACTION'; action: GameAction }
+  | { type: 'END_TURN' }
+  | { type: 'CHAT'; message: string }
+  | { type: 'PING' };
+
+// 游戏操作类型
+type GameAction =
+  // 单位操作
+  | { type: 'MOVE_UNIT'; unitId: string; path: Coord[] }
+  | { type: 'ATTACK'; unitId: string; targetId: string }
+  | { type: 'FORTIFY'; unitId: string }
+  | { type: 'SKIP_UNIT'; unitId: string }
+  | { type: 'DELETE_UNIT'; unitId: string }
+  
+  // 开拓者/工人操作
+  | { type: 'FOUND_CITY'; unitId: string; name?: string }
+  | { type: 'BUILD_IMPROVEMENT'; unitId: string; improvement: ImprovementType }
+  
+  // 城市操作
+  | { type: 'CITY_PRODUCTION'; cityId: string; item: ProductionItem }
+  | { type: 'CITY_BUY'; cityId: string; item: ProductionItem }
+  | { type: 'CITY_ASSIGN_CITIZEN'; cityId: string; tile: Coord }
+  | { type: 'CITY_UNASSIGN_CITIZEN'; cityId: string; tile: Coord }
+  
+  // 科技/市政
+  | { type: 'RESEARCH_TECH'; techId: string }
+  | { type: 'ADOPT_CIVIC'; civicId: string }
+  
+  // 外交
+  | { type: 'DIPLOMACY'; targetCivId: string; action: DiplomacyAction };
+
+// 外交行动
+type DiplomacyAction =
+  | { type: 'DECLARE_WAR' }
+  | { type: 'MAKE_PEACE' }
+  | { type: 'DENOUNCE' }
+  | { type: 'PROPOSE_ALLIANCE' }
+  | { type: 'TRADE_OFFER'; offer: TradeOffer };
+```
+
+### 服务器 → 客户端
+
+```typescript
+// 服务器发送的消息类型
+type ServerMessage =
+  // 游戏状态
+  | { type: 'GAME_STATE'; state: GameState }
+  | { type: 'STATE_PATCH'; patches: StatePatch[] }
+  
+  // 操作响应
+  | { type: 'ACTION_RESULT'; requestId?: string; success: boolean; error?: string; data?: any }
+  
+  // 回合事件
+  | { type: 'TURN_START'; turn: number; events: TurnStartEvent[] }
+  | { type: 'TURN_END'; turn: number; summary: TurnSummary }
+  | { type: 'PLAYER_TURN_ENDED'; playerId: string }
+  
+  // 战斗事件
+  | { type: 'COMBAT_RESULT'; result: CombatResult }
+  
+  // 玩家状态
+  | { type: 'PLAYER_JOINED'; player: PlayerInfo }
+  | { type: 'PLAYER_LEFT'; playerId: string; reason: string }
+  | { type: 'PLAYER_RECONNECTED'; playerId: string }
+  
+  // AI 进度
+  | { type: 'AI_TURN_PROGRESS'; playerId: string; progress: number }
+  
+  // 聊天
+  | { type: 'CHAT'; from: string; message: string; timestamp: number }
+  
+  // 系统
+  | { type: 'PONG' }
+  | { type: 'ERROR'; code: string; message: string };
+```
+
+## 状态同步策略
+
+### 完整状态 vs 增量更新
+
+- **完整状态 (GAME_STATE)**：
+  - 首次加入游戏
+  - 断线重连
+  - 新回合开始（可选）
+
+- **增量更新 (STATE_PATCH)**：
+  - 玩家操作后的即时反馈
+  - 其他玩家的操作同步
+
+### 增量更新格式
+
+使用 JSON Patch (RFC 6902) 格式：
+
+```typescript
+interface StatePatch {
+  op: 'add' | 'remove' | 'replace' | 'move' | 'copy';
+  path: string;  // JSON Pointer 路径
+  value?: any;
+  from?: string;
+}
+
+// 示例：单位移动
+const patches: StatePatch[] = [
+  { op: 'replace', path: '/players/0/units/3/position', value: { row: 5, col: 8 } },
+  { op: 'replace', path: '/players/0/units/3/currentMovement', value: 0 },
+];
+```
+
+## 回合事件
+
+### 回合开始事件
+
+```typescript
+interface TurnStartEvent {
+  type: 
+    | 'RESOURCE_INCOME'      // 资源收入
+    | 'TECH_COMPLETED'       // 科技完成
+    | 'CIVIC_COMPLETED'      // 市政完成
+    | 'PRODUCTION_COMPLETED' // 建造完成
+    | 'POPULATION_GROWTH'    // 人口增长
+    | 'UNIT_HEALED'          // 单位恢复
+    | 'BARBARIAN_SPAWN'      // 野蛮人生成
+    | 'RANDOM_EVENT';        // 随机事件
+  
+  data: any;  // 根据类型不同有不同的数据结构
+}
+
+// 示例
+const events: TurnStartEvent[] = [
+  {
+    type: 'RESOURCE_INCOME',
+    data: { gold: 15, science: 8, culture: 5 }
+  },
+  {
+    type: 'PRODUCTION_COMPLETED',
+    data: { cityId: 'city_1', item: { type: 'unit', id: 'warrior' } }
+  }
+];
+```
+
+### 回合结束摘要
+
+```typescript
+interface TurnSummary {
+  turn: number;
+  duration: number;  // 回合耗时（毫秒）
+  
+  // 各玩家统计
+  playerSummaries: {
+    playerId: string;
+    actionsCount: number;
+    unitsLost: number;
+    unitsKilled: number;
+    citiesFounded: number;
+    citiesLost: number;
+  }[];
+  
+  // 全局事件
+  events: string[];  // 简要描述
+}
+```
+
+## 错误处理
+
+### 错误代码
+
+```typescript
+enum ErrorCode {
+  // 连接错误
+  INVALID_TOKEN = 'INVALID_TOKEN',
+  GAME_NOT_FOUND = 'GAME_NOT_FOUND',
+  GAME_FULL = 'GAME_FULL',
+  ALREADY_JOINED = 'ALREADY_JOINED',
+  
+  // 操作错误
+  NOT_YOUR_TURN = 'NOT_YOUR_TURN',
+  INVALID_ACTION = 'INVALID_ACTION',
+  UNIT_NOT_FOUND = 'UNIT_NOT_FOUND',
+  CITY_NOT_FOUND = 'CITY_NOT_FOUND',
+  INSUFFICIENT_MOVEMENT = 'INSUFFICIENT_MOVEMENT',
+  INVALID_TARGET = 'INVALID_TARGET',
+  INSUFFICIENT_RESOURCES = 'INSUFFICIENT_RESOURCES',
+  
+  // 系统错误
+  INTERNAL_ERROR = 'INTERNAL_ERROR',
+  RATE_LIMITED = 'RATE_LIMITED',
+}
+```
+
+### 错误响应
+
+```typescript
+// 操作失败时的响应
+{
+  type: 'ACTION_RESULT',
+  success: false,
+  error: 'INSUFFICIENT_MOVEMENT',
+  data: {
+    required: 2,
+    available: 1
+  }
+}
+
+// 系统错误
+{
+  type: 'ERROR',
+  code: 'RATE_LIMITED',
+  message: '操作过于频繁，请稍后再试'
+}
+```
+
+## 客户端实现示例
+
+```typescript
+// apps/game/hooks/useWebSocket.ts
+
+import { useEffect, useRef, useCallback } from 'react';
+import { useGameStore } from '@/stores/gameStore';
+
+export function useGameWebSocket(gameId: string, token: string) {
+  const wsRef = useRef<WebSocket | null>(null);
+  const reconnectTimeoutRef = useRef<NodeJS.Timeout>();
+  
+  const { setGameState, applyPatches, addEvent } = useGameStore();
+  
+  const connect = useCallback(() => {
+    const ws = new WebSocket(`${process.env.NEXT_PUBLIC_WS_URL}/game`);
+    wsRef.current = ws;
+    
+    ws.onopen = () => {
+      // 加入游戏
+      ws.send(JSON.stringify({
+        type: 'JOIN_GAME',
+        gameId,
+        token,
+      }));
+      
+      // 开始心跳
+      startHeartbeat();
+    };
+    
+    ws.onmessage = (event) => {
+      const message = JSON.parse(event.data);
+      handleMessage(message);
+    };
+    
+    ws.onclose = () => {
+      // 尝试重连
+      reconnectTimeoutRef.current = setTimeout(connect, 3000);
+    };
+    
+    ws.onerror = (error) => {
+      console.error('WebSocket error:', error);
+    };
+  }, [gameId, token]);
+  
+  const handleMessage = (message: ServerMessage) => {
+    switch (message.type) {
+      case 'GAME_STATE':
+        setGameState(message.state);
+        break;
+      case 'STATE_PATCH':
+        applyPatches(message.patches);
+        break;
+      case 'TURN_START':
+        addEvent({ type: 'turn_start', ...message });
+        break;
+      case 'COMBAT_RESULT':
+        addEvent({ type: 'combat', ...message });
+        break;
+      case 'ERROR':
+        console.error('Server error:', message);
+        break;
+      // ... 其他消息处理
+    }
+  };
+  
+  const sendAction = useCallback((action: GameAction) => {
+    if (wsRef.current?.readyState === WebSocket.OPEN) {
+      wsRef.current.send(JSON.stringify({
+        type: 'GAME_ACTION',
+        action,
+      }));
+    }
+  }, []);
+  
+  const endTurn = useCallback(() => {
+    if (wsRef.current?.readyState === WebSocket.OPEN) {
+      wsRef.current.send(JSON.stringify({ type: 'END_TURN' }));
+    }
+  }, []);
+  
+  useEffect(() => {
+    connect();
+    return () => {
+      clearTimeout(reconnectTimeoutRef.current);
+      wsRef.current?.close();
+    };
+  }, [connect]);
+  
+  return { sendAction, endTurn };
+}
+```

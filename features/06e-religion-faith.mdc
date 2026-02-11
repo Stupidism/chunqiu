@@ -1,0 +1,880 @@
+---
+description: 春秋项目宗教系统详细设计
+globs: ["**/game-core/**", "**/religion/**", "**/faith/**"]
+alwaysApply: false
+---
+
+# 宗教系统 (Religion System)
+
+## 概述
+
+宗教系统是文明6的核心玩法之一，通过累积信仰点数创建万神殿和宗教，然后传播宗教以获得各种加成，最终可以追求宗教胜利。
+
+---
+
+## 一、宗教建立流程
+
+```
+┌─ 1. 累积信仰 ─────────────────────────────────────────────────┐
+│   • 通过圣地、神殿、自然奇观等获得信仰点数                       │
+│   • 累积25点信仰可创建万神殿                                    │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─ 2. 创建万神殿 ──────────────────────────────────────────────────┐
+│   • 选择一个万神殿信条（全局唯一，先到先得）                      │
+│   • 万神殿效果对所有城市生效，无需传播                           │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─ 3. 获得大预言家 ─────────────────────────────────────────────────┐
+│   • 通过圣地和神殿累积大预言家点数                               │
+│   • 或用信仰直接购买                                            │
+│   • 世界上只有有限数量的大预言家（基于玩家数量）                   │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─ 4. 创建宗教 ───────────────────────────────────────────────────┐
+│   • 将大预言家移动到圣地所在城市                                 │
+│   • 使用大预言家的"创建宗教"能力                                 │
+│   • 选择：宗教名称、图标、创始人信条、追随者信条                   │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─ 5. 传播宗教 ───────────────────────────────────────────────────┐
+│   • 用信仰购买传教士（3次传播）                                  │
+│   • 用信仰购买使徒（3次传播 + 神学战斗 + 布道）                   │
+│   • 被动传播：相邻城市的宗教压力                                 │
+│   • 贸易路线传播                                                │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─ 6. 强化宗教 ───────────────────────────────────────────────────┐
+│   • 使用使徒的"布道"能力在圣城添加更多信条                        │
+│   • 崇拜信条：解锁特殊宗教建筑                                   │
+│   • 强化信条：增强传播能力                                       │
+└─────────────────────────────────────────────────────────────────┘
+                              ↓
+┌─ 7. 宗教胜利 ───────────────────────────────────────────────────┐
+│   • 让你的宗教成为所有文明的主流宗教                              │
+│   • 主流宗教 = 超过50%城市人口信仰该宗教                          │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 二、信条系统
+
+### 信条类型
+
+```typescript
+interface Belief {
+  id: string;
+  name: string;
+  type: BeliefType;
+  effect: BeliefEffect[];
+  description: string;
+}
+
+enum BeliefType {
+  PANTHEON = 'pantheon',       // 万神殿信条（创建万神殿时选择）
+  FOUNDER = 'founder',         // 创始人信条（创建宗教时选择）
+  FOLLOWER = 'follower',       // 追随者信条（创建宗教时选择）
+  WORSHIP = 'worship',         // 崇拜信条（布道时添加）
+  ENHANCER = 'enhancer',       // 强化信条（布道时添加）
+}
+```
+
+### 万神殿信条 (Pantheon)
+
+在累积25信仰后可选择一个万神殿信条，**全局唯一**，被选择后其他文明不可选。
+
+| 信条 | 效果 | 适用场景 |
+|-----|------|---------|
+| **战神** | 击杀敌方单位时获得等于其战斗力50%的信仰 | 军事扩张 |
+| **丰收仪式** | 城市人口增长+10% | 发展型 |
+| **神圣之光** | 伟人点数+1（所有类型） | 伟人路线 |
+| **锻造之神** | 远古和古典单位+25%生产力 | 早期战争 |
+| **海神** | 沿海资源+1生产力 | 海洋文明 |
+| **狩猎女神** | 营地+1粮食，+1生产力 | 多营地资源 |
+| **大地女神** | 呼吸地块（无特征）+1信仰 | 沙漠/平原 |
+| **极光之舞** | 神圣自然奇观+2信仰 | 自然奇观旁 |
+| **河神** | 河流相邻地块+1宜居度 | 河流城市 |
+| **口述传统** | 种植园+1文化 | 奢侈资源 |
+| **太阳神** | 收获资源（稻米/小麦/玉米）+1粮食 | 农业地块 |
+| **天空之神** | 牧场+1生产力 | 牧场资源 |
+| **宗教殖民** | 建立城市时获得所在城市的主流宗教 | 殖民 |
+| **宗教部落** | 原始营地提供额外信仰 | 野蛮人狩猎 |
+| **纪念碑之神** | 奇观+2信仰 | 奇观建造 |
+| **石环** | 采石场+2信仰 | 采石场 |
+
+```typescript
+const PANTHEON_BELIEFS: Belief[] = [
+  {
+    id: 'god_of_war',
+    name: '战神',
+    type: BeliefType.PANTHEON,
+    effect: [{ type: 'faith_on_kill', value: 0.5 }],
+    description: '击杀敌方单位时获得等于其战斗力50%的信仰',
+  },
+  {
+    id: 'fertility_rites',
+    name: '丰收仪式',
+    type: BeliefType.PANTHEON,
+    effect: [{ type: 'city_growth', value: 10 }],
+    description: '城市人口增长+10%',
+  },
+  {
+    id: 'divine_spark',
+    name: '神圣之光',
+    type: BeliefType.PANTHEON,
+    effect: [{ type: 'great_people_points_all', value: 1 }],
+    description: '伟人点数+1（所有类型）',
+  },
+  {
+    id: 'god_of_the_forge',
+    name: '锻造之神',
+    type: BeliefType.PANTHEON,
+    effect: [{ type: 'ancient_classical_unit_production', value: 25 }],
+    description: '远古和古典单位+25%生产力',
+  },
+  {
+    id: 'god_of_the_sea',
+    name: '海神',
+    type: BeliefType.PANTHEON,
+    effect: [{ type: 'fishing_boat_production', value: 1 }],
+    description: '渔船+1生产力',
+  },
+  {
+    id: 'goddess_of_the_hunt',
+    name: '狩猎女神',
+    type: BeliefType.PANTHEON,
+    effect: [
+      { type: 'camp_food', value: 1 },
+      { type: 'camp_production', value: 1 },
+    ],
+    description: '营地+1粮食，+1生产力',
+  },
+  {
+    id: 'earth_goddess',
+    name: '大地女神',
+    type: BeliefType.PANTHEON,
+    effect: [{ type: 'breathtaking_faith', value: 1 }],
+    description: '呼吸（无特征）地块+1信仰',
+  },
+  {
+    id: 'dance_of_the_aurora',
+    name: '极光之舞',
+    type: BeliefType.PANTHEON,
+    effect: [{ type: 'tundra_holy_site_adjacency', value: 1 }],
+    description: '苔原圣地+1邻接加成',
+  },
+  {
+    id: 'river_goddess',
+    name: '河神',
+    type: BeliefType.PANTHEON,
+    effect: [{ type: 'river_amenity', value: 1 }],
+    description: '河流城市+1宜居度',
+  },
+  {
+    id: 'oral_tradition',
+    name: '口述传统',
+    type: BeliefType.PANTHEON,
+    effect: [{ type: 'plantation_culture', value: 1 }],
+    description: '种植园+1文化',
+  },
+  {
+    id: 'monument_to_the_gods',
+    name: '纪念碑之神',
+    type: BeliefType.PANTHEON,
+    effect: [{ type: 'ancient_classical_wonder_production', value: 15 }],
+    description: '远古和古典奇观+15%生产力',
+  },
+  {
+    id: 'stone_circles',
+    name: '石环',
+    type: BeliefType.PANTHEON,
+    effect: [{ type: 'quarry_faith', value: 2 }],
+    description: '采石场+2信仰',
+  },
+];
+```
+
+### 创始人信条 (Founder)
+
+创建宗教时选择，只有宗教创始人获得加成。
+
+| 信条 | 效果 |
+|-----|------|
+| **教会财产** | 每个信奉该宗教的城市+2金币 |
+| **教皇至上** | 每个信奉该宗教的城邦+2使者 |
+| **什一税** | 每4个信徒+1金币 |
+| **世界教会** | 每5个外国信徒+1文化 |
+| **礼拜堂** | 每4个外国信徒+1金币 |
+| **跨文化对话** | 首次向外国城市传教时+25科研 |
+| **神圣秩序** | 宗教单位+30%传播效率 |
+| **宗教统一** | 你的宗教成为城市主流时+100忠诚度 |
+
+```typescript
+const FOUNDER_BELIEFS: Belief[] = [
+  {
+    id: 'church_property',
+    name: '教会财产',
+    type: BeliefType.FOUNDER,
+    effect: [{ type: 'gold_per_converted_city', value: 2 }],
+    description: '每个信奉该宗教的城市+2金币',
+  },
+  {
+    id: 'papal_primacy',
+    name: '教皇至上',
+    type: BeliefType.FOUNDER,
+    effect: [{ type: 'envoys_per_converted_city_state', value: 2 }],
+    description: '每个信奉该宗教的城邦+2使者',
+  },
+  {
+    id: 'tithe',
+    name: '什一税',
+    type: BeliefType.FOUNDER,
+    effect: [{ type: 'gold_per_followers', followers: 4, value: 1 }],
+    description: '每4个信徒+1金币',
+  },
+  {
+    id: 'world_church',
+    name: '世界教会',
+    type: BeliefType.FOUNDER,
+    effect: [{ type: 'culture_per_foreign_followers', followers: 5, value: 1 }],
+    description: '每5个外国信徒+1文化',
+  },
+  {
+    id: 'pilgrimage',
+    name: '礼拜堂',
+    type: BeliefType.FOUNDER,
+    effect: [{ type: 'faith_per_foreign_city', value: 2 }],
+    description: '每个信奉该宗教的外国城市+2信仰',
+  },
+  {
+    id: 'cross_cultural_dialogue',
+    name: '跨文化对话',
+    type: BeliefType.FOUNDER,
+    effect: [{ type: 'science_on_spread', value: 25 }],
+    description: '首次向外国城市传教时+25科研',
+  },
+];
+```
+
+### 追随者信条 (Follower)
+
+创建宗教时选择，在该宗教成为城市主流宗教时生效。
+
+| 信条 | 效果 |
+|-----|------|
+| **合唱音乐** | 神殿和寺庙提供等同于信仰的文化 |
+| **神圣灵感** | 奇观+4信仰 |
+| **养活世界** | 神殿+3粮食，寺庙+2粮食 |
+| **耶稣会教育** | 可用信仰购买学院和剧院广场建筑 |
+| **工作伦理** | 圣地的邻接加成同时提供等额生产力 |
+| **禅定** | 圣地+1宜居度 |
+| **宗教共同体** | 国际贸易路线+2粮食（发往该宗教城市） |
+| **圣徒崇拜** | 可建造遗物祠，提供遗物槽位 |
+
+```typescript
+const FOLLOWER_BELIEFS: Belief[] = [
+  {
+    id: 'choral_music',
+    name: '合唱音乐',
+    type: BeliefType.FOLLOWER,
+    effect: [{ type: 'shrine_temple_culture_equals_faith', value: true }],
+    description: '神殿和寺庙提供等同于信仰的文化',
+  },
+  {
+    id: 'divine_inspiration',
+    name: '神圣灵感',
+    type: BeliefType.FOLLOWER,
+    effect: [{ type: 'wonder_faith', value: 4 }],
+    description: '奇观+4信仰',
+  },
+  {
+    id: 'feed_the_world',
+    name: '养活世界',
+    type: BeliefType.FOLLOWER,
+    effect: [
+      { type: 'shrine_food', value: 3 },
+      { type: 'temple_food', value: 2 },
+    ],
+    description: '神殿+3粮食，寺庙+2粮食',
+  },
+  {
+    id: 'jesuit_education',
+    name: '耶稣会教育',
+    type: BeliefType.FOLLOWER,
+    effect: [{ type: 'faith_purchase_campus_theater', value: true }],
+    description: '可用信仰购买学院和剧院广场建筑',
+  },
+  {
+    id: 'work_ethic',
+    name: '工作伦理',
+    type: BeliefType.FOLLOWER,
+    effect: [{ type: 'holy_site_adjacency_production', value: true }],
+    description: '圣地的邻接加成同时提供等额生产力',
+  },
+  {
+    id: 'zen_meditation',
+    name: '禅定',
+    type: BeliefType.FOLLOWER,
+    effect: [{ type: 'holy_site_amenity', value: 1 }],
+    description: '圣地+1宜居度',
+  },
+];
+```
+
+### 崇拜信条 (Worship)
+
+通过使徒"布道"能力添加，解锁特殊宗教建筑。
+
+| 信条 | 解锁建筑 | 效果 |
+|-----|---------|------|
+| **大教堂** | 大教堂 | +3信仰，1个艺术品槽位 |
+| **宝塔** | 宝塔 | +3信仰，+1住房 |
+| **清真寺** | 清真寺 | +3信仰，传教士+1传播次数 |
+| **佛寺** | 佛寺 | +3信仰，+2科研 |
+| **犹太会堂** | 犹太会堂 | +3信仰，+5金币 |
+| **教堂** | 教堂 | +3信仰，所有单位+5治疗 |
+| **祈祷堂** | 祈祷堂 | +3信仰，圣地区域产出+1（所有类型） |
+
+```typescript
+const WORSHIP_BELIEFS: Belief[] = [
+  {
+    id: 'cathedral',
+    name: '大教堂',
+    type: BeliefType.WORSHIP,
+    effect: [{ type: 'unlock_building', building: 'cathedral' }],
+    description: '解锁大教堂（+3信仰，1个艺术品槽位）',
+  },
+  {
+    id: 'pagoda',
+    name: '宝塔',
+    type: BeliefType.WORSHIP,
+    effect: [{ type: 'unlock_building', building: 'pagoda' }],
+    description: '解锁宝塔（+3信仰，+1住房）',
+  },
+  {
+    id: 'mosque',
+    name: '清真寺',
+    type: BeliefType.WORSHIP,
+    effect: [{ type: 'unlock_building', building: 'mosque' }],
+    description: '解锁清真寺（+3信仰，传教士+1传播次数）',
+  },
+  {
+    id: 'wat',
+    name: '佛寺',
+    type: BeliefType.WORSHIP,
+    effect: [{ type: 'unlock_building', building: 'wat' }],
+    description: '解锁佛寺（+3信仰，+2科研）',
+  },
+  {
+    id: 'synagogue',
+    name: '犹太会堂',
+    type: BeliefType.WORSHIP,
+    effect: [{ type: 'unlock_building', building: 'synagogue' }],
+    description: '解锁犹太会堂（+3信仰，+5金币）',
+  },
+];
+```
+
+### 强化信条 (Enhancer)
+
+通过使徒"布道"能力添加，增强宗教传播能力。
+
+| 信条 | 效果 |
+|-----|------|
+| **十字军** | 在信奉该宗教的城市10格内，战斗单位+10战斗力 |
+| **信仰守护者** | 在信奉该宗教的城市中战斗+5战斗力 |
+| **传教热忱** | 宗教单位忽略地形移动惩罚 |
+| **宗教统一** | 转化城市时，其他城市获得等同于压力25%的传播 |
+| **经文** | 宗教传播力+25%（神学后+50%） |
+| **忏悔** | 审判官+1移除异教次数 |
+| **圣地朝圣** | +2信仰/每个圣城 |
+| **布道** | 传教士可传播宗教4次 |
+
+```typescript
+const ENHANCER_BELIEFS: Belief[] = [
+  {
+    id: 'crusade',
+    name: '十字军',
+    type: BeliefType.ENHANCER,
+    effect: [{ type: 'combat_near_converted_city', range: 10, value: 10 }],
+    description: '在信奉该宗教的城市10格内，战斗单位+10战斗力',
+  },
+  {
+    id: 'defender_of_the_faith',
+    name: '信仰守护者',
+    type: BeliefType.ENHANCER,
+    effect: [{ type: 'combat_in_converted_city', value: 5 }],
+    description: '在信奉该宗教的城市中战斗+5战斗力',
+  },
+  {
+    id: 'missionary_zeal',
+    name: '传教热忱',
+    type: BeliefType.ENHANCER,
+    effect: [{ type: 'religious_unit_ignore_terrain', value: true }],
+    description: '宗教单位忽略地形移动惩罚',
+  },
+  {
+    id: 'religious_unity',
+    name: '宗教统一',
+    type: BeliefType.ENHANCER,
+    effect: [{ type: 'conversion_spread_percent', value: 25 }],
+    description: '转化城市时，其他城市获得等同于压力25%的传播',
+  },
+  {
+    id: 'scripture',
+    name: '经文',
+    type: BeliefType.ENHANCER,
+    effect: [{ type: 'spread_strength', value: 25, afterTech: 50 }],
+    description: '宗教传播力+25%（神学后+50%）',
+  },
+  {
+    id: 'holy_order',
+    name: '圣令',
+    type: BeliefType.ENHANCER,
+    effect: [{ type: 'religious_unit_cost', value: -30 }],
+    description: '传教士和使徒-30%信仰成本',
+  },
+];
+```
+
+---
+
+## 三、宗教单位
+
+### 单位详情
+
+| 单位 | 信仰成本 | 传播次数 | 战斗力 | 特殊能力 |
+|-----|---------|---------|--------|---------|
+| **传教士** | 100 | 3 | - | 传播宗教，无法发起神学战斗 |
+| **使徒** | 200 | 3 | 100 | 传播宗教，神学战斗，布道 |
+| **审判官** | 150 | 2 | - | 清除城市中的其他宗教 |
+| **武僧** | 200 | - | 35 | 近战宗教单位，可击杀其他宗教单位 |
+
+```typescript
+interface ReligiousUnit {
+  id: string;
+  name: string;
+  faithCost: number;
+  spreads: number;          // 传播次数
+  theologicalStrength: number; // 神学战斗力
+  movement: number;
+  abilities: string[];
+  requirements: string[];   // 需要的建筑/科技
+}
+
+const RELIGIOUS_UNITS: ReligiousUnit[] = [
+  {
+    id: 'missionary',
+    name: '传教士',
+    faithCost: 100,
+    spreads: 3,
+    theologicalStrength: 0, // 不能发起神学战斗
+    movement: 4,
+    abilities: ['spread_religion'],
+    requirements: ['shrine'],
+  },
+  {
+    id: 'apostle',
+    name: '使徒',
+    faithCost: 200,
+    spreads: 3,
+    theologicalStrength: 100,
+    movement: 4,
+    abilities: [
+      'spread_religion',
+      'theological_combat',
+      'evangelize_belief', // 布道添加信条
+      'launch_inquisition', // 发动审判（解锁审判官）
+    ],
+    requirements: ['temple'],
+  },
+  {
+    id: 'inquisitor',
+    name: '审判官',
+    faithCost: 150,
+    spreads: 0,
+    theologicalStrength: 75, // 防御战斗力
+    movement: 3,
+    abilities: ['remove_heresy'], // 移除异教
+    requirements: ['apostle_launch_inquisition'], // 需要使徒先发动审判
+  },
+  {
+    id: 'warrior_monk',
+    name: '武僧',
+    faithCost: 200,
+    spreads: 0,
+    theologicalStrength: 0,
+    combatStrength: 35, // 实际战斗力
+    movement: 3,
+    abilities: ['melee_combat', 'ignore_zone_of_control'],
+    requirements: ['temple', 'civic_theology'],
+  },
+];
+```
+
+### 使徒特殊能力（随机）
+
+使徒在创建时会随机获得一个特殊能力：
+
+| 能力 | 效果 |
+|-----|------|
+| **皈依者** | 传播力+2倍 |
+| **辩论家** | 神学战斗+20战斗力 |
+| **翻译者** | 可以传播到其他宗教的圣城 |
+| **殉道者** | 死亡时产生遗物 |
+| **朝圣者** | 忽略移动成本 |
+| **神学博士** | 布道不消耗传播次数 |
+| **宗教狂热** | 首次传播效果+50% |
+
+```typescript
+enum ApostlePromotion {
+  PROSELYTIZER = 'proselytizer',   // 皈依者
+  DEBATER = 'debater',             // 辩论家
+  TRANSLATOR = 'translator',       // 翻译者
+  MARTYR = 'martyr',               // 殉道者
+  PILGRIM = 'pilgrim',             // 朝圣者
+  THEOLOGIAN = 'theologian',       // 神学博士
+  FERVENT = 'fervent',             // 宗教狂热
+}
+
+function rollApostlePromotion(): ApostlePromotion {
+  const promotions = Object.values(ApostlePromotion);
+  return promotions[Math.floor(Math.random() * promotions.length)];
+}
+```
+
+---
+
+## 四、宗教压力机制
+
+### 压力来源
+
+```typescript
+interface ReligiousPressure {
+  religionId: string;
+  pressure: number;
+}
+
+interface CityReligion {
+  pressures: ReligiousPressure[];
+  majorityReligion: string | null;
+  holyCity: boolean;
+  followers: Record<string, number>; // 各宗教信徒数量
+}
+
+// 压力来源
+enum PressureSource {
+  PASSIVE = 'passive',         // 相邻城市被动传播
+  HOLY_CITY = 'holy_city',     // 圣城额外压力
+  MISSIONARY = 'missionary',   // 传教士主动传播
+  APOSTLE = 'apostle',         // 使徒主动传播
+  TRADE_ROUTE = 'trade_route', // 贸易路线
+}
+
+// 每回合压力计算
+function calculateReligiousPressure(city: City, map: GameMap): ReligiousPressure[] {
+  const pressures: Record<string, number> = {};
+  
+  // 1. 相邻城市被动传播（10格内）
+  const nearbyCities = getNearbyCities(city.position, 10, map);
+  for (const nearbyCity of nearbyCities) {
+    if (nearbyCity.religion.majorityReligion) {
+      const distance = getDistance(city.position, nearbyCity.position);
+      const pressurePerTurn = Math.floor(8 / distance); // 距离越远压力越小
+      pressures[nearbyCity.religion.majorityReligion] = 
+        (pressures[nearbyCity.religion.majorityReligion] || 0) + pressurePerTurn;
+    }
+  }
+  
+  // 2. 圣城额外压力
+  if (city.religion.holyCity) {
+    const holyReligion = city.religion.majorityReligion;
+    pressures[holyReligion] = (pressures[holyReligion] || 0) + 30;
+  }
+  
+  // 3. 贸易路线压力
+  for (const route of city.incomingTradeRoutes) {
+    if (route.origin.religion.majorityReligion) {
+      pressures[route.origin.religion.majorityReligion] = 
+        (pressures[route.origin.religion.majorityReligion] || 0) + 1;
+    }
+  }
+  
+  return Object.entries(pressures).map(([religionId, pressure]) => ({
+    religionId,
+    pressure,
+  }));
+}
+```
+
+### 信徒计算
+
+```typescript
+// 根据压力计算信徒分布
+function calculateFollowers(city: City): Record<string, number> {
+  const totalPressure = city.religion.pressures.reduce((sum, p) => sum + p.pressure, 0);
+  
+  if (totalPressure === 0) {
+    return {}; // 无宗教
+  }
+  
+  const followers: Record<string, number> = {};
+  
+  for (const pressure of city.religion.pressures) {
+    const ratio = pressure.pressure / totalPressure;
+    followers[pressure.religionId] = Math.floor(city.population * ratio);
+  }
+  
+  return followers;
+}
+
+// 判断主流宗教
+function getMajorityReligion(city: City): string | null {
+  const followers = calculateFollowers(city);
+  const threshold = city.population / 2; // 超过50%
+  
+  for (const [religionId, count] of Object.entries(followers)) {
+    if (count > threshold) {
+      return religionId;
+    }
+  }
+  
+  return null;
+}
+```
+
+### 传教士/使徒传播
+
+```typescript
+interface SpreadResult {
+  pressureAdded: number;
+  spreadChargesUsed: number;
+  religionSpread: string;
+}
+
+function spreadReligion(unit: ReligiousUnit, city: City): SpreadResult {
+  // 基础传播力
+  let spreadStrength = 100;
+  
+  // 使徒能力加成
+  if (unit.promotion === ApostlePromotion.PROSELYTIZER) {
+    spreadStrength *= 2;
+  }
+  
+  // 信条加成
+  const religion = getReligion(unit.religionId);
+  if (religion.enhancerBelief === 'scripture') {
+    spreadStrength *= 1.25;
+  }
+  
+  // 清真寺加成（传教士）
+  if (unit.type === 'missionary' && religion.worshipBelief === 'mosque') {
+    // 额外传播次数已在创建时添加
+  }
+  
+  // 添加压力
+  city.religion.pressures.push({
+    religionId: unit.religionId,
+    pressure: spreadStrength,
+  });
+  
+  // 消耗传播次数
+  unit.spreadsRemaining--;
+  
+  // 检查是否用完
+  if (unit.spreadsRemaining <= 0) {
+    // 单位消失
+    removeUnit(unit);
+  }
+  
+  return {
+    pressureAdded: spreadStrength,
+    spreadChargesUsed: 1,
+    religionSpread: unit.religionId,
+  };
+}
+```
+
+---
+
+## 五、神学战斗
+
+```typescript
+interface TheologicalCombatResult {
+  winner: ReligiousUnit;
+  loser: ReligiousUnit;
+  winnerDamage: number;
+  loserDamage: number;
+  loserKilled: boolean;
+  pressureSpread: ReligiousPressure[]; // 战斗结果导致的压力变化
+}
+
+function theologicalCombat(
+  attacker: ReligiousUnit,
+  defender: ReligiousUnit
+): TheologicalCombatResult {
+  // 只有使徒可以发起神学战斗
+  if (attacker.type !== 'apostle') {
+    throw new Error('Only apostles can initiate theological combat');
+  }
+  
+  // 计算战斗力
+  let attackerStrength = attacker.theologicalStrength;
+  let defenderStrength = defender.theologicalStrength;
+  
+  // 使徒能力加成
+  if (attacker.promotion === ApostlePromotion.DEBATER) {
+    attackerStrength += 20;
+  }
+  if (defender.promotion === ApostlePromotion.DEBATER) {
+    defenderStrength += 20;
+  }
+  
+  // 地形加成（圣地所在格子）
+  const attackerTile = getTile(attacker.position);
+  const defenderTile = getTile(defender.position);
+  
+  if (attackerTile.district?.type === 'holy_site') {
+    attackerStrength += 5;
+  }
+  if (defenderTile.district?.type === 'holy_site') {
+    defenderStrength += 5;
+  }
+  
+  // 伤害计算（类似常规战斗）
+  const strengthDiff = attackerStrength - defenderStrength;
+  const damageMultiplier = Math.pow(1.041, strengthDiff);
+  
+  const baseDamage = 30;
+  const defenderDamage = Math.round(baseDamage * damageMultiplier);
+  const attackerDamage = Math.round(baseDamage / damageMultiplier);
+  
+  // 应用伤害
+  attacker.damage += attackerDamage;
+  defender.damage += defenderDamage;
+  
+  // 判定胜负（谁先被消灭或伤害更重）
+  const attackerKilled = attacker.damage >= 100;
+  const defenderKilled = defender.damage >= 100;
+  
+  // 胜利者的宗教获得附近城市的压力加成
+  const winner = defenderKilled || (!attackerKilled && defenderDamage > attackerDamage) 
+    ? attacker : defender;
+  const loser = winner === attacker ? defender : attacker;
+  
+  // 向附近城市传播胜利者宗教压力
+  const nearbyCities = getNearbyCities(defender.position, 10);
+  const pressureSpread: ReligiousPressure[] = [];
+  
+  for (const city of nearbyCities) {
+    pressureSpread.push({
+      religionId: winner.religionId,
+      pressure: 100, // 基础传播量
+    });
+  }
+  
+  return {
+    winner,
+    loser,
+    winnerDamage: winner === attacker ? attackerDamage : defenderDamage,
+    loserDamage: winner === attacker ? defenderDamage : attackerDamage,
+    loserKilled: winner === attacker ? defenderKilled : attackerKilled,
+    pressureSpread,
+  };
+}
+```
+
+---
+
+## 六、宗教胜利
+
+```typescript
+interface ReligionVictoryProgress {
+  totalCivs: number;
+  convertedCivs: number;
+  progress: number; // 0-100%
+  isVictory: boolean;
+}
+
+function checkReligionVictory(player: Player, game: Game): ReligionVictoryProgress {
+  const playerReligion = player.religion;
+  
+  if (!playerReligion) {
+    return {
+      totalCivs: game.players.length,
+      convertedCivs: 0,
+      progress: 0,
+      isVictory: false,
+    };
+  }
+  
+  let convertedCivs = 0;
+  
+  for (const civ of game.players) {
+    if (civ.eliminated) continue;
+    
+    // 检查该文明是否以玩家宗教为主流
+    let citiesWithMajority = 0;
+    for (const city of civ.cities) {
+      if (city.religion.majorityReligion === playerReligion.id) {
+        citiesWithMajority++;
+      }
+    }
+    
+    // 超过一半城市信仰该宗教
+    if (citiesWithMajority > civ.cities.length / 2) {
+      convertedCivs++;
+    }
+  }
+  
+  const activeCivs = game.players.filter(p => !p.eliminated).length;
+  const progress = (convertedCivs / activeCivs) * 100;
+  
+  return {
+    totalCivs: activeCivs,
+    convertedCivs,
+    progress,
+    isVictory: convertedCivs === activeCivs, // 所有文明都被转化
+  };
+}
+```
+
+---
+
+## 七、宗教数据结构
+
+```typescript
+interface Religion {
+  id: string;
+  name: string;
+  icon: string;
+  founderId: string;            // 创建者玩家ID
+  holyCityId: string;           // 圣城ID
+  
+  // 信条
+  pantheonBelief: string | null;
+  founderBelief: string | null;
+  followerBelief: string | null;
+  worshipBelief: string | null;
+  enhancerBelief: string | null;
+  
+  // 统计
+  totalFollowers: number;
+  citiesConverted: number;
+}
+
+// 可用宗教名称/图标（春秋主题）
+const RELIGION_OPTIONS = [
+  { name: '道教', icon: 'taiji' },
+  { name: '儒学', icon: 'scroll' },
+  { name: '墨家', icon: 'gear' },
+  { name: '法家', icon: 'sword' },
+  { name: '兵家', icon: 'banner' },
+  { name: '阴阳家', icon: 'yinyang' },
+  { name: '纵横家', icon: 'speech' },
+  { name: '杂家', icon: 'book' },
+  { name: '农家', icon: 'grain' },
+  { name: '名家', icon: 'debate' },
+];
+```

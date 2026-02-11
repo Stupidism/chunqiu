@@ -1,0 +1,328 @@
+---
+description: 春秋项目甲骨文设计系统
+globs: ["**/*.css", "**/ui/**", "**/components/**"]
+alwaysApply: false
+---
+
+# 甲骨文设计系统
+
+## 设计理念
+
+春秋的视觉设计以中国商周时期的甲骨文和青铜器为灵感，追求：
+- **古朴典雅**：模拟龟甲、青铜器的质感
+- **简洁有力**：象形文字的简化美学
+- **文化底蕴**：传达中国古代文明的厚重感
+
+## 配色方案
+
+```css
+/* packages/ui/src/themes/oracle-bone/colors.css */
+
+:root {
+  /* ==================== 主色调 - 青铜器绿锈 ==================== */
+  --bronze-50: #f0f7f4;
+  --bronze-100: #d9ebe3;
+  --bronze-200: #b3d7c7;
+  --bronze-300: #86bda5;
+  --bronze-400: #5a9f81;
+  --bronze-500: #3d8268;  /* 主色 */
+  --bronze-600: #2f6854;
+  --bronze-700: #275445;
+  --bronze-800: #224439;
+  --bronze-900: #1d3830;
+  --bronze-950: #0f1f1b;
+
+  /* ==================== 辅助色 - 陶器赭红 ==================== */
+  --terracotta-50: #fdf6f3;
+  --terracotta-100: #fbeae3;
+  --terracotta-200: #f8d5c7;
+  --terracotta-300: #f2b49e;
+  --terracotta-400: #e98a6a;
+  --terracotta-500: #df6644;  /* 主色 */
+  --terracotta-600: #cb4c2d;
+  --terracotta-700: #a93c24;
+  --terracotta-800: #8b3422;
+  --terracotta-900: #732f21;
+  --terracotta-950: #3e1610;
+
+  /* ==================== 点缀色 - 玉石青 ==================== */
+  --jade-50: #f0fdfc;
+  --jade-100: #ccfbf7;
+  --jade-200: #99f6ef;
+  --jade-300: #5fe9e2;
+  --jade-400: #4fd1c5;
+  --jade-500: #38b2ac;  /* 主色 */
+  --jade-600: #319795;
+  --jade-700: #2c7a7b;
+  --jade-800: #285e5e;
+  --jade-900: #234e4e;
+  --jade-950: #0d2626;
+
+  /* ==================== 点缀色 - 黄金 ==================== */
+  --gold-50: #fefce8;
+  --gold-100: #fef9c3;
+  --gold-200: #fef08a;
+  --gold-300: #fde047;
+  --gold-400: #f6c744;
+  --gold-500: #eab308;  /* 主色 */
+  --gold-600: #ca8a04;
+  --gold-700: #a16207;
+  --gold-800: #854d0e;
+  --gold-900: #713f12;
+  --gold-950: #422006;
+
+  /* ==================== 背景色 - 竹简/丝帛 ==================== */
+  --parchment-50: #fefdfb;
+  --parchment-100: #fdf9f0;
+  --parchment-200: #f9f0dc;
+  --parchment-300: #f3e4c3;
+  --parchment-400: #e9d19e;
+  --parchment-500: #dbb978;
+  --parchment-600: #c99d4f;
+  --parchment-700: #a67c3a;
+  --parchment-800: #876434;
+  --parchment-900: #6f532e;
+  --parchment-950: #3d2b16;
+
+  /* ==================== 墨色 (文字) ==================== */
+  --ink-50: #f8f7f6;
+  --ink-100: #e8e6e3;
+  --ink-200: #d3d0cb;
+  --ink-300: #b5b0a8;
+  --ink-400: #918a7e;
+  --ink-500: #766e62;
+  --ink-600: #635b50;
+  --ink-700: #524b43;
+  --ink-800: #46403a;
+  --ink-900: #3d3834;
+  --ink-950: #211e1b;
+
+  /* ==================== 语义化颜色 ==================== */
+  --color-primary: var(--bronze-500);
+  --color-primary-hover: var(--bronze-600);
+  --color-secondary: var(--terracotta-500);
+  --color-accent: var(--jade-500);
+  --color-warning: var(--gold-500);
+  --color-danger: var(--terracotta-600);
+  --color-success: var(--bronze-500);
+  
+  --color-background: var(--parchment-100);
+  --color-surface: var(--parchment-50);
+  --color-surface-elevated: #ffffff;
+  
+  --color-text-primary: var(--ink-900);
+  --color-text-secondary: var(--ink-600);
+  --color-text-muted: var(--ink-400);
+  --color-text-inverse: var(--parchment-50);
+}
+
+/* 暗色模式 */
+.dark {
+  --color-background: var(--ink-950);
+  --color-surface: var(--ink-900);
+  --color-surface-elevated: var(--ink-800);
+  
+  --color-text-primary: var(--parchment-100);
+  --color-text-secondary: var(--parchment-300);
+  --color-text-muted: var(--ink-400);
+}
+
+/* ==================== 游戏系统配色 ==================== */
+
+/* 城邦类型 / 产出类型 */
+--color-cultural: #9b59b6;      /* 文化 - 紫色 */
+--color-industrial: #e67e22;    /* 工业/生产 - 橙色 */
+--color-militaristic: #e74c3c;  /* 军事 - 红色 */
+--color-religious: #f5f5f5;     /* 宗教/信仰 - 白色 */
+--color-scientific: #3498db;    /* 科研 - 蓝色 */
+--color-trade: #eab308;         /* 商业/金币 - 金色 */
+
+/* 产出图标配色 */
+--color-yield-food: #27ae60;    /* 粮食 - 绿色 */
+--color-yield-production: #e67e22; /* 生产 - 橙色 */
+--color-yield-gold: #eab308;    /* 金币 - 金色 */
+--color-yield-science: #3498db; /* 科研 - 蓝色 */
+--color-yield-culture: #9b59b6; /* 文化 - 紫色 */
+--color-yield-faith: #f5f5f5;   /* 信仰 - 白色 */
+
+/* 资源稀有度 */
+--color-resource-bonus: #27ae60;    /* 加成资源 - 绿色 */
+--color-resource-luxury: #9b59b6;   /* 奢侈资源 - 紫色 */
+--color-resource-strategic: #e74c3c; /* 战略资源 - 红色 */
+```
+
+## 字体系统
+
+```css
+/* 字体定义 */
+@font-face {
+  font-family: 'ZhuanShu';
+  src: url('/fonts/FangZhengXiaoZhuan.woff2') format('woff2');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ChunQiuSong';
+  src: url('/fonts/NotoSerifSC-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ChunQiuSong';
+  src: url('/fonts/NotoSerifSC-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-display: swap;
+}
+
+:root {
+  /* 篆书 - 用于大标题、Logo、重要数字 */
+  --font-display: 'ZhuanShu', 'STKaiti', 'KaiTi', serif;
+  
+  /* 宋体 - 用于正文、说明文字 */
+  --font-body: 'ChunQiuSong', 'Noto Serif SC', 'SimSun', serif;
+  
+  /* 等宽 - 用于数字、代码 */
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+  
+  /* 字号 */
+  --text-xs: 0.75rem;    /* 12px */
+  --text-sm: 0.875rem;   /* 14px */
+  --text-base: 1rem;     /* 16px */
+  --text-lg: 1.125rem;   /* 18px */
+  --text-xl: 1.25rem;    /* 20px */
+  --text-2xl: 1.5rem;    /* 24px */
+  --text-3xl: 1.875rem;  /* 30px */
+  --text-4xl: 2.25rem;   /* 36px */
+  --text-5xl: 3rem;      /* 48px */
+}
+```
+
+## 图标库
+
+> 📌 图标库已独立为单独文档，详见 **[04a-iconography.mdc](./04a-iconography.mdc)**
+> 
+> 包含内容：
+> - **文明标识**：10个可玩文明的甲骨文国名标识
+> - **城邦标识**：18个城邦的甲骨文国名标识
+> - **游戏图标**：单位、建筑、产出、地形、资源等
+> - **UI图标**：通用操作和状态图标
+> - **文件组织**：资源目录结构
+
+## UI 组件样式
+
+### 按钮
+
+```css
+.btn-oracle {
+  font-family: var(--font-body);
+  background: linear-gradient(135deg, var(--bronze-500), var(--bronze-600));
+  color: var(--parchment-50);
+  border: 2px solid var(--bronze-700);
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255,0.1),
+    0 2px 4px rgba(0,0,0,0.2);
+  transition: all 0.2s;
+}
+
+.btn-oracle:hover {
+  background: linear-gradient(135deg, var(--bronze-400), var(--bronze-500));
+  transform: translateY(-1px);
+  box-shadow: 
+    inset 0 1px 0 rgba(255,255,255,0.15),
+    0 4px 8px rgba(0,0,0,0.25);
+}
+
+.btn-oracle:active {
+  transform: translateY(0);
+  box-shadow: 
+    inset 0 2px 4px rgba(0,0,0,0.2);
+}
+```
+
+### 卡片/面板
+
+```css
+.panel-oracle {
+  background: var(--parchment-50);
+  border: 2px solid var(--bronze-300);
+  border-radius: 8px;
+  box-shadow: 
+    0 4px 12px rgba(0,0,0,0.1),
+    inset 0 0 0 1px rgba(255,255,255,0.5);
+  
+  /* 模拟竹简/丝帛纹理 */
+  background-image: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 20px,
+      rgba(0,0,0,0.02) 20px,
+      rgba(0,0,0,0.02) 21px
+    );
+}
+
+.panel-oracle-header {
+  font-family: var(--font-display);
+  font-size: var(--text-xl);
+  color: var(--bronze-700);
+  border-bottom: 2px solid var(--bronze-200);
+  padding: 1rem;
+}
+```
+
+### 工具提示
+
+```css
+.tooltip-oracle {
+  background: var(--ink-900);
+  color: var(--parchment-100);
+  border: 1px solid var(--gold-600);
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  font-size: var(--text-sm);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+```
+
+## 动效设计
+
+### 原则
+- **克制使用**：动效用于强化交互反馈，不喧宾夺主
+- **古朴感**：避免过于现代的弹跳效果，偏向平稳、沉稳
+- **火光占卜**：重要元素可使用轻微的闪烁/颤动效果
+
+### 动效变量
+
+```css
+:root {
+  --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --ease-in: cubic-bezier(0.4, 0, 1, 1);
+  
+  --duration-fast: 150ms;
+  --duration-normal: 250ms;
+  --duration-slow: 400ms;
+}
+
+/* 单位移动动画 */
+@keyframes unit-move {
+  from { transform: translate(var(--from-x), var(--from-y)); }
+  to { transform: translate(var(--to-x), var(--to-y)); }
+}
+
+/* 占卜闪烁效果 */
+@keyframes oracle-flicker {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.8; }
+}
+
+/* 回合开始提示 */
+@keyframes turn-notification {
+  0% { transform: scale(0.9); opacity: 0; }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); opacity: 1; }
+}
+```
