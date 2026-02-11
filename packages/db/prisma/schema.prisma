@@ -1,0 +1,194 @@
+// 春秋 (Chunqiu) - Database Schema
+// 中国古代春秋时期策略游戏数据库模型
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// 用户模型
+model User {
+  id            String    @id @default(uuid())
+  email         String    @unique
+  name          String
+  passwordHash  String    @map("password_hash")
+  avatar        String?
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @updatedAt @map("updated_at")
+  lastLoginAt   DateTime? @map("last_login_at")
+  
+  // 关联
+  gamePlayers   GamePlayer[]
+  turns         TurnRecord[]
+  
+  @@map("users")
+}
+
+// 游戏房间/对局模型
+model Game {
+  id            String    @id @default(uuid())
+  name          String
+  status        GameStatus @default(WAITING)
+  
+  // 游戏设置 (JSON格式存储)
+  settings      Json      @default("{}")
+  
+  // 地图数据 (JSON格式存储)
+  mapData       Json?     @map("map_data")
+  
+  // 当前回合
+  currentTurn   Int       @default(0) @map("current_turn")
+  
+  // 最大玩家数
+  maxPlayers    Int       @default(4) @map("max_players")
+  
+  // 地图大小
+  mapWidth      Int       @default(20) @map("map_width")
+  mapHeight     Int       @default(20) @map("map_height")
+  
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @updatedAt @map("updated_at")
+  startedAt     DateTime? @map("started_at")
+  endedAt       DateTime? @map("ended_at")
+  
+  // 获胜者
+  winnerId      String?   @map("winner_id")
+  
+  // 关联
+  players       GamePlayer[]
+  turns         TurnRecord[]
+  
+  @@map("games")
+}
+
+// 游戏状态枚举
+enum GameStatus {
+  WAITING     // 等待玩家加入
+  READY       // 玩家准备就绪
+  PLAYING     // 游戏中
+  PAUSED      // 暂停
+  FINISHED    // 已结束
+  
+  @@map("game_status")
+}
+
+// 游戏玩家关联模型
+model GamePlayer {
+  id            String    @id @default(uuid())
+  
+  // 外键
+  gameId        String    @map("game_id")
+  userId        String    @map("user_id")
+  
+  // 选择的文明/国家
+  civilization  String?   // 齐、楚、燕、韩、赵、魏、秦等
+  
+  // 玩家颜色
+  color         String?
+  
+  // 准备状态
+  isReady       Boolean   @default(false) @map("is_ready")
+  
+  // 是否房主
+  isHost        Boolean   @default(false) @map("is_host")
+  
+  // 玩家状态
+  status        PlayerStatus @default(ALIVE)
+  
+  // 玩家数据 (资源、科技等)
+  data          Json      @default("{}")
+  
+  // 加入顺序
+  joinOrder     Int       @default(0) @map("join_order")
+  
+  createdAt     DateTime  @default(now()) @map("created_at")
+  updatedAt     DateTime  @updatedAt @map("updated_at")
+  
+  // 关联
+  game          Game      @relation(fields: [gameId], references: [id], onDelete: Cascade)
+  user          User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  
+  @@unique([gameId, userId])
+  @@unique([gameId, civilization])
+  @@map("game_players")
+}
+
+// 玩家状态枚举
+enum PlayerStatus {
+  ALIVE       // 存活
+  DEFEATED    // 被击败
+  SURRENDERED // 投降
+  DISCONNECTED // 断线
+  
+  @@map("player_status")
+}
+
+// 回合记录模型
+model TurnRecord {
+  id            String    @id @default(uuid())
+  
+  // 外键
+  gameId        String    @map("game_id")
+  playerId      String?   @map("player_id") // 执行操作的玩家
+  
+  // 回合号
+  turnNumber    Int       @map("turn_number")
+  
+  // 操作记录 (JSON格式)
+  actions       Json      @default("[]")
+  
+  // 回合开始状态快照
+  startState    Json?     @map("start_state")
+  
+  // 回合结束状态快照
+  endState      Json?     @map("end_state")
+  
+  // 处理状态
+  processed     Boolean   @default(false)
+  
+  // 处理时间
+  processedAt   DateTime? @map("processed_at")
+  
+  createdAt     DateTime  @default(now()) @map("created_at")
+  
+  // 关联
+  game          Game      @relation(fields: [gameId], references: [id], onDelete: Cascade)
+  player        User?     @relation(fields: [playerId], references: [id], onDelete: SetNull)
+  
+  @@unique([gameId, turnNumber, playerId])
+  @@map("turn_records")
+}
+
+// 文明/国家配置模型 (静态数据)
+model Civilization {
+  id            String    @id @default(uuid())
+  
+  // 文明代码
+  code          String    @unique // qi, chu, yan, han, zhao, wei, qin
+  
+  // 显示名称
+  name          String    // 齐、楚、燕、韩、赵、魏、秦
+  
+  // 描述
+  description   String?
+  
+  // 特色能力
+  ability       String?
+  
+  // 起始加成
+  startingBonus Json      @default("{}") @map("starting_bonus")
+  
+  // 颜色代码
+  color         String
+  
+  // 图标
+  icon          String?
+  
+  createdAt     DateTime  @default(now()) @map("created_at")
+  
+  @@map("civilizations")
+}

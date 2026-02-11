@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700&display=swap');
+
+:root {
+  --foreground-rgb: 60, 40, 20;
+  --background-start-rgb: 253, 248, 243;
+  --background-end-rgb: 249, 239, 224;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Noto Serif SC', serif;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+    to bottom,
+    rgb(var(--background-start-rgb)),
+    rgb(var(--background-end-rgb))
+  );
+  min-height: 100vh;
+}
+
+/* 游戏地图样式 */
+.game-map {
+  position: relative;
+  overflow: hidden;
+}
+
+.hex-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2px;
+}
+
+.hex-row {
+  display: flex;
+  gap: 2px;
+}
+
+.hex-row:nth-child(even) {
+  margin-left: 31px;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c4843e;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a6682e;
+}
+
+/* 动画 */
+@keyframes pulse-border {
+  0%, 100% {
+    border-color: rgba(196, 132, 62, 0.5);
+  }
+  50% {
+    border-color: rgba(196, 132, 62, 1);
+  }
+}
+
+.animate-pulse-border {
+  animation: pulse-border 2s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.animate-float {
+  animation: float 2s ease-in-out infinite;
+}
+
+/* 选中效果 */
+.selected-tile {
+  box-shadow: 0 0 0 3px #DAA520, 0 0 20px rgba(218, 165, 32, 0.5);
+}
+
+/* 可移动范围 */
+.movement-range {
+  position: relative;
+}
+
+.movement-range::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(76, 175, 80, 0.3);
+  border-radius: 50%;
+}
+
+/* 攻击范围 */
+.attack-range {
+  position: relative;
+}
+
+.attack-range::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(244, 67, 54, 0.3);
+  border-radius: 50%;
+}
