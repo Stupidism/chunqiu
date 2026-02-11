@@ -1,10 +1,10 @@
 ---
-description: 春秋项目 WebSocket 通信协议
+description: 架构文档 - 05 WebSocket 通信协议
 globs: ["**/ws/**", "**/api/**", "**/hooks/useWebSocket**"]
 alwaysApply: false
 ---
 
-# WebSocket 通信协议
+# 05 WebSocket 通信协议
 
 ## 概述
 

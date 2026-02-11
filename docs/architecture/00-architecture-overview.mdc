@@ -28,10 +28,15 @@ alwaysApply: false
 
 ## 地图尺寸约束
 - 采用 Civilization 6 的尺寸档位与格数
-- 详见 09-map-sizing.mdc
+- 详见 13-map-sizing.mdc
+
+## 交互与输入要求
+- 图形展示与基础界面需要 mobile-friendly (大厅与游戏)
+- 语音输入操作由后端提供解析能力
+- 详见 19-mobile-friendly-ui.mdc 与 20-voice-input-commands.mdc
 
 ## 部署与域名
-- 多应用部署与域名策略详见 14-deployment-strategy.mdc
+- 多应用部署与域名策略详见 18-deployment-strategy.mdc
 
 ## 地图网格约束
 - 使用错位四边形网格模拟六邻接

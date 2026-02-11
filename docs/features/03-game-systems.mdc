@@ -12,13 +12,13 @@ alwaysApply: false
 
 ```
 游戏系统架构:
-├── 产出系统 (Yields)        → 06a-yields-system.mdc
-├── 区域与建筑 (Districts)   → 06b-district-building.mdc
-├── 科技系统 (Technology)    → 06c-technology-tree.mdc
-├── 市政与政府 (Civics)      → 06d-civics-government.mdc (待完善)
-├── 宗教系统 (Religion)      → 06e-religion-faith.mdc (待完善)
-├── 经济与贸易 (Economy)     → 06f-economy-trade.mdc (待完善)
-├── 单位与战斗 (Combat)      → 06g-units-combat.mdc
+├── 产出系统 (Yields)        → 03a-yields-system.mdc
+├── 区域与建筑 (Districts)   → 03b-district-building.mdc
+├── 科技系统 (Technology)    → 03c-technology-tree.mdc
+├── 市政与政府 (Civics)      → 03d-civics-government.mdc (待完善)
+├── 宗教系统 (Religion)      → 03e-religion-faith.mdc (待完善)
+├── 经济与贸易 (Economy)     → 03f-economy-trade.mdc (待完善)
+├── 单位与战斗 (Combat)      → 03g-units-combat.mdc
 ├── 城市与生产 (City)        → 06h-city-production.mdc (待完善)
 ├── 回合系统 (Turn)          → 本文件
 ├── 外交系统 (Diplomacy)     → 待创建
@@ -33,13 +33,13 @@ alwaysApply: false
 
 | 文档 | 描述 | 主要内容 |
 |-----|------|---------|
-| [06a-yields-system.mdc](./06a-yields-system.mdc) | 产出系统 | 6种产出（粮食/生产/金币/科研/文化/信仰）的来源、用途、计算公式 |
-| [06b-district-building.mdc](./06b-district-building.mdc) | 区域与建筑 | 8种区域类型、邻接加成计算、建筑列表 |
-| [06c-technology-tree.mdc](./06c-technology-tree.mdc) | 科技系统 | 完整科技树、尤里卡机制、科研计算 |
-| [06d-civics-government.mdc](./06d-civics-government.mdc) | 市政与政府 | 市政树、政府类型、政策卡、传承加成 |
-| [06e-religion-faith.mdc](./06e-religion-faith.mdc) | 宗教系统 | 万神殿、宗教创建、信条、宗教单位、神学战斗 |
-| [06f-economy-trade.mdc](./06f-economy-trade.mdc) | 经济与贸易 | 金币收支、贸易路线、城邦、外交交易 |
-| [06g-units-combat.mdc](./06g-units-combat.mdc) | 单位与战斗 | 单位列表、战斗公式、晋升系统、攻城战 |
+| [03a-yields-system.mdc](./03a-yields-system.mdc) | 产出系统 | 6种产出（粮食/生产/金币/科研/文化/信仰）的来源、用途、计算公式 |
+| [03b-district-building.mdc](./03b-district-building.mdc) | 区域与建筑 | 8种区域类型、邻接加成计算、建筑列表 |
+| [03c-technology-tree.mdc](./03c-technology-tree.mdc) | 科技系统 | 完整科技树、尤里卡机制、科研计算 |
+| [03d-civics-government.mdc](./03d-civics-government.mdc) | 市政与政府 | 市政树、政府类型、政策卡、传承加成 |
+| [03e-religion-faith.mdc](./03e-religion-faith.mdc) | 宗教系统 | 万神殿、宗教创建、信条、宗教单位、神学战斗 |
+| [03f-economy-trade.mdc](./03f-economy-trade.mdc) | 经济与贸易 | 金币收支、贸易路线、城邦、外交交易 |
+| [03g-units-combat.mdc](./03g-units-combat.mdc) | 单位与战斗 | 单位列表、战斗公式、晋升系统、攻城战 |
 
 ### 待完善
 
@@ -62,7 +62,7 @@ alwaysApply: false
 | 文化 (Culture) | 文 | 市政进度、领土扩张 |
 | 信仰 (Faith) | 示 | 宗教、购买宗教单位 |
 
-**详见**: [06a-yields-system.mdc](./06a-yields-system.mdc)
+**详见**: [03a-yields-system.mdc](./03a-yields-system.mdc)
 
 ---
 
@@ -83,7 +83,7 @@ alwaysApply: false
 
 **区域数量限制**: `可建区域数 = 1 + floor(人口/3)`
 
-**详见**: [06b-district-building.mdc](./06b-district-building.mdc)
+**详见**: [03b-district-building.mdc](./03b-district-building.mdc)
 
 ---
 
@@ -104,7 +104,7 @@ alwaysApply: false
 
 **尤里卡机制**: 完成特定条件获得 50% 科技进度
 
-**详见**: [06c-technology-tree.mdc](./06c-technology-tree.mdc)
+**详见**: [03c-technology-tree.mdc](./03c-technology-tree.mdc)
 
 ---
 
@@ -121,7 +121,7 @@ alwaysApply: false
 | 侧翼支援 | +2/每友军 |
 | 大将军 | +5 |
 
-**详见**: [06g-units-combat.mdc](./06g-units-combat.mdc)
+**详见**: [03g-units-combat.mdc](./03g-units-combat.mdc)
 
 ---
 

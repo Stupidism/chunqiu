@@ -1,10 +1,10 @@
 ---
-description: 春秋项目目录结构
+description: 架构文档 - 03 目录结构
 globs: ["**/*"]
 alwaysApply: false
 ---
 
-# 目录结构
+# 03 目录结构
 
 ## Monorepo 完整结构
 

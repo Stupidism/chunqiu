@@ -1,10 +1,10 @@
 ---
-description: 架构文档 - 12 协议与事件概念
+description: 架构文档 - 16 协议与事件概念
 globs: ["**/*"]
 alwaysApply: false
 ---
 
-# 12 协议与事件概念
+# 16 协议与事件概念
 
 本文件描述客户端与服务器通信的概念结构。本文为设计文档，不包含实现代码。
 
@@ -22,6 +22,7 @@ alwaysApply: false
 - TURN_START / TURN_END
 - AI_TURN_PROGRESS
 - CHAT
+- VOICE_INPUT / VOICE_RESULT (语音指令)
 
 ## 类型归属
 - 共享类型定义放在 packages/types
@@ -30,4 +31,3 @@ alwaysApply: false
 - 客户端只提交意图
 - 服务器权威结算
 - 事件按服务器时间序列化
-

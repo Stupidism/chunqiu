@@ -20,16 +20,16 @@ alwaysApply: false
 
 | 文档 | 文明 | 游戏风格 | 适合胜利 |
 |-----|------|---------|---------|
-| [09a-civ-qin.mdc](./09a-civ-qin.mdc) | 秦国 | 征服扩张 | 统治胜利 |
-| [09b-civ-qi.mdc](./09b-civ-qi.mdc) | 齐国 | 经济外交 | 外交/经济胜利 |
-| [09c-civ-chu.mdc](./09c-civ-chu.mdc) | 楚国 | 文化扩张 | 统治/文化胜利 |
-| [09d-civ-jin.mdc](./09d-civ-jin.mdc) | 晋国 | 政治军事 | 统治胜利 |
-| [09e-civ-wu.mdc](./09e-civ-wu.mdc) | 吴国 | 海军进攻 | 统治胜利 |
-| [09f-civ-yue.mdc](./09f-civ-yue.mdc) | 越国 | 防守反击 | 统治胜利 |
-| [09g-civ-zheng.mdc](./09g-civ-zheng.mdc) | 郑国 | 商贸情报 | 经济/外交胜利 |
-| [09h-civ-song.mdc](./09h-civ-song.mdc) | 宋国 | 宗教传播 | 宗教胜利 |
-| [09i-civ-lu.mdc](./09i-civ-lu.mdc) | 鲁国 | 文化科技 | 文化/科技胜利 |
-| [09j-civ-yan.mdc](./09j-civ-yan.mdc) | 燕国 | 伟人导向 | 科技/文化胜利 |
+| [05a-civ-qin.mdc](./05a-civ-qin.mdc) | 秦国 | 征服扩张 | 统治胜利 |
+| [05b-civ-qi.mdc](./05b-civ-qi.mdc) | 齐国 | 经济外交 | 外交/经济胜利 |
+| [05c-civ-chu.mdc](./05c-civ-chu.mdc) | 楚国 | 文化扩张 | 统治/文化胜利 |
+| [05d-civ-jin.mdc](./05d-civ-jin.mdc) | 晋国 | 政治军事 | 统治胜利 |
+| [05e-civ-wu.mdc](./05e-civ-wu.mdc) | 吴国 | 海军进攻 | 统治胜利 |
+| [05f-civ-yue.mdc](./05f-civ-yue.mdc) | 越国 | 防守反击 | 统治胜利 |
+| [05g-civ-zheng.mdc](./05g-civ-zheng.mdc) | 郑国 | 商贸情报 | 经济/外交胜利 |
+| [05h-civ-song.mdc](./05h-civ-song.mdc) | 宋国 | 宗教传播 | 宗教胜利 |
+| [05i-civ-lu.mdc](./05i-civ-lu.mdc) | 鲁国 | 文化科技 | 文化/科技胜利 |
+| [05j-civ-yan.mdc](./05j-civ-yan.mdc) | 燕国 | 伟人导向 | 科技/文化胜利 |
 
 ---
 

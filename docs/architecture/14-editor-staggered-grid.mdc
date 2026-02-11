@@ -1,10 +1,10 @@
 ---
-description: 架构文档 - 10 HTML 错位四边形网格方案
+description: 架构文档 - 14 HTML 错位四边形网格方案
 globs: ["**/*"]
 alwaysApply: false
 ---
 
-# 10 HTML 错位四边形网格方案
+# 14 HTML 错位四边形网格方案
 
 本文件描述编辑器与游戏界面的地图渲染方案。本文为设计文档，不包含实现代码。
 

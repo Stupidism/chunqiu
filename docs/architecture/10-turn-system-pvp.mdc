@@ -1,10 +1,10 @@
 ---
-description: 架构文档 - 06 PVP 同步回合与实时结算
+description: 架构文档 - 10 PVP 同步回合与实时结算
 globs: ["**/*"]
 alwaysApply: false
 ---
 
-# 06 PVP 同步回合与实时结算
+# 10 PVP 同步回合与实时结算
 
 本文件描述 PVP 回合流程与冲突裁决。本文为设计文档，不包含实现代码。
 

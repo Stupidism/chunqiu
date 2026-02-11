@@ -1,10 +1,10 @@
 ---
-description: 架构文档 - 07 AI 纯回合制
+description: 架构文档 - 11 AI 纯回合制
 globs: ["**/*"]
 alwaysApply: false
 ---
 
-# 07 AI 纯回合制
+# 11 AI 纯回合制
 
 本文件描述 AI 对战的回合流程。本文为设计文档，不包含实现代码。
 

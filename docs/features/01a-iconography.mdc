@@ -39,7 +39,7 @@ alwaysApply: false
 
 > **设计原则**：每个城邦的 Logo 直接使用其**国名的甲骨文字形**，外加圆形边框，颜色按城邦类型区分。
 > 
-> 📌 类型配色详见 **[04-design-system.mdc](./04-design-system.mdc)** 中的「游戏系统配色」章节
+> 📌 类型配色详见 **[01-design-system.mdc](./01-design-system.mdc)** 中的「游戏系统配色」章节
 
 ### 城邦列表
 

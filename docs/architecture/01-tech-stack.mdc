@@ -1,10 +1,10 @@
 ---
-description: 春秋项目技术栈和架构设计
+description: 架构文档 - 01 技术栈和架构
 globs: ["**/*"]
 alwaysApply: false
 ---
 
-# 技术栈和架构
+# 01 技术栈和架构
 
 ## 技术选型
 
@@ -32,6 +32,8 @@ alwaysApply: false
 | **WebSocket (ws)** | 实时通信 (多人游戏/AI回合通知) |
 | **Prisma** | 数据库 ORM |
 | **PostgreSQL** | 主数据库，持久化存储 |
+| **Speech-to-Text 服务** | 语音输入转文本 (云服务或自建) |
+| **语义解析模块** | 将语音文本转为标准 GameAction |
 
 ### 基础设施
 | 技术 | 用途 |

@@ -1,10 +1,10 @@
 ---
-description: 架构文档 - 01 Monorepo 结构
+description: 架构文档 - 02 Monorepo 结构
 globs: ["**/*"]
 alwaysApply: false
 ---
 
-# 01 Monorepo 结构
+# 02 Monorepo 结构
 
 本文件描述 Turborepo 的目录与职责分配。本文为设计文档，不包含实现代码。
 

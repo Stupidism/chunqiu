@@ -19,9 +19,9 @@ alwaysApply: false
 
 | 文档 | 描述 | 主要内容 |
 |-----|------|---------|
-| [05a-terrain-features.mdc](./05a-terrain-features.mdc) | 地形与地貌 | 基础地形、高度、地貌特征、河流 |
-| [05a-terrain-features.mdc#自然奇观](./05a-terrain-features.mdc) | 自然奇观 | 中国特色奇观（泰山、三峡等）、世界奇观、生成规则 |
-| [05b-resources-biomes.mdc](./05b-resources-biomes.mdc) | 资源与生物群落 | 三类资源、生物群落、野生动物、改良设施 |
+| [02a-terrain-features.mdc](./02a-terrain-features.mdc) | 地形与地貌 | 基础地形、高度、地貌特征、河流 |
+| [02a-terrain-features.mdc#自然奇观](./02a-terrain-features.mdc) | 自然奇观 | 中国特色奇观（泰山、三峡等）、世界奇观、生成规则 |
+| [02b-resources-biomes.mdc](./02b-resources-biomes.mdc) | 资源与生物群落 | 三类资源、生物群落、野生动物、改良设施 |
 
 ---
 
@@ -56,12 +56,12 @@ interface Tile {
   // 位置
   position: Coord;
   
-  // 地形层次（详见 05a-terrain-features.mdc）
+  // 地形层次（详见 02a-terrain-features.mdc）
   terrain: TerrainType;       // 基础地形（草原/平原/沙漠等）
   elevation: Elevation;        // 高度（平地/丘陵/山脉）
   feature: FeatureType | null; // 地貌特征（森林/雨林/沼泽等）
   
-  // 资源（详见 05b-resources-biomes.mdc）
+  // 资源（详见 02b-resources-biomes.mdc）
   resource: ResourceType | null;
   hiddenResource: ResourceType | null; // 未揭示的战略资源
   

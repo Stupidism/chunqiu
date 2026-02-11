@@ -427,7 +427,7 @@ function onTradeRouteComplete(route: TradeRoute): void {
 
 ### 秦国 - 郑国渠（替代水渠）
 
-在 `09-civilizations.mdc` 中定义。
+在 `05-civilizations.mdc` 中定义。
 
 ### 越国 - 越王铸剑坊
 
