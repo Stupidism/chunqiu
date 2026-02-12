@@ -29,6 +29,9 @@ function clamp(value: number, min: number, max: number) {
 export function GameMap() {
   const containerRef = useRef<HTMLDivElement>(null);
   const hasAutoCentered = useRef(false);
+  const suppressClickUntilRef = useRef(0);
+  const cameraRef = useRef({ x: 0, y: 0 });
+  const zoomRef = useRef(1);
   const [hoverPos, setHoverPos] = useState<{ x: number; y: number } | null>(null);
   const {
     gameState,
@@ -58,6 +61,14 @@ export function GameMap() {
   const hexHeight = tileSize * Math.sqrt(3) / 2;
   const hexWidth = tileSize;
 
+  useEffect(() => {
+    cameraRef.current = cameraPosition;
+  }, [cameraPosition]);
+
+  useEffect(() => {
+    zoomRef.current = zoom;
+  }, [zoom]);
+
   const moveRange = useMemo(() => {
     if (activeAction !== 'move' || !selectedUnit) return new Set<string>();
     const unit = units[selectedUnit];
@@ -77,6 +88,7 @@ export function GameMap() {
 
   // 处理地块点击
   const handleTileClick = useCallback((row: number, col: number) => {
+    if (Date.now() < suppressClickUntilRef.current) return;
     const position = { row, col };
     selectTile(position);
 
@@ -202,48 +214,67 @@ export function GameMap() {
     const container = containerRef.current;
     if (!container) return;
 
-    let isDragging = false;
-    let startX = 0;
-    let startY = 0;
-    let startCamX = 0;
-    let startCamY = 0;
+    const panState = {
+      active: false,
+      moved: false,
+      startX: 0,
+      startY: 0,
+      startCamX: 0,
+      startCamY: 0,
+    };
+    const dragThreshold = 6;
 
     const handleMouseDown = (e: MouseEvent) => {
-      if (e.button === 1 || (e.button === 0 && e.shiftKey)) {
-        isDragging = true;
-        startX = e.clientX;
-        startY = e.clientY;
-        startCamX = cameraPosition.x;
-        startCamY = cameraPosition.y;
+      if (e.button === 0 || e.button === 1 || (e.button === 0 && e.shiftKey)) {
+        panState.active = true;
+        panState.moved = false;
+        panState.startX = e.clientX;
+        panState.startY = e.clientY;
+        panState.startCamX = cameraRef.current.x;
+        panState.startCamY = cameraRef.current.y;
+        if (e.button === 0) {
+          e.preventDefault();
+        }
         container.style.cursor = 'grabbing';
       }
     };
 
     const handleMouseMove = (e: MouseEvent) => {
-      if (!isDragging) return;
-      const dx = e.clientX - startX;
-      const dy = e.clientY - startY;
+      if (!panState.active) return;
+      const dx = e.clientX - panState.startX;
+      const dy = e.clientY - panState.startY;
+      if (!panState.moved && Math.hypot(dx, dy) < dragThreshold) {
+        return;
+      }
+      panState.moved = true;
       setCameraPosition({
-        x: startCamX + dx,
-        y: startCamY + dy,
+        x: panState.startCamX + dx,
+        y: panState.startCamY + dy,
       });
     };
 
     const handleMouseUp = () => {
-      isDragging = false;
+      if (!panState.active) return;
+      if (panState.moved) {
+        suppressClickUntilRef.current = Date.now() + 180;
+      }
+      panState.active = false;
+      panState.moved = false;
       container.style.cursor = 'default';
     };
 
     const handleWheel = (e: WheelEvent) => {
       e.preventDefault();
       const direction = e.deltaY > 0 ? -0.08 : 0.08;
-      const nextZoom = clamp(zoom + direction, 0.5, 2);
-      if (nextZoom === zoom) return;
+      const currentZoom = zoomRef.current;
+      const currentCamera = cameraRef.current;
+      const nextZoom = clamp(currentZoom + direction, 0.5, 2);
+      if (nextZoom === currentZoom) return;
       const rect = container.getBoundingClientRect();
       const mouseX = e.clientX - rect.left;
       const mouseY = e.clientY - rect.top;
-      const anchorX = (mouseX - cameraPosition.x) / zoom;
-      const anchorY = (mouseY - cameraPosition.y) / zoom;
+      const anchorX = (mouseX - currentCamera.x) / currentZoom;
+      const anchorY = (mouseY - currentCamera.y) / currentZoom;
       setCameraPosition({
         x: mouseX - anchorX * nextZoom,
         y: mouseY - anchorY * nextZoom,
@@ -262,7 +293,7 @@ export function GameMap() {
       window.removeEventListener('mouseup', handleMouseUp);
       container.removeEventListener('wheel', handleWheel);
     };
-  }, [cameraPosition, setCameraPosition, setZoom, zoom]);
+  }, [setCameraPosition, setZoom]);
 
   const hoveredInfo = useMemo(() => {
     if (!hoveredTile) return null;

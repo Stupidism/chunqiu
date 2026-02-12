@@ -43,3 +43,10 @@ TODO
   - run-53: unit move mode still works, highlights visible, action message shown.
 - Known residual:
   - Workspace still has unrelated pre-existing TS errors across packages; full type-check not green yet.
+
+- Added left-button drag pan for main map (without Shift).
+  - Implemented drag threshold + post-drag click suppression to prevent accidental tile clicks while panning.
+  - Internal refs track camera/zoom for stable pointer interactions.
+- Validation:
+  - Direct Playwright drag check confirms transform changed (pan applied).
+  - run-54 confirms unit action click still enters move mode after drag logic change (no click regression).
