@@ -48,6 +48,7 @@ export function GameMap() {
     hoveredTile,
     visibleTiles,
     exploredTiles,
+    showTileYields,
     cameraPosition,
     zoom,
     setCameraPosition,
@@ -474,7 +475,7 @@ export function GameMap() {
                 unitId: unit?.id,
                 hasCity: !!city,
               };
-              const tileYields = isVisible ? calculateTileYields(tile) : undefined;
+              const tileYields = isVisible && showTileYields ? calculateTileYields(tile) : undefined;
 
               if (!isVisible && !isExplored) {
                 // 战争迷雾

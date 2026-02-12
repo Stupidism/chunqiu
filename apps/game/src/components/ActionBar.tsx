@@ -16,7 +16,7 @@ const mapControls = [
 ];
 
 export function ActionBar() {
-  const { gameState, showMessage, setActivePanel } = useGameStore();
+  const { gameState, showMessage, setActivePanel, showTileYields, toggleTileYields } = useGameStore();
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   const toggleFullscreen = useCallback(async () => {
@@ -71,7 +71,13 @@ export function ActionBar() {
           <button
             key={control.id}
             type="button"
-            data-testid={control.id === 'fullscreen' ? 'action-fullscreen' : undefined}
+            data-testid={
+              control.id === 'yields'
+                ? 'action-yields'
+                : control.id === 'fullscreen'
+                  ? 'action-fullscreen'
+                  : undefined
+            }
             className="group flex flex-col items-center gap-1 w-12"
             onClick={() => {
               if (control.id === 'fullscreen') {
@@ -79,7 +85,8 @@ export function ActionBar() {
                 return;
               }
               if (control.id === 'yields') {
-                showMessage('地块收益显示已切换');
+                toggleTileYields();
+                showMessage(showTileYields ? '已隐藏地块收益' : '已显示地块收益');
                 return;
               }
               showMessage(`${control.label}功能开发中`);
@@ -89,6 +96,8 @@ export function ActionBar() {
               className={`relative w-9 h-9 rounded-full border bg-slate-900/80 flex items-center justify-center shadow-inner group-hover:bg-slate-800/80 ${
                 control.id === 'fullscreen' && isFullscreen
                   ? 'border-bronze-300/90 ring-1 ring-bronze-300/60'
+                  : control.id === 'yields' && showTileYields
+                    ? 'border-emerald-300/90 ring-1 ring-emerald-400/60'
                   : 'border-bronze-600/60'
               }`}
             >

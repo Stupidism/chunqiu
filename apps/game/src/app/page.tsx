@@ -124,7 +124,7 @@ export default function GamePage() {
 
     window.render_game_to_text = () => {
       if (!gameState) return JSON.stringify({ mode: 'loading' });
-      const { selectedTile, selectedUnit, selectedCity, activeAction } = useGameStore.getState();
+      const { selectedTile, selectedUnit, selectedCity, activeAction, showTileYields } = useGameStore.getState();
       return JSON.stringify({
         mode: 'playing',
         turn: gameState.currentTurn,
@@ -148,6 +148,7 @@ export default function GamePage() {
         selectedUnit,
         selectedCity,
         activeAction,
+        showTileYields,
         activePanel: activePanel || null,
         message: uiMessage || null,
       });

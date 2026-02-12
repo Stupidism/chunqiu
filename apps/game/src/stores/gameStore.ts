@@ -21,6 +21,7 @@ interface GameStoreState {
   uiMessage: string | null;
   activePanel: 'tech' | 'diplomacy' | 'stats' | 'chat' | 'help' | 'settings' | null;
   activeAction: 'move' | null;
+  showTileYields: boolean;
   
   // UI状态
   selectedTile: Position | null;
@@ -66,6 +67,7 @@ interface GameStoreState {
   showMessage: (message: string) => void;
   setActivePanel: (panel: GameStoreState['activePanel']) => void;
   setActiveAction: (action: GameStoreState['activeAction']) => void;
+  toggleTileYields: () => void;
 }
 
 let messageTimer: ReturnType<typeof setTimeout> | null = null;
@@ -76,6 +78,7 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
   uiMessage: null,
   activePanel: null,
   activeAction: null,
+  showTileYields: true,
   selectedTile: null,
   selectedUnit: null,
   selectedCity: null,
@@ -451,5 +454,9 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
 
   setActiveAction: (action) => {
     set({ activeAction: action });
+  },
+
+  toggleTileYields: () => {
+    set(state => ({ showTileYields: !state.showTileYields }));
   },
 }));
