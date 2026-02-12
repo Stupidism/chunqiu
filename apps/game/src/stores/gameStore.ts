@@ -30,6 +30,7 @@ interface GameStoreState {
   hoveredTile: Position | null;
   cameraPosition: { x: number; y: number };
   zoom: number;
+  cameraVersion: number;
   
   // 可见范围
   visibleTiles: Set<string>;
@@ -47,6 +48,7 @@ interface GameStoreState {
   // 相机操作
   setCameraPosition: (position: { x: number; y: number }) => void;
   setZoom: (zoom: number) => void;
+  requestCameraRecenter: () => void;
   
   // 单位操作
   moveUnit: (unitId: string, to: Position, cost: number) => void;
@@ -85,6 +87,7 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
   hoveredTile: null,
   cameraPosition: { x: 0, y: 0 },
   zoom: 1,
+  cameraVersion: 0,
   visibleTiles: new Set(),
   exploredTiles: new Set(),
 
@@ -174,6 +177,10 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
   // 设置缩放
   setZoom: (zoom: number) => {
     set({ zoom: Math.max(0.5, Math.min(2, zoom)) });
+  },
+
+  requestCameraRecenter: () => {
+    set(state => ({ cameraVersion: state.cameraVersion + 1 }));
   },
 
   // 移动单位

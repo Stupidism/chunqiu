@@ -9,6 +9,7 @@ const iconBase = '/oracle-bone-icons';
 const mapControls = [
   { id: 'lens', label: '滤镜', icon: `${iconBase}/status/盾.svg`, hint: '4/9' },
   { id: 'yields', label: '收益', icon: `${iconBase}/yields/金.svg`, hint: 'Y' },
+  { id: 'center', label: '归位', icon: `${iconBase}/terrain/泽.svg`, hint: 'Space' },
   { id: 'pin', label: '地图钉', icon: `${iconBase}/status/造.svg`, hint: 'P' },
   { id: 'search', label: '搜索', icon: `${iconBase}/status/医.svg`, hint: '/' },
   { id: 'strategic', label: '战略', icon: `${iconBase}/eras/剑.svg`, hint: 'V' },
@@ -16,7 +17,7 @@ const mapControls = [
 ];
 
 export function ActionBar() {
-  const { gameState, showMessage, setActivePanel, showTileYields, toggleTileYields } = useGameStore();
+  const { gameState, showMessage, setActivePanel, showTileYields, toggleTileYields, requestCameraRecenter } = useGameStore();
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   const toggleFullscreen = useCallback(async () => {
@@ -52,15 +53,21 @@ export function ActionBar() {
       return tag === 'input' || tag === 'textarea' || tag === 'select';
     };
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key.toLowerCase() !== 'f') return;
+      const key = event.key.toLowerCase();
+      if (key !== 'f' && key !== ' ' && key !== 'spacebar') return;
       if (event.ctrlKey || event.metaKey || event.altKey) return;
       if (isEditable(event.target)) return;
       event.preventDefault();
-      void toggleFullscreen();
+      if (key === 'f') {
+        void toggleFullscreen();
+        return;
+      }
+      requestCameraRecenter();
+      showMessage('镜头已归位');
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [toggleFullscreen]);
+  }, [requestCameraRecenter, showMessage, toggleFullscreen]);
 
   if (!gameState) return null;
 
@@ -74,6 +81,8 @@ export function ActionBar() {
             data-testid={
               control.id === 'yields'
                 ? 'action-yields'
+                : control.id === 'center'
+                  ? 'action-center'
                 : control.id === 'fullscreen'
                   ? 'action-fullscreen'
                   : undefined
@@ -87,6 +96,11 @@ export function ActionBar() {
               if (control.id === 'yields') {
                 toggleTileYields();
                 showMessage(showTileYields ? '已隐藏地块收益' : '已显示地块收益');
+                return;
+              }
+              if (control.id === 'center') {
+                requestCameraRecenter();
+                showMessage('镜头已归位');
                 return;
               }
               showMessage(`${control.label}功能开发中`);

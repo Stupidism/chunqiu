@@ -51,6 +51,7 @@ export function GameMap() {
     showTileYields,
     cameraPosition,
     zoom,
+    cameraVersion,
     setCameraPosition,
     setZoom,
   } = useGameStore();
@@ -201,12 +202,11 @@ export function GameMap() {
   ]);
 
   // 首次进入自动把地图放到视口中心，避免初始偏到左上角。
-  useEffect(() => {
-    if (hasAutoCentered.current) return;
+  const recenterCamera = useCallback(() => {
     const container = containerRef.current;
-    if (!container) return;
+    if (!container) return false;
     const rect = container.getBoundingClientRect();
-    if (!rect.width || !rect.height) return;
+    if (!rect.width || !rect.height) return false;
 
     const playerUnit = Object.values(units).find(
       u => u.ownerId === gameState.currentPlayerId
@@ -230,19 +230,32 @@ export function GameMap() {
     const nextX = viewportCenterX - focusX;
     const nextY = viewportCenterY - focusY;
     setCameraPosition(clampCameraPosition({ x: nextX, y: nextY }));
-    hasAutoCentered.current = true;
+    return true;
   }, [
-    map.width,
-    map.height,
-    selectedTile,
-    units,
+    clampCameraPosition,
     cities,
     gameState.currentPlayerId,
     hexHeight,
     hexWidth,
-    clampCameraPosition,
+    map.height,
+    map.width,
+    selectedTile,
     setCameraPosition,
+    units,
   ]);
+
+  // 首次进入自动把地图放到视口中心，避免初始偏到左上角。
+  useEffect(() => {
+    if (hasAutoCentered.current) return;
+    if (!recenterCamera()) return;
+    hasAutoCentered.current = true;
+  }, [recenterCamera]);
+
+  // 外部请求镜头归位（按钮/快捷键）。
+  useEffect(() => {
+    if (!hasAutoCentered.current) return;
+    recenterCamera();
+  }, [cameraVersion, recenterCamera]);
 
   // 处理拖拽
   useEffect(() => {
