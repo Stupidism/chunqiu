@@ -49,6 +49,8 @@ interface GameStoreState {
   setCameraPosition: (position: { x: number; y: number }) => void;
   setZoom: (zoom: number) => void;
   requestCameraRecenter: () => void;
+  focusUnitId: string | null;
+  requestFocusUnit: (unitId: string | null) => void;
   
   // 单位操作
   moveUnit: (unitId: string, to: Position, cost: number) => void;
@@ -88,6 +90,7 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
   cameraPosition: { x: 0, y: 0 },
   zoom: 1,
   cameraVersion: 0,
+  focusUnitId: null,
   visibleTiles: new Set(),
   exploredTiles: new Set(),
 
@@ -181,6 +184,10 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
 
   requestCameraRecenter: () => {
     set(state => ({ cameraVersion: state.cameraVersion + 1 }));
+  },
+
+  requestFocusUnit: (unitId: string | null) => {
+    set({ focusUnitId: unitId });
   },
 
   // 移动单位

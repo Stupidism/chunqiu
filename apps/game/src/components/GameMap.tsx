@@ -52,8 +52,10 @@ export function GameMap() {
     cameraPosition,
     zoom,
     cameraVersion,
+    focusUnitId,
     setCameraPosition,
     setZoom,
+    requestFocusUnit,
   } = useGameStore();
 
   if (!gameState) return null;
@@ -256,6 +258,40 @@ export function GameMap() {
     if (!hasAutoCentered.current) return;
     recenterCamera();
   }, [cameraVersion, recenterCamera]);
+
+  // 外部请求聚焦到某个单位。
+  useEffect(() => {
+    if (!focusUnitId) return;
+    const focusUnit = units[focusUnitId];
+    if (!focusUnit) {
+      requestFocusUnit(null);
+      return;
+    }
+    const container = containerRef.current;
+    if (!container) return;
+    const rect = container.getBoundingClientRect();
+    if (!rect.width || !rect.height) return;
+    const focus = focusUnit.position;
+    const focusX = focus.col * hexWidth + (focus.row % 2 === 1 ? hexWidth / 2 : 0) + hexWidth / 2;
+    const focusY = focus.row * (hexHeight * 0.75) + hexHeight / 2;
+    const viewportCenterX = rect.width * 0.42;
+    const viewportCenterY = rect.height * 0.52;
+    setCameraPosition(
+      clampCameraPosition({
+        x: viewportCenterX - focusX,
+        y: viewportCenterY - focusY,
+      })
+    );
+    requestFocusUnit(null);
+  }, [
+    clampCameraPosition,
+    focusUnitId,
+    hexHeight,
+    hexWidth,
+    requestFocusUnit,
+    setCameraPosition,
+    units,
+  ]);
 
   // 处理拖拽
   useEffect(() => {

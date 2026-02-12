@@ -28,6 +28,7 @@ const unitIcons: Record<string, string> = {
 };
 const actionIcons = {
   move: `${iconBase}/status/足.svg`,
+  focus: `${iconBase}/terrain/泽.svg`,
   fortify: `${iconBase}/status/盾.svg`,
   skip: `${iconBase}/status/毁.svg`,
   attack: `${iconBase}/status/击.svg`,
@@ -40,6 +41,7 @@ export function UnitActionPanel() {
     selectedTile,
     activeAction,
     setActiveAction,
+    requestFocusUnit,
     fortifyUnit,
     skipUnit,
     attack,
@@ -69,6 +71,15 @@ export function UnitActionPanel() {
         }
         setActiveAction('move');
         showMessage('请选择目标地块');
+      },
+    },
+    {
+      id: 'focus',
+      label: '定位',
+      icon: actionIcons.focus,
+      onClick: () => {
+        requestFocusUnit(unit.id);
+        showMessage('镜头已定位到单位');
       },
     },
     {
