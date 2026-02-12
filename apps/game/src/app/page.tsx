@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { GameMap } from '@/components/GameMap';
 import { ResourceBar } from '@/components/ResourceBar';
@@ -22,6 +22,7 @@ declare global {
 export default function GamePage() {
   const { initializeGame, gameState, uiMessage, activePanel, selectedCity, selectCity } = useGameStore();
   const testCanvasRef = useRef<HTMLCanvasElement>(null);
+  const [viewportWidth, setViewportWidth] = useState(1280);
   const searchParams = useSearchParams();
   const selectionParam = searchParams.get('select');
   const initialSelection = selectionParam === 'city' ? 'city' : selectionParam === 'none' ? 'none' : 'unit';
@@ -163,6 +164,7 @@ export default function GamePage() {
     if (!canvas) return;
 
     const resize = () => {
+      setViewportWidth(window.innerWidth);
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
     };
@@ -187,8 +189,10 @@ export default function GamePage() {
   }
 
   const showCityDrawer = !!selectedCity;
-  const cityDrawerWidth = 'min(22rem, calc(100vw - 1rem))';
-  const rightStackOffset = showCityDrawer ? `calc(${cityDrawerWidth} + 1rem)` : '1rem';
+  const isNarrow = viewportWidth < 1200;
+  const cityDrawerWidth = isNarrow ? 'min(20rem, calc(100vw - 1rem))' : 'min(22rem, calc(100vw - 1rem))';
+  const rightStackOffset = showCityDrawer && !isNarrow ? `calc(${cityDrawerWidth} + 1rem)` : '1rem';
+  const cityDrawerBottom = isNarrow ? '12.5rem' : '1rem';
 
   return (
     <main className="relative h-screen w-screen bg-slate-950 overflow-hidden">
@@ -208,12 +212,12 @@ export default function GamePage() {
 
       {/* 右侧城市抽屉 */}
       <div
-        className={`absolute right-4 top-24 bottom-4 z-20 w-80 transition-all duration-300 ease-out ${
+        className={`absolute right-4 top-24 z-20 w-80 transition-all duration-300 ease-out ${
           showCityDrawer
             ? 'translate-x-0 opacity-100 pointer-events-auto'
             : 'translate-x-8 opacity-0 pointer-events-none'
         }`}
-        style={{ width: cityDrawerWidth }}
+        style={{ width: cityDrawerWidth, bottom: cityDrawerBottom }}
       >
         <CityPanel />
       </div>
