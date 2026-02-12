@@ -1,9 +1,12 @@
 'use client';
 
+import { useCallback, useRef, useState } from 'react';
 import { useGameStore } from '@/stores/gameStore';
 
 export function Minimap() {
   const { gameState, exploredTiles, cameraPosition, zoom, setCameraPosition } = useGameStore();
+  const dragRef = useRef(false);
+  const [isDragging, setIsDragging] = useState(false);
 
   if (!gameState) return null;
 
@@ -40,49 +43,83 @@ export function Minimap() {
     Math.min(miniHeight - clampedViewportHeight, -cameraPosition.y * miniScaleY)
   );
 
+  const moveCameraFromMinimapPoint = useCallback(
+    (localX: number, localY: number) => {
+      const clampedX = Math.max(0, Math.min(miniWidth, localX));
+      const clampedY = Math.max(0, Math.min(miniHeight, localY));
+      const ratioX = clampedX / miniWidth;
+      const ratioY = clampedY / miniHeight;
+      const targetX = ratioX * mapWidth;
+      const targetY = ratioY * mapHeight;
+      const viewportCenterX = window.innerWidth / 2;
+      const viewportCenterY = window.innerHeight / 2 + 16;
+      const marginX = Math.max(120, window.innerWidth * 0.2);
+      const marginY = Math.max(80, window.innerHeight * 0.18);
+      let minX = window.innerWidth - mapWidth - marginX;
+      let maxX = marginX;
+      let minY = window.innerHeight - mapHeight - marginY;
+      let maxY = marginY;
+      if (mapWidth + marginX * 2 <= window.innerWidth) {
+        minX = (window.innerWidth - mapWidth) / 2;
+        maxX = minX;
+      }
+      if (mapHeight + marginY * 2 <= window.innerHeight) {
+        minY = (window.innerHeight - mapHeight) / 2;
+        maxY = minY;
+      }
+      const next = {
+        x: viewportCenterX - targetX,
+        y: viewportCenterY - targetY,
+      };
+      setCameraPosition({
+        x: Math.max(minX, Math.min(maxX, next.x)),
+        y: Math.max(minY, Math.min(maxY, next.y)),
+      });
+    },
+    [mapHeight, mapWidth, miniHeight, miniWidth, setCameraPosition]
+  );
+
   return (
     <div className="bg-slate-900/85 border border-bronze-600/40 rounded-lg p-2 shadow-lg backdrop-blur">
       <div className="text-xs text-bronze-300 mb-1 text-center">小地图</div>
       <div 
-        className="relative overflow-hidden rounded cursor-pointer"
+        className={`relative overflow-hidden rounded ${isDragging ? 'cursor-grabbing' : 'cursor-pointer'}`}
         data-testid="minimap"
         title="点击小地图可快速定位"
         style={{
           width: miniWidth,
           height: miniHeight,
+          touchAction: 'none',
         }}
-        onClick={(event) => {
+        onPointerDown={(event) => {
+          dragRef.current = true;
+          setIsDragging(true);
+          event.currentTarget.setPointerCapture(event.pointerId);
           const rect = event.currentTarget.getBoundingClientRect();
           const localX = event.clientX - rect.left;
           const localY = event.clientY - rect.top;
-          const ratioX = localX / miniWidth;
-          const ratioY = localY / miniHeight;
-          const targetX = ratioX * mapWidth;
-          const targetY = ratioY * mapHeight;
-          const viewportCenterX = window.innerWidth / 2;
-          const viewportCenterY = window.innerHeight / 2 + 16;
-          const marginX = Math.max(120, window.innerWidth * 0.2);
-          const marginY = Math.max(80, window.innerHeight * 0.18);
-          let minX = window.innerWidth - mapWidth - marginX;
-          let maxX = marginX;
-          let minY = window.innerHeight - mapHeight - marginY;
-          let maxY = marginY;
-          if (mapWidth + marginX * 2 <= window.innerWidth) {
-            minX = (window.innerWidth - mapWidth) / 2;
-            maxX = minX;
+          moveCameraFromMinimapPoint(localX, localY);
+        }}
+        onPointerMove={(event) => {
+          if (!dragRef.current) return;
+          const rect = event.currentTarget.getBoundingClientRect();
+          const localX = event.clientX - rect.left;
+          const localY = event.clientY - rect.top;
+          moveCameraFromMinimapPoint(localX, localY);
+        }}
+        onPointerUp={(event) => {
+          dragRef.current = false;
+          setIsDragging(false);
+          if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+            event.currentTarget.releasePointerCapture(event.pointerId);
           }
-          if (mapHeight + marginY * 2 <= window.innerHeight) {
-            minY = (window.innerHeight - mapHeight) / 2;
-            maxY = minY;
+        }}
+        onPointerCancel={(event) => {
+          dragRef.current = false;
+          setIsDragging(false);
+          if (event.currentTarget.hasPointerCapture(event.pointerId)) {
+            event.currentTarget.releasePointerCapture(event.pointerId);
           }
-          const next = {
-            x: viewportCenterX - targetX,
-            y: viewportCenterY - targetY,
-          };
-          setCameraPosition({
-            x: Math.max(minX, Math.min(maxX, next.x)),
-            y: Math.max(minY, Math.min(maxY, next.y)),
-          });
         }}
       >
         {/* 简化的地图渲染 */}
