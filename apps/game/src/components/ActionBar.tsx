@@ -1,116 +1,68 @@
 'use client';
 
-import { Button } from '@chunqiu/ui';
+import { OracleIcon } from '@chunqiu/ui';
 import { useGameStore } from '@/stores/gameStore';
-import { 
-  BookOpen, 
-  HeartHandshake, 
-  BarChart3, 
-  Settings, 
-  HelpCircle,
-  MessageSquare
-} from 'lucide-react';
+
+const iconBase = '/oracle-bone-icons';
+
+const mapControls = [
+  { id: 'lens', label: '滤镜', icon: `${iconBase}/status/盾.svg`, hint: '4/9' },
+  { id: 'yields', label: '收益', icon: `${iconBase}/yields/金.svg`, hint: 'Y' },
+  { id: 'pin', label: '地图钉', icon: `${iconBase}/status/造.svg`, hint: 'P' },
+  { id: 'search', label: '搜索', icon: `${iconBase}/status/医.svg`, hint: '/' },
+  { id: 'strategic', label: '战略', icon: `${iconBase}/eras/剑.svg`, hint: 'V' },
+  { id: 'fullscreen', label: '全屏', icon: `${iconBase}/status/足.svg`, hint: 'F' },
+];
 
 export function ActionBar() {
-  const { gameState, setActivePanel, showMessage } = useGameStore();
+  const { gameState, showMessage, setActivePanel } = useGameStore();
 
   if (!gameState) return null;
 
   return (
-    <div className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 border-t border-bronze-600/50 px-4 py-2">
-      <div className="flex items-center justify-between max-w-7xl mx-auto">
-        {/* 左侧：主要操作 */}
-        <div className="flex items-center gap-2">
-          <Button
-            variant="ghost"
-            size="sm"
-            className="text-bronze-200 hover:text-bronze-100"
-            data-testid="action-tech"
+    <div className="bg-slate-900/85 border border-bronze-600/40 rounded-lg px-2 py-2 shadow-lg backdrop-blur pointer-events-auto">
+      <div className="flex items-center gap-2">
+        {mapControls.map(control => (
+          <button
+            key={control.id}
+            type="button"
+            className="group flex flex-col items-center gap-1 w-12"
             onClick={() => {
-              setActivePanel('tech');
-              showMessage('已打开科技树面板');
+              if (control.id === 'yields') {
+                showMessage('地块收益显示已切换');
+                return;
+              }
+              showMessage(`${control.label}功能开发中`);
             }}
           >
-            <BookOpen className="w-4 h-4 mr-1" />
-            科技树
-          </Button>
-          <Button
-            variant="ghost"
-            size="sm"
-            className="text-bronze-200 hover:text-bronze-100"
-            data-testid="action-diplomacy"
-            onClick={() => {
-              setActivePanel('diplomacy');
-              showMessage('已打开外交面板');
-            }}
-          >
-            <HeartHandshake className="w-4 h-4 mr-1" />
-            外交
-          </Button>
-          <Button
-            variant="ghost"
-            size="sm"
-            className="text-bronze-200 hover:text-bronze-100"
-            data-testid="action-stats"
-            onClick={() => {
-              setActivePanel('stats');
-              showMessage('已打开统计面板');
-            }}
-          >
-            <BarChart3 className="w-4 h-4 mr-1" />
-            统计
-          </Button>
-        </div>
+            <div className="relative w-9 h-9 rounded-full border border-bronze-600/60 bg-slate-900/80 flex items-center justify-center shadow-inner group-hover:bg-slate-800/80">
+              <OracleIcon src={control.icon} size={16} tone="text-bronze-200" label={control.label} />
+              {control.hint && (
+                <span className="absolute -top-1 -right-1 text-[9px] text-bronze-100 bg-slate-900/90 border border-bronze-600/60 rounded px-1">
+                  {control.hint}
+                </span>
+              )}
+            </div>
+            <span className="text-[10px] text-bronze-200 group-hover:text-bronze-100">
+              {control.label}
+            </span>
+          </button>
+        ))}
 
-        {/* 中间：回合信息 */}
-        <div className="flex items-center gap-4 text-sm">
-          <span className="text-bronze-300">
-            时代: <span className="text-bronze-100 font-medium">远古时代</span>
-          </span>
-          <span className="text-bronze-300">
-            年份: <span className="text-bronze-100 font-medium">公元前2000年</span>
-          </span>
-        </div>
-
-        {/* 右侧：系统操作 */}
-        <div className="flex items-center gap-2">
-          <Button
-            variant="ghost"
-            size="sm"
-            className="text-bronze-200 hover:text-bronze-100"
-            data-testid="action-chat"
-            onClick={() => {
-              setActivePanel('chat');
-              showMessage('已打开聊天面板');
-            }}
-          >
-            <MessageSquare className="w-4 h-4" />
-          </Button>
-          <Button
-            variant="ghost"
-            size="sm"
-            className="text-bronze-200 hover:text-bronze-100"
-            data-testid="action-help"
-            onClick={() => {
-              setActivePanel('help');
-              showMessage('已打开帮助面板');
-            }}
-          >
-            <HelpCircle className="w-4 h-4" />
-          </Button>
-          <Button
-            variant="ghost"
-            size="sm"
-            className="text-bronze-200 hover:text-bronze-100"
-            data-testid="action-settings"
-            onClick={() => {
-              setActivePanel('settings');
-              showMessage('已打开设置面板');
-            }}
-          >
-            <Settings className="w-4 h-4" />
-          </Button>
-        </div>
+        <button
+          type="button"
+          data-testid="action-chat"
+          className="group flex flex-col items-center gap-1 w-12"
+          onClick={() => {
+            setActivePanel('chat');
+            showMessage('已打开聊天面板');
+          }}
+        >
+          <div className="relative w-9 h-9 rounded-full border border-bronze-600/60 bg-slate-900/80 flex items-center justify-center shadow-inner group-hover:bg-slate-800/80">
+            <OracleIcon src={`${iconBase}/status/和.svg`} size={16} tone="text-emerald-200" label="聊天" />
+          </div>
+          <span className="text-[10px] text-bronze-200 group-hover:text-bronze-100">聊天</span>
+        </button>
       </div>
     </div>
   );

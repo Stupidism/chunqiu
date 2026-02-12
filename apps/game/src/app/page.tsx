@@ -4,11 +4,11 @@ import { useEffect, useRef } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { GameMap } from '@/components/GameMap';
 import { ResourceBar } from '@/components/ResourceBar';
-import { UnitPanel } from '@/components/UnitPanel';
 import { CityPanel } from '@/components/CityPanel';
 import { TurnPanel } from '@/components/TurnPanel';
 import { Minimap } from '@/components/Minimap';
 import { ActionBar } from '@/components/ActionBar';
+import { UnitActionPanel } from '@/components/UnitActionPanel';
 import { useGameStore } from '@/stores/gameStore';
 import { generateMap } from '@chunqiu/game-core';
 
@@ -20,7 +20,7 @@ declare global {
 }
 
 export default function GamePage() {
-  const { initializeGame, gameState, uiMessage, activePanel } = useGameStore();
+  const { initializeGame, gameState, uiMessage, activePanel, selectedCity, selectCity } = useGameStore();
   const testCanvasRef = useRef<HTMLCanvasElement>(null);
   const searchParams = useSearchParams();
   const selectionParam = searchParams.get('select');
@@ -109,10 +109,22 @@ export default function GamePage() {
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (!selectedCity) return;
+      if (event.key === 'Escape' || event.key.toLowerCase() === 'c') {
+        selectCity(null);
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [selectedCity, selectCity]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
 
     window.render_game_to_text = () => {
       if (!gameState) return JSON.stringify({ mode: 'loading' });
-      const { selectedTile, selectedUnit, selectedCity } = useGameStore.getState();
+      const { selectedTile, selectedUnit, selectedCity, activeAction } = useGameStore.getState();
       return JSON.stringify({
         mode: 'playing',
         turn: gameState.currentTurn,
@@ -135,6 +147,7 @@ export default function GamePage() {
         selectedTile: selectedTile ? { row: selectedTile.row, col: selectedTile.col } : null,
         selectedUnit,
         selectedCity,
+        activeAction,
         activePanel: activePanel || null,
         message: uiMessage || null,
       });
@@ -172,59 +185,72 @@ export default function GamePage() {
     );
   }
 
+  const showCityDrawer = !!selectedCity;
+  const cityDrawerWidth = 'min(22rem, calc(100vw - 1rem))';
+  const rightStackOffset = showCityDrawer ? `calc(${cityDrawerWidth} + 1rem)` : '1rem';
+
   return (
-    <main className="h-screen flex flex-col bg-slate-900 overflow-hidden">
+    <main className="relative h-screen w-screen bg-slate-950 overflow-hidden">
       <canvas
         ref={testCanvasRef}
         className="fixed top-0 left-0 pointer-events-none opacity-0"
         style={{ width: '100vw', height: '100vh' }}
         aria-hidden="true"
       />
+
+      <div className="absolute inset-0">
+        <GameMap />
+      </div>
+
       {/* 顶部资源栏 */}
       <ResourceBar />
 
-      {/* 主游戏区域 */}
-      <div className="flex-1 flex overflow-hidden">
-        {/* 左侧信息面板 */}
-        <div className="w-72 bg-slate-800/90 border-r border-slate-700 flex flex-col">
-          <TurnPanel />
-          <div className="flex-1 overflow-y-auto p-4 space-y-4">
-            <UnitPanel />
-            <CityPanel />
+      {/* 右侧城市抽屉 */}
+      <div
+        className={`absolute right-4 top-24 bottom-4 z-20 w-80 transition-all duration-300 ease-out ${
+          showCityDrawer
+            ? 'translate-x-0 opacity-100 pointer-events-auto'
+            : 'translate-x-8 opacity-0 pointer-events-none'
+        }`}
+        style={{ width: cityDrawerWidth }}
+      >
+        <CityPanel />
+      </div>
+
+      {/* 左下角：小地图 + 地图工具 */}
+      <div className="absolute bottom-4 left-4 z-10 flex flex-col gap-2 items-start pointer-events-auto">
+        <Minimap />
+        <ActionBar />
+      </div>
+
+      {/* 顶部反馈消息 */}
+      {uiMessage && (
+        <div className="absolute top-24 left-1/2 -translate-x-1/2 z-30 pointer-events-none">
+          <div className="bg-bronze-800/90 text-bronze-50 px-4 py-2 rounded shadow-md text-sm">
+            {uiMessage}
           </div>
         </div>
+      )}
 
-        {/* 中间地图区域 */}
-        <div className="flex-1 relative bg-slate-950">
-          <GameMap />
-          
-          {/* 小地图 */}
-          <div className="absolute bottom-4 right-4 z-10">
-            <Minimap />
-          </div>
-
-          {activePanel && (
-            <div className="absolute top-4 right-4 z-20 bg-slate-900/95 border border-bronze-600/50 rounded-lg px-4 py-3 text-bronze-100 shadow-lg">
-              <div className="text-sm font-medium mb-1">
-                {activePanel === 'tech' && '科技树'}
-                {activePanel === 'diplomacy' && '外交'}
-                {activePanel === 'stats' && '统计'}
-                {activePanel === 'chat' && '聊天'}
-                {activePanel === 'help' && '帮助'}
-                {activePanel === 'settings' && '设置'}
-              </div>
-              <div className="text-xs text-bronze-300">该面板正在开发中</div>
-            </div>
-          )}
+      {/* 右下角：回合按钮与单位操作 */}
+      <div className="absolute bottom-4 z-20 flex flex-col items-end gap-2 pointer-events-none" style={{ right: rightStackOffset }}>
+        <div className="flex items-end gap-3 pointer-events-auto">
+          <UnitActionPanel />
+          <TurnPanel />
         </div>
       </div>
 
-      {/* 底部操作栏 */}
-      <ActionBar />
-
-      {uiMessage && (
-        <div className="absolute top-16 left-1/2 -translate-x-1/2 z-30 bg-bronze-800 text-bronze-50 px-4 py-2 rounded shadow-md text-sm">
-          {uiMessage}
+      {activePanel && (
+        <div className="absolute top-24 z-20 bg-slate-900/95 border border-bronze-600/50 rounded-lg px-4 py-3 text-bronze-100 shadow-lg" style={{ right: rightStackOffset }}>
+          <div className="text-sm font-medium mb-1">
+            {activePanel === 'tech' && '科技树'}
+            {activePanel === 'diplomacy' && '外交'}
+            {activePanel === 'stats' && '统计'}
+            {activePanel === 'chat' && '聊天'}
+            {activePanel === 'help' && '帮助'}
+            {activePanel === 'settings' && '设置'}
+          </div>
+          <div className="text-xs text-bronze-300">该面板正在开发中</div>
         </div>
       )}
     </main>

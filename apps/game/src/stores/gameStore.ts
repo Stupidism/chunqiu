@@ -20,6 +20,7 @@ interface GameStoreState {
   // UI 提示
   uiMessage: string | null;
   activePanel: 'tech' | 'diplomacy' | 'stats' | 'chat' | 'help' | 'settings' | null;
+  activeAction: 'move' | null;
   
   // UI状态
   selectedTile: Position | null;
@@ -47,7 +48,7 @@ interface GameStoreState {
   setZoom: (zoom: number) => void;
   
   // 单位操作
-  moveUnit: (unitId: string, to: Position) => void;
+  moveUnit: (unitId: string, to: Position, cost: number) => void;
   attack: (attackerId: string, targetId: string) => void;
   fortifyUnit: (unitId: string) => void;
   skipUnit: (unitId: string) => void;
@@ -64,6 +65,7 @@ interface GameStoreState {
   // UI 操作
   showMessage: (message: string) => void;
   setActivePanel: (panel: GameStoreState['activePanel']) => void;
+  setActiveAction: (action: GameStoreState['activeAction']) => void;
 }
 
 let messageTimer: ReturnType<typeof setTimeout> | null = null;
@@ -73,6 +75,7 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
   gameState: null,
   uiMessage: null,
   activePanel: null,
+  activeAction: null,
   selectedTile: null,
   selectedUnit: null,
   selectedCity: null,
@@ -143,6 +146,7 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
     if (unitId) {
       set({ selectedCity: null });
     }
+    set({ activeAction: null });
   },
 
   // 选择城市
@@ -151,6 +155,7 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
     if (cityId) {
       set({ selectedUnit: null });
     }
+    set({ activeAction: null });
   },
 
   // 设置悬停地块
@@ -169,17 +174,18 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
   },
 
   // 移动单位
-  moveUnit: (unitId: string, to: Position) => {
+  moveUnit: (unitId: string, to: Position, cost: number) => {
     const { gameState } = get();
     if (!gameState) return;
 
     const unit = gameState.units[unitId];
     if (!unit) return;
+    if (unit.movement <= 0) return;
 
     const updatedUnit: Unit = {
       ...unit,
       position: to,
-      movement: Math.max(0, unit.movement - 1),
+      movement: Math.max(0, unit.movement - Math.max(1, cost)),
     };
 
     set({
@@ -341,6 +347,7 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
       selectedUnit: null,
       selectedCity: null,
       selectedTile: null,
+      activeAction: null,
     });
 
     get().updateVisibility();
@@ -440,5 +447,9 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
     set(state => ({
       activePanel: state.activePanel === panel ? null : panel,
     }));
+  },
+
+  setActiveAction: (action) => {
+    set({ activeAction: action });
   },
 }));

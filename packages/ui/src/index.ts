@@ -17,6 +17,7 @@ export type { ResourceIndicatorProps } from './components/ResourceIndicator';
 
 export { HexTile, MiniHex } from './components/HexTile';
 export type { HexTileProps } from './components/HexTile';
+export { OracleIcon } from './components/OracleIcon';
 
 export { Dialog, DialogFooter } from './components/Dialog';
 export type { DialogProps } from './components/Dialog';

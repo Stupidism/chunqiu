@@ -1,15 +1,13 @@
 'use client';
 
 import { useGameStore } from '@/stores/gameStore';
-import { MiniHex } from '@chunqiu/ui';
 
 export function Minimap() {
-  const { gameState, exploredTiles, cameraPosition, setCameraPosition } = useGameStore();
+  const { gameState, exploredTiles, cameraPosition, zoom, setCameraPosition } = useGameStore();
 
   if (!gameState) return null;
 
   const { map } = gameState;
-  const scale = 0.15; // 小地图缩放比例
 
   // 简化的地形颜色
   const terrainColors: Record<string, string> = {
@@ -23,20 +21,56 @@ export function Minimap() {
 
   const miniTileSize = 8;
 
+  const miniWidth = map.width * miniTileSize;
+  const miniHeight = map.height * miniTileSize * 0.75;
+  const mapWidth = map.width * 60 * zoom + 30 * zoom;
+  const mapHeight = (0.75 * map.height + 0.25) * (60 * zoom * Math.sqrt(3) / 2);
+  const miniScaleX = miniWidth / mapWidth;
+  const miniScaleY = miniHeight / mapHeight;
+  const viewportWidth = (typeof window === 'undefined' ? 1280 : window.innerWidth) * miniScaleX;
+  const viewportHeight = (typeof window === 'undefined' ? 720 : window.innerHeight) * miniScaleY;
+  const clampedViewportWidth = Math.min(viewportWidth, miniWidth);
+  const clampedViewportHeight = Math.min(viewportHeight, miniHeight);
+  const viewportX = Math.max(
+    0,
+    Math.min(miniWidth - clampedViewportWidth, -cameraPosition.x * miniScaleX)
+  );
+  const viewportY = Math.max(
+    0,
+    Math.min(miniHeight - clampedViewportHeight, -cameraPosition.y * miniScaleY)
+  );
+
   return (
-    <div className="bg-slate-800/90 border border-bronze-600/50 rounded-lg p-2 shadow-lg">
+    <div className="bg-slate-900/85 border border-bronze-600/40 rounded-lg p-2 shadow-lg backdrop-blur">
       <div className="text-xs text-bronze-300 mb-1 text-center">小地图</div>
       <div 
-        className="relative overflow-hidden rounded"
+        className="relative overflow-hidden rounded cursor-pointer"
+        data-testid="minimap"
+        title="点击小地图可快速定位"
         style={{
-          width: map.width * miniTileSize,
-          height: map.height * miniTileSize * 0.75,
+          width: miniWidth,
+          height: miniHeight,
+        }}
+        onClick={(event) => {
+          const rect = event.currentTarget.getBoundingClientRect();
+          const localX = event.clientX - rect.left;
+          const localY = event.clientY - rect.top;
+          const ratioX = localX / miniWidth;
+          const ratioY = localY / miniHeight;
+          const targetX = ratioX * mapWidth;
+          const targetY = ratioY * mapHeight;
+          const viewportCenterX = window.innerWidth / 2;
+          const viewportCenterY = window.innerHeight / 2 + 16;
+          setCameraPosition({
+            x: viewportCenterX - targetX,
+            y: viewportCenterY - targetY,
+          });
         }}
       >
         {/* 简化的地图渲染 */}
         <svg
-          width={map.width * miniTileSize}
-          height={map.height * miniTileSize * 0.75}
+          width={miniWidth}
+          height={miniHeight}
           className="absolute inset-0"
         >
           {map.tiles.map((row, rowIndex) =>
@@ -74,10 +108,10 @@ export function Minimap() {
 
           {/* 相机视口指示器 */}
           <rect
-            x={-cameraPosition.x * scale}
-            y={-cameraPosition.y * scale}
-            width={400 * scale}
-            height={300 * scale}
+            x={viewportX}
+            y={viewportY}
+            width={clampedViewportWidth}
+            height={clampedViewportHeight}
             fill="none"
             stroke="#DAA520"
             strokeWidth={1}

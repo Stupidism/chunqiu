@@ -1,8 +1,6 @@
 'use client';
 
-import { Button, Card, CardContent } from '@chunqiu/ui';
 import { useGameStore } from '@/stores/gameStore';
-import { SkipForward, Flag } from 'lucide-react';
 
 export function TurnPanel() {
   const { gameState, endTurn, showMessage } = useGameStore();
@@ -13,55 +11,52 @@ export function TurnPanel() {
     p => p.id === gameState.currentPlayerId
   );
 
-  // 检查是否还有未行动的单位
   const pendingUnits = Object.values(gameState.units).filter(
     u => u.ownerId === gameState.currentPlayerId && u.movement > 0 && u.state === 'idle'
   );
 
   return (
-    <Card className="m-4">
-      <CardContent className="p-4">
-        <div className="flex items-center justify-between mb-3">
+    <div className="flex flex-col items-end gap-2">
+      <div className="bg-slate-900/85 border border-bronze-600/40 rounded px-3 py-2 text-xs text-bronze-200 shadow-lg backdrop-blur">
+        <div className="flex items-center gap-3">
           <div>
-            <div className="text-xs text-bronze-500">当前回合</div>
-            <div className="text-2xl font-bold text-bronze-900">
-              {gameState.currentTurn}
-            </div>
+            <div className="text-bronze-400">回合</div>
+            <div className="text-bronze-100 text-lg font-semibold">{gameState.currentTurn}</div>
           </div>
           <div className="text-right">
-            <div className="text-xs text-bronze-500">当前玩家</div>
-            <div className="font-medium text-bronze-800">
-              {currentPlayer?.name}
-            </div>
+            <div className="text-bronze-400">当前玩家</div>
+            <div className="text-bronze-100">{currentPlayer?.name}</div>
           </div>
         </div>
+      </div>
 
-        {pendingUnits.length > 0 && (
-          <div className="mb-3 p-2 bg-yellow-50 border border-yellow-200 rounded text-xs text-yellow-700">
-            还有 {pendingUnits.length} 个单位未行动
-          </div>
-        )}
+      {pendingUnits.length > 0 && (
+        <div className="bg-amber-900/80 border border-amber-500/60 text-amber-100 px-3 py-1 rounded text-xs shadow">
+          还有 {pendingUnits.length} 个单位未行动
+        </div>
+      )}
 
-        <Button 
-          className="w-full"
-          data-testid="turn-end"
-          onClick={endTurn}
-        >
-          <SkipForward className="w-4 h-4 mr-2" />
-          结束回合
-        </Button>
+      <button
+        type="button"
+        data-testid="turn-end"
+        onClick={endTurn}
+        className="relative w-28 h-28 rounded-full bg-gradient-to-br from-bronze-400 via-bronze-600 to-bronze-800 border-4 border-bronze-300 shadow-[0_10px_20px_rgba(0,0,0,0.4)] text-bronze-50 hover:scale-[1.02] transition-transform"
+      >
+        <div className="absolute inset-2 rounded-full border border-bronze-200/60 bg-slate-900/25" />
+        <div className="relative flex flex-col items-center justify-center text-xs font-semibold tracking-wide">
+          <span className="text-[11px] uppercase">下一回合</span>
+          <span className="text-2xl font-bold">{gameState.currentTurn + 1}</span>
+        </div>
+      </button>
 
-        <Button 
-          variant="outline" 
-          className="w-full mt-2"
-          size="sm"
-          data-testid="turn-surrender"
-          onClick={() => showMessage('投降功能开发中')}
-        >
-          <Flag className="w-4 h-4 mr-2" />
-          投降
-        </Button>
-      </CardContent>
-    </Card>
+      <button
+        type="button"
+        data-testid="turn-surrender"
+        onClick={() => showMessage('投降功能开发中')}
+        className="text-xs text-bronze-200 hover:text-bronze-100 px-3 py-1 rounded border border-bronze-600/50 bg-slate-900/70"
+      >
+        投降
+      </button>
+    </div>
   );
 }
