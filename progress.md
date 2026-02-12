@@ -50,3 +50,22 @@ TODO
 - Validation:
   - Direct Playwright drag check confirms transform changed (pan applied).
   - run-54 confirms unit action click still enters move mode after drag logic change (no click regression).
+
+- Camera + fullscreen polish:
+  - GameMap now clamps camera bounds after drag and wheel-zoom (prevents map from being dragged into all-empty space).
+  - Minimap click recenter now respects same viewport-aware clamp.
+  - ActionBar fullscreen control now works (button + keyboard F), with active visual state and UI message feedback.
+- Validation:
+  - run-55 baseline render OK.
+  - run-56 fullscreen button works; state message = 已进入全屏.
+  - direct drag stress test confirms camera transform remains bounded while still pannable.
+
+TODO Sprint (2026-02-12)
+- [x] Item 1: 相机边界约束 + 全屏切换稳定化（按钮 + F 键）。
+- [ ] Item 2: 地块收益显示开关（ActionBar 的“收益”按钮真正切换）。
+- [ ] Item 3: 小地图支持按住拖动平移主地图（不仅点击定位）。
+- [ ] Item 4: 加入“镜头归位/居中”控制与快捷键。
+- [ ] Item 5: 键盘方向键 / WASD 平移镜头（受边界约束）。
+- [ ] Item 6: 单位快速居中操作（单位面板/动作面板按钮）。
+- [ ] Item 7: 右侧抽屉与右下控件在窄屏时自适应避让。
+- [ ] Item 8: 集中回归（交互链路 + 无新报错）并收尾。

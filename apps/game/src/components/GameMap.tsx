@@ -60,6 +60,39 @@ export function GameMap() {
   const tileSize = 60 * zoom;
   const hexHeight = tileSize * Math.sqrt(3) / 2;
   const hexWidth = tileSize;
+  const mapPixelWidth = map.width * hexWidth + hexWidth / 2;
+  const mapPixelHeight = hexHeight + Math.max(0, map.height - 1) * (hexHeight * 0.75);
+
+  const clampCameraPosition = useCallback(
+    (position: { x: number; y: number }) => {
+      const container = containerRef.current;
+      if (!container) return position;
+      const rect = container.getBoundingClientRect();
+      if (!rect.width || !rect.height) return position;
+
+      const marginX = Math.max(120, rect.width * 0.2);
+      const marginY = Math.max(80, rect.height * 0.18);
+      let minX = rect.width - mapPixelWidth - marginX;
+      let maxX = marginX;
+      let minY = rect.height - mapPixelHeight - marginY;
+      let maxY = marginY;
+
+      if (mapPixelWidth + marginX * 2 <= rect.width) {
+        minX = (rect.width - mapPixelWidth) / 2;
+        maxX = minX;
+      }
+      if (mapPixelHeight + marginY * 2 <= rect.height) {
+        minY = (rect.height - mapPixelHeight) / 2;
+        maxY = minY;
+      }
+
+      return {
+        x: clamp(position.x, minX, maxX),
+        y: clamp(position.y, minY, maxY),
+      };
+    },
+    [mapPixelHeight, mapPixelWidth]
+  );
 
   useEffect(() => {
     cameraRef.current = cameraPosition;
@@ -195,7 +228,7 @@ export function GameMap() {
     const viewportCenterY = rect.height * 0.52;
     const nextX = viewportCenterX - focusX;
     const nextY = viewportCenterY - focusY;
-    setCameraPosition({ x: nextX, y: nextY });
+    setCameraPosition(clampCameraPosition({ x: nextX, y: nextY }));
     hasAutoCentered.current = true;
   }, [
     map.width,
@@ -206,6 +239,7 @@ export function GameMap() {
     gameState.currentPlayerId,
     hexHeight,
     hexWidth,
+    clampCameraPosition,
     setCameraPosition,
   ]);
 
@@ -247,10 +281,10 @@ export function GameMap() {
         return;
       }
       panState.moved = true;
-      setCameraPosition({
+      setCameraPosition(clampCameraPosition({
         x: panState.startCamX + dx,
         y: panState.startCamY + dy,
-      });
+      }));
     };
 
     const handleMouseUp = () => {
@@ -275,10 +309,10 @@ export function GameMap() {
       const mouseY = e.clientY - rect.top;
       const anchorX = (mouseX - currentCamera.x) / currentZoom;
       const anchorY = (mouseY - currentCamera.y) / currentZoom;
-      setCameraPosition({
+      setCameraPosition(clampCameraPosition({
         x: mouseX - anchorX * nextZoom,
         y: mouseY - anchorY * nextZoom,
-      });
+      }));
       setZoom(nextZoom);
     };
 
@@ -293,7 +327,7 @@ export function GameMap() {
       window.removeEventListener('mouseup', handleMouseUp);
       container.removeEventListener('wheel', handleWheel);
     };
-  }, [setCameraPosition, setZoom]);
+  }, [clampCameraPosition, setCameraPosition, setZoom]);
 
   const hoveredInfo = useMemo(() => {
     if (!hoveredTile) return null;

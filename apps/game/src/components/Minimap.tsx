@@ -61,9 +61,27 @@ export function Minimap() {
           const targetY = ratioY * mapHeight;
           const viewportCenterX = window.innerWidth / 2;
           const viewportCenterY = window.innerHeight / 2 + 16;
-          setCameraPosition({
+          const marginX = Math.max(120, window.innerWidth * 0.2);
+          const marginY = Math.max(80, window.innerHeight * 0.18);
+          let minX = window.innerWidth - mapWidth - marginX;
+          let maxX = marginX;
+          let minY = window.innerHeight - mapHeight - marginY;
+          let maxY = marginY;
+          if (mapWidth + marginX * 2 <= window.innerWidth) {
+            minX = (window.innerWidth - mapWidth) / 2;
+            maxX = minX;
+          }
+          if (mapHeight + marginY * 2 <= window.innerHeight) {
+            minY = (window.innerHeight - mapHeight) / 2;
+            maxY = minY;
+          }
+          const next = {
             x: viewportCenterX - targetX,
             y: viewportCenterY - targetY,
+          };
+          setCameraPosition({
+            x: Math.max(minX, Math.min(maxX, next.x)),
+            y: Math.max(minY, Math.min(maxY, next.y)),
           });
         }}
       >
