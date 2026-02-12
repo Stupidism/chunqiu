@@ -68,4 +68,10 @@ TODO Sprint (2026-02-12)
 - [x] Item 5: 键盘方向键 / WASD 平移镜头（受边界约束）。
 - [x] Item 6: 单位快速居中操作（单位面板/动作面板按钮）。
 - [x] Item 7: 右侧抽屉与右下控件在窄屏时自适应避让。
-- [ ] Item 8: 集中回归（交互链路 + 无新报错）并收尾。
+- [x] Item 8: 集中回归（交互链路 + 无新报错）并收尾。
+- Regression bundle (Item 8):
+  - run-70: yields toggle verified (`showTileYields=false`, toast shown).
+  - run-71: recenter control verified (`message=镜头已归位`).
+  - run-72: unit focus action verified (`message=镜头已定位到单位`).
+  - run-73: left drag + minimap drag + keyboard pan path exercised (camera transforms changed as expected with boundary clamp).
+  - run-74: narrow viewport city drawer scenario verified with no console/page errors.
