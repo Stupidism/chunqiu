@@ -343,6 +343,42 @@ export function GameMap() {
     };
   }, [clampCameraPosition, setCameraPosition, setZoom]);
 
+  // 键盘平移镜头（方向键 / WASD）。
+  useEffect(() => {
+    const isEditable = (target: EventTarget | null) => {
+      if (!(target instanceof HTMLElement)) return false;
+      if (target.isContentEditable) return true;
+      const tag = target.tagName.toLowerCase();
+      return tag === 'input' || tag === 'textarea' || tag === 'select';
+    };
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.ctrlKey || event.metaKey || event.altKey) return;
+      if (isEditable(event.target)) return;
+      const key = event.key.toLowerCase();
+      const step = event.shiftKey ? 96 : 48;
+      let dx = 0;
+      let dy = 0;
+
+      if (key === 'arrowleft' || key === 'a') dx = step;
+      if (key === 'arrowright' || key === 'd') dx = -step;
+      if (key === 'arrowup' || key === 'w') dy = step;
+      if (key === 'arrowdown' || key === 's') dy = -step;
+      if (!dx && !dy) return;
+
+      event.preventDefault();
+      setCameraPosition(
+        clampCameraPosition({
+          x: cameraRef.current.x + dx,
+          y: cameraRef.current.y + dy,
+        })
+      );
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [clampCameraPosition, setCameraPosition]);
+
   const hoveredInfo = useMemo(() => {
     if (!hoveredTile) return null;
     const { row, col } = hoveredTile;
