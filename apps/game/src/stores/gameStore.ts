@@ -1,4 +1,5 @@
 import { create } from 'zustand';
+import { calculateCityYields } from '@chunqiu/game-core';
 import type { 
   GameState, 
   GameMap, 
@@ -64,6 +65,10 @@ interface GameStoreState {
   
   // 城市操作
   buildInCity: (cityId: string, itemType: string, itemId: string) => void;
+  toggleCityWorkedTile: (
+    cityId: string,
+    position: Position
+  ) => 'added' | 'removed' | 'center_locked' | 'population_limit' | 'out_of_bounds' | 'missing';
   
   // 回合操作
   endTurn: () => void;
@@ -356,6 +361,81 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
         },
       },
     });
+  },
+
+  toggleCityWorkedTile: (cityId: string, position: Position) => {
+    const { gameState } = get();
+    if (!gameState) return 'missing';
+    const city = gameState.cities[cityId];
+    if (!city) return 'missing';
+    if (
+      position.row < 0 ||
+      position.row >= gameState.map.height ||
+      position.col < 0 ||
+      position.col >= gameState.map.width
+    ) {
+      return 'out_of_bounds';
+    }
+
+    const isCenter = city.position.row === position.row && city.position.col === position.col;
+    const alreadyWorked = city.workedTiles.some(
+      tile => tile.row === position.row && tile.col === position.col
+    );
+
+    if (alreadyWorked) {
+      if (isCenter) return 'center_locked';
+      const nextWorkedTiles = city.workedTiles.filter(
+        tile => !(tile.row === position.row && tile.col === position.col)
+      );
+      const updatedCity = {
+        ...city,
+        workedTiles: nextWorkedTiles,
+      };
+      const nextYields = calculateCityYields(updatedCity, gameState.map);
+      set({
+        gameState: {
+          ...gameState,
+          cities: {
+            ...gameState.cities,
+            [cityId]: {
+              ...updatedCity,
+              yields: {
+                ...city.yields,
+                ...nextYields,
+              },
+            },
+          },
+        },
+      });
+      return 'removed';
+    }
+
+    if (city.workedTiles.length >= city.population + 1) {
+      return 'population_limit';
+    }
+
+    const nextWorkedTiles = [...city.workedTiles, position];
+    const updatedCity = {
+      ...city,
+      workedTiles: nextWorkedTiles,
+    };
+    const nextYields = calculateCityYields(updatedCity, gameState.map);
+    set({
+      gameState: {
+        ...gameState,
+        cities: {
+          ...gameState.cities,
+          [cityId]: {
+            ...updatedCity,
+            yields: {
+              ...city.yields,
+              ...nextYields,
+            },
+          },
+        },
+      },
+    });
+    return 'added';
   },
 
   // 结束回合

@@ -57,7 +57,7 @@ export default function GamePage() {
         defenses: 10,
         buildings: [],
         productionQueue: [],
-        workedTiles: [],
+        workedTiles: [{ row: 7, col: 5 }],
         yields: {
           food: 2,
           production: 1,
@@ -68,7 +68,17 @@ export default function GamePage() {
           happiness: 5,
         },
         culture: 0,
-        borders: [],
+        borders: [
+          { row: 7, col: 5 },
+          { row: 6, col: 5 },
+          { row: 8, col: 5 },
+          { row: 7, col: 4 },
+          { row: 7, col: 6 },
+          { row: 6, col: 4 },
+          { row: 6, col: 6 },
+          { row: 8, col: 4 },
+          { row: 8, col: 6 },
+        ],
       };
       initializeGame({
         id: 'game-1',
@@ -157,6 +167,7 @@ export default function GamePage() {
           row: c.position.row,
           col: c.position.col,
           productionQueue: c.productionQueue.length,
+          workedTiles: c.workedTiles.length,
         })),
         selectedTile: selectedTile ? { row: selectedTile.row, col: selectedTile.col } : null,
         selectedUnit,

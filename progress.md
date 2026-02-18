@@ -123,3 +123,16 @@ TODO Sprint 2 (2026-02-18)
   - `render_game_to_text` 新增 `phase` 字段。
   - 验证：
     - run-85：`phase = "ended"`，提示“你已投降，本局已结束”，截图结束蒙层正确显示。
+- [x] Item F: 落地“管理市民”面板（替换 CityPanel 开发中占位）。
+  - store 新增 `toggleCityWorkedTile`：
+    - 支持工作/停用地块；
+    - 处理市中心锁定、人口上限、越界等条件；
+    - 每次调整后实时重算城市产出。
+  - CityPanel：
+    - “管理市民”按钮可展开/收起；
+    - 新增可操作工作地块列表（坐标 + 产出 + 工作/停用按钮）。
+  - 初始化城市默认把市中心加入 `workedTiles`，并补充基础边界样例数据。
+  - `render_game_to_text` 增加城市 `workedTiles` 计数。
+  - 验证：
+    - run-86：管理面板可打开（提示“已打开市民管理”）。
+    - run-88：点击分配成功，`cities[0].workedTiles` 从 `1 -> 2`，城市产出面板同步变化。

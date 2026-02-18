@@ -1,6 +1,8 @@
 'use client';
 
+import { useMemo, useState } from 'react';
 import { Button, Card, CardContent, CardHeader, CardTitle, Badge, OracleIcon } from '@chunqiu/ui';
+import { calculateTileYields, getDistance } from '@chunqiu/game-core';
 import { useGameStore } from '@/stores/gameStore';
 
 const iconBase = '/oracle-bone-icons';
@@ -12,7 +14,8 @@ const yieldIcons: Record<string, string> = {
 };
 
 export function CityPanel() {
-  const { gameState, selectedCity, buildInCity, showMessage, selectCity } = useGameStore();
+  const { gameState, selectedCity, buildInCity, showMessage, selectCity, toggleCityWorkedTile } = useGameStore();
+  const [isCitizenManageOpen, setCitizenManageOpen] = useState(false);
 
   const city = selectedCity ? gameState?.cities[selectedCity] : null;
 
@@ -21,6 +24,39 @@ export function CityPanel() {
   }
 
   const { yields } = city;
+  const workedTileLimit = city.population + 1;
+
+  const manageableTiles = useMemo(() => {
+    const radius = 2;
+    const tiles: Array<{
+      row: number;
+      col: number;
+      isWorked: boolean;
+      isCenter: boolean;
+      yields: { food: number; production: number; gold: number };
+      terrain: string;
+    }> = [];
+
+    for (let row = city.position.row - radius; row <= city.position.row + radius; row++) {
+      for (let col = city.position.col - radius; col <= city.position.col + radius; col++) {
+        if (row < 0 || row >= gameState.map.height || col < 0 || col >= gameState.map.width) continue;
+        if (getDistance(city.position, { row, col }) > radius) continue;
+        const tile = gameState.map.tiles[row][col];
+        const tileYields = calculateTileYields(tile);
+        const isWorked = city.workedTiles.some(pos => pos.row === row && pos.col === col);
+        const isCenter = city.position.row === row && city.position.col === col;
+        tiles.push({
+          row,
+          col,
+          isWorked,
+          isCenter,
+          yields: tileYields,
+          terrain: tile.terrain,
+        });
+      }
+    }
+    return tiles.sort((a, b) => Number(b.isWorked) - Number(a.isWorked));
+  }, [city.position, city.workedTiles, gameState.map.height, gameState.map.tiles, gameState.map.width]);
 
   return (
     <Card variant="ink" className="bg-slate-900/85 border-bronze-600/40 h-full">
@@ -138,6 +174,54 @@ export function CityPanel() {
           </div>
         )}
 
+        {isCitizenManageOpen && (
+          <div className="bg-slate-800/60 rounded px-3 py-2 space-y-2">
+            <div className="flex items-center justify-between text-xs text-bronze-300">
+              <span>工作地块</span>
+              <span>
+                {city.workedTiles.length}/{workedTileLimit}
+              </span>
+            </div>
+            <div className="max-h-44 overflow-y-auto space-y-1 pr-1">
+              {manageableTiles.map(tile => {
+                const actionLabel = tile.isWorked ? '停用' : '工作';
+                return (
+                  <div
+                    key={`${tile.row}-${tile.col}`}
+                    className="flex items-center justify-between text-xs bg-slate-800/70 rounded px-2 py-1"
+                  >
+                    <div>
+                      <div className="text-bronze-100">
+                        ({tile.row},{tile.col}) · {tile.terrain}
+                        {tile.isCenter ? ' · 市中心' : ''}
+                      </div>
+                      <div className="text-[11px] text-bronze-400">
+                        粮{tile.yields.food} / 产{tile.yields.production} / 金{tile.yields.gold}
+                      </div>
+                    </div>
+                    <Button
+                      size="sm"
+                      variant={tile.isWorked ? 'secondary' : 'outline'}
+                      className="h-7 px-2 text-[11px] text-bronze-100 border-bronze-500/60"
+                      onClick={() => {
+                        const result = toggleCityWorkedTile(city.id, { row: tile.row, col: tile.col });
+                        if (result === 'added') showMessage(`已分配市民到 (${tile.row},${tile.col})`);
+                        if (result === 'removed') showMessage(`已取消地块 (${tile.row},${tile.col}) 的工作`);
+                        if (result === 'center_locked') showMessage('市中心地块必须保持工作');
+                        if (result === 'population_limit') showMessage('人口不足，无法分配更多地块');
+                        if (result === 'out_of_bounds') showMessage('地块超出范围');
+                        if (result === 'missing') showMessage('城市不存在');
+                      }}
+                    >
+                      {actionLabel}
+                    </Button>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         {/* 生产队列 */}
         {/* 操作按钮 */}
         <div className="grid grid-cols-2 gap-2 pt-2 border-t border-bronze-700/60">
@@ -159,10 +243,13 @@ export function CityPanel() {
             variant="outline"
             className="text-xs text-bronze-100 border-bronze-500/60"
             data-testid="city-manage"
-            onClick={() => showMessage('市民管理面板开发中')}
+            onClick={() => {
+              setCitizenManageOpen(value => !value);
+              showMessage(isCitizenManageOpen ? '已关闭市民管理' : '已打开市民管理');
+            }}
           >
             <OracleIcon src={`${iconBase}/status/和.svg`} size={12} tone="text-bronze-100" />
-            管理市民
+            {isCitizenManageOpen ? '收起市民' : '管理市民'}
           </Button>
         </div>
       </CardContent>
