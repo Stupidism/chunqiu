@@ -125,7 +125,7 @@ export default function GamePage() {
 
     window.render_game_to_text = () => {
       if (!gameState) return JSON.stringify({ mode: 'loading' });
-      const { selectedTile, selectedUnit, selectedCity, activeAction, showTileYields, cameraPosition, zoom } =
+      const { selectedTile, selectedUnit, selectedCity, activeAction, showTileYields, cameraPosition, zoom, mapPins } =
         useGameStore.getState();
       return JSON.stringify({
         mode: 'playing',
@@ -152,6 +152,7 @@ export default function GamePage() {
         activeAction,
         showTileYields,
         camera: { x: cameraPosition.x, y: cameraPosition.y, zoom },
+        mapPins: mapPins.map(pin => ({ row: pin.position.row, col: pin.position.col })),
         activePanel: activePanel || null,
         message: uiMessage || null,
       });

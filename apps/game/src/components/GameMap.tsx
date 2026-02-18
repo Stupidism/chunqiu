@@ -54,9 +54,11 @@ export function GameMap() {
     zoom,
     cameraVersion,
     focusUnitId,
+    mapPins,
     setCameraPosition,
     setZoom,
     requestFocusUnit,
+    toggleMapPin,
   } = useGameStore();
 
   if (!gameState) return null;
@@ -124,10 +126,27 @@ export function GameMap() {
     return range;
   }, [activeAction, selectedUnit, units, map.height, map.width]);
 
+  const pinLookup = useMemo(() => {
+    const lookup = new Map<string, { id: string; index: number }>();
+    mapPins.forEach((pin, index) => {
+      lookup.set(`${pin.position.row},${pin.position.col}`, { id: pin.id, index });
+    });
+    return lookup;
+  }, [mapPins]);
+
   // 处理地块点击
   const handleTileClick = useCallback((row: number, col: number) => {
     if (Date.now() < suppressClickUntilRef.current) return;
     const position = { row, col };
+
+    if (activeAction === 'pin') {
+      const hasPin = pinLookup.has(`${row},${col}`);
+      toggleMapPin(position);
+      showMessage(hasPin ? '已移除地图钉' : '已添加地图钉');
+      setActiveAction(null);
+      return;
+    }
+
     selectTile(position);
 
     if (activeAction === 'move' && selectedUnit && units[selectedUnit]) {
@@ -202,6 +221,8 @@ export function GameMap() {
     moveUnit,
     showMessage,
     setActiveAction,
+    toggleMapPin,
+    pinLookup,
   ]);
 
   // 把镜头回到主焦点（当前选择 > 当前玩家单位 > 当前玩家城市 > 地图中心）。
@@ -614,6 +635,25 @@ export function GameMap() {
                     unitType={unit?.type}
                     tileYields={tileYields}
                   />
+                  {isVisible && (() => {
+                    const pin = pinLookup.get(tileKey);
+                    if (!pin) return null;
+                    return (
+                      <div className="absolute left-1/2 top-[30%] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                        <div className="relative w-5 h-5 rounded-full bg-bronze-900/90 border border-bronze-400/80 flex items-center justify-center shadow">
+                          <OracleIcon
+                            src={`${iconBase}/status/造.svg`}
+                            size={11}
+                            tone="text-bronze-100"
+                            label="地图钉"
+                          />
+                          <span className="absolute -bottom-3 text-[9px] leading-none text-bronze-200">
+                            {pin.index + 1}
+                          </span>
+                        </div>
+                      </div>
+                    );
+                  })()}
                   {!isVisible && isExplored && (
                     <div className="absolute inset-0 bg-slate-950/60 pointer-events-none" />
                   )}
@@ -626,11 +666,12 @@ export function GameMap() {
 
       {/* 坐标显示 */}
       <div className="absolute top-24 left-4 bg-slate-900/85 border border-bronze-600/40 text-bronze-100 px-3 py-1 rounded text-sm shadow-lg backdrop-blur">
-        {activeAction === 'move'
-          ? '移动模式：点击高亮地块'
-          : selectedTile
+        {activeAction === 'move' && '移动模式：点击高亮地块'}
+        {activeAction === 'pin' && '地图钉模式：点击地块放置/移除'}
+        {!activeAction &&
+          (selectedTile
             ? `坐标: (${selectedTile.row}, ${selectedTile.col})`
-            : '鼠标悬停查看信息'}
+            : '鼠标悬停查看信息')}
       </div>
 
       {hoveredInfo && hoverPos && tooltipStyle && (

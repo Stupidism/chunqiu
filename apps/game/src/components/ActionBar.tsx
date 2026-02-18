@@ -17,7 +17,16 @@ const mapControls = [
 ];
 
 export function ActionBar() {
-  const { gameState, showMessage, setActivePanel, showTileYields, toggleTileYields, requestCameraRecenter } = useGameStore();
+  const {
+    gameState,
+    showMessage,
+    setActivePanel,
+    showTileYields,
+    toggleTileYields,
+    requestCameraRecenter,
+    activeAction,
+    setActiveAction,
+  } = useGameStore();
   const [isFullscreen, setIsFullscreen] = useState(false);
 
   const toggleFullscreen = useCallback(async () => {
@@ -54,7 +63,7 @@ export function ActionBar() {
     };
     const onKeyDown = (event: KeyboardEvent) => {
       const key = event.key.toLowerCase();
-      if (key !== 'f' && key !== ' ' && key !== 'spacebar') return;
+      if (key !== 'f' && key !== ' ' && key !== 'spacebar' && key !== 'p') return;
       if (event.ctrlKey || event.metaKey || event.altKey) return;
       if (isEditable(event.target)) return;
       event.preventDefault();
@@ -62,12 +71,22 @@ export function ActionBar() {
         void toggleFullscreen();
         return;
       }
+      if (key === 'p') {
+        if (activeAction === 'pin') {
+          setActiveAction(null);
+          showMessage('已取消地图钉模式');
+          return;
+        }
+        setActiveAction('pin');
+        showMessage('地图钉模式：点击地块放置/移除');
+        return;
+      }
       requestCameraRecenter();
       showMessage('镜头已归位');
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [requestCameraRecenter, showMessage, toggleFullscreen]);
+  }, [activeAction, requestCameraRecenter, setActiveAction, showMessage, toggleFullscreen]);
 
   if (!gameState) return null;
 
@@ -83,6 +102,8 @@ export function ActionBar() {
                 ? 'action-yields'
                 : control.id === 'center'
                   ? 'action-center'
+                : control.id === 'pin'
+                  ? 'action-pin'
                 : control.id === 'fullscreen'
                   ? 'action-fullscreen'
                   : undefined
@@ -103,6 +124,16 @@ export function ActionBar() {
                 showMessage('镜头已归位');
                 return;
               }
+              if (control.id === 'pin') {
+                if (activeAction === 'pin') {
+                  setActiveAction(null);
+                  showMessage('已取消地图钉模式');
+                  return;
+                }
+                setActiveAction('pin');
+                showMessage('地图钉模式：点击地块放置/移除');
+                return;
+              }
               showMessage(`${control.label}功能开发中`);
             }}
           >
@@ -112,6 +143,8 @@ export function ActionBar() {
                   ? 'border-bronze-300/90 ring-1 ring-bronze-300/60'
                   : control.id === 'yields' && showTileYields
                     ? 'border-emerald-300/90 ring-1 ring-emerald-400/60'
+                  : control.id === 'pin' && activeAction === 'pin'
+                    ? 'border-sky-300/90 ring-1 ring-sky-400/60'
                   : 'border-bronze-600/60'
               }`}
             >

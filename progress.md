@@ -85,3 +85,10 @@ TODO Sprint 2 (2026-02-18)
     - run-77（仅右移）：`camera.x = 69.6`
     - run-76（右移后归位）：`camera.x = 117.6`
     - 截图对比可见地图回到默认焦点区域，无新 console/page error。
+- [x] Item B: 落地“地图钉”功能（替换 ActionBar 开发中占位）。
+  - store 新增 `mapPins`、`toggleMapPin`；`activeAction` 扩展为 `'move' | 'pin' | null`。
+  - ActionBar 的“地图钉”按钮改为可交互模式切换（高亮态 + `P` 快捷键）。
+  - GameMap 在 pin 模式下点击地块可放置/移除地图钉，并在地块内渲染 pin 图标与编号。
+  - `render_game_to_text` 新增 `mapPins`，便于自动化校验。
+  - 验证：
+    - run-79 / run-80：`mapPins` 返回已更新（示例 `[{row:7,col:5}]`、`[{row:7,col:3}]`），页面无新报错。

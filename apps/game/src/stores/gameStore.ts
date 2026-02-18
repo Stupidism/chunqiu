@@ -20,7 +20,7 @@ interface GameStoreState {
   // UI 提示
   uiMessage: string | null;
   activePanel: 'tech' | 'diplomacy' | 'stats' | 'chat' | 'help' | 'settings' | null;
-  activeAction: 'move' | null;
+  activeAction: 'move' | 'pin' | null;
   showTileYields: boolean;
   
   // UI状态
@@ -31,6 +31,7 @@ interface GameStoreState {
   cameraPosition: { x: number; y: number };
   zoom: number;
   cameraVersion: number;
+  mapPins: Array<{ id: string; position: Position; createdAt: number }>;
   
   // 可见范围
   visibleTiles: Set<string>;
@@ -51,6 +52,8 @@ interface GameStoreState {
   requestCameraRecenter: () => void;
   focusUnitId: string | null;
   requestFocusUnit: (unitId: string | null) => void;
+  toggleMapPin: (position: Position) => void;
+  clearMapPins: () => void;
   
   // 单位操作
   moveUnit: (unitId: string, to: Position, cost: number) => void;
@@ -91,6 +94,7 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
   zoom: 1,
   cameraVersion: 0,
   focusUnitId: null,
+  mapPins: [],
   visibleTiles: new Set(),
   exploredTiles: new Set(),
 
@@ -188,6 +192,30 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
 
   requestFocusUnit: (unitId: string | null) => {
     set({ focusUnitId: unitId });
+  },
+
+  toggleMapPin: (position: Position) => {
+    set(state => {
+      const key = `${position.row},${position.col}`;
+      const existing = state.mapPins.find(pin => `${pin.position.row},${pin.position.col}` === key);
+      if (existing) {
+        return { mapPins: state.mapPins.filter(pin => pin.id !== existing.id) };
+      }
+      return {
+        mapPins: [
+          ...state.mapPins,
+          {
+            id: `pin-${Date.now()}-${Math.random().toString(16).slice(2, 6)}`,
+            position,
+            createdAt: Date.now(),
+          },
+        ],
+      };
+    });
+  },
+
+  clearMapPins: () => {
+    set({ mapPins: [] });
   },
 
   // 移动单位
