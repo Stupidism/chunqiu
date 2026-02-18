@@ -75,3 +75,13 @@ TODO Sprint (2026-02-12)
   - run-72: unit focus action verified (`message=镜头已定位到单位`).
   - run-73: left drag + minimap drag + keyboard pan path exercised (camera transforms changed as expected with boundary clamp).
   - run-74: narrow viewport city drawer scenario verified with no console/page errors.
+
+TODO Sprint 2 (2026-02-18)
+- [x] Item A: 修复“镜头归位无效”链路。
+  - `GameMap` 归位初始化改为 `requestAnimationFrame` 重试，避免容器尺寸尚未就绪导致首次归位失败后一直不可用。
+  - 去掉归位触发对 `hasAutoCentered` 的依赖，确保按钮/快捷键请求始终生效。
+  - `render_game_to_text` 增加 `camera` 字段，便于自动化断言镜头是否真的变化。
+  - 验证：
+    - run-77（仅右移）：`camera.x = 69.6`
+    - run-76（右移后归位）：`camera.x = 117.6`
+    - 截图对比可见地图回到默认焦点区域，无新 console/page error。

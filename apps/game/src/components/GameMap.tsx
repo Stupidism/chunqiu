@@ -29,6 +29,7 @@ function clamp(value: number, min: number, max: number) {
 export function GameMap() {
   const containerRef = useRef<HTMLDivElement>(null);
   const hasAutoCentered = useRef(false);
+  const recenterRafRef = useRef<number | null>(null);
   const suppressClickUntilRef = useRef(0);
   const cameraRef = useRef({ x: 0, y: 0 });
   const zoomRef = useRef(1);
@@ -203,7 +204,7 @@ export function GameMap() {
     setActiveAction,
   ]);
 
-  // 首次进入自动把地图放到视口中心，避免初始偏到左上角。
+  // 把镜头回到主焦点（当前选择 > 当前玩家单位 > 当前玩家城市 > 地图中心）。
   const recenterCamera = useCallback(() => {
     const container = containerRef.current;
     if (!container) return false;
@@ -249,13 +250,25 @@ export function GameMap() {
   // 首次进入自动把地图放到视口中心，避免初始偏到左上角。
   useEffect(() => {
     if (hasAutoCentered.current) return;
-    if (!recenterCamera()) return;
-    hasAutoCentered.current = true;
+    const tryCenter = (attempt: number) => {
+      if (recenterCamera()) {
+        hasAutoCentered.current = true;
+        return;
+      }
+      if (attempt >= 24) return;
+      recenterRafRef.current = window.requestAnimationFrame(() => tryCenter(attempt + 1));
+    };
+    tryCenter(0);
+    return () => {
+      if (recenterRafRef.current !== null) {
+        window.cancelAnimationFrame(recenterRafRef.current);
+        recenterRafRef.current = null;
+      }
+    };
   }, [recenterCamera]);
 
   // 外部请求镜头归位（按钮/快捷键）。
   useEffect(() => {
-    if (!hasAutoCentered.current) return;
     recenterCamera();
   }, [cameraVersion, recenterCamera]);
 
