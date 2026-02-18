@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import React, { useMemo, useState } from 'react';
 import { Button, Card, CardContent, CardHeader, CardTitle, Badge, OracleIcon } from '@chunqiu/ui';
 import { calculateTileYields, getDistance } from '@chunqiu/game-core';
 import { useGameStore } from '@/stores/gameStore';

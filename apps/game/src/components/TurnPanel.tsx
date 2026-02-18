@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { useGameStore } from '@/stores/gameStore';
 
 export function TurnPanel() {
