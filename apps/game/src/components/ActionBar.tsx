@@ -27,6 +27,8 @@ export function ActionBar() {
     activeAction,
     setActiveAction,
     activePanel,
+    mapLens,
+    setMapLens,
   } = useGameStore();
   const [isFullscreen, setIsFullscreen] = useState(false);
 
@@ -64,7 +66,18 @@ export function ActionBar() {
     };
     const onKeyDown = (event: KeyboardEvent) => {
       const key = event.key.toLowerCase();
-      if (key !== 'f' && key !== ' ' && key !== 'spacebar' && key !== 'p' && key !== '/' && key !== '?') return;
+      if (
+        key !== 'f' &&
+        key !== ' ' &&
+        key !== 'spacebar' &&
+        key !== 'p' &&
+        key !== '/' &&
+        key !== '?' &&
+        key !== 'v' &&
+        key !== 'y'
+      ) {
+        return;
+      }
       if (event.ctrlKey || event.metaKey || event.altKey) return;
       if (isEditable(event.target)) return;
       event.preventDefault();
@@ -87,12 +100,35 @@ export function ActionBar() {
         showMessage(activePanel === 'search' ? '已关闭地图搜索' : '已打开地图搜索');
         return;
       }
+      if (key === 'y') {
+        toggleTileYields();
+        showMessage(showTileYields ? '已隐藏地块收益' : '已显示地块收益');
+        return;
+      }
+      if (key === 'v') {
+        const nextLens = mapLens === 'strategic' ? 'normal' : 'strategic';
+        setMapLens(nextLens);
+        showMessage(nextLens === 'strategic' ? '已启用战略镜头' : '已关闭战略镜头');
+        return;
+      }
       requestCameraRecenter();
       showMessage('镜头已归位');
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [activeAction, activePanel, requestCameraRecenter, setActiveAction, setActivePanel, showMessage, toggleFullscreen]);
+  }, [
+    activeAction,
+    activePanel,
+    mapLens,
+    requestCameraRecenter,
+    setActiveAction,
+    setActivePanel,
+    setMapLens,
+    showMessage,
+    showTileYields,
+    toggleFullscreen,
+    toggleTileYields,
+  ]);
 
   if (!gameState) return null;
 
@@ -104,7 +140,9 @@ export function ActionBar() {
             key={control.id}
             type="button"
             data-testid={
-              control.id === 'yields'
+              control.id === 'lens'
+                ? 'action-lens'
+                : control.id === 'yields'
                 ? 'action-yields'
                 : control.id === 'center'
                   ? 'action-center'
@@ -112,6 +150,8 @@ export function ActionBar() {
                   ? 'action-pin'
                 : control.id === 'search'
                   ? 'action-search'
+                : control.id === 'strategic'
+                  ? 'action-strategic'
                 : control.id === 'fullscreen'
                   ? 'action-fullscreen'
                   : undefined
@@ -137,6 +177,18 @@ export function ActionBar() {
                 showMessage(activePanel === 'search' ? '已关闭地图搜索' : '已打开地图搜索');
                 return;
               }
+              if (control.id === 'lens') {
+                const nextLens = mapLens === 'resource' ? 'normal' : 'resource';
+                setMapLens(nextLens);
+                showMessage(nextLens === 'resource' ? '已启用资源镜头' : '已关闭资源镜头');
+                return;
+              }
+              if (control.id === 'strategic') {
+                const nextLens = mapLens === 'strategic' ? 'normal' : 'strategic';
+                setMapLens(nextLens);
+                showMessage(nextLens === 'strategic' ? '已启用战略镜头' : '已关闭战略镜头');
+                return;
+              }
               if (control.id === 'pin') {
                 if (activeAction === 'pin') {
                   setActiveAction(null);
@@ -156,6 +208,10 @@ export function ActionBar() {
                   ? 'border-bronze-300/90 ring-1 ring-bronze-300/60'
                   : control.id === 'yields' && showTileYields
                     ? 'border-emerald-300/90 ring-1 ring-emerald-400/60'
+                  : control.id === 'lens' && mapLens === 'resource'
+                    ? 'border-emerald-300/90 ring-1 ring-emerald-400/60'
+                  : control.id === 'strategic' && mapLens === 'strategic'
+                    ? 'border-amber-300/90 ring-1 ring-amber-400/60'
                   : control.id === 'search' && activePanel === 'search'
                     ? 'border-cyan-300/90 ring-1 ring-cyan-400/60'
                   : control.id === 'pin' && activeAction === 'pin'

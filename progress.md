@@ -103,3 +103,14 @@ TODO Sprint 2 (2026-02-18)
   - 验证：
     - run-82：`activePanel = "search"`，搜索面板可见，控制台无报错。
     - run-81：点击结果后定位到城市并关闭面板，状态同步正确。
+- [x] Item D: 落地“滤镜 / 战略”镜头切换（替换 ActionBar 开发中占位）。
+  - store 新增 `mapLens: normal | resource | strategic`，并支持状态切换。
+  - ActionBar：
+    - “滤镜”切换资源镜头（高亮含资源地块，弱化普通地块）；
+    - “战略”切换战略镜头（突出战略资源地块）；
+    - 新增快捷键：`Y`（收益开关）、`V`（战略镜头）。
+  - GameMap 根据 `mapLens` 实时应用图层弱化/强化效果。
+  - `render_game_to_text` 新增 `mapLens`，便于自动化断言。
+  - 验证：
+    - run-83：`mapLens = "resource"`，截图可见资源镜头生效。
+    - run-84：`mapLens = "strategic"`，截图可见战略镜头生效。

@@ -22,6 +22,7 @@ interface GameStoreState {
   activePanel: 'tech' | 'diplomacy' | 'stats' | 'chat' | 'help' | 'settings' | 'search' | null;
   activeAction: 'move' | 'pin' | null;
   showTileYields: boolean;
+  mapLens: 'normal' | 'resource' | 'strategic';
   
   // UI状态
   selectedTile: Position | null;
@@ -75,6 +76,7 @@ interface GameStoreState {
   setActivePanel: (panel: GameStoreState['activePanel']) => void;
   setActiveAction: (action: GameStoreState['activeAction']) => void;
   toggleTileYields: () => void;
+  setMapLens: (lens: 'normal' | 'resource' | 'strategic') => void;
 }
 
 let messageTimer: ReturnType<typeof setTimeout> | null = null;
@@ -86,6 +88,7 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
   activePanel: null,
   activeAction: null,
   showTileYields: true,
+  mapLens: 'normal',
   selectedTile: null,
   selectedUnit: null,
   selectedCity: null,
@@ -500,5 +503,9 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
 
   toggleTileYields: () => {
     set(state => ({ showTileYields: !state.showTileYields }));
+  },
+
+  setMapLens: (lens) => {
+    set({ mapLens: lens });
   },
 }));

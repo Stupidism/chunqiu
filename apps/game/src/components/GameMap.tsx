@@ -50,6 +50,7 @@ export function GameMap() {
     visibleTiles,
     exploredTiles,
     showTileYields,
+    mapLens,
     cameraPosition,
     zoom,
     cameraVersion,
@@ -595,6 +596,12 @@ export function GameMap() {
                 hasCity: !!city,
               };
               const tileYields = isVisible && showTileYields ? calculateTileYields(tile) : undefined;
+              const hasResource = Boolean(tile.resource);
+              const hasStrategicResource = tile.resource?.type === 'strategic';
+              const shouldDimByLens =
+                (mapLens === 'resource' && !hasResource && !unit && !city) ||
+                (mapLens === 'strategic' && !hasStrategicResource && !unit && !city);
+              const shouldHighlightStrategic = mapLens === 'strategic' && hasStrategicResource;
 
               if (!isVisible && !isExplored) {
                 // 战争迷雾
@@ -635,6 +642,12 @@ export function GameMap() {
                     unitType={unit?.type}
                     tileYields={tileYields}
                   />
+                  {isVisible && shouldDimByLens && (
+                    <div className="absolute inset-0 bg-slate-950/35 pointer-events-none" />
+                  )}
+                  {isVisible && shouldHighlightStrategic && (
+                    <div className="absolute inset-[14px] rounded-full border border-amber-300/90 shadow-[0_0_8px_rgba(245,158,11,0.55)] pointer-events-none" />
+                  )}
                   {isVisible && (() => {
                     const pin = pinLookup.get(tileKey);
                     if (!pin) return null;
