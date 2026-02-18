@@ -1,29 +1,61 @@
 import { create } from 'zustand';
-import { calculateCityYields } from '@chunqiu/game-core';
+import {
+  attackServerState,
+  buildInCityServerState,
+  computeVisibleAndExploredTiles,
+  endTurnServerState,
+  moveUnitServerState,
+  setUnitStateServerState,
+  surrenderCurrentPlayerServerState,
+  toggleCityWorkedTileServerState,
+  type ToggleCityWorkedTileResult,
+} from './serverTransitions';
 import type { 
   GameState, 
-  GameMap, 
-  Player, 
-  Unit, 
-  City, 
-  Tile, 
   Position,
-  TurnPhase 
 } from '@chunqiu/types';
 
 type InitialSelection = 'unit' | 'city' | 'none';
 type GameInitConfig = Partial<GameState> & { initialSelection?: InitialSelection };
+type ActivePanel = 'tech' | 'diplomacy' | 'stats' | 'chat' | 'help' | 'settings' | 'search' | null;
+type ActiveAction = 'move' | 'pin' | null;
+type MapLens = 'normal' | 'resource' | 'strategic';
+
+interface ServerStateSnapshot {
+  gameState: GameState | null;
+}
+
+interface ClientStateSnapshot {
+  uiMessage: string | null;
+  activePanel: ActivePanel;
+  activeAction: ActiveAction;
+  showTileYields: boolean;
+  mapLens: MapLens;
+  selectedTile: Position | null;
+  selectedUnit: string | null;
+  selectedCity: string | null;
+  hoveredTile: Position | null;
+  cameraPosition: { x: number; y: number };
+  zoom: number;
+  cameraVersion: number;
+  focusUnitId: string | null;
+  mapPins: Array<{ id: string; position: Position; createdAt: number }>;
+  visibleTiles: Set<string>;
+  exploredTiles: Set<string>;
+}
 
 interface GameStoreState {
   // 游戏状态
   gameState: GameState | null;
+  serverState: ServerStateSnapshot;
+  clientState: ClientStateSnapshot;
 
   // UI 提示
   uiMessage: string | null;
-  activePanel: 'tech' | 'diplomacy' | 'stats' | 'chat' | 'help' | 'settings' | 'search' | null;
-  activeAction: 'move' | 'pin' | null;
+  activePanel: ActivePanel;
+  activeAction: ActiveAction;
   showTileYields: boolean;
-  mapLens: 'normal' | 'resource' | 'strategic';
+  mapLens: MapLens;
   
   // UI状态
   selectedTile: Position | null;
@@ -68,7 +100,7 @@ interface GameStoreState {
   toggleCityWorkedTile: (
     cityId: string,
     position: Position
-  ) => 'added' | 'removed' | 'center_locked' | 'population_limit' | 'out_of_bounds' | 'missing';
+  ) => ToggleCityWorkedTileResult;
   
   // 回合操作
   endTurn: () => void;
@@ -76,20 +108,83 @@ interface GameStoreState {
   
   // 视野更新
   updateVisibility: () => void;
+  resetClientState: () => void;
 
   // UI 操作
   showMessage: (message: string) => void;
-  setActivePanel: (panel: GameStoreState['activePanel']) => void;
-  setActiveAction: (action: GameStoreState['activeAction']) => void;
+  setActivePanel: (panel: ActivePanel) => void;
+  setActiveAction: (action: ActiveAction) => void;
   toggleTileYields: () => void;
-  setMapLens: (lens: 'normal' | 'resource' | 'strategic') => void;
+  setMapLens: (lens: MapLens) => void;
 }
 
 let messageTimer: ReturnType<typeof setTimeout> | null = null;
 
+function buildClientStateSnapshot(state: GameStoreState): ClientStateSnapshot {
+  return {
+    uiMessage: state.uiMessage,
+    activePanel: state.activePanel,
+    activeAction: state.activeAction,
+    showTileYields: state.showTileYields,
+    mapLens: state.mapLens,
+    selectedTile: state.selectedTile,
+    selectedUnit: state.selectedUnit,
+    selectedCity: state.selectedCity,
+    hoveredTile: state.hoveredTile,
+    cameraPosition: state.cameraPosition,
+    zoom: state.zoom,
+    cameraVersion: state.cameraVersion,
+    focusUnitId: state.focusUnitId,
+    mapPins: state.mapPins,
+    visibleTiles: state.visibleTiles,
+    exploredTiles: state.exploredTiles,
+  };
+}
+
+function shouldSyncClientSnapshot(state: GameStoreState): boolean {
+  const snapshot = state.clientState;
+  return (
+    snapshot.uiMessage !== state.uiMessage ||
+    snapshot.activePanel !== state.activePanel ||
+    snapshot.activeAction !== state.activeAction ||
+    snapshot.showTileYields !== state.showTileYields ||
+    snapshot.mapLens !== state.mapLens ||
+    snapshot.selectedTile !== state.selectedTile ||
+    snapshot.selectedUnit !== state.selectedUnit ||
+    snapshot.selectedCity !== state.selectedCity ||
+    snapshot.hoveredTile !== state.hoveredTile ||
+    snapshot.cameraPosition !== state.cameraPosition ||
+    snapshot.zoom !== state.zoom ||
+    snapshot.cameraVersion !== state.cameraVersion ||
+    snapshot.focusUnitId !== state.focusUnitId ||
+    snapshot.mapPins !== state.mapPins ||
+    snapshot.visibleTiles !== state.visibleTiles ||
+    snapshot.exploredTiles !== state.exploredTiles
+  );
+}
+
 export const useGameStore = create<GameStoreState>((set, get) => ({
   // 初始状态
   gameState: null,
+  serverState: { gameState: null },
+  clientState: {
+    uiMessage: null,
+    activePanel: null,
+    activeAction: null,
+    showTileYields: true,
+    mapLens: 'normal',
+    selectedTile: null,
+    selectedUnit: null,
+    selectedCity: null,
+    hoveredTile: null,
+    cameraPosition: { x: 0, y: 0 },
+    zoom: 1,
+    cameraVersion: 0,
+    focusUnitId: null,
+    mapPins: [],
+    visibleTiles: new Set(),
+    exploredTiles: new Set(),
+  },
   uiMessage: null,
   activePanel: null,
   activeAction: null,
@@ -231,27 +326,9 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
   moveUnit: (unitId: string, to: Position, cost: number) => {
     const { gameState } = get();
     if (!gameState) return;
-
-    const unit = gameState.units[unitId];
-    if (!unit) return;
-    if (unit.movement <= 0) return;
-
-    const updatedUnit: Unit = {
-      ...unit,
-      position: to,
-      movement: Math.max(0, unit.movement - Math.max(1, cost)),
-    };
-
-    set({
-      gameState: {
-        ...gameState,
-        units: {
-          ...gameState.units,
-          [unitId]: updatedUnit,
-        },
-      },
-    });
-
+    const nextState = moveUnitServerState(gameState, unitId, to, cost);
+    if (nextState === gameState) return;
+    set({ gameState: nextState });
     get().updateVisibility();
   },
 
@@ -259,220 +336,55 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
   attack: (attackerId: string, targetId: string) => {
     const { gameState } = get();
     if (!gameState) return;
-
-    const attacker = gameState.units[attackerId];
-    const target = gameState.units[targetId];
-    if (!attacker || !target) return;
-
-    // 简化的战斗逻辑
-    const damage = 20;
-    const updatedTarget: Unit = {
-      ...target,
-      health: Math.max(0, target.health - damage),
-    };
-
-    const updatedAttacker: Unit = {
-      ...attacker,
-      movement: 0,
-    };
-
-    const newUnits = { ...gameState.units };
-    newUnits[attackerId] = updatedAttacker;
-    
-    if (updatedTarget.health <= 0) {
-      delete newUnits[targetId];
-    } else {
-      newUnits[targetId] = updatedTarget;
-    }
-
-    set({
-      gameState: {
-        ...gameState,
-        units: newUnits,
-      },
-    });
+    const nextState = attackServerState(gameState, attackerId, targetId);
+    if (nextState === gameState) return;
+    set({ gameState: nextState });
   },
 
   // 加固单位
   fortifyUnit: (unitId: string) => {
     const { gameState } = get();
     if (!gameState) return;
-
-    const unit = gameState.units[unitId];
-    if (!unit) return;
-
-    set({
-      gameState: {
-        ...gameState,
-        units: {
-          ...gameState.units,
-          [unitId]: { ...unit, state: 'fortified' },
-        },
-      },
-    });
+    const nextState = setUnitStateServerState(gameState, unitId, 'fortified');
+    if (nextState === gameState) return;
+    set({ gameState: nextState });
   },
 
   // 跳过单位
   skipUnit: (unitId: string) => {
     const { gameState } = get();
     if (!gameState) return;
-
-    const unit = gameState.units[unitId];
-    if (!unit) return;
-
-    set({
-      gameState: {
-        ...gameState,
-        units: {
-          ...gameState.units,
-          [unitId]: { ...unit, state: 'sentry' },
-        },
-      },
-    });
+    const nextState = setUnitStateServerState(gameState, unitId, 'sentry');
+    if (nextState === gameState) return;
+    set({ gameState: nextState });
   },
 
   // 在城市中建造
   buildInCity: (cityId: string, itemType: string, itemId: string) => {
     const { gameState } = get();
     if (!gameState) return;
-
-    const city = gameState.cities[cityId];
-    if (!city) return;
-
-    // 简化的建造逻辑
-    set({
-      gameState: {
-        ...gameState,
-        cities: {
-          ...gameState.cities,
-          [cityId]: {
-            ...city,
-            productionQueue: [
-              ...city.productionQueue,
-              {
-                type: itemType as any,
-                id: itemId,
-                name: itemId,
-                productionCost: 100,
-                progress: 0,
-              },
-            ],
-          },
-        },
-      },
-    });
+    const nextState = buildInCityServerState(gameState, cityId, itemType, itemId);
+    if (nextState === gameState) return;
+    set({ gameState: nextState });
   },
 
   toggleCityWorkedTile: (cityId: string, position: Position) => {
     const { gameState } = get();
     if (!gameState) return 'missing';
-    const city = gameState.cities[cityId];
-    if (!city) return 'missing';
-    if (
-      position.row < 0 ||
-      position.row >= gameState.map.height ||
-      position.col < 0 ||
-      position.col >= gameState.map.width
-    ) {
-      return 'out_of_bounds';
+    const result = toggleCityWorkedTileServerState(gameState, cityId, position);
+    if (result.gameState !== gameState) {
+      set({ gameState: result.gameState });
     }
-
-    const isCenter = city.position.row === position.row && city.position.col === position.col;
-    const alreadyWorked = city.workedTiles.some(
-      tile => tile.row === position.row && tile.col === position.col
-    );
-
-    if (alreadyWorked) {
-      if (isCenter) return 'center_locked';
-      const nextWorkedTiles = city.workedTiles.filter(
-        tile => !(tile.row === position.row && tile.col === position.col)
-      );
-      const updatedCity = {
-        ...city,
-        workedTiles: nextWorkedTiles,
-      };
-      const nextYields = calculateCityYields(updatedCity, gameState.map);
-      set({
-        gameState: {
-          ...gameState,
-          cities: {
-            ...gameState.cities,
-            [cityId]: {
-              ...updatedCity,
-              yields: {
-                ...city.yields,
-                ...nextYields,
-              },
-            },
-          },
-        },
-      });
-      return 'removed';
-    }
-
-    if (city.workedTiles.length >= city.population + 1) {
-      return 'population_limit';
-    }
-
-    const nextWorkedTiles = [...city.workedTiles, position];
-    const updatedCity = {
-      ...city,
-      workedTiles: nextWorkedTiles,
-    };
-    const nextYields = calculateCityYields(updatedCity, gameState.map);
-    set({
-      gameState: {
-        ...gameState,
-        cities: {
-          ...gameState.cities,
-          [cityId]: {
-            ...updatedCity,
-            yields: {
-              ...city.yields,
-              ...nextYields,
-            },
-          },
-        },
-      },
-    });
-    return 'added';
+    return result.result;
   },
 
   // 结束回合
   endTurn: () => {
     const { gameState } = get();
     if (!gameState) return;
-
-    const currentPlayerIndex = gameState.players.findIndex(
-      p => p.id === gameState.currentPlayerId
-    );
-    const nextPlayerIndex = (currentPlayerIndex + 1) % gameState.players.length;
-    const nextPlayerId = gameState.players[nextPlayerIndex].id;
-
-    // 重置所有单位移动力
-    const resetUnits: Record<string, Unit> = {};
-    Object.entries(gameState.units).forEach(([id, unit]) => {
-      if (unit.ownerId === nextPlayerId) {
-        resetUnits[id] = {
-          ...unit,
-          movement: unit.maxMovement,
-          state: 'idle',
-        };
-      } else {
-        resetUnits[id] = unit;
-      }
-    });
-
-    const isNewTurn = nextPlayerIndex === 0;
-
+    const nextState = endTurnServerState(gameState);
     set({
-      gameState: {
-        ...gameState,
-        currentTurn: isNewTurn ? gameState.currentTurn + 1 : gameState.currentTurn,
-        currentPlayerId: nextPlayerId,
-        units: resetUnits,
-        turnStartTime: Date.now(),
-      },
+      gameState: nextState,
       selectedUnit: null,
       selectedCity: null,
       selectedTile: null,
@@ -485,13 +397,10 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
   surrenderCurrentPlayer: () => {
     const { gameState } = get();
     if (!gameState) return;
-    if (gameState.phase === 'ended') return;
-
+    const nextState = surrenderCurrentPlayerServerState(gameState);
+    if (nextState === gameState) return;
     set({
-      gameState: {
-        ...gameState,
-        phase: 'ended',
-      },
+      gameState: nextState,
       selectedUnit: null,
       selectedCity: null,
       selectedTile: null,
@@ -504,82 +413,32 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
   updateVisibility: () => {
     const { gameState } = get();
     if (!gameState) return;
-
-    const visible = new Set<string>();
-    const explored = new Set(get().exploredTiles);
-
-    // 获取当前玩家的所有单位
-    const playerUnits = Object.values(gameState.units).filter(
-      u => u.ownerId === gameState.currentPlayerId
-    );
-
-    // 获取城市视野
-    const playerCities = Object.values(gameState.cities).filter(
-      c => c.ownerId === gameState.currentPlayerId
-    );
-
-    // 如果没有单位和城市，默认显示全图（开发模式）
-    if (playerUnits.length === 0 && playerCities.length === 0) {
-      for (let row = 0; row < gameState.map.height; row++) {
-        for (let col = 0; col < gameState.map.width; col++) {
-          const key = `${row},${col}`;
-          visible.add(key);
-          explored.add(key);
-        }
-      }
-      set({ visibleTiles: visible, exploredTiles: explored });
-      return;
-    }
-
-    // 计算单位视野
-    playerUnits.forEach(unit => {
-      const visionRange = 2;
-      for (let row = -visionRange; row <= visionRange; row++) {
-        for (let col = -visionRange; col <= visionRange; col++) {
-          const distance = Math.abs(row) + Math.abs(col);
-          if (distance <= visionRange) {
-            const targetRow = unit.position.row + row;
-            const targetCol = unit.position.col + col;
-            if (
-              targetRow >= 0 &&
-              targetRow < gameState.map.height &&
-              targetCol >= 0 &&
-              targetCol < gameState.map.width
-            ) {
-              const key = `${targetRow},${targetCol}`;
-              visible.add(key);
-              explored.add(key);
-            }
-          }
-        }
-      }
+    const next = computeVisibleAndExploredTiles(gameState, get().exploredTiles);
+    set({
+      visibleTiles: next.visibleTiles,
+      exploredTiles: next.exploredTiles,
     });
+  },
 
-    // 城市视野
-    playerCities.forEach(city => {
-      const visionRange = 3;
-      for (let row = -visionRange; row <= visionRange; row++) {
-        for (let col = -visionRange; col <= visionRange; col++) {
-          const distance = Math.abs(row) + Math.abs(col);
-          if (distance <= visionRange) {
-            const targetRow = city.position.row + row;
-            const targetCol = city.position.col + col;
-            if (
-              targetRow >= 0 &&
-              targetRow < gameState.map.height &&
-              targetCol >= 0 &&
-              targetCol < gameState.map.width
-            ) {
-              const key = `${targetRow},${targetCol}`;
-              visible.add(key);
-              explored.add(key);
-            }
-          }
-        }
-      }
+  resetClientState: () => {
+    set({
+      uiMessage: null,
+      activePanel: null,
+      activeAction: null,
+      showTileYields: true,
+      mapLens: 'normal',
+      selectedTile: null,
+      selectedUnit: null,
+      selectedCity: null,
+      hoveredTile: null,
+      cameraPosition: { x: 0, y: 0 },
+      zoom: 1,
+      cameraVersion: 0,
+      focusUnitId: null,
+      mapPins: [],
+      visibleTiles: new Set(),
+      exploredTiles: new Set(),
     });
-
-    set({ visibleTiles: visible, exploredTiles: explored });
   },
 
   showMessage: (message: string) => {
@@ -608,3 +467,15 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
     set({ mapLens: lens });
   },
 }));
+
+useGameStore.subscribe(state => {
+  const shouldSyncServer = state.serverState.gameState !== state.gameState;
+  const shouldSyncClient = shouldSyncClientSnapshot(state);
+  if (!shouldSyncServer && !shouldSyncClient) return;
+  useGameStore.setState({
+    serverState: {
+      gameState: state.gameState,
+    },
+    clientState: buildClientStateSnapshot(state),
+  });
+});
