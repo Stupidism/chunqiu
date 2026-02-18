@@ -26,6 +26,7 @@ export function ActionBar() {
     requestCameraRecenter,
     activeAction,
     setActiveAction,
+    activePanel,
   } = useGameStore();
   const [isFullscreen, setIsFullscreen] = useState(false);
 
@@ -63,7 +64,7 @@ export function ActionBar() {
     };
     const onKeyDown = (event: KeyboardEvent) => {
       const key = event.key.toLowerCase();
-      if (key !== 'f' && key !== ' ' && key !== 'spacebar' && key !== 'p') return;
+      if (key !== 'f' && key !== ' ' && key !== 'spacebar' && key !== 'p' && key !== '/' && key !== '?') return;
       if (event.ctrlKey || event.metaKey || event.altKey) return;
       if (isEditable(event.target)) return;
       event.preventDefault();
@@ -81,12 +82,17 @@ export function ActionBar() {
         showMessage('地图钉模式：点击地块放置/移除');
         return;
       }
+      if (key === '/' || key === '?') {
+        setActivePanel('search');
+        showMessage(activePanel === 'search' ? '已关闭地图搜索' : '已打开地图搜索');
+        return;
+      }
       requestCameraRecenter();
       showMessage('镜头已归位');
     };
     window.addEventListener('keydown', onKeyDown);
     return () => window.removeEventListener('keydown', onKeyDown);
-  }, [activeAction, requestCameraRecenter, setActiveAction, showMessage, toggleFullscreen]);
+  }, [activeAction, activePanel, requestCameraRecenter, setActiveAction, setActivePanel, showMessage, toggleFullscreen]);
 
   if (!gameState) return null;
 
@@ -104,6 +110,8 @@ export function ActionBar() {
                   ? 'action-center'
                 : control.id === 'pin'
                   ? 'action-pin'
+                : control.id === 'search'
+                  ? 'action-search'
                 : control.id === 'fullscreen'
                   ? 'action-fullscreen'
                   : undefined
@@ -122,6 +130,11 @@ export function ActionBar() {
               if (control.id === 'center') {
                 requestCameraRecenter();
                 showMessage('镜头已归位');
+                return;
+              }
+              if (control.id === 'search') {
+                setActivePanel('search');
+                showMessage(activePanel === 'search' ? '已关闭地图搜索' : '已打开地图搜索');
                 return;
               }
               if (control.id === 'pin') {
@@ -143,6 +156,8 @@ export function ActionBar() {
                   ? 'border-bronze-300/90 ring-1 ring-bronze-300/60'
                   : control.id === 'yields' && showTileYields
                     ? 'border-emerald-300/90 ring-1 ring-emerald-400/60'
+                  : control.id === 'search' && activePanel === 'search'
+                    ? 'border-cyan-300/90 ring-1 ring-cyan-400/60'
                   : control.id === 'pin' && activeAction === 'pin'
                     ? 'border-sky-300/90 ring-1 ring-sky-400/60'
                   : 'border-bronze-600/60'

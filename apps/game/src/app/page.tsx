@@ -9,6 +9,7 @@ import { TurnPanel } from '@/components/TurnPanel';
 import { Minimap } from '@/components/Minimap';
 import { ActionBar } from '@/components/ActionBar';
 import { UnitActionPanel } from '@/components/UnitActionPanel';
+import { MapSearchPanel } from '@/components/MapSearchPanel';
 import { useGameStore } from '@/stores/gameStore';
 import { generateMap } from '@chunqiu/game-core';
 
@@ -249,16 +250,22 @@ export default function GamePage() {
       </div>
 
       {activePanel && (
-        <div className="absolute top-24 z-20 bg-slate-900/95 border border-bronze-600/50 rounded-lg px-4 py-3 text-bronze-100 shadow-lg" style={{ right: rightStackOffset }}>
-          <div className="text-sm font-medium mb-1">
-            {activePanel === 'tech' && '科技树'}
-            {activePanel === 'diplomacy' && '外交'}
-            {activePanel === 'stats' && '统计'}
-            {activePanel === 'chat' && '聊天'}
-            {activePanel === 'help' && '帮助'}
-            {activePanel === 'settings' && '设置'}
-          </div>
-          <div className="text-xs text-bronze-300">该面板正在开发中</div>
+        <div className="absolute top-24 z-20" style={{ right: rightStackOffset }}>
+          {activePanel === 'search' ? (
+            <MapSearchPanel />
+          ) : (
+            <div className="bg-slate-900/95 border border-bronze-600/50 rounded-lg px-4 py-3 text-bronze-100 shadow-lg">
+              <div className="text-sm font-medium mb-1">
+                {activePanel === 'tech' && '科技树'}
+                {activePanel === 'diplomacy' && '外交'}
+                {activePanel === 'stats' && '统计'}
+                {activePanel === 'chat' && '聊天'}
+                {activePanel === 'help' && '帮助'}
+                {activePanel === 'settings' && '设置'}
+              </div>
+              <div className="text-xs text-bronze-300">该面板正在开发中</div>
+            </div>
+          )}
         </div>
       )}
     </main>

@@ -92,3 +92,14 @@ TODO Sprint 2 (2026-02-18)
   - `render_game_to_text` 新增 `mapPins`，便于自动化校验。
   - 验证：
     - run-79 / run-80：`mapPins` 返回已更新（示例 `[{row:7,col:5}]`、`[{row:7,col:3}]`），页面无新报错。
+- [x] Item C: 落地“搜索”功能（替换 ActionBar 开发中占位）。
+  - 新增 `MapSearchPanel`：
+    - 支持城市名 / 单位名 / 坐标（`7,6`）检索；
+    - 结果点击后自动选中并镜头定位（单位走 `requestFocusUnit`，城市/坐标走 `requestCameraRecenter`）。
+  - ActionBar：
+    - “搜索”按钮改为真实行为，新增高亮态；
+    - 支持 `/` 快捷键开关搜索面板。
+  - `activePanel` 扩展支持 `search`。
+  - 验证：
+    - run-82：`activePanel = "search"`，搜索面板可见，控制台无报错。
+    - run-81：点击结果后定位到城市并关闭面板，状态同步正确。

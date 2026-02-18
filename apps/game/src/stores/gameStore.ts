@@ -19,7 +19,7 @@ interface GameStoreState {
 
   // UI 提示
   uiMessage: string | null;
-  activePanel: 'tech' | 'diplomacy' | 'stats' | 'chat' | 'help' | 'settings' | null;
+  activePanel: 'tech' | 'diplomacy' | 'stats' | 'chat' | 'help' | 'settings' | 'search' | null;
   activeAction: 'move' | 'pin' | null;
   showTileYields: boolean;
   
