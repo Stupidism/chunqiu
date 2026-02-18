@@ -67,6 +67,7 @@ interface GameStoreState {
   
   // 回合操作
   endTurn: () => void;
+  surrenderCurrentPlayer: () => void;
   
   // 视野更新
   updateVisibility: () => void;
@@ -399,6 +400,24 @@ export const useGameStore = create<GameStoreState>((set, get) => ({
     });
 
     get().updateVisibility();
+  },
+
+  surrenderCurrentPlayer: () => {
+    const { gameState } = get();
+    if (!gameState) return;
+    if (gameState.phase === 'ended') return;
+
+    set({
+      gameState: {
+        ...gameState,
+        phase: 'ended',
+      },
+      selectedUnit: null,
+      selectedCity: null,
+      selectedTile: null,
+      activeAction: null,
+      activePanel: null,
+    });
   },
 
   // 更新视野

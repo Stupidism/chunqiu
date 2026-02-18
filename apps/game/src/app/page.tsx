@@ -140,6 +140,7 @@ export default function GamePage() {
         useGameStore.getState();
       return JSON.stringify({
         mode: 'playing',
+        phase: gameState.phase,
         turn: gameState.currentTurn,
         player: gameState.currentPlayerId,
         map: { width: gameState.map.width, height: gameState.map.height },
@@ -248,6 +249,15 @@ export default function GamePage() {
         <div className="absolute top-24 left-1/2 -translate-x-1/2 z-30 pointer-events-none">
           <div className="bg-bronze-800/90 text-bronze-50 px-4 py-2 rounded shadow-md text-sm">
             {uiMessage}
+          </div>
+        </div>
+      )}
+
+      {gameState.phase === 'ended' && (
+        <div className="absolute inset-0 z-40 pointer-events-none flex items-center justify-center">
+          <div className="bg-slate-900/90 border border-bronze-500/70 rounded-xl px-8 py-6 text-center shadow-2xl">
+            <div className="text-bronze-100 text-xl font-semibold mb-2">对局已结束</div>
+            <div className="text-bronze-300 text-sm">你已投降，可返回大厅开启新对局</div>
           </div>
         </div>
       )}

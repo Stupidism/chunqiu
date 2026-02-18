@@ -3,7 +3,7 @@
 import { useGameStore } from '@/stores/gameStore';
 
 export function TurnPanel() {
-  const { gameState, endTurn, showMessage } = useGameStore();
+  const { gameState, endTurn, showMessage, surrenderCurrentPlayer } = useGameStore();
 
   if (!gameState) return null;
 
@@ -39,8 +39,12 @@ export function TurnPanel() {
       <button
         type="button"
         data-testid="turn-end"
-        onClick={endTurn}
-        className="relative w-28 h-28 rounded-full bg-gradient-to-br from-bronze-400 via-bronze-600 to-bronze-800 border-4 border-bronze-300 shadow-[0_10px_20px_rgba(0,0,0,0.4)] text-bronze-50 hover:scale-[1.02] transition-transform"
+        onClick={() => {
+          if (gameState.phase === 'ended') return;
+          endTurn();
+        }}
+        disabled={gameState.phase === 'ended'}
+        className="relative w-28 h-28 rounded-full bg-gradient-to-br from-bronze-400 via-bronze-600 to-bronze-800 border-4 border-bronze-300 shadow-[0_10px_20px_rgba(0,0,0,0.4)] text-bronze-50 hover:scale-[1.02] transition-transform disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:scale-100"
       >
         <div className="absolute inset-2 rounded-full border border-bronze-200/60 bg-slate-900/25" />
         <div className="relative flex flex-col items-center justify-center text-xs font-semibold tracking-wide">
@@ -52,7 +56,14 @@ export function TurnPanel() {
       <button
         type="button"
         data-testid="turn-surrender"
-        onClick={() => showMessage('投降功能开发中')}
+        onClick={() => {
+          if (gameState.phase === 'ended') {
+            showMessage('对局已结束');
+            return;
+          }
+          surrenderCurrentPlayer();
+          showMessage('你已投降，本局已结束');
+        }}
         className="text-xs text-bronze-200 hover:text-bronze-100 px-3 py-1 rounded border border-bronze-600/50 bg-slate-900/70"
       >
         投降

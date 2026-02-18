@@ -114,3 +114,12 @@ TODO Sprint 2 (2026-02-18)
   - 验证：
     - run-83：`mapLens = "resource"`，截图可见资源镜头生效。
     - run-84：`mapLens = "strategic"`，截图可见战略镜头生效。
+- [x] Item E: 落地“投降”流程（替换 TurnPanel 开发中占位）。
+  - store 新增 `surrenderCurrentPlayer`，执行后将对局 `phase` 置为 `ended` 并清空选择态。
+  - TurnPanel：
+    - “投降”按钮改为真实结束对局逻辑；
+    - 对局结束后“下一回合”按钮禁用。
+  - GamePage：`phase=ended` 时显示结束蒙层提示。
+  - `render_game_to_text` 新增 `phase` 字段。
+  - 验证：
+    - run-85：`phase = "ended"`，提示“你已投降，本局已结束”，截图结束蒙层正确显示。
