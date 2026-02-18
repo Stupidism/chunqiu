@@ -136,3 +136,27 @@ TODO Sprint 2 (2026-02-18)
   - 验证：
     - run-86：管理面板可打开（提示“已打开市民管理”）。
     - run-88：点击分配成功，`cities[0].workedTiles` 从 `1 -> 2`，城市产出面板同步变化。
+
+Testing Strategy Shift (2026-02-18)
+- 核心原则调整：
+  - 状态流转正确性 -> 单元测试（纯函数 server transition）。
+  - 特定状态渲染正确性 -> 组件单元测试（状态驱动渲染）。
+  - E2E 只保留关键主流程。
+- 新增纯状态流转单测：
+  - `apps/game/src/stores/serverTransitions.test.ts`（13 cases）
+  - 覆盖：移动、攻击、加固/跳过、建造入队、市民分配、回合切换、投降、视野探索。
+- 新增 server/client 边界单测：
+  - `apps/game/src/stores/gameStore.clientServerState.test.ts`（2 cases）
+  - 覆盖：`resetClientState` 不影响 `serverState.gameState`；服务端动作更新不破坏客户端面板状态。
+- 新增渲染单测：
+  - `apps/game/src/components/TurnPanel.test.tsx`（4 cases）
+  - `apps/game/src/components/CityPanel.test.tsx`（4 cases）
+- 测试基线：
+  - `pnpm --filter @chunqiu/game test:unit` -> 23/23 passed。
+- E2E 收敛并执行关键流程：
+  - run-89：回合流转（turn=2）
+  - run-90：城市建造（productionQueue=1）
+  - run-91：投降结束（phase=ended）
+  - run-92：镜头归位（message=镜头已归位）
+- 文档更新：
+  - `testing/e2e-game-smoke.md` 改为核心流程版，明确“E2E 只测关键链路”。
