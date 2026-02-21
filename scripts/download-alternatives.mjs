@@ -11,7 +11,7 @@ import { dirname, join } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const OUTPUT_DIR = join(__dirname, '..', 'assets', 'oracle-bone-icons');
+const OUTPUT_DIR = join(__dirname, '..', 'packages', 'ui', 'assets', 'oracle-bone-icons');
 const BASE_URL = 'https://www.zdic.net';
 
 // 替代字符配置
@@ -184,5 +184,4 @@ async function main() {
 }
 
 main().catch(console.error);
-
 

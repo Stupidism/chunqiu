@@ -13,7 +13,7 @@ from urllib.parse import quote
 from pathlib import Path
 
 # 输出目录
-OUTPUT_DIR = Path(__file__).parent.parent / "assets" / "oracle-bone-icons"
+OUTPUT_DIR = Path(__file__).parent.parent / "packages" / "ui" / "assets" / "oracle-bone-icons"
 
 # 需要下载的所有汉字（繁体）
 CHARACTERS = {
@@ -196,4 +196,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

@@ -6,7 +6,7 @@
 
 set -e
 
-OUTPUT_DIR="../assets/oracle-bone-icons"
+OUTPUT_DIR="../packages/ui/assets/oracle-bone-icons"
 BASE_URL="https://oraclebone.org/character"
 
 # 定义要下载的汉字（拼音_汉字格式）
@@ -157,4 +157,3 @@ echo "========================================"
 echo ""
 echo "注意: 部分文件可能需要手动从网站下载"
 echo "访问: https://oraclebone.org/"
-

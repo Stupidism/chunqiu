@@ -28,3 +28,6 @@ output
 # Editor
 .idea
 .vscode
+
+# Generated icon assets (source of truth: packages/ui/assets/oracle-bone-icons)
+apps/*/public/oracle-bone-icons
