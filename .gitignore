@@ -31,3 +31,6 @@ output
 
 # Generated icon assets (source of truth: packages/ui/assets/oracle-bone-icons)
 apps/*/public/oracle-bone-icons
+
+# Generated translation cache
+packages/ui/assets/oracle-bone-icons/.civ6-phrase-zh-cache.json
