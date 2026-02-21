@@ -1,0 +1,234 @@
+/* 甲骨文设计系统 - 配色方案 */
+
+:root {
+  /* ==================== 主色调 - 青铜器绿锈 ==================== */
+  --bronze-50: #f0f7f4;
+  --bronze-100: #d9ebe3;
+  --bronze-200: #b3d7c7;
+  --bronze-300: #86bda5;
+  --bronze-400: #5a9f81;
+  --bronze-500: #3d8268;  /* 主色 */
+  --bronze-600: #2f6854;
+  --bronze-700: #275445;
+  --bronze-800: #224439;
+  --bronze-900: #1d3830;
+  --bronze-950: #0f1f1b;
+
+  /* ==================== 辅助色 - 陶器橙（橙色系） ==================== */
+  --terracotta-50: #fff7ed;
+  --terracotta-100: #ffedd5;
+  --terracotta-200: #fed7aa;
+  --terracotta-300: #fdba74;
+  --terracotta-400: #fb923c;
+  --terracotta-500: #f97316;  /* 主色 - 陶器橙 */
+  --terracotta-600: #ea580c;
+  --terracotta-700: #c2410c;
+  --terracotta-800: #9a3412;
+  --terracotta-900: #7c2d12;
+  --terracotta-950: #431407;
+
+  /* ==================== 点缀色 - 玉石青（更蓝） ==================== */
+  --jade-50: #ecfeff;
+  --jade-100: #cffafe;
+  --jade-200: #a5f3fc;
+  --jade-300: #67e8f9;
+  --jade-400: #22d3ee;
+  --jade-500: #06b6d4;  /* 主色 - 更蓝的青色 */
+  --jade-600: #0891b2;
+  --jade-700: #0e7490;
+  --jade-800: #155e75;
+  --jade-900: #164e63;
+  --jade-950: #083344;
+
+  /* ==================== 点缀色 - 黄金（更金） ==================== */
+  --gold-50: #fffbeb;
+  --gold-100: #fef3c7;
+  --gold-200: #fde68a;
+  --gold-300: #fcd34d;
+  --gold-400: #fbbf24;
+  --gold-500: #f59e0b;  /* 主色 - 更金黄 */
+  --gold-600: #d97706;
+  --gold-700: #b45309;
+  --gold-800: #92400e;
+  --gold-900: #78350f;
+  --gold-950: #451a03;
+
+  /* ==================== 新增 - 紫玉（紫色系） ==================== */
+  --purple-50: #faf5ff;
+  --purple-100: #f3e8ff;
+  --purple-200: #e9d5ff;
+  --purple-300: #d8b4fe;
+  --purple-400: #c084fc;
+  --purple-500: #a855f7;  /* 主色 - 紫玉色 */
+  --purple-600: #9333ea;
+  --purple-700: #7e22ce;
+  --purple-800: #6b21a8;
+  --purple-900: #581c87;
+  --purple-950: #3b0764;
+
+  /* ==================== 新增 - 朱砂（红色系） ==================== */
+  --cinnabar-50: #fef2f2;
+  --cinnabar-100: #fee2e2;
+  --cinnabar-200: #fecaca;
+  --cinnabar-300: #fca5a5;
+  --cinnabar-400: #f87171;
+  --cinnabar-500: #ef4444;  /* 主色 - 朱砂红 */
+  --cinnabar-600: #dc2626;
+  --cinnabar-700: #b91c1c;
+  --cinnabar-800: #991b1b;
+  --cinnabar-900: #7f1d1d;
+  --cinnabar-950: #450a0a;
+
+  /* ==================== 背景色 - 竹简/丝帛 ==================== */
+  --parchment-50: #fefdfb;
+  --parchment-100: #fdf9f0;
+  --parchment-200: #f9f0dc;
+  --parchment-300: #f3e4c3;
+  --parchment-400: #e9d19e;
+  --parchment-500: #dbb978;
+  --parchment-600: #c99d4f;
+  --parchment-700: #a67c3a;
+  --parchment-800: #876434;
+  --parchment-900: #6f532e;
+  --parchment-950: #3d2b16;
+
+  /* ==================== 墨色 (文字) ==================== */
+  --ink-50: #f8f7f6;
+  --ink-100: #e8e6e3;
+  --ink-200: #d3d0cb;
+  --ink-300: #b5b0a8;
+  --ink-400: #918a7e;
+  --ink-500: #766e62;
+  --ink-600: #635b50;
+  --ink-700: #524b43;
+  --ink-800: #46403a;
+  --ink-900: #3d3834;
+  --ink-950: #211e1b;
+
+  /* ==================== 语义化颜色 ==================== */
+  --color-primary: var(--bronze-500);
+  --color-primary-hover: var(--bronze-600);
+  --color-secondary: var(--terracotta-500);
+  --color-accent: var(--jade-500);
+  --color-warning: var(--gold-500);
+  --color-danger: var(--terracotta-600);
+  --color-success: var(--bronze-500);
+  
+  --color-background: var(--parchment-100);
+  --color-surface: var(--parchment-50);
+  --color-surface-elevated: #ffffff;
+  
+  --color-text-primary: var(--ink-900);
+  --color-text-secondary: var(--ink-600);
+  --color-text-muted: var(--ink-400);
+  --color-text-inverse: var(--parchment-50);
+}
+
+/* 暗色模式 */
+.dark {
+  --color-background: var(--ink-950);
+  --color-surface: var(--ink-900);
+  --color-surface-elevated: var(--ink-800);
+  
+  --color-text-primary: var(--parchment-100);
+  --color-text-secondary: var(--parchment-300);
+  --color-text-muted: var(--ink-400);
+}
+
+@theme inline {
+  --color-bronze-50: var(--bronze-50);
+  --color-bronze-100: var(--bronze-100);
+  --color-bronze-200: var(--bronze-200);
+  --color-bronze-300: var(--bronze-300);
+  --color-bronze-400: var(--bronze-400);
+  --color-bronze-500: var(--bronze-500);
+  --color-bronze-600: var(--bronze-600);
+  --color-bronze-700: var(--bronze-700);
+  --color-bronze-800: var(--bronze-800);
+  --color-bronze-900: var(--bronze-900);
+  --color-bronze-950: var(--bronze-950);
+
+  --color-terracotta-50: var(--terracotta-50);
+  --color-terracotta-100: var(--terracotta-100);
+  --color-terracotta-200: var(--terracotta-200);
+  --color-terracotta-300: var(--terracotta-300);
+  --color-terracotta-400: var(--terracotta-400);
+  --color-terracotta-500: var(--terracotta-500);
+  --color-terracotta-600: var(--terracotta-600);
+  --color-terracotta-700: var(--terracotta-700);
+  --color-terracotta-800: var(--terracotta-800);
+  --color-terracotta-900: var(--terracotta-900);
+  --color-terracotta-950: var(--terracotta-950);
+
+  --color-jade-50: var(--jade-50);
+  --color-jade-100: var(--jade-100);
+  --color-jade-200: var(--jade-200);
+  --color-jade-300: var(--jade-300);
+  --color-jade-400: var(--jade-400);
+  --color-jade-500: var(--jade-500);
+  --color-jade-600: var(--jade-600);
+  --color-jade-700: var(--jade-700);
+  --color-jade-800: var(--jade-800);
+  --color-jade-900: var(--jade-900);
+  --color-jade-950: var(--jade-950);
+
+  --color-gold-50: var(--gold-50);
+  --color-gold-100: var(--gold-100);
+  --color-gold-200: var(--gold-200);
+  --color-gold-300: var(--gold-300);
+  --color-gold-400: var(--gold-400);
+  --color-gold-500: var(--gold-500);
+  --color-gold-600: var(--gold-600);
+  --color-gold-700: var(--gold-700);
+  --color-gold-800: var(--gold-800);
+  --color-gold-900: var(--gold-900);
+  --color-gold-950: var(--gold-950);
+
+  --color-purple-50: var(--purple-50);
+  --color-purple-100: var(--purple-100);
+  --color-purple-200: var(--purple-200);
+  --color-purple-300: var(--purple-300);
+  --color-purple-400: var(--purple-400);
+  --color-purple-500: var(--purple-500);
+  --color-purple-600: var(--purple-600);
+  --color-purple-700: var(--purple-700);
+  --color-purple-800: var(--purple-800);
+  --color-purple-900: var(--purple-900);
+  --color-purple-950: var(--purple-950);
+
+  --color-cinnabar-50: var(--cinnabar-50);
+  --color-cinnabar-100: var(--cinnabar-100);
+  --color-cinnabar-200: var(--cinnabar-200);
+  --color-cinnabar-300: var(--cinnabar-300);
+  --color-cinnabar-400: var(--cinnabar-400);
+  --color-cinnabar-500: var(--cinnabar-500);
+  --color-cinnabar-600: var(--cinnabar-600);
+  --color-cinnabar-700: var(--cinnabar-700);
+  --color-cinnabar-800: var(--cinnabar-800);
+  --color-cinnabar-900: var(--cinnabar-900);
+  --color-cinnabar-950: var(--cinnabar-950);
+
+  --color-parchment-50: var(--parchment-50);
+  --color-parchment-100: var(--parchment-100);
+  --color-parchment-200: var(--parchment-200);
+  --color-parchment-300: var(--parchment-300);
+  --color-parchment-400: var(--parchment-400);
+  --color-parchment-500: var(--parchment-500);
+  --color-parchment-600: var(--parchment-600);
+  --color-parchment-700: var(--parchment-700);
+  --color-parchment-800: var(--parchment-800);
+  --color-parchment-900: var(--parchment-900);
+  --color-parchment-950: var(--parchment-950);
+
+  --color-ink-50: var(--ink-50);
+  --color-ink-100: var(--ink-100);
+  --color-ink-200: var(--ink-200);
+  --color-ink-300: var(--ink-300);
+  --color-ink-400: var(--ink-400);
+  --color-ink-500: var(--ink-500);
+  --color-ink-600: var(--ink-600);
+  --color-ink-700: var(--ink-700);
+  --color-ink-800: var(--ink-800);
+  --color-ink-900: var(--ink-900);
+  --color-ink-950: var(--ink-950);
+}
