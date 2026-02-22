@@ -50,7 +50,12 @@ function byLocale(a, b) {
 
 async function parseCategory(dirPath) {
   const names = (await readdir(dirPath, { withFileTypes: true }))
-    .filter((d) => d.isFile() && !d.name.startsWith('.') && !d.name.toLowerCase().endsWith('.md'))
+    .filter(
+      (d) =>
+        d.isFile() &&
+        !d.name.startsWith('.') &&
+        /^.+\.(oracle|bronze|seal)\.svg$/i.test(d.name),
+    )
     .map((d) => d.name)
     .sort(byLocale);
 
@@ -58,26 +63,16 @@ async function parseCategory(dirPath) {
   let oracle = 0;
   let bronze = 0;
   let seal = 0;
-  let legacy = 0;
 
   for (const file of names) {
-    let m = file.match(/^(.+)\.(oracle|bronze|seal)\.svg$/);
+    const m = file.match(/^(.+)\.(oracle|bronze|seal)\.svg$/);
     if (m) {
       const [, char, variant] = m;
-      if (!chars.has(char)) chars.set(char, { oracle: [], bronze: [], seal: [], legacy: [] });
+      if (!chars.has(char)) chars.set(char, { oracle: [], bronze: [], seal: [] });
       chars.get(char)[variant].push(file);
       if (variant === 'oracle') oracle++;
       if (variant === 'bronze') bronze++;
       if (variant === 'seal') seal++;
-      continue;
-    }
-
-    m = file.match(/^(.+)\.(svg|png|jpg|jpeg)$/i);
-    if (m) {
-      const [, char] = m;
-      if (!chars.has(char)) chars.set(char, { oracle: [], bronze: [], seal: [], legacy: [] });
-      chars.get(char).legacy.push(file);
-      legacy++;
     }
   }
 
@@ -87,7 +82,6 @@ async function parseCategory(dirPath) {
     oracle,
     bronze,
     seal,
-    legacy,
     charEntries: [...chars.entries()].sort((a, b) => byLocale(a[0], b[0])),
   };
 }
@@ -105,7 +99,6 @@ async function main() {
   let totalOracle = 0;
   let totalBronze = 0;
   let totalSeal = 0;
-  let totalLegacy = 0;
 
   const rows = [];
   for (const category of categories) {
@@ -116,9 +109,8 @@ async function main() {
     totalOracle += parsed.oracle;
     totalBronze += parsed.bronze;
     totalSeal += parsed.seal;
-    totalLegacy += parsed.legacy;
     rows.push(
-      `| ${category} | ${parsed.charCount} | ${parsed.fileCount} | ${parsed.oracle} | ${parsed.bronze} | ${parsed.seal} | ${parsed.legacy} |`,
+      `| ${category} | ${parsed.charCount} | ${parsed.fileCount} | ${parsed.oracle} | ${parsed.bronze} | ${parsed.seal} |`,
     );
   }
 
@@ -135,7 +127,6 @@ async function main() {
   lines.push(`- 字符数: ${totalChars}`);
   lines.push(`- 文件总数: ${totalFiles}`);
   lines.push(`- 三版本文件: oracle ${totalOracle} / bronze ${totalBronze} / seal ${totalSeal}`);
-  lines.push(`- 历史文件(单文件版): ${totalLegacy}`);
   lines.push('');
   lines.push('## Figma AI 复合词使用（重点）');
   lines.push('');
@@ -181,8 +172,8 @@ async function main() {
 
   lines.push('## 类别统计');
   lines.push('');
-  lines.push('| 类别 | 字符数 | 文件数 | oracle | bronze | seal | legacy |');
-  lines.push('|---|---:|---:|---:|---:|---:|---:|');
+  lines.push('| 类别 | 字符数 | 文件数 | oracle | bronze | seal |');
+  lines.push('|---|---:|---:|---:|---:|---:|');
   lines.push(...rows);
 
   for (const category of categories) {
@@ -198,10 +189,9 @@ async function main() {
         `oracle:${files.oracle.length ? 'Y' : '-'}`,
         `bronze:${files.bronze.length ? 'Y' : '-'}`,
         `seal:${files.seal.length ? 'Y' : '-'}`,
-        `legacy:${files.legacy.length ? 'Y' : '-'}`,
       ].join(' ');
 
-      const all = [...files.oracle, ...files.bronze, ...files.seal, ...files.legacy].sort(byLocale);
+      const all = [...files.oracle, ...files.bronze, ...files.seal].sort(byLocale);
       const fileList = all.map((f) => `\`${f}\``).join('<br>');
       lines.push(`| ${char} | ${version} | ${fileList} |`);
     }

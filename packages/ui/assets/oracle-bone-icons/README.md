@@ -2,7 +2,7 @@
 
 > 自动生成，包含同字三版本：`oracle`（甲骨文）/ `bronze`（金文）/ `seal`（小篆）。
 
-生成时间: 2026-02-21T13:21:16.530Z
+生成时间: 2026-02-21T13:24:46.533Z
 
 ## 总览
 
@@ -10,7 +10,6 @@
 - 字符数: 4569
 - 文件总数: 9136
 - 三版本文件: oracle 1773 / bronze 2824 / seal 4539
-- 历史文件(单文件版): 0
 
 ## Figma AI 复合词使用（重点）
 
@@ -69,4814 +68,4814 @@
 
 ## 类别统计
 
-| 类别 | 字符数 | 文件数 | oracle | bronze | seal | legacy |
-|---|---:|---:|---:|---:|---:|---:|
-| advisors | 1 | 3 | 1 | 1 | 1 | 0 |
-| beliefs | 208 | 418 | 78 | 134 | 206 | 0 |
-| buildings | 328 | 655 | 129 | 202 | 324 | 0 |
-| citybanner | 1 | 1 | 0 | 0 | 1 | 0 |
-| civics | 241 | 503 | 102 | 161 | 240 | 0 |
-| civilizations | 294 | 592 | 114 | 186 | 292 | 0 |
-| civilopedia | 1 | 3 | 1 | 1 | 1 | 0 |
-| diplomacy | 120 | 242 | 50 | 73 | 119 | 0 |
-| districts | 116 | 233 | 44 | 74 | 115 | 0 |
-| emergencies | 1 | 1 | 0 | 0 | 1 | 0 |
-| environmentaleffects | 1 | 1 | 0 | 0 | 1 | 0 |
-| eras | 4 | 11 | 3 | 4 | 4 | 0 |
-| gamesettings | 1 | 1 | 0 | 0 | 1 | 0 |
-| governments | 1 | 3 | 1 | 1 | 1 | 0 |
-| governors | 1 | 1 | 0 | 0 | 1 | 0 |
-| greatpeople | 1 | 2 | 0 | 1 | 1 | 0 |
-| greatworks | 202 | 411 | 83 | 127 | 201 | 0 |
-| historicmoments | 1 | 3 | 1 | 1 | 1 | 0 |
-| improvements | 1 | 1 | 0 | 0 | 1 | 0 |
-| leaders | 278 | 555 | 103 | 176 | 276 | 0 |
-| mappins | 1 | 1 | 0 | 0 | 1 | 0 |
-| notifications | 438 | 875 | 176 | 266 | 433 | 0 |
-| policies | 438 | 885 | 172 | 278 | 435 | 0 |
-| projects | 240 | 461 | 88 | 134 | 239 | 0 |
-| promotions | 270 | 530 | 102 | 160 | 268 | 0 |
-| proposals | 1 | 2 | 0 | 1 | 1 | 0 |
-| resources | 116 | 211 | 37 | 59 | 115 | 0 |
-| routes | 1 | 3 | 1 | 1 | 1 | 0 |
-| stats | 149 | 289 | 55 | 87 | 147 | 0 |
-| status | 24 | 50 | 9 | 17 | 24 | 0 |
-| teams | 6 | 14 | 3 | 5 | 6 | 0 |
-| technologies | 185 | 383 | 75 | 124 | 184 | 0 |
-| terrain | 173 | 340 | 68 | 99 | 173 | 0 |
-| ui | 8 | 23 | 7 | 8 | 8 | 0 |
-| unitabilities | 1 | 2 | 0 | 1 | 1 | 0 |
-| units | 681 | 1347 | 251 | 416 | 680 | 0 |
-| victories | 1 | 1 | 0 | 0 | 1 | 0 |
-| wonders | 25 | 54 | 12 | 17 | 25 | 0 |
-| worldbuilder | 1 | 2 | 0 | 1 | 1 | 0 |
-| yields | 8 | 23 | 7 | 8 | 8 | 0 |
+| 类别 | 字符数 | 文件数 | oracle | bronze | seal |
+|---|---:|---:|---:|---:|---:|
+| advisors | 1 | 3 | 1 | 1 | 1 |
+| beliefs | 208 | 418 | 78 | 134 | 206 |
+| buildings | 328 | 655 | 129 | 202 | 324 |
+| citybanner | 1 | 1 | 0 | 0 | 1 |
+| civics | 241 | 503 | 102 | 161 | 240 |
+| civilizations | 294 | 592 | 114 | 186 | 292 |
+| civilopedia | 1 | 3 | 1 | 1 | 1 |
+| diplomacy | 120 | 242 | 50 | 73 | 119 |
+| districts | 116 | 233 | 44 | 74 | 115 |
+| emergencies | 1 | 1 | 0 | 0 | 1 |
+| environmentaleffects | 1 | 1 | 0 | 0 | 1 |
+| eras | 4 | 11 | 3 | 4 | 4 |
+| gamesettings | 1 | 1 | 0 | 0 | 1 |
+| governments | 1 | 3 | 1 | 1 | 1 |
+| governors | 1 | 1 | 0 | 0 | 1 |
+| greatpeople | 1 | 2 | 0 | 1 | 1 |
+| greatworks | 202 | 411 | 83 | 127 | 201 |
+| historicmoments | 1 | 3 | 1 | 1 | 1 |
+| improvements | 1 | 1 | 0 | 0 | 1 |
+| leaders | 278 | 555 | 103 | 176 | 276 |
+| mappins | 1 | 1 | 0 | 0 | 1 |
+| notifications | 438 | 875 | 176 | 266 | 433 |
+| policies | 438 | 885 | 172 | 278 | 435 |
+| projects | 240 | 461 | 88 | 134 | 239 |
+| promotions | 270 | 530 | 102 | 160 | 268 |
+| proposals | 1 | 2 | 0 | 1 | 1 |
+| resources | 116 | 211 | 37 | 59 | 115 |
+| routes | 1 | 3 | 1 | 1 | 1 |
+| stats | 149 | 289 | 55 | 87 | 147 |
+| status | 24 | 50 | 9 | 17 | 24 |
+| teams | 6 | 14 | 3 | 5 | 6 |
+| technologies | 185 | 383 | 75 | 124 | 184 |
+| terrain | 173 | 340 | 68 | 99 | 173 |
+| ui | 8 | 23 | 7 | 8 | 8 |
+| unitabilities | 1 | 2 | 0 | 1 | 1 |
+| units | 681 | 1347 | 251 | 416 | 680 |
+| victories | 1 | 1 | 0 | 0 | 1 |
+| wonders | 25 | 54 | 12 | 17 | 25 |
+| worldbuilder | 1 | 2 | 0 | 1 | 1 |
+| yields | 8 | 23 | 7 | 8 | 8 |
 
 ## advisors
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 师 | oracle:Y bronze:Y seal:Y legacy:- | `师.bronze.svg`<br>`师.oracle.svg`<br>`师.seal.svg` |
+| 师 | oracle:Y bronze:Y seal:Y | `师.bronze.svg`<br>`师.oracle.svg`<br>`师.seal.svg` |
 
 ## beliefs
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 阿 | oracle:- bronze:Y seal:Y legacy:- | `阿.bronze.svg`<br>`阿.seal.svg` |
-| 埃 | oracle:- bronze:- seal:Y legacy:- | `埃.seal.svg` |
-| 奥 | oracle:- bronze:- seal:Y legacy:- | `奥.seal.svg` |
-| 榜 | oracle:- bronze:- seal:Y legacy:- | `榜.seal.svg` |
-| 宝 | oracle:Y bronze:Y seal:Y legacy:- | `宝.bronze.svg`<br>`宝.oracle.svg`<br>`宝.seal.svg` |
-| 碑 | oracle:- bronze:- seal:Y legacy:- | `碑.seal.svg` |
-| 贝 | oracle:Y bronze:Y seal:Y legacy:- | `贝.bronze.svg`<br>`贝.oracle.svg`<br>`贝.seal.svg` |
-| 比 | oracle:Y bronze:Y seal:Y legacy:- | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
-| 布 | oracle:- bronze:Y seal:Y legacy:- | `布.bronze.svg`<br>`布.seal.svg` |
-| 财 | oracle:- bronze:- seal:Y legacy:- | `财.seal.svg` |
-| 禅 | oracle:- bronze:- seal:Y legacy:- | `禅.seal.svg` |
-| 产 | oracle:- bronze:Y seal:Y legacy:- | `产.bronze.svg`<br>`产.seal.svg` |
-| 唱 | oracle:- bronze:- seal:Y legacy:- | `唱.seal.svg` |
-| 朝 | oracle:Y bronze:Y seal:Y legacy:- | `朝.bronze.svg`<br>`朝.oracle.svg`<br>`朝.seal.svg` |
-| 忱 | oracle:- bronze:- seal:Y legacy:- | `忱.seal.svg` |
-| 城 | oracle:- bronze:Y seal:Y legacy:- | `城.bronze.svg`<br>`城.seal.svg` |
-| 乘 | oracle:Y bronze:Y seal:Y legacy:- | `乘.bronze.svg`<br>`乘.oracle.svg`<br>`乘.seal.svg` |
-| 传 | oracle:Y bronze:Y seal:Y legacy:- | `传.bronze.svg`<br>`传.oracle.svg`<br>`传.seal.svg` |
-| 达 | oracle:Y bronze:- seal:- legacy:- | `达.oracle.svg` |
-| 大 | oracle:Y bronze:Y seal:Y legacy:- | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
-| 道 | oracle:- bronze:Y seal:Y legacy:- | `道.bronze.svg`<br>`道.seal.svg` |
-| 德 | oracle:Y bronze:Y seal:Y legacy:- | `德.bronze.svg`<br>`德.oracle.svg`<br>`德.seal.svg` |
-| 地 | oracle:- bronze:Y seal:Y legacy:- | `地.bronze.svg`<br>`地.seal.svg` |
-| 殿 | oracle:- bronze:Y seal:Y legacy:- | `殿.bronze.svg`<br>`殿.seal.svg` |
-| 丁 | oracle:Y bronze:Y seal:Y legacy:- | `丁.bronze.svg`<br>`丁.oracle.svg`<br>`丁.seal.svg` |
-| 度 | oracle:Y bronze:Y seal:Y legacy:- | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
-| 锻 | oracle:- bronze:- seal:Y legacy:- | `锻.seal.svg` |
-| 尔 | oracle:- bronze:Y seal:Y legacy:- | `尔.bronze.svg`<br>`尔.seal.svg` |
-| 丰 | oracle:Y bronze:Y seal:Y legacy:- | `丰.bronze.svg`<br>`丰.oracle.svg`<br>`丰.seal.svg` |
-| 佛 | oracle:- bronze:- seal:Y legacy:- | `佛.seal.svg` |
-| 甘 | oracle:Y bronze:Y seal:Y legacy:- | `甘.bronze.svg`<br>`甘.oracle.svg`<br>`甘.seal.svg` |
-| 感 | oracle:- bronze:Y seal:Y legacy:- | `感.bronze.svg`<br>`感.seal.svg` |
-| 刚 | oracle:Y bronze:Y seal:Y legacy:- | `刚.bronze.svg`<br>`刚.oracle.svg`<br>`刚.seal.svg` |
-| 高 | oracle:Y bronze:Y seal:Y legacy:- | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
-| 隔 | oracle:- bronze:- seal:Y legacy:- | `隔.seal.svg` |
-| 工 | oracle:Y bronze:Y seal:Y legacy:- | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
-| 姑 | oracle:- bronze:Y seal:Y legacy:- | `姑.bronze.svg`<br>`姑.seal.svg` |
-| 管 | oracle:- bronze:- seal:Y legacy:- | `管.seal.svg` |
-| 光 | oracle:Y bronze:Y seal:Y legacy:- | `光.bronze.svg`<br>`光.oracle.svg`<br>`光.seal.svg` |
-| 海 | oracle:- bronze:Y seal:Y legacy:- | `海.bronze.svg`<br>`海.seal.svg` |
-| 捍 | oracle:- bronze:Y seal:Y legacy:- | `捍.bronze.svg`<br>`捍.seal.svg` |
-| 合 | oracle:Y bronze:Y seal:Y legacy:- | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
-| 河 | oracle:Y bronze:Y seal:Y legacy:- | `河.bronze.svg`<br>`河.oracle.svg`<br>`河.seal.svg` |
-| 荷 | oracle:- bronze:- seal:Y legacy:- | `荷.seal.svg` |
-| 盒 | oracle:Y bronze:Y seal:Y legacy:- | `盒.bronze.svg`<br>`盒.oracle.svg`<br>`盒.seal.svg` |
-| 护 | oracle:- bronze:- seal:Y legacy:- | `护.seal.svg` |
-| 笏 | oracle:- bronze:- seal:Y legacy:- | `笏.seal.svg` |
-| 花 | oracle:- bronze:- seal:Y legacy:- | `花.seal.svg` |
-| 化 | oracle:Y bronze:Y seal:Y legacy:- | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
-| 话 | oracle:- bronze:Y seal:Y legacy:- | `话.bronze.svg`<br>`话.seal.svg` |
-| 皇 | oracle:Y bronze:Y seal:Y legacy:- | `皇.bronze.svg`<br>`皇.oracle.svg`<br>`皇.seal.svg` |
-| 灰 | oracle:- bronze:- seal:Y legacy:- | `灰.seal.svg` |
-| 回 | oracle:Y bronze:Y seal:Y legacy:- | `回.bronze.svg`<br>`回.oracle.svg`<br>`回.seal.svg` |
-| 会 | oracle:Y bronze:Y seal:Y legacy:- | `会.bronze.svg`<br>`会.oracle.svg`<br>`会.seal.svg` |
-| 活 | oracle:- bronze:- seal:Y legacy:- | `活.seal.svg` |
-| 火 | oracle:Y bronze:- seal:Y legacy:- | `火.oracle.svg`<br>`火.seal.svg` |
-| 极 | oracle:- bronze:- seal:Y legacy:- | `极.seal.svg` |
-| 纪 | oracle:- bronze:Y seal:Y legacy:- | `纪.bronze.svg`<br>`纪.seal.svg` |
-| 加 | oracle:- bronze:Y seal:Y legacy:- | `加.bronze.svg`<br>`加.seal.svg` |
-| 伽 | oracle:- bronze:- seal:Y legacy:- | `伽.seal.svg` |
-| 匠 | oracle:- bronze:- seal:Y legacy:- | `匠.seal.svg` |
-| 教 | oracle:Y bronze:Y seal:Y legacy:- | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
-| 节 | oracle:- bronze:Y seal:Y legacy:- | `节.bronze.svg`<br>`节.seal.svg` |
-| 界 | oracle:- bronze:- seal:Y legacy:- | `界.seal.svg` |
-| 金 | oracle:- bronze:Y seal:Y legacy:- | `金.bronze.svg`<br>`金.seal.svg` |
-| 经 | oracle:- bronze:Y seal:Y legacy:- | `经.bronze.svg`<br>`经.seal.svg` |
-| 景 | oracle:- bronze:- seal:Y legacy:- | `景.seal.svg` |
-| 径 | oracle:- bronze:- seal:Y legacy:- | `径.seal.svg` |
-| 居 | oracle:- bronze:Y seal:Y legacy:- | `居.bronze.svg`<br>`居.seal.svg` |
-| 聚 | oracle:- bronze:- seal:Y legacy:- | `聚.seal.svg` |
-| 开 | oracle:- bronze:- seal:Y legacy:- | `开.seal.svg` |
-| 克 | oracle:Y bronze:Y seal:Y legacy:- | `克.bronze.svg`<br>`克.oracle.svg`<br>`克.seal.svg` |
-| 空 | oracle:- bronze:Y seal:Y legacy:- | `空.bronze.svg`<br>`空.seal.svg` |
-| 口 | oracle:Y bronze:Y seal:Y legacy:- | `口.bronze.svg`<br>`口.oracle.svg`<br>`口.seal.svg` |
-| 跨 | oracle:- bronze:- seal:Y legacy:- | `跨.seal.svg` |
-| 扩 | oracle:- bronze:- seal:Y legacy:- | `扩.seal.svg` |
-| 阔 | oracle:- bronze:Y seal:Y legacy:- | `阔.bronze.svg`<br>`阔.seal.svg` |
-| 拉 | oracle:- bronze:- seal:Y legacy:- | `拉.seal.svg` |
-| 兰 | oracle:- bronze:- seal:Y legacy:- | `兰.seal.svg` |
-| 乐 | oracle:Y bronze:Y seal:Y legacy:- | `乐.bronze.svg`<br>`乐.oracle.svg`<br>`乐.seal.svg` |
-| 离 | oracle:- bronze:Y seal:Y legacy:- | `离.bronze.svg`<br>`离.seal.svg` |
-| 理 | oracle:- bronze:Y seal:Y legacy:- | `理.bronze.svg`<br>`理.seal.svg` |
-| 猎 | oracle:- bronze:Y seal:Y legacy:- | `猎.bronze.svg`<br>`猎.seal.svg` |
-| 林 | oracle:Y bronze:Y seal:Y legacy:- | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
-| 灵 | oracle:- bronze:Y seal:Y legacy:- | `灵.bronze.svg`<br>`灵.seal.svg` |
-| 流 | oracle:- bronze:Y seal:Y legacy:- | `流.bronze.svg`<br>`流.seal.svg` |
-| 芦 | oracle:- bronze:- seal:Y legacy:- | `芦.seal.svg` |
-| 鲁 | oracle:Y bronze:Y seal:Y legacy:- | `鲁.bronze.svg`<br>`鲁.oracle.svg`<br>`鲁.seal.svg` |
-| 路 | oracle:- bronze:Y seal:Y legacy:- | `路.bronze.svg`<br>`路.seal.svg` |
-| 罗 | oracle:Y bronze:Y seal:Y legacy:- | `罗.bronze.svg`<br>`罗.oracle.svg`<br>`罗.seal.svg` |
-| 马 | oracle:Y bronze:Y seal:Y legacy:- | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
-| 梅 | oracle:- bronze:Y seal:Y legacy:- | `梅.bronze.svg`<br>`梅.seal.svg` |
-| 蒙 | oracle:- bronze:Y seal:Y legacy:- | `蒙.bronze.svg`<br>`蒙.seal.svg` |
-| 棉 | oracle:- bronze:- seal:Y legacy:- | `棉.seal.svg` |
-| 民 | oracle:Y bronze:Y seal:Y legacy:- | `民.bronze.svg`<br>`民.oracle.svg`<br>`民.seal.svg` |
-| 冥 | oracle:- bronze:- seal:Y legacy:- | `冥.seal.svg` |
-| 漠 | oracle:- bronze:- seal:Y legacy:- | `漠.seal.svg` |
-| 姆 | oracle:- bronze:Y seal:Y legacy:- | `姆.bronze.svg`<br>`姆.seal.svg` |
-| 墓 | oracle:- bronze:- seal:Y legacy:- | `墓.seal.svg` |
-| 尼 | oracle:- bronze:- seal:Y legacy:- | `尼.seal.svg` |
-| 念 | oracle:Y bronze:Y seal:Y legacy:- | `念.bronze.svg`<br>`念.oracle.svg`<br>`念.seal.svg` |
-| 努 | oracle:- bronze:- seal:Y legacy:- | `努.seal.svg` |
-| 女 | oracle:Y bronze:Y seal:Y legacy:- | `女.bronze.svg`<br>`女.oracle.svg`<br>`女.seal.svg` |
-| 偶 | oracle:- bronze:- seal:Y legacy:- | `偶.seal.svg` |
-| 佩 | oracle:- bronze:Y seal:Y legacy:- | `佩.bronze.svg`<br>`佩.seal.svg` |
-| 平 | oracle:- bronze:Y seal:Y legacy:- | `平.bronze.svg`<br>`平.seal.svg` |
-| 骑 | oracle:- bronze:Y seal:Y legacy:- | `骑.bronze.svg`<br>`骑.seal.svg` |
-| 清 | oracle:- bronze:Y seal:Y legacy:- | `清.bronze.svg`<br>`清.seal.svg` |
-| 情 | oracle:- bronze:- seal:Y legacy:- | `情.seal.svg` |
-| 圈 | oracle:- bronze:- seal:Y legacy:- | `圈.seal.svg` |
-| 热 | oracle:- bronze:- seal:Y legacy:- | `热.seal.svg` |
-| 日 | oracle:Y bronze:Y seal:Y legacy:- | `日.bronze.svg`<br>`日.oracle.svg`<br>`日.seal.svg` |
-| 儒 | oracle:- bronze:- seal:Y legacy:- | `儒.seal.svg` |
-| 入 | oracle:Y bronze:Y seal:Y legacy:- | `入.bronze.svg`<br>`入.oracle.svg`<br>`入.seal.svg` |
-| 塞 | oracle:Y bronze:- seal:Y legacy:- | `塞.oracle.svg`<br>`塞.seal.svg` |
-| 桑 | oracle:Y bronze:- seal:Y legacy:- | `桑.oracle.svg`<br>`桑.seal.svg` |
-| 扫 | oracle:- bronze:Y seal:- legacy:- | `扫.bronze.svg` |
-| 僧 | oracle:- bronze:- seal:Y legacy:- | `僧.seal.svg` |
-| 沙 | oracle:- bronze:Y seal:Y legacy:- | `沙.bronze.svg`<br>`沙.seal.svg` |
-| 什 | oracle:- bronze:- seal:Y legacy:- | `什.seal.svg` |
-| 神 | oracle:- bronze:Y seal:Y legacy:- | `神.bronze.svg`<br>`神.seal.svg` |
-| 生 | oracle:Y bronze:Y seal:Y legacy:- | `生.bronze.svg`<br>`生.oracle.svg`<br>`生.seal.svg` |
-| 圣 | oracle:Y bronze:Y seal:Y legacy:- | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
-| 师 | oracle:Y bronze:Y seal:Y legacy:- | `师.bronze.svg`<br>`师.oracle.svg`<br>`师.seal.svg` |
-| 施 | oracle:- bronze:- seal:Y legacy:- | `施.seal.svg` |
-| 石 | oracle:Y bronze:Y seal:Y legacy:- | `石.bronze.svg`<br>`石.oracle.svg`<br>`石.seal.svg` |
-| 士 | oracle:- bronze:Y seal:Y legacy:- | `士.bronze.svg`<br>`士.seal.svg` |
-| 世 | oracle:- bronze:Y seal:Y legacy:- | `世.bronze.svg`<br>`世.seal.svg` |
-| 市 | oracle:Y bronze:Y seal:Y legacy:- | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
-| 式 | oracle:- bronze:- seal:Y legacy:- | `式.seal.svg` |
-| 事 | oracle:Y bronze:Y seal:Y legacy:- | `事.bronze.svg`<br>`事.oracle.svg`<br>`事.seal.svg` |
-| 室 | oracle:Y bronze:Y seal:Y legacy:- | `室.bronze.svg`<br>`室.oracle.svg`<br>`室.seal.svg` |
-| 收 | oracle:- bronze:- seal:Y legacy:- | `收.seal.svg` |
-| 守 | oracle:Y bronze:Y seal:Y legacy:- | `守.bronze.svg`<br>`守.oracle.svg`<br>`守.seal.svg` |
-| 首 | oracle:Y bronze:Y seal:Y legacy:- | `首.bronze.svg`<br>`首.oracle.svg`<br>`首.seal.svg` |
-| 狩 | oracle:Y bronze:- seal:Y legacy:- | `狩.oracle.svg`<br>`狩.seal.svg` |
-| 水 | oracle:Y bronze:Y seal:Y legacy:- | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
-| 税 | oracle:- bronze:- seal:Y legacy:- | `税.seal.svg` |
-| 斯 | oracle:- bronze:Y seal:Y legacy:- | `斯.bronze.svg`<br>`斯.seal.svg` |
-| 寺 | oracle:- bronze:Y seal:Y legacy:- | `寺.bronze.svg`<br>`寺.seal.svg` |
-| 稣 | oracle:- bronze:Y seal:Y legacy:- | `稣.bronze.svg`<br>`稣.seal.svg` |
-| 俗 | oracle:- bronze:Y seal:Y legacy:- | `俗.bronze.svg`<br>`俗.seal.svg` |
-| 所 | oracle:- bronze:Y seal:Y legacy:- | `所.bronze.svg`<br>`所.seal.svg` |
-| 琐 | oracle:- bronze:- seal:Y legacy:- | `琐.seal.svg` |
-| 塔 | oracle:- bronze:- seal:Y legacy:- | `塔.seal.svg` |
-| 太 | oracle:- bronze:- seal:Y legacy:- | `太.seal.svg` |
-| 堂 | oracle:- bronze:Y seal:Y legacy:- | `堂.bronze.svg`<br>`堂.seal.svg` |
-| 体 | oracle:- bronze:Y seal:Y legacy:- | `体.bronze.svg`<br>`体.seal.svg` |
-| 天 | oracle:Y bronze:Y seal:Y legacy:- | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
-| 统 | oracle:- bronze:- seal:Y legacy:- | `统.seal.svg` |
-| 头 | oracle:- bronze:Y seal:Y legacy:- | `头.bronze.svg`<br>`头.seal.svg` |
-| 图 | oracle:- bronze:Y seal:Y legacy:- | `图.bronze.svg`<br>`图.seal.svg` |
-| 徒 | oracle:Y bronze:Y seal:Y legacy:- | `徒.bronze.svg`<br>`徒.oracle.svg`<br>`徒.seal.svg` |
-| 团 | oracle:- bronze:Y seal:Y legacy:- | `团.bronze.svg`<br>`团.seal.svg` |
-| 万 | oracle:Y bronze:Y seal:Y legacy:- | `万.bronze.svg`<br>`万.oracle.svg`<br>`万.seal.svg` |
-| 苇 | oracle:- bronze:- seal:Y legacy:- | `苇.seal.svg` |
-| 卫 | oracle:Y bronze:Y seal:Y legacy:- | `卫.bronze.svg`<br>`卫.oracle.svg`<br>`卫.seal.svg` |
-| 位 | oracle:- bronze:Y seal:Y legacy:- | `位.bronze.svg`<br>`位.seal.svg` |
-| 文 | oracle:Y bronze:Y seal:Y legacy:- | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
-| 乌 | oracle:- bronze:Y seal:Y legacy:- | `乌.bronze.svg`<br>`乌.seal.svg` |
-| 武 | oracle:Y bronze:Y seal:Y legacy:- | `武.bronze.svg`<br>`武.oracle.svg`<br>`武.seal.svg` |
-| 舞 | oracle:Y bronze:Y seal:Y legacy:- | `舞.bronze.svg`<br>`舞.oracle.svg`<br>`舞.seal.svg` |
-| 物 | oracle:Y bronze:- seal:Y legacy:- | `物.oracle.svg`<br>`物.seal.svg` |
-| 西 | oracle:Y bronze:Y seal:Y legacy:- | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
-| 希 | oracle:- bronze:- seal:Y legacy:- | `希.seal.svg` |
-| 锡 | oracle:Y bronze:Y seal:Y legacy:- | `锡.bronze.svg`<br>`锡.oracle.svg`<br>`锡.seal.svg` |
-| 习 | oracle:Y bronze:Y seal:Y legacy:- | `习.bronze.svg`<br>`习.oracle.svg`<br>`习.seal.svg` |
-| 想 | oracle:- bronze:Y seal:Y legacy:- | `想.bronze.svg`<br>`想.seal.svg` |
-| 像 | oracle:- bronze:- seal:Y legacy:- | `像.seal.svg` |
-| 新 | oracle:Y bronze:Y seal:Y legacy:- | `新.bronze.svg`<br>`新.oracle.svg`<br>`新.seal.svg` |
-| 信 | oracle:- bronze:Y seal:Y legacy:- | `信.bronze.svg`<br>`信.seal.svg` |
-| 修 | oracle:- bronze:- seal:Y legacy:- | `修.seal.svg` |
-| 巡 | oracle:- bronze:Y seal:Y legacy:- | `巡.bronze.svg`<br>`巡.seal.svg` |
-| 亚 | oracle:Y bronze:Y seal:Y legacy:- | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
-| 仰 | oracle:- bronze:- seal:Y legacy:- | `仰.seal.svg` |
-| 养 | oracle:Y bronze:Y seal:Y legacy:- | `养.bronze.svg`<br>`养.oracle.svg`<br>`养.seal.svg` |
-| 要 | oracle:- bronze:- seal:Y legacy:- | `要.seal.svg` |
-| 耶 | oracle:- bronze:Y seal:Y legacy:- | `耶.bronze.svg`<br>`耶.seal.svg` |
-| 业 | oracle:- bronze:Y seal:Y legacy:- | `业.bronze.svg`<br>`业.seal.svg` |
-| 谒 | oracle:- bronze:- seal:Y legacy:- | `谒.seal.svg` |
-| 一 | oracle:Y bronze:Y seal:Y legacy:- | `一.bronze.svg`<br>`一.oracle.svg`<br>`一.seal.svg` |
-| 伊 | oracle:Y bronze:Y seal:Y legacy:- | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
-| 仪 | oracle:- bronze:Y seal:Y legacy:- | `仪.bronze.svg`<br>`仪.seal.svg` |
-| 义 | oracle:Y bronze:Y seal:Y legacy:- | `义.bronze.svg`<br>`义.oracle.svg`<br>`义.seal.svg` |
-| 议 | oracle:- bronze:Y seal:Y legacy:- | `议.bronze.svg`<br>`议.seal.svg` |
-| 音 | oracle:- bronze:Y seal:Y legacy:- | `音.bronze.svg`<br>`音.seal.svg` |
-| 印 | oracle:Y bronze:Y seal:Y legacy:- | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
-| 犹 | oracle:Y bronze:Y seal:Y legacy:- | `犹.bronze.svg`<br>`犹.oracle.svg`<br>`犹.seal.svg` |
-| 瑜 | oracle:- bronze:- seal:Y legacy:- | `瑜.seal.svg` |
-| 育 | oracle:Y bronze:Y seal:Y legacy:- | `育.bronze.svg`<br>`育.oracle.svg`<br>`育.seal.svg` |
-| 愈 | oracle:- bronze:Y seal:Y legacy:- | `愈.bronze.svg`<br>`愈.seal.svg` |
-| 院 | oracle:- bronze:- seal:Y legacy:- | `院.seal.svg` |
-| 造 | oracle:- bronze:Y seal:Y legacy:- | `造.bronze.svg`<br>`造.seal.svg` |
-| 泽 | oracle:- bronze:- seal:Y legacy:- | `泽.seal.svg` |
-| 责 | oracle:Y bronze:Y seal:Y legacy:- | `责.bronze.svg`<br>`责.oracle.svg`<br>`责.seal.svg` |
-| 展 | oracle:- bronze:- seal:Y legacy:- | `展.seal.svg` |
-| 战 | oracle:- bronze:Y seal:Y legacy:- | `战.bronze.svg`<br>`战.seal.svg` |
-| 沼 | oracle:- bronze:- seal:Y legacy:- | `沼.seal.svg` |
-| 真 | oracle:- bronze:Y seal:Y legacy:- | `真.bronze.svg`<br>`真.seal.svg` |
-| 争 | oracle:Y bronze:- seal:Y legacy:- | `争.oracle.svg`<br>`争.seal.svg` |
-| 正 | oracle:Y bronze:Y seal:Y legacy:- | `正.bronze.svg`<br>`正.oracle.svg`<br>`正.seal.svg` |
-| 之 | oracle:Y bronze:Y seal:Y legacy:- | `之.bronze.svg`<br>`之.oracle.svg`<br>`之.seal.svg` |
-| 职 | oracle:- bronze:Y seal:Y legacy:- | `职.bronze.svg`<br>`职.seal.svg` |
-| 殖 | oracle:- bronze:- seal:Y legacy:- | `殖.seal.svg` |
-| 治 | oracle:- bronze:- seal:Y legacy:- | `治.seal.svg` |
-| 众 | oracle:Y bronze:Y seal:Y legacy:- | `众.bronze.svg`<br>`众.oracle.svg`<br>`众.seal.svg` |
-| 主 | oracle:Y bronze:- seal:Y legacy:- | `主.oracle.svg`<br>`主.seal.svg` |
-| 宗 | oracle:Y bronze:Y seal:Y legacy:- | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
+| 阿 | oracle:- bronze:Y seal:Y | `阿.bronze.svg`<br>`阿.seal.svg` |
+| 埃 | oracle:- bronze:- seal:Y | `埃.seal.svg` |
+| 奥 | oracle:- bronze:- seal:Y | `奥.seal.svg` |
+| 榜 | oracle:- bronze:- seal:Y | `榜.seal.svg` |
+| 宝 | oracle:Y bronze:Y seal:Y | `宝.bronze.svg`<br>`宝.oracle.svg`<br>`宝.seal.svg` |
+| 碑 | oracle:- bronze:- seal:Y | `碑.seal.svg` |
+| 贝 | oracle:Y bronze:Y seal:Y | `贝.bronze.svg`<br>`贝.oracle.svg`<br>`贝.seal.svg` |
+| 比 | oracle:Y bronze:Y seal:Y | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
+| 布 | oracle:- bronze:Y seal:Y | `布.bronze.svg`<br>`布.seal.svg` |
+| 财 | oracle:- bronze:- seal:Y | `财.seal.svg` |
+| 禅 | oracle:- bronze:- seal:Y | `禅.seal.svg` |
+| 产 | oracle:- bronze:Y seal:Y | `产.bronze.svg`<br>`产.seal.svg` |
+| 唱 | oracle:- bronze:- seal:Y | `唱.seal.svg` |
+| 朝 | oracle:Y bronze:Y seal:Y | `朝.bronze.svg`<br>`朝.oracle.svg`<br>`朝.seal.svg` |
+| 忱 | oracle:- bronze:- seal:Y | `忱.seal.svg` |
+| 城 | oracle:- bronze:Y seal:Y | `城.bronze.svg`<br>`城.seal.svg` |
+| 乘 | oracle:Y bronze:Y seal:Y | `乘.bronze.svg`<br>`乘.oracle.svg`<br>`乘.seal.svg` |
+| 传 | oracle:Y bronze:Y seal:Y | `传.bronze.svg`<br>`传.oracle.svg`<br>`传.seal.svg` |
+| 达 | oracle:Y bronze:- seal:- | `达.oracle.svg` |
+| 大 | oracle:Y bronze:Y seal:Y | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
+| 道 | oracle:- bronze:Y seal:Y | `道.bronze.svg`<br>`道.seal.svg` |
+| 德 | oracle:Y bronze:Y seal:Y | `德.bronze.svg`<br>`德.oracle.svg`<br>`德.seal.svg` |
+| 地 | oracle:- bronze:Y seal:Y | `地.bronze.svg`<br>`地.seal.svg` |
+| 殿 | oracle:- bronze:Y seal:Y | `殿.bronze.svg`<br>`殿.seal.svg` |
+| 丁 | oracle:Y bronze:Y seal:Y | `丁.bronze.svg`<br>`丁.oracle.svg`<br>`丁.seal.svg` |
+| 度 | oracle:Y bronze:Y seal:Y | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
+| 锻 | oracle:- bronze:- seal:Y | `锻.seal.svg` |
+| 尔 | oracle:- bronze:Y seal:Y | `尔.bronze.svg`<br>`尔.seal.svg` |
+| 丰 | oracle:Y bronze:Y seal:Y | `丰.bronze.svg`<br>`丰.oracle.svg`<br>`丰.seal.svg` |
+| 佛 | oracle:- bronze:- seal:Y | `佛.seal.svg` |
+| 甘 | oracle:Y bronze:Y seal:Y | `甘.bronze.svg`<br>`甘.oracle.svg`<br>`甘.seal.svg` |
+| 感 | oracle:- bronze:Y seal:Y | `感.bronze.svg`<br>`感.seal.svg` |
+| 刚 | oracle:Y bronze:Y seal:Y | `刚.bronze.svg`<br>`刚.oracle.svg`<br>`刚.seal.svg` |
+| 高 | oracle:Y bronze:Y seal:Y | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
+| 隔 | oracle:- bronze:- seal:Y | `隔.seal.svg` |
+| 工 | oracle:Y bronze:Y seal:Y | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
+| 姑 | oracle:- bronze:Y seal:Y | `姑.bronze.svg`<br>`姑.seal.svg` |
+| 管 | oracle:- bronze:- seal:Y | `管.seal.svg` |
+| 光 | oracle:Y bronze:Y seal:Y | `光.bronze.svg`<br>`光.oracle.svg`<br>`光.seal.svg` |
+| 海 | oracle:- bronze:Y seal:Y | `海.bronze.svg`<br>`海.seal.svg` |
+| 捍 | oracle:- bronze:Y seal:Y | `捍.bronze.svg`<br>`捍.seal.svg` |
+| 合 | oracle:Y bronze:Y seal:Y | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
+| 河 | oracle:Y bronze:Y seal:Y | `河.bronze.svg`<br>`河.oracle.svg`<br>`河.seal.svg` |
+| 荷 | oracle:- bronze:- seal:Y | `荷.seal.svg` |
+| 盒 | oracle:Y bronze:Y seal:Y | `盒.bronze.svg`<br>`盒.oracle.svg`<br>`盒.seal.svg` |
+| 护 | oracle:- bronze:- seal:Y | `护.seal.svg` |
+| 笏 | oracle:- bronze:- seal:Y | `笏.seal.svg` |
+| 花 | oracle:- bronze:- seal:Y | `花.seal.svg` |
+| 化 | oracle:Y bronze:Y seal:Y | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
+| 话 | oracle:- bronze:Y seal:Y | `话.bronze.svg`<br>`话.seal.svg` |
+| 皇 | oracle:Y bronze:Y seal:Y | `皇.bronze.svg`<br>`皇.oracle.svg`<br>`皇.seal.svg` |
+| 灰 | oracle:- bronze:- seal:Y | `灰.seal.svg` |
+| 回 | oracle:Y bronze:Y seal:Y | `回.bronze.svg`<br>`回.oracle.svg`<br>`回.seal.svg` |
+| 会 | oracle:Y bronze:Y seal:Y | `会.bronze.svg`<br>`会.oracle.svg`<br>`会.seal.svg` |
+| 活 | oracle:- bronze:- seal:Y | `活.seal.svg` |
+| 火 | oracle:Y bronze:- seal:Y | `火.oracle.svg`<br>`火.seal.svg` |
+| 极 | oracle:- bronze:- seal:Y | `极.seal.svg` |
+| 纪 | oracle:- bronze:Y seal:Y | `纪.bronze.svg`<br>`纪.seal.svg` |
+| 加 | oracle:- bronze:Y seal:Y | `加.bronze.svg`<br>`加.seal.svg` |
+| 伽 | oracle:- bronze:- seal:Y | `伽.seal.svg` |
+| 匠 | oracle:- bronze:- seal:Y | `匠.seal.svg` |
+| 教 | oracle:Y bronze:Y seal:Y | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
+| 节 | oracle:- bronze:Y seal:Y | `节.bronze.svg`<br>`节.seal.svg` |
+| 界 | oracle:- bronze:- seal:Y | `界.seal.svg` |
+| 金 | oracle:- bronze:Y seal:Y | `金.bronze.svg`<br>`金.seal.svg` |
+| 经 | oracle:- bronze:Y seal:Y | `经.bronze.svg`<br>`经.seal.svg` |
+| 景 | oracle:- bronze:- seal:Y | `景.seal.svg` |
+| 径 | oracle:- bronze:- seal:Y | `径.seal.svg` |
+| 居 | oracle:- bronze:Y seal:Y | `居.bronze.svg`<br>`居.seal.svg` |
+| 聚 | oracle:- bronze:- seal:Y | `聚.seal.svg` |
+| 开 | oracle:- bronze:- seal:Y | `开.seal.svg` |
+| 克 | oracle:Y bronze:Y seal:Y | `克.bronze.svg`<br>`克.oracle.svg`<br>`克.seal.svg` |
+| 空 | oracle:- bronze:Y seal:Y | `空.bronze.svg`<br>`空.seal.svg` |
+| 口 | oracle:Y bronze:Y seal:Y | `口.bronze.svg`<br>`口.oracle.svg`<br>`口.seal.svg` |
+| 跨 | oracle:- bronze:- seal:Y | `跨.seal.svg` |
+| 扩 | oracle:- bronze:- seal:Y | `扩.seal.svg` |
+| 阔 | oracle:- bronze:Y seal:Y | `阔.bronze.svg`<br>`阔.seal.svg` |
+| 拉 | oracle:- bronze:- seal:Y | `拉.seal.svg` |
+| 兰 | oracle:- bronze:- seal:Y | `兰.seal.svg` |
+| 乐 | oracle:Y bronze:Y seal:Y | `乐.bronze.svg`<br>`乐.oracle.svg`<br>`乐.seal.svg` |
+| 离 | oracle:- bronze:Y seal:Y | `离.bronze.svg`<br>`离.seal.svg` |
+| 理 | oracle:- bronze:Y seal:Y | `理.bronze.svg`<br>`理.seal.svg` |
+| 猎 | oracle:- bronze:Y seal:Y | `猎.bronze.svg`<br>`猎.seal.svg` |
+| 林 | oracle:Y bronze:Y seal:Y | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
+| 灵 | oracle:- bronze:Y seal:Y | `灵.bronze.svg`<br>`灵.seal.svg` |
+| 流 | oracle:- bronze:Y seal:Y | `流.bronze.svg`<br>`流.seal.svg` |
+| 芦 | oracle:- bronze:- seal:Y | `芦.seal.svg` |
+| 鲁 | oracle:Y bronze:Y seal:Y | `鲁.bronze.svg`<br>`鲁.oracle.svg`<br>`鲁.seal.svg` |
+| 路 | oracle:- bronze:Y seal:Y | `路.bronze.svg`<br>`路.seal.svg` |
+| 罗 | oracle:Y bronze:Y seal:Y | `罗.bronze.svg`<br>`罗.oracle.svg`<br>`罗.seal.svg` |
+| 马 | oracle:Y bronze:Y seal:Y | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
+| 梅 | oracle:- bronze:Y seal:Y | `梅.bronze.svg`<br>`梅.seal.svg` |
+| 蒙 | oracle:- bronze:Y seal:Y | `蒙.bronze.svg`<br>`蒙.seal.svg` |
+| 棉 | oracle:- bronze:- seal:Y | `棉.seal.svg` |
+| 民 | oracle:Y bronze:Y seal:Y | `民.bronze.svg`<br>`民.oracle.svg`<br>`民.seal.svg` |
+| 冥 | oracle:- bronze:- seal:Y | `冥.seal.svg` |
+| 漠 | oracle:- bronze:- seal:Y | `漠.seal.svg` |
+| 姆 | oracle:- bronze:Y seal:Y | `姆.bronze.svg`<br>`姆.seal.svg` |
+| 墓 | oracle:- bronze:- seal:Y | `墓.seal.svg` |
+| 尼 | oracle:- bronze:- seal:Y | `尼.seal.svg` |
+| 念 | oracle:Y bronze:Y seal:Y | `念.bronze.svg`<br>`念.oracle.svg`<br>`念.seal.svg` |
+| 努 | oracle:- bronze:- seal:Y | `努.seal.svg` |
+| 女 | oracle:Y bronze:Y seal:Y | `女.bronze.svg`<br>`女.oracle.svg`<br>`女.seal.svg` |
+| 偶 | oracle:- bronze:- seal:Y | `偶.seal.svg` |
+| 佩 | oracle:- bronze:Y seal:Y | `佩.bronze.svg`<br>`佩.seal.svg` |
+| 平 | oracle:- bronze:Y seal:Y | `平.bronze.svg`<br>`平.seal.svg` |
+| 骑 | oracle:- bronze:Y seal:Y | `骑.bronze.svg`<br>`骑.seal.svg` |
+| 清 | oracle:- bronze:Y seal:Y | `清.bronze.svg`<br>`清.seal.svg` |
+| 情 | oracle:- bronze:- seal:Y | `情.seal.svg` |
+| 圈 | oracle:- bronze:- seal:Y | `圈.seal.svg` |
+| 热 | oracle:- bronze:- seal:Y | `热.seal.svg` |
+| 日 | oracle:Y bronze:Y seal:Y | `日.bronze.svg`<br>`日.oracle.svg`<br>`日.seal.svg` |
+| 儒 | oracle:- bronze:- seal:Y | `儒.seal.svg` |
+| 入 | oracle:Y bronze:Y seal:Y | `入.bronze.svg`<br>`入.oracle.svg`<br>`入.seal.svg` |
+| 塞 | oracle:Y bronze:- seal:Y | `塞.oracle.svg`<br>`塞.seal.svg` |
+| 桑 | oracle:Y bronze:- seal:Y | `桑.oracle.svg`<br>`桑.seal.svg` |
+| 扫 | oracle:- bronze:Y seal:- | `扫.bronze.svg` |
+| 僧 | oracle:- bronze:- seal:Y | `僧.seal.svg` |
+| 沙 | oracle:- bronze:Y seal:Y | `沙.bronze.svg`<br>`沙.seal.svg` |
+| 什 | oracle:- bronze:- seal:Y | `什.seal.svg` |
+| 神 | oracle:- bronze:Y seal:Y | `神.bronze.svg`<br>`神.seal.svg` |
+| 生 | oracle:Y bronze:Y seal:Y | `生.bronze.svg`<br>`生.oracle.svg`<br>`生.seal.svg` |
+| 圣 | oracle:Y bronze:Y seal:Y | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
+| 师 | oracle:Y bronze:Y seal:Y | `师.bronze.svg`<br>`师.oracle.svg`<br>`师.seal.svg` |
+| 施 | oracle:- bronze:- seal:Y | `施.seal.svg` |
+| 石 | oracle:Y bronze:Y seal:Y | `石.bronze.svg`<br>`石.oracle.svg`<br>`石.seal.svg` |
+| 士 | oracle:- bronze:Y seal:Y | `士.bronze.svg`<br>`士.seal.svg` |
+| 世 | oracle:- bronze:Y seal:Y | `世.bronze.svg`<br>`世.seal.svg` |
+| 市 | oracle:Y bronze:Y seal:Y | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
+| 式 | oracle:- bronze:- seal:Y | `式.seal.svg` |
+| 事 | oracle:Y bronze:Y seal:Y | `事.bronze.svg`<br>`事.oracle.svg`<br>`事.seal.svg` |
+| 室 | oracle:Y bronze:Y seal:Y | `室.bronze.svg`<br>`室.oracle.svg`<br>`室.seal.svg` |
+| 收 | oracle:- bronze:- seal:Y | `收.seal.svg` |
+| 守 | oracle:Y bronze:Y seal:Y | `守.bronze.svg`<br>`守.oracle.svg`<br>`守.seal.svg` |
+| 首 | oracle:Y bronze:Y seal:Y | `首.bronze.svg`<br>`首.oracle.svg`<br>`首.seal.svg` |
+| 狩 | oracle:Y bronze:- seal:Y | `狩.oracle.svg`<br>`狩.seal.svg` |
+| 水 | oracle:Y bronze:Y seal:Y | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
+| 税 | oracle:- bronze:- seal:Y | `税.seal.svg` |
+| 斯 | oracle:- bronze:Y seal:Y | `斯.bronze.svg`<br>`斯.seal.svg` |
+| 寺 | oracle:- bronze:Y seal:Y | `寺.bronze.svg`<br>`寺.seal.svg` |
+| 稣 | oracle:- bronze:Y seal:Y | `稣.bronze.svg`<br>`稣.seal.svg` |
+| 俗 | oracle:- bronze:Y seal:Y | `俗.bronze.svg`<br>`俗.seal.svg` |
+| 所 | oracle:- bronze:Y seal:Y | `所.bronze.svg`<br>`所.seal.svg` |
+| 琐 | oracle:- bronze:- seal:Y | `琐.seal.svg` |
+| 塔 | oracle:- bronze:- seal:Y | `塔.seal.svg` |
+| 太 | oracle:- bronze:- seal:Y | `太.seal.svg` |
+| 堂 | oracle:- bronze:Y seal:Y | `堂.bronze.svg`<br>`堂.seal.svg` |
+| 体 | oracle:- bronze:Y seal:Y | `体.bronze.svg`<br>`体.seal.svg` |
+| 天 | oracle:Y bronze:Y seal:Y | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
+| 统 | oracle:- bronze:- seal:Y | `统.seal.svg` |
+| 头 | oracle:- bronze:Y seal:Y | `头.bronze.svg`<br>`头.seal.svg` |
+| 图 | oracle:- bronze:Y seal:Y | `图.bronze.svg`<br>`图.seal.svg` |
+| 徒 | oracle:Y bronze:Y seal:Y | `徒.bronze.svg`<br>`徒.oracle.svg`<br>`徒.seal.svg` |
+| 团 | oracle:- bronze:Y seal:Y | `团.bronze.svg`<br>`团.seal.svg` |
+| 万 | oracle:Y bronze:Y seal:Y | `万.bronze.svg`<br>`万.oracle.svg`<br>`万.seal.svg` |
+| 苇 | oracle:- bronze:- seal:Y | `苇.seal.svg` |
+| 卫 | oracle:Y bronze:Y seal:Y | `卫.bronze.svg`<br>`卫.oracle.svg`<br>`卫.seal.svg` |
+| 位 | oracle:- bronze:Y seal:Y | `位.bronze.svg`<br>`位.seal.svg` |
+| 文 | oracle:Y bronze:Y seal:Y | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
+| 乌 | oracle:- bronze:Y seal:Y | `乌.bronze.svg`<br>`乌.seal.svg` |
+| 武 | oracle:Y bronze:Y seal:Y | `武.bronze.svg`<br>`武.oracle.svg`<br>`武.seal.svg` |
+| 舞 | oracle:Y bronze:Y seal:Y | `舞.bronze.svg`<br>`舞.oracle.svg`<br>`舞.seal.svg` |
+| 物 | oracle:Y bronze:- seal:Y | `物.oracle.svg`<br>`物.seal.svg` |
+| 西 | oracle:Y bronze:Y seal:Y | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
+| 希 | oracle:- bronze:- seal:Y | `希.seal.svg` |
+| 锡 | oracle:Y bronze:Y seal:Y | `锡.bronze.svg`<br>`锡.oracle.svg`<br>`锡.seal.svg` |
+| 习 | oracle:Y bronze:Y seal:Y | `习.bronze.svg`<br>`习.oracle.svg`<br>`习.seal.svg` |
+| 想 | oracle:- bronze:Y seal:Y | `想.bronze.svg`<br>`想.seal.svg` |
+| 像 | oracle:- bronze:- seal:Y | `像.seal.svg` |
+| 新 | oracle:Y bronze:Y seal:Y | `新.bronze.svg`<br>`新.oracle.svg`<br>`新.seal.svg` |
+| 信 | oracle:- bronze:Y seal:Y | `信.bronze.svg`<br>`信.seal.svg` |
+| 修 | oracle:- bronze:- seal:Y | `修.seal.svg` |
+| 巡 | oracle:- bronze:Y seal:Y | `巡.bronze.svg`<br>`巡.seal.svg` |
+| 亚 | oracle:Y bronze:Y seal:Y | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
+| 仰 | oracle:- bronze:- seal:Y | `仰.seal.svg` |
+| 养 | oracle:Y bronze:Y seal:Y | `养.bronze.svg`<br>`养.oracle.svg`<br>`养.seal.svg` |
+| 要 | oracle:- bronze:- seal:Y | `要.seal.svg` |
+| 耶 | oracle:- bronze:Y seal:Y | `耶.bronze.svg`<br>`耶.seal.svg` |
+| 业 | oracle:- bronze:Y seal:Y | `业.bronze.svg`<br>`业.seal.svg` |
+| 谒 | oracle:- bronze:- seal:Y | `谒.seal.svg` |
+| 一 | oracle:Y bronze:Y seal:Y | `一.bronze.svg`<br>`一.oracle.svg`<br>`一.seal.svg` |
+| 伊 | oracle:Y bronze:Y seal:Y | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
+| 仪 | oracle:- bronze:Y seal:Y | `仪.bronze.svg`<br>`仪.seal.svg` |
+| 义 | oracle:Y bronze:Y seal:Y | `义.bronze.svg`<br>`义.oracle.svg`<br>`义.seal.svg` |
+| 议 | oracle:- bronze:Y seal:Y | `议.bronze.svg`<br>`议.seal.svg` |
+| 音 | oracle:- bronze:Y seal:Y | `音.bronze.svg`<br>`音.seal.svg` |
+| 印 | oracle:Y bronze:Y seal:Y | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
+| 犹 | oracle:Y bronze:Y seal:Y | `犹.bronze.svg`<br>`犹.oracle.svg`<br>`犹.seal.svg` |
+| 瑜 | oracle:- bronze:- seal:Y | `瑜.seal.svg` |
+| 育 | oracle:Y bronze:Y seal:Y | `育.bronze.svg`<br>`育.oracle.svg`<br>`育.seal.svg` |
+| 愈 | oracle:- bronze:Y seal:Y | `愈.bronze.svg`<br>`愈.seal.svg` |
+| 院 | oracle:- bronze:- seal:Y | `院.seal.svg` |
+| 造 | oracle:- bronze:Y seal:Y | `造.bronze.svg`<br>`造.seal.svg` |
+| 泽 | oracle:- bronze:- seal:Y | `泽.seal.svg` |
+| 责 | oracle:Y bronze:Y seal:Y | `责.bronze.svg`<br>`责.oracle.svg`<br>`责.seal.svg` |
+| 展 | oracle:- bronze:- seal:Y | `展.seal.svg` |
+| 战 | oracle:- bronze:Y seal:Y | `战.bronze.svg`<br>`战.seal.svg` |
+| 沼 | oracle:- bronze:- seal:Y | `沼.seal.svg` |
+| 真 | oracle:- bronze:Y seal:Y | `真.bronze.svg`<br>`真.seal.svg` |
+| 争 | oracle:Y bronze:- seal:Y | `争.oracle.svg`<br>`争.seal.svg` |
+| 正 | oracle:Y bronze:Y seal:Y | `正.bronze.svg`<br>`正.oracle.svg`<br>`正.seal.svg` |
+| 之 | oracle:Y bronze:Y seal:Y | `之.bronze.svg`<br>`之.oracle.svg`<br>`之.seal.svg` |
+| 职 | oracle:- bronze:Y seal:Y | `职.bronze.svg`<br>`职.seal.svg` |
+| 殖 | oracle:- bronze:- seal:Y | `殖.seal.svg` |
+| 治 | oracle:- bronze:- seal:Y | `治.seal.svg` |
+| 众 | oracle:Y bronze:Y seal:Y | `众.bronze.svg`<br>`众.oracle.svg`<br>`众.seal.svg` |
+| 主 | oracle:Y bronze:- seal:Y | `主.oracle.svg`<br>`主.seal.svg` |
+| 宗 | oracle:Y bronze:Y seal:Y | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
 
 ## buildings
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 阿 | oracle:- bronze:Y seal:Y legacy:- | `阿.bronze.svg`<br>`阿.seal.svg` |
-| 埃 | oracle:- bronze:- seal:Y legacy:- | `埃.seal.svg` |
-| 奥 | oracle:- bronze:- seal:Y legacy:- | `奥.seal.svg` |
-| 巴 | oracle:Y bronze:- seal:Y legacy:- | `巴.oracle.svg`<br>`巴.seal.svg` |
-| 坝 | oracle:- bronze:- seal:Y legacy:- | `坝.seal.svg` |
-| 百 | oracle:Y bronze:Y seal:Y legacy:- | `百.bronze.svg`<br>`百.oracle.svg`<br>`百.seal.svg` |
-| 板 | oracle:- bronze:- seal:Y legacy:- | `板.seal.svg` |
-| 邦 | oracle:Y bronze:Y seal:Y legacy:- | `邦.bronze.svg`<br>`邦.oracle.svg`<br>`邦.seal.svg` |
-| 棒 | oracle:- bronze:- seal:Y legacy:- | `棒.seal.svg` |
-| 宝 | oracle:Y bronze:Y seal:Y legacy:- | `宝.bronze.svg`<br>`宝.oracle.svg`<br>`宝.seal.svg` |
-| 保 | oracle:Y bronze:Y seal:Y legacy:- | `保.bronze.svg`<br>`保.oracle.svg`<br>`保.seal.svg` |
-| 堡 | oracle:Y bronze:Y seal:Y legacy:- | `堡.bronze.svg`<br>`堡.oracle.svg`<br>`堡.seal.svg` |
-| 碑 | oracle:- bronze:- seal:Y legacy:- | `碑.seal.svg` |
-| 贝 | oracle:Y bronze:Y seal:Y legacy:- | `贝.bronze.svg`<br>`贝.oracle.svg`<br>`贝.seal.svg` |
-| 本 | oracle:- bronze:Y seal:Y legacy:- | `本.bronze.svg`<br>`本.seal.svg` |
-| 比 | oracle:Y bronze:Y seal:Y legacy:- | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
-| 必 | oracle:Y bronze:Y seal:Y legacy:- | `必.bronze.svg`<br>`必.oracle.svg`<br>`必.seal.svg` |
-| 壁 | oracle:- bronze:- seal:Y legacy:- | `壁.seal.svg` |
-| 避 | oracle:- bronze:- seal:Y legacy:- | `避.seal.svg` |
-| 兵 | oracle:Y bronze:Y seal:Y legacy:- | `兵.bronze.svg`<br>`兵.oracle.svg`<br>`兵.seal.svg` |
-| 病 | oracle:- bronze:- seal:Y legacy:- | `病.seal.svg` |
-| 波 | oracle:- bronze:- seal:Y legacy:- | `波.seal.svg` |
-| 播 | oracle:- bronze:Y seal:Y legacy:- | `播.bronze.svg`<br>`播.seal.svg` |
-| 博 | oracle:- bronze:Y seal:Y legacy:- | `博.bronze.svg`<br>`博.seal.svg` |
-| 布 | oracle:- bronze:Y seal:Y legacy:- | `布.bronze.svg`<br>`布.seal.svg` |
-| 部 | oracle:- bronze:- seal:Y legacy:- | `部.seal.svg` |
-| 采 | oracle:Y bronze:Y seal:Y legacy:- | `采.bronze.svg`<br>`采.oracle.svg`<br>`采.seal.svg` |
-| 菜 | oracle:- bronze:Y seal:Y legacy:- | `菜.bronze.svg`<br>`菜.seal.svg` |
-| 仓 | oracle:Y bronze:Y seal:Y legacy:- | `仓.bronze.svg`<br>`仓.oracle.svg`<br>`仓.seal.svg` |
-| 察 | oracle:- bronze:Y seal:Y legacy:- | `察.bronze.svg`<br>`察.seal.svg` |
-| 厂 | oracle:- bronze:Y seal:Y legacy:- | `厂.bronze.svg`<br>`厂.seal.svg` |
-| 场 | oracle:- bronze:- seal:Y legacy:- | `场.seal.svg` |
-| 车 | oracle:Y bronze:Y seal:Y legacy:- | `车.bronze.svg`<br>`车.oracle.svg`<br>`车.seal.svg` |
-| 城 | oracle:- bronze:Y seal:Y legacy:- | `城.bronze.svg`<br>`城.seal.svg` |
-| 持 | oracle:- bronze:Y seal:Y legacy:- | `持.bronze.svg`<br>`持.seal.svg` |
-| 船 | oracle:- bronze:Y seal:Y legacy:- | `船.bronze.svg`<br>`船.seal.svg` |
-| 达 | oracle:Y bronze:- seal:- legacy:- | `达.oracle.svg` |
-| 大 | oracle:Y bronze:Y seal:Y legacy:- | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
-| 道 | oracle:- bronze:Y seal:Y legacy:- | `道.bronze.svg`<br>`道.seal.svg` |
-| 德 | oracle:Y bronze:Y seal:Y legacy:- | `德.bronze.svg`<br>`德.oracle.svg`<br>`德.seal.svg` |
-| 灯 | oracle:- bronze:- seal:Y legacy:- | `灯.seal.svg` |
-| 电 | oracle:- bronze:Y seal:Y legacy:- | `电.bronze.svg`<br>`电.seal.svg` |
-| 殿 | oracle:- bronze:Y seal:Y legacy:- | `殿.bronze.svg`<br>`殿.seal.svg` |
-| 雕 | oracle:- bronze:Y seal:Y legacy:- | `雕.bronze.svg`<br>`雕.seal.svg` |
-| 谍 | oracle:- bronze:- seal:Y legacy:- | `谍.seal.svg` |
-| 定 | oracle:Y bronze:Y seal:Y legacy:- | `定.bronze.svg`<br>`定.oracle.svg`<br>`定.seal.svg` |
-| 动 | oracle:- bronze:Y seal:Y legacy:- | `动.bronze.svg`<br>`动.seal.svg` |
-| 斗 | oracle:Y bronze:Y seal:Y legacy:- | `斗.bronze.svg`<br>`斗.oracle.svg`<br>`斗.seal.svg` |
-| 督 | oracle:- bronze:- seal:Y legacy:- | `督.seal.svg` |
-| 杜 | oracle:Y bronze:Y seal:Y legacy:- | `杜.bronze.svg`<br>`杜.oracle.svg`<br>`杜.seal.svg` |
-| 度 | oracle:Y bronze:Y seal:Y legacy:- | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
-| 镀 | oracle:- bronze:- seal:Y legacy:- | `镀.seal.svg` |
-| 顿 | oracle:- bronze:- seal:Y legacy:- | `顿.seal.svg` |
-| 俄 | oracle:- bronze:- seal:Y legacy:- | `俄.seal.svg` |
-| 尔 | oracle:- bronze:Y seal:Y legacy:- | `尔.bronze.svg`<br>`尔.seal.svg` |
-| 发 | oracle:Y bronze:Y seal:Y legacy:- | `发.bronze.svg`<br>`发.oracle.svg`<br>`发.seal.svg` |
-| 范 | oracle:- bronze:Y seal:Y legacy:- | `范.bronze.svg`<br>`范.seal.svg` |
-| 方 | oracle:Y bronze:Y seal:Y legacy:- | `方.bronze.svg`<br>`方.oracle.svg`<br>`方.seal.svg` |
-| 坊 | oracle:- bronze:- seal:Y legacy:- | `坊.seal.svg` |
-| 防 | oracle:- bronze:- seal:Y legacy:- | `防.seal.svg` |
-| 飞 | oracle:- bronze:- seal:Y legacy:- | `飞.seal.svg` |
-| 菲 | oracle:- bronze:- seal:Y legacy:- | `菲.seal.svg` |
-| 分 | oracle:Y bronze:Y seal:Y legacy:- | `分.bronze.svg`<br>`分.oracle.svg`<br>`分.seal.svg` |
-| 坟 | oracle:- bronze:- seal:Y legacy:- | `坟.seal.svg` |
-| 佛 | oracle:- bronze:- seal:Y legacy:- | `佛.seal.svg` |
-| 服 | oracle:Y bronze:Y seal:Y legacy:- | `服.bronze.svg`<br>`服.oracle.svg`<br>`服.seal.svg` |
-| 府 | oracle:- bronze:Y seal:Y legacy:- | `府.bronze.svg`<br>`府.seal.svg` |
-| 港 | oracle:- bronze:- seal:Y legacy:- | `港.seal.svg` |
-| 高 | oracle:Y bronze:Y seal:Y legacy:- | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
-| 哥 | oracle:- bronze:- seal:Y legacy:- | `哥.seal.svg` |
-| 歌 | oracle:- bronze:Y seal:Y legacy:- | `歌.bronze.svg`<br>`歌.seal.svg` |
-| 工 | oracle:Y bronze:Y seal:Y legacy:- | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
-| 宫 | oracle:Y bronze:Y seal:Y legacy:- | `宫.bronze.svg`<br>`宫.oracle.svg`<br>`宫.seal.svg` |
-| 购 | oracle:- bronze:- seal:Y legacy:- | `购.seal.svg` |
-| 古 | oracle:Y bronze:Y seal:Y legacy:- | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
-| 谷 | oracle:Y bronze:Y seal:Y legacy:- | `谷.bronze.svg`<br>`谷.oracle.svg`<br>`谷.seal.svg` |
-| 骨 | oracle:Y bronze:Y seal:Y legacy:- | `骨.bronze.svg`<br>`骨.oracle.svg`<br>`骨.seal.svg` |
-| 故 | oracle:- bronze:Y seal:Y legacy:- | `故.bronze.svg`<br>`故.seal.svg` |
-| 馆 | oracle:- bronze:- seal:Y legacy:- | `馆.seal.svg` |
-| 管 | oracle:- bronze:- seal:Y legacy:- | `管.seal.svg` |
-| 广 | oracle:Y bronze:Y seal:Y legacy:- | `广.bronze.svg`<br>`广.oracle.svg`<br>`广.seal.svg` |
-| 哈 | oracle:- bronze:- seal:Y legacy:- | `哈.seal.svg` |
-| 海 | oracle:- bronze:Y seal:Y legacy:- | `海.bronze.svg`<br>`海.seal.svg` |
-| 罕 | oracle:- bronze:- seal:Y legacy:- | `罕.seal.svg` |
-| 航 | oracle:- bronze:- seal:Y legacy:- | `航.seal.svg` |
-| 诃 | oracle:- bronze:Y seal:Y legacy:- | `诃.bronze.svg`<br>`诃.seal.svg` |
-| 合 | oracle:Y bronze:Y seal:Y legacy:- | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
-| 河 | oracle:Y bronze:Y seal:Y legacy:- | `河.bronze.svg`<br>`河.oracle.svg`<br>`河.seal.svg` |
-| 核 | oracle:- bronze:- seal:Y legacy:- | `核.seal.svg` |
-| 赫 | oracle:- bronze:- seal:Y legacy:- | `赫.seal.svg` |
-| 黑 | oracle:Y bronze:Y seal:Y legacy:- | `黑.bronze.svg`<br>`黑.oracle.svg`<br>`黑.seal.svg` |
-| 很 | oracle:- bronze:- seal:Y legacy:- | `很.seal.svg` |
-| 洪 | oracle:- bronze:- seal:Y legacy:- | `洪.seal.svg` |
-| 忽 | oracle:- bronze:Y seal:Y legacy:- | `忽.bronze.svg`<br>`忽.seal.svg` |
-| 笏 | oracle:- bronze:- seal:Y legacy:- | `笏.seal.svg` |
-| 花 | oracle:- bronze:- seal:Y legacy:- | `花.seal.svg` |
-| 化 | oracle:Y bronze:Y seal:Y legacy:- | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
-| 皇 | oracle:Y bronze:Y seal:Y legacy:- | `皇.bronze.svg`<br>`皇.oracle.svg`<br>`皇.seal.svg` |
-| 汇 | oracle:- bronze:- seal:Y legacy:- | `汇.seal.svg` |
-| 会 | oracle:Y bronze:Y seal:Y legacy:- | `会.bronze.svg`<br>`会.oracle.svg`<br>`会.seal.svg` |
-| 火 | oracle:Y bronze:- seal:Y legacy:- | `火.oracle.svg`<br>`火.seal.svg` |
-| 机 | oracle:- bronze:- seal:Y legacy:- | `机.seal.svg` |
-| 姬 | oracle:Y bronze:Y seal:Y legacy:- | `姬.bronze.svg`<br>`姬.oracle.svg`<br>`姬.seal.svg` |
-| 基 | oracle:Y bronze:Y seal:Y legacy:- | `基.bronze.svg`<br>`基.oracle.svg`<br>`基.seal.svg` |
-| 集 | oracle:Y bronze:Y seal:Y legacy:- | `集.bronze.svg`<br>`集.oracle.svg`<br>`集.seal.svg` |
-| 计 | oracle:- bronze:- seal:Y legacy:- | `计.seal.svg` |
-| 纪 | oracle:- bronze:Y seal:Y legacy:- | `纪.bronze.svg`<br>`纪.seal.svg` |
-| 技 | oracle:- bronze:- seal:Y legacy:- | `技.seal.svg` |
-| 加 | oracle:- bronze:Y seal:Y legacy:- | `加.bronze.svg`<br>`加.seal.svg` |
-| 家 | oracle:Y bronze:Y seal:Y legacy:- | `家.bronze.svg`<br>`家.oracle.svg`<br>`家.seal.svg` |
-| 甲 | oracle:Y bronze:Y seal:Y legacy:- | `甲.bronze.svg`<br>`甲.oracle.svg`<br>`甲.seal.svg` |
-| 尖 | oracle:- bronze:- seal:Y legacy:- | `尖.seal.svg` |
-| 间 | oracle:- bronze:Y seal:Y legacy:- | `间.bronze.svg`<br>`间.seal.svg` |
-| 建 | oracle:Y bronze:Y seal:Y legacy:- | `建.bronze.svg`<br>`建.oracle.svg`<br>`建.seal.svg` |
-| 箭 | oracle:- bronze:Y seal:Y legacy:- | `箭.bronze.svg`<br>`箭.seal.svg` |
-| 交 | oracle:- bronze:- seal:Y legacy:- | `交.seal.svg` |
-| 教 | oracle:Y bronze:Y seal:Y legacy:- | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
-| 斤 | oracle:Y bronze:Y seal:Y legacy:- | `斤.bronze.svg`<br>`斤.oracle.svg`<br>`斤.seal.svg` |
-| 金 | oracle:- bronze:Y seal:Y legacy:- | `金.bronze.svg`<br>`金.seal.svg` |
-| 津 | oracle:- bronze:Y seal:Y legacy:- | `津.bronze.svg`<br>`津.seal.svg` |
-| 井 | oracle:Y bronze:Y seal:Y legacy:- | `井.bronze.svg`<br>`井.oracle.svg`<br>`井.seal.svg` |
-| 景 | oracle:- bronze:- seal:Y legacy:- | `景.seal.svg` |
-| 竞 | oracle:Y bronze:Y seal:Y legacy:- | `竞.bronze.svg`<br>`竞.oracle.svg`<br>`竞.seal.svg` |
-| 究 | oracle:- bronze:Y seal:Y legacy:- | `究.bronze.svg`<br>`究.seal.svg` |
-| 旧 | oracle:Y bronze:Y seal:Y legacy:- | `旧.bronze.svg`<br>`旧.oracle.svg`<br>`旧.seal.svg` |
-| 救 | oracle:- bronze:Y seal:Y legacy:- | `救.bronze.svg`<br>`救.seal.svg` |
-| 巨 | oracle:- bronze:Y seal:Y legacy:- | `巨.bronze.svg`<br>`巨.seal.svg` |
-| 剧 | oracle:- bronze:- seal:Y legacy:- | `剧.seal.svg` |
-| 军 | oracle:- bronze:Y seal:Y legacy:- | `军.bronze.svg`<br>`军.seal.svg` |
-| 卡 | oracle:- bronze:- seal:Y legacy:- | `卡.seal.svg` |
-| 科 | oracle:- bronze:- seal:Y legacy:- | `科.seal.svg` |
-| 克 | oracle:Y bronze:Y seal:Y legacy:- | `克.bronze.svg`<br>`克.oracle.svg`<br>`克.seal.svg` |
-| 空 | oracle:- bronze:Y seal:Y legacy:- | `空.bronze.svg`<br>`空.seal.svg` |
-| 窟 | oracle:- bronze:- seal:Y legacy:- | `窟.seal.svg` |
-| 库 | oracle:- bronze:Y seal:Y legacy:- | `库.bronze.svg`<br>`库.seal.svg` |
-| 扩 | oracle:- bronze:- seal:Y legacy:- | `扩.seal.svg` |
-| 拉 | oracle:- bronze:- seal:Y legacy:- | `拉.seal.svg` |
-| 兰 | oracle:- bronze:- seal:Y legacy:- | `兰.seal.svg` |
-| 老 | oracle:Y bronze:Y seal:Y legacy:- | `老.bronze.svg`<br>`老.oracle.svg`<br>`老.seal.svg` |
-| 雷 | oracle:Y bronze:Y seal:Y legacy:- | `雷.bronze.svg`<br>`雷.oracle.svg`<br>`雷.seal.svg` |
-| 里 | oracle:- bronze:Y seal:Y legacy:- | `里.bronze.svg`<br>`里.seal.svg` |
-| 理 | oracle:- bronze:Y seal:Y legacy:- | `理.bronze.svg`<br>`理.seal.svg` |
-| 力 | oracle:Y bronze:Y seal:Y legacy:- | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
-| 利 | oracle:Y bronze:Y seal:Y legacy:- | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
-| 炼 | oracle:- bronze:- seal:Y legacy:- | `炼.seal.svg` |
-| 粮 | oracle:- bronze:Y seal:Y legacy:- | `粮.bronze.svg`<br>`粮.seal.svg` |
-| 料 | oracle:- bronze:Y seal:Y legacy:- | `料.bronze.svg`<br>`料.seal.svg` |
-| 烈 | oracle:- bronze:- seal:Y legacy:- | `烈.seal.svg` |
-| 林 | oracle:Y bronze:Y seal:Y legacy:- | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
-| 陵 | oracle:- bronze:Y seal:Y legacy:- | `陵.bronze.svg`<br>`陵.seal.svg` |
-| 领 | oracle:- bronze:- seal:Y legacy:- | `领.seal.svg` |
-| 鲁 | oracle:Y bronze:Y seal:Y legacy:- | `鲁.bronze.svg`<br>`鲁.oracle.svg`<br>`鲁.seal.svg` |
-| 露 | oracle:- bronze:- seal:Y legacy:- | `露.seal.svg` |
-| 伦 | oracle:- bronze:- seal:Y legacy:- | `伦.seal.svg` |
-| 轮 | oracle:- bronze:Y seal:Y legacy:- | `轮.bronze.svg`<br>`轮.seal.svg` |
-| 马 | oracle:Y bronze:Y seal:Y legacy:- | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
-| 梅 | oracle:- bronze:Y seal:Y legacy:- | `梅.bronze.svg`<br>`梅.seal.svg` |
-| 煤 | oracle:- bronze:- seal:Y legacy:- | `煤.seal.svg` |
-| 门 | oracle:Y bronze:Y seal:Y legacy:- | `门.bronze.svg`<br>`门.oracle.svg`<br>`门.seal.svg` |
-| 蒙 | oracle:- bronze:Y seal:Y legacy:- | `蒙.bronze.svg`<br>`蒙.seal.svg` |
-| 弥 | oracle:- bronze:Y seal:Y legacy:- | `弥.bronze.svg`<br>`弥.seal.svg` |
-| 米 | oracle:Y bronze:- seal:Y legacy:- | `米.oracle.svg`<br>`米.seal.svg` |
-| 棉 | oracle:- bronze:- seal:Y legacy:- | `棉.seal.svg` |
-| 庙 | oracle:- bronze:Y seal:Y legacy:- | `庙.bronze.svg`<br>`庙.seal.svg` |
-| 摩 | oracle:- bronze:- seal:Y legacy:- | `摩.seal.svg` |
-| 磨 | oracle:- bronze:- seal:Y legacy:- | `磨.seal.svg` |
-| 莫 | oracle:Y bronze:Y seal:Y legacy:- | `莫.bronze.svg`<br>`莫.oracle.svg`<br>`莫.seal.svg` |
-| 姆 | oracle:- bronze:Y seal:Y legacy:- | `姆.bronze.svg`<br>`姆.seal.svg` |
-| 木 | oracle:Y bronze:Y seal:Y legacy:- | `木.bronze.svg`<br>`木.oracle.svg`<br>`木.seal.svg` |
-| 墓 | oracle:- bronze:- seal:Y legacy:- | `墓.seal.svg` |
-| 拿 | oracle:- bronze:Y seal:Y legacy:- | `拿.bronze.svg`<br>`拿.seal.svg` |
-| 纳 | oracle:- bronze:Y seal:Y legacy:- | `纳.bronze.svg`<br>`纳.seal.svg` |
-| 南 | oracle:Y bronze:Y seal:Y legacy:- | `南.bronze.svg`<br>`南.oracle.svg`<br>`南.seal.svg` |
-| 难 | oracle:- bronze:Y seal:Y legacy:- | `难.bronze.svg`<br>`难.seal.svg` |
-| 尼 | oracle:- bronze:- seal:Y legacy:- | `尼.seal.svg` |
-| 念 | oracle:Y bronze:Y seal:Y legacy:- | `念.bronze.svg`<br>`念.oracle.svg`<br>`念.seal.svg` |
-| 牛 | oracle:Y bronze:Y seal:Y legacy:- | `牛.bronze.svg`<br>`牛.oracle.svg`<br>`牛.seal.svg` |
-| 努 | oracle:- bronze:- seal:Y legacy:- | `努.seal.svg` |
-| 女 | oracle:Y bronze:Y seal:Y legacy:- | `女.bronze.svg`<br>`女.oracle.svg`<br>`女.seal.svg` |
-| 帕 | oracle:- bronze:- seal:Y legacy:- | `帕.seal.svg` |
-| 佩 | oracle:- bronze:Y seal:Y legacy:- | `佩.bronze.svg`<br>`佩.seal.svg` |
-| 片 | oracle:- bronze:- seal:Y legacy:- | `片.seal.svg` |
-| 屏 | oracle:- bronze:- seal:Y legacy:- | `屏.seal.svg` |
-| 菩 | oracle:- bronze:- seal:Y legacy:- | `菩.seal.svg` |
-| 葡 | oracle:Y bronze:Y seal:Y legacy:- | `葡.bronze.svg`<br>`葡.oracle.svg`<br>`葡.seal.svg` |
-| 普 | oracle:- bronze:- seal:Y legacy:- | `普.seal.svg` |
-| 齐 | oracle:Y bronze:Y seal:Y legacy:- | `齐.bronze.svg`<br>`齐.oracle.svg`<br>`齐.seal.svg` |
-| 其 | oracle:Y bronze:Y seal:Y legacy:- | `其.bronze.svg`<br>`其.oracle.svg`<br>`其.seal.svg` |
-| 奇 | oracle:- bronze:- seal:Y legacy:- | `奇.seal.svg` |
-| 墙 | oracle:Y bronze:Y seal:Y legacy:- | `墙.bronze.svg`<br>`墙.oracle.svg`<br>`墙.seal.svg` |
-| 桥 | oracle:- bronze:- seal:Y legacy:- | `桥.seal.svg` |
-| 琴 | oracle:- bronze:- seal:Y legacy:- | `琴.seal.svg` |
-| 清 | oracle:- bronze:Y seal:Y legacy:- | `清.bronze.svg`<br>`清.seal.svg` |
-| 丘 | oracle:Y bronze:Y seal:Y legacy:- | `丘.bronze.svg`<br>`丘.oracle.svg`<br>`丘.seal.svg` |
-| 区 | oracle:Y bronze:Y seal:Y legacy:- | `区.bronze.svg`<br>`区.oracle.svg`<br>`区.seal.svg` |
-| 圈 | oracle:- bronze:- seal:Y legacy:- | `圈.seal.svg` |
-| 泉 | oracle:Y bronze:Y seal:Y legacy:- | `泉.bronze.svg`<br>`泉.oracle.svg`<br>`泉.seal.svg` |
-| 券 | oracle:- bronze:- seal:Y legacy:- | `券.seal.svg` |
-| 燃 | oracle:- bronze:Y seal:Y legacy:- | `燃.bronze.svg`<br>`燃.seal.svg` |
-| 人 | oracle:Y bronze:Y seal:Y legacy:- | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
-| 萨 | oracle:- bronze:- seal:Y legacy:- | `萨.seal.svg` |
-| 塞 | oracle:Y bronze:- seal:Y legacy:- | `塞.oracle.svg`<br>`塞.seal.svg` |
-| 桑 | oracle:Y bronze:- seal:Y legacy:- | `桑.oracle.svg`<br>`桑.seal.svg` |
-| 扫 | oracle:- bronze:Y seal:- legacy:- | `扫.bronze.svg` |
-| 森 | oracle:Y bronze:- seal:Y legacy:- | `森.oracle.svg`<br>`森.seal.svg` |
-| 山 | oracle:Y bronze:Y seal:Y legacy:- | `山.bronze.svg`<br>`山.oracle.svg`<br>`山.seal.svg` |
-| 社 | oracle:- bronze:Y seal:Y legacy:- | `社.bronze.svg`<br>`社.seal.svg` |
-| 神 | oracle:- bronze:Y seal:Y legacy:- | `神.bronze.svg`<br>`神.seal.svg` |
-| 生 | oracle:Y bronze:Y seal:Y legacy:- | `生.bronze.svg`<br>`生.oracle.svg`<br>`生.seal.svg` |
-| 圣 | oracle:Y bronze:Y seal:Y legacy:- | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
-| 师 | oracle:Y bronze:Y seal:Y legacy:- | `师.bronze.svg`<br>`师.oracle.svg`<br>`师.seal.svg` |
-| 石 | oracle:Y bronze:Y seal:Y legacy:- | `石.bronze.svg`<br>`石.oracle.svg`<br>`石.seal.svg` |
-| 实 | oracle:- bronze:Y seal:Y legacy:- | `实.bronze.svg`<br>`实.seal.svg` |
-| 使 | oracle:Y bronze:Y seal:Y legacy:- | `使.bronze.svg`<br>`使.oracle.svg`<br>`使.seal.svg` |
-| 士 | oracle:- bronze:Y seal:Y legacy:- | `士.bronze.svg`<br>`士.seal.svg` |
-| 世 | oracle:- bronze:Y seal:Y legacy:- | `世.bronze.svg`<br>`世.seal.svg` |
-| 市 | oracle:Y bronze:Y seal:Y legacy:- | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
-| 事 | oracle:Y bronze:Y seal:Y legacy:- | `事.bronze.svg`<br>`事.oracle.svg`<br>`事.seal.svg` |
-| 室 | oracle:Y bronze:Y seal:Y legacy:- | `室.bronze.svg`<br>`室.oracle.svg`<br>`室.seal.svg` |
-| 兽 | oracle:Y bronze:Y seal:Y legacy:- | `兽.bronze.svg`<br>`兽.oracle.svg`<br>`兽.seal.svg` |
-| 书 | oracle:- bronze:Y seal:Y legacy:- | `书.bronze.svg`<br>`书.seal.svg` |
-| 术 | oracle:Y bronze:- seal:Y legacy:- | `术.oracle.svg`<br>`术.seal.svg` |
-| 树 | oracle:Y bronze:Y seal:Y legacy:- | `树.bronze.svg`<br>`树.oracle.svg`<br>`树.seal.svg` |
-| 水 | oracle:Y bronze:Y seal:Y legacy:- | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
-| 斯 | oracle:- bronze:Y seal:Y legacy:- | `斯.bronze.svg`<br>`斯.seal.svg` |
-| 死 | oracle:Y bronze:Y seal:Y legacy:- | `死.bronze.svg`<br>`死.oracle.svg`<br>`死.seal.svg` |
-| 四 | oracle:Y bronze:Y seal:Y legacy:- | `四.bronze.svg`<br>`四.oracle.svg`<br>`四.seal.svg` |
-| 寺 | oracle:- bronze:Y seal:Y legacy:- | `寺.bronze.svg`<br>`寺.seal.svg` |
-| 苏 | oracle:- bronze:Y seal:Y legacy:- | `苏.bronze.svg`<br>`苏.seal.svg` |
-| 所 | oracle:- bronze:Y seal:Y legacy:- | `所.bronze.svg`<br>`所.seal.svg` |
-| 索 | oracle:Y bronze:Y seal:Y legacy:- | `索.bronze.svg`<br>`索.oracle.svg`<br>`索.seal.svg` |
-| 塔 | oracle:- bronze:- seal:Y legacy:- | `塔.seal.svg` |
-| 太 | oracle:- bronze:- seal:Y legacy:- | `太.seal.svg` |
-| 泰 | oracle:- bronze:- seal:Y legacy:- | `泰.seal.svg` |
-| 堂 | oracle:- bronze:Y seal:Y legacy:- | `堂.bronze.svg`<br>`堂.seal.svg` |
-| 萄 | oracle:- bronze:- seal:Y legacy:- | `萄.seal.svg` |
-| 忒 | oracle:- bronze:- seal:Y legacy:- | `忒.seal.svg` |
-| 特 | oracle:- bronze:- seal:Y legacy:- | `特.seal.svg` |
-| 提 | oracle:- bronze:- seal:Y legacy:- | `提.seal.svg` |
-| 体 | oracle:- bronze:Y seal:Y legacy:- | `体.bronze.svg`<br>`体.seal.svg` |
-| 天 | oracle:Y bronze:Y seal:Y legacy:- | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
-| 铁 | oracle:- bronze:- seal:Y legacy:- | `铁.seal.svg` |
-| 厅 | oracle:- bronze:Y seal:- legacy:- | `厅.bronze.svg` |
-| 亭 | oracle:- bronze:Y seal:Y legacy:- | `亭.bronze.svg`<br>`亭.seal.svg` |
-| 同 | oracle:Y bronze:Y seal:Y legacy:- | `同.bronze.svg`<br>`同.oracle.svg`<br>`同.seal.svg` |
-| 图 | oracle:- bronze:Y seal:Y legacy:- | `图.bronze.svg`<br>`图.seal.svg` |
-| 屯 | oracle:Y bronze:Y seal:Y legacy:- | `屯.bronze.svg`<br>`屯.oracle.svg`<br>`屯.seal.svg` |
-| 瓦 | oracle:- bronze:- seal:Y legacy:- | `瓦.seal.svg` |
-| 威 | oracle:- bronze:Y seal:Y legacy:- | `威.bronze.svg`<br>`威.seal.svg` |
-| 韦 | oracle:Y bronze:Y seal:Y legacy:- | `韦.bronze.svg`<br>`韦.oracle.svg`<br>`韦.seal.svg` |
-| 围 | oracle:- bronze:Y seal:Y legacy:- | `围.bronze.svg`<br>`围.seal.svg` |
-| 维 | oracle:- bronze:Y seal:Y legacy:- | `维.bronze.svg`<br>`维.seal.svg` |
-| 伟 | oracle:- bronze:- seal:Y legacy:- | `伟.seal.svg` |
-| 未 | oracle:Y bronze:Y seal:Y legacy:- | `未.bronze.svg`<br>`未.oracle.svg`<br>`未.seal.svg` |
-| 温 | oracle:Y bronze:- seal:Y legacy:- | `温.oracle.svg`<br>`温.seal.svg` |
-| 瘟 | oracle:- bronze:- seal:Y legacy:- | `瘟.seal.svg` |
-| 文 | oracle:Y bronze:Y seal:Y legacy:- | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
-| 稳 | oracle:- bronze:- seal:Y legacy:- | `稳.seal.svg` |
-| 吴 | oracle:- bronze:Y seal:Y legacy:- | `吴.bronze.svg`<br>`吴.seal.svg` |
-| 物 | oracle:Y bronze:- seal:Y legacy:- | `物.oracle.svg`<br>`物.seal.svg` |
-| 西 | oracle:Y bronze:Y seal:Y legacy:- | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
-| 希 | oracle:- bronze:- seal:Y legacy:- | `希.seal.svg` |
-| 悉 | oracle:- bronze:- seal:Y legacy:- | `悉.seal.svg` |
-| 像 | oracle:- bronze:- seal:Y legacy:- | `像.seal.svg` |
-| 校 | oracle:- bronze:Y seal:Y legacy:- | `校.bronze.svg`<br>`校.seal.svg` |
-| 歇 | oracle:- bronze:- seal:Y legacy:- | `歇.seal.svg` |
-| 协 | oracle:- bronze:Y seal:Y legacy:- | `协.bronze.svg`<br>`协.seal.svg` |
-| 械 | oracle:- bronze:- seal:Y legacy:- | `械.seal.svg` |
-| 心 | oracle:Y bronze:Y seal:Y legacy:- | `心.bronze.svg`<br>`心.oracle.svg`<br>`心.seal.svg` |
-| 信 | oracle:- bronze:Y seal:Y legacy:- | `信.bronze.svg`<br>`信.seal.svg` |
-| 星 | oracle:Y bronze:Y seal:Y legacy:- | `星.bronze.svg`<br>`星.oracle.svg`<br>`星.seal.svg` |
-| 行 | oracle:Y bronze:Y seal:Y legacy:- | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
-| 型 | oracle:- bronze:Y seal:Y legacy:- | `型.bronze.svg`<br>`型.seal.svg` |
-| 休 | oracle:Y bronze:Y seal:Y legacy:- | `休.bronze.svg`<br>`休.oracle.svg`<br>`休.seal.svg` |
-| 学 | oracle:Y bronze:Y seal:Y legacy:- | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
-| 牙 | oracle:- bronze:Y seal:Y legacy:- | `牙.bronze.svg`<br>`牙.seal.svg` |
-| 雅 | oracle:- bronze:- seal:Y legacy:- | `雅.seal.svg` |
-| 亚 | oracle:Y bronze:Y seal:Y legacy:- | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
-| 研 | oracle:- bronze:- seal:Y legacy:- | `研.seal.svg` |
-| 验 | oracle:- bronze:- seal:Y legacy:- | `验.seal.svg` |
-| 仰 | oracle:- bronze:- seal:Y legacy:- | `仰.seal.svg` |
-| 谒 | oracle:- bronze:- seal:Y legacy:- | `谒.seal.svg` |
-| 一 | oracle:Y bronze:Y seal:Y legacy:- | `一.bronze.svg`<br>`一.oracle.svg`<br>`一.seal.svg` |
-| 伊 | oracle:Y bronze:Y seal:Y legacy:- | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
-| 医 | oracle:- bronze:- seal:Y legacy:- | `医.seal.svg` |
-| 艺 | oracle:Y bronze:Y seal:Y legacy:- | `艺.bronze.svg`<br>`艺.oracle.svg`<br>`艺.seal.svg` |
-| 议 | oracle:- bronze:Y seal:Y legacy:- | `议.bronze.svg`<br>`议.seal.svg` |
-| 邑 | oracle:Y bronze:Y seal:Y legacy:- | `邑.bronze.svg`<br>`邑.oracle.svg`<br>`邑.seal.svg` |
-| 易 | oracle:Y bronze:Y seal:Y legacy:- | `易.bronze.svg`<br>`易.oracle.svg`<br>`易.seal.svg` |
-| 疫 | oracle:- bronze:- seal:Y legacy:- | `疫.seal.svg` |
-| 银 | oracle:- bronze:- seal:Y legacy:- | `银.seal.svg` |
-| 隐 | oracle:- bronze:- seal:Y legacy:- | `隐.seal.svg` |
-| 印 | oracle:Y bronze:Y seal:Y legacy:- | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
-| 营 | oracle:- bronze:Y seal:Y legacy:- | `营.bronze.svg`<br>`营.seal.svg` |
-| 影 | oracle:- bronze:- seal:Y legacy:- | `影.seal.svg` |
-| 俑 | oracle:- bronze:- seal:Y legacy:- | `俑.seal.svg` |
-| 用 | oracle:Y bronze:Y seal:Y legacy:- | `用.bronze.svg`<br>`用.oracle.svg`<br>`用.seal.svg` |
-| 由 | oracle:Y bronze:Y seal:- legacy:- | `由.bronze.svg`<br>`由.oracle.svg` |
-| 犹 | oracle:Y bronze:Y seal:Y legacy:- | `犹.bronze.svg`<br>`犹.oracle.svg`<br>`犹.seal.svg` |
-| 育 | oracle:Y bronze:Y seal:Y legacy:- | `育.bronze.svg`<br>`育.oracle.svg`<br>`育.seal.svg` |
-| 浴 | oracle:- bronze:Y seal:Y legacy:- | `浴.bronze.svg`<br>`浴.seal.svg` |
-| 园 | oracle:- bronze:- seal:Y legacy:- | `园.seal.svg` |
-| 院 | oracle:- bronze:- seal:Y legacy:- | `院.seal.svg` |
-| 越 | oracle:- bronze:Y seal:Y legacy:- | `越.bronze.svg`<br>`越.seal.svg` |
-| 运 | oracle:- bronze:- seal:Y legacy:- | `运.seal.svg` |
-| 扎 | oracle:- bronze:- seal:Y legacy:- | `扎.seal.svg` |
-| 站 | oracle:- bronze:- seal:Y legacy:- | `站.seal.svg` |
-| 障 | oracle:- bronze:- seal:Y legacy:- | `障.seal.svg` |
-| 真 | oracle:- bronze:Y seal:Y legacy:- | `真.bronze.svg`<br>`真.seal.svg` |
-| 阵 | oracle:Y bronze:- seal:Y legacy:- | `阵.oracle.svg`<br>`阵.seal.svg` |
-| 征 | oracle:Y bronze:Y seal:Y legacy:- | `征.bronze.svg`<br>`征.oracle.svg`<br>`征.seal.svg` |
-| 证 | oracle:- bronze:- seal:Y legacy:- | `证.seal.svg` |
-| 政 | oracle:Y bronze:Y seal:Y legacy:- | `政.bronze.svg`<br>`政.oracle.svg`<br>`政.seal.svg` |
-| 之 | oracle:Y bronze:Y seal:Y legacy:- | `之.bronze.svg`<br>`之.oracle.svg`<br>`之.seal.svg` |
-| 制 | oracle:- bronze:Y seal:Y legacy:- | `制.bronze.svg`<br>`制.seal.svg` |
-| 钟 | oracle:- bronze:Y seal:Y legacy:- | `钟.bronze.svg`<br>`钟.seal.svg` |
-| 舟 | oracle:Y bronze:Y seal:Y legacy:- | `舟.bronze.svg`<br>`舟.oracle.svg`<br>`舟.seal.svg` |
-| 宙 | oracle:Y bronze:- seal:Y legacy:- | `宙.oracle.svg`<br>`宙.seal.svg` |
-| 主 | oracle:Y bronze:- seal:Y legacy:- | `主.oracle.svg`<br>`主.seal.svg` |
-| 住 | oracle:- bronze:- seal:Y legacy:- | `住.seal.svg` |
-| 筑 | oracle:- bronze:- seal:Y legacy:- | `筑.seal.svg` |
-| 兹 | oracle:Y bronze:Y seal:Y legacy:- | `兹.bronze.svg`<br>`兹.oracle.svg`<br>`兹.seal.svg` |
-| 子 | oracle:Y bronze:Y seal:Y legacy:- | `子.bronze.svg`<br>`子.oracle.svg`<br>`子.seal.svg` |
-| 字 | oracle:- bronze:Y seal:Y legacy:- | `字.bronze.svg`<br>`字.seal.svg` |
-| 自 | oracle:Y bronze:Y seal:Y legacy:- | `自.bronze.svg`<br>`自.oracle.svg`<br>`自.seal.svg` |
-| 宗 | oracle:Y bronze:Y seal:Y legacy:- | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
-| 总 | oracle:- bronze:- seal:Y legacy:- | `总.seal.svg` |
-| 族 | oracle:Y bronze:Y seal:Y legacy:- | `族.bronze.svg`<br>`族.oracle.svg`<br>`族.seal.svg` |
+| 阿 | oracle:- bronze:Y seal:Y | `阿.bronze.svg`<br>`阿.seal.svg` |
+| 埃 | oracle:- bronze:- seal:Y | `埃.seal.svg` |
+| 奥 | oracle:- bronze:- seal:Y | `奥.seal.svg` |
+| 巴 | oracle:Y bronze:- seal:Y | `巴.oracle.svg`<br>`巴.seal.svg` |
+| 坝 | oracle:- bronze:- seal:Y | `坝.seal.svg` |
+| 百 | oracle:Y bronze:Y seal:Y | `百.bronze.svg`<br>`百.oracle.svg`<br>`百.seal.svg` |
+| 板 | oracle:- bronze:- seal:Y | `板.seal.svg` |
+| 邦 | oracle:Y bronze:Y seal:Y | `邦.bronze.svg`<br>`邦.oracle.svg`<br>`邦.seal.svg` |
+| 棒 | oracle:- bronze:- seal:Y | `棒.seal.svg` |
+| 宝 | oracle:Y bronze:Y seal:Y | `宝.bronze.svg`<br>`宝.oracle.svg`<br>`宝.seal.svg` |
+| 保 | oracle:Y bronze:Y seal:Y | `保.bronze.svg`<br>`保.oracle.svg`<br>`保.seal.svg` |
+| 堡 | oracle:Y bronze:Y seal:Y | `堡.bronze.svg`<br>`堡.oracle.svg`<br>`堡.seal.svg` |
+| 碑 | oracle:- bronze:- seal:Y | `碑.seal.svg` |
+| 贝 | oracle:Y bronze:Y seal:Y | `贝.bronze.svg`<br>`贝.oracle.svg`<br>`贝.seal.svg` |
+| 本 | oracle:- bronze:Y seal:Y | `本.bronze.svg`<br>`本.seal.svg` |
+| 比 | oracle:Y bronze:Y seal:Y | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
+| 必 | oracle:Y bronze:Y seal:Y | `必.bronze.svg`<br>`必.oracle.svg`<br>`必.seal.svg` |
+| 壁 | oracle:- bronze:- seal:Y | `壁.seal.svg` |
+| 避 | oracle:- bronze:- seal:Y | `避.seal.svg` |
+| 兵 | oracle:Y bronze:Y seal:Y | `兵.bronze.svg`<br>`兵.oracle.svg`<br>`兵.seal.svg` |
+| 病 | oracle:- bronze:- seal:Y | `病.seal.svg` |
+| 波 | oracle:- bronze:- seal:Y | `波.seal.svg` |
+| 播 | oracle:- bronze:Y seal:Y | `播.bronze.svg`<br>`播.seal.svg` |
+| 博 | oracle:- bronze:Y seal:Y | `博.bronze.svg`<br>`博.seal.svg` |
+| 布 | oracle:- bronze:Y seal:Y | `布.bronze.svg`<br>`布.seal.svg` |
+| 部 | oracle:- bronze:- seal:Y | `部.seal.svg` |
+| 采 | oracle:Y bronze:Y seal:Y | `采.bronze.svg`<br>`采.oracle.svg`<br>`采.seal.svg` |
+| 菜 | oracle:- bronze:Y seal:Y | `菜.bronze.svg`<br>`菜.seal.svg` |
+| 仓 | oracle:Y bronze:Y seal:Y | `仓.bronze.svg`<br>`仓.oracle.svg`<br>`仓.seal.svg` |
+| 察 | oracle:- bronze:Y seal:Y | `察.bronze.svg`<br>`察.seal.svg` |
+| 厂 | oracle:- bronze:Y seal:Y | `厂.bronze.svg`<br>`厂.seal.svg` |
+| 场 | oracle:- bronze:- seal:Y | `场.seal.svg` |
+| 车 | oracle:Y bronze:Y seal:Y | `车.bronze.svg`<br>`车.oracle.svg`<br>`车.seal.svg` |
+| 城 | oracle:- bronze:Y seal:Y | `城.bronze.svg`<br>`城.seal.svg` |
+| 持 | oracle:- bronze:Y seal:Y | `持.bronze.svg`<br>`持.seal.svg` |
+| 船 | oracle:- bronze:Y seal:Y | `船.bronze.svg`<br>`船.seal.svg` |
+| 达 | oracle:Y bronze:- seal:- | `达.oracle.svg` |
+| 大 | oracle:Y bronze:Y seal:Y | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
+| 道 | oracle:- bronze:Y seal:Y | `道.bronze.svg`<br>`道.seal.svg` |
+| 德 | oracle:Y bronze:Y seal:Y | `德.bronze.svg`<br>`德.oracle.svg`<br>`德.seal.svg` |
+| 灯 | oracle:- bronze:- seal:Y | `灯.seal.svg` |
+| 电 | oracle:- bronze:Y seal:Y | `电.bronze.svg`<br>`电.seal.svg` |
+| 殿 | oracle:- bronze:Y seal:Y | `殿.bronze.svg`<br>`殿.seal.svg` |
+| 雕 | oracle:- bronze:Y seal:Y | `雕.bronze.svg`<br>`雕.seal.svg` |
+| 谍 | oracle:- bronze:- seal:Y | `谍.seal.svg` |
+| 定 | oracle:Y bronze:Y seal:Y | `定.bronze.svg`<br>`定.oracle.svg`<br>`定.seal.svg` |
+| 动 | oracle:- bronze:Y seal:Y | `动.bronze.svg`<br>`动.seal.svg` |
+| 斗 | oracle:Y bronze:Y seal:Y | `斗.bronze.svg`<br>`斗.oracle.svg`<br>`斗.seal.svg` |
+| 督 | oracle:- bronze:- seal:Y | `督.seal.svg` |
+| 杜 | oracle:Y bronze:Y seal:Y | `杜.bronze.svg`<br>`杜.oracle.svg`<br>`杜.seal.svg` |
+| 度 | oracle:Y bronze:Y seal:Y | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
+| 镀 | oracle:- bronze:- seal:Y | `镀.seal.svg` |
+| 顿 | oracle:- bronze:- seal:Y | `顿.seal.svg` |
+| 俄 | oracle:- bronze:- seal:Y | `俄.seal.svg` |
+| 尔 | oracle:- bronze:Y seal:Y | `尔.bronze.svg`<br>`尔.seal.svg` |
+| 发 | oracle:Y bronze:Y seal:Y | `发.bronze.svg`<br>`发.oracle.svg`<br>`发.seal.svg` |
+| 范 | oracle:- bronze:Y seal:Y | `范.bronze.svg`<br>`范.seal.svg` |
+| 方 | oracle:Y bronze:Y seal:Y | `方.bronze.svg`<br>`方.oracle.svg`<br>`方.seal.svg` |
+| 坊 | oracle:- bronze:- seal:Y | `坊.seal.svg` |
+| 防 | oracle:- bronze:- seal:Y | `防.seal.svg` |
+| 飞 | oracle:- bronze:- seal:Y | `飞.seal.svg` |
+| 菲 | oracle:- bronze:- seal:Y | `菲.seal.svg` |
+| 分 | oracle:Y bronze:Y seal:Y | `分.bronze.svg`<br>`分.oracle.svg`<br>`分.seal.svg` |
+| 坟 | oracle:- bronze:- seal:Y | `坟.seal.svg` |
+| 佛 | oracle:- bronze:- seal:Y | `佛.seal.svg` |
+| 服 | oracle:Y bronze:Y seal:Y | `服.bronze.svg`<br>`服.oracle.svg`<br>`服.seal.svg` |
+| 府 | oracle:- bronze:Y seal:Y | `府.bronze.svg`<br>`府.seal.svg` |
+| 港 | oracle:- bronze:- seal:Y | `港.seal.svg` |
+| 高 | oracle:Y bronze:Y seal:Y | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
+| 哥 | oracle:- bronze:- seal:Y | `哥.seal.svg` |
+| 歌 | oracle:- bronze:Y seal:Y | `歌.bronze.svg`<br>`歌.seal.svg` |
+| 工 | oracle:Y bronze:Y seal:Y | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
+| 宫 | oracle:Y bronze:Y seal:Y | `宫.bronze.svg`<br>`宫.oracle.svg`<br>`宫.seal.svg` |
+| 购 | oracle:- bronze:- seal:Y | `购.seal.svg` |
+| 古 | oracle:Y bronze:Y seal:Y | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
+| 谷 | oracle:Y bronze:Y seal:Y | `谷.bronze.svg`<br>`谷.oracle.svg`<br>`谷.seal.svg` |
+| 骨 | oracle:Y bronze:Y seal:Y | `骨.bronze.svg`<br>`骨.oracle.svg`<br>`骨.seal.svg` |
+| 故 | oracle:- bronze:Y seal:Y | `故.bronze.svg`<br>`故.seal.svg` |
+| 馆 | oracle:- bronze:- seal:Y | `馆.seal.svg` |
+| 管 | oracle:- bronze:- seal:Y | `管.seal.svg` |
+| 广 | oracle:Y bronze:Y seal:Y | `广.bronze.svg`<br>`广.oracle.svg`<br>`广.seal.svg` |
+| 哈 | oracle:- bronze:- seal:Y | `哈.seal.svg` |
+| 海 | oracle:- bronze:Y seal:Y | `海.bronze.svg`<br>`海.seal.svg` |
+| 罕 | oracle:- bronze:- seal:Y | `罕.seal.svg` |
+| 航 | oracle:- bronze:- seal:Y | `航.seal.svg` |
+| 诃 | oracle:- bronze:Y seal:Y | `诃.bronze.svg`<br>`诃.seal.svg` |
+| 合 | oracle:Y bronze:Y seal:Y | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
+| 河 | oracle:Y bronze:Y seal:Y | `河.bronze.svg`<br>`河.oracle.svg`<br>`河.seal.svg` |
+| 核 | oracle:- bronze:- seal:Y | `核.seal.svg` |
+| 赫 | oracle:- bronze:- seal:Y | `赫.seal.svg` |
+| 黑 | oracle:Y bronze:Y seal:Y | `黑.bronze.svg`<br>`黑.oracle.svg`<br>`黑.seal.svg` |
+| 很 | oracle:- bronze:- seal:Y | `很.seal.svg` |
+| 洪 | oracle:- bronze:- seal:Y | `洪.seal.svg` |
+| 忽 | oracle:- bronze:Y seal:Y | `忽.bronze.svg`<br>`忽.seal.svg` |
+| 笏 | oracle:- bronze:- seal:Y | `笏.seal.svg` |
+| 花 | oracle:- bronze:- seal:Y | `花.seal.svg` |
+| 化 | oracle:Y bronze:Y seal:Y | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
+| 皇 | oracle:Y bronze:Y seal:Y | `皇.bronze.svg`<br>`皇.oracle.svg`<br>`皇.seal.svg` |
+| 汇 | oracle:- bronze:- seal:Y | `汇.seal.svg` |
+| 会 | oracle:Y bronze:Y seal:Y | `会.bronze.svg`<br>`会.oracle.svg`<br>`会.seal.svg` |
+| 火 | oracle:Y bronze:- seal:Y | `火.oracle.svg`<br>`火.seal.svg` |
+| 机 | oracle:- bronze:- seal:Y | `机.seal.svg` |
+| 姬 | oracle:Y bronze:Y seal:Y | `姬.bronze.svg`<br>`姬.oracle.svg`<br>`姬.seal.svg` |
+| 基 | oracle:Y bronze:Y seal:Y | `基.bronze.svg`<br>`基.oracle.svg`<br>`基.seal.svg` |
+| 集 | oracle:Y bronze:Y seal:Y | `集.bronze.svg`<br>`集.oracle.svg`<br>`集.seal.svg` |
+| 计 | oracle:- bronze:- seal:Y | `计.seal.svg` |
+| 纪 | oracle:- bronze:Y seal:Y | `纪.bronze.svg`<br>`纪.seal.svg` |
+| 技 | oracle:- bronze:- seal:Y | `技.seal.svg` |
+| 加 | oracle:- bronze:Y seal:Y | `加.bronze.svg`<br>`加.seal.svg` |
+| 家 | oracle:Y bronze:Y seal:Y | `家.bronze.svg`<br>`家.oracle.svg`<br>`家.seal.svg` |
+| 甲 | oracle:Y bronze:Y seal:Y | `甲.bronze.svg`<br>`甲.oracle.svg`<br>`甲.seal.svg` |
+| 尖 | oracle:- bronze:- seal:Y | `尖.seal.svg` |
+| 间 | oracle:- bronze:Y seal:Y | `间.bronze.svg`<br>`间.seal.svg` |
+| 建 | oracle:Y bronze:Y seal:Y | `建.bronze.svg`<br>`建.oracle.svg`<br>`建.seal.svg` |
+| 箭 | oracle:- bronze:Y seal:Y | `箭.bronze.svg`<br>`箭.seal.svg` |
+| 交 | oracle:- bronze:- seal:Y | `交.seal.svg` |
+| 教 | oracle:Y bronze:Y seal:Y | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
+| 斤 | oracle:Y bronze:Y seal:Y | `斤.bronze.svg`<br>`斤.oracle.svg`<br>`斤.seal.svg` |
+| 金 | oracle:- bronze:Y seal:Y | `金.bronze.svg`<br>`金.seal.svg` |
+| 津 | oracle:- bronze:Y seal:Y | `津.bronze.svg`<br>`津.seal.svg` |
+| 井 | oracle:Y bronze:Y seal:Y | `井.bronze.svg`<br>`井.oracle.svg`<br>`井.seal.svg` |
+| 景 | oracle:- bronze:- seal:Y | `景.seal.svg` |
+| 竞 | oracle:Y bronze:Y seal:Y | `竞.bronze.svg`<br>`竞.oracle.svg`<br>`竞.seal.svg` |
+| 究 | oracle:- bronze:Y seal:Y | `究.bronze.svg`<br>`究.seal.svg` |
+| 旧 | oracle:Y bronze:Y seal:Y | `旧.bronze.svg`<br>`旧.oracle.svg`<br>`旧.seal.svg` |
+| 救 | oracle:- bronze:Y seal:Y | `救.bronze.svg`<br>`救.seal.svg` |
+| 巨 | oracle:- bronze:Y seal:Y | `巨.bronze.svg`<br>`巨.seal.svg` |
+| 剧 | oracle:- bronze:- seal:Y | `剧.seal.svg` |
+| 军 | oracle:- bronze:Y seal:Y | `军.bronze.svg`<br>`军.seal.svg` |
+| 卡 | oracle:- bronze:- seal:Y | `卡.seal.svg` |
+| 科 | oracle:- bronze:- seal:Y | `科.seal.svg` |
+| 克 | oracle:Y bronze:Y seal:Y | `克.bronze.svg`<br>`克.oracle.svg`<br>`克.seal.svg` |
+| 空 | oracle:- bronze:Y seal:Y | `空.bronze.svg`<br>`空.seal.svg` |
+| 窟 | oracle:- bronze:- seal:Y | `窟.seal.svg` |
+| 库 | oracle:- bronze:Y seal:Y | `库.bronze.svg`<br>`库.seal.svg` |
+| 扩 | oracle:- bronze:- seal:Y | `扩.seal.svg` |
+| 拉 | oracle:- bronze:- seal:Y | `拉.seal.svg` |
+| 兰 | oracle:- bronze:- seal:Y | `兰.seal.svg` |
+| 老 | oracle:Y bronze:Y seal:Y | `老.bronze.svg`<br>`老.oracle.svg`<br>`老.seal.svg` |
+| 雷 | oracle:Y bronze:Y seal:Y | `雷.bronze.svg`<br>`雷.oracle.svg`<br>`雷.seal.svg` |
+| 里 | oracle:- bronze:Y seal:Y | `里.bronze.svg`<br>`里.seal.svg` |
+| 理 | oracle:- bronze:Y seal:Y | `理.bronze.svg`<br>`理.seal.svg` |
+| 力 | oracle:Y bronze:Y seal:Y | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
+| 利 | oracle:Y bronze:Y seal:Y | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
+| 炼 | oracle:- bronze:- seal:Y | `炼.seal.svg` |
+| 粮 | oracle:- bronze:Y seal:Y | `粮.bronze.svg`<br>`粮.seal.svg` |
+| 料 | oracle:- bronze:Y seal:Y | `料.bronze.svg`<br>`料.seal.svg` |
+| 烈 | oracle:- bronze:- seal:Y | `烈.seal.svg` |
+| 林 | oracle:Y bronze:Y seal:Y | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
+| 陵 | oracle:- bronze:Y seal:Y | `陵.bronze.svg`<br>`陵.seal.svg` |
+| 领 | oracle:- bronze:- seal:Y | `领.seal.svg` |
+| 鲁 | oracle:Y bronze:Y seal:Y | `鲁.bronze.svg`<br>`鲁.oracle.svg`<br>`鲁.seal.svg` |
+| 露 | oracle:- bronze:- seal:Y | `露.seal.svg` |
+| 伦 | oracle:- bronze:- seal:Y | `伦.seal.svg` |
+| 轮 | oracle:- bronze:Y seal:Y | `轮.bronze.svg`<br>`轮.seal.svg` |
+| 马 | oracle:Y bronze:Y seal:Y | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
+| 梅 | oracle:- bronze:Y seal:Y | `梅.bronze.svg`<br>`梅.seal.svg` |
+| 煤 | oracle:- bronze:- seal:Y | `煤.seal.svg` |
+| 门 | oracle:Y bronze:Y seal:Y | `门.bronze.svg`<br>`门.oracle.svg`<br>`门.seal.svg` |
+| 蒙 | oracle:- bronze:Y seal:Y | `蒙.bronze.svg`<br>`蒙.seal.svg` |
+| 弥 | oracle:- bronze:Y seal:Y | `弥.bronze.svg`<br>`弥.seal.svg` |
+| 米 | oracle:Y bronze:- seal:Y | `米.oracle.svg`<br>`米.seal.svg` |
+| 棉 | oracle:- bronze:- seal:Y | `棉.seal.svg` |
+| 庙 | oracle:- bronze:Y seal:Y | `庙.bronze.svg`<br>`庙.seal.svg` |
+| 摩 | oracle:- bronze:- seal:Y | `摩.seal.svg` |
+| 磨 | oracle:- bronze:- seal:Y | `磨.seal.svg` |
+| 莫 | oracle:Y bronze:Y seal:Y | `莫.bronze.svg`<br>`莫.oracle.svg`<br>`莫.seal.svg` |
+| 姆 | oracle:- bronze:Y seal:Y | `姆.bronze.svg`<br>`姆.seal.svg` |
+| 木 | oracle:Y bronze:Y seal:Y | `木.bronze.svg`<br>`木.oracle.svg`<br>`木.seal.svg` |
+| 墓 | oracle:- bronze:- seal:Y | `墓.seal.svg` |
+| 拿 | oracle:- bronze:Y seal:Y | `拿.bronze.svg`<br>`拿.seal.svg` |
+| 纳 | oracle:- bronze:Y seal:Y | `纳.bronze.svg`<br>`纳.seal.svg` |
+| 南 | oracle:Y bronze:Y seal:Y | `南.bronze.svg`<br>`南.oracle.svg`<br>`南.seal.svg` |
+| 难 | oracle:- bronze:Y seal:Y | `难.bronze.svg`<br>`难.seal.svg` |
+| 尼 | oracle:- bronze:- seal:Y | `尼.seal.svg` |
+| 念 | oracle:Y bronze:Y seal:Y | `念.bronze.svg`<br>`念.oracle.svg`<br>`念.seal.svg` |
+| 牛 | oracle:Y bronze:Y seal:Y | `牛.bronze.svg`<br>`牛.oracle.svg`<br>`牛.seal.svg` |
+| 努 | oracle:- bronze:- seal:Y | `努.seal.svg` |
+| 女 | oracle:Y bronze:Y seal:Y | `女.bronze.svg`<br>`女.oracle.svg`<br>`女.seal.svg` |
+| 帕 | oracle:- bronze:- seal:Y | `帕.seal.svg` |
+| 佩 | oracle:- bronze:Y seal:Y | `佩.bronze.svg`<br>`佩.seal.svg` |
+| 片 | oracle:- bronze:- seal:Y | `片.seal.svg` |
+| 屏 | oracle:- bronze:- seal:Y | `屏.seal.svg` |
+| 菩 | oracle:- bronze:- seal:Y | `菩.seal.svg` |
+| 葡 | oracle:Y bronze:Y seal:Y | `葡.bronze.svg`<br>`葡.oracle.svg`<br>`葡.seal.svg` |
+| 普 | oracle:- bronze:- seal:Y | `普.seal.svg` |
+| 齐 | oracle:Y bronze:Y seal:Y | `齐.bronze.svg`<br>`齐.oracle.svg`<br>`齐.seal.svg` |
+| 其 | oracle:Y bronze:Y seal:Y | `其.bronze.svg`<br>`其.oracle.svg`<br>`其.seal.svg` |
+| 奇 | oracle:- bronze:- seal:Y | `奇.seal.svg` |
+| 墙 | oracle:Y bronze:Y seal:Y | `墙.bronze.svg`<br>`墙.oracle.svg`<br>`墙.seal.svg` |
+| 桥 | oracle:- bronze:- seal:Y | `桥.seal.svg` |
+| 琴 | oracle:- bronze:- seal:Y | `琴.seal.svg` |
+| 清 | oracle:- bronze:Y seal:Y | `清.bronze.svg`<br>`清.seal.svg` |
+| 丘 | oracle:Y bronze:Y seal:Y | `丘.bronze.svg`<br>`丘.oracle.svg`<br>`丘.seal.svg` |
+| 区 | oracle:Y bronze:Y seal:Y | `区.bronze.svg`<br>`区.oracle.svg`<br>`区.seal.svg` |
+| 圈 | oracle:- bronze:- seal:Y | `圈.seal.svg` |
+| 泉 | oracle:Y bronze:Y seal:Y | `泉.bronze.svg`<br>`泉.oracle.svg`<br>`泉.seal.svg` |
+| 券 | oracle:- bronze:- seal:Y | `券.seal.svg` |
+| 燃 | oracle:- bronze:Y seal:Y | `燃.bronze.svg`<br>`燃.seal.svg` |
+| 人 | oracle:Y bronze:Y seal:Y | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
+| 萨 | oracle:- bronze:- seal:Y | `萨.seal.svg` |
+| 塞 | oracle:Y bronze:- seal:Y | `塞.oracle.svg`<br>`塞.seal.svg` |
+| 桑 | oracle:Y bronze:- seal:Y | `桑.oracle.svg`<br>`桑.seal.svg` |
+| 扫 | oracle:- bronze:Y seal:- | `扫.bronze.svg` |
+| 森 | oracle:Y bronze:- seal:Y | `森.oracle.svg`<br>`森.seal.svg` |
+| 山 | oracle:Y bronze:Y seal:Y | `山.bronze.svg`<br>`山.oracle.svg`<br>`山.seal.svg` |
+| 社 | oracle:- bronze:Y seal:Y | `社.bronze.svg`<br>`社.seal.svg` |
+| 神 | oracle:- bronze:Y seal:Y | `神.bronze.svg`<br>`神.seal.svg` |
+| 生 | oracle:Y bronze:Y seal:Y | `生.bronze.svg`<br>`生.oracle.svg`<br>`生.seal.svg` |
+| 圣 | oracle:Y bronze:Y seal:Y | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
+| 师 | oracle:Y bronze:Y seal:Y | `师.bronze.svg`<br>`师.oracle.svg`<br>`师.seal.svg` |
+| 石 | oracle:Y bronze:Y seal:Y | `石.bronze.svg`<br>`石.oracle.svg`<br>`石.seal.svg` |
+| 实 | oracle:- bronze:Y seal:Y | `实.bronze.svg`<br>`实.seal.svg` |
+| 使 | oracle:Y bronze:Y seal:Y | `使.bronze.svg`<br>`使.oracle.svg`<br>`使.seal.svg` |
+| 士 | oracle:- bronze:Y seal:Y | `士.bronze.svg`<br>`士.seal.svg` |
+| 世 | oracle:- bronze:Y seal:Y | `世.bronze.svg`<br>`世.seal.svg` |
+| 市 | oracle:Y bronze:Y seal:Y | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
+| 事 | oracle:Y bronze:Y seal:Y | `事.bronze.svg`<br>`事.oracle.svg`<br>`事.seal.svg` |
+| 室 | oracle:Y bronze:Y seal:Y | `室.bronze.svg`<br>`室.oracle.svg`<br>`室.seal.svg` |
+| 兽 | oracle:Y bronze:Y seal:Y | `兽.bronze.svg`<br>`兽.oracle.svg`<br>`兽.seal.svg` |
+| 书 | oracle:- bronze:Y seal:Y | `书.bronze.svg`<br>`书.seal.svg` |
+| 术 | oracle:Y bronze:- seal:Y | `术.oracle.svg`<br>`术.seal.svg` |
+| 树 | oracle:Y bronze:Y seal:Y | `树.bronze.svg`<br>`树.oracle.svg`<br>`树.seal.svg` |
+| 水 | oracle:Y bronze:Y seal:Y | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
+| 斯 | oracle:- bronze:Y seal:Y | `斯.bronze.svg`<br>`斯.seal.svg` |
+| 死 | oracle:Y bronze:Y seal:Y | `死.bronze.svg`<br>`死.oracle.svg`<br>`死.seal.svg` |
+| 四 | oracle:Y bronze:Y seal:Y | `四.bronze.svg`<br>`四.oracle.svg`<br>`四.seal.svg` |
+| 寺 | oracle:- bronze:Y seal:Y | `寺.bronze.svg`<br>`寺.seal.svg` |
+| 苏 | oracle:- bronze:Y seal:Y | `苏.bronze.svg`<br>`苏.seal.svg` |
+| 所 | oracle:- bronze:Y seal:Y | `所.bronze.svg`<br>`所.seal.svg` |
+| 索 | oracle:Y bronze:Y seal:Y | `索.bronze.svg`<br>`索.oracle.svg`<br>`索.seal.svg` |
+| 塔 | oracle:- bronze:- seal:Y | `塔.seal.svg` |
+| 太 | oracle:- bronze:- seal:Y | `太.seal.svg` |
+| 泰 | oracle:- bronze:- seal:Y | `泰.seal.svg` |
+| 堂 | oracle:- bronze:Y seal:Y | `堂.bronze.svg`<br>`堂.seal.svg` |
+| 萄 | oracle:- bronze:- seal:Y | `萄.seal.svg` |
+| 忒 | oracle:- bronze:- seal:Y | `忒.seal.svg` |
+| 特 | oracle:- bronze:- seal:Y | `特.seal.svg` |
+| 提 | oracle:- bronze:- seal:Y | `提.seal.svg` |
+| 体 | oracle:- bronze:Y seal:Y | `体.bronze.svg`<br>`体.seal.svg` |
+| 天 | oracle:Y bronze:Y seal:Y | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
+| 铁 | oracle:- bronze:- seal:Y | `铁.seal.svg` |
+| 厅 | oracle:- bronze:Y seal:- | `厅.bronze.svg` |
+| 亭 | oracle:- bronze:Y seal:Y | `亭.bronze.svg`<br>`亭.seal.svg` |
+| 同 | oracle:Y bronze:Y seal:Y | `同.bronze.svg`<br>`同.oracle.svg`<br>`同.seal.svg` |
+| 图 | oracle:- bronze:Y seal:Y | `图.bronze.svg`<br>`图.seal.svg` |
+| 屯 | oracle:Y bronze:Y seal:Y | `屯.bronze.svg`<br>`屯.oracle.svg`<br>`屯.seal.svg` |
+| 瓦 | oracle:- bronze:- seal:Y | `瓦.seal.svg` |
+| 威 | oracle:- bronze:Y seal:Y | `威.bronze.svg`<br>`威.seal.svg` |
+| 韦 | oracle:Y bronze:Y seal:Y | `韦.bronze.svg`<br>`韦.oracle.svg`<br>`韦.seal.svg` |
+| 围 | oracle:- bronze:Y seal:Y | `围.bronze.svg`<br>`围.seal.svg` |
+| 维 | oracle:- bronze:Y seal:Y | `维.bronze.svg`<br>`维.seal.svg` |
+| 伟 | oracle:- bronze:- seal:Y | `伟.seal.svg` |
+| 未 | oracle:Y bronze:Y seal:Y | `未.bronze.svg`<br>`未.oracle.svg`<br>`未.seal.svg` |
+| 温 | oracle:Y bronze:- seal:Y | `温.oracle.svg`<br>`温.seal.svg` |
+| 瘟 | oracle:- bronze:- seal:Y | `瘟.seal.svg` |
+| 文 | oracle:Y bronze:Y seal:Y | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
+| 稳 | oracle:- bronze:- seal:Y | `稳.seal.svg` |
+| 吴 | oracle:- bronze:Y seal:Y | `吴.bronze.svg`<br>`吴.seal.svg` |
+| 物 | oracle:Y bronze:- seal:Y | `物.oracle.svg`<br>`物.seal.svg` |
+| 西 | oracle:Y bronze:Y seal:Y | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
+| 希 | oracle:- bronze:- seal:Y | `希.seal.svg` |
+| 悉 | oracle:- bronze:- seal:Y | `悉.seal.svg` |
+| 像 | oracle:- bronze:- seal:Y | `像.seal.svg` |
+| 校 | oracle:- bronze:Y seal:Y | `校.bronze.svg`<br>`校.seal.svg` |
+| 歇 | oracle:- bronze:- seal:Y | `歇.seal.svg` |
+| 协 | oracle:- bronze:Y seal:Y | `协.bronze.svg`<br>`协.seal.svg` |
+| 械 | oracle:- bronze:- seal:Y | `械.seal.svg` |
+| 心 | oracle:Y bronze:Y seal:Y | `心.bronze.svg`<br>`心.oracle.svg`<br>`心.seal.svg` |
+| 信 | oracle:- bronze:Y seal:Y | `信.bronze.svg`<br>`信.seal.svg` |
+| 星 | oracle:Y bronze:Y seal:Y | `星.bronze.svg`<br>`星.oracle.svg`<br>`星.seal.svg` |
+| 行 | oracle:Y bronze:Y seal:Y | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
+| 型 | oracle:- bronze:Y seal:Y | `型.bronze.svg`<br>`型.seal.svg` |
+| 休 | oracle:Y bronze:Y seal:Y | `休.bronze.svg`<br>`休.oracle.svg`<br>`休.seal.svg` |
+| 学 | oracle:Y bronze:Y seal:Y | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
+| 牙 | oracle:- bronze:Y seal:Y | `牙.bronze.svg`<br>`牙.seal.svg` |
+| 雅 | oracle:- bronze:- seal:Y | `雅.seal.svg` |
+| 亚 | oracle:Y bronze:Y seal:Y | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
+| 研 | oracle:- bronze:- seal:Y | `研.seal.svg` |
+| 验 | oracle:- bronze:- seal:Y | `验.seal.svg` |
+| 仰 | oracle:- bronze:- seal:Y | `仰.seal.svg` |
+| 谒 | oracle:- bronze:- seal:Y | `谒.seal.svg` |
+| 一 | oracle:Y bronze:Y seal:Y | `一.bronze.svg`<br>`一.oracle.svg`<br>`一.seal.svg` |
+| 伊 | oracle:Y bronze:Y seal:Y | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
+| 医 | oracle:- bronze:- seal:Y | `医.seal.svg` |
+| 艺 | oracle:Y bronze:Y seal:Y | `艺.bronze.svg`<br>`艺.oracle.svg`<br>`艺.seal.svg` |
+| 议 | oracle:- bronze:Y seal:Y | `议.bronze.svg`<br>`议.seal.svg` |
+| 邑 | oracle:Y bronze:Y seal:Y | `邑.bronze.svg`<br>`邑.oracle.svg`<br>`邑.seal.svg` |
+| 易 | oracle:Y bronze:Y seal:Y | `易.bronze.svg`<br>`易.oracle.svg`<br>`易.seal.svg` |
+| 疫 | oracle:- bronze:- seal:Y | `疫.seal.svg` |
+| 银 | oracle:- bronze:- seal:Y | `银.seal.svg` |
+| 隐 | oracle:- bronze:- seal:Y | `隐.seal.svg` |
+| 印 | oracle:Y bronze:Y seal:Y | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
+| 营 | oracle:- bronze:Y seal:Y | `营.bronze.svg`<br>`营.seal.svg` |
+| 影 | oracle:- bronze:- seal:Y | `影.seal.svg` |
+| 俑 | oracle:- bronze:- seal:Y | `俑.seal.svg` |
+| 用 | oracle:Y bronze:Y seal:Y | `用.bronze.svg`<br>`用.oracle.svg`<br>`用.seal.svg` |
+| 由 | oracle:Y bronze:Y seal:- | `由.bronze.svg`<br>`由.oracle.svg` |
+| 犹 | oracle:Y bronze:Y seal:Y | `犹.bronze.svg`<br>`犹.oracle.svg`<br>`犹.seal.svg` |
+| 育 | oracle:Y bronze:Y seal:Y | `育.bronze.svg`<br>`育.oracle.svg`<br>`育.seal.svg` |
+| 浴 | oracle:- bronze:Y seal:Y | `浴.bronze.svg`<br>`浴.seal.svg` |
+| 园 | oracle:- bronze:- seal:Y | `园.seal.svg` |
+| 院 | oracle:- bronze:- seal:Y | `院.seal.svg` |
+| 越 | oracle:- bronze:Y seal:Y | `越.bronze.svg`<br>`越.seal.svg` |
+| 运 | oracle:- bronze:- seal:Y | `运.seal.svg` |
+| 扎 | oracle:- bronze:- seal:Y | `扎.seal.svg` |
+| 站 | oracle:- bronze:- seal:Y | `站.seal.svg` |
+| 障 | oracle:- bronze:- seal:Y | `障.seal.svg` |
+| 真 | oracle:- bronze:Y seal:Y | `真.bronze.svg`<br>`真.seal.svg` |
+| 阵 | oracle:Y bronze:- seal:Y | `阵.oracle.svg`<br>`阵.seal.svg` |
+| 征 | oracle:Y bronze:Y seal:Y | `征.bronze.svg`<br>`征.oracle.svg`<br>`征.seal.svg` |
+| 证 | oracle:- bronze:- seal:Y | `证.seal.svg` |
+| 政 | oracle:Y bronze:Y seal:Y | `政.bronze.svg`<br>`政.oracle.svg`<br>`政.seal.svg` |
+| 之 | oracle:Y bronze:Y seal:Y | `之.bronze.svg`<br>`之.oracle.svg`<br>`之.seal.svg` |
+| 制 | oracle:- bronze:Y seal:Y | `制.bronze.svg`<br>`制.seal.svg` |
+| 钟 | oracle:- bronze:Y seal:Y | `钟.bronze.svg`<br>`钟.seal.svg` |
+| 舟 | oracle:Y bronze:Y seal:Y | `舟.bronze.svg`<br>`舟.oracle.svg`<br>`舟.seal.svg` |
+| 宙 | oracle:Y bronze:- seal:Y | `宙.oracle.svg`<br>`宙.seal.svg` |
+| 主 | oracle:Y bronze:- seal:Y | `主.oracle.svg`<br>`主.seal.svg` |
+| 住 | oracle:- bronze:- seal:Y | `住.seal.svg` |
+| 筑 | oracle:- bronze:- seal:Y | `筑.seal.svg` |
+| 兹 | oracle:Y bronze:Y seal:Y | `兹.bronze.svg`<br>`兹.oracle.svg`<br>`兹.seal.svg` |
+| 子 | oracle:Y bronze:Y seal:Y | `子.bronze.svg`<br>`子.oracle.svg`<br>`子.seal.svg` |
+| 字 | oracle:- bronze:Y seal:Y | `字.bronze.svg`<br>`字.seal.svg` |
+| 自 | oracle:Y bronze:Y seal:Y | `自.bronze.svg`<br>`自.oracle.svg`<br>`自.seal.svg` |
+| 宗 | oracle:Y bronze:Y seal:Y | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
+| 总 | oracle:- bronze:- seal:Y | `总.seal.svg` |
+| 族 | oracle:Y bronze:Y seal:Y | `族.bronze.svg`<br>`族.oracle.svg`<br>`族.seal.svg` |
 
 ## citybanner
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 旗 | oracle:- bronze:- seal:Y legacy:- | `旗.seal.svg` |
+| 旗 | oracle:- bronze:- seal:Y | `旗.seal.svg` |
 
 ## civics
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 阿 | oracle:- bronze:Y seal:Y legacy:- | `阿.bronze.svg`<br>`阿.seal.svg` |
-| 奥 | oracle:- bronze:- seal:Y legacy:- | `奥.seal.svg` |
-| 澳 | oracle:- bronze:- seal:Y legacy:- | `澳.seal.svg` |
-| 芭 | oracle:- bronze:- seal:Y legacy:- | `芭.seal.svg` |
-| 霸 | oracle:Y bronze:Y seal:Y legacy:- | `霸.bronze.svg`<br>`霸.oracle.svg`<br>`霸.seal.svg` |
-| 邦 | oracle:Y bronze:Y seal:Y legacy:- | `邦.bronze.svg`<br>`邦.oracle.svg`<br>`邦.seal.svg` |
-| 保 | oracle:Y bronze:Y seal:Y legacy:- | `保.bronze.svg`<br>`保.oracle.svg`<br>`保.seal.svg` |
-| 本 | oracle:- bronze:Y seal:Y legacy:- | `本.bronze.svg`<br>`本.seal.svg` |
-| 比 | oracle:Y bronze:Y seal:Y legacy:- | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
-| 币 | oracle:- bronze:- seal:Y legacy:- | `币.seal.svg` |
-| 必 | oracle:Y bronze:Y seal:Y legacy:- | `必.bronze.svg`<br>`必.oracle.svg`<br>`必.seal.svg` |
-| 变 | oracle:- bronze:Y seal:Y legacy:- | `变.bronze.svg`<br>`变.seal.svg` |
-| 兵 | oracle:Y bronze:Y seal:Y legacy:- | `兵.bronze.svg`<br>`兵.oracle.svg`<br>`兵.seal.svg` |
-| 部 | oracle:- bronze:- seal:Y legacy:- | `部.seal.svg` |
-| 产 | oracle:- bronze:Y seal:Y legacy:- | `产.bronze.svg`<br>`产.seal.svg` |
-| 场 | oracle:- bronze:- seal:Y legacy:- | `场.seal.svg` |
-| 朝 | oracle:Y bronze:Y seal:Y legacy:- | `朝.bronze.svg`<br>`朝.oracle.svg`<br>`朝.seal.svg` |
-| 城 | oracle:- bronze:Y seal:Y legacy:- | `城.bronze.svg`<br>`城.seal.svg` |
-| 程 | oracle:- bronze:Y seal:Y legacy:- | `程.bronze.svg`<br>`程.seal.svg` |
-| 出 | oracle:Y bronze:Y seal:Y legacy:- | `出.bronze.svg`<br>`出.oracle.svg`<br>`出.seal.svg` |
-| 传 | oracle:Y bronze:Y seal:Y legacy:- | `传.bronze.svg`<br>`传.oracle.svg`<br>`传.seal.svg` |
-| 次 | oracle:Y bronze:Y seal:Y legacy:- | `次.bronze.svg`<br>`次.oracle.svg`<br>`次.seal.svg` |
-| 大 | oracle:Y bronze:Y seal:Y legacy:- | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
-| 导 | oracle:- bronze:- seal:Y legacy:- | `导.seal.svg` |
-| 道 | oracle:- bronze:Y seal:Y legacy:- | `道.bronze.svg`<br>`道.seal.svg` |
-| 地 | oracle:- bronze:Y seal:Y legacy:- | `地.bronze.svg`<br>`地.seal.svg` |
-| 等 | oracle:- bronze:- seal:Y legacy:- | `等.seal.svg` |
-| 帝 | oracle:Y bronze:Y seal:Y legacy:- | `帝.bronze.svg`<br>`帝.oracle.svg`<br>`帝.seal.svg` |
-| 第 | oracle:Y bronze:Y seal:Y legacy:- | `第.bronze.svg`<br>`第.oracle.svg`<br>`第.seal.svg` |
-| 动 | oracle:- bronze:Y seal:Y legacy:- | `动.bronze.svg`<br>`动.seal.svg` |
-| 斗 | oracle:Y bronze:Y seal:Y legacy:- | `斗.bronze.svg`<br>`斗.oracle.svg`<br>`斗.seal.svg` |
-| 度 | oracle:Y bronze:Y seal:Y legacy:- | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
-| 二 | oracle:Y bronze:Y seal:Y legacy:- | `二.bronze.svg`<br>`二.oracle.svg`<br>`二.seal.svg` |
-| 法 | oracle:- bronze:Y seal:Y legacy:- | `法.bronze.svg`<br>`法.seal.svg` |
-| 防 | oracle:- bronze:- seal:Y legacy:- | `防.seal.svg` |
-| 放 | oracle:- bronze:Y seal:Y legacy:- | `放.bronze.svg`<br>`放.seal.svg` |
-| 分 | oracle:Y bronze:Y seal:Y legacy:- | `分.bronze.svg`<br>`分.oracle.svg`<br>`分.seal.svg` |
-| 封 | oracle:Y bronze:Y seal:Y legacy:- | `封.bronze.svg`<br>`封.oracle.svg`<br>`封.seal.svg` |
-| 服 | oracle:Y bronze:Y seal:Y legacy:- | `服.bronze.svg`<br>`服.oracle.svg`<br>`服.seal.svg` |
-| 改 | oracle:Y bronze:Y seal:Y legacy:- | `改.bronze.svg`<br>`改.oracle.svg`<br>`改.seal.svg` |
-| 高 | oracle:Y bronze:Y seal:Y legacy:- | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
-| 歌 | oracle:- bronze:Y seal:Y legacy:- | `歌.bronze.svg`<br>`歌.seal.svg` |
-| 革 | oracle:Y bronze:Y seal:Y legacy:- | `革.bronze.svg`<br>`革.oracle.svg`<br>`革.seal.svg` |
-| 工 | oracle:Y bronze:Y seal:Y legacy:- | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
-| 公 | oracle:Y bronze:Y seal:Y legacy:- | `公.bronze.svg`<br>`公.oracle.svg`<br>`公.seal.svg` |
-| 雇 | oracle:Y bronze:- seal:Y legacy:- | `雇.oracle.svg`<br>`雇.seal.svg` |
-| 规 | oracle:- bronze:Y seal:Y legacy:- | `规.bronze.svg`<br>`规.seal.svg` |
-| 国 | oracle:- bronze:Y seal:Y legacy:- | `国.bronze.svg`<br>`国.seal.svg` |
-| 海 | oracle:- bronze:Y seal:Y legacy:- | `海.bronze.svg`<br>`海.seal.svg` |
-| 航 | oracle:- bronze:- seal:Y legacy:- | `航.seal.svg` |
-| 合 | oracle:Y bronze:Y seal:Y legacy:- | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
-| 核 | oracle:- bronze:- seal:Y legacy:- | `核.seal.svg` |
-| 护 | oracle:- bronze:- seal:Y legacy:- | `护.seal.svg` |
-| 化 | oracle:Y bronze:Y seal:Y legacy:- | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
-| 划 | oracle:- bronze:- seal:Y legacy:- | `划.seal.svg` |
-| 环 | oracle:- bronze:Y seal:Y legacy:- | `环.bronze.svg`<br>`环.seal.svg` |
-| 缓 | oracle:- bronze:- seal:Y legacy:- | `缓.seal.svg` |
-| 皇 | oracle:Y bronze:Y seal:Y legacy:- | `皇.bronze.svg`<br>`皇.oracle.svg`<br>`皇.seal.svg` |
-| 会 | oracle:Y bronze:Y seal:Y legacy:- | `会.bronze.svg`<br>`会.oracle.svg`<br>`会.seal.svg` |
-| 货 | oracle:- bronze:- seal:Y legacy:- | `货.seal.svg` |
-| 机 | oracle:- bronze:- seal:Y legacy:- | `机.seal.svg` |
-| 级 | oracle:- bronze:- seal:Y legacy:- | `级.seal.svg` |
-| 极 | oracle:- bronze:- seal:Y legacy:- | `极.seal.svg` |
-| 集 | oracle:Y bronze:Y seal:Y legacy:- | `集.bronze.svg`<br>`集.oracle.svg`<br>`集.seal.svg` |
-| 计 | oracle:- bronze:- seal:Y legacy:- | `计.seal.svg` |
-| 记 | oracle:- bronze:Y seal:Y legacy:- | `记.bronze.svg`<br>`记.seal.svg` |
-| 纪 | oracle:- bronze:Y seal:Y legacy:- | `纪.bronze.svg`<br>`纪.seal.svg` |
-| 技 | oracle:- bronze:- seal:Y legacy:- | `技.seal.svg` |
-| 济 | oracle:- bronze:Y seal:Y legacy:- | `济.bronze.svg`<br>`济.seal.svg` |
-| 家 | oracle:Y bronze:Y seal:Y legacy:- | `家.bronze.svg`<br>`家.oracle.svg`<br>`家.seal.svg` |
-| 减 | oracle:- bronze:Y seal:Y legacy:- | `减.bronze.svg`<br>`减.seal.svg` |
-| 建 | oracle:Y bronze:Y seal:Y legacy:- | `建.bronze.svg`<br>`建.oracle.svg`<br>`建.seal.svg` |
-| 交 | oracle:- bronze:- seal:Y legacy:- | `交.seal.svg` |
-| 焦 | oracle:- bronze:Y seal:Y legacy:- | `焦.bronze.svg`<br>`焦.seal.svg` |
-| 教 | oracle:Y bronze:Y seal:Y legacy:- | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
-| 阶 | oracle:Y bronze:Y seal:Y legacy:- | `阶.bronze.svg`<br>`阶.oracle.svg`<br>`阶.seal.svg` |
-| 界 | oracle:- bronze:- seal:Y legacy:- | `界.seal.svg` |
-| 金 | oracle:- bronze:Y seal:Y legacy:- | `金.bronze.svg`<br>`金.seal.svg` |
-| 近 | oracle:- bronze:- seal:Y legacy:- | `近.seal.svg` |
-| 京 | oracle:Y bronze:Y seal:Y legacy:- | `京.bronze.svg`<br>`京.oracle.svg`<br>`京.seal.svg` |
-| 经 | oracle:- bronze:Y seal:Y legacy:- | `经.bronze.svg`<br>`经.seal.svg` |
-| 景 | oracle:- bronze:- seal:Y legacy:- | `景.seal.svg` |
-| 径 | oracle:- bronze:- seal:Y legacy:- | `径.seal.svg` |
-| 竞 | oracle:Y bronze:Y seal:Y legacy:- | `竞.bronze.svg`<br>`竞.oracle.svg`<br>`竞.seal.svg` |
-| 举 | oracle:- bronze:Y seal:Y legacy:- | `举.bronze.svg`<br>`举.seal.svg` |
-| 剧 | oracle:- bronze:- seal:Y legacy:- | `剧.seal.svg` |
-| 军 | oracle:- bronze:Y seal:Y legacy:- | `军.bronze.svg`<br>`军.seal.svg` |
-| 勘 | oracle:- bronze:- seal:Y legacy:- | `勘.seal.svg` |
-| 空 | oracle:- bronze:Y seal:Y legacy:- | `空.bronze.svg`<br>`空.seal.svg` |
-| 快 | oracle:- bronze:- seal:Y legacy:- | `快.seal.svg` |
-| 况 | oracle:Y bronze:- seal:Y legacy:- | `况.oracle.svg`<br>`况.seal.svg` |
-| 扩 | oracle:- bronze:- seal:Y legacy:- | `扩.seal.svg` |
-| 来 | oracle:Y bronze:Y seal:Y legacy:- | `来.bronze.svg`<br>`来.oracle.svg`<br>`来.seal.svg` |
-| 劳 | oracle:Y bronze:Y seal:Y legacy:- | `劳.bronze.svg`<br>`劳.oracle.svg`<br>`劳.seal.svg` |
-| 乐 | oracle:Y bronze:Y seal:Y legacy:- | `乐.bronze.svg`<br>`乐.oracle.svg`<br>`乐.seal.svg` |
-| 蕾 | oracle:- bronze:- seal:Y legacy:- | `蕾.seal.svg` |
-| 冷 | oracle:- bronze:- seal:Y legacy:- | `冷.seal.svg` |
-| 离 | oracle:- bronze:Y seal:Y legacy:- | `离.bronze.svg`<br>`离.seal.svg` |
-| 里 | oracle:- bronze:Y seal:Y legacy:- | `里.bronze.svg`<br>`里.seal.svg` |
-| 理 | oracle:- bronze:Y seal:Y legacy:- | `理.bronze.svg`<br>`理.seal.svg` |
-| 力 | oracle:Y bronze:Y seal:Y legacy:- | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
-| 历 | oracle:- bronze:- seal:Y legacy:- | `历.seal.svg` |
-| 利 | oracle:Y bronze:Y seal:Y legacy:- | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
-| 联 | oracle:Y bronze:Y seal:Y legacy:- | `联.bronze.svg`<br>`联.oracle.svg`<br>`联.seal.svg` |
-| 练 | oracle:- bronze:- seal:Y legacy:- | `练.seal.svg` |
-| 流 | oracle:- bronze:Y seal:Y legacy:- | `流.bronze.svg`<br>`流.seal.svg` |
-| 录 | oracle:Y bronze:Y seal:Y legacy:- | `录.bronze.svg`<br>`录.oracle.svg`<br>`录.seal.svg` |
-| 露 | oracle:- bronze:- seal:Y legacy:- | `露.seal.svg` |
-| 律 | oracle:Y bronze:Y seal:Y legacy:- | `律.bronze.svg`<br>`律.oracle.svg`<br>`律.seal.svg` |
-| 轮 | oracle:- bronze:Y seal:Y legacy:- | `轮.bronze.svg`<br>`轮.seal.svg` |
-| 论 | oracle:- bronze:Y seal:Y legacy:- | `论.bronze.svg`<br>`论.seal.svg` |
-| 罗 | oracle:Y bronze:Y seal:Y legacy:- | `罗.bronze.svg`<br>`罗.oracle.svg`<br>`罗.seal.svg` |
-| 贸 | oracle:- bronze:Y seal:Y legacy:- | `贸.bronze.svg`<br>`贸.seal.svg` |
-| 媒 | oracle:- bronze:- seal:Y legacy:- | `媒.seal.svg` |
-| 蒙 | oracle:- bronze:Y seal:Y legacy:- | `蒙.bronze.svg`<br>`蒙.seal.svg` |
-| 秘 | oracle:- bronze:- seal:Y legacy:- | `秘.seal.svg` |
-| 棉 | oracle:- bronze:- seal:Y legacy:- | `棉.seal.svg` |
-| 民 | oracle:Y bronze:Y seal:Y legacy:- | `民.bronze.svg`<br>`民.oracle.svg`<br>`民.seal.svg` |
-| 缪 | oracle:- bronze:- seal:Y legacy:- | `缪.seal.svg` |
-| 木 | oracle:Y bronze:Y seal:Y legacy:- | `木.bronze.svg`<br>`木.oracle.svg`<br>`木.seal.svg` |
-| 纳 | oracle:- bronze:Y seal:Y legacy:- | `纳.bronze.svg`<br>`纳.seal.svg` |
-| 乃 | oracle:Y bronze:Y seal:Y legacy:- | `乃.bronze.svg`<br>`乃.oracle.svg`<br>`乃.seal.svg` |
-| 尼 | oracle:- bronze:- seal:Y legacy:- | `尼.seal.svg` |
-| 努 | oracle:- bronze:- seal:Y legacy:- | `努.seal.svg` |
-| 女 | oracle:Y bronze:Y seal:Y legacy:- | `女.bronze.svg`<br>`女.oracle.svg`<br>`女.seal.svg` |
-| 暖 | oracle:- bronze:- seal:Y legacy:- | `暖.seal.svg` |
-| 盘 | oracle:- bronze:Y seal:Y legacy:- | `盘.bronze.svg`<br>`盘.seal.svg` |
-| 期 | oracle:- bronze:Y seal:Y legacy:- | `期.bronze.svg`<br>`期.seal.svg` |
-| 企 | oracle:Y bronze:Y seal:Y legacy:- | `企.bronze.svg`<br>`企.oracle.svg`<br>`企.seal.svg` |
-| 启 | oracle:Y bronze:- seal:Y legacy:- | `启.oracle.svg`<br>`启.seal.svg` |
-| 巧 | oracle:- bronze:- seal:Y legacy:- | `巧.seal.svg` |
-| 情 | oracle:- bronze:- seal:Y legacy:- | `情.seal.svg` |
-| 球 | oracle:- bronze:- seal:Y legacy:- | `球.seal.svg` |
-| 全 | oracle:- bronze:- seal:Y legacy:- | `全.seal.svg` |
-| 权 | oracle:Y bronze:Y seal:Y legacy:- | `权.bronze.svg`<br>`权.oracle.svg`<br>`权.seal.svg` |
-| 然 | oracle:- bronze:Y seal:Y legacy:- | `然.bronze.svg`<br>`然.seal.svg` |
-| 热 | oracle:- bronze:- seal:Y legacy:- | `热.seal.svg` |
-| 人 | oracle:Y bronze:Y seal:Y legacy:- | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
-| 塞 | oracle:Y bronze:- seal:Y legacy:- | `塞.oracle.svg`<br>`塞.seal.svg` |
-| 赛 | oracle:- bronze:- seal:Y legacy:- | `赛.seal.svg` |
-| 商 | oracle:Y bronze:Y seal:Y legacy:- | `商.bronze.svg`<br>`商.oracle.svg`<br>`商.seal.svg` |
-| 社 | oracle:- bronze:Y seal:Y legacy:- | `社.bronze.svg`<br>`社.seal.svg` |
-| 神 | oracle:- bronze:Y seal:Y legacy:- | `神.bronze.svg`<br>`神.seal.svg` |
-| 圣 | oracle:Y bronze:Y seal:Y legacy:- | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
-| 诗 | oracle:- bronze:- seal:Y legacy:- | `诗.seal.svg` |
-| 实 | oracle:- bronze:Y seal:Y legacy:- | `实.bronze.svg`<br>`实.seal.svg` |
-| 史 | oracle:Y bronze:Y seal:Y legacy:- | `史.bronze.svg`<br>`史.oracle.svg`<br>`史.seal.svg` |
-| 士 | oracle:- bronze:Y seal:Y legacy:- | `士.bronze.svg`<br>`士.seal.svg` |
-| 世 | oracle:- bronze:Y seal:Y legacy:- | `世.bronze.svg`<br>`世.seal.svg` |
-| 市 | oracle:Y bronze:Y seal:Y legacy:- | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
-| 事 | oracle:Y bronze:Y seal:Y legacy:- | `事.bronze.svg`<br>`事.oracle.svg`<br>`事.seal.svg` |
-| 势 | oracle:- bronze:- seal:Y legacy:- | `势.seal.svg` |
-| 室 | oracle:Y bronze:Y seal:Y legacy:- | `室.bronze.svg`<br>`室.oracle.svg`<br>`室.seal.svg` |
-| 守 | oracle:Y bronze:Y seal:Y legacy:- | `守.bronze.svg`<br>`守.oracle.svg`<br>`守.seal.svg` |
-| 书 | oracle:- bronze:Y seal:Y legacy:- | `书.bronze.svg`<br>`书.seal.svg` |
-| 署 | oracle:- bronze:- seal:Y legacy:- | `署.seal.svg` |
-| 术 | oracle:Y bronze:- seal:Y legacy:- | `术.oracle.svg`<br>`术.seal.svg` |
-| 数 | oracle:- bronze:Y seal:Y legacy:- | `数.bronze.svg`<br>`数.seal.svg` |
-| 刷 | oracle:- bronze:- seal:Y legacy:- | `刷.seal.svg` |
-| 司 | oracle:Y bronze:Y seal:Y legacy:- | `司.bronze.svg`<br>`司.oracle.svg`<br>`司.seal.svg` |
-| 思 | oracle:- bronze:Y seal:Y legacy:- | `思.bronze.svg`<br>`思.seal.svg` |
-| 斯 | oracle:- bronze:Y seal:Y legacy:- | `斯.bronze.svg`<br>`斯.seal.svg` |
-| 死 | oracle:Y bronze:Y seal:Y legacy:- | `死.bronze.svg`<br>`死.oracle.svg`<br>`死.seal.svg` |
-| 速 | oracle:Y bronze:Y seal:Y legacy:- | `速.bronze.svg`<br>`速.oracle.svg`<br>`速.seal.svg` |
-| 太 | oracle:- bronze:- seal:Y legacy:- | `太.seal.svg` |
-| 探 | oracle:- bronze:- seal:Y legacy:- | `探.seal.svg` |
-| 逃 | oracle:- bronze:Y seal:Y legacy:- | `逃.bronze.svg`<br>`逃.seal.svg` |
-| 淘 | oracle:- bronze:- seal:Y legacy:- | `淘.seal.svg` |
-| 体 | oracle:- bronze:Y seal:Y legacy:- | `体.bronze.svg`<br>`体.seal.svg` |
-| 天 | oracle:Y bronze:Y seal:Y legacy:- | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
-| 田 | oracle:Y bronze:Y seal:Y legacy:- | `田.bronze.svg`<br>`田.oracle.svg`<br>`田.seal.svg` |
-| 统 | oracle:- bronze:- seal:Y legacy:- | `统.seal.svg` |
-| 透 | oracle:- bronze:- seal:Y legacy:- | `透.seal.svg` |
-| 土 | oracle:Y bronze:Y seal:Y legacy:- | `土.bronze.svg`<br>`土.oracle.svg`<br>`土.seal.svg` |
-| 王 | oracle:Y bronze:Y seal:Y legacy:- | `王.bronze.svg`<br>`王.oracle.svg`<br>`王.seal.svg` |
-| 维 | oracle:- bronze:Y seal:Y legacy:- | `维.bronze.svg`<br>`维.seal.svg` |
-| 伟 | oracle:- bronze:- seal:Y legacy:- | `伟.seal.svg` |
-| 未 | oracle:Y bronze:Y seal:Y legacy:- | `未.bronze.svg`<br>`未.oracle.svg`<br>`未.seal.svg` |
-| 文 | oracle:Y bronze:Y seal:Y legacy:- | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
-| 舞 | oracle:Y bronze:Y seal:Y legacy:- | `舞.bronze.svg`<br>`舞.oracle.svg`<br>`舞.seal.svg` |
-| 务 | oracle:- bronze:Y seal:Y legacy:- | `务.bronze.svg`<br>`务.seal.svg` |
-| 西 | oracle:Y bronze:Y seal:Y legacy:- | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
-| 息 | oracle:- bronze:Y seal:Y legacy:- | `息.bronze.svg`<br>`息.seal.svg` |
-| 戏 | oracle:- bronze:Y seal:Y legacy:- | `戏.bronze.svg`<br>`戏.seal.svg` |
-| 辖 | oracle:Y bronze:Y seal:Y legacy:- | `辖.bronze.svg`<br>`辖.oracle.svg`<br>`辖.seal.svg` |
-| 想 | oracle:- bronze:Y seal:Y legacy:- | `想.bronze.svg`<br>`想.seal.svg` |
-| 象 | oracle:Y bronze:Y seal:Y legacy:- | `象.bronze.svg`<br>`象.oracle.svg`<br>`象.seal.svg` |
-| 械 | oracle:- bronze:- seal:Y legacy:- | `械.seal.svg` |
-| 信 | oracle:- bronze:Y seal:Y legacy:- | `信.bronze.svg`<br>`信.seal.svg` |
-| 行 | oracle:Y bronze:Y seal:Y legacy:- | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
-| 形 | oracle:- bronze:- seal:Y legacy:- | `形.seal.svg` |
-| 选 | oracle:Y bronze:Y seal:Y legacy:- | `选.bronze.svg`<br>`选.oracle.svg`<br>`选.seal.svg` |
-| 学 | oracle:Y bronze:Y seal:Y legacy:- | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
-| 训 | oracle:- bronze:Y seal:Y legacy:- | `训.bronze.svg`<br>`训.seal.svg` |
-| 亚 | oracle:Y bronze:Y seal:Y legacy:- | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
-| 羊 | oracle:Y bronze:Y seal:Y legacy:- | `羊.bronze.svg`<br>`羊.oracle.svg`<br>`羊.seal.svg` |
-| 养 | oracle:Y bronze:Y seal:Y legacy:- | `养.bronze.svg`<br>`养.oracle.svg`<br>`养.seal.svg` |
-| 业 | oracle:- bronze:Y seal:Y legacy:- | `业.bronze.svg`<br>`业.seal.svg` |
-| 一 | oracle:Y bronze:Y seal:Y legacy:- | `一.bronze.svg`<br>`一.oracle.svg`<br>`一.seal.svg` |
-| 伊 | oracle:Y bronze:Y seal:Y legacy:- | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
-| 遗 | oracle:- bronze:Y seal:Y legacy:- | `遗.bronze.svg`<br>`遗.seal.svg` |
-| 义 | oracle:Y bronze:Y seal:Y legacy:- | `义.bronze.svg`<br>`义.oracle.svg`<br>`义.seal.svg` |
-| 艺 | oracle:Y bronze:Y seal:Y legacy:- | `艺.bronze.svg`<br>`艺.oracle.svg`<br>`艺.seal.svg` |
-| 银 | oracle:- bronze:- seal:Y legacy:- | `银.seal.svg` |
-| 印 | oracle:Y bronze:Y seal:Y legacy:- | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
-| 佣 | oracle:- bronze:- seal:Y legacy:- | `佣.seal.svg` |
-| 由 | oracle:Y bronze:Y seal:- legacy:- | `由.bronze.svg`<br>`由.oracle.svg` |
-| 邮 | oracle:- bronze:- seal:Y legacy:- | `邮.seal.svg` |
-| 游 | oracle:Y bronze:Y seal:Y legacy:- | `游.bronze.svg`<br>`游.oracle.svg`<br>`游.seal.svg` |
-| 娱 | oracle:- bronze:- seal:Y legacy:- | `娱.seal.svg` |
-| 育 | oracle:Y bronze:Y seal:Y legacy:- | `育.bronze.svg`<br>`育.oracle.svg`<br>`育.seal.svg` |
-| 员 | oracle:Y bronze:Y seal:Y legacy:- | `员.bronze.svg`<br>`员.oracle.svg`<br>`员.seal.svg` |
-| 园 | oracle:- bronze:- seal:Y legacy:- | `园.seal.svg` |
-| 约 | oracle:- bronze:- seal:Y legacy:- | `约.seal.svg` |
-| 运 | oracle:- bronze:- seal:Y legacy:- | `运.seal.svg` |
-| 早 | oracle:Y bronze:Y seal:Y legacy:- | `早.bronze.svg`<br>`早.oracle.svg`<br>`早.seal.svg` |
-| 造 | oracle:- bronze:Y seal:Y legacy:- | `造.bronze.svg`<br>`造.seal.svg` |
-| 展 | oracle:- bronze:- seal:Y legacy:- | `展.seal.svg` |
-| 战 | oracle:- bronze:Y seal:Y legacy:- | `战.bronze.svg`<br>`战.seal.svg` |
-| 哲 | oracle:- bronze:Y seal:Y legacy:- | `哲.bronze.svg`<br>`哲.seal.svg` |
-| 争 | oracle:Y bronze:- seal:Y legacy:- | `争.oracle.svg`<br>`争.seal.svg` |
-| 政 | oracle:Y bronze:Y seal:Y legacy:- | `政.bronze.svg`<br>`政.oracle.svg`<br>`政.seal.svg` |
-| 之 | oracle:Y bronze:Y seal:Y legacy:- | `之.bronze.svg`<br>`之.oracle.svg`<br>`之.seal.svg` |
-| 知 | oracle:- bronze:Y seal:Y legacy:- | `知.bronze.svg`<br>`知.seal.svg` |
-| 直 | oracle:Y bronze:Y seal:Y legacy:- | `直.bronze.svg`<br>`直.oracle.svg`<br>`直.seal.svg` |
-| 职 | oracle:- bronze:Y seal:Y legacy:- | `职.bronze.svg`<br>`职.seal.svg` |
-| 殖 | oracle:- bronze:- seal:Y legacy:- | `殖.seal.svg` |
-| 纸 | oracle:- bronze:- seal:Y legacy:- | `纸.seal.svg` |
-| 制 | oracle:- bronze:Y seal:Y legacy:- | `制.bronze.svg`<br>`制.seal.svg` |
-| 治 | oracle:- bronze:- seal:Y legacy:- | `治.seal.svg` |
-| 众 | oracle:Y bronze:Y seal:Y legacy:- | `众.bronze.svg`<br>`众.oracle.svg`<br>`众.seal.svg` |
-| 重 | oracle:Y bronze:Y seal:Y legacy:- | `重.bronze.svg`<br>`重.oracle.svg`<br>`重.seal.svg` |
-| 主 | oracle:Y bronze:- seal:Y legacy:- | `主.oracle.svg`<br>`主.seal.svg` |
-| 桌 | oracle:- bronze:Y seal:Y legacy:- | `桌.bronze.svg`<br>`桌.seal.svg` |
-| 资 | oracle:- bronze:- seal:Y legacy:- | `资.seal.svg` |
-| 字 | oracle:- bronze:Y seal:Y legacy:- | `字.bronze.svg`<br>`字.seal.svg` |
-| 自 | oracle:Y bronze:Y seal:Y legacy:- | `自.bronze.svg`<br>`自.oracle.svg`<br>`自.seal.svg` |
-| 宗 | oracle:Y bronze:Y seal:Y legacy:- | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
-| 综 | oracle:- bronze:- seal:Y legacy:- | `综.seal.svg` |
-| 租 | oracle:- bronze:- seal:Y legacy:- | `租.seal.svg` |
-| 族 | oracle:Y bronze:Y seal:Y legacy:- | `族.bronze.svg`<br>`族.oracle.svg`<br>`族.seal.svg` |
+| 阿 | oracle:- bronze:Y seal:Y | `阿.bronze.svg`<br>`阿.seal.svg` |
+| 奥 | oracle:- bronze:- seal:Y | `奥.seal.svg` |
+| 澳 | oracle:- bronze:- seal:Y | `澳.seal.svg` |
+| 芭 | oracle:- bronze:- seal:Y | `芭.seal.svg` |
+| 霸 | oracle:Y bronze:Y seal:Y | `霸.bronze.svg`<br>`霸.oracle.svg`<br>`霸.seal.svg` |
+| 邦 | oracle:Y bronze:Y seal:Y | `邦.bronze.svg`<br>`邦.oracle.svg`<br>`邦.seal.svg` |
+| 保 | oracle:Y bronze:Y seal:Y | `保.bronze.svg`<br>`保.oracle.svg`<br>`保.seal.svg` |
+| 本 | oracle:- bronze:Y seal:Y | `本.bronze.svg`<br>`本.seal.svg` |
+| 比 | oracle:Y bronze:Y seal:Y | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
+| 币 | oracle:- bronze:- seal:Y | `币.seal.svg` |
+| 必 | oracle:Y bronze:Y seal:Y | `必.bronze.svg`<br>`必.oracle.svg`<br>`必.seal.svg` |
+| 变 | oracle:- bronze:Y seal:Y | `变.bronze.svg`<br>`变.seal.svg` |
+| 兵 | oracle:Y bronze:Y seal:Y | `兵.bronze.svg`<br>`兵.oracle.svg`<br>`兵.seal.svg` |
+| 部 | oracle:- bronze:- seal:Y | `部.seal.svg` |
+| 产 | oracle:- bronze:Y seal:Y | `产.bronze.svg`<br>`产.seal.svg` |
+| 场 | oracle:- bronze:- seal:Y | `场.seal.svg` |
+| 朝 | oracle:Y bronze:Y seal:Y | `朝.bronze.svg`<br>`朝.oracle.svg`<br>`朝.seal.svg` |
+| 城 | oracle:- bronze:Y seal:Y | `城.bronze.svg`<br>`城.seal.svg` |
+| 程 | oracle:- bronze:Y seal:Y | `程.bronze.svg`<br>`程.seal.svg` |
+| 出 | oracle:Y bronze:Y seal:Y | `出.bronze.svg`<br>`出.oracle.svg`<br>`出.seal.svg` |
+| 传 | oracle:Y bronze:Y seal:Y | `传.bronze.svg`<br>`传.oracle.svg`<br>`传.seal.svg` |
+| 次 | oracle:Y bronze:Y seal:Y | `次.bronze.svg`<br>`次.oracle.svg`<br>`次.seal.svg` |
+| 大 | oracle:Y bronze:Y seal:Y | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
+| 导 | oracle:- bronze:- seal:Y | `导.seal.svg` |
+| 道 | oracle:- bronze:Y seal:Y | `道.bronze.svg`<br>`道.seal.svg` |
+| 地 | oracle:- bronze:Y seal:Y | `地.bronze.svg`<br>`地.seal.svg` |
+| 等 | oracle:- bronze:- seal:Y | `等.seal.svg` |
+| 帝 | oracle:Y bronze:Y seal:Y | `帝.bronze.svg`<br>`帝.oracle.svg`<br>`帝.seal.svg` |
+| 第 | oracle:Y bronze:Y seal:Y | `第.bronze.svg`<br>`第.oracle.svg`<br>`第.seal.svg` |
+| 动 | oracle:- bronze:Y seal:Y | `动.bronze.svg`<br>`动.seal.svg` |
+| 斗 | oracle:Y bronze:Y seal:Y | `斗.bronze.svg`<br>`斗.oracle.svg`<br>`斗.seal.svg` |
+| 度 | oracle:Y bronze:Y seal:Y | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
+| 二 | oracle:Y bronze:Y seal:Y | `二.bronze.svg`<br>`二.oracle.svg`<br>`二.seal.svg` |
+| 法 | oracle:- bronze:Y seal:Y | `法.bronze.svg`<br>`法.seal.svg` |
+| 防 | oracle:- bronze:- seal:Y | `防.seal.svg` |
+| 放 | oracle:- bronze:Y seal:Y | `放.bronze.svg`<br>`放.seal.svg` |
+| 分 | oracle:Y bronze:Y seal:Y | `分.bronze.svg`<br>`分.oracle.svg`<br>`分.seal.svg` |
+| 封 | oracle:Y bronze:Y seal:Y | `封.bronze.svg`<br>`封.oracle.svg`<br>`封.seal.svg` |
+| 服 | oracle:Y bronze:Y seal:Y | `服.bronze.svg`<br>`服.oracle.svg`<br>`服.seal.svg` |
+| 改 | oracle:Y bronze:Y seal:Y | `改.bronze.svg`<br>`改.oracle.svg`<br>`改.seal.svg` |
+| 高 | oracle:Y bronze:Y seal:Y | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
+| 歌 | oracle:- bronze:Y seal:Y | `歌.bronze.svg`<br>`歌.seal.svg` |
+| 革 | oracle:Y bronze:Y seal:Y | `革.bronze.svg`<br>`革.oracle.svg`<br>`革.seal.svg` |
+| 工 | oracle:Y bronze:Y seal:Y | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
+| 公 | oracle:Y bronze:Y seal:Y | `公.bronze.svg`<br>`公.oracle.svg`<br>`公.seal.svg` |
+| 雇 | oracle:Y bronze:- seal:Y | `雇.oracle.svg`<br>`雇.seal.svg` |
+| 规 | oracle:- bronze:Y seal:Y | `规.bronze.svg`<br>`规.seal.svg` |
+| 国 | oracle:- bronze:Y seal:Y | `国.bronze.svg`<br>`国.seal.svg` |
+| 海 | oracle:- bronze:Y seal:Y | `海.bronze.svg`<br>`海.seal.svg` |
+| 航 | oracle:- bronze:- seal:Y | `航.seal.svg` |
+| 合 | oracle:Y bronze:Y seal:Y | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
+| 核 | oracle:- bronze:- seal:Y | `核.seal.svg` |
+| 护 | oracle:- bronze:- seal:Y | `护.seal.svg` |
+| 化 | oracle:Y bronze:Y seal:Y | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
+| 划 | oracle:- bronze:- seal:Y | `划.seal.svg` |
+| 环 | oracle:- bronze:Y seal:Y | `环.bronze.svg`<br>`环.seal.svg` |
+| 缓 | oracle:- bronze:- seal:Y | `缓.seal.svg` |
+| 皇 | oracle:Y bronze:Y seal:Y | `皇.bronze.svg`<br>`皇.oracle.svg`<br>`皇.seal.svg` |
+| 会 | oracle:Y bronze:Y seal:Y | `会.bronze.svg`<br>`会.oracle.svg`<br>`会.seal.svg` |
+| 货 | oracle:- bronze:- seal:Y | `货.seal.svg` |
+| 机 | oracle:- bronze:- seal:Y | `机.seal.svg` |
+| 级 | oracle:- bronze:- seal:Y | `级.seal.svg` |
+| 极 | oracle:- bronze:- seal:Y | `极.seal.svg` |
+| 集 | oracle:Y bronze:Y seal:Y | `集.bronze.svg`<br>`集.oracle.svg`<br>`集.seal.svg` |
+| 计 | oracle:- bronze:- seal:Y | `计.seal.svg` |
+| 记 | oracle:- bronze:Y seal:Y | `记.bronze.svg`<br>`记.seal.svg` |
+| 纪 | oracle:- bronze:Y seal:Y | `纪.bronze.svg`<br>`纪.seal.svg` |
+| 技 | oracle:- bronze:- seal:Y | `技.seal.svg` |
+| 济 | oracle:- bronze:Y seal:Y | `济.bronze.svg`<br>`济.seal.svg` |
+| 家 | oracle:Y bronze:Y seal:Y | `家.bronze.svg`<br>`家.oracle.svg`<br>`家.seal.svg` |
+| 减 | oracle:- bronze:Y seal:Y | `减.bronze.svg`<br>`减.seal.svg` |
+| 建 | oracle:Y bronze:Y seal:Y | `建.bronze.svg`<br>`建.oracle.svg`<br>`建.seal.svg` |
+| 交 | oracle:- bronze:- seal:Y | `交.seal.svg` |
+| 焦 | oracle:- bronze:Y seal:Y | `焦.bronze.svg`<br>`焦.seal.svg` |
+| 教 | oracle:Y bronze:Y seal:Y | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
+| 阶 | oracle:Y bronze:Y seal:Y | `阶.bronze.svg`<br>`阶.oracle.svg`<br>`阶.seal.svg` |
+| 界 | oracle:- bronze:- seal:Y | `界.seal.svg` |
+| 金 | oracle:- bronze:Y seal:Y | `金.bronze.svg`<br>`金.seal.svg` |
+| 近 | oracle:- bronze:- seal:Y | `近.seal.svg` |
+| 京 | oracle:Y bronze:Y seal:Y | `京.bronze.svg`<br>`京.oracle.svg`<br>`京.seal.svg` |
+| 经 | oracle:- bronze:Y seal:Y | `经.bronze.svg`<br>`经.seal.svg` |
+| 景 | oracle:- bronze:- seal:Y | `景.seal.svg` |
+| 径 | oracle:- bronze:- seal:Y | `径.seal.svg` |
+| 竞 | oracle:Y bronze:Y seal:Y | `竞.bronze.svg`<br>`竞.oracle.svg`<br>`竞.seal.svg` |
+| 举 | oracle:- bronze:Y seal:Y | `举.bronze.svg`<br>`举.seal.svg` |
+| 剧 | oracle:- bronze:- seal:Y | `剧.seal.svg` |
+| 军 | oracle:- bronze:Y seal:Y | `军.bronze.svg`<br>`军.seal.svg` |
+| 勘 | oracle:- bronze:- seal:Y | `勘.seal.svg` |
+| 空 | oracle:- bronze:Y seal:Y | `空.bronze.svg`<br>`空.seal.svg` |
+| 快 | oracle:- bronze:- seal:Y | `快.seal.svg` |
+| 况 | oracle:Y bronze:- seal:Y | `况.oracle.svg`<br>`况.seal.svg` |
+| 扩 | oracle:- bronze:- seal:Y | `扩.seal.svg` |
+| 来 | oracle:Y bronze:Y seal:Y | `来.bronze.svg`<br>`来.oracle.svg`<br>`来.seal.svg` |
+| 劳 | oracle:Y bronze:Y seal:Y | `劳.bronze.svg`<br>`劳.oracle.svg`<br>`劳.seal.svg` |
+| 乐 | oracle:Y bronze:Y seal:Y | `乐.bronze.svg`<br>`乐.oracle.svg`<br>`乐.seal.svg` |
+| 蕾 | oracle:- bronze:- seal:Y | `蕾.seal.svg` |
+| 冷 | oracle:- bronze:- seal:Y | `冷.seal.svg` |
+| 离 | oracle:- bronze:Y seal:Y | `离.bronze.svg`<br>`离.seal.svg` |
+| 里 | oracle:- bronze:Y seal:Y | `里.bronze.svg`<br>`里.seal.svg` |
+| 理 | oracle:- bronze:Y seal:Y | `理.bronze.svg`<br>`理.seal.svg` |
+| 力 | oracle:Y bronze:Y seal:Y | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
+| 历 | oracle:- bronze:- seal:Y | `历.seal.svg` |
+| 利 | oracle:Y bronze:Y seal:Y | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
+| 联 | oracle:Y bronze:Y seal:Y | `联.bronze.svg`<br>`联.oracle.svg`<br>`联.seal.svg` |
+| 练 | oracle:- bronze:- seal:Y | `练.seal.svg` |
+| 流 | oracle:- bronze:Y seal:Y | `流.bronze.svg`<br>`流.seal.svg` |
+| 录 | oracle:Y bronze:Y seal:Y | `录.bronze.svg`<br>`录.oracle.svg`<br>`录.seal.svg` |
+| 露 | oracle:- bronze:- seal:Y | `露.seal.svg` |
+| 律 | oracle:Y bronze:Y seal:Y | `律.bronze.svg`<br>`律.oracle.svg`<br>`律.seal.svg` |
+| 轮 | oracle:- bronze:Y seal:Y | `轮.bronze.svg`<br>`轮.seal.svg` |
+| 论 | oracle:- bronze:Y seal:Y | `论.bronze.svg`<br>`论.seal.svg` |
+| 罗 | oracle:Y bronze:Y seal:Y | `罗.bronze.svg`<br>`罗.oracle.svg`<br>`罗.seal.svg` |
+| 贸 | oracle:- bronze:Y seal:Y | `贸.bronze.svg`<br>`贸.seal.svg` |
+| 媒 | oracle:- bronze:- seal:Y | `媒.seal.svg` |
+| 蒙 | oracle:- bronze:Y seal:Y | `蒙.bronze.svg`<br>`蒙.seal.svg` |
+| 秘 | oracle:- bronze:- seal:Y | `秘.seal.svg` |
+| 棉 | oracle:- bronze:- seal:Y | `棉.seal.svg` |
+| 民 | oracle:Y bronze:Y seal:Y | `民.bronze.svg`<br>`民.oracle.svg`<br>`民.seal.svg` |
+| 缪 | oracle:- bronze:- seal:Y | `缪.seal.svg` |
+| 木 | oracle:Y bronze:Y seal:Y | `木.bronze.svg`<br>`木.oracle.svg`<br>`木.seal.svg` |
+| 纳 | oracle:- bronze:Y seal:Y | `纳.bronze.svg`<br>`纳.seal.svg` |
+| 乃 | oracle:Y bronze:Y seal:Y | `乃.bronze.svg`<br>`乃.oracle.svg`<br>`乃.seal.svg` |
+| 尼 | oracle:- bronze:- seal:Y | `尼.seal.svg` |
+| 努 | oracle:- bronze:- seal:Y | `努.seal.svg` |
+| 女 | oracle:Y bronze:Y seal:Y | `女.bronze.svg`<br>`女.oracle.svg`<br>`女.seal.svg` |
+| 暖 | oracle:- bronze:- seal:Y | `暖.seal.svg` |
+| 盘 | oracle:- bronze:Y seal:Y | `盘.bronze.svg`<br>`盘.seal.svg` |
+| 期 | oracle:- bronze:Y seal:Y | `期.bronze.svg`<br>`期.seal.svg` |
+| 企 | oracle:Y bronze:Y seal:Y | `企.bronze.svg`<br>`企.oracle.svg`<br>`企.seal.svg` |
+| 启 | oracle:Y bronze:- seal:Y | `启.oracle.svg`<br>`启.seal.svg` |
+| 巧 | oracle:- bronze:- seal:Y | `巧.seal.svg` |
+| 情 | oracle:- bronze:- seal:Y | `情.seal.svg` |
+| 球 | oracle:- bronze:- seal:Y | `球.seal.svg` |
+| 全 | oracle:- bronze:- seal:Y | `全.seal.svg` |
+| 权 | oracle:Y bronze:Y seal:Y | `权.bronze.svg`<br>`权.oracle.svg`<br>`权.seal.svg` |
+| 然 | oracle:- bronze:Y seal:Y | `然.bronze.svg`<br>`然.seal.svg` |
+| 热 | oracle:- bronze:- seal:Y | `热.seal.svg` |
+| 人 | oracle:Y bronze:Y seal:Y | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
+| 塞 | oracle:Y bronze:- seal:Y | `塞.oracle.svg`<br>`塞.seal.svg` |
+| 赛 | oracle:- bronze:- seal:Y | `赛.seal.svg` |
+| 商 | oracle:Y bronze:Y seal:Y | `商.bronze.svg`<br>`商.oracle.svg`<br>`商.seal.svg` |
+| 社 | oracle:- bronze:Y seal:Y | `社.bronze.svg`<br>`社.seal.svg` |
+| 神 | oracle:- bronze:Y seal:Y | `神.bronze.svg`<br>`神.seal.svg` |
+| 圣 | oracle:Y bronze:Y seal:Y | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
+| 诗 | oracle:- bronze:- seal:Y | `诗.seal.svg` |
+| 实 | oracle:- bronze:Y seal:Y | `实.bronze.svg`<br>`实.seal.svg` |
+| 史 | oracle:Y bronze:Y seal:Y | `史.bronze.svg`<br>`史.oracle.svg`<br>`史.seal.svg` |
+| 士 | oracle:- bronze:Y seal:Y | `士.bronze.svg`<br>`士.seal.svg` |
+| 世 | oracle:- bronze:Y seal:Y | `世.bronze.svg`<br>`世.seal.svg` |
+| 市 | oracle:Y bronze:Y seal:Y | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
+| 事 | oracle:Y bronze:Y seal:Y | `事.bronze.svg`<br>`事.oracle.svg`<br>`事.seal.svg` |
+| 势 | oracle:- bronze:- seal:Y | `势.seal.svg` |
+| 室 | oracle:Y bronze:Y seal:Y | `室.bronze.svg`<br>`室.oracle.svg`<br>`室.seal.svg` |
+| 守 | oracle:Y bronze:Y seal:Y | `守.bronze.svg`<br>`守.oracle.svg`<br>`守.seal.svg` |
+| 书 | oracle:- bronze:Y seal:Y | `书.bronze.svg`<br>`书.seal.svg` |
+| 署 | oracle:- bronze:- seal:Y | `署.seal.svg` |
+| 术 | oracle:Y bronze:- seal:Y | `术.oracle.svg`<br>`术.seal.svg` |
+| 数 | oracle:- bronze:Y seal:Y | `数.bronze.svg`<br>`数.seal.svg` |
+| 刷 | oracle:- bronze:- seal:Y | `刷.seal.svg` |
+| 司 | oracle:Y bronze:Y seal:Y | `司.bronze.svg`<br>`司.oracle.svg`<br>`司.seal.svg` |
+| 思 | oracle:- bronze:Y seal:Y | `思.bronze.svg`<br>`思.seal.svg` |
+| 斯 | oracle:- bronze:Y seal:Y | `斯.bronze.svg`<br>`斯.seal.svg` |
+| 死 | oracle:Y bronze:Y seal:Y | `死.bronze.svg`<br>`死.oracle.svg`<br>`死.seal.svg` |
+| 速 | oracle:Y bronze:Y seal:Y | `速.bronze.svg`<br>`速.oracle.svg`<br>`速.seal.svg` |
+| 太 | oracle:- bronze:- seal:Y | `太.seal.svg` |
+| 探 | oracle:- bronze:- seal:Y | `探.seal.svg` |
+| 逃 | oracle:- bronze:Y seal:Y | `逃.bronze.svg`<br>`逃.seal.svg` |
+| 淘 | oracle:- bronze:- seal:Y | `淘.seal.svg` |
+| 体 | oracle:- bronze:Y seal:Y | `体.bronze.svg`<br>`体.seal.svg` |
+| 天 | oracle:Y bronze:Y seal:Y | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
+| 田 | oracle:Y bronze:Y seal:Y | `田.bronze.svg`<br>`田.oracle.svg`<br>`田.seal.svg` |
+| 统 | oracle:- bronze:- seal:Y | `统.seal.svg` |
+| 透 | oracle:- bronze:- seal:Y | `透.seal.svg` |
+| 土 | oracle:Y bronze:Y seal:Y | `土.bronze.svg`<br>`土.oracle.svg`<br>`土.seal.svg` |
+| 王 | oracle:Y bronze:Y seal:Y | `王.bronze.svg`<br>`王.oracle.svg`<br>`王.seal.svg` |
+| 维 | oracle:- bronze:Y seal:Y | `维.bronze.svg`<br>`维.seal.svg` |
+| 伟 | oracle:- bronze:- seal:Y | `伟.seal.svg` |
+| 未 | oracle:Y bronze:Y seal:Y | `未.bronze.svg`<br>`未.oracle.svg`<br>`未.seal.svg` |
+| 文 | oracle:Y bronze:Y seal:Y | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
+| 舞 | oracle:Y bronze:Y seal:Y | `舞.bronze.svg`<br>`舞.oracle.svg`<br>`舞.seal.svg` |
+| 务 | oracle:- bronze:Y seal:Y | `务.bronze.svg`<br>`务.seal.svg` |
+| 西 | oracle:Y bronze:Y seal:Y | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
+| 息 | oracle:- bronze:Y seal:Y | `息.bronze.svg`<br>`息.seal.svg` |
+| 戏 | oracle:- bronze:Y seal:Y | `戏.bronze.svg`<br>`戏.seal.svg` |
+| 辖 | oracle:Y bronze:Y seal:Y | `辖.bronze.svg`<br>`辖.oracle.svg`<br>`辖.seal.svg` |
+| 想 | oracle:- bronze:Y seal:Y | `想.bronze.svg`<br>`想.seal.svg` |
+| 象 | oracle:Y bronze:Y seal:Y | `象.bronze.svg`<br>`象.oracle.svg`<br>`象.seal.svg` |
+| 械 | oracle:- bronze:- seal:Y | `械.seal.svg` |
+| 信 | oracle:- bronze:Y seal:Y | `信.bronze.svg`<br>`信.seal.svg` |
+| 行 | oracle:Y bronze:Y seal:Y | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
+| 形 | oracle:- bronze:- seal:Y | `形.seal.svg` |
+| 选 | oracle:Y bronze:Y seal:Y | `选.bronze.svg`<br>`选.oracle.svg`<br>`选.seal.svg` |
+| 学 | oracle:Y bronze:Y seal:Y | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
+| 训 | oracle:- bronze:Y seal:Y | `训.bronze.svg`<br>`训.seal.svg` |
+| 亚 | oracle:Y bronze:Y seal:Y | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
+| 羊 | oracle:Y bronze:Y seal:Y | `羊.bronze.svg`<br>`羊.oracle.svg`<br>`羊.seal.svg` |
+| 养 | oracle:Y bronze:Y seal:Y | `养.bronze.svg`<br>`养.oracle.svg`<br>`养.seal.svg` |
+| 业 | oracle:- bronze:Y seal:Y | `业.bronze.svg`<br>`业.seal.svg` |
+| 一 | oracle:Y bronze:Y seal:Y | `一.bronze.svg`<br>`一.oracle.svg`<br>`一.seal.svg` |
+| 伊 | oracle:Y bronze:Y seal:Y | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
+| 遗 | oracle:- bronze:Y seal:Y | `遗.bronze.svg`<br>`遗.seal.svg` |
+| 义 | oracle:Y bronze:Y seal:Y | `义.bronze.svg`<br>`义.oracle.svg`<br>`义.seal.svg` |
+| 艺 | oracle:Y bronze:Y seal:Y | `艺.bronze.svg`<br>`艺.oracle.svg`<br>`艺.seal.svg` |
+| 银 | oracle:- bronze:- seal:Y | `银.seal.svg` |
+| 印 | oracle:Y bronze:Y seal:Y | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
+| 佣 | oracle:- bronze:- seal:Y | `佣.seal.svg` |
+| 由 | oracle:Y bronze:Y seal:- | `由.bronze.svg`<br>`由.oracle.svg` |
+| 邮 | oracle:- bronze:- seal:Y | `邮.seal.svg` |
+| 游 | oracle:Y bronze:Y seal:Y | `游.bronze.svg`<br>`游.oracle.svg`<br>`游.seal.svg` |
+| 娱 | oracle:- bronze:- seal:Y | `娱.seal.svg` |
+| 育 | oracle:Y bronze:Y seal:Y | `育.bronze.svg`<br>`育.oracle.svg`<br>`育.seal.svg` |
+| 员 | oracle:Y bronze:Y seal:Y | `员.bronze.svg`<br>`员.oracle.svg`<br>`员.seal.svg` |
+| 园 | oracle:- bronze:- seal:Y | `园.seal.svg` |
+| 约 | oracle:- bronze:- seal:Y | `约.seal.svg` |
+| 运 | oracle:- bronze:- seal:Y | `运.seal.svg` |
+| 早 | oracle:Y bronze:Y seal:Y | `早.bronze.svg`<br>`早.oracle.svg`<br>`早.seal.svg` |
+| 造 | oracle:- bronze:Y seal:Y | `造.bronze.svg`<br>`造.seal.svg` |
+| 展 | oracle:- bronze:- seal:Y | `展.seal.svg` |
+| 战 | oracle:- bronze:Y seal:Y | `战.bronze.svg`<br>`战.seal.svg` |
+| 哲 | oracle:- bronze:Y seal:Y | `哲.bronze.svg`<br>`哲.seal.svg` |
+| 争 | oracle:Y bronze:- seal:Y | `争.oracle.svg`<br>`争.seal.svg` |
+| 政 | oracle:Y bronze:Y seal:Y | `政.bronze.svg`<br>`政.oracle.svg`<br>`政.seal.svg` |
+| 之 | oracle:Y bronze:Y seal:Y | `之.bronze.svg`<br>`之.oracle.svg`<br>`之.seal.svg` |
+| 知 | oracle:- bronze:Y seal:Y | `知.bronze.svg`<br>`知.seal.svg` |
+| 直 | oracle:Y bronze:Y seal:Y | `直.bronze.svg`<br>`直.oracle.svg`<br>`直.seal.svg` |
+| 职 | oracle:- bronze:Y seal:Y | `职.bronze.svg`<br>`职.seal.svg` |
+| 殖 | oracle:- bronze:- seal:Y | `殖.seal.svg` |
+| 纸 | oracle:- bronze:- seal:Y | `纸.seal.svg` |
+| 制 | oracle:- bronze:Y seal:Y | `制.bronze.svg`<br>`制.seal.svg` |
+| 治 | oracle:- bronze:- seal:Y | `治.seal.svg` |
+| 众 | oracle:Y bronze:Y seal:Y | `众.bronze.svg`<br>`众.oracle.svg`<br>`众.seal.svg` |
+| 重 | oracle:Y bronze:Y seal:Y | `重.bronze.svg`<br>`重.oracle.svg`<br>`重.seal.svg` |
+| 主 | oracle:Y bronze:- seal:Y | `主.oracle.svg`<br>`主.seal.svg` |
+| 桌 | oracle:- bronze:Y seal:Y | `桌.bronze.svg`<br>`桌.seal.svg` |
+| 资 | oracle:- bronze:- seal:Y | `资.seal.svg` |
+| 字 | oracle:- bronze:Y seal:Y | `字.bronze.svg`<br>`字.seal.svg` |
+| 自 | oracle:Y bronze:Y seal:Y | `自.bronze.svg`<br>`自.oracle.svg`<br>`自.seal.svg` |
+| 宗 | oracle:Y bronze:Y seal:Y | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
+| 综 | oracle:- bronze:- seal:Y | `综.seal.svg` |
+| 租 | oracle:- bronze:- seal:Y | `租.seal.svg` |
+| 族 | oracle:Y bronze:Y seal:Y | `族.bronze.svg`<br>`族.oracle.svg`<br>`族.seal.svg` |
 
 ## civilizations
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 阿 | oracle:- bronze:Y seal:Y legacy:- | `阿.bronze.svg`<br>`阿.seal.svg` |
-| 埃 | oracle:- bronze:- seal:Y legacy:- | `埃.seal.svg` |
-| 艾 | oracle:- bronze:- seal:Y legacy:- | `艾.seal.svg` |
-| 安 | oracle:Y bronze:Y seal:Y legacy:- | `安.bronze.svg`<br>`安.oracle.svg`<br>`安.seal.svg` |
-| 奥 | oracle:- bronze:- seal:Y legacy:- | `奥.seal.svg` |
-| 澳 | oracle:- bronze:- seal:Y legacy:- | `澳.seal.svg` |
-| 巴 | oracle:Y bronze:- seal:Y legacy:- | `巴.oracle.svg`<br>`巴.seal.svg` |
-| 拜 | oracle:- bronze:Y seal:Y legacy:- | `拜.bronze.svg`<br>`拜.seal.svg` |
-| 班 | oracle:- bronze:Y seal:Y legacy:- | `班.bronze.svg`<br>`班.seal.svg` |
-| 邦 | oracle:Y bronze:Y seal:Y legacy:- | `邦.bronze.svg`<br>`邦.oracle.svg`<br>`邦.seal.svg` |
-| 堡 | oracle:Y bronze:Y seal:Y legacy:- | `堡.bronze.svg`<br>`堡.oracle.svg`<br>`堡.seal.svg` |
-| 报 | oracle:- bronze:Y seal:Y legacy:- | `报.bronze.svg`<br>`报.seal.svg` |
-| 备 | oracle:Y bronze:Y seal:Y legacy:- | `备.bronze.svg`<br>`备.oracle.svg`<br>`备.seal.svg` |
-| 奔 | oracle:- bronze:Y seal:Y legacy:- | `奔.bronze.svg`<br>`奔.seal.svg` |
-| 本 | oracle:- bronze:Y seal:Y legacy:- | `本.bronze.svg`<br>`本.seal.svg` |
-| 比 | oracle:Y bronze:Y seal:Y legacy:- | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
-| 必 | oracle:Y bronze:Y seal:Y legacy:- | `必.bronze.svg`<br>`必.oracle.svg`<br>`必.seal.svg` |
-| 边 | oracle:Y bronze:Y seal:Y legacy:- | `边.bronze.svg`<br>`边.oracle.svg`<br>`边.seal.svg` |
-| 编 | oracle:- bronze:- seal:Y legacy:- | `编.seal.svg` |
-| 变 | oracle:- bronze:Y seal:Y legacy:- | `变.bronze.svg`<br>`变.seal.svg` |
-| 标 | oracle:- bronze:- seal:Y legacy:- | `标.seal.svg` |
-| 兵 | oracle:Y bronze:Y seal:Y legacy:- | `兵.bronze.svg`<br>`兵.oracle.svg`<br>`兵.seal.svg` |
-| 病 | oracle:- bronze:- seal:Y legacy:- | `病.seal.svg` |
-| 波 | oracle:- bronze:- seal:Y legacy:- | `波.seal.svg` |
-| 伯 | oracle:Y bronze:Y seal:Y legacy:- | `伯.bronze.svg`<br>`伯.oracle.svg`<br>`伯.seal.svg` |
-| 博 | oracle:- bronze:Y seal:Y legacy:- | `博.bronze.svg`<br>`博.seal.svg` |
-| 布 | oracle:- bronze:Y seal:Y legacy:- | `布.bronze.svg`<br>`布.seal.svg` |
-| 部 | oracle:- bronze:- seal:Y legacy:- | `部.seal.svg` |
-| 昌 | oracle:Y bronze:Y seal:Y legacy:- | `昌.bronze.svg`<br>`昌.oracle.svg`<br>`昌.seal.svg` |
-| 场 | oracle:- bronze:- seal:Y legacy:- | `场.seal.svg` |
-| 车 | oracle:Y bronze:Y seal:Y legacy:- | `车.bronze.svg`<br>`车.oracle.svg`<br>`车.seal.svg` |
-| 彻 | oracle:Y bronze:Y seal:Y legacy:- | `彻.bronze.svg`<br>`彻.oracle.svg`<br>`彻.seal.svg` |
-| 城 | oracle:- bronze:Y seal:Y legacy:- | `城.bronze.svg`<br>`城.seal.svg` |
-| 船 | oracle:- bronze:Y seal:Y legacy:- | `船.bronze.svg`<br>`船.seal.svg` |
-| 茨 | oracle:- bronze:- seal:Y legacy:- | `茨.seal.svg` |
-| 丛 | oracle:- bronze:Y seal:Y legacy:- | `丛.bronze.svg`<br>`丛.seal.svg` |
-| 达 | oracle:Y bronze:- seal:- legacy:- | `达.oracle.svg` |
-| 大 | oracle:Y bronze:Y seal:Y legacy:- | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
-| 丹 | oracle:Y bronze:Y seal:Y legacy:- | `丹.bronze.svg`<br>`丹.oracle.svg`<br>`丹.seal.svg` |
-| 但 | oracle:Y bronze:Y seal:Y legacy:- | `但.bronze.svg`<br>`但.oracle.svg`<br>`但.seal.svg` |
-| 淡 | oracle:Y bronze:- seal:Y legacy:- | `淡.oracle.svg`<br>`淡.seal.svg` |
-| 盗 | oracle:Y bronze:Y seal:Y legacy:- | `盗.bronze.svg`<br>`盗.oracle.svg`<br>`盗.seal.svg` |
-| 德 | oracle:Y bronze:Y seal:Y legacy:- | `德.bronze.svg`<br>`德.oracle.svg`<br>`德.seal.svg` |
-| 地 | oracle:- bronze:Y seal:Y legacy:- | `地.bronze.svg`<br>`地.seal.svg` |
-| 邓 | oracle:- bronze:Y seal:Y legacy:- | `邓.bronze.svg`<br>`邓.seal.svg` |
-| 迪 | oracle:- bronze:- seal:Y legacy:- | `迪.seal.svg` |
-| 底 | oracle:- bronze:- seal:Y legacy:- | `底.seal.svg` |
-| 帝 | oracle:Y bronze:Y seal:Y legacy:- | `帝.bronze.svg`<br>`帝.oracle.svg`<br>`帝.seal.svg` |
-| 蒂 | oracle:- bronze:- seal:Y legacy:- | `蒂.seal.svg` |
-| 典 | oracle:Y bronze:Y seal:Y legacy:- | `典.bronze.svg`<br>`典.oracle.svg`<br>`典.seal.svg` |
-| 动 | oracle:- bronze:Y seal:Y legacy:- | `动.bronze.svg`<br>`动.seal.svg` |
-| 都 | oracle:- bronze:Y seal:Y legacy:- | `都.bronze.svg`<br>`都.seal.svg` |
-| 度 | oracle:Y bronze:Y seal:Y legacy:- | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
-| 囤 | oracle:- bronze:- seal:Y legacy:- | `囤.seal.svg` |
-| 顿 | oracle:- bronze:- seal:Y legacy:- | `顿.seal.svg` |
-| 多 | oracle:Y bronze:Y seal:Y legacy:- | `多.bronze.svg`<br>`多.oracle.svg`<br>`多.seal.svg` |
-| 俄 | oracle:- bronze:- seal:Y legacy:- | `俄.seal.svg` |
-| 恩 | oracle:- bronze:- seal:Y legacy:- | `恩.seal.svg` |
-| 尔 | oracle:- bronze:Y seal:Y legacy:- | `尔.bronze.svg`<br>`尔.seal.svg` |
-| 法 | oracle:- bronze:Y seal:Y legacy:- | `法.bronze.svg`<br>`法.seal.svg` |
-| 番 | oracle:- bronze:Y seal:Y legacy:- | `番.bronze.svg`<br>`番.seal.svg` |
-| 梵 | oracle:- bronze:- seal:Y legacy:- | `梵.seal.svg` |
-| 放 | oracle:- bronze:Y seal:Y legacy:- | `放.bronze.svg`<br>`放.seal.svg` |
-| 菲 | oracle:- bronze:- seal:Y legacy:- | `菲.seal.svg` |
-| 腓 | oracle:- bronze:- seal:Y legacy:- | `腓.seal.svg` |
-| 夫 | oracle:Y bronze:Y seal:Y legacy:- | `夫.bronze.svg`<br>`夫.oracle.svg`<br>`夫.seal.svg` |
-| 佛 | oracle:- bronze:- seal:Y legacy:- | `佛.seal.svg` |
-| 福 | oracle:- bronze:Y seal:Y legacy:- | `福.bronze.svg`<br>`福.seal.svg` |
-| 府 | oracle:- bronze:Y seal:Y legacy:- | `府.bronze.svg`<br>`府.seal.svg` |
-| 盖 | oracle:Y bronze:Y seal:Y legacy:- | `盖.bronze.svg`<br>`盖.oracle.svg`<br>`盖.seal.svg` |
-| 冈 | oracle:Y bronze:- seal:Y legacy:- | `冈.oracle.svg`<br>`冈.seal.svg` |
-| 刚 | oracle:Y bronze:Y seal:Y legacy:- | `刚.bronze.svg`<br>`刚.oracle.svg`<br>`刚.seal.svg` |
-| 港 | oracle:- bronze:- seal:Y legacy:- | `港.seal.svg` |
-| 高 | oracle:Y bronze:Y seal:Y legacy:- | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
-| 戈 | oracle:Y bronze:Y seal:Y legacy:- | `戈.bronze.svg`<br>`戈.oracle.svg`<br>`戈.seal.svg` |
-| 哥 | oracle:- bronze:- seal:Y legacy:- | `哥.seal.svg` |
-| 格 | oracle:- bronze:Y seal:Y legacy:- | `格.bronze.svg`<br>`格.seal.svg` |
-| 给 | oracle:- bronze:- seal:Y legacy:- | `给.seal.svg` |
-| 公 | oracle:Y bronze:Y seal:Y legacy:- | `公.bronze.svg`<br>`公.oracle.svg`<br>`公.seal.svg` |
-| 古 | oracle:Y bronze:Y seal:Y legacy:- | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
-| 瓜 | oracle:- bronze:Y seal:Y legacy:- | `瓜.bronze.svg`<br>`瓜.seal.svg` |
-| 龟 | oracle:Y bronze:Y seal:Y legacy:- | `龟.bronze.svg`<br>`龟.oracle.svg`<br>`龟.seal.svg` |
-| 国 | oracle:- bronze:Y seal:Y legacy:- | `国.bronze.svg`<br>`国.seal.svg` |
-| 果 | oracle:- bronze:Y seal:Y legacy:- | `果.bronze.svg`<br>`果.seal.svg` |
-| 哈 | oracle:- bronze:- seal:Y legacy:- | `哈.seal.svg` |
-| 海 | oracle:- bronze:Y seal:Y legacy:- | `海.bronze.svg`<br>`海.seal.svg` |
-| 韩 | oracle:- bronze:Y seal:Y legacy:- | `韩.bronze.svg`<br>`韩.seal.svg` |
-| 罕 | oracle:- bronze:- seal:Y legacy:- | `罕.seal.svg` |
-| 汉 | oracle:- bronze:Y seal:Y legacy:- | `汉.bronze.svg`<br>`汉.seal.svg` |
-| 翰 | oracle:- bronze:- seal:Y legacy:- | `翰.seal.svg` |
-| 合 | oracle:Y bronze:Y seal:Y legacy:- | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
-| 荷 | oracle:- bronze:- seal:Y legacy:- | `荷.seal.svg` |
-| 赫 | oracle:- bronze:- seal:Y legacy:- | `赫.seal.svg` |
-| 黑 | oracle:Y bronze:Y seal:Y legacy:- | `黑.bronze.svg`<br>`黑.oracle.svg`<br>`黑.seal.svg` |
-| 亨 | oracle:Y bronze:Y seal:Y legacy:- | `亨.bronze.svg`<br>`亨.oracle.svg`<br>`亨.seal.svg` |
-| 洪 | oracle:- bronze:- seal:Y legacy:- | `洪.seal.svg` |
-| 忽 | oracle:- bronze:Y seal:Y legacy:- | `忽.bronze.svg`<br>`忽.seal.svg` |
-| 霍 | oracle:Y bronze:Y seal:Y legacy:- | `霍.bronze.svg`<br>`霍.oracle.svg`<br>`霍.seal.svg` |
-| 机 | oracle:- bronze:- seal:Y legacy:- | `机.seal.svg` |
-| 积 | oracle:- bronze:Y seal:Y legacy:- | `积.bronze.svg`<br>`积.seal.svg` |
-| 基 | oracle:Y bronze:Y seal:Y legacy:- | `基.bronze.svg`<br>`基.oracle.svg`<br>`基.seal.svg` |
-| 加 | oracle:- bronze:Y seal:Y legacy:- | `加.bronze.svg`<br>`加.seal.svg` |
-| 迦 | oracle:- bronze:- seal:Y legacy:- | `迦.seal.svg` |
-| 家 | oracle:Y bronze:Y seal:Y legacy:- | `家.bronze.svg`<br>`家.oracle.svg`<br>`家.seal.svg` |
-| 贾 | oracle:Y bronze:Y seal:Y legacy:- | `贾.bronze.svg`<br>`贾.oracle.svg`<br>`贾.seal.svg` |
-| 教 | oracle:Y bronze:Y seal:Y legacy:- | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
-| 近 | oracle:- bronze:- seal:Y legacy:- | `近.seal.svg` |
-| 京 | oracle:Y bronze:Y seal:Y legacy:- | `京.bronze.svg`<br>`京.oracle.svg`<br>`京.seal.svg` |
-| 景 | oracle:- bronze:- seal:Y legacy:- | `景.seal.svg` |
-| 巨 | oracle:- bronze:Y seal:Y legacy:- | `巨.bronze.svg`<br>`巨.seal.svg` |
-| 惧 | oracle:- bronze:Y seal:Y legacy:- | `惧.bronze.svg`<br>`惧.seal.svg` |
-| 军 | oracle:- bronze:Y seal:Y legacy:- | `军.bronze.svg`<br>`军.seal.svg` |
-| 喀 | oracle:- bronze:- seal:Y legacy:- | `喀.seal.svg` |
-| 卡 | oracle:- bronze:- seal:Y legacy:- | `卡.seal.svg` |
-| 开 | oracle:- bronze:- seal:Y legacy:- | `开.seal.svg` |
-| 凯 | oracle:- bronze:- seal:Y legacy:- | `凯.seal.svg` |
-| 坎 | oracle:- bronze:- seal:Y legacy:- | `坎.seal.svg` |
-| 康 | oracle:Y bronze:Y seal:Y legacy:- | `康.bronze.svg`<br>`康.oracle.svg`<br>`康.seal.svg` |
-| 科 | oracle:- bronze:- seal:Y legacy:- | `科.seal.svg` |
-| 克 | oracle:Y bronze:Y seal:Y legacy:- | `克.bronze.svg`<br>`克.oracle.svg`<br>`克.seal.svg` |
-| 肯 | oracle:- bronze:- seal:Y legacy:- | `肯.seal.svg` |
-| 恐 | oracle:- bronze:Y seal:Y legacy:- | `恐.bronze.svg`<br>`恐.seal.svg` |
-| 库 | oracle:- bronze:Y seal:Y legacy:- | `库.bronze.svg`<br>`库.seal.svg` |
-| 昆 | oracle:- bronze:Y seal:Y legacy:- | `昆.bronze.svg`<br>`昆.seal.svg` |
-| 扩 | oracle:- bronze:- seal:Y legacy:- | `扩.seal.svg` |
-| 拉 | oracle:- bronze:- seal:Y legacy:- | `拉.seal.svg` |
-| 腊 | oracle:Y bronze:Y seal:Y legacy:- | `腊.bronze.svg`<br>`腊.oracle.svg`<br>`腊.seal.svg` |
-| 莱 | oracle:- bronze:- seal:Y legacy:- | `莱.seal.svg` |
-| 兰 | oracle:- bronze:- seal:Y legacy:- | `兰.seal.svg` |
-| 烂 | oracle:- bronze:- seal:Y legacy:- | `烂.seal.svg` |
-| 浪 | oracle:- bronze:- seal:Y legacy:- | `浪.seal.svg` |
-| 勒 | oracle:- bronze:Y seal:Y legacy:- | `勒.bronze.svg`<br>`勒.seal.svg` |
-| 雷 | oracle:Y bronze:Y seal:Y legacy:- | `雷.bronze.svg`<br>`雷.oracle.svg`<br>`雷.seal.svg` |
-| 冷 | oracle:- bronze:- seal:Y legacy:- | `冷.seal.svg` |
-| 里 | oracle:- bronze:Y seal:Y legacy:- | `里.bronze.svg`<br>`里.seal.svg` |
-| 理 | oracle:- bronze:Y seal:Y legacy:- | `理.bronze.svg`<br>`理.seal.svg` |
-| 力 | oracle:Y bronze:Y seal:Y legacy:- | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
-| 利 | oracle:Y bronze:Y seal:Y legacy:- | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
-| 烈 | oracle:- bronze:- seal:Y legacy:- | `烈.seal.svg` |
-| 林 | oracle:Y bronze:Y seal:Y legacy:- | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
-| 领 | oracle:- bronze:- seal:Y legacy:- | `领.seal.svg` |
-| 流 | oracle:- bronze:Y seal:Y legacy:- | `流.bronze.svg`<br>`流.seal.svg` |
-| 龙 | oracle:Y bronze:Y seal:Y legacy:- | `龙.bronze.svg`<br>`龙.oracle.svg`<br>`龙.seal.svg` |
-| 卢 | oracle:Y bronze:Y seal:Y legacy:- | `卢.bronze.svg`<br>`卢.oracle.svg`<br>`卢.seal.svg` |
-| 鲁 | oracle:Y bronze:Y seal:Y legacy:- | `鲁.bronze.svg`<br>`鲁.oracle.svg`<br>`鲁.seal.svg` |
-| 路 | oracle:- bronze:Y seal:Y legacy:- | `路.bronze.svg`<br>`路.seal.svg` |
-| 戮 | oracle:- bronze:Y seal:Y legacy:- | `戮.bronze.svg`<br>`戮.seal.svg` |
-| 掠 | oracle:- bronze:- seal:Y legacy:- | `掠.seal.svg` |
-| 伦 | oracle:- bronze:- seal:Y legacy:- | `伦.seal.svg` |
-| 罗 | oracle:Y bronze:Y seal:Y legacy:- | `罗.bronze.svg`<br>`罗.oracle.svg`<br>`罗.seal.svg` |
-| 洛 | oracle:- bronze:Y seal:Y legacy:- | `洛.bronze.svg`<br>`洛.seal.svg` |
-| 落 | oracle:- bronze:- seal:Y legacy:- | `落.seal.svg` |
-| 马 | oracle:Y bronze:Y seal:Y legacy:- | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
-| 玛 | oracle:Y bronze:Y seal:Y legacy:- | `玛.bronze.svg`<br>`玛.oracle.svg`<br>`玛.seal.svg` |
-| 麦 | oracle:Y bronze:Y seal:Y legacy:- | `麦.bronze.svg`<br>`麦.oracle.svg`<br>`麦.seal.svg` |
-| 蛮 | oracle:- bronze:Y seal:Y legacy:- | `蛮.bronze.svg`<br>`蛮.seal.svg` |
-| 曼 | oracle:Y bronze:Y seal:Y legacy:- | `曼.bronze.svg`<br>`曼.oracle.svg`<br>`曼.seal.svg` |
-| 毛 | oracle:- bronze:Y seal:Y legacy:- | `毛.bronze.svg`<br>`毛.seal.svg` |
-| 美 | oracle:Y bronze:Y seal:Y legacy:- | `美.bronze.svg`<br>`美.oracle.svg`<br>`美.seal.svg` |
-| 蒙 | oracle:- bronze:Y seal:Y legacy:- | `蒙.bronze.svg`<br>`蒙.seal.svg` |
-| 棉 | oracle:- bronze:- seal:Y legacy:- | `棉.seal.svg` |
-| 民 | oracle:Y bronze:Y seal:Y legacy:- | `民.bronze.svg`<br>`民.oracle.svg`<br>`民.seal.svg` |
-| 摩 | oracle:- bronze:- seal:Y legacy:- | `摩.seal.svg` |
-| 墨 | oracle:- bronze:Y seal:Y legacy:- | `墨.bronze.svg`<br>`墨.seal.svg` |
-| 姆 | oracle:- bronze:Y seal:Y legacy:- | `姆.bronze.svg`<br>`姆.seal.svg` |
-| 穆 | oracle:Y bronze:Y seal:Y legacy:- | `穆.bronze.svg`<br>`穆.oracle.svg`<br>`穆.seal.svg` |
-| 拿 | oracle:- bronze:Y seal:Y legacy:- | `拿.bronze.svg`<br>`拿.seal.svg` |
-| 那 | oracle:- bronze:- seal:Y legacy:- | `那.seal.svg` |
-| 纳 | oracle:- bronze:Y seal:Y legacy:- | `纳.bronze.svg`<br>`纳.seal.svg` |
-| 奈 | oracle:Y bronze:- seal:Y legacy:- | `奈.oracle.svg`<br>`奈.seal.svg` |
-| 南 | oracle:Y bronze:Y seal:Y legacy:- | `南.bronze.svg`<br>`南.oracle.svg`<br>`南.seal.svg` |
-| 尼 | oracle:- bronze:- seal:Y legacy:- | `尼.seal.svg` |
-| 纽 | oracle:- bronze:- seal:Y legacy:- | `纽.seal.svg` |
-| 努 | oracle:- bronze:- seal:Y legacy:- | `努.seal.svg` |
-| 挪 | oracle:- bronze:- seal:Y legacy:- | `挪.seal.svg` |
-| 诺 | oracle:- bronze:Y seal:Y legacy:- | `诺.bronze.svg`<br>`诺.seal.svg` |
-| 帕 | oracle:- bronze:- seal:Y legacy:- | `帕.seal.svg` |
-| 潘 | oracle:- bronze:Y seal:Y legacy:- | `潘.bronze.svg`<br>`潘.seal.svg` |
-| 平 | oracle:- bronze:Y seal:Y legacy:- | `平.bronze.svg`<br>`平.seal.svg` |
-| 坡 | oracle:- bronze:Y seal:Y legacy:- | `坡.bronze.svg`<br>`坡.seal.svg` |
-| 葡 | oracle:Y bronze:Y seal:Y legacy:- | `葡.bronze.svg`<br>`葡.oracle.svg`<br>`葡.seal.svg` |
-| 普 | oracle:- bronze:- seal:Y legacy:- | `普.seal.svg` |
-| 齐 | oracle:Y bronze:Y seal:Y legacy:- | `齐.bronze.svg`<br>`齐.oracle.svg`<br>`齐.seal.svg` |
-| 其 | oracle:Y bronze:Y seal:Y legacy:- | `其.bronze.svg`<br>`其.oracle.svg`<br>`其.seal.svg` |
-| 骑 | oracle:- bronze:Y seal:Y legacy:- | `骑.bronze.svg`<br>`骑.seal.svg` |
-| 器 | oracle:- bronze:Y seal:Y legacy:- | `器.bronze.svg`<br>`器.seal.svg` |
-| 乔 | oracle:- bronze:Y seal:Y legacy:- | `乔.bronze.svg`<br>`乔.seal.svg` |
-| 切 | oracle:- bronze:- seal:Y legacy:- | `切.seal.svg` |
-| 情 | oracle:- bronze:- seal:Y legacy:- | `情.seal.svg` |
-| 庆 | oracle:Y bronze:Y seal:Y legacy:- | `庆.bronze.svg`<br>`庆.oracle.svg`<br>`庆.seal.svg` |
-| 丘 | oracle:Y bronze:Y seal:Y legacy:- | `丘.bronze.svg`<br>`丘.oracle.svg`<br>`丘.seal.svg` |
-| 人 | oracle:Y bronze:Y seal:Y legacy:- | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
-| 日 | oracle:Y bronze:Y seal:Y legacy:- | `日.bronze.svg`<br>`日.oracle.svg`<br>`日.seal.svg` |
-| 瑞 | oracle:- bronze:- seal:Y legacy:- | `瑞.seal.svg` |
-| 撒 | oracle:- bronze:- seal:Y legacy:- | `撒.seal.svg` |
-| 萨 | oracle:- bronze:- seal:Y legacy:- | `萨.seal.svg` |
-| 塞 | oracle:Y bronze:- seal:Y legacy:- | `塞.oracle.svg`<br>`塞.seal.svg` |
-| 桑 | oracle:Y bronze:- seal:Y legacy:- | `桑.oracle.svg`<br>`桑.seal.svg` |
-| 森 | oracle:Y bronze:- seal:Y legacy:- | `森.oracle.svg`<br>`森.seal.svg` |
-| 杀 | oracle:- bronze:Y seal:Y legacy:- | `杀.bronze.svg`<br>`杀.seal.svg` |
-| 山 | oracle:Y bronze:Y seal:Y legacy:- | `山.bronze.svg`<br>`山.oracle.svg`<br>`山.seal.svg` |
-| 什 | oracle:- bronze:- seal:Y legacy:- | `什.seal.svg` |
-| 神 | oracle:- bronze:Y seal:Y legacy:- | `神.bronze.svg`<br>`神.seal.svg` |
-| 升 | oracle:Y bronze:Y seal:Y legacy:- | `升.bronze.svg`<br>`升.oracle.svg`<br>`升.seal.svg` |
-| 声 | oracle:Y bronze:- seal:Y legacy:- | `声.oracle.svg`<br>`声.seal.svg` |
-| 圣 | oracle:Y bronze:Y seal:Y legacy:- | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
-| 时 | oracle:- bronze:Y seal:Y legacy:- | `时.bronze.svg`<br>`时.seal.svg` |
-| 士 | oracle:- bronze:Y seal:Y legacy:- | `士.bronze.svg`<br>`士.seal.svg` |
-| 氏 | oracle:Y bronze:Y seal:Y legacy:- | `氏.bronze.svg`<br>`氏.oracle.svg`<br>`氏.seal.svg` |
-| 市 | oracle:Y bronze:Y seal:Y legacy:- | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
-| 事 | oracle:Y bronze:Y seal:Y legacy:- | `事.bronze.svg`<br>`事.oracle.svg`<br>`事.seal.svg` |
-| 势 | oracle:- bronze:- seal:Y legacy:- | `势.seal.svg` |
-| 私 | oracle:- bronze:Y seal:Y legacy:- | `私.bronze.svg`<br>`私.seal.svg` |
-| 思 | oracle:- bronze:Y seal:Y legacy:- | `思.bronze.svg`<br>`思.seal.svg` |
-| 斯 | oracle:- bronze:Y seal:Y legacy:- | `斯.bronze.svg`<br>`斯.seal.svg` |
-| 死 | oracle:Y bronze:Y seal:Y legacy:- | `死.bronze.svg`<br>`死.oracle.svg`<br>`死.seal.svg` |
-| 苏 | oracle:- bronze:Y seal:Y legacy:- | `苏.bronze.svg`<br>`苏.seal.svg` |
-| 速 | oracle:Y bronze:Y seal:Y legacy:- | `速.bronze.svg`<br>`速.oracle.svg`<br>`速.seal.svg` |
-| 索 | oracle:Y bronze:Y seal:Y legacy:- | `索.bronze.svg`<br>`索.oracle.svg`<br>`索.seal.svg` |
-| 塔 | oracle:- bronze:- seal:Y legacy:- | `塔.seal.svg` |
-| 太 | oracle:- bronze:- seal:Y legacy:- | `太.seal.svg` |
-| 泰 | oracle:- bronze:- seal:Y legacy:- | `泰.seal.svg` |
-| 萄 | oracle:- bronze:- seal:Y legacy:- | `萄.seal.svg` |
-| 特 | oracle:- bronze:- seal:Y legacy:- | `特.seal.svg` |
-| 提 | oracle:- bronze:- seal:Y legacy:- | `提.seal.svg` |
-| 体 | oracle:- bronze:Y seal:Y legacy:- | `体.bronze.svg`<br>`体.seal.svg` |
-| 阗 | oracle:- bronze:- seal:Y legacy:- | `阗.seal.svg` |
-| 庭 | oracle:- bronze:Y seal:Y legacy:- | `庭.bronze.svg`<br>`庭.seal.svg` |
-| 通 | oracle:Y bronze:Y seal:Y legacy:- | `通.bronze.svg`<br>`通.oracle.svg`<br>`通.seal.svg` |
-| 突 | oracle:Y bronze:- seal:Y legacy:- | `突.oracle.svg`<br>`突.seal.svg` |
-| 图 | oracle:- bronze:Y seal:Y legacy:- | `图.bronze.svg`<br>`图.seal.svg` |
-| 徒 | oracle:Y bronze:Y seal:Y legacy:- | `徒.bronze.svg`<br>`徒.oracle.svg`<br>`徒.seal.svg` |
-| 吐 | oracle:- bronze:- seal:Y legacy:- | `吐.seal.svg` |
-| 托 | oracle:Y bronze:Y seal:Y legacy:- | `托.bronze.svg`<br>`托.oracle.svg`<br>`托.seal.svg` |
-| 陀 | oracle:- bronze:Y seal:Y legacy:- | `陀.bronze.svg`<br>`陀.seal.svg` |
-| 瓦 | oracle:- bronze:- seal:Y legacy:- | `瓦.seal.svg` |
-| 万 | oracle:Y bronze:Y seal:Y legacy:- | `万.bronze.svg`<br>`万.oracle.svg`<br>`万.seal.svg` |
-| 威 | oracle:- bronze:Y seal:Y legacy:- | `威.bronze.svg`<br>`威.seal.svg` |
-| 维 | oracle:- bronze:Y seal:Y legacy:- | `维.bronze.svg`<br>`维.seal.svg` |
-| 未 | oracle:Y bronze:Y seal:Y legacy:- | `未.bronze.svg`<br>`未.oracle.svg`<br>`未.seal.svg` |
-| 温 | oracle:Y bronze:- seal:Y legacy:- | `温.oracle.svg`<br>`温.seal.svg` |
-| 文 | oracle:Y bronze:Y seal:Y legacy:- | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
-| 沃 | oracle:- bronze:- seal:Y legacy:- | `沃.seal.svg` |
-| 乌 | oracle:- bronze:Y seal:Y legacy:- | `乌.bronze.svg`<br>`乌.seal.svg` |
-| 西 | oracle:Y bronze:Y seal:Y legacy:- | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
-| 希 | oracle:- bronze:- seal:Y legacy:- | `希.seal.svg` |
-| 悉 | oracle:- bronze:- seal:Y legacy:- | `悉.seal.svg` |
-| 锡 | oracle:Y bronze:Y seal:Y legacy:- | `锡.bronze.svg`<br>`锡.oracle.svg`<br>`锡.seal.svg` |
-| 戏 | oracle:- bronze:Y seal:Y legacy:- | `戏.bronze.svg`<br>`戏.seal.svg` |
-| 香 | oracle:Y bronze:Y seal:Y legacy:- | `香.bronze.svg`<br>`香.oracle.svg`<br>`香.seal.svg` |
-| 邪 | oracle:- bronze:Y seal:Y legacy:- | `邪.bronze.svg`<br>`邪.seal.svg` |
-| 欣 | oracle:- bronze:- seal:Y legacy:- | `欣.seal.svg` |
-| 新 | oracle:Y bronze:Y seal:Y legacy:- | `新.bronze.svg`<br>`新.oracle.svg`<br>`新.seal.svg` |
-| 兴 | oracle:Y bronze:Y seal:Y legacy:- | `兴.bronze.svg`<br>`兴.oracle.svg`<br>`兴.seal.svg` |
-| 匈 | oracle:- bronze:- seal:Y legacy:- | `匈.seal.svg` |
-| 虚 | oracle:- bronze:- seal:Y legacy:- | `虚.seal.svg` |
-| 学 | oracle:Y bronze:Y seal:Y legacy:- | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
-| 牙 | oracle:- bronze:Y seal:Y legacy:- | `牙.bronze.svg`<br>`牙.seal.svg` |
-| 雅 | oracle:- bronze:- seal:Y legacy:- | `雅.seal.svg` |
-| 亚 | oracle:Y bronze:Y seal:Y legacy:- | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
-| 耶 | oracle:- bronze:Y seal:Y legacy:- | `耶.bronze.svg`<br>`耶.seal.svg` |
-| 也 | oracle:- bronze:Y seal:Y legacy:- | `也.bronze.svg`<br>`也.seal.svg` |
-| 野 | oracle:Y bronze:Y seal:Y legacy:- | `野.bronze.svg`<br>`野.oracle.svg`<br>`野.seal.svg` |
-| 伊 | oracle:Y bronze:Y seal:Y legacy:- | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
-| 宜 | oracle:Y bronze:Y seal:Y legacy:- | `宜.bronze.svg`<br>`宜.oracle.svg`<br>`宜.seal.svg` |
-| 异 | oracle:- bronze:- seal:Y legacy:- | `异.seal.svg` |
-| 因 | oracle:Y bronze:Y seal:Y legacy:- | `因.bronze.svg`<br>`因.oracle.svg`<br>`因.seal.svg` |
-| 印 | oracle:Y bronze:Y seal:Y legacy:- | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
-| 英 | oracle:- bronze:Y seal:Y legacy:- | `英.bronze.svg`<br>`英.seal.svg` |
-| 由 | oracle:Y bronze:Y seal:- legacy:- | `由.bronze.svg`<br>`由.oracle.svg` |
-| 游 | oracle:Y bronze:Y seal:Y legacy:- | `游.bronze.svg`<br>`游.oracle.svg`<br>`游.seal.svg` |
-| 语 | oracle:- bronze:Y seal:Y legacy:- | `语.bronze.svg`<br>`语.seal.svg` |
-| 员 | oracle:Y bronze:Y seal:Y legacy:- | `员.bronze.svg`<br>`员.oracle.svg`<br>`员.seal.svg` |
-| 缘 | oracle:- bronze:- seal:Y legacy:- | `缘.seal.svg` |
-| 约 | oracle:- bronze:- seal:Y legacy:- | `约.seal.svg` |
-| 越 | oracle:- bronze:Y seal:Y legacy:- | `越.bronze.svg`<br>`越.seal.svg` |
-| 运 | oracle:- bronze:- seal:Y legacy:- | `运.seal.svg` |
-| 扎 | oracle:- bronze:- seal:Y legacy:- | `扎.seal.svg` |
-| 占 | oracle:Y bronze:- seal:Y legacy:- | `占.oracle.svg`<br>`占.seal.svg` |
-| 战 | oracle:- bronze:Y seal:Y legacy:- | `战.bronze.svg`<br>`战.seal.svg` |
-| 张 | oracle:- bronze:Y seal:Y legacy:- | `张.bronze.svg`<br>`张.seal.svg` |
-| 争 | oracle:Y bronze:- seal:Y legacy:- | `争.oracle.svg`<br>`争.seal.svg` |
-| 知 | oracle:- bronze:Y seal:Y legacy:- | `知.bronze.svg`<br>`知.seal.svg` |
-| 殖 | oracle:- bronze:- seal:Y legacy:- | `殖.seal.svg` |
-| 治 | oracle:- bronze:- seal:Y legacy:- | `治.seal.svg` |
-| 仲 | oracle:- bronze:Y seal:Y legacy:- | `仲.bronze.svg`<br>`仲.seal.svg` |
-| 州 | oracle:Y bronze:Y seal:Y legacy:- | `州.bronze.svg`<br>`州.oracle.svg`<br>`州.seal.svg` |
-| 主 | oracle:Y bronze:- seal:Y legacy:- | `主.oracle.svg`<br>`主.seal.svg` |
-| 准 | oracle:- bronze:- seal:Y legacy:- | `准.seal.svg` |
-| 兹 | oracle:Y bronze:Y seal:Y legacy:- | `兹.bronze.svg`<br>`兹.oracle.svg`<br>`兹.seal.svg` |
-| 自 | oracle:Y bronze:Y seal:Y legacy:- | `自.bronze.svg`<br>`自.oracle.svg`<br>`自.seal.svg` |
-| 族 | oracle:Y bronze:Y seal:Y legacy:- | `族.bronze.svg`<br>`族.oracle.svg`<br>`族.seal.svg` |
-| 祖 | oracle:Y bronze:Y seal:Y legacy:- | `祖.bronze.svg`<br>`祖.oracle.svg`<br>`祖.seal.svg` |
-| 佐 | oracle:Y bronze:Y seal:Y legacy:- | `佐.bronze.svg`<br>`佐.oracle.svg`<br>`佐.seal.svg` |
+| 阿 | oracle:- bronze:Y seal:Y | `阿.bronze.svg`<br>`阿.seal.svg` |
+| 埃 | oracle:- bronze:- seal:Y | `埃.seal.svg` |
+| 艾 | oracle:- bronze:- seal:Y | `艾.seal.svg` |
+| 安 | oracle:Y bronze:Y seal:Y | `安.bronze.svg`<br>`安.oracle.svg`<br>`安.seal.svg` |
+| 奥 | oracle:- bronze:- seal:Y | `奥.seal.svg` |
+| 澳 | oracle:- bronze:- seal:Y | `澳.seal.svg` |
+| 巴 | oracle:Y bronze:- seal:Y | `巴.oracle.svg`<br>`巴.seal.svg` |
+| 拜 | oracle:- bronze:Y seal:Y | `拜.bronze.svg`<br>`拜.seal.svg` |
+| 班 | oracle:- bronze:Y seal:Y | `班.bronze.svg`<br>`班.seal.svg` |
+| 邦 | oracle:Y bronze:Y seal:Y | `邦.bronze.svg`<br>`邦.oracle.svg`<br>`邦.seal.svg` |
+| 堡 | oracle:Y bronze:Y seal:Y | `堡.bronze.svg`<br>`堡.oracle.svg`<br>`堡.seal.svg` |
+| 报 | oracle:- bronze:Y seal:Y | `报.bronze.svg`<br>`报.seal.svg` |
+| 备 | oracle:Y bronze:Y seal:Y | `备.bronze.svg`<br>`备.oracle.svg`<br>`备.seal.svg` |
+| 奔 | oracle:- bronze:Y seal:Y | `奔.bronze.svg`<br>`奔.seal.svg` |
+| 本 | oracle:- bronze:Y seal:Y | `本.bronze.svg`<br>`本.seal.svg` |
+| 比 | oracle:Y bronze:Y seal:Y | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
+| 必 | oracle:Y bronze:Y seal:Y | `必.bronze.svg`<br>`必.oracle.svg`<br>`必.seal.svg` |
+| 边 | oracle:Y bronze:Y seal:Y | `边.bronze.svg`<br>`边.oracle.svg`<br>`边.seal.svg` |
+| 编 | oracle:- bronze:- seal:Y | `编.seal.svg` |
+| 变 | oracle:- bronze:Y seal:Y | `变.bronze.svg`<br>`变.seal.svg` |
+| 标 | oracle:- bronze:- seal:Y | `标.seal.svg` |
+| 兵 | oracle:Y bronze:Y seal:Y | `兵.bronze.svg`<br>`兵.oracle.svg`<br>`兵.seal.svg` |
+| 病 | oracle:- bronze:- seal:Y | `病.seal.svg` |
+| 波 | oracle:- bronze:- seal:Y | `波.seal.svg` |
+| 伯 | oracle:Y bronze:Y seal:Y | `伯.bronze.svg`<br>`伯.oracle.svg`<br>`伯.seal.svg` |
+| 博 | oracle:- bronze:Y seal:Y | `博.bronze.svg`<br>`博.seal.svg` |
+| 布 | oracle:- bronze:Y seal:Y | `布.bronze.svg`<br>`布.seal.svg` |
+| 部 | oracle:- bronze:- seal:Y | `部.seal.svg` |
+| 昌 | oracle:Y bronze:Y seal:Y | `昌.bronze.svg`<br>`昌.oracle.svg`<br>`昌.seal.svg` |
+| 场 | oracle:- bronze:- seal:Y | `场.seal.svg` |
+| 车 | oracle:Y bronze:Y seal:Y | `车.bronze.svg`<br>`车.oracle.svg`<br>`车.seal.svg` |
+| 彻 | oracle:Y bronze:Y seal:Y | `彻.bronze.svg`<br>`彻.oracle.svg`<br>`彻.seal.svg` |
+| 城 | oracle:- bronze:Y seal:Y | `城.bronze.svg`<br>`城.seal.svg` |
+| 船 | oracle:- bronze:Y seal:Y | `船.bronze.svg`<br>`船.seal.svg` |
+| 茨 | oracle:- bronze:- seal:Y | `茨.seal.svg` |
+| 丛 | oracle:- bronze:Y seal:Y | `丛.bronze.svg`<br>`丛.seal.svg` |
+| 达 | oracle:Y bronze:- seal:- | `达.oracle.svg` |
+| 大 | oracle:Y bronze:Y seal:Y | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
+| 丹 | oracle:Y bronze:Y seal:Y | `丹.bronze.svg`<br>`丹.oracle.svg`<br>`丹.seal.svg` |
+| 但 | oracle:Y bronze:Y seal:Y | `但.bronze.svg`<br>`但.oracle.svg`<br>`但.seal.svg` |
+| 淡 | oracle:Y bronze:- seal:Y | `淡.oracle.svg`<br>`淡.seal.svg` |
+| 盗 | oracle:Y bronze:Y seal:Y | `盗.bronze.svg`<br>`盗.oracle.svg`<br>`盗.seal.svg` |
+| 德 | oracle:Y bronze:Y seal:Y | `德.bronze.svg`<br>`德.oracle.svg`<br>`德.seal.svg` |
+| 地 | oracle:- bronze:Y seal:Y | `地.bronze.svg`<br>`地.seal.svg` |
+| 邓 | oracle:- bronze:Y seal:Y | `邓.bronze.svg`<br>`邓.seal.svg` |
+| 迪 | oracle:- bronze:- seal:Y | `迪.seal.svg` |
+| 底 | oracle:- bronze:- seal:Y | `底.seal.svg` |
+| 帝 | oracle:Y bronze:Y seal:Y | `帝.bronze.svg`<br>`帝.oracle.svg`<br>`帝.seal.svg` |
+| 蒂 | oracle:- bronze:- seal:Y | `蒂.seal.svg` |
+| 典 | oracle:Y bronze:Y seal:Y | `典.bronze.svg`<br>`典.oracle.svg`<br>`典.seal.svg` |
+| 动 | oracle:- bronze:Y seal:Y | `动.bronze.svg`<br>`动.seal.svg` |
+| 都 | oracle:- bronze:Y seal:Y | `都.bronze.svg`<br>`都.seal.svg` |
+| 度 | oracle:Y bronze:Y seal:Y | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
+| 囤 | oracle:- bronze:- seal:Y | `囤.seal.svg` |
+| 顿 | oracle:- bronze:- seal:Y | `顿.seal.svg` |
+| 多 | oracle:Y bronze:Y seal:Y | `多.bronze.svg`<br>`多.oracle.svg`<br>`多.seal.svg` |
+| 俄 | oracle:- bronze:- seal:Y | `俄.seal.svg` |
+| 恩 | oracle:- bronze:- seal:Y | `恩.seal.svg` |
+| 尔 | oracle:- bronze:Y seal:Y | `尔.bronze.svg`<br>`尔.seal.svg` |
+| 法 | oracle:- bronze:Y seal:Y | `法.bronze.svg`<br>`法.seal.svg` |
+| 番 | oracle:- bronze:Y seal:Y | `番.bronze.svg`<br>`番.seal.svg` |
+| 梵 | oracle:- bronze:- seal:Y | `梵.seal.svg` |
+| 放 | oracle:- bronze:Y seal:Y | `放.bronze.svg`<br>`放.seal.svg` |
+| 菲 | oracle:- bronze:- seal:Y | `菲.seal.svg` |
+| 腓 | oracle:- bronze:- seal:Y | `腓.seal.svg` |
+| 夫 | oracle:Y bronze:Y seal:Y | `夫.bronze.svg`<br>`夫.oracle.svg`<br>`夫.seal.svg` |
+| 佛 | oracle:- bronze:- seal:Y | `佛.seal.svg` |
+| 福 | oracle:- bronze:Y seal:Y | `福.bronze.svg`<br>`福.seal.svg` |
+| 府 | oracle:- bronze:Y seal:Y | `府.bronze.svg`<br>`府.seal.svg` |
+| 盖 | oracle:Y bronze:Y seal:Y | `盖.bronze.svg`<br>`盖.oracle.svg`<br>`盖.seal.svg` |
+| 冈 | oracle:Y bronze:- seal:Y | `冈.oracle.svg`<br>`冈.seal.svg` |
+| 刚 | oracle:Y bronze:Y seal:Y | `刚.bronze.svg`<br>`刚.oracle.svg`<br>`刚.seal.svg` |
+| 港 | oracle:- bronze:- seal:Y | `港.seal.svg` |
+| 高 | oracle:Y bronze:Y seal:Y | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
+| 戈 | oracle:Y bronze:Y seal:Y | `戈.bronze.svg`<br>`戈.oracle.svg`<br>`戈.seal.svg` |
+| 哥 | oracle:- bronze:- seal:Y | `哥.seal.svg` |
+| 格 | oracle:- bronze:Y seal:Y | `格.bronze.svg`<br>`格.seal.svg` |
+| 给 | oracle:- bronze:- seal:Y | `给.seal.svg` |
+| 公 | oracle:Y bronze:Y seal:Y | `公.bronze.svg`<br>`公.oracle.svg`<br>`公.seal.svg` |
+| 古 | oracle:Y bronze:Y seal:Y | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
+| 瓜 | oracle:- bronze:Y seal:Y | `瓜.bronze.svg`<br>`瓜.seal.svg` |
+| 龟 | oracle:Y bronze:Y seal:Y | `龟.bronze.svg`<br>`龟.oracle.svg`<br>`龟.seal.svg` |
+| 国 | oracle:- bronze:Y seal:Y | `国.bronze.svg`<br>`国.seal.svg` |
+| 果 | oracle:- bronze:Y seal:Y | `果.bronze.svg`<br>`果.seal.svg` |
+| 哈 | oracle:- bronze:- seal:Y | `哈.seal.svg` |
+| 海 | oracle:- bronze:Y seal:Y | `海.bronze.svg`<br>`海.seal.svg` |
+| 韩 | oracle:- bronze:Y seal:Y | `韩.bronze.svg`<br>`韩.seal.svg` |
+| 罕 | oracle:- bronze:- seal:Y | `罕.seal.svg` |
+| 汉 | oracle:- bronze:Y seal:Y | `汉.bronze.svg`<br>`汉.seal.svg` |
+| 翰 | oracle:- bronze:- seal:Y | `翰.seal.svg` |
+| 合 | oracle:Y bronze:Y seal:Y | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
+| 荷 | oracle:- bronze:- seal:Y | `荷.seal.svg` |
+| 赫 | oracle:- bronze:- seal:Y | `赫.seal.svg` |
+| 黑 | oracle:Y bronze:Y seal:Y | `黑.bronze.svg`<br>`黑.oracle.svg`<br>`黑.seal.svg` |
+| 亨 | oracle:Y bronze:Y seal:Y | `亨.bronze.svg`<br>`亨.oracle.svg`<br>`亨.seal.svg` |
+| 洪 | oracle:- bronze:- seal:Y | `洪.seal.svg` |
+| 忽 | oracle:- bronze:Y seal:Y | `忽.bronze.svg`<br>`忽.seal.svg` |
+| 霍 | oracle:Y bronze:Y seal:Y | `霍.bronze.svg`<br>`霍.oracle.svg`<br>`霍.seal.svg` |
+| 机 | oracle:- bronze:- seal:Y | `机.seal.svg` |
+| 积 | oracle:- bronze:Y seal:Y | `积.bronze.svg`<br>`积.seal.svg` |
+| 基 | oracle:Y bronze:Y seal:Y | `基.bronze.svg`<br>`基.oracle.svg`<br>`基.seal.svg` |
+| 加 | oracle:- bronze:Y seal:Y | `加.bronze.svg`<br>`加.seal.svg` |
+| 迦 | oracle:- bronze:- seal:Y | `迦.seal.svg` |
+| 家 | oracle:Y bronze:Y seal:Y | `家.bronze.svg`<br>`家.oracle.svg`<br>`家.seal.svg` |
+| 贾 | oracle:Y bronze:Y seal:Y | `贾.bronze.svg`<br>`贾.oracle.svg`<br>`贾.seal.svg` |
+| 教 | oracle:Y bronze:Y seal:Y | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
+| 近 | oracle:- bronze:- seal:Y | `近.seal.svg` |
+| 京 | oracle:Y bronze:Y seal:Y | `京.bronze.svg`<br>`京.oracle.svg`<br>`京.seal.svg` |
+| 景 | oracle:- bronze:- seal:Y | `景.seal.svg` |
+| 巨 | oracle:- bronze:Y seal:Y | `巨.bronze.svg`<br>`巨.seal.svg` |
+| 惧 | oracle:- bronze:Y seal:Y | `惧.bronze.svg`<br>`惧.seal.svg` |
+| 军 | oracle:- bronze:Y seal:Y | `军.bronze.svg`<br>`军.seal.svg` |
+| 喀 | oracle:- bronze:- seal:Y | `喀.seal.svg` |
+| 卡 | oracle:- bronze:- seal:Y | `卡.seal.svg` |
+| 开 | oracle:- bronze:- seal:Y | `开.seal.svg` |
+| 凯 | oracle:- bronze:- seal:Y | `凯.seal.svg` |
+| 坎 | oracle:- bronze:- seal:Y | `坎.seal.svg` |
+| 康 | oracle:Y bronze:Y seal:Y | `康.bronze.svg`<br>`康.oracle.svg`<br>`康.seal.svg` |
+| 科 | oracle:- bronze:- seal:Y | `科.seal.svg` |
+| 克 | oracle:Y bronze:Y seal:Y | `克.bronze.svg`<br>`克.oracle.svg`<br>`克.seal.svg` |
+| 肯 | oracle:- bronze:- seal:Y | `肯.seal.svg` |
+| 恐 | oracle:- bronze:Y seal:Y | `恐.bronze.svg`<br>`恐.seal.svg` |
+| 库 | oracle:- bronze:Y seal:Y | `库.bronze.svg`<br>`库.seal.svg` |
+| 昆 | oracle:- bronze:Y seal:Y | `昆.bronze.svg`<br>`昆.seal.svg` |
+| 扩 | oracle:- bronze:- seal:Y | `扩.seal.svg` |
+| 拉 | oracle:- bronze:- seal:Y | `拉.seal.svg` |
+| 腊 | oracle:Y bronze:Y seal:Y | `腊.bronze.svg`<br>`腊.oracle.svg`<br>`腊.seal.svg` |
+| 莱 | oracle:- bronze:- seal:Y | `莱.seal.svg` |
+| 兰 | oracle:- bronze:- seal:Y | `兰.seal.svg` |
+| 烂 | oracle:- bronze:- seal:Y | `烂.seal.svg` |
+| 浪 | oracle:- bronze:- seal:Y | `浪.seal.svg` |
+| 勒 | oracle:- bronze:Y seal:Y | `勒.bronze.svg`<br>`勒.seal.svg` |
+| 雷 | oracle:Y bronze:Y seal:Y | `雷.bronze.svg`<br>`雷.oracle.svg`<br>`雷.seal.svg` |
+| 冷 | oracle:- bronze:- seal:Y | `冷.seal.svg` |
+| 里 | oracle:- bronze:Y seal:Y | `里.bronze.svg`<br>`里.seal.svg` |
+| 理 | oracle:- bronze:Y seal:Y | `理.bronze.svg`<br>`理.seal.svg` |
+| 力 | oracle:Y bronze:Y seal:Y | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
+| 利 | oracle:Y bronze:Y seal:Y | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
+| 烈 | oracle:- bronze:- seal:Y | `烈.seal.svg` |
+| 林 | oracle:Y bronze:Y seal:Y | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
+| 领 | oracle:- bronze:- seal:Y | `领.seal.svg` |
+| 流 | oracle:- bronze:Y seal:Y | `流.bronze.svg`<br>`流.seal.svg` |
+| 龙 | oracle:Y bronze:Y seal:Y | `龙.bronze.svg`<br>`龙.oracle.svg`<br>`龙.seal.svg` |
+| 卢 | oracle:Y bronze:Y seal:Y | `卢.bronze.svg`<br>`卢.oracle.svg`<br>`卢.seal.svg` |
+| 鲁 | oracle:Y bronze:Y seal:Y | `鲁.bronze.svg`<br>`鲁.oracle.svg`<br>`鲁.seal.svg` |
+| 路 | oracle:- bronze:Y seal:Y | `路.bronze.svg`<br>`路.seal.svg` |
+| 戮 | oracle:- bronze:Y seal:Y | `戮.bronze.svg`<br>`戮.seal.svg` |
+| 掠 | oracle:- bronze:- seal:Y | `掠.seal.svg` |
+| 伦 | oracle:- bronze:- seal:Y | `伦.seal.svg` |
+| 罗 | oracle:Y bronze:Y seal:Y | `罗.bronze.svg`<br>`罗.oracle.svg`<br>`罗.seal.svg` |
+| 洛 | oracle:- bronze:Y seal:Y | `洛.bronze.svg`<br>`洛.seal.svg` |
+| 落 | oracle:- bronze:- seal:Y | `落.seal.svg` |
+| 马 | oracle:Y bronze:Y seal:Y | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
+| 玛 | oracle:Y bronze:Y seal:Y | `玛.bronze.svg`<br>`玛.oracle.svg`<br>`玛.seal.svg` |
+| 麦 | oracle:Y bronze:Y seal:Y | `麦.bronze.svg`<br>`麦.oracle.svg`<br>`麦.seal.svg` |
+| 蛮 | oracle:- bronze:Y seal:Y | `蛮.bronze.svg`<br>`蛮.seal.svg` |
+| 曼 | oracle:Y bronze:Y seal:Y | `曼.bronze.svg`<br>`曼.oracle.svg`<br>`曼.seal.svg` |
+| 毛 | oracle:- bronze:Y seal:Y | `毛.bronze.svg`<br>`毛.seal.svg` |
+| 美 | oracle:Y bronze:Y seal:Y | `美.bronze.svg`<br>`美.oracle.svg`<br>`美.seal.svg` |
+| 蒙 | oracle:- bronze:Y seal:Y | `蒙.bronze.svg`<br>`蒙.seal.svg` |
+| 棉 | oracle:- bronze:- seal:Y | `棉.seal.svg` |
+| 民 | oracle:Y bronze:Y seal:Y | `民.bronze.svg`<br>`民.oracle.svg`<br>`民.seal.svg` |
+| 摩 | oracle:- bronze:- seal:Y | `摩.seal.svg` |
+| 墨 | oracle:- bronze:Y seal:Y | `墨.bronze.svg`<br>`墨.seal.svg` |
+| 姆 | oracle:- bronze:Y seal:Y | `姆.bronze.svg`<br>`姆.seal.svg` |
+| 穆 | oracle:Y bronze:Y seal:Y | `穆.bronze.svg`<br>`穆.oracle.svg`<br>`穆.seal.svg` |
+| 拿 | oracle:- bronze:Y seal:Y | `拿.bronze.svg`<br>`拿.seal.svg` |
+| 那 | oracle:- bronze:- seal:Y | `那.seal.svg` |
+| 纳 | oracle:- bronze:Y seal:Y | `纳.bronze.svg`<br>`纳.seal.svg` |
+| 奈 | oracle:Y bronze:- seal:Y | `奈.oracle.svg`<br>`奈.seal.svg` |
+| 南 | oracle:Y bronze:Y seal:Y | `南.bronze.svg`<br>`南.oracle.svg`<br>`南.seal.svg` |
+| 尼 | oracle:- bronze:- seal:Y | `尼.seal.svg` |
+| 纽 | oracle:- bronze:- seal:Y | `纽.seal.svg` |
+| 努 | oracle:- bronze:- seal:Y | `努.seal.svg` |
+| 挪 | oracle:- bronze:- seal:Y | `挪.seal.svg` |
+| 诺 | oracle:- bronze:Y seal:Y | `诺.bronze.svg`<br>`诺.seal.svg` |
+| 帕 | oracle:- bronze:- seal:Y | `帕.seal.svg` |
+| 潘 | oracle:- bronze:Y seal:Y | `潘.bronze.svg`<br>`潘.seal.svg` |
+| 平 | oracle:- bronze:Y seal:Y | `平.bronze.svg`<br>`平.seal.svg` |
+| 坡 | oracle:- bronze:Y seal:Y | `坡.bronze.svg`<br>`坡.seal.svg` |
+| 葡 | oracle:Y bronze:Y seal:Y | `葡.bronze.svg`<br>`葡.oracle.svg`<br>`葡.seal.svg` |
+| 普 | oracle:- bronze:- seal:Y | `普.seal.svg` |
+| 齐 | oracle:Y bronze:Y seal:Y | `齐.bronze.svg`<br>`齐.oracle.svg`<br>`齐.seal.svg` |
+| 其 | oracle:Y bronze:Y seal:Y | `其.bronze.svg`<br>`其.oracle.svg`<br>`其.seal.svg` |
+| 骑 | oracle:- bronze:Y seal:Y | `骑.bronze.svg`<br>`骑.seal.svg` |
+| 器 | oracle:- bronze:Y seal:Y | `器.bronze.svg`<br>`器.seal.svg` |
+| 乔 | oracle:- bronze:Y seal:Y | `乔.bronze.svg`<br>`乔.seal.svg` |
+| 切 | oracle:- bronze:- seal:Y | `切.seal.svg` |
+| 情 | oracle:- bronze:- seal:Y | `情.seal.svg` |
+| 庆 | oracle:Y bronze:Y seal:Y | `庆.bronze.svg`<br>`庆.oracle.svg`<br>`庆.seal.svg` |
+| 丘 | oracle:Y bronze:Y seal:Y | `丘.bronze.svg`<br>`丘.oracle.svg`<br>`丘.seal.svg` |
+| 人 | oracle:Y bronze:Y seal:Y | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
+| 日 | oracle:Y bronze:Y seal:Y | `日.bronze.svg`<br>`日.oracle.svg`<br>`日.seal.svg` |
+| 瑞 | oracle:- bronze:- seal:Y | `瑞.seal.svg` |
+| 撒 | oracle:- bronze:- seal:Y | `撒.seal.svg` |
+| 萨 | oracle:- bronze:- seal:Y | `萨.seal.svg` |
+| 塞 | oracle:Y bronze:- seal:Y | `塞.oracle.svg`<br>`塞.seal.svg` |
+| 桑 | oracle:Y bronze:- seal:Y | `桑.oracle.svg`<br>`桑.seal.svg` |
+| 森 | oracle:Y bronze:- seal:Y | `森.oracle.svg`<br>`森.seal.svg` |
+| 杀 | oracle:- bronze:Y seal:Y | `杀.bronze.svg`<br>`杀.seal.svg` |
+| 山 | oracle:Y bronze:Y seal:Y | `山.bronze.svg`<br>`山.oracle.svg`<br>`山.seal.svg` |
+| 什 | oracle:- bronze:- seal:Y | `什.seal.svg` |
+| 神 | oracle:- bronze:Y seal:Y | `神.bronze.svg`<br>`神.seal.svg` |
+| 升 | oracle:Y bronze:Y seal:Y | `升.bronze.svg`<br>`升.oracle.svg`<br>`升.seal.svg` |
+| 声 | oracle:Y bronze:- seal:Y | `声.oracle.svg`<br>`声.seal.svg` |
+| 圣 | oracle:Y bronze:Y seal:Y | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
+| 时 | oracle:- bronze:Y seal:Y | `时.bronze.svg`<br>`时.seal.svg` |
+| 士 | oracle:- bronze:Y seal:Y | `士.bronze.svg`<br>`士.seal.svg` |
+| 氏 | oracle:Y bronze:Y seal:Y | `氏.bronze.svg`<br>`氏.oracle.svg`<br>`氏.seal.svg` |
+| 市 | oracle:Y bronze:Y seal:Y | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
+| 事 | oracle:Y bronze:Y seal:Y | `事.bronze.svg`<br>`事.oracle.svg`<br>`事.seal.svg` |
+| 势 | oracle:- bronze:- seal:Y | `势.seal.svg` |
+| 私 | oracle:- bronze:Y seal:Y | `私.bronze.svg`<br>`私.seal.svg` |
+| 思 | oracle:- bronze:Y seal:Y | `思.bronze.svg`<br>`思.seal.svg` |
+| 斯 | oracle:- bronze:Y seal:Y | `斯.bronze.svg`<br>`斯.seal.svg` |
+| 死 | oracle:Y bronze:Y seal:Y | `死.bronze.svg`<br>`死.oracle.svg`<br>`死.seal.svg` |
+| 苏 | oracle:- bronze:Y seal:Y | `苏.bronze.svg`<br>`苏.seal.svg` |
+| 速 | oracle:Y bronze:Y seal:Y | `速.bronze.svg`<br>`速.oracle.svg`<br>`速.seal.svg` |
+| 索 | oracle:Y bronze:Y seal:Y | `索.bronze.svg`<br>`索.oracle.svg`<br>`索.seal.svg` |
+| 塔 | oracle:- bronze:- seal:Y | `塔.seal.svg` |
+| 太 | oracle:- bronze:- seal:Y | `太.seal.svg` |
+| 泰 | oracle:- bronze:- seal:Y | `泰.seal.svg` |
+| 萄 | oracle:- bronze:- seal:Y | `萄.seal.svg` |
+| 特 | oracle:- bronze:- seal:Y | `特.seal.svg` |
+| 提 | oracle:- bronze:- seal:Y | `提.seal.svg` |
+| 体 | oracle:- bronze:Y seal:Y | `体.bronze.svg`<br>`体.seal.svg` |
+| 阗 | oracle:- bronze:- seal:Y | `阗.seal.svg` |
+| 庭 | oracle:- bronze:Y seal:Y | `庭.bronze.svg`<br>`庭.seal.svg` |
+| 通 | oracle:Y bronze:Y seal:Y | `通.bronze.svg`<br>`通.oracle.svg`<br>`通.seal.svg` |
+| 突 | oracle:Y bronze:- seal:Y | `突.oracle.svg`<br>`突.seal.svg` |
+| 图 | oracle:- bronze:Y seal:Y | `图.bronze.svg`<br>`图.seal.svg` |
+| 徒 | oracle:Y bronze:Y seal:Y | `徒.bronze.svg`<br>`徒.oracle.svg`<br>`徒.seal.svg` |
+| 吐 | oracle:- bronze:- seal:Y | `吐.seal.svg` |
+| 托 | oracle:Y bronze:Y seal:Y | `托.bronze.svg`<br>`托.oracle.svg`<br>`托.seal.svg` |
+| 陀 | oracle:- bronze:Y seal:Y | `陀.bronze.svg`<br>`陀.seal.svg` |
+| 瓦 | oracle:- bronze:- seal:Y | `瓦.seal.svg` |
+| 万 | oracle:Y bronze:Y seal:Y | `万.bronze.svg`<br>`万.oracle.svg`<br>`万.seal.svg` |
+| 威 | oracle:- bronze:Y seal:Y | `威.bronze.svg`<br>`威.seal.svg` |
+| 维 | oracle:- bronze:Y seal:Y | `维.bronze.svg`<br>`维.seal.svg` |
+| 未 | oracle:Y bronze:Y seal:Y | `未.bronze.svg`<br>`未.oracle.svg`<br>`未.seal.svg` |
+| 温 | oracle:Y bronze:- seal:Y | `温.oracle.svg`<br>`温.seal.svg` |
+| 文 | oracle:Y bronze:Y seal:Y | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
+| 沃 | oracle:- bronze:- seal:Y | `沃.seal.svg` |
+| 乌 | oracle:- bronze:Y seal:Y | `乌.bronze.svg`<br>`乌.seal.svg` |
+| 西 | oracle:Y bronze:Y seal:Y | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
+| 希 | oracle:- bronze:- seal:Y | `希.seal.svg` |
+| 悉 | oracle:- bronze:- seal:Y | `悉.seal.svg` |
+| 锡 | oracle:Y bronze:Y seal:Y | `锡.bronze.svg`<br>`锡.oracle.svg`<br>`锡.seal.svg` |
+| 戏 | oracle:- bronze:Y seal:Y | `戏.bronze.svg`<br>`戏.seal.svg` |
+| 香 | oracle:Y bronze:Y seal:Y | `香.bronze.svg`<br>`香.oracle.svg`<br>`香.seal.svg` |
+| 邪 | oracle:- bronze:Y seal:Y | `邪.bronze.svg`<br>`邪.seal.svg` |
+| 欣 | oracle:- bronze:- seal:Y | `欣.seal.svg` |
+| 新 | oracle:Y bronze:Y seal:Y | `新.bronze.svg`<br>`新.oracle.svg`<br>`新.seal.svg` |
+| 兴 | oracle:Y bronze:Y seal:Y | `兴.bronze.svg`<br>`兴.oracle.svg`<br>`兴.seal.svg` |
+| 匈 | oracle:- bronze:- seal:Y | `匈.seal.svg` |
+| 虚 | oracle:- bronze:- seal:Y | `虚.seal.svg` |
+| 学 | oracle:Y bronze:Y seal:Y | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
+| 牙 | oracle:- bronze:Y seal:Y | `牙.bronze.svg`<br>`牙.seal.svg` |
+| 雅 | oracle:- bronze:- seal:Y | `雅.seal.svg` |
+| 亚 | oracle:Y bronze:Y seal:Y | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
+| 耶 | oracle:- bronze:Y seal:Y | `耶.bronze.svg`<br>`耶.seal.svg` |
+| 也 | oracle:- bronze:Y seal:Y | `也.bronze.svg`<br>`也.seal.svg` |
+| 野 | oracle:Y bronze:Y seal:Y | `野.bronze.svg`<br>`野.oracle.svg`<br>`野.seal.svg` |
+| 伊 | oracle:Y bronze:Y seal:Y | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
+| 宜 | oracle:Y bronze:Y seal:Y | `宜.bronze.svg`<br>`宜.oracle.svg`<br>`宜.seal.svg` |
+| 异 | oracle:- bronze:- seal:Y | `异.seal.svg` |
+| 因 | oracle:Y bronze:Y seal:Y | `因.bronze.svg`<br>`因.oracle.svg`<br>`因.seal.svg` |
+| 印 | oracle:Y bronze:Y seal:Y | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
+| 英 | oracle:- bronze:Y seal:Y | `英.bronze.svg`<br>`英.seal.svg` |
+| 由 | oracle:Y bronze:Y seal:- | `由.bronze.svg`<br>`由.oracle.svg` |
+| 游 | oracle:Y bronze:Y seal:Y | `游.bronze.svg`<br>`游.oracle.svg`<br>`游.seal.svg` |
+| 语 | oracle:- bronze:Y seal:Y | `语.bronze.svg`<br>`语.seal.svg` |
+| 员 | oracle:Y bronze:Y seal:Y | `员.bronze.svg`<br>`员.oracle.svg`<br>`员.seal.svg` |
+| 缘 | oracle:- bronze:- seal:Y | `缘.seal.svg` |
+| 约 | oracle:- bronze:- seal:Y | `约.seal.svg` |
+| 越 | oracle:- bronze:Y seal:Y | `越.bronze.svg`<br>`越.seal.svg` |
+| 运 | oracle:- bronze:- seal:Y | `运.seal.svg` |
+| 扎 | oracle:- bronze:- seal:Y | `扎.seal.svg` |
+| 占 | oracle:Y bronze:- seal:Y | `占.oracle.svg`<br>`占.seal.svg` |
+| 战 | oracle:- bronze:Y seal:Y | `战.bronze.svg`<br>`战.seal.svg` |
+| 张 | oracle:- bronze:Y seal:Y | `张.bronze.svg`<br>`张.seal.svg` |
+| 争 | oracle:Y bronze:- seal:Y | `争.oracle.svg`<br>`争.seal.svg` |
+| 知 | oracle:- bronze:Y seal:Y | `知.bronze.svg`<br>`知.seal.svg` |
+| 殖 | oracle:- bronze:- seal:Y | `殖.seal.svg` |
+| 治 | oracle:- bronze:- seal:Y | `治.seal.svg` |
+| 仲 | oracle:- bronze:Y seal:Y | `仲.bronze.svg`<br>`仲.seal.svg` |
+| 州 | oracle:Y bronze:Y seal:Y | `州.bronze.svg`<br>`州.oracle.svg`<br>`州.seal.svg` |
+| 主 | oracle:Y bronze:- seal:Y | `主.oracle.svg`<br>`主.seal.svg` |
+| 准 | oracle:- bronze:- seal:Y | `准.seal.svg` |
+| 兹 | oracle:Y bronze:Y seal:Y | `兹.bronze.svg`<br>`兹.oracle.svg`<br>`兹.seal.svg` |
+| 自 | oracle:Y bronze:Y seal:Y | `自.bronze.svg`<br>`自.oracle.svg`<br>`自.seal.svg` |
+| 族 | oracle:Y bronze:Y seal:Y | `族.bronze.svg`<br>`族.oracle.svg`<br>`族.seal.svg` |
+| 祖 | oracle:Y bronze:Y seal:Y | `祖.bronze.svg`<br>`祖.oracle.svg`<br>`祖.seal.svg` |
+| 佐 | oracle:Y bronze:Y seal:Y | `佐.bronze.svg`<br>`佐.oracle.svg`<br>`佐.seal.svg` |
 
 ## civilopedia
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 典 | oracle:Y bronze:Y seal:Y legacy:- | `典.bronze.svg`<br>`典.oracle.svg`<br>`典.seal.svg` |
+| 典 | oracle:Y bronze:Y seal:Y | `典.bronze.svg`<br>`典.oracle.svg`<br>`典.seal.svg` |
 
 ## diplomacy
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 保 | oracle:Y bronze:Y seal:Y legacy:- | `保.bronze.svg`<br>`保.oracle.svg`<br>`保.seal.svg` |
-| 报 | oracle:- bronze:Y seal:Y legacy:- | `报.bronze.svg`<br>`报.seal.svg` |
-| 币 | oracle:- bronze:- seal:Y legacy:- | `币.seal.svg` |
-| 边 | oracle:Y bronze:Y seal:Y legacy:- | `边.bronze.svg`<br>`边.oracle.svg`<br>`边.seal.svg` |
-| 表 | oracle:- bronze:- seal:Y legacy:- | `表.seal.svg` |
-| 布 | oracle:- bronze:Y seal:Y legacy:- | `布.bronze.svg`<br>`布.seal.svg` |
-| 察 | oracle:- bronze:Y seal:Y legacy:- | `察.bronze.svg`<br>`察.seal.svg` |
-| 常 | oracle:- bronze:Y seal:Y legacy:- | `常.bronze.svg`<br>`常.seal.svg` |
-| 成 | oracle:Y bronze:Y seal:Y legacy:- | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
-| 仇 | oracle:- bronze:- seal:Y legacy:- | `仇.seal.svg` |
-| 促 | oracle:- bronze:- seal:Y legacy:- | `促.seal.svg` |
-| 大 | oracle:Y bronze:Y seal:Y legacy:- | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
-| 代 | oracle:- bronze:- seal:Y legacy:- | `代.seal.svg` |
-| 单 | oracle:Y bronze:Y seal:Y legacy:- | `单.bronze.svg`<br>`单.oracle.svg`<br>`单.seal.svg` |
-| 第 | oracle:Y bronze:Y seal:Y legacy:- | `第.bronze.svg`<br>`第.oracle.svg`<br>`第.seal.svg` |
-| 点 | oracle:- bronze:- seal:Y legacy:- | `点.seal.svg` |
-| 动 | oracle:- bronze:Y seal:Y legacy:- | `动.bronze.svg`<br>`动.seal.svg` |
-| 度 | oracle:Y bronze:Y seal:Y legacy:- | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
-| 方 | oracle:Y bronze:Y seal:Y legacy:- | `方.bronze.svg`<br>`方.oracle.svg`<br>`方.seal.svg` |
-| 防 | oracle:- bronze:- seal:Y legacy:- | `防.seal.svg` |
-| 放 | oracle:- bronze:Y seal:Y legacy:- | `放.bronze.svg`<br>`放.seal.svg` |
-| 高 | oracle:Y bronze:Y seal:Y legacy:- | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
-| 糕 | oracle:- bronze:- seal:Y legacy:- | `糕.seal.svg` |
-| 告 | oracle:Y bronze:Y seal:Y legacy:- | `告.bronze.svg`<br>`告.oracle.svg`<br>`告.seal.svg` |
-| 公 | oracle:Y bronze:Y seal:Y legacy:- | `公.bronze.svg`<br>`公.oracle.svg`<br>`公.seal.svg` |
-| 贡 | oracle:- bronze:- seal:Y legacy:- | `贡.seal.svg` |
-| 关 | oracle:Y bronze:Y seal:- legacy:- | `关.bronze.svg`<br>`关.oracle.svg` |
-| 观 | oracle:Y bronze:Y seal:Y legacy:- | `观.bronze.svg`<br>`观.oracle.svg`<br>`观.seal.svg` |
-| 馆 | oracle:- bronze:- seal:Y legacy:- | `馆.seal.svg` |
-| 国 | oracle:- bronze:Y seal:Y legacy:- | `国.bronze.svg`<br>`国.seal.svg` |
-| 海 | oracle:- bronze:Y seal:Y legacy:- | `海.bronze.svg`<br>`海.seal.svg` |
-| 好 | oracle:Y bronze:Y seal:Y legacy:- | `好.bronze.svg`<br>`好.oracle.svg`<br>`好.seal.svg` |
-| 合 | oracle:Y bronze:Y seal:Y legacy:- | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
-| 核 | oracle:- bronze:- seal:Y legacy:- | `核.seal.svg` |
-| 很 | oracle:- bronze:- seal:Y legacy:- | `很.seal.svg` |
-| 护 | oracle:- bronze:- seal:Y legacy:- | `护.seal.svg` |
-| 化 | oracle:Y bronze:Y seal:Y legacy:- | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
-| 黄 | oracle:Y bronze:Y seal:Y legacy:- | `黄.bronze.svg`<br>`黄.oracle.svg`<br>`黄.seal.svg` |
-| 奖 | oracle:- bronze:- seal:Y legacy:- | `奖.seal.svg` |
-| 交 | oracle:- bronze:- seal:Y legacy:- | `交.seal.svg` |
-| 解 | oracle:Y bronze:Y seal:Y legacy:- | `解.bronze.svg`<br>`解.oracle.svg`<br>`解.seal.svg` |
-| 界 | oracle:- bronze:- seal:Y legacy:- | `界.seal.svg` |
-| 金 | oracle:- bronze:Y seal:Y legacy:- | `金.bronze.svg`<br>`金.seal.svg` |
-| 景 | oracle:- bronze:- seal:Y legacy:- | `景.seal.svg` |
-| 究 | oracle:- bronze:Y seal:Y legacy:- | `究.bronze.svg`<br>`究.seal.svg` |
-| 军 | oracle:- bronze:Y seal:Y legacy:- | `军.bronze.svg`<br>`军.seal.svg` |
-| 开 | oracle:- bronze:- seal:Y legacy:- | `开.seal.svg` |
-| 科 | oracle:- bronze:- seal:Y legacy:- | `科.seal.svg` |
-| 扩 | oracle:- bronze:- seal:Y legacy:- | `扩.seal.svg` |
-| 礼 | oracle:Y bronze:Y seal:Y legacy:- | `礼.bronze.svg`<br>`礼.oracle.svg`<br>`礼.seal.svg` |
-| 力 | oracle:Y bronze:Y seal:Y legacy:- | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
-| 立 | oracle:Y bronze:Y seal:Y legacy:- | `立.bronze.svg`<br>`立.oracle.svg`<br>`立.seal.svg` |
-| 联 | oracle:Y bronze:Y seal:Y legacy:- | `联.bronze.svg`<br>`联.oracle.svg`<br>`联.seal.svg` |
-| 领 | oracle:- bronze:- seal:Y legacy:- | `领.seal.svg` |
-| 贸 | oracle:- bronze:Y seal:Y legacy:- | `贸.bronze.svg`<br>`贸.seal.svg` |
-| 盟 | oracle:Y bronze:Y seal:Y legacy:- | `盟.bronze.svg`<br>`盟.oracle.svg`<br>`盟.seal.svg` |
-| 棉 | oracle:- bronze:- seal:Y legacy:- | `棉.seal.svg` |
-| 民 | oracle:Y bronze:Y seal:Y legacy:- | `民.bronze.svg`<br>`民.oracle.svg`<br>`民.seal.svg` |
-| 尼 | oracle:- bronze:- seal:Y legacy:- | `尼.seal.svg` |
-| 品 | oracle:Y bronze:Y seal:Y legacy:- | `品.bronze.svg`<br>`品.oracle.svg`<br>`品.seal.svg` |
-| 平 | oracle:- bronze:Y seal:Y legacy:- | `平.bronze.svg`<br>`平.seal.svg` |
-| 器 | oracle:- bronze:Y seal:Y legacy:- | `器.bronze.svg`<br>`器.seal.svg` |
-| 谴 | oracle:- bronze:Y seal:Y legacy:- | `谴.bronze.svg`<br>`谴.seal.svg` |
-| 情 | oracle:- bronze:- seal:Y legacy:- | `情.seal.svg` |
-| 请 | oracle:- bronze:Y seal:Y legacy:- | `请.bronze.svg`<br>`请.seal.svg` |
-| 求 | oracle:Y bronze:Y seal:Y legacy:- | `求.bronze.svg`<br>`求.oracle.svg`<br>`求.seal.svg` |
-| 三 | oracle:Y bronze:Y seal:Y legacy:- | `三.bronze.svg`<br>`三.oracle.svg`<br>`三.seal.svg` |
-| 时 | oracle:- bronze:Y seal:Y legacy:- | `时.bronze.svg`<br>`时.seal.svg` |
-| 识 | oracle:- bronze:Y seal:Y legacy:- | `识.bronze.svg`<br>`识.seal.svg` |
-| 使 | oracle:Y bronze:Y seal:Y legacy:- | `使.bronze.svg`<br>`使.oracle.svg`<br>`使.seal.svg` |
-| 示 | oracle:Y bronze:Y seal:Y legacy:- | `示.bronze.svg`<br>`示.oracle.svg`<br>`示.seal.svg` |
-| 事 | oracle:Y bronze:Y seal:Y legacy:- | `事.bronze.svg`<br>`事.oracle.svg`<br>`事.seal.svg` |
-| 授 | oracle:- bronze:- seal:Y legacy:- | `授.seal.svg` |
-| 态 | oracle:- bronze:- seal:Y legacy:- | `态.seal.svg` |
-| 特 | oracle:- bronze:- seal:Y legacy:- | `特.seal.svg` |
-| 提 | oracle:- bronze:- seal:Y legacy:- | `提.seal.svg` |
-| 条 | oracle:- bronze:- seal:Y legacy:- | `条.seal.svg` |
-| 土 | oracle:Y bronze:Y seal:Y legacy:- | `土.bronze.svg`<br>`土.oracle.svg`<br>`土.seal.svg` |
-| 团 | oracle:- bronze:Y seal:Y legacy:- | `团.bronze.svg`<br>`团.seal.svg` |
-| 位 | oracle:- bronze:Y seal:Y legacy:- | `位.bronze.svg`<br>`位.seal.svg` |
-| 文 | oracle:Y bronze:Y seal:Y legacy:- | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
-| 武 | oracle:Y bronze:Y seal:Y legacy:- | `武.bronze.svg`<br>`武.oracle.svg`<br>`武.seal.svg` |
-| 物 | oracle:Y bronze:- seal:Y legacy:- | `物.oracle.svg`<br>`物.seal.svg` |
-| 西 | oracle:Y bronze:Y seal:Y legacy:- | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
-| 系 | oracle:Y bronze:- seal:Y legacy:- | `系.oracle.svg`<br>`系.seal.svg` |
-| 响 | oracle:- bronze:- seal:Y legacy:- | `响.seal.svg` |
-| 协 | oracle:- bronze:Y seal:Y legacy:- | `协.bronze.svg`<br>`协.seal.svg` |
-| 信 | oracle:- bronze:Y seal:Y legacy:- | `信.bronze.svg`<br>`信.seal.svg` |
-| 行 | oracle:Y bronze:Y seal:Y legacy:- | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
-| 形 | oracle:- bronze:- seal:Y legacy:- | `形.seal.svg` |
-| 宣 | oracle:Y bronze:Y seal:Y legacy:- | `宣.bronze.svg`<br>`宣.oracle.svg`<br>`宣.seal.svg` |
-| 学 | oracle:Y bronze:Y seal:Y legacy:- | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
-| 亚 | oracle:Y bronze:Y seal:Y legacy:- | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
-| 研 | oracle:- bronze:- seal:Y legacy:- | `研.seal.svg` |
-| 仰 | oracle:- bronze:- seal:Y legacy:- | `仰.seal.svg` |
-| 要 | oracle:- bronze:- seal:Y legacy:- | `要.seal.svg` |
-| 议 | oracle:- bronze:Y seal:Y legacy:- | `议.bronze.svg`<br>`议.seal.svg` |
-| 易 | oracle:Y bronze:Y seal:Y legacy:- | `易.bronze.svg`<br>`易.oracle.svg`<br>`易.seal.svg` |
-| 谊 | oracle:- bronze:- seal:Y legacy:- | `谊.seal.svg` |
-| 意 | oracle:- bronze:- seal:Y legacy:- | `意.seal.svg` |
-| 印 | oracle:Y bronze:Y seal:Y legacy:- | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
-| 影 | oracle:- bronze:- seal:Y legacy:- | `影.seal.svg` |
-| 用 | oracle:Y bronze:Y seal:Y legacy:- | `用.bronze.svg`<br>`用.oracle.svg`<br>`用.seal.svg` |
-| 友 | oracle:Y bronze:Y seal:Y legacy:- | `友.bronze.svg`<br>`友.oracle.svg`<br>`友.seal.svg` |
-| 予 | oracle:- bronze:Y seal:Y legacy:- | `予.bronze.svg`<br>`予.seal.svg` |
-| 御 | oracle:Y bronze:Y seal:Y legacy:- | `御.bronze.svg`<br>`御.oracle.svg`<br>`御.seal.svg` |
-| 援 | oracle:- bronze:- seal:Y legacy:- | `援.seal.svg` |
-| 约 | oracle:- bronze:- seal:Y legacy:- | `约.seal.svg` |
-| 糟 | oracle:- bronze:- seal:Y legacy:- | `糟.seal.svg` |
-| 责 | oracle:Y bronze:Y seal:Y legacy:- | `责.bronze.svg`<br>`责.oracle.svg`<br>`责.seal.svg` |
-| 战 | oracle:- bronze:Y seal:Y legacy:- | `战.bronze.svg`<br>`战.seal.svg` |
-| 张 | oracle:- bronze:Y seal:Y legacy:- | `张.bronze.svg`<br>`张.seal.svg` |
-| 争 | oracle:Y bronze:- seal:Y legacy:- | `争.oracle.svg`<br>`争.seal.svg` |
-| 殖 | oracle:- bronze:- seal:Y legacy:- | `殖.seal.svg` |
-| 制 | oracle:- bronze:Y seal:Y legacy:- | `制.bronze.svg`<br>`制.seal.svg` |
-| 主 | oracle:Y bronze:- seal:Y legacy:- | `主.oracle.svg`<br>`主.seal.svg` |
-| 助 | oracle:- bronze:- seal:Y legacy:- | `助.seal.svg` |
-| 驻 | oracle:- bronze:- seal:Y legacy:- | `驻.seal.svg` |
-| 宗 | oracle:Y bronze:Y seal:Y legacy:- | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
-| 作 | oracle:Y bronze:Y seal:Y legacy:- | `作.bronze.svg`<br>`作.oracle.svg`<br>`作.seal.svg` |
+| 保 | oracle:Y bronze:Y seal:Y | `保.bronze.svg`<br>`保.oracle.svg`<br>`保.seal.svg` |
+| 报 | oracle:- bronze:Y seal:Y | `报.bronze.svg`<br>`报.seal.svg` |
+| 币 | oracle:- bronze:- seal:Y | `币.seal.svg` |
+| 边 | oracle:Y bronze:Y seal:Y | `边.bronze.svg`<br>`边.oracle.svg`<br>`边.seal.svg` |
+| 表 | oracle:- bronze:- seal:Y | `表.seal.svg` |
+| 布 | oracle:- bronze:Y seal:Y | `布.bronze.svg`<br>`布.seal.svg` |
+| 察 | oracle:- bronze:Y seal:Y | `察.bronze.svg`<br>`察.seal.svg` |
+| 常 | oracle:- bronze:Y seal:Y | `常.bronze.svg`<br>`常.seal.svg` |
+| 成 | oracle:Y bronze:Y seal:Y | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
+| 仇 | oracle:- bronze:- seal:Y | `仇.seal.svg` |
+| 促 | oracle:- bronze:- seal:Y | `促.seal.svg` |
+| 大 | oracle:Y bronze:Y seal:Y | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
+| 代 | oracle:- bronze:- seal:Y | `代.seal.svg` |
+| 单 | oracle:Y bronze:Y seal:Y | `单.bronze.svg`<br>`单.oracle.svg`<br>`单.seal.svg` |
+| 第 | oracle:Y bronze:Y seal:Y | `第.bronze.svg`<br>`第.oracle.svg`<br>`第.seal.svg` |
+| 点 | oracle:- bronze:- seal:Y | `点.seal.svg` |
+| 动 | oracle:- bronze:Y seal:Y | `动.bronze.svg`<br>`动.seal.svg` |
+| 度 | oracle:Y bronze:Y seal:Y | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
+| 方 | oracle:Y bronze:Y seal:Y | `方.bronze.svg`<br>`方.oracle.svg`<br>`方.seal.svg` |
+| 防 | oracle:- bronze:- seal:Y | `防.seal.svg` |
+| 放 | oracle:- bronze:Y seal:Y | `放.bronze.svg`<br>`放.seal.svg` |
+| 高 | oracle:Y bronze:Y seal:Y | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
+| 糕 | oracle:- bronze:- seal:Y | `糕.seal.svg` |
+| 告 | oracle:Y bronze:Y seal:Y | `告.bronze.svg`<br>`告.oracle.svg`<br>`告.seal.svg` |
+| 公 | oracle:Y bronze:Y seal:Y | `公.bronze.svg`<br>`公.oracle.svg`<br>`公.seal.svg` |
+| 贡 | oracle:- bronze:- seal:Y | `贡.seal.svg` |
+| 关 | oracle:Y bronze:Y seal:- | `关.bronze.svg`<br>`关.oracle.svg` |
+| 观 | oracle:Y bronze:Y seal:Y | `观.bronze.svg`<br>`观.oracle.svg`<br>`观.seal.svg` |
+| 馆 | oracle:- bronze:- seal:Y | `馆.seal.svg` |
+| 国 | oracle:- bronze:Y seal:Y | `国.bronze.svg`<br>`国.seal.svg` |
+| 海 | oracle:- bronze:Y seal:Y | `海.bronze.svg`<br>`海.seal.svg` |
+| 好 | oracle:Y bronze:Y seal:Y | `好.bronze.svg`<br>`好.oracle.svg`<br>`好.seal.svg` |
+| 合 | oracle:Y bronze:Y seal:Y | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
+| 核 | oracle:- bronze:- seal:Y | `核.seal.svg` |
+| 很 | oracle:- bronze:- seal:Y | `很.seal.svg` |
+| 护 | oracle:- bronze:- seal:Y | `护.seal.svg` |
+| 化 | oracle:Y bronze:Y seal:Y | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
+| 黄 | oracle:Y bronze:Y seal:Y | `黄.bronze.svg`<br>`黄.oracle.svg`<br>`黄.seal.svg` |
+| 奖 | oracle:- bronze:- seal:Y | `奖.seal.svg` |
+| 交 | oracle:- bronze:- seal:Y | `交.seal.svg` |
+| 解 | oracle:Y bronze:Y seal:Y | `解.bronze.svg`<br>`解.oracle.svg`<br>`解.seal.svg` |
+| 界 | oracle:- bronze:- seal:Y | `界.seal.svg` |
+| 金 | oracle:- bronze:Y seal:Y | `金.bronze.svg`<br>`金.seal.svg` |
+| 景 | oracle:- bronze:- seal:Y | `景.seal.svg` |
+| 究 | oracle:- bronze:Y seal:Y | `究.bronze.svg`<br>`究.seal.svg` |
+| 军 | oracle:- bronze:Y seal:Y | `军.bronze.svg`<br>`军.seal.svg` |
+| 开 | oracle:- bronze:- seal:Y | `开.seal.svg` |
+| 科 | oracle:- bronze:- seal:Y | `科.seal.svg` |
+| 扩 | oracle:- bronze:- seal:Y | `扩.seal.svg` |
+| 礼 | oracle:Y bronze:Y seal:Y | `礼.bronze.svg`<br>`礼.oracle.svg`<br>`礼.seal.svg` |
+| 力 | oracle:Y bronze:Y seal:Y | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
+| 立 | oracle:Y bronze:Y seal:Y | `立.bronze.svg`<br>`立.oracle.svg`<br>`立.seal.svg` |
+| 联 | oracle:Y bronze:Y seal:Y | `联.bronze.svg`<br>`联.oracle.svg`<br>`联.seal.svg` |
+| 领 | oracle:- bronze:- seal:Y | `领.seal.svg` |
+| 贸 | oracle:- bronze:Y seal:Y | `贸.bronze.svg`<br>`贸.seal.svg` |
+| 盟 | oracle:Y bronze:Y seal:Y | `盟.bronze.svg`<br>`盟.oracle.svg`<br>`盟.seal.svg` |
+| 棉 | oracle:- bronze:- seal:Y | `棉.seal.svg` |
+| 民 | oracle:Y bronze:Y seal:Y | `民.bronze.svg`<br>`民.oracle.svg`<br>`民.seal.svg` |
+| 尼 | oracle:- bronze:- seal:Y | `尼.seal.svg` |
+| 品 | oracle:Y bronze:Y seal:Y | `品.bronze.svg`<br>`品.oracle.svg`<br>`品.seal.svg` |
+| 平 | oracle:- bronze:Y seal:Y | `平.bronze.svg`<br>`平.seal.svg` |
+| 器 | oracle:- bronze:Y seal:Y | `器.bronze.svg`<br>`器.seal.svg` |
+| 谴 | oracle:- bronze:Y seal:Y | `谴.bronze.svg`<br>`谴.seal.svg` |
+| 情 | oracle:- bronze:- seal:Y | `情.seal.svg` |
+| 请 | oracle:- bronze:Y seal:Y | `请.bronze.svg`<br>`请.seal.svg` |
+| 求 | oracle:Y bronze:Y seal:Y | `求.bronze.svg`<br>`求.oracle.svg`<br>`求.seal.svg` |
+| 三 | oracle:Y bronze:Y seal:Y | `三.bronze.svg`<br>`三.oracle.svg`<br>`三.seal.svg` |
+| 时 | oracle:- bronze:Y seal:Y | `时.bronze.svg`<br>`时.seal.svg` |
+| 识 | oracle:- bronze:Y seal:Y | `识.bronze.svg`<br>`识.seal.svg` |
+| 使 | oracle:Y bronze:Y seal:Y | `使.bronze.svg`<br>`使.oracle.svg`<br>`使.seal.svg` |
+| 示 | oracle:Y bronze:Y seal:Y | `示.bronze.svg`<br>`示.oracle.svg`<br>`示.seal.svg` |
+| 事 | oracle:Y bronze:Y seal:Y | `事.bronze.svg`<br>`事.oracle.svg`<br>`事.seal.svg` |
+| 授 | oracle:- bronze:- seal:Y | `授.seal.svg` |
+| 态 | oracle:- bronze:- seal:Y | `态.seal.svg` |
+| 特 | oracle:- bronze:- seal:Y | `特.seal.svg` |
+| 提 | oracle:- bronze:- seal:Y | `提.seal.svg` |
+| 条 | oracle:- bronze:- seal:Y | `条.seal.svg` |
+| 土 | oracle:Y bronze:Y seal:Y | `土.bronze.svg`<br>`土.oracle.svg`<br>`土.seal.svg` |
+| 团 | oracle:- bronze:Y seal:Y | `团.bronze.svg`<br>`团.seal.svg` |
+| 位 | oracle:- bronze:Y seal:Y | `位.bronze.svg`<br>`位.seal.svg` |
+| 文 | oracle:Y bronze:Y seal:Y | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
+| 武 | oracle:Y bronze:Y seal:Y | `武.bronze.svg`<br>`武.oracle.svg`<br>`武.seal.svg` |
+| 物 | oracle:Y bronze:- seal:Y | `物.oracle.svg`<br>`物.seal.svg` |
+| 西 | oracle:Y bronze:Y seal:Y | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
+| 系 | oracle:Y bronze:- seal:Y | `系.oracle.svg`<br>`系.seal.svg` |
+| 响 | oracle:- bronze:- seal:Y | `响.seal.svg` |
+| 协 | oracle:- bronze:Y seal:Y | `协.bronze.svg`<br>`协.seal.svg` |
+| 信 | oracle:- bronze:Y seal:Y | `信.bronze.svg`<br>`信.seal.svg` |
+| 行 | oracle:Y bronze:Y seal:Y | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
+| 形 | oracle:- bronze:- seal:Y | `形.seal.svg` |
+| 宣 | oracle:Y bronze:Y seal:Y | `宣.bronze.svg`<br>`宣.oracle.svg`<br>`宣.seal.svg` |
+| 学 | oracle:Y bronze:Y seal:Y | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
+| 亚 | oracle:Y bronze:Y seal:Y | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
+| 研 | oracle:- bronze:- seal:Y | `研.seal.svg` |
+| 仰 | oracle:- bronze:- seal:Y | `仰.seal.svg` |
+| 要 | oracle:- bronze:- seal:Y | `要.seal.svg` |
+| 议 | oracle:- bronze:Y seal:Y | `议.bronze.svg`<br>`议.seal.svg` |
+| 易 | oracle:Y bronze:Y seal:Y | `易.bronze.svg`<br>`易.oracle.svg`<br>`易.seal.svg` |
+| 谊 | oracle:- bronze:- seal:Y | `谊.seal.svg` |
+| 意 | oracle:- bronze:- seal:Y | `意.seal.svg` |
+| 印 | oracle:Y bronze:Y seal:Y | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
+| 影 | oracle:- bronze:- seal:Y | `影.seal.svg` |
+| 用 | oracle:Y bronze:Y seal:Y | `用.bronze.svg`<br>`用.oracle.svg`<br>`用.seal.svg` |
+| 友 | oracle:Y bronze:Y seal:Y | `友.bronze.svg`<br>`友.oracle.svg`<br>`友.seal.svg` |
+| 予 | oracle:- bronze:Y seal:Y | `予.bronze.svg`<br>`予.seal.svg` |
+| 御 | oracle:Y bronze:Y seal:Y | `御.bronze.svg`<br>`御.oracle.svg`<br>`御.seal.svg` |
+| 援 | oracle:- bronze:- seal:Y | `援.seal.svg` |
+| 约 | oracle:- bronze:- seal:Y | `约.seal.svg` |
+| 糟 | oracle:- bronze:- seal:Y | `糟.seal.svg` |
+| 责 | oracle:Y bronze:Y seal:Y | `责.bronze.svg`<br>`责.oracle.svg`<br>`责.seal.svg` |
+| 战 | oracle:- bronze:Y seal:Y | `战.bronze.svg`<br>`战.seal.svg` |
+| 张 | oracle:- bronze:Y seal:Y | `张.bronze.svg`<br>`张.seal.svg` |
+| 争 | oracle:Y bronze:- seal:Y | `争.oracle.svg`<br>`争.seal.svg` |
+| 殖 | oracle:- bronze:- seal:Y | `殖.seal.svg` |
+| 制 | oracle:- bronze:Y seal:Y | `制.bronze.svg`<br>`制.seal.svg` |
+| 主 | oracle:Y bronze:- seal:Y | `主.oracle.svg`<br>`主.seal.svg` |
+| 助 | oracle:- bronze:- seal:Y | `助.seal.svg` |
+| 驻 | oracle:- bronze:- seal:Y | `驻.seal.svg` |
+| 宗 | oracle:Y bronze:Y seal:Y | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
+| 作 | oracle:Y bronze:Y seal:Y | `作.bronze.svg`<br>`作.oracle.svg`<br>`作.seal.svg` |
 
 ## districts
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 埃 | oracle:- bronze:- seal:Y legacy:- | `埃.seal.svg` |
-| 奥 | oracle:- bronze:- seal:Y legacy:- | `奥.seal.svg` |
-| 巴 | oracle:Y bronze:- seal:Y legacy:- | `巴.oracle.svg`<br>`巴.seal.svg` |
-| 坝 | oracle:- bronze:- seal:Y legacy:- | `坝.seal.svg` |
-| 拜 | oracle:- bronze:Y seal:Y legacy:- | `拜.bronze.svg`<br>`拜.seal.svg` |
-| 班 | oracle:- bronze:Y seal:Y legacy:- | `班.bronze.svg`<br>`班.seal.svg` |
-| 保 | oracle:Y bronze:Y seal:Y legacy:- | `保.bronze.svg`<br>`保.oracle.svg`<br>`保.seal.svg` |
-| 比 | oracle:Y bronze:Y seal:Y legacy:- | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
-| 必 | oracle:Y bronze:Y seal:Y legacy:- | `必.bronze.svg`<br>`必.oracle.svg`<br>`必.seal.svg` |
-| 标 | oracle:- bronze:- seal:Y legacy:- | `标.seal.svg` |
-| 槽 | oracle:- bronze:- seal:Y legacy:- | `槽.seal.svg` |
-| 厂 | oracle:- bronze:Y seal:Y legacy:- | `厂.bronze.svg`<br>`厂.seal.svg` |
-| 场 | oracle:- bronze:- seal:Y legacy:- | `场.seal.svg` |
-| 城 | oracle:- bronze:Y seal:Y legacy:- | `城.bronze.svg`<br>`城.seal.svg` |
-| 船 | oracle:- bronze:Y seal:Y legacy:- | `船.bronze.svg`<br>`船.seal.svg` |
-| 存 | oracle:- bronze:- seal:Y legacy:- | `存.seal.svg` |
-| 达 | oracle:Y bronze:- seal:- legacy:- | `达.oracle.svg` |
-| 大 | oracle:Y bronze:Y seal:Y legacy:- | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
-| 道 | oracle:- bronze:Y seal:Y legacy:- | `道.bronze.svg`<br>`道.seal.svg` |
-| 地 | oracle:- bronze:Y seal:Y legacy:- | `地.bronze.svg`<br>`地.seal.svg` |
-| 杜 | oracle:Y bronze:Y seal:Y legacy:- | `杜.bronze.svg`<br>`杜.oracle.svg`<br>`杜.seal.svg` |
-| 渡 | oracle:- bronze:- seal:Y legacy:- | `渡.seal.svg` |
-| 俄 | oracle:- bronze:- seal:Y legacy:- | `俄.seal.svg` |
-| 坊 | oracle:- bronze:- seal:Y legacy:- | `坊.seal.svg` |
-| 分 | oracle:Y bronze:Y seal:Y legacy:- | `分.bronze.svg`<br>`分.oracle.svg`<br>`分.seal.svg` |
-| 夫 | oracle:Y bronze:Y seal:Y legacy:- | `夫.bronze.svg`<br>`夫.oracle.svg`<br>`夫.seal.svg` |
-| 府 | oracle:- bronze:Y seal:Y legacy:- | `府.bronze.svg`<br>`府.seal.svg` |
-| 港 | oracle:- bronze:- seal:Y legacy:- | `港.seal.svg` |
-| 高 | oracle:Y bronze:Y seal:Y legacy:- | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
-| 哥 | oracle:- bronze:- seal:Y legacy:- | `哥.seal.svg` |
-| 工 | oracle:Y bronze:Y seal:Y legacy:- | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
-| 古 | oracle:Y bronze:Y seal:Y legacy:- | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
-| 海 | oracle:- bronze:Y seal:Y legacy:- | `海.bronze.svg`<br>`海.seal.svg` |
-| 汉 | oracle:- bronze:Y seal:Y legacy:- | `汉.bronze.svg`<br>`汉.seal.svg` |
-| 合 | oracle:Y bronze:Y seal:Y legacy:- | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
-| 河 | oracle:Y bronze:Y seal:Y legacy:- | `河.bronze.svg`<br>`河.oracle.svg`<br>`河.seal.svg` |
-| 忽 | oracle:- bronze:Y seal:Y legacy:- | `忽.bronze.svg`<br>`忽.seal.svg` |
-| 华 | oracle:- bronze:- seal:Y legacy:- | `华.seal.svg` |
-| 皇 | oracle:Y bronze:Y seal:Y legacy:- | `皇.bronze.svg`<br>`皇.oracle.svg`<br>`皇.seal.svg` |
-| 机 | oracle:- bronze:- seal:Y legacy:- | `机.seal.svg` |
-| 技 | oracle:- bronze:- seal:Y legacy:- | `技.seal.svg` |
-| 家 | oracle:Y bronze:Y seal:Y legacy:- | `家.bronze.svg`<br>`家.oracle.svg`<br>`家.seal.svg` |
-| 嘉 | oracle:- bronze:Y seal:Y legacy:- | `嘉.bronze.svg`<br>`嘉.seal.svg` |
-| 建 | oracle:Y bronze:Y seal:Y legacy:- | `建.bronze.svg`<br>`建.oracle.svg`<br>`建.seal.svg` |
-| 交 | oracle:- bronze:- seal:Y legacy:- | `交.seal.svg` |
-| 街 | oracle:Y bronze:- seal:Y legacy:- | `街.oracle.svg`<br>`街.seal.svg` |
-| 竞 | oracle:Y bronze:Y seal:Y legacy:- | `竞.bronze.svg`<br>`竞.oracle.svg`<br>`竞.seal.svg` |
-| 剧 | oracle:- bronze:- seal:Y legacy:- | `剧.seal.svg` |
-| 军 | oracle:- bronze:Y seal:Y legacy:- | `军.bronze.svg`<br>`军.seal.svg` |
-| 坎 | oracle:- bronze:- seal:Y legacy:- | `坎.seal.svg` |
-| 空 | oracle:- bronze:Y seal:Y legacy:- | `空.bronze.svg`<br>`空.seal.svg` |
-| 口 | oracle:Y bronze:Y seal:Y legacy:- | `口.bronze.svg`<br>`口.oracle.svg`<br>`口.seal.svg` |
-| 扩 | oracle:- bronze:- seal:Y legacy:- | `扩.seal.svg` |
-| 拉 | oracle:- bronze:- seal:Y legacy:- | `拉.seal.svg` |
-| 乐 | oracle:Y bronze:Y seal:Y legacy:- | `乐.bronze.svg`<br>`乐.oracle.svg`<br>`乐.seal.svg` |
-| 里 | oracle:- bronze:Y seal:Y legacy:- | `里.bronze.svg`<br>`里.seal.svg` |
-| 烈 | oracle:- bronze:- seal:Y legacy:- | `烈.seal.svg` |
-| 邻 | oracle:- bronze:Y seal:Y legacy:- | `邻.bronze.svg`<br>`邻.seal.svg` |
-| 卢 | oracle:Y bronze:Y seal:Y legacy:- | `卢.bronze.svg`<br>`卢.oracle.svg`<br>`卢.seal.svg` |
-| 伦 | oracle:- bronze:- seal:Y legacy:- | `伦.seal.svg` |
-| 玛 | oracle:Y bronze:Y seal:Y legacy:- | `玛.bronze.svg`<br>`玛.oracle.svg`<br>`玛.seal.svg` |
-| 棉 | oracle:- bronze:- seal:Y legacy:- | `棉.seal.svg` |
-| 姆 | oracle:- bronze:Y seal:Y legacy:- | `姆.bronze.svg`<br>`姆.seal.svg` |
-| 南 | oracle:Y bronze:Y seal:Y legacy:- | `南.bronze.svg`<br>`南.oracle.svg`<br>`南.seal.svg` |
-| 年 | oracle:Y bronze:Y seal:Y legacy:- | `年.bronze.svg`<br>`年.oracle.svg`<br>`年.seal.svg` |
-| 皮 | oracle:- bronze:Y seal:Y legacy:- | `皮.bronze.svg`<br>`皮.seal.svg` |
-| 墙 | oracle:Y bronze:Y seal:Y legacy:- | `墙.bronze.svg`<br>`墙.oracle.svg`<br>`墙.seal.svg` |
-| 清 | oracle:- bronze:Y seal:Y legacy:- | `清.bronze.svg`<br>`清.seal.svg` |
-| 区 | oracle:Y bronze:Y seal:Y legacy:- | `区.bronze.svg`<br>`区.oracle.svg`<br>`区.seal.svg` |
-| 萨 | oracle:- bronze:- seal:Y legacy:- | `萨.seal.svg` |
-| 塞 | oracle:Y bronze:- seal:Y legacy:- | `塞.oracle.svg`<br>`塞.seal.svg` |
-| 纱 | oracle:- bronze:Y seal:Y legacy:- | `纱.bronze.svg`<br>`纱.seal.svg` |
-| 商 | oracle:Y bronze:Y seal:Y legacy:- | `商.bronze.svg`<br>`商.oracle.svg`<br>`商.seal.svg` |
-| 设 | oracle:- bronze:- seal:Y legacy:- | `设.seal.svg` |
-| 圣 | oracle:Y bronze:Y seal:Y legacy:- | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
-| 市 | oracle:Y bronze:Y seal:Y legacy:- | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
-| 书 | oracle:- bronze:Y seal:Y legacy:- | `书.bronze.svg`<br>`书.seal.svg` |
-| 水 | oracle:Y bronze:Y seal:Y legacy:- | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
-| 四 | oracle:Y bronze:Y seal:Y legacy:- | `四.bronze.svg`<br>`四.oracle.svg`<br>`四.seal.svg` |
-| 台 | oracle:- bronze:Y seal:Y legacy:- | `台.bronze.svg`<br>`台.seal.svg` |
-| 太 | oracle:- bronze:- seal:Y legacy:- | `太.seal.svg` |
-| 体 | oracle:- bronze:Y seal:Y legacy:- | `体.bronze.svg`<br>`体.seal.svg` |
-| 天 | oracle:Y bronze:Y seal:Y legacy:- | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
-| 庭 | oracle:- bronze:Y seal:Y legacy:- | `庭.bronze.svg`<br>`庭.seal.svg` |
-| 头 | oracle:- bronze:Y seal:Y legacy:- | `头.bronze.svg`<br>`头.seal.svg` |
-| 图 | oracle:- bronze:Y seal:Y legacy:- | `图.bronze.svg`<br>`图.seal.svg` |
-| 围 | oracle:- bronze:Y seal:Y legacy:- | `围.bronze.svg`<br>`围.seal.svg` |
-| 卫 | oracle:Y bronze:Y seal:Y legacy:- | `卫.bronze.svg`<br>`卫.oracle.svg`<br>`卫.seal.svg` |
-| 文 | oracle:Y bronze:Y seal:Y legacy:- | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
-| 洗 | oracle:- bronze:- seal:Y legacy:- | `洗.seal.svg` |
-| 想 | oracle:- bronze:Y seal:Y legacy:- | `想.bronze.svg`<br>`想.seal.svg` |
-| 校 | oracle:- bronze:Y seal:Y legacy:- | `校.bronze.svg`<br>`校.seal.svg` |
-| 心 | oracle:Y bronze:Y seal:Y legacy:- | `心.bronze.svg`<br>`心.oracle.svg`<br>`心.seal.svg` |
-| 须 | oracle:Y bronze:Y seal:Y legacy:- | `须.bronze.svg`<br>`须.oracle.svg`<br>`须.seal.svg` |
-| 雅 | oracle:- bronze:- seal:Y legacy:- | `雅.seal.svg` |
-| 亚 | oracle:Y bronze:Y seal:Y legacy:- | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
-| 业 | oracle:- bronze:Y seal:Y legacy:- | `业.bronze.svg`<br>`业.seal.svg` |
-| 一 | oracle:Y bronze:Y seal:Y legacy:- | `一.bronze.svg`<br>`一.oracle.svg`<br>`一.seal.svg` |
-| 伊 | oracle:Y bronze:Y seal:Y legacy:- | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
-| 营 | oracle:- bronze:Y seal:Y legacy:- | `营.bronze.svg`<br>`营.seal.svg` |
-| 娱 | oracle:- bronze:- seal:Y legacy:- | `娱.seal.svg` |
-| 园 | oracle:- bronze:- seal:Y legacy:- | `园.seal.svg` |
-| 院 | oracle:- bronze:- seal:Y legacy:- | `院.seal.svg` |
-| 越 | oracle:- bronze:Y seal:Y legacy:- | `越.bronze.svg`<br>`越.seal.svg` |
-| 运 | oracle:- bronze:- seal:Y legacy:- | `运.seal.svg` |
-| 澡 | oracle:- bronze:- seal:Y legacy:- | `澡.seal.svg` |
-| 造 | oracle:- bronze:Y seal:Y legacy:- | `造.bronze.svg`<br>`造.seal.svg` |
-| 扎 | oracle:- bronze:- seal:Y legacy:- | `扎.seal.svg` |
-| 展 | oracle:- bronze:- seal:Y legacy:- | `展.seal.svg` |
-| 占 | oracle:Y bronze:- seal:Y legacy:- | `占.oracle.svg`<br>`占.seal.svg` |
-| 政 | oracle:Y bronze:Y seal:Y legacy:- | `政.bronze.svg`<br>`政.oracle.svg`<br>`政.seal.svg` |
-| 之 | oracle:Y bronze:Y seal:Y legacy:- | `之.bronze.svg`<br>`之.oracle.svg`<br>`之.seal.svg` |
-| 知 | oracle:- bronze:Y seal:Y legacy:- | `知.bronze.svg`<br>`知.seal.svg` |
-| 筑 | oracle:- bronze:- seal:Y legacy:- | `筑.seal.svg` |
-| 字 | oracle:- bronze:Y seal:Y legacy:- | `字.bronze.svg`<br>`字.seal.svg` |
-| 综 | oracle:- bronze:- seal:Y legacy:- | `综.seal.svg` |
+| 埃 | oracle:- bronze:- seal:Y | `埃.seal.svg` |
+| 奥 | oracle:- bronze:- seal:Y | `奥.seal.svg` |
+| 巴 | oracle:Y bronze:- seal:Y | `巴.oracle.svg`<br>`巴.seal.svg` |
+| 坝 | oracle:- bronze:- seal:Y | `坝.seal.svg` |
+| 拜 | oracle:- bronze:Y seal:Y | `拜.bronze.svg`<br>`拜.seal.svg` |
+| 班 | oracle:- bronze:Y seal:Y | `班.bronze.svg`<br>`班.seal.svg` |
+| 保 | oracle:Y bronze:Y seal:Y | `保.bronze.svg`<br>`保.oracle.svg`<br>`保.seal.svg` |
+| 比 | oracle:Y bronze:Y seal:Y | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
+| 必 | oracle:Y bronze:Y seal:Y | `必.bronze.svg`<br>`必.oracle.svg`<br>`必.seal.svg` |
+| 标 | oracle:- bronze:- seal:Y | `标.seal.svg` |
+| 槽 | oracle:- bronze:- seal:Y | `槽.seal.svg` |
+| 厂 | oracle:- bronze:Y seal:Y | `厂.bronze.svg`<br>`厂.seal.svg` |
+| 场 | oracle:- bronze:- seal:Y | `场.seal.svg` |
+| 城 | oracle:- bronze:Y seal:Y | `城.bronze.svg`<br>`城.seal.svg` |
+| 船 | oracle:- bronze:Y seal:Y | `船.bronze.svg`<br>`船.seal.svg` |
+| 存 | oracle:- bronze:- seal:Y | `存.seal.svg` |
+| 达 | oracle:Y bronze:- seal:- | `达.oracle.svg` |
+| 大 | oracle:Y bronze:Y seal:Y | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
+| 道 | oracle:- bronze:Y seal:Y | `道.bronze.svg`<br>`道.seal.svg` |
+| 地 | oracle:- bronze:Y seal:Y | `地.bronze.svg`<br>`地.seal.svg` |
+| 杜 | oracle:Y bronze:Y seal:Y | `杜.bronze.svg`<br>`杜.oracle.svg`<br>`杜.seal.svg` |
+| 渡 | oracle:- bronze:- seal:Y | `渡.seal.svg` |
+| 俄 | oracle:- bronze:- seal:Y | `俄.seal.svg` |
+| 坊 | oracle:- bronze:- seal:Y | `坊.seal.svg` |
+| 分 | oracle:Y bronze:Y seal:Y | `分.bronze.svg`<br>`分.oracle.svg`<br>`分.seal.svg` |
+| 夫 | oracle:Y bronze:Y seal:Y | `夫.bronze.svg`<br>`夫.oracle.svg`<br>`夫.seal.svg` |
+| 府 | oracle:- bronze:Y seal:Y | `府.bronze.svg`<br>`府.seal.svg` |
+| 港 | oracle:- bronze:- seal:Y | `港.seal.svg` |
+| 高 | oracle:Y bronze:Y seal:Y | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
+| 哥 | oracle:- bronze:- seal:Y | `哥.seal.svg` |
+| 工 | oracle:Y bronze:Y seal:Y | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
+| 古 | oracle:Y bronze:Y seal:Y | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
+| 海 | oracle:- bronze:Y seal:Y | `海.bronze.svg`<br>`海.seal.svg` |
+| 汉 | oracle:- bronze:Y seal:Y | `汉.bronze.svg`<br>`汉.seal.svg` |
+| 合 | oracle:Y bronze:Y seal:Y | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
+| 河 | oracle:Y bronze:Y seal:Y | `河.bronze.svg`<br>`河.oracle.svg`<br>`河.seal.svg` |
+| 忽 | oracle:- bronze:Y seal:Y | `忽.bronze.svg`<br>`忽.seal.svg` |
+| 华 | oracle:- bronze:- seal:Y | `华.seal.svg` |
+| 皇 | oracle:Y bronze:Y seal:Y | `皇.bronze.svg`<br>`皇.oracle.svg`<br>`皇.seal.svg` |
+| 机 | oracle:- bronze:- seal:Y | `机.seal.svg` |
+| 技 | oracle:- bronze:- seal:Y | `技.seal.svg` |
+| 家 | oracle:Y bronze:Y seal:Y | `家.bronze.svg`<br>`家.oracle.svg`<br>`家.seal.svg` |
+| 嘉 | oracle:- bronze:Y seal:Y | `嘉.bronze.svg`<br>`嘉.seal.svg` |
+| 建 | oracle:Y bronze:Y seal:Y | `建.bronze.svg`<br>`建.oracle.svg`<br>`建.seal.svg` |
+| 交 | oracle:- bronze:- seal:Y | `交.seal.svg` |
+| 街 | oracle:Y bronze:- seal:Y | `街.oracle.svg`<br>`街.seal.svg` |
+| 竞 | oracle:Y bronze:Y seal:Y | `竞.bronze.svg`<br>`竞.oracle.svg`<br>`竞.seal.svg` |
+| 剧 | oracle:- bronze:- seal:Y | `剧.seal.svg` |
+| 军 | oracle:- bronze:Y seal:Y | `军.bronze.svg`<br>`军.seal.svg` |
+| 坎 | oracle:- bronze:- seal:Y | `坎.seal.svg` |
+| 空 | oracle:- bronze:Y seal:Y | `空.bronze.svg`<br>`空.seal.svg` |
+| 口 | oracle:Y bronze:Y seal:Y | `口.bronze.svg`<br>`口.oracle.svg`<br>`口.seal.svg` |
+| 扩 | oracle:- bronze:- seal:Y | `扩.seal.svg` |
+| 拉 | oracle:- bronze:- seal:Y | `拉.seal.svg` |
+| 乐 | oracle:Y bronze:Y seal:Y | `乐.bronze.svg`<br>`乐.oracle.svg`<br>`乐.seal.svg` |
+| 里 | oracle:- bronze:Y seal:Y | `里.bronze.svg`<br>`里.seal.svg` |
+| 烈 | oracle:- bronze:- seal:Y | `烈.seal.svg` |
+| 邻 | oracle:- bronze:Y seal:Y | `邻.bronze.svg`<br>`邻.seal.svg` |
+| 卢 | oracle:Y bronze:Y seal:Y | `卢.bronze.svg`<br>`卢.oracle.svg`<br>`卢.seal.svg` |
+| 伦 | oracle:- bronze:- seal:Y | `伦.seal.svg` |
+| 玛 | oracle:Y bronze:Y seal:Y | `玛.bronze.svg`<br>`玛.oracle.svg`<br>`玛.seal.svg` |
+| 棉 | oracle:- bronze:- seal:Y | `棉.seal.svg` |
+| 姆 | oracle:- bronze:Y seal:Y | `姆.bronze.svg`<br>`姆.seal.svg` |
+| 南 | oracle:Y bronze:Y seal:Y | `南.bronze.svg`<br>`南.oracle.svg`<br>`南.seal.svg` |
+| 年 | oracle:Y bronze:Y seal:Y | `年.bronze.svg`<br>`年.oracle.svg`<br>`年.seal.svg` |
+| 皮 | oracle:- bronze:Y seal:Y | `皮.bronze.svg`<br>`皮.seal.svg` |
+| 墙 | oracle:Y bronze:Y seal:Y | `墙.bronze.svg`<br>`墙.oracle.svg`<br>`墙.seal.svg` |
+| 清 | oracle:- bronze:Y seal:Y | `清.bronze.svg`<br>`清.seal.svg` |
+| 区 | oracle:Y bronze:Y seal:Y | `区.bronze.svg`<br>`区.oracle.svg`<br>`区.seal.svg` |
+| 萨 | oracle:- bronze:- seal:Y | `萨.seal.svg` |
+| 塞 | oracle:Y bronze:- seal:Y | `塞.oracle.svg`<br>`塞.seal.svg` |
+| 纱 | oracle:- bronze:Y seal:Y | `纱.bronze.svg`<br>`纱.seal.svg` |
+| 商 | oracle:Y bronze:Y seal:Y | `商.bronze.svg`<br>`商.oracle.svg`<br>`商.seal.svg` |
+| 设 | oracle:- bronze:- seal:Y | `设.seal.svg` |
+| 圣 | oracle:Y bronze:Y seal:Y | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
+| 市 | oracle:Y bronze:Y seal:Y | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
+| 书 | oracle:- bronze:Y seal:Y | `书.bronze.svg`<br>`书.seal.svg` |
+| 水 | oracle:Y bronze:Y seal:Y | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
+| 四 | oracle:Y bronze:Y seal:Y | `四.bronze.svg`<br>`四.oracle.svg`<br>`四.seal.svg` |
+| 台 | oracle:- bronze:Y seal:Y | `台.bronze.svg`<br>`台.seal.svg` |
+| 太 | oracle:- bronze:- seal:Y | `太.seal.svg` |
+| 体 | oracle:- bronze:Y seal:Y | `体.bronze.svg`<br>`体.seal.svg` |
+| 天 | oracle:Y bronze:Y seal:Y | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
+| 庭 | oracle:- bronze:Y seal:Y | `庭.bronze.svg`<br>`庭.seal.svg` |
+| 头 | oracle:- bronze:Y seal:Y | `头.bronze.svg`<br>`头.seal.svg` |
+| 图 | oracle:- bronze:Y seal:Y | `图.bronze.svg`<br>`图.seal.svg` |
+| 围 | oracle:- bronze:Y seal:Y | `围.bronze.svg`<br>`围.seal.svg` |
+| 卫 | oracle:Y bronze:Y seal:Y | `卫.bronze.svg`<br>`卫.oracle.svg`<br>`卫.seal.svg` |
+| 文 | oracle:Y bronze:Y seal:Y | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
+| 洗 | oracle:- bronze:- seal:Y | `洗.seal.svg` |
+| 想 | oracle:- bronze:Y seal:Y | `想.bronze.svg`<br>`想.seal.svg` |
+| 校 | oracle:- bronze:Y seal:Y | `校.bronze.svg`<br>`校.seal.svg` |
+| 心 | oracle:Y bronze:Y seal:Y | `心.bronze.svg`<br>`心.oracle.svg`<br>`心.seal.svg` |
+| 须 | oracle:Y bronze:Y seal:Y | `须.bronze.svg`<br>`须.oracle.svg`<br>`须.seal.svg` |
+| 雅 | oracle:- bronze:- seal:Y | `雅.seal.svg` |
+| 亚 | oracle:Y bronze:Y seal:Y | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
+| 业 | oracle:- bronze:Y seal:Y | `业.bronze.svg`<br>`业.seal.svg` |
+| 一 | oracle:Y bronze:Y seal:Y | `一.bronze.svg`<br>`一.oracle.svg`<br>`一.seal.svg` |
+| 伊 | oracle:Y bronze:Y seal:Y | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
+| 营 | oracle:- bronze:Y seal:Y | `营.bronze.svg`<br>`营.seal.svg` |
+| 娱 | oracle:- bronze:- seal:Y | `娱.seal.svg` |
+| 园 | oracle:- bronze:- seal:Y | `园.seal.svg` |
+| 院 | oracle:- bronze:- seal:Y | `院.seal.svg` |
+| 越 | oracle:- bronze:Y seal:Y | `越.bronze.svg`<br>`越.seal.svg` |
+| 运 | oracle:- bronze:- seal:Y | `运.seal.svg` |
+| 澡 | oracle:- bronze:- seal:Y | `澡.seal.svg` |
+| 造 | oracle:- bronze:Y seal:Y | `造.bronze.svg`<br>`造.seal.svg` |
+| 扎 | oracle:- bronze:- seal:Y | `扎.seal.svg` |
+| 展 | oracle:- bronze:- seal:Y | `展.seal.svg` |
+| 占 | oracle:Y bronze:- seal:Y | `占.oracle.svg`<br>`占.seal.svg` |
+| 政 | oracle:Y bronze:Y seal:Y | `政.bronze.svg`<br>`政.oracle.svg`<br>`政.seal.svg` |
+| 之 | oracle:Y bronze:Y seal:Y | `之.bronze.svg`<br>`之.oracle.svg`<br>`之.seal.svg` |
+| 知 | oracle:- bronze:Y seal:Y | `知.bronze.svg`<br>`知.seal.svg` |
+| 筑 | oracle:- bronze:- seal:Y | `筑.seal.svg` |
+| 字 | oracle:- bronze:Y seal:Y | `字.bronze.svg`<br>`字.seal.svg` |
+| 综 | oracle:- bronze:- seal:Y | `综.seal.svg` |
 
 ## emergencies
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 急 | oracle:- bronze:- seal:Y legacy:- | `急.seal.svg` |
+| 急 | oracle:- bronze:- seal:Y | `急.seal.svg` |
 
 ## environmentaleffects
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 候 | oracle:- bronze:- seal:Y legacy:- | `候.seal.svg` |
+| 候 | oracle:- bronze:- seal:Y | `候.seal.svg` |
 
 ## eras
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 鼎 | oracle:Y bronze:Y seal:Y legacy:- | `鼎.bronze.svg`<br>`鼎.oracle.svg`<br>`鼎.seal.svg` |
-| 古 | oracle:Y bronze:Y seal:Y legacy:- | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
-| 剑 | oracle:- bronze:Y seal:Y legacy:- | `剑.bronze.svg`<br>`剑.seal.svg` |
-| 王 | oracle:Y bronze:Y seal:Y legacy:- | `王.bronze.svg`<br>`王.oracle.svg`<br>`王.seal.svg` |
+| 鼎 | oracle:Y bronze:Y seal:Y | `鼎.bronze.svg`<br>`鼎.oracle.svg`<br>`鼎.seal.svg` |
+| 古 | oracle:Y bronze:Y seal:Y | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
+| 剑 | oracle:- bronze:Y seal:Y | `剑.bronze.svg`<br>`剑.seal.svg` |
+| 王 | oracle:Y bronze:Y seal:Y | `王.bronze.svg`<br>`王.oracle.svg`<br>`王.seal.svg` |
 
 ## gamesettings
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 设 | oracle:- bronze:- seal:Y legacy:- | `设.seal.svg` |
+| 设 | oracle:- bronze:- seal:Y | `设.seal.svg` |
 
 ## governments
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 官 | oracle:Y bronze:Y seal:Y legacy:- | `官.bronze.svg`<br>`官.oracle.svg`<br>`官.seal.svg` |
+| 官 | oracle:Y bronze:Y seal:Y | `官.bronze.svg`<br>`官.oracle.svg`<br>`官.seal.svg` |
 
 ## governors
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 督 | oracle:- bronze:- seal:Y legacy:- | `督.seal.svg` |
+| 督 | oracle:- bronze:- seal:Y | `督.seal.svg` |
 
 ## greatpeople
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 贤 | oracle:- bronze:Y seal:Y legacy:- | `贤.bronze.svg`<br>`贤.seal.svg` |
+| 贤 | oracle:- bronze:Y seal:Y | `贤.bronze.svg`<br>`贤.seal.svg` |
 
 ## greatworks
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 阿 | oracle:- bronze:Y seal:Y legacy:- | `阿.bronze.svg`<br>`阿.seal.svg` |
-| 埃 | oracle:- bronze:- seal:Y legacy:- | `埃.seal.svg` |
-| 爱 | oracle:- bronze:- seal:Y legacy:- | `爱.seal.svg` |
-| 安 | oracle:Y bronze:Y seal:Y legacy:- | `安.bronze.svg`<br>`安.oracle.svg`<br>`安.seal.svg` |
-| 昂 | oracle:- bronze:- seal:Y legacy:- | `昂.seal.svg` |
-| 奥 | oracle:- bronze:- seal:Y legacy:- | `奥.seal.svg` |
-| 巴 | oracle:Y bronze:- seal:Y legacy:- | `巴.oracle.svg`<br>`巴.seal.svg` |
-| 白 | oracle:Y bronze:Y seal:Y legacy:- | `白.bronze.svg`<br>`白.oracle.svg`<br>`白.seal.svg` |
-| 邦 | oracle:Y bronze:Y seal:Y legacy:- | `邦.bronze.svg`<br>`邦.oracle.svg`<br>`邦.seal.svg` |
-| 卑 | oracle:- bronze:Y seal:Y legacy:- | `卑.bronze.svg`<br>`卑.seal.svg` |
-| 北 | oracle:Y bronze:Y seal:Y legacy:- | `北.bronze.svg`<br>`北.oracle.svg`<br>`北.seal.svg` |
-| 贝 | oracle:Y bronze:Y seal:Y legacy:- | `贝.bronze.svg`<br>`贝.oracle.svg`<br>`贝.seal.svg` |
-| 比 | oracle:Y bronze:Y seal:Y legacy:- | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
-| 碧 | oracle:- bronze:- seal:Y legacy:- | `碧.seal.svg` |
-| 波 | oracle:- bronze:- seal:Y legacy:- | `波.seal.svg` |
-| 伯 | oracle:Y bronze:Y seal:Y legacy:- | `伯.bronze.svg`<br>`伯.oracle.svg`<br>`伯.seal.svg` |
-| 勃 | oracle:- bronze:- seal:Y legacy:- | `勃.seal.svg` |
-| 博 | oracle:- bronze:Y seal:Y legacy:- | `博.bronze.svg`<br>`博.seal.svg` |
-| 布 | oracle:- bronze:Y seal:Y legacy:- | `布.bronze.svg`<br>`布.seal.svg` |
-| 查 | oracle:- bronze:- seal:Y legacy:- | `查.seal.svg` |
-| 柴 | oracle:- bronze:Y seal:Y legacy:- | `柴.bronze.svg`<br>`柴.seal.svg` |
-| 茨 | oracle:- bronze:- seal:Y legacy:- | `茨.seal.svg` |
-| 翠 | oracle:- bronze:Y seal:Y legacy:- | `翠.bronze.svg`<br>`翠.seal.svg` |
-| 达 | oracle:Y bronze:- seal:- legacy:- | `达.oracle.svg` |
-| 大 | oracle:Y bronze:Y seal:Y legacy:- | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
-| 代 | oracle:- bronze:- seal:Y legacy:- | `代.seal.svg` |
-| 岛 | oracle:- bronze:- seal:Y legacy:- | `岛.seal.svg` |
-| 德 | oracle:Y bronze:Y seal:Y legacy:- | `德.bronze.svg`<br>`德.oracle.svg`<br>`德.seal.svg` |
-| 迪 | oracle:- bronze:- seal:Y legacy:- | `迪.seal.svg` |
-| 第 | oracle:Y bronze:Y seal:Y legacy:- | `第.bronze.svg`<br>`第.oracle.svg`<br>`第.seal.svg` |
-| 蒂 | oracle:- bronze:- seal:Y legacy:- | `蒂.seal.svg` |
-| 典 | oracle:Y bronze:Y seal:Y legacy:- | `典.bronze.svg`<br>`典.oracle.svg`<br>`典.seal.svg` |
-| 雕 | oracle:- bronze:Y seal:Y legacy:- | `雕.bronze.svg`<br>`雕.seal.svg` |
-| 定 | oracle:Y bronze:Y seal:Y legacy:- | `定.bronze.svg`<br>`定.oracle.svg`<br>`定.seal.svg` |
-| 东 | oracle:Y bronze:Y seal:Y legacy:- | `东.bronze.svg`<br>`东.oracle.svg`<br>`东.seal.svg` |
-| 多 | oracle:Y bronze:Y seal:Y legacy:- | `多.bronze.svg`<br>`多.oracle.svg`<br>`多.seal.svg` |
-| 尔 | oracle:- bronze:Y seal:Y legacy:- | `尔.bronze.svg`<br>`尔.seal.svg` |
-| 梵 | oracle:- bronze:- seal:Y legacy:- | `梵.seal.svg` |
-| 菲 | oracle:- bronze:- seal:Y legacy:- | `菲.seal.svg` |
-| 芬 | oracle:- bronze:- seal:Y legacy:- | `芬.seal.svg` |
-| 夫 | oracle:Y bronze:Y seal:Y legacy:- | `夫.bronze.svg`<br>`夫.oracle.svg`<br>`夫.seal.svg` |
-| 符 | oracle:- bronze:Y seal:Y legacy:- | `符.bronze.svg`<br>`符.seal.svg` |
-| 复 | oracle:Y bronze:Y seal:Y legacy:- | `复.bronze.svg`<br>`复.oracle.svg`<br>`复.seal.svg` |
-| 高 | oracle:Y bronze:Y seal:Y legacy:- | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
-| 戈 | oracle:Y bronze:Y seal:Y legacy:- | `戈.bronze.svg`<br>`戈.oracle.svg`<br>`戈.seal.svg` |
-| 歌 | oracle:- bronze:Y seal:Y legacy:- | `歌.bronze.svg`<br>`歌.seal.svg` |
-| 格 | oracle:- bronze:Y seal:Y legacy:- | `格.bronze.svg`<br>`格.seal.svg` |
-| 工 | oracle:Y bronze:Y seal:Y legacy:- | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
-| 古 | oracle:Y bronze:Y seal:Y legacy:- | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
-| 观 | oracle:Y bronze:Y seal:Y legacy:- | `观.bronze.svg`<br>`观.oracle.svg`<br>`观.seal.svg` |
-| 号 | oracle:- bronze:Y seal:Y legacy:- | `号.bronze.svg`<br>`号.seal.svg` |
-| 荷 | oracle:- bronze:- seal:Y legacy:- | `荷.seal.svg` |
-| 赫 | oracle:- bronze:- seal:Y legacy:- | `赫.seal.svg` |
-| 呼 | oracle:- bronze:Y seal:Y legacy:- | `呼.bronze.svg`<br>`呼.seal.svg` |
-| 胡 | oracle:- bronze:Y seal:Y legacy:- | `胡.bronze.svg`<br>`胡.seal.svg` |
-| 花 | oracle:- bronze:- seal:Y legacy:- | `花.seal.svg` |
-| 华 | oracle:- bronze:- seal:Y legacy:- | `华.seal.svg` |
-| 基 | oracle:Y bronze:Y seal:Y legacy:- | `基.bronze.svg`<br>`基.oracle.svg`<br>`基.seal.svg` |
-| 吉 | oracle:Y bronze:Y seal:Y legacy:- | `吉.bronze.svg`<br>`吉.oracle.svg`<br>`吉.seal.svg` |
-| 纪 | oracle:- bronze:Y seal:Y legacy:- | `纪.bronze.svg`<br>`纪.seal.svg` |
-| 迹 | oracle:- bronze:Y seal:Y legacy:- | `迹.bronze.svg`<br>`迹.seal.svg` |
-| 加 | oracle:- bronze:Y seal:Y legacy:- | `加.bronze.svg`<br>`加.seal.svg` |
-| 贾 | oracle:Y bronze:Y seal:Y legacy:- | `贾.bronze.svg`<br>`贾.oracle.svg`<br>`贾.seal.svg` |
-| 件 | oracle:- bronze:- seal:Y legacy:- | `件.seal.svg` |
-| 健 | oracle:- bronze:- seal:Y legacy:- | `健.seal.svg` |
-| 教 | oracle:Y bronze:Y seal:Y legacy:- | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
-| 杰 | oracle:- bronze:- seal:Y legacy:- | `杰.seal.svg` |
-| 金 | oracle:- bronze:Y seal:Y legacy:- | `金.bronze.svg`<br>`金.seal.svg` |
-| 经 | oracle:- bronze:Y seal:Y legacy:- | `经.bronze.svg`<br>`经.seal.svg` |
-| 井 | oracle:Y bronze:Y seal:Y legacy:- | `井.bronze.svg`<br>`井.oracle.svg`<br>`井.seal.svg` |
-| 景 | oracle:- bronze:- seal:Y legacy:- | `景.seal.svg` |
-| 卡 | oracle:- bronze:- seal:Y legacy:- | `卡.seal.svg` |
-| 开 | oracle:- bronze:- seal:Y legacy:- | `开.seal.svg` |
-| 坎 | oracle:- bronze:- seal:Y legacy:- | `坎.seal.svg` |
-| 康 | oracle:Y bronze:Y seal:Y legacy:- | `康.bronze.svg`<br>`康.oracle.svg`<br>`康.seal.svg` |
-| 考 | oracle:Y bronze:Y seal:Y legacy:- | `考.bronze.svg`<br>`考.oracle.svg`<br>`考.seal.svg` |
-| 科 | oracle:- bronze:- seal:Y legacy:- | `科.seal.svg` |
-| 克 | oracle:Y bronze:Y seal:Y legacy:- | `克.bronze.svg`<br>`克.oracle.svg`<br>`克.seal.svg` |
-| 空 | oracle:- bronze:Y seal:Y legacy:- | `空.bronze.svg`<br>`空.seal.svg` |
-| 拉 | oracle:- bronze:- seal:Y legacy:- | `拉.seal.svg` |
-| 莱 | oracle:- bronze:- seal:Y legacy:- | `莱.seal.svg` |
-| 兰 | oracle:- bronze:- seal:Y legacy:- | `兰.seal.svg` |
-| 朗 | oracle:- bronze:- seal:Y legacy:- | `朗.seal.svg` |
-| 乐 | oracle:Y bronze:Y seal:Y legacy:- | `乐.bronze.svg`<br>`乐.oracle.svg`<br>`乐.seal.svg` |
-| 雷 | oracle:Y bronze:Y seal:Y legacy:- | `雷.bronze.svg`<br>`雷.oracle.svg`<br>`雷.seal.svg` |
-| 李 | oracle:- bronze:Y seal:Y legacy:- | `李.bronze.svg`<br>`李.seal.svg` |
-| 里 | oracle:- bronze:Y seal:Y legacy:- | `里.bronze.svg`<br>`里.seal.svg` |
-| 力 | oracle:Y bronze:Y seal:Y legacy:- | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
-| 利 | oracle:Y bronze:Y seal:Y legacy:- | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
-| 廖 | oracle:- bronze:- seal:Y legacy:- | `廖.seal.svg` |
-| 列 | oracle:- bronze:Y seal:Y legacy:- | `列.bronze.svg`<br>`列.seal.svg` |
-| 林 | oracle:Y bronze:Y seal:Y legacy:- | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
-| 刘 | oracle:- bronze:- seal:Y legacy:- | `刘.seal.svg` |
-| 留 | oracle:- bronze:Y seal:Y legacy:- | `留.bronze.svg`<br>`留.seal.svg` |
-| 卢 | oracle:Y bronze:Y seal:Y legacy:- | `卢.bronze.svg`<br>`卢.oracle.svg`<br>`卢.seal.svg` |
-| 鲁 | oracle:Y bronze:Y seal:Y legacy:- | `鲁.bronze.svg`<br>`鲁.oracle.svg`<br>`鲁.seal.svg` |
-| 吕 | oracle:Y bronze:Y seal:Y legacy:- | `吕.bronze.svg`<br>`吕.oracle.svg`<br>`吕.seal.svg` |
-| 伦 | oracle:- bronze:- seal:Y legacy:- | `伦.seal.svg` |
-| 罗 | oracle:Y bronze:Y seal:Y legacy:- | `罗.bronze.svg`<br>`罗.oracle.svg`<br>`罗.seal.svg` |
-| 洛 | oracle:- bronze:Y seal:Y legacy:- | `洛.bronze.svg`<br>`洛.seal.svg` |
-| 马 | oracle:Y bronze:Y seal:Y legacy:- | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
-| 麦 | oracle:Y bronze:Y seal:Y legacy:- | `麦.bronze.svg`<br>`麦.oracle.svg`<br>`麦.seal.svg` |
-| 曼 | oracle:Y bronze:Y seal:Y legacy:- | `曼.bronze.svg`<br>`曼.oracle.svg`<br>`曼.seal.svg` |
-| 毛 | oracle:- bronze:Y seal:Y legacy:- | `毛.bronze.svg`<br>`毛.seal.svg` |
-| 弥 | oracle:- bronze:Y seal:Y legacy:- | `弥.bronze.svg`<br>`弥.seal.svg` |
-| 米 | oracle:Y bronze:- seal:Y legacy:- | `米.oracle.svg`<br>`米.seal.svg` |
-| 末 | oracle:- bronze:Y seal:Y legacy:- | `末.bronze.svg`<br>`末.seal.svg` |
-| 莫 | oracle:Y bronze:Y seal:Y legacy:- | `莫.bronze.svg`<br>`莫.oracle.svg`<br>`莫.seal.svg` |
-| 姆 | oracle:- bronze:Y seal:Y legacy:- | `姆.bronze.svg`<br>`姆.seal.svg` |
-| 木 | oracle:Y bronze:Y seal:Y legacy:- | `木.bronze.svg`<br>`木.oracle.svg`<br>`木.seal.svg` |
-| 穆 | oracle:Y bronze:Y seal:Y legacy:- | `穆.bronze.svg`<br>`穆.oracle.svg`<br>`穆.seal.svg` |
-| 纳 | oracle:- bronze:Y seal:Y legacy:- | `纳.bronze.svg`<br>`纳.seal.svg` |
-| 奈 | oracle:Y bronze:- seal:Y legacy:- | `奈.oracle.svg`<br>`奈.seal.svg` |
-| 尼 | oracle:- bronze:- seal:Y legacy:- | `尼.seal.svg` |
-| 努 | oracle:- bronze:- seal:Y legacy:- | `努.seal.svg` |
-| 诺 | oracle:- bronze:Y seal:Y legacy:- | `诺.bronze.svg`<br>`诺.seal.svg` |
-| 佩 | oracle:- bronze:Y seal:Y legacy:- | `佩.bronze.svg`<br>`佩.seal.svg` |
-| 品 | oracle:Y bronze:Y seal:Y legacy:- | `品.bronze.svg`<br>`品.oracle.svg`<br>`品.seal.svg` |
-| 坡 | oracle:- bronze:Y seal:Y legacy:- | `坡.bronze.svg`<br>`坡.seal.svg` |
-| 普 | oracle:- bronze:- seal:Y legacy:- | `普.seal.svg` |
-| 期 | oracle:- bronze:Y seal:Y legacy:- | `期.bronze.svg`<br>`期.seal.svg` |
-| 奇 | oracle:- bronze:- seal:Y legacy:- | `奇.seal.svg` |
-| 崎 | oracle:- bronze:- seal:Y legacy:- | `崎.seal.svg` |
-| 器 | oracle:- bronze:Y seal:Y legacy:- | `器.bronze.svg`<br>`器.seal.svg` |
-| 恰 | oracle:- bronze:- seal:Y legacy:- | `恰.seal.svg` |
-| 乔 | oracle:- bronze:Y seal:Y legacy:- | `乔.bronze.svg`<br>`乔.seal.svg` |
-| 情 | oracle:- bronze:- seal:Y legacy:- | `情.seal.svg` |
-| 屈 | oracle:- bronze:Y seal:Y legacy:- | `屈.bronze.svg`<br>`屈.seal.svg` |
-| 人 | oracle:Y bronze:Y seal:Y legacy:- | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
-| 萨 | oracle:- bronze:- seal:Y legacy:- | `萨.seal.svg` |
-| 塞 | oracle:Y bronze:- seal:Y legacy:- | `塞.oracle.svg`<br>`塞.seal.svg` |
-| 瑟 | oracle:- bronze:- seal:Y legacy:- | `瑟.seal.svg` |
-| 森 | oracle:Y bronze:- seal:Y legacy:- | `森.oracle.svg`<br>`森.seal.svg` |
-| 莎 | oracle:- bronze:- seal:Y legacy:- | `莎.seal.svg` |
-| 设 | oracle:- bronze:- seal:Y legacy:- | `设.seal.svg` |
-| 什 | oracle:- bronze:- seal:Y legacy:- | `什.seal.svg` |
-| 神 | oracle:- bronze:Y seal:Y legacy:- | `神.bronze.svg`<br>`神.seal.svg` |
-| 诗 | oracle:- bronze:- seal:Y legacy:- | `诗.seal.svg` |
-| 时 | oracle:- bronze:Y seal:Y legacy:- | `时.bronze.svg`<br>`时.seal.svg` |
-| 史 | oracle:Y bronze:Y seal:Y legacy:- | `史.bronze.svg`<br>`史.oracle.svg`<br>`史.seal.svg` |
-| 士 | oracle:- bronze:Y seal:Y legacy:- | `士.bronze.svg`<br>`士.seal.svg` |
-| 世 | oracle:- bronze:Y seal:Y legacy:- | `世.bronze.svg`<br>`世.seal.svg` |
-| 舒 | oracle:- bronze:Y seal:Y legacy:- | `舒.bronze.svg`<br>`舒.seal.svg` |
-| 丝 | oracle:Y bronze:Y seal:Y legacy:- | `丝.bronze.svg`<br>`丝.oracle.svg`<br>`丝.seal.svg` |
-| 斯 | oracle:- bronze:Y seal:Y legacy:- | `斯.bronze.svg`<br>`斯.seal.svg` |
-| 叟 | oracle:Y bronze:- seal:Y legacy:- | `叟.oracle.svg`<br>`叟.seal.svg` |
-| 塑 | oracle:Y bronze:Y seal:Y legacy:- | `塑.bronze.svg`<br>`塑.oracle.svg`<br>`塑.seal.svg` |
-| 孙 | oracle:Y bronze:Y seal:Y legacy:- | `孙.bronze.svg`<br>`孙.oracle.svg`<br>`孙.seal.svg` |
-| 索 | oracle:Y bronze:Y seal:Y legacy:- | `索.bronze.svg`<br>`索.oracle.svg`<br>`索.seal.svg` |
-| 塔 | oracle:- bronze:- seal:Y legacy:- | `塔.seal.svg` |
-| 泰 | oracle:- bronze:- seal:Y legacy:- | `泰.seal.svg` |
-| 忒 | oracle:- bronze:- seal:Y legacy:- | `忒.seal.svg` |
-| 特 | oracle:- bronze:- seal:Y legacy:- | `特.seal.svg` |
-| 提 | oracle:- bronze:- seal:Y legacy:- | `提.seal.svg` |
-| 体 | oracle:- bronze:Y seal:Y legacy:- | `体.bronze.svg`<br>`体.seal.svg` |
-| 天 | oracle:Y bronze:Y seal:Y legacy:- | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
-| 汀 | oracle:- bronze:- seal:Y legacy:- | `汀.seal.svg` |
-| 吐 | oracle:- bronze:- seal:Y legacy:- | `吐.seal.svg` |
-| 托 | oracle:Y bronze:Y seal:Y legacy:- | `托.bronze.svg`<br>`托.oracle.svg`<br>`托.seal.svg` |
-| 瓦 | oracle:- bronze:- seal:Y legacy:- | `瓦.seal.svg` |
-| 万 | oracle:Y bronze:Y seal:Y legacy:- | `万.bronze.svg`<br>`万.oracle.svg`<br>`万.seal.svg` |
-| 维 | oracle:- bronze:Y seal:Y legacy:- | `维.bronze.svg`<br>`维.seal.svg` |
-| 伟 | oracle:- bronze:- seal:Y legacy:- | `伟.seal.svg` |
-| 未 | oracle:Y bronze:Y seal:Y legacy:- | `未.bronze.svg`<br>`未.oracle.svg`<br>`未.seal.svg` |
-| 温 | oracle:Y bronze:- seal:Y legacy:- | `温.oracle.svg`<br>`温.seal.svg` |
-| 文 | oracle:Y bronze:Y seal:Y legacy:- | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
-| 沃 | oracle:- bronze:- seal:Y legacy:- | `沃.seal.svg` |
-| 武 | oracle:Y bronze:Y seal:Y legacy:- | `武.bronze.svg`<br>`武.oracle.svg`<br>`武.seal.svg` |
-| 物 | oracle:Y bronze:- seal:Y legacy:- | `物.oracle.svg`<br>`物.seal.svg` |
-| 悟 | oracle:- bronze:- seal:Y legacy:- | `悟.seal.svg` |
-| 西 | oracle:Y bronze:Y seal:Y legacy:- | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
-| 希 | oracle:- bronze:- seal:Y legacy:- | `希.seal.svg` |
-| 夏 | oracle:Y bronze:Y seal:Y legacy:- | `夏.bronze.svg`<br>`夏.oracle.svg`<br>`夏.seal.svg` |
-| 香 | oracle:Y bronze:Y seal:Y legacy:- | `香.bronze.svg`<br>`香.oracle.svg`<br>`香.seal.svg` |
-| 象 | oracle:Y bronze:Y seal:Y legacy:- | `象.bronze.svg`<br>`象.oracle.svg`<br>`象.seal.svg` |
-| 肖 | oracle:- bronze:Y seal:Y legacy:- | `肖.bronze.svg`<br>`肖.seal.svg` |
-| 写 | oracle:- bronze:- seal:Y legacy:- | `写.seal.svg` |
-| 辛 | oracle:Y bronze:Y seal:Y legacy:- | `辛.bronze.svg`<br>`辛.oracle.svg`<br>`辛.seal.svg` |
-| 行 | oracle:Y bronze:Y seal:Y legacy:- | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
-| 兴 | oracle:Y bronze:Y seal:Y legacy:- | `兴.bronze.svg`<br>`兴.oracle.svg`<br>`兴.seal.svg` |
-| 雄 | oracle:- bronze:- seal:Y legacy:- | `雄.seal.svg` |
-| 雪 | oracle:Y bronze:Y seal:Y legacy:- | `雪.bronze.svg`<br>`雪.oracle.svg`<br>`雪.seal.svg` |
-| 雅 | oracle:- bronze:- seal:Y legacy:- | `雅.seal.svg` |
-| 亚 | oracle:Y bronze:Y seal:Y legacy:- | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
-| 业 | oracle:- bronze:Y seal:Y legacy:- | `业.bronze.svg`<br>`业.seal.svg` |
-| 伊 | oracle:Y bronze:Y seal:Y legacy:- | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
-| 遗 | oracle:- bronze:Y seal:Y legacy:- | `遗.bronze.svg`<br>`遗.seal.svg` |
-| 艺 | oracle:Y bronze:Y seal:Y legacy:- | `艺.bronze.svg`<br>`艺.oracle.svg`<br>`艺.seal.svg` |
-| 易 | oracle:Y bronze:Y seal:Y legacy:- | `易.bronze.svg`<br>`易.oracle.svg`<br>`易.seal.svg` |
-| 音 | oracle:- bronze:Y seal:Y legacy:- | `音.bronze.svg`<br>`音.seal.svg` |
-| 英 | oracle:- bronze:Y seal:Y legacy:- | `英.bronze.svg`<br>`英.seal.svg` |
-| 原 | oracle:- bronze:Y seal:Y legacy:- | `原.bronze.svg`<br>`原.seal.svg` |
-| 泽 | oracle:- bronze:- seal:Y legacy:- | `泽.seal.svg` |
-| 扎 | oracle:- bronze:- seal:Y legacy:- | `扎.seal.svg` |
-| 斋 | oracle:- bronze:Y seal:Y legacy:- | `斋.bronze.svg`<br>`斋.seal.svg` |
-| 征 | oracle:Y bronze:Y seal:Y legacy:- | `征.bronze.svg`<br>`征.oracle.svg`<br>`征.seal.svg` |
-| 制 | oracle:- bronze:Y seal:Y legacy:- | `制.bronze.svg`<br>`制.seal.svg` |
-| 置 | oracle:Y bronze:- seal:Y legacy:- | `置.oracle.svg`<br>`置.seal.svg` |
-| 子 | oracle:Y bronze:Y seal:Y legacy:- | `子.bronze.svg`<br>`子.oracle.svg`<br>`子.seal.svg` |
-| 紫 | oracle:- bronze:Y seal:Y legacy:- | `紫.bronze.svg`<br>`紫.seal.svg` |
-| 宗 | oracle:Y bronze:Y seal:Y legacy:- | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
-| 作 | oracle:Y bronze:Y seal:Y legacy:- | `作.bronze.svg`<br>`作.oracle.svg`<br>`作.seal.svg` |
+| 阿 | oracle:- bronze:Y seal:Y | `阿.bronze.svg`<br>`阿.seal.svg` |
+| 埃 | oracle:- bronze:- seal:Y | `埃.seal.svg` |
+| 爱 | oracle:- bronze:- seal:Y | `爱.seal.svg` |
+| 安 | oracle:Y bronze:Y seal:Y | `安.bronze.svg`<br>`安.oracle.svg`<br>`安.seal.svg` |
+| 昂 | oracle:- bronze:- seal:Y | `昂.seal.svg` |
+| 奥 | oracle:- bronze:- seal:Y | `奥.seal.svg` |
+| 巴 | oracle:Y bronze:- seal:Y | `巴.oracle.svg`<br>`巴.seal.svg` |
+| 白 | oracle:Y bronze:Y seal:Y | `白.bronze.svg`<br>`白.oracle.svg`<br>`白.seal.svg` |
+| 邦 | oracle:Y bronze:Y seal:Y | `邦.bronze.svg`<br>`邦.oracle.svg`<br>`邦.seal.svg` |
+| 卑 | oracle:- bronze:Y seal:Y | `卑.bronze.svg`<br>`卑.seal.svg` |
+| 北 | oracle:Y bronze:Y seal:Y | `北.bronze.svg`<br>`北.oracle.svg`<br>`北.seal.svg` |
+| 贝 | oracle:Y bronze:Y seal:Y | `贝.bronze.svg`<br>`贝.oracle.svg`<br>`贝.seal.svg` |
+| 比 | oracle:Y bronze:Y seal:Y | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
+| 碧 | oracle:- bronze:- seal:Y | `碧.seal.svg` |
+| 波 | oracle:- bronze:- seal:Y | `波.seal.svg` |
+| 伯 | oracle:Y bronze:Y seal:Y | `伯.bronze.svg`<br>`伯.oracle.svg`<br>`伯.seal.svg` |
+| 勃 | oracle:- bronze:- seal:Y | `勃.seal.svg` |
+| 博 | oracle:- bronze:Y seal:Y | `博.bronze.svg`<br>`博.seal.svg` |
+| 布 | oracle:- bronze:Y seal:Y | `布.bronze.svg`<br>`布.seal.svg` |
+| 查 | oracle:- bronze:- seal:Y | `查.seal.svg` |
+| 柴 | oracle:- bronze:Y seal:Y | `柴.bronze.svg`<br>`柴.seal.svg` |
+| 茨 | oracle:- bronze:- seal:Y | `茨.seal.svg` |
+| 翠 | oracle:- bronze:Y seal:Y | `翠.bronze.svg`<br>`翠.seal.svg` |
+| 达 | oracle:Y bronze:- seal:- | `达.oracle.svg` |
+| 大 | oracle:Y bronze:Y seal:Y | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
+| 代 | oracle:- bronze:- seal:Y | `代.seal.svg` |
+| 岛 | oracle:- bronze:- seal:Y | `岛.seal.svg` |
+| 德 | oracle:Y bronze:Y seal:Y | `德.bronze.svg`<br>`德.oracle.svg`<br>`德.seal.svg` |
+| 迪 | oracle:- bronze:- seal:Y | `迪.seal.svg` |
+| 第 | oracle:Y bronze:Y seal:Y | `第.bronze.svg`<br>`第.oracle.svg`<br>`第.seal.svg` |
+| 蒂 | oracle:- bronze:- seal:Y | `蒂.seal.svg` |
+| 典 | oracle:Y bronze:Y seal:Y | `典.bronze.svg`<br>`典.oracle.svg`<br>`典.seal.svg` |
+| 雕 | oracle:- bronze:Y seal:Y | `雕.bronze.svg`<br>`雕.seal.svg` |
+| 定 | oracle:Y bronze:Y seal:Y | `定.bronze.svg`<br>`定.oracle.svg`<br>`定.seal.svg` |
+| 东 | oracle:Y bronze:Y seal:Y | `东.bronze.svg`<br>`东.oracle.svg`<br>`东.seal.svg` |
+| 多 | oracle:Y bronze:Y seal:Y | `多.bronze.svg`<br>`多.oracle.svg`<br>`多.seal.svg` |
+| 尔 | oracle:- bronze:Y seal:Y | `尔.bronze.svg`<br>`尔.seal.svg` |
+| 梵 | oracle:- bronze:- seal:Y | `梵.seal.svg` |
+| 菲 | oracle:- bronze:- seal:Y | `菲.seal.svg` |
+| 芬 | oracle:- bronze:- seal:Y | `芬.seal.svg` |
+| 夫 | oracle:Y bronze:Y seal:Y | `夫.bronze.svg`<br>`夫.oracle.svg`<br>`夫.seal.svg` |
+| 符 | oracle:- bronze:Y seal:Y | `符.bronze.svg`<br>`符.seal.svg` |
+| 复 | oracle:Y bronze:Y seal:Y | `复.bronze.svg`<br>`复.oracle.svg`<br>`复.seal.svg` |
+| 高 | oracle:Y bronze:Y seal:Y | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
+| 戈 | oracle:Y bronze:Y seal:Y | `戈.bronze.svg`<br>`戈.oracle.svg`<br>`戈.seal.svg` |
+| 歌 | oracle:- bronze:Y seal:Y | `歌.bronze.svg`<br>`歌.seal.svg` |
+| 格 | oracle:- bronze:Y seal:Y | `格.bronze.svg`<br>`格.seal.svg` |
+| 工 | oracle:Y bronze:Y seal:Y | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
+| 古 | oracle:Y bronze:Y seal:Y | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
+| 观 | oracle:Y bronze:Y seal:Y | `观.bronze.svg`<br>`观.oracle.svg`<br>`观.seal.svg` |
+| 号 | oracle:- bronze:Y seal:Y | `号.bronze.svg`<br>`号.seal.svg` |
+| 荷 | oracle:- bronze:- seal:Y | `荷.seal.svg` |
+| 赫 | oracle:- bronze:- seal:Y | `赫.seal.svg` |
+| 呼 | oracle:- bronze:Y seal:Y | `呼.bronze.svg`<br>`呼.seal.svg` |
+| 胡 | oracle:- bronze:Y seal:Y | `胡.bronze.svg`<br>`胡.seal.svg` |
+| 花 | oracle:- bronze:- seal:Y | `花.seal.svg` |
+| 华 | oracle:- bronze:- seal:Y | `华.seal.svg` |
+| 基 | oracle:Y bronze:Y seal:Y | `基.bronze.svg`<br>`基.oracle.svg`<br>`基.seal.svg` |
+| 吉 | oracle:Y bronze:Y seal:Y | `吉.bronze.svg`<br>`吉.oracle.svg`<br>`吉.seal.svg` |
+| 纪 | oracle:- bronze:Y seal:Y | `纪.bronze.svg`<br>`纪.seal.svg` |
+| 迹 | oracle:- bronze:Y seal:Y | `迹.bronze.svg`<br>`迹.seal.svg` |
+| 加 | oracle:- bronze:Y seal:Y | `加.bronze.svg`<br>`加.seal.svg` |
+| 贾 | oracle:Y bronze:Y seal:Y | `贾.bronze.svg`<br>`贾.oracle.svg`<br>`贾.seal.svg` |
+| 件 | oracle:- bronze:- seal:Y | `件.seal.svg` |
+| 健 | oracle:- bronze:- seal:Y | `健.seal.svg` |
+| 教 | oracle:Y bronze:Y seal:Y | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
+| 杰 | oracle:- bronze:- seal:Y | `杰.seal.svg` |
+| 金 | oracle:- bronze:Y seal:Y | `金.bronze.svg`<br>`金.seal.svg` |
+| 经 | oracle:- bronze:Y seal:Y | `经.bronze.svg`<br>`经.seal.svg` |
+| 井 | oracle:Y bronze:Y seal:Y | `井.bronze.svg`<br>`井.oracle.svg`<br>`井.seal.svg` |
+| 景 | oracle:- bronze:- seal:Y | `景.seal.svg` |
+| 卡 | oracle:- bronze:- seal:Y | `卡.seal.svg` |
+| 开 | oracle:- bronze:- seal:Y | `开.seal.svg` |
+| 坎 | oracle:- bronze:- seal:Y | `坎.seal.svg` |
+| 康 | oracle:Y bronze:Y seal:Y | `康.bronze.svg`<br>`康.oracle.svg`<br>`康.seal.svg` |
+| 考 | oracle:Y bronze:Y seal:Y | `考.bronze.svg`<br>`考.oracle.svg`<br>`考.seal.svg` |
+| 科 | oracle:- bronze:- seal:Y | `科.seal.svg` |
+| 克 | oracle:Y bronze:Y seal:Y | `克.bronze.svg`<br>`克.oracle.svg`<br>`克.seal.svg` |
+| 空 | oracle:- bronze:Y seal:Y | `空.bronze.svg`<br>`空.seal.svg` |
+| 拉 | oracle:- bronze:- seal:Y | `拉.seal.svg` |
+| 莱 | oracle:- bronze:- seal:Y | `莱.seal.svg` |
+| 兰 | oracle:- bronze:- seal:Y | `兰.seal.svg` |
+| 朗 | oracle:- bronze:- seal:Y | `朗.seal.svg` |
+| 乐 | oracle:Y bronze:Y seal:Y | `乐.bronze.svg`<br>`乐.oracle.svg`<br>`乐.seal.svg` |
+| 雷 | oracle:Y bronze:Y seal:Y | `雷.bronze.svg`<br>`雷.oracle.svg`<br>`雷.seal.svg` |
+| 李 | oracle:- bronze:Y seal:Y | `李.bronze.svg`<br>`李.seal.svg` |
+| 里 | oracle:- bronze:Y seal:Y | `里.bronze.svg`<br>`里.seal.svg` |
+| 力 | oracle:Y bronze:Y seal:Y | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
+| 利 | oracle:Y bronze:Y seal:Y | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
+| 廖 | oracle:- bronze:- seal:Y | `廖.seal.svg` |
+| 列 | oracle:- bronze:Y seal:Y | `列.bronze.svg`<br>`列.seal.svg` |
+| 林 | oracle:Y bronze:Y seal:Y | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
+| 刘 | oracle:- bronze:- seal:Y | `刘.seal.svg` |
+| 留 | oracle:- bronze:Y seal:Y | `留.bronze.svg`<br>`留.seal.svg` |
+| 卢 | oracle:Y bronze:Y seal:Y | `卢.bronze.svg`<br>`卢.oracle.svg`<br>`卢.seal.svg` |
+| 鲁 | oracle:Y bronze:Y seal:Y | `鲁.bronze.svg`<br>`鲁.oracle.svg`<br>`鲁.seal.svg` |
+| 吕 | oracle:Y bronze:Y seal:Y | `吕.bronze.svg`<br>`吕.oracle.svg`<br>`吕.seal.svg` |
+| 伦 | oracle:- bronze:- seal:Y | `伦.seal.svg` |
+| 罗 | oracle:Y bronze:Y seal:Y | `罗.bronze.svg`<br>`罗.oracle.svg`<br>`罗.seal.svg` |
+| 洛 | oracle:- bronze:Y seal:Y | `洛.bronze.svg`<br>`洛.seal.svg` |
+| 马 | oracle:Y bronze:Y seal:Y | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
+| 麦 | oracle:Y bronze:Y seal:Y | `麦.bronze.svg`<br>`麦.oracle.svg`<br>`麦.seal.svg` |
+| 曼 | oracle:Y bronze:Y seal:Y | `曼.bronze.svg`<br>`曼.oracle.svg`<br>`曼.seal.svg` |
+| 毛 | oracle:- bronze:Y seal:Y | `毛.bronze.svg`<br>`毛.seal.svg` |
+| 弥 | oracle:- bronze:Y seal:Y | `弥.bronze.svg`<br>`弥.seal.svg` |
+| 米 | oracle:Y bronze:- seal:Y | `米.oracle.svg`<br>`米.seal.svg` |
+| 末 | oracle:- bronze:Y seal:Y | `末.bronze.svg`<br>`末.seal.svg` |
+| 莫 | oracle:Y bronze:Y seal:Y | `莫.bronze.svg`<br>`莫.oracle.svg`<br>`莫.seal.svg` |
+| 姆 | oracle:- bronze:Y seal:Y | `姆.bronze.svg`<br>`姆.seal.svg` |
+| 木 | oracle:Y bronze:Y seal:Y | `木.bronze.svg`<br>`木.oracle.svg`<br>`木.seal.svg` |
+| 穆 | oracle:Y bronze:Y seal:Y | `穆.bronze.svg`<br>`穆.oracle.svg`<br>`穆.seal.svg` |
+| 纳 | oracle:- bronze:Y seal:Y | `纳.bronze.svg`<br>`纳.seal.svg` |
+| 奈 | oracle:Y bronze:- seal:Y | `奈.oracle.svg`<br>`奈.seal.svg` |
+| 尼 | oracle:- bronze:- seal:Y | `尼.seal.svg` |
+| 努 | oracle:- bronze:- seal:Y | `努.seal.svg` |
+| 诺 | oracle:- bronze:Y seal:Y | `诺.bronze.svg`<br>`诺.seal.svg` |
+| 佩 | oracle:- bronze:Y seal:Y | `佩.bronze.svg`<br>`佩.seal.svg` |
+| 品 | oracle:Y bronze:Y seal:Y | `品.bronze.svg`<br>`品.oracle.svg`<br>`品.seal.svg` |
+| 坡 | oracle:- bronze:Y seal:Y | `坡.bronze.svg`<br>`坡.seal.svg` |
+| 普 | oracle:- bronze:- seal:Y | `普.seal.svg` |
+| 期 | oracle:- bronze:Y seal:Y | `期.bronze.svg`<br>`期.seal.svg` |
+| 奇 | oracle:- bronze:- seal:Y | `奇.seal.svg` |
+| 崎 | oracle:- bronze:- seal:Y | `崎.seal.svg` |
+| 器 | oracle:- bronze:Y seal:Y | `器.bronze.svg`<br>`器.seal.svg` |
+| 恰 | oracle:- bronze:- seal:Y | `恰.seal.svg` |
+| 乔 | oracle:- bronze:Y seal:Y | `乔.bronze.svg`<br>`乔.seal.svg` |
+| 情 | oracle:- bronze:- seal:Y | `情.seal.svg` |
+| 屈 | oracle:- bronze:Y seal:Y | `屈.bronze.svg`<br>`屈.seal.svg` |
+| 人 | oracle:Y bronze:Y seal:Y | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
+| 萨 | oracle:- bronze:- seal:Y | `萨.seal.svg` |
+| 塞 | oracle:Y bronze:- seal:Y | `塞.oracle.svg`<br>`塞.seal.svg` |
+| 瑟 | oracle:- bronze:- seal:Y | `瑟.seal.svg` |
+| 森 | oracle:Y bronze:- seal:Y | `森.oracle.svg`<br>`森.seal.svg` |
+| 莎 | oracle:- bronze:- seal:Y | `莎.seal.svg` |
+| 设 | oracle:- bronze:- seal:Y | `设.seal.svg` |
+| 什 | oracle:- bronze:- seal:Y | `什.seal.svg` |
+| 神 | oracle:- bronze:Y seal:Y | `神.bronze.svg`<br>`神.seal.svg` |
+| 诗 | oracle:- bronze:- seal:Y | `诗.seal.svg` |
+| 时 | oracle:- bronze:Y seal:Y | `时.bronze.svg`<br>`时.seal.svg` |
+| 史 | oracle:Y bronze:Y seal:Y | `史.bronze.svg`<br>`史.oracle.svg`<br>`史.seal.svg` |
+| 士 | oracle:- bronze:Y seal:Y | `士.bronze.svg`<br>`士.seal.svg` |
+| 世 | oracle:- bronze:Y seal:Y | `世.bronze.svg`<br>`世.seal.svg` |
+| 舒 | oracle:- bronze:Y seal:Y | `舒.bronze.svg`<br>`舒.seal.svg` |
+| 丝 | oracle:Y bronze:Y seal:Y | `丝.bronze.svg`<br>`丝.oracle.svg`<br>`丝.seal.svg` |
+| 斯 | oracle:- bronze:Y seal:Y | `斯.bronze.svg`<br>`斯.seal.svg` |
+| 叟 | oracle:Y bronze:- seal:Y | `叟.oracle.svg`<br>`叟.seal.svg` |
+| 塑 | oracle:Y bronze:Y seal:Y | `塑.bronze.svg`<br>`塑.oracle.svg`<br>`塑.seal.svg` |
+| 孙 | oracle:Y bronze:Y seal:Y | `孙.bronze.svg`<br>`孙.oracle.svg`<br>`孙.seal.svg` |
+| 索 | oracle:Y bronze:Y seal:Y | `索.bronze.svg`<br>`索.oracle.svg`<br>`索.seal.svg` |
+| 塔 | oracle:- bronze:- seal:Y | `塔.seal.svg` |
+| 泰 | oracle:- bronze:- seal:Y | `泰.seal.svg` |
+| 忒 | oracle:- bronze:- seal:Y | `忒.seal.svg` |
+| 特 | oracle:- bronze:- seal:Y | `特.seal.svg` |
+| 提 | oracle:- bronze:- seal:Y | `提.seal.svg` |
+| 体 | oracle:- bronze:Y seal:Y | `体.bronze.svg`<br>`体.seal.svg` |
+| 天 | oracle:Y bronze:Y seal:Y | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
+| 汀 | oracle:- bronze:- seal:Y | `汀.seal.svg` |
+| 吐 | oracle:- bronze:- seal:Y | `吐.seal.svg` |
+| 托 | oracle:Y bronze:Y seal:Y | `托.bronze.svg`<br>`托.oracle.svg`<br>`托.seal.svg` |
+| 瓦 | oracle:- bronze:- seal:Y | `瓦.seal.svg` |
+| 万 | oracle:Y bronze:Y seal:Y | `万.bronze.svg`<br>`万.oracle.svg`<br>`万.seal.svg` |
+| 维 | oracle:- bronze:Y seal:Y | `维.bronze.svg`<br>`维.seal.svg` |
+| 伟 | oracle:- bronze:- seal:Y | `伟.seal.svg` |
+| 未 | oracle:Y bronze:Y seal:Y | `未.bronze.svg`<br>`未.oracle.svg`<br>`未.seal.svg` |
+| 温 | oracle:Y bronze:- seal:Y | `温.oracle.svg`<br>`温.seal.svg` |
+| 文 | oracle:Y bronze:Y seal:Y | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
+| 沃 | oracle:- bronze:- seal:Y | `沃.seal.svg` |
+| 武 | oracle:Y bronze:Y seal:Y | `武.bronze.svg`<br>`武.oracle.svg`<br>`武.seal.svg` |
+| 物 | oracle:Y bronze:- seal:Y | `物.oracle.svg`<br>`物.seal.svg` |
+| 悟 | oracle:- bronze:- seal:Y | `悟.seal.svg` |
+| 西 | oracle:Y bronze:Y seal:Y | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
+| 希 | oracle:- bronze:- seal:Y | `希.seal.svg` |
+| 夏 | oracle:Y bronze:Y seal:Y | `夏.bronze.svg`<br>`夏.oracle.svg`<br>`夏.seal.svg` |
+| 香 | oracle:Y bronze:Y seal:Y | `香.bronze.svg`<br>`香.oracle.svg`<br>`香.seal.svg` |
+| 象 | oracle:Y bronze:Y seal:Y | `象.bronze.svg`<br>`象.oracle.svg`<br>`象.seal.svg` |
+| 肖 | oracle:- bronze:Y seal:Y | `肖.bronze.svg`<br>`肖.seal.svg` |
+| 写 | oracle:- bronze:- seal:Y | `写.seal.svg` |
+| 辛 | oracle:Y bronze:Y seal:Y | `辛.bronze.svg`<br>`辛.oracle.svg`<br>`辛.seal.svg` |
+| 行 | oracle:Y bronze:Y seal:Y | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
+| 兴 | oracle:Y bronze:Y seal:Y | `兴.bronze.svg`<br>`兴.oracle.svg`<br>`兴.seal.svg` |
+| 雄 | oracle:- bronze:- seal:Y | `雄.seal.svg` |
+| 雪 | oracle:Y bronze:Y seal:Y | `雪.bronze.svg`<br>`雪.oracle.svg`<br>`雪.seal.svg` |
+| 雅 | oracle:- bronze:- seal:Y | `雅.seal.svg` |
+| 亚 | oracle:Y bronze:Y seal:Y | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
+| 业 | oracle:- bronze:Y seal:Y | `业.bronze.svg`<br>`业.seal.svg` |
+| 伊 | oracle:Y bronze:Y seal:Y | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
+| 遗 | oracle:- bronze:Y seal:Y | `遗.bronze.svg`<br>`遗.seal.svg` |
+| 艺 | oracle:Y bronze:Y seal:Y | `艺.bronze.svg`<br>`艺.oracle.svg`<br>`艺.seal.svg` |
+| 易 | oracle:Y bronze:Y seal:Y | `易.bronze.svg`<br>`易.oracle.svg`<br>`易.seal.svg` |
+| 音 | oracle:- bronze:Y seal:Y | `音.bronze.svg`<br>`音.seal.svg` |
+| 英 | oracle:- bronze:Y seal:Y | `英.bronze.svg`<br>`英.seal.svg` |
+| 原 | oracle:- bronze:Y seal:Y | `原.bronze.svg`<br>`原.seal.svg` |
+| 泽 | oracle:- bronze:- seal:Y | `泽.seal.svg` |
+| 扎 | oracle:- bronze:- seal:Y | `扎.seal.svg` |
+| 斋 | oracle:- bronze:Y seal:Y | `斋.bronze.svg`<br>`斋.seal.svg` |
+| 征 | oracle:Y bronze:Y seal:Y | `征.bronze.svg`<br>`征.oracle.svg`<br>`征.seal.svg` |
+| 制 | oracle:- bronze:Y seal:Y | `制.bronze.svg`<br>`制.seal.svg` |
+| 置 | oracle:Y bronze:- seal:Y | `置.oracle.svg`<br>`置.seal.svg` |
+| 子 | oracle:Y bronze:Y seal:Y | `子.bronze.svg`<br>`子.oracle.svg`<br>`子.seal.svg` |
+| 紫 | oracle:- bronze:Y seal:Y | `紫.bronze.svg`<br>`紫.seal.svg` |
+| 宗 | oracle:Y bronze:Y seal:Y | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
+| 作 | oracle:Y bronze:Y seal:Y | `作.bronze.svg`<br>`作.oracle.svg`<br>`作.seal.svg` |
 
 ## historicmoments
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 史 | oracle:Y bronze:Y seal:Y legacy:- | `史.bronze.svg`<br>`史.oracle.svg`<br>`史.seal.svg` |
+| 史 | oracle:Y bronze:Y seal:Y | `史.bronze.svg`<br>`史.oracle.svg`<br>`史.seal.svg` |
 
 ## improvements
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 耕 | oracle:- bronze:- seal:Y legacy:- | `耕.seal.svg` |
+| 耕 | oracle:- bronze:- seal:Y | `耕.seal.svg` |
 
 ## leaders
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 阿 | oracle:- bronze:Y seal:Y legacy:- | `阿.bronze.svg`<br>`阿.seal.svg` |
-| 埃 | oracle:- bronze:- seal:Y legacy:- | `埃.seal.svg` |
-| 安 | oracle:Y bronze:Y seal:Y legacy:- | `安.bronze.svg`<br>`安.oracle.svg`<br>`安.seal.svg` |
-| 昂 | oracle:- bronze:- seal:Y legacy:- | `昂.seal.svg` |
-| 奥 | oracle:- bronze:- seal:Y legacy:- | `奥.seal.svg` |
-| 澳 | oracle:- bronze:- seal:Y legacy:- | `澳.seal.svg` |
-| 巴 | oracle:Y bronze:- seal:Y legacy:- | `巴.oracle.svg`<br>`巴.seal.svg` |
-| 跋 | oracle:- bronze:- seal:Y legacy:- | `跋.seal.svg` |
-| 白 | oracle:Y bronze:Y seal:Y legacy:- | `白.bronze.svg`<br>`白.oracle.svg`<br>`白.seal.svg` |
-| 拜 | oracle:- bronze:Y seal:Y legacy:- | `拜.bronze.svg`<br>`拜.seal.svg` |
-| 班 | oracle:- bronze:Y seal:Y legacy:- | `班.bronze.svg`<br>`班.seal.svg` |
-| 磅 | oracle:- bronze:- seal:Y legacy:- | `磅.seal.svg` |
-| 堡 | oracle:Y bronze:Y seal:Y legacy:- | `堡.bronze.svg`<br>`堡.oracle.svg`<br>`堡.seal.svg` |
-| 暴 | oracle:Y bronze:Y seal:Y legacy:- | `暴.bronze.svg`<br>`暴.oracle.svg`<br>`暴.seal.svg` |
-| 北 | oracle:Y bronze:Y seal:Y legacy:- | `北.bronze.svg`<br>`北.oracle.svg`<br>`北.seal.svg` |
-| 备 | oracle:Y bronze:Y seal:Y legacy:- | `备.bronze.svg`<br>`备.oracle.svg`<br>`备.seal.svg` |
-| 本 | oracle:- bronze:Y seal:Y legacy:- | `本.bronze.svg`<br>`本.seal.svg` |
-| 比 | oracle:Y bronze:Y seal:Y legacy:- | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
-| 彼 | oracle:- bronze:Y seal:Y legacy:- | `彼.bronze.svg`<br>`彼.seal.svg` |
-| 必 | oracle:Y bronze:Y seal:Y legacy:- | `必.bronze.svg`<br>`必.oracle.svg`<br>`必.seal.svg` |
-| 边 | oracle:Y bronze:Y seal:Y legacy:- | `边.bronze.svg`<br>`边.oracle.svg`<br>`边.seal.svg` |
-| 变 | oracle:- bronze:Y seal:Y legacy:- | `变.bronze.svg`<br>`变.seal.svg` |
-| 病 | oracle:- bronze:- seal:Y legacy:- | `病.seal.svg` |
-| 波 | oracle:- bronze:- seal:Y legacy:- | `波.seal.svg` |
-| 玻 | oracle:- bronze:Y seal:Y legacy:- | `玻.bronze.svg`<br>`玻.seal.svg` |
-| 伯 | oracle:Y bronze:Y seal:Y legacy:- | `伯.bronze.svg`<br>`伯.oracle.svg`<br>`伯.seal.svg` |
-| 布 | oracle:- bronze:Y seal:Y legacy:- | `布.bronze.svg`<br>`布.seal.svg` |
-| 查 | oracle:- bronze:- seal:Y legacy:- | `查.seal.svg` |
-| 场 | oracle:- bronze:- seal:Y legacy:- | `场.seal.svg` |
-| 成 | oracle:Y bronze:Y seal:Y legacy:- | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
-| 池 | oracle:- bronze:Y seal:- legacy:- | `池.bronze.svg` |
-| 川 | oracle:Y bronze:Y seal:Y legacy:- | `川.bronze.svg`<br>`川.oracle.svg`<br>`川.seal.svg` |
-| 茨 | oracle:- bronze:- seal:Y legacy:- | `茨.seal.svg` |
-| 粗 | oracle:- bronze:- seal:Y legacy:- | `粗.seal.svg` |
-| 达 | oracle:Y bronze:- seal:- legacy:- | `达.oracle.svg` |
-| 大 | oracle:Y bronze:Y seal:Y legacy:- | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
-| 代 | oracle:- bronze:- seal:Y legacy:- | `代.seal.svg` |
-| 导 | oracle:- bronze:- seal:Y legacy:- | `导.seal.svg` |
-| 盗 | oracle:Y bronze:Y seal:Y legacy:- | `盗.bronze.svg`<br>`盗.oracle.svg`<br>`盗.seal.svg` |
-| 得 | oracle:Y bronze:Y seal:Y legacy:- | `得.bronze.svg`<br>`得.oracle.svg`<br>`得.seal.svg` |
-| 德 | oracle:Y bronze:Y seal:Y legacy:- | `德.bronze.svg`<br>`德.oracle.svg`<br>`德.seal.svg` |
-| 地 | oracle:- bronze:Y seal:Y legacy:- | `地.bronze.svg`<br>`地.seal.svg` |
-| 狄 | oracle:- bronze:Y seal:Y legacy:- | `狄.bronze.svg`<br>`狄.seal.svg` |
-| 迪 | oracle:- bronze:- seal:Y legacy:- | `迪.seal.svg` |
-| 帝 | oracle:Y bronze:Y seal:Y legacy:- | `帝.bronze.svg`<br>`帝.oracle.svg`<br>`帝.seal.svg` |
-| 蒂 | oracle:- bronze:- seal:Y legacy:- | `蒂.seal.svg` |
-| 丁 | oracle:Y bronze:Y seal:Y legacy:- | `丁.bronze.svg`<br>`丁.oracle.svg`<br>`丁.seal.svg` |
-| 动 | oracle:- bronze:Y seal:Y legacy:- | `动.bronze.svg`<br>`动.seal.svg` |
-| 阇 | oracle:- bronze:- seal:Y legacy:- | `阇.seal.svg` |
-| 度 | oracle:Y bronze:Y seal:Y legacy:- | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
-| 囤 | oracle:- bronze:- seal:Y legacy:- | `囤.seal.svg` |
-| 顿 | oracle:- bronze:- seal:Y legacy:- | `顿.seal.svg` |
-| 多 | oracle:Y bronze:Y seal:Y legacy:- | `多.bronze.svg`<br>`多.oracle.svg`<br>`多.seal.svg` |
-| 俄 | oracle:- bronze:- seal:Y legacy:- | `俄.seal.svg` |
-| 鹅 | oracle:- bronze:- seal:Y legacy:- | `鹅.seal.svg` |
-| 厄 | oracle:- bronze:Y seal:Y legacy:- | `厄.bronze.svg`<br>`厄.seal.svg` |
-| 恩 | oracle:- bronze:- seal:Y legacy:- | `恩.seal.svg` |
-| 尔 | oracle:- bronze:Y seal:Y legacy:- | `尔.bronze.svg`<br>`尔.seal.svg` |
-| 二 | oracle:Y bronze:Y seal:Y legacy:- | `二.bronze.svg`<br>`二.oracle.svg`<br>`二.seal.svg` |
-| 法 | oracle:- bronze:Y seal:Y legacy:- | `法.bronze.svg`<br>`法.seal.svg` |
-| 番 | oracle:- bronze:Y seal:Y legacy:- | `番.bronze.svg`<br>`番.seal.svg` |
-| 菲 | oracle:- bronze:- seal:Y legacy:- | `菲.seal.svg` |
-| 夫 | oracle:Y bronze:Y seal:Y legacy:- | `夫.bronze.svg`<br>`夫.oracle.svg`<br>`夫.seal.svg` |
-| 福 | oracle:- bronze:Y seal:Y legacy:- | `福.bronze.svg`<br>`福.seal.svg` |
-| 甘 | oracle:Y bronze:Y seal:Y legacy:- | `甘.bronze.svg`<br>`甘.oracle.svg`<br>`甘.seal.svg` |
-| 刚 | oracle:Y bronze:Y seal:Y legacy:- | `刚.bronze.svg`<br>`刚.oracle.svg`<br>`刚.seal.svg` |
-| 高 | oracle:Y bronze:Y seal:Y legacy:- | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
-| 膏 | oracle:Y bronze:- seal:Y legacy:- | `膏.oracle.svg`<br>`膏.seal.svg` |
-| 戈 | oracle:Y bronze:Y seal:Y legacy:- | `戈.bronze.svg`<br>`戈.oracle.svg`<br>`戈.seal.svg` |
-| 哥 | oracle:- bronze:- seal:Y legacy:- | `哥.seal.svg` |
-| 格 | oracle:- bronze:Y seal:Y legacy:- | `格.bronze.svg`<br>`格.seal.svg` |
-| 工 | oracle:Y bronze:Y seal:Y legacy:- | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
-| 公 | oracle:Y bronze:Y seal:Y legacy:- | `公.bronze.svg`<br>`公.oracle.svg`<br>`公.seal.svg` |
-| 古 | oracle:Y bronze:Y seal:Y legacy:- | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
-| 国 | oracle:- bronze:Y seal:Y legacy:- | `国.bronze.svg`<br>`国.seal.svg` |
-| 果 | oracle:- bronze:Y seal:Y legacy:- | `果.bronze.svg`<br>`果.seal.svg` |
-| 哈 | oracle:- bronze:- seal:Y legacy:- | `哈.seal.svg` |
-| 海 | oracle:- bronze:Y seal:Y legacy:- | `海.bronze.svg`<br>`海.seal.svg` |
-| 韩 | oracle:- bronze:Y seal:Y legacy:- | `韩.bronze.svg`<br>`韩.seal.svg` |
-| 罕 | oracle:- bronze:- seal:Y legacy:- | `罕.seal.svg` |
-| 汉 | oracle:- bronze:Y seal:Y legacy:- | `汉.bronze.svg`<br>`汉.seal.svg` |
-| 汗 | oracle:- bronze:- seal:Y legacy:- | `汗.seal.svg` |
-| 翰 | oracle:- bronze:- seal:Y legacy:- | `翰.seal.svg` |
-| 号 | oracle:- bronze:Y seal:Y legacy:- | `号.bronze.svg`<br>`号.seal.svg` |
-| 荷 | oracle:- bronze:- seal:Y legacy:- | `荷.seal.svg` |
-| 赫 | oracle:- bronze:- seal:Y legacy:- | `赫.seal.svg` |
-| 黑 | oracle:Y bronze:Y seal:Y legacy:- | `黑.bronze.svg`<br>`黑.oracle.svg`<br>`黑.seal.svg` |
-| 忽 | oracle:- bronze:Y seal:Y legacy:- | `忽.bronze.svg`<br>`忽.seal.svg` |
-| 化 | oracle:Y bronze:Y seal:Y legacy:- | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
-| 皇 | oracle:Y bronze:Y seal:Y legacy:- | `皇.bronze.svg`<br>`皇.oracle.svg`<br>`皇.seal.svg` |
-| 机 | oracle:- bronze:- seal:Y legacy:- | `机.seal.svg` |
-| 积 | oracle:- bronze:Y seal:Y legacy:- | `积.bronze.svg`<br>`积.seal.svg` |
-| 基 | oracle:Y bronze:Y seal:Y legacy:- | `基.bronze.svg`<br>`基.oracle.svg`<br>`基.seal.svg` |
-| 吉 | oracle:Y bronze:Y seal:Y legacy:- | `吉.bronze.svg`<br>`吉.oracle.svg`<br>`吉.seal.svg` |
-| 笈 | oracle:- bronze:- seal:Y legacy:- | `笈.seal.svg` |
-| 加 | oracle:- bronze:Y seal:Y legacy:- | `加.bronze.svg`<br>`加.seal.svg` |
-| 伽 | oracle:- bronze:- seal:Y legacy:- | `伽.seal.svg` |
-| 家 | oracle:Y bronze:Y seal:Y legacy:- | `家.bronze.svg`<br>`家.oracle.svg`<br>`家.seal.svg` |
-| 贾 | oracle:Y bronze:Y seal:Y legacy:- | `贾.bronze.svg`<br>`贾.oracle.svg`<br>`贾.seal.svg` |
-| 坚 | oracle:- bronze:- seal:Y legacy:- | `坚.seal.svg` |
-| 舰 | oracle:- bronze:- seal:Y legacy:- | `舰.seal.svg` |
-| 教 | oracle:Y bronze:Y seal:Y legacy:- | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
-| 津 | oracle:- bronze:Y seal:Y legacy:- | `津.bronze.svg`<br>`津.seal.svg` |
-| 京 | oracle:Y bronze:Y seal:Y legacy:- | `京.bronze.svg`<br>`京.oracle.svg`<br>`京.seal.svg` |
-| 景 | oracle:- bronze:- seal:Y legacy:- | `景.seal.svg` |
-| 惧 | oracle:- bronze:Y seal:Y legacy:- | `惧.bronze.svg`<br>`惧.seal.svg` |
-| 军 | oracle:- bronze:Y seal:Y legacy:- | `军.bronze.svg`<br>`军.seal.svg` |
-| 君 | oracle:Y bronze:Y seal:Y legacy:- | `君.bronze.svg`<br>`君.oracle.svg`<br>`君.seal.svg` |
-| 菌 | oracle:- bronze:- seal:Y legacy:- | `菌.seal.svg` |
-| 卡 | oracle:- bronze:- seal:Y legacy:- | `卡.seal.svg` |
-| 凯 | oracle:- bronze:- seal:Y legacy:- | `凯.seal.svg` |
-| 科 | oracle:- bronze:- seal:Y legacy:- | `科.seal.svg` |
-| 克 | oracle:Y bronze:Y seal:Y legacy:- | `克.bronze.svg`<br>`克.oracle.svg`<br>`克.seal.svg` |
-| 肯 | oracle:- bronze:- seal:Y legacy:- | `肯.seal.svg` |
-| 空 | oracle:- bronze:Y seal:Y legacy:- | `空.bronze.svg`<br>`空.seal.svg` |
-| 恐 | oracle:- bronze:Y seal:Y legacy:- | `恐.bronze.svg`<br>`恐.seal.svg` |
-| 库 | oracle:- bronze:Y seal:Y legacy:- | `库.bronze.svg`<br>`库.seal.svg` |
-| 昆 | oracle:- bronze:Y seal:Y legacy:- | `昆.bronze.svg`<br>`昆.seal.svg` |
-| 扩 | oracle:- bronze:- seal:Y legacy:- | `扩.seal.svg` |
-| 拉 | oracle:- bronze:- seal:Y legacy:- | `拉.seal.svg` |
-| 莱 | oracle:- bronze:- seal:Y legacy:- | `莱.seal.svg` |
-| 兰 | oracle:- bronze:- seal:Y legacy:- | `兰.seal.svg` |
-| 浪 | oracle:- bronze:- seal:Y legacy:- | `浪.seal.svg` |
-| 劳 | oracle:Y bronze:Y seal:Y legacy:- | `劳.bronze.svg`<br>`劳.oracle.svg`<br>`劳.seal.svg` |
-| 乐 | oracle:Y bronze:Y seal:Y legacy:- | `乐.bronze.svg`<br>`乐.oracle.svg`<br>`乐.seal.svg` |
-| 勒 | oracle:- bronze:Y seal:Y legacy:- | `勒.bronze.svg`<br>`勒.seal.svg` |
-| 里 | oracle:- bronze:Y seal:Y legacy:- | `里.bronze.svg`<br>`里.seal.svg` |
-| 理 | oracle:- bronze:Y seal:Y legacy:- | `理.bronze.svg`<br>`理.seal.svg` |
-| 历 | oracle:- bronze:- seal:Y legacy:- | `历.seal.svg` |
-| 丽 | oracle:Y bronze:Y seal:Y legacy:- | `丽.bronze.svg`<br>`丽.oracle.svg`<br>`丽.seal.svg` |
-| 利 | oracle:Y bronze:Y seal:Y legacy:- | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
-| 莉 | oracle:Y bronze:Y seal:Y legacy:- | `莉.bronze.svg`<br>`莉.oracle.svg`<br>`莉.seal.svg` |
-| 廉 | oracle:- bronze:- seal:Y legacy:- | `廉.seal.svg` |
-| 烈 | oracle:- bronze:- seal:Y legacy:- | `烈.seal.svg` |
-| 林 | oracle:Y bronze:Y seal:Y legacy:- | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
-| 琳 | oracle:- bronze:- seal:Y legacy:- | `琳.seal.svg` |
-| 领 | oracle:- bronze:- seal:Y legacy:- | `领.seal.svg` |
-| 另 | oracle:- bronze:- seal:Y legacy:- | `另.seal.svg` |
-| 流 | oracle:- bronze:Y seal:Y legacy:- | `流.bronze.svg`<br>`流.seal.svg` |
-| 六 | oracle:Y bronze:Y seal:Y legacy:- | `六.bronze.svg`<br>`六.oracle.svg`<br>`六.seal.svg` |
-| 卢 | oracle:Y bronze:Y seal:Y legacy:- | `卢.bronze.svg`<br>`卢.oracle.svg`<br>`卢.seal.svg` |
-| 鲁 | oracle:Y bronze:Y seal:Y legacy:- | `鲁.bronze.svg`<br>`鲁.oracle.svg`<br>`鲁.seal.svg` |
-| 路 | oracle:- bronze:Y seal:Y legacy:- | `路.bronze.svg`<br>`路.seal.svg` |
-| 掠 | oracle:- bronze:- seal:Y legacy:- | `掠.seal.svg` |
-| 伦 | oracle:- bronze:- seal:Y legacy:- | `伦.seal.svg` |
-| 罗 | oracle:Y bronze:Y seal:Y legacy:- | `罗.bronze.svg`<br>`罗.oracle.svg`<br>`罗.seal.svg` |
-| 洛 | oracle:- bronze:Y seal:Y legacy:- | `洛.bronze.svg`<br>`洛.seal.svg` |
-| 马 | oracle:Y bronze:Y seal:Y legacy:- | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
-| 玛 | oracle:Y bronze:Y seal:Y legacy:- | `玛.bronze.svg`<br>`玛.oracle.svg`<br>`玛.seal.svg` |
-| 蛮 | oracle:- bronze:Y seal:Y legacy:- | `蛮.bronze.svg`<br>`蛮.seal.svg` |
-| 曼 | oracle:Y bronze:Y seal:Y legacy:- | `曼.bronze.svg`<br>`曼.oracle.svg`<br>`曼.seal.svg` |
-| 贸 | oracle:- bronze:Y seal:Y legacy:- | `贸.bronze.svg`<br>`贸.seal.svg` |
-| 梅 | oracle:- bronze:Y seal:Y legacy:- | `梅.bronze.svg`<br>`梅.seal.svg` |
-| 美 | oracle:Y bronze:Y seal:Y legacy:- | `美.bronze.svg`<br>`美.oracle.svg`<br>`美.seal.svg` |
-| 蒙 | oracle:- bronze:Y seal:Y legacy:- | `蒙.bronze.svg`<br>`蒙.seal.svg` |
-| 米 | oracle:Y bronze:- seal:Y legacy:- | `米.oracle.svg`<br>`米.seal.svg` |
-| 棉 | oracle:- bronze:- seal:Y legacy:- | `棉.seal.svg` |
-| 民 | oracle:Y bronze:Y seal:Y legacy:- | `民.bronze.svg`<br>`民.oracle.svg`<br>`民.seal.svg` |
-| 明 | oracle:Y bronze:Y seal:Y legacy:- | `明.bronze.svg`<br>`明.oracle.svg`<br>`明.seal.svg` |
-| 谟 | oracle:- bronze:- seal:Y legacy:- | `谟.seal.svg` |
-| 摩 | oracle:- bronze:- seal:Y legacy:- | `摩.seal.svg` |
-| 姆 | oracle:- bronze:Y seal:Y legacy:- | `姆.bronze.svg`<br>`姆.seal.svg` |
-| 穆 | oracle:Y bronze:Y seal:Y legacy:- | `穆.bronze.svg`<br>`穆.oracle.svg`<br>`穆.seal.svg` |
-| 纳 | oracle:- bronze:Y seal:Y legacy:- | `纳.bronze.svg`<br>`纳.seal.svg` |
-| 娜 | oracle:- bronze:- seal:Y legacy:- | `娜.seal.svg` |
-| 南 | oracle:Y bronze:Y seal:Y legacy:- | `南.bronze.svg`<br>`南.oracle.svg`<br>`南.seal.svg` |
-| 尼 | oracle:- bronze:- seal:Y legacy:- | `尼.seal.svg` |
-| 努 | oracle:- bronze:- seal:Y legacy:- | `努.seal.svg` |
-| 女 | oracle:Y bronze:Y seal:Y legacy:- | `女.bronze.svg`<br>`女.oracle.svg`<br>`女.seal.svg` |
-| 诺 | oracle:- bronze:Y seal:Y legacy:- | `诺.bronze.svg`<br>`诺.seal.svg` |
-| 帕 | oracle:- bronze:- seal:Y legacy:- | `帕.seal.svg` |
-| 佩 | oracle:- bronze:Y seal:Y legacy:- | `佩.bronze.svg`<br>`佩.seal.svg` |
-| 品 | oracle:Y bronze:Y seal:Y legacy:- | `品.bronze.svg`<br>`品.oracle.svg`<br>`品.seal.svg` |
-| 葡 | oracle:Y bronze:Y seal:Y legacy:- | `葡.bronze.svg`<br>`葡.oracle.svg`<br>`葡.seal.svg` |
-| 普 | oracle:- bronze:- seal:Y legacy:- | `普.seal.svg` |
-| 齐 | oracle:Y bronze:Y seal:Y legacy:- | `齐.bronze.svg`<br>`齐.oracle.svg`<br>`齐.seal.svg` |
-| 其 | oracle:Y bronze:Y seal:Y legacy:- | `其.bronze.svg`<br>`其.oracle.svg`<br>`其.seal.svg` |
-| 奇 | oracle:- bronze:- seal:Y legacy:- | `奇.seal.svg` |
-| 骑 | oracle:- bronze:Y seal:Y legacy:- | `骑.bronze.svg`<br>`骑.seal.svg` |
-| 器 | oracle:- bronze:Y seal:Y legacy:- | `器.bronze.svg`<br>`器.seal.svg` |
-| 乔 | oracle:- bronze:Y seal:Y legacy:- | `乔.bronze.svg`<br>`乔.seal.svg` |
-| 秦 | oracle:Y bronze:Y seal:Y legacy:- | `秦.bronze.svg`<br>`秦.oracle.svg`<br>`秦.seal.svg` |
-| 琴 | oracle:- bronze:- seal:Y legacy:- | `琴.seal.svg` |
-| 情 | oracle:- bronze:- seal:Y legacy:- | `情.seal.svg` |
-| 人 | oracle:Y bronze:Y seal:Y legacy:- | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
-| 日 | oracle:Y bronze:Y seal:Y legacy:- | `日.bronze.svg`<br>`日.oracle.svg`<br>`日.seal.svg` |
-| 若 | oracle:Y bronze:Y seal:Y legacy:- | `若.bronze.svg`<br>`若.oracle.svg`<br>`若.seal.svg` |
-| 撒 | oracle:- bronze:- seal:Y legacy:- | `撒.seal.svg` |
-| 萨 | oracle:- bronze:- seal:Y legacy:- | `萨.seal.svg` |
-| 塞 | oracle:Y bronze:- seal:Y legacy:- | `塞.oracle.svg`<br>`塞.seal.svg` |
-| 赛 | oracle:- bronze:- seal:Y legacy:- | `赛.seal.svg` |
-| 三 | oracle:Y bronze:Y seal:Y legacy:- | `三.bronze.svg`<br>`三.oracle.svg`<br>`三.seal.svg` |
-| 瑟 | oracle:- bronze:- seal:Y legacy:- | `瑟.seal.svg` |
-| 森 | oracle:Y bronze:- seal:Y legacy:- | `森.oracle.svg`<br>`森.seal.svg` |
-| 沙 | oracle:- bronze:Y seal:Y legacy:- | `沙.bronze.svg`<br>`沙.seal.svg` |
-| 莎 | oracle:- bronze:- seal:Y legacy:- | `莎.seal.svg` |
-| 山 | oracle:Y bronze:Y seal:Y legacy:- | `山.bronze.svg`<br>`山.oracle.svg`<br>`山.seal.svg` |
-| 善 | oracle:- bronze:Y seal:Y legacy:- | `善.bronze.svg`<br>`善.seal.svg` |
-| 商 | oracle:Y bronze:Y seal:Y legacy:- | `商.bronze.svg`<br>`商.oracle.svg`<br>`商.seal.svg` |
-| 什 | oracle:- bronze:- seal:Y legacy:- | `什.seal.svg` |
-| 神 | oracle:- bronze:Y seal:Y legacy:- | `神.bronze.svg`<br>`神.seal.svg` |
-| 声 | oracle:Y bronze:- seal:Y legacy:- | `声.oracle.svg`<br>`声.seal.svg` |
-| 圣 | oracle:Y bronze:Y seal:Y legacy:- | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
-| 时 | oracle:- bronze:Y seal:Y legacy:- | `时.bronze.svg`<br>`时.seal.svg` |
-| 士 | oracle:- bronze:Y seal:Y legacy:- | `士.bronze.svg`<br>`士.seal.svg` |
-| 世 | oracle:- bronze:Y seal:Y legacy:- | `世.bronze.svg`<br>`世.seal.svg` |
-| 势 | oracle:- bronze:- seal:Y legacy:- | `势.seal.svg` |
-| 私 | oracle:- bronze:Y seal:Y legacy:- | `私.bronze.svg`<br>`私.seal.svg` |
-| 思 | oracle:- bronze:Y seal:Y legacy:- | `思.bronze.svg`<br>`思.seal.svg` |
-| 斯 | oracle:- bronze:Y seal:Y legacy:- | `斯.bronze.svg`<br>`斯.seal.svg` |
-| 死 | oracle:Y bronze:Y seal:Y legacy:- | `死.bronze.svg`<br>`死.oracle.svg`<br>`死.seal.svg` |
-| 松 | oracle:- bronze:Y seal:Y legacy:- | `松.bronze.svg`<br>`松.seal.svg` |
-| 苏 | oracle:- bronze:Y seal:Y legacy:- | `苏.bronze.svg`<br>`苏.seal.svg` |
-| 随 | oracle:- bronze:- seal:Y legacy:- | `随.seal.svg` |
-| 塔 | oracle:- bronze:- seal:Y legacy:- | `塔.seal.svg` |
-| 萄 | oracle:- bronze:- seal:Y legacy:- | `萄.seal.svg` |
-| 特 | oracle:- bronze:- seal:Y legacy:- | `特.seal.svg` |
-| 体 | oracle:- bronze:Y seal:Y legacy:- | `体.bronze.svg`<br>`体.seal.svg` |
-| 替 | oracle:Y bronze:Y seal:Y legacy:- | `替.bronze.svg`<br>`替.oracle.svg`<br>`替.seal.svg` |
-| 天 | oracle:Y bronze:Y seal:Y legacy:- | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
-| 添 | oracle:- bronze:- seal:Y legacy:- | `添.seal.svg` |
-| 条 | oracle:- bronze:- seal:Y legacy:- | `条.seal.svg` |
-| 廷 | oracle:- bronze:Y seal:Y legacy:- | `廷.bronze.svg`<br>`廷.seal.svg` |
-| 庭 | oracle:- bronze:Y seal:Y legacy:- | `庭.bronze.svg`<br>`庭.seal.svg` |
-| 突 | oracle:Y bronze:- seal:Y legacy:- | `突.oracle.svg`<br>`突.seal.svg` |
-| 图 | oracle:- bronze:Y seal:Y legacy:- | `图.bronze.svg`<br>`图.seal.svg` |
-| 徒 | oracle:Y bronze:Y seal:Y legacy:- | `徒.bronze.svg`<br>`徒.oracle.svg`<br>`徒.seal.svg` |
-| 吐 | oracle:- bronze:- seal:Y legacy:- | `吐.seal.svg` |
-| 托 | oracle:Y bronze:Y seal:Y legacy:- | `托.bronze.svg`<br>`托.oracle.svg`<br>`托.seal.svg` |
-| 陀 | oracle:- bronze:Y seal:Y legacy:- | `陀.bronze.svg`<br>`陀.seal.svg` |
-| 瓦 | oracle:- bronze:- seal:Y legacy:- | `瓦.seal.svg` |
-| 威 | oracle:- bronze:Y seal:Y legacy:- | `威.bronze.svg`<br>`威.seal.svg` |
-| 维 | oracle:- bronze:Y seal:Y legacy:- | `维.bronze.svg`<br>`维.seal.svg` |
-| 伟 | oracle:- bronze:- seal:Y legacy:- | `伟.seal.svg` |
-| 文 | oracle:Y bronze:Y seal:Y legacy:- | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
-| 武 | oracle:Y bronze:Y seal:Y legacy:- | `武.bronze.svg`<br>`武.oracle.svg`<br>`武.seal.svg` |
-| 西 | oracle:Y bronze:Y seal:Y legacy:- | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
-| 希 | oracle:- bronze:- seal:Y legacy:- | `希.seal.svg` |
-| 悉 | oracle:- bronze:- seal:Y legacy:- | `悉.seal.svg` |
-| 邪 | oracle:- bronze:Y seal:Y legacy:- | `邪.bronze.svg`<br>`邪.seal.svg` |
-| 袖 | oracle:- bronze:- seal:Y legacy:- | `袖.seal.svg` |
-| 虚 | oracle:- bronze:- seal:Y legacy:- | `虚.seal.svg` |
-| 学 | oracle:Y bronze:Y seal:Y legacy:- | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
-| 牙 | oracle:- bronze:Y seal:Y legacy:- | `牙.bronze.svg`<br>`牙.seal.svg` |
-| 雅 | oracle:- bronze:- seal:Y legacy:- | `雅.seal.svg` |
-| 亚 | oracle:Y bronze:Y seal:Y legacy:- | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
-| 艳 | oracle:- bronze:- seal:Y legacy:- | `艳.seal.svg` |
-| 耶 | oracle:- bronze:Y seal:Y legacy:- | `耶.bronze.svg`<br>`耶.seal.svg` |
-| 野 | oracle:Y bronze:Y seal:Y legacy:- | `野.bronze.svg`<br>`野.oracle.svg`<br>`野.seal.svg` |
-| 业 | oracle:- bronze:Y seal:Y legacy:- | `业.bronze.svg`<br>`业.seal.svg` |
-| 叶 | oracle:- bronze:Y seal:Y legacy:- | `叶.bronze.svg`<br>`叶.seal.svg` |
-| 伊 | oracle:Y bronze:Y seal:Y legacy:- | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
-| 义 | oracle:Y bronze:Y seal:Y legacy:- | `义.bronze.svg`<br>`义.oracle.svg`<br>`义.seal.svg` |
-| 易 | oracle:Y bronze:Y seal:Y legacy:- | `易.bronze.svg`<br>`易.oracle.svg`<br>`易.seal.svg` |
-| 印 | oracle:Y bronze:Y seal:Y legacy:- | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
-| 英 | oracle:- bronze:Y seal:Y legacy:- | `英.bronze.svg`<br>`英.seal.svg` |
-| 永 | oracle:Y bronze:Y seal:Y legacy:- | `永.bronze.svg`<br>`永.oracle.svg`<br>`永.seal.svg` |
-| 用 | oracle:Y bronze:Y seal:Y legacy:- | `用.bronze.svg`<br>`用.oracle.svg`<br>`用.seal.svg` |
-| 语 | oracle:- bronze:Y seal:Y legacy:- | `语.bronze.svg`<br>`语.seal.svg` |
-| 员 | oracle:Y bronze:Y seal:Y legacy:- | `员.bronze.svg`<br>`员.oracle.svg`<br>`员.seal.svg` |
-| 缘 | oracle:- bronze:- seal:Y legacy:- | `缘.seal.svg` |
-| 约 | oracle:- bronze:- seal:Y legacy:- | `约.seal.svg` |
-| 越 | oracle:- bronze:Y seal:Y legacy:- | `越.bronze.svg`<br>`越.seal.svg` |
-| 运 | oracle:- bronze:- seal:Y legacy:- | `运.seal.svg` |
-| 造 | oracle:- bronze:Y seal:Y legacy:- | `造.bronze.svg`<br>`造.seal.svg` |
-| 则 | oracle:- bronze:Y seal:Y legacy:- | `则.bronze.svg`<br>`则.seal.svg` |
-| 旃 | oracle:- bronze:Y seal:Y legacy:- | `旃.bronze.svg`<br>`旃.seal.svg` |
-| 占 | oracle:Y bronze:- seal:Y legacy:- | `占.oracle.svg`<br>`占.seal.svg` |
-| 战 | oracle:- bronze:Y seal:Y legacy:- | `战.bronze.svg`<br>`战.seal.svg` |
-| 张 | oracle:- bronze:Y seal:Y legacy:- | `张.bronze.svg`<br>`张.seal.svg` |
-| 真 | oracle:- bronze:Y seal:Y legacy:- | `真.bronze.svg`<br>`真.seal.svg` |
-| 争 | oracle:Y bronze:- seal:Y legacy:- | `争.oracle.svg`<br>`争.seal.svg` |
-| 制 | oracle:- bronze:Y seal:Y legacy:- | `制.bronze.svg`<br>`制.seal.svg` |
-| 朱 | oracle:Y bronze:Y seal:Y legacy:- | `朱.bronze.svg`<br>`朱.oracle.svg`<br>`朱.seal.svg` |
-| 主 | oracle:Y bronze:- seal:Y legacy:- | `主.oracle.svg`<br>`主.seal.svg` |
-| 准 | oracle:- bronze:- seal:Y legacy:- | `准.seal.svg` |
-| 兹 | oracle:Y bronze:Y seal:Y legacy:- | `兹.bronze.svg`<br>`兹.oracle.svg`<br>`兹.seal.svg` |
-| 宗 | oracle:Y bronze:Y seal:Y legacy:- | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
+| 阿 | oracle:- bronze:Y seal:Y | `阿.bronze.svg`<br>`阿.seal.svg` |
+| 埃 | oracle:- bronze:- seal:Y | `埃.seal.svg` |
+| 安 | oracle:Y bronze:Y seal:Y | `安.bronze.svg`<br>`安.oracle.svg`<br>`安.seal.svg` |
+| 昂 | oracle:- bronze:- seal:Y | `昂.seal.svg` |
+| 奥 | oracle:- bronze:- seal:Y | `奥.seal.svg` |
+| 澳 | oracle:- bronze:- seal:Y | `澳.seal.svg` |
+| 巴 | oracle:Y bronze:- seal:Y | `巴.oracle.svg`<br>`巴.seal.svg` |
+| 跋 | oracle:- bronze:- seal:Y | `跋.seal.svg` |
+| 白 | oracle:Y bronze:Y seal:Y | `白.bronze.svg`<br>`白.oracle.svg`<br>`白.seal.svg` |
+| 拜 | oracle:- bronze:Y seal:Y | `拜.bronze.svg`<br>`拜.seal.svg` |
+| 班 | oracle:- bronze:Y seal:Y | `班.bronze.svg`<br>`班.seal.svg` |
+| 磅 | oracle:- bronze:- seal:Y | `磅.seal.svg` |
+| 堡 | oracle:Y bronze:Y seal:Y | `堡.bronze.svg`<br>`堡.oracle.svg`<br>`堡.seal.svg` |
+| 暴 | oracle:Y bronze:Y seal:Y | `暴.bronze.svg`<br>`暴.oracle.svg`<br>`暴.seal.svg` |
+| 北 | oracle:Y bronze:Y seal:Y | `北.bronze.svg`<br>`北.oracle.svg`<br>`北.seal.svg` |
+| 备 | oracle:Y bronze:Y seal:Y | `备.bronze.svg`<br>`备.oracle.svg`<br>`备.seal.svg` |
+| 本 | oracle:- bronze:Y seal:Y | `本.bronze.svg`<br>`本.seal.svg` |
+| 比 | oracle:Y bronze:Y seal:Y | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
+| 彼 | oracle:- bronze:Y seal:Y | `彼.bronze.svg`<br>`彼.seal.svg` |
+| 必 | oracle:Y bronze:Y seal:Y | `必.bronze.svg`<br>`必.oracle.svg`<br>`必.seal.svg` |
+| 边 | oracle:Y bronze:Y seal:Y | `边.bronze.svg`<br>`边.oracle.svg`<br>`边.seal.svg` |
+| 变 | oracle:- bronze:Y seal:Y | `变.bronze.svg`<br>`变.seal.svg` |
+| 病 | oracle:- bronze:- seal:Y | `病.seal.svg` |
+| 波 | oracle:- bronze:- seal:Y | `波.seal.svg` |
+| 玻 | oracle:- bronze:Y seal:Y | `玻.bronze.svg`<br>`玻.seal.svg` |
+| 伯 | oracle:Y bronze:Y seal:Y | `伯.bronze.svg`<br>`伯.oracle.svg`<br>`伯.seal.svg` |
+| 布 | oracle:- bronze:Y seal:Y | `布.bronze.svg`<br>`布.seal.svg` |
+| 查 | oracle:- bronze:- seal:Y | `查.seal.svg` |
+| 场 | oracle:- bronze:- seal:Y | `场.seal.svg` |
+| 成 | oracle:Y bronze:Y seal:Y | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
+| 池 | oracle:- bronze:Y seal:- | `池.bronze.svg` |
+| 川 | oracle:Y bronze:Y seal:Y | `川.bronze.svg`<br>`川.oracle.svg`<br>`川.seal.svg` |
+| 茨 | oracle:- bronze:- seal:Y | `茨.seal.svg` |
+| 粗 | oracle:- bronze:- seal:Y | `粗.seal.svg` |
+| 达 | oracle:Y bronze:- seal:- | `达.oracle.svg` |
+| 大 | oracle:Y bronze:Y seal:Y | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
+| 代 | oracle:- bronze:- seal:Y | `代.seal.svg` |
+| 导 | oracle:- bronze:- seal:Y | `导.seal.svg` |
+| 盗 | oracle:Y bronze:Y seal:Y | `盗.bronze.svg`<br>`盗.oracle.svg`<br>`盗.seal.svg` |
+| 得 | oracle:Y bronze:Y seal:Y | `得.bronze.svg`<br>`得.oracle.svg`<br>`得.seal.svg` |
+| 德 | oracle:Y bronze:Y seal:Y | `德.bronze.svg`<br>`德.oracle.svg`<br>`德.seal.svg` |
+| 地 | oracle:- bronze:Y seal:Y | `地.bronze.svg`<br>`地.seal.svg` |
+| 狄 | oracle:- bronze:Y seal:Y | `狄.bronze.svg`<br>`狄.seal.svg` |
+| 迪 | oracle:- bronze:- seal:Y | `迪.seal.svg` |
+| 帝 | oracle:Y bronze:Y seal:Y | `帝.bronze.svg`<br>`帝.oracle.svg`<br>`帝.seal.svg` |
+| 蒂 | oracle:- bronze:- seal:Y | `蒂.seal.svg` |
+| 丁 | oracle:Y bronze:Y seal:Y | `丁.bronze.svg`<br>`丁.oracle.svg`<br>`丁.seal.svg` |
+| 动 | oracle:- bronze:Y seal:Y | `动.bronze.svg`<br>`动.seal.svg` |
+| 阇 | oracle:- bronze:- seal:Y | `阇.seal.svg` |
+| 度 | oracle:Y bronze:Y seal:Y | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
+| 囤 | oracle:- bronze:- seal:Y | `囤.seal.svg` |
+| 顿 | oracle:- bronze:- seal:Y | `顿.seal.svg` |
+| 多 | oracle:Y bronze:Y seal:Y | `多.bronze.svg`<br>`多.oracle.svg`<br>`多.seal.svg` |
+| 俄 | oracle:- bronze:- seal:Y | `俄.seal.svg` |
+| 鹅 | oracle:- bronze:- seal:Y | `鹅.seal.svg` |
+| 厄 | oracle:- bronze:Y seal:Y | `厄.bronze.svg`<br>`厄.seal.svg` |
+| 恩 | oracle:- bronze:- seal:Y | `恩.seal.svg` |
+| 尔 | oracle:- bronze:Y seal:Y | `尔.bronze.svg`<br>`尔.seal.svg` |
+| 二 | oracle:Y bronze:Y seal:Y | `二.bronze.svg`<br>`二.oracle.svg`<br>`二.seal.svg` |
+| 法 | oracle:- bronze:Y seal:Y | `法.bronze.svg`<br>`法.seal.svg` |
+| 番 | oracle:- bronze:Y seal:Y | `番.bronze.svg`<br>`番.seal.svg` |
+| 菲 | oracle:- bronze:- seal:Y | `菲.seal.svg` |
+| 夫 | oracle:Y bronze:Y seal:Y | `夫.bronze.svg`<br>`夫.oracle.svg`<br>`夫.seal.svg` |
+| 福 | oracle:- bronze:Y seal:Y | `福.bronze.svg`<br>`福.seal.svg` |
+| 甘 | oracle:Y bronze:Y seal:Y | `甘.bronze.svg`<br>`甘.oracle.svg`<br>`甘.seal.svg` |
+| 刚 | oracle:Y bronze:Y seal:Y | `刚.bronze.svg`<br>`刚.oracle.svg`<br>`刚.seal.svg` |
+| 高 | oracle:Y bronze:Y seal:Y | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
+| 膏 | oracle:Y bronze:- seal:Y | `膏.oracle.svg`<br>`膏.seal.svg` |
+| 戈 | oracle:Y bronze:Y seal:Y | `戈.bronze.svg`<br>`戈.oracle.svg`<br>`戈.seal.svg` |
+| 哥 | oracle:- bronze:- seal:Y | `哥.seal.svg` |
+| 格 | oracle:- bronze:Y seal:Y | `格.bronze.svg`<br>`格.seal.svg` |
+| 工 | oracle:Y bronze:Y seal:Y | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
+| 公 | oracle:Y bronze:Y seal:Y | `公.bronze.svg`<br>`公.oracle.svg`<br>`公.seal.svg` |
+| 古 | oracle:Y bronze:Y seal:Y | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
+| 国 | oracle:- bronze:Y seal:Y | `国.bronze.svg`<br>`国.seal.svg` |
+| 果 | oracle:- bronze:Y seal:Y | `果.bronze.svg`<br>`果.seal.svg` |
+| 哈 | oracle:- bronze:- seal:Y | `哈.seal.svg` |
+| 海 | oracle:- bronze:Y seal:Y | `海.bronze.svg`<br>`海.seal.svg` |
+| 韩 | oracle:- bronze:Y seal:Y | `韩.bronze.svg`<br>`韩.seal.svg` |
+| 罕 | oracle:- bronze:- seal:Y | `罕.seal.svg` |
+| 汉 | oracle:- bronze:Y seal:Y | `汉.bronze.svg`<br>`汉.seal.svg` |
+| 汗 | oracle:- bronze:- seal:Y | `汗.seal.svg` |
+| 翰 | oracle:- bronze:- seal:Y | `翰.seal.svg` |
+| 号 | oracle:- bronze:Y seal:Y | `号.bronze.svg`<br>`号.seal.svg` |
+| 荷 | oracle:- bronze:- seal:Y | `荷.seal.svg` |
+| 赫 | oracle:- bronze:- seal:Y | `赫.seal.svg` |
+| 黑 | oracle:Y bronze:Y seal:Y | `黑.bronze.svg`<br>`黑.oracle.svg`<br>`黑.seal.svg` |
+| 忽 | oracle:- bronze:Y seal:Y | `忽.bronze.svg`<br>`忽.seal.svg` |
+| 化 | oracle:Y bronze:Y seal:Y | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
+| 皇 | oracle:Y bronze:Y seal:Y | `皇.bronze.svg`<br>`皇.oracle.svg`<br>`皇.seal.svg` |
+| 机 | oracle:- bronze:- seal:Y | `机.seal.svg` |
+| 积 | oracle:- bronze:Y seal:Y | `积.bronze.svg`<br>`积.seal.svg` |
+| 基 | oracle:Y bronze:Y seal:Y | `基.bronze.svg`<br>`基.oracle.svg`<br>`基.seal.svg` |
+| 吉 | oracle:Y bronze:Y seal:Y | `吉.bronze.svg`<br>`吉.oracle.svg`<br>`吉.seal.svg` |
+| 笈 | oracle:- bronze:- seal:Y | `笈.seal.svg` |
+| 加 | oracle:- bronze:Y seal:Y | `加.bronze.svg`<br>`加.seal.svg` |
+| 伽 | oracle:- bronze:- seal:Y | `伽.seal.svg` |
+| 家 | oracle:Y bronze:Y seal:Y | `家.bronze.svg`<br>`家.oracle.svg`<br>`家.seal.svg` |
+| 贾 | oracle:Y bronze:Y seal:Y | `贾.bronze.svg`<br>`贾.oracle.svg`<br>`贾.seal.svg` |
+| 坚 | oracle:- bronze:- seal:Y | `坚.seal.svg` |
+| 舰 | oracle:- bronze:- seal:Y | `舰.seal.svg` |
+| 教 | oracle:Y bronze:Y seal:Y | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
+| 津 | oracle:- bronze:Y seal:Y | `津.bronze.svg`<br>`津.seal.svg` |
+| 京 | oracle:Y bronze:Y seal:Y | `京.bronze.svg`<br>`京.oracle.svg`<br>`京.seal.svg` |
+| 景 | oracle:- bronze:- seal:Y | `景.seal.svg` |
+| 惧 | oracle:- bronze:Y seal:Y | `惧.bronze.svg`<br>`惧.seal.svg` |
+| 军 | oracle:- bronze:Y seal:Y | `军.bronze.svg`<br>`军.seal.svg` |
+| 君 | oracle:Y bronze:Y seal:Y | `君.bronze.svg`<br>`君.oracle.svg`<br>`君.seal.svg` |
+| 菌 | oracle:- bronze:- seal:Y | `菌.seal.svg` |
+| 卡 | oracle:- bronze:- seal:Y | `卡.seal.svg` |
+| 凯 | oracle:- bronze:- seal:Y | `凯.seal.svg` |
+| 科 | oracle:- bronze:- seal:Y | `科.seal.svg` |
+| 克 | oracle:Y bronze:Y seal:Y | `克.bronze.svg`<br>`克.oracle.svg`<br>`克.seal.svg` |
+| 肯 | oracle:- bronze:- seal:Y | `肯.seal.svg` |
+| 空 | oracle:- bronze:Y seal:Y | `空.bronze.svg`<br>`空.seal.svg` |
+| 恐 | oracle:- bronze:Y seal:Y | `恐.bronze.svg`<br>`恐.seal.svg` |
+| 库 | oracle:- bronze:Y seal:Y | `库.bronze.svg`<br>`库.seal.svg` |
+| 昆 | oracle:- bronze:Y seal:Y | `昆.bronze.svg`<br>`昆.seal.svg` |
+| 扩 | oracle:- bronze:- seal:Y | `扩.seal.svg` |
+| 拉 | oracle:- bronze:- seal:Y | `拉.seal.svg` |
+| 莱 | oracle:- bronze:- seal:Y | `莱.seal.svg` |
+| 兰 | oracle:- bronze:- seal:Y | `兰.seal.svg` |
+| 浪 | oracle:- bronze:- seal:Y | `浪.seal.svg` |
+| 劳 | oracle:Y bronze:Y seal:Y | `劳.bronze.svg`<br>`劳.oracle.svg`<br>`劳.seal.svg` |
+| 乐 | oracle:Y bronze:Y seal:Y | `乐.bronze.svg`<br>`乐.oracle.svg`<br>`乐.seal.svg` |
+| 勒 | oracle:- bronze:Y seal:Y | `勒.bronze.svg`<br>`勒.seal.svg` |
+| 里 | oracle:- bronze:Y seal:Y | `里.bronze.svg`<br>`里.seal.svg` |
+| 理 | oracle:- bronze:Y seal:Y | `理.bronze.svg`<br>`理.seal.svg` |
+| 历 | oracle:- bronze:- seal:Y | `历.seal.svg` |
+| 丽 | oracle:Y bronze:Y seal:Y | `丽.bronze.svg`<br>`丽.oracle.svg`<br>`丽.seal.svg` |
+| 利 | oracle:Y bronze:Y seal:Y | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
+| 莉 | oracle:Y bronze:Y seal:Y | `莉.bronze.svg`<br>`莉.oracle.svg`<br>`莉.seal.svg` |
+| 廉 | oracle:- bronze:- seal:Y | `廉.seal.svg` |
+| 烈 | oracle:- bronze:- seal:Y | `烈.seal.svg` |
+| 林 | oracle:Y bronze:Y seal:Y | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
+| 琳 | oracle:- bronze:- seal:Y | `琳.seal.svg` |
+| 领 | oracle:- bronze:- seal:Y | `领.seal.svg` |
+| 另 | oracle:- bronze:- seal:Y | `另.seal.svg` |
+| 流 | oracle:- bronze:Y seal:Y | `流.bronze.svg`<br>`流.seal.svg` |
+| 六 | oracle:Y bronze:Y seal:Y | `六.bronze.svg`<br>`六.oracle.svg`<br>`六.seal.svg` |
+| 卢 | oracle:Y bronze:Y seal:Y | `卢.bronze.svg`<br>`卢.oracle.svg`<br>`卢.seal.svg` |
+| 鲁 | oracle:Y bronze:Y seal:Y | `鲁.bronze.svg`<br>`鲁.oracle.svg`<br>`鲁.seal.svg` |
+| 路 | oracle:- bronze:Y seal:Y | `路.bronze.svg`<br>`路.seal.svg` |
+| 掠 | oracle:- bronze:- seal:Y | `掠.seal.svg` |
+| 伦 | oracle:- bronze:- seal:Y | `伦.seal.svg` |
+| 罗 | oracle:Y bronze:Y seal:Y | `罗.bronze.svg`<br>`罗.oracle.svg`<br>`罗.seal.svg` |
+| 洛 | oracle:- bronze:Y seal:Y | `洛.bronze.svg`<br>`洛.seal.svg` |
+| 马 | oracle:Y bronze:Y seal:Y | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
+| 玛 | oracle:Y bronze:Y seal:Y | `玛.bronze.svg`<br>`玛.oracle.svg`<br>`玛.seal.svg` |
+| 蛮 | oracle:- bronze:Y seal:Y | `蛮.bronze.svg`<br>`蛮.seal.svg` |
+| 曼 | oracle:Y bronze:Y seal:Y | `曼.bronze.svg`<br>`曼.oracle.svg`<br>`曼.seal.svg` |
+| 贸 | oracle:- bronze:Y seal:Y | `贸.bronze.svg`<br>`贸.seal.svg` |
+| 梅 | oracle:- bronze:Y seal:Y | `梅.bronze.svg`<br>`梅.seal.svg` |
+| 美 | oracle:Y bronze:Y seal:Y | `美.bronze.svg`<br>`美.oracle.svg`<br>`美.seal.svg` |
+| 蒙 | oracle:- bronze:Y seal:Y | `蒙.bronze.svg`<br>`蒙.seal.svg` |
+| 米 | oracle:Y bronze:- seal:Y | `米.oracle.svg`<br>`米.seal.svg` |
+| 棉 | oracle:- bronze:- seal:Y | `棉.seal.svg` |
+| 民 | oracle:Y bronze:Y seal:Y | `民.bronze.svg`<br>`民.oracle.svg`<br>`民.seal.svg` |
+| 明 | oracle:Y bronze:Y seal:Y | `明.bronze.svg`<br>`明.oracle.svg`<br>`明.seal.svg` |
+| 谟 | oracle:- bronze:- seal:Y | `谟.seal.svg` |
+| 摩 | oracle:- bronze:- seal:Y | `摩.seal.svg` |
+| 姆 | oracle:- bronze:Y seal:Y | `姆.bronze.svg`<br>`姆.seal.svg` |
+| 穆 | oracle:Y bronze:Y seal:Y | `穆.bronze.svg`<br>`穆.oracle.svg`<br>`穆.seal.svg` |
+| 纳 | oracle:- bronze:Y seal:Y | `纳.bronze.svg`<br>`纳.seal.svg` |
+| 娜 | oracle:- bronze:- seal:Y | `娜.seal.svg` |
+| 南 | oracle:Y bronze:Y seal:Y | `南.bronze.svg`<br>`南.oracle.svg`<br>`南.seal.svg` |
+| 尼 | oracle:- bronze:- seal:Y | `尼.seal.svg` |
+| 努 | oracle:- bronze:- seal:Y | `努.seal.svg` |
+| 女 | oracle:Y bronze:Y seal:Y | `女.bronze.svg`<br>`女.oracle.svg`<br>`女.seal.svg` |
+| 诺 | oracle:- bronze:Y seal:Y | `诺.bronze.svg`<br>`诺.seal.svg` |
+| 帕 | oracle:- bronze:- seal:Y | `帕.seal.svg` |
+| 佩 | oracle:- bronze:Y seal:Y | `佩.bronze.svg`<br>`佩.seal.svg` |
+| 品 | oracle:Y bronze:Y seal:Y | `品.bronze.svg`<br>`品.oracle.svg`<br>`品.seal.svg` |
+| 葡 | oracle:Y bronze:Y seal:Y | `葡.bronze.svg`<br>`葡.oracle.svg`<br>`葡.seal.svg` |
+| 普 | oracle:- bronze:- seal:Y | `普.seal.svg` |
+| 齐 | oracle:Y bronze:Y seal:Y | `齐.bronze.svg`<br>`齐.oracle.svg`<br>`齐.seal.svg` |
+| 其 | oracle:Y bronze:Y seal:Y | `其.bronze.svg`<br>`其.oracle.svg`<br>`其.seal.svg` |
+| 奇 | oracle:- bronze:- seal:Y | `奇.seal.svg` |
+| 骑 | oracle:- bronze:Y seal:Y | `骑.bronze.svg`<br>`骑.seal.svg` |
+| 器 | oracle:- bronze:Y seal:Y | `器.bronze.svg`<br>`器.seal.svg` |
+| 乔 | oracle:- bronze:Y seal:Y | `乔.bronze.svg`<br>`乔.seal.svg` |
+| 秦 | oracle:Y bronze:Y seal:Y | `秦.bronze.svg`<br>`秦.oracle.svg`<br>`秦.seal.svg` |
+| 琴 | oracle:- bronze:- seal:Y | `琴.seal.svg` |
+| 情 | oracle:- bronze:- seal:Y | `情.seal.svg` |
+| 人 | oracle:Y bronze:Y seal:Y | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
+| 日 | oracle:Y bronze:Y seal:Y | `日.bronze.svg`<br>`日.oracle.svg`<br>`日.seal.svg` |
+| 若 | oracle:Y bronze:Y seal:Y | `若.bronze.svg`<br>`若.oracle.svg`<br>`若.seal.svg` |
+| 撒 | oracle:- bronze:- seal:Y | `撒.seal.svg` |
+| 萨 | oracle:- bronze:- seal:Y | `萨.seal.svg` |
+| 塞 | oracle:Y bronze:- seal:Y | `塞.oracle.svg`<br>`塞.seal.svg` |
+| 赛 | oracle:- bronze:- seal:Y | `赛.seal.svg` |
+| 三 | oracle:Y bronze:Y seal:Y | `三.bronze.svg`<br>`三.oracle.svg`<br>`三.seal.svg` |
+| 瑟 | oracle:- bronze:- seal:Y | `瑟.seal.svg` |
+| 森 | oracle:Y bronze:- seal:Y | `森.oracle.svg`<br>`森.seal.svg` |
+| 沙 | oracle:- bronze:Y seal:Y | `沙.bronze.svg`<br>`沙.seal.svg` |
+| 莎 | oracle:- bronze:- seal:Y | `莎.seal.svg` |
+| 山 | oracle:Y bronze:Y seal:Y | `山.bronze.svg`<br>`山.oracle.svg`<br>`山.seal.svg` |
+| 善 | oracle:- bronze:Y seal:Y | `善.bronze.svg`<br>`善.seal.svg` |
+| 商 | oracle:Y bronze:Y seal:Y | `商.bronze.svg`<br>`商.oracle.svg`<br>`商.seal.svg` |
+| 什 | oracle:- bronze:- seal:Y | `什.seal.svg` |
+| 神 | oracle:- bronze:Y seal:Y | `神.bronze.svg`<br>`神.seal.svg` |
+| 声 | oracle:Y bronze:- seal:Y | `声.oracle.svg`<br>`声.seal.svg` |
+| 圣 | oracle:Y bronze:Y seal:Y | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
+| 时 | oracle:- bronze:Y seal:Y | `时.bronze.svg`<br>`时.seal.svg` |
+| 士 | oracle:- bronze:Y seal:Y | `士.bronze.svg`<br>`士.seal.svg` |
+| 世 | oracle:- bronze:Y seal:Y | `世.bronze.svg`<br>`世.seal.svg` |
+| 势 | oracle:- bronze:- seal:Y | `势.seal.svg` |
+| 私 | oracle:- bronze:Y seal:Y | `私.bronze.svg`<br>`私.seal.svg` |
+| 思 | oracle:- bronze:Y seal:Y | `思.bronze.svg`<br>`思.seal.svg` |
+| 斯 | oracle:- bronze:Y seal:Y | `斯.bronze.svg`<br>`斯.seal.svg` |
+| 死 | oracle:Y bronze:Y seal:Y | `死.bronze.svg`<br>`死.oracle.svg`<br>`死.seal.svg` |
+| 松 | oracle:- bronze:Y seal:Y | `松.bronze.svg`<br>`松.seal.svg` |
+| 苏 | oracle:- bronze:Y seal:Y | `苏.bronze.svg`<br>`苏.seal.svg` |
+| 随 | oracle:- bronze:- seal:Y | `随.seal.svg` |
+| 塔 | oracle:- bronze:- seal:Y | `塔.seal.svg` |
+| 萄 | oracle:- bronze:- seal:Y | `萄.seal.svg` |
+| 特 | oracle:- bronze:- seal:Y | `特.seal.svg` |
+| 体 | oracle:- bronze:Y seal:Y | `体.bronze.svg`<br>`体.seal.svg` |
+| 替 | oracle:Y bronze:Y seal:Y | `替.bronze.svg`<br>`替.oracle.svg`<br>`替.seal.svg` |
+| 天 | oracle:Y bronze:Y seal:Y | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
+| 添 | oracle:- bronze:- seal:Y | `添.seal.svg` |
+| 条 | oracle:- bronze:- seal:Y | `条.seal.svg` |
+| 廷 | oracle:- bronze:Y seal:Y | `廷.bronze.svg`<br>`廷.seal.svg` |
+| 庭 | oracle:- bronze:Y seal:Y | `庭.bronze.svg`<br>`庭.seal.svg` |
+| 突 | oracle:Y bronze:- seal:Y | `突.oracle.svg`<br>`突.seal.svg` |
+| 图 | oracle:- bronze:Y seal:Y | `图.bronze.svg`<br>`图.seal.svg` |
+| 徒 | oracle:Y bronze:Y seal:Y | `徒.bronze.svg`<br>`徒.oracle.svg`<br>`徒.seal.svg` |
+| 吐 | oracle:- bronze:- seal:Y | `吐.seal.svg` |
+| 托 | oracle:Y bronze:Y seal:Y | `托.bronze.svg`<br>`托.oracle.svg`<br>`托.seal.svg` |
+| 陀 | oracle:- bronze:Y seal:Y | `陀.bronze.svg`<br>`陀.seal.svg` |
+| 瓦 | oracle:- bronze:- seal:Y | `瓦.seal.svg` |
+| 威 | oracle:- bronze:Y seal:Y | `威.bronze.svg`<br>`威.seal.svg` |
+| 维 | oracle:- bronze:Y seal:Y | `维.bronze.svg`<br>`维.seal.svg` |
+| 伟 | oracle:- bronze:- seal:Y | `伟.seal.svg` |
+| 文 | oracle:Y bronze:Y seal:Y | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
+| 武 | oracle:Y bronze:Y seal:Y | `武.bronze.svg`<br>`武.oracle.svg`<br>`武.seal.svg` |
+| 西 | oracle:Y bronze:Y seal:Y | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
+| 希 | oracle:- bronze:- seal:Y | `希.seal.svg` |
+| 悉 | oracle:- bronze:- seal:Y | `悉.seal.svg` |
+| 邪 | oracle:- bronze:Y seal:Y | `邪.bronze.svg`<br>`邪.seal.svg` |
+| 袖 | oracle:- bronze:- seal:Y | `袖.seal.svg` |
+| 虚 | oracle:- bronze:- seal:Y | `虚.seal.svg` |
+| 学 | oracle:Y bronze:Y seal:Y | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
+| 牙 | oracle:- bronze:Y seal:Y | `牙.bronze.svg`<br>`牙.seal.svg` |
+| 雅 | oracle:- bronze:- seal:Y | `雅.seal.svg` |
+| 亚 | oracle:Y bronze:Y seal:Y | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
+| 艳 | oracle:- bronze:- seal:Y | `艳.seal.svg` |
+| 耶 | oracle:- bronze:Y seal:Y | `耶.bronze.svg`<br>`耶.seal.svg` |
+| 野 | oracle:Y bronze:Y seal:Y | `野.bronze.svg`<br>`野.oracle.svg`<br>`野.seal.svg` |
+| 业 | oracle:- bronze:Y seal:Y | `业.bronze.svg`<br>`业.seal.svg` |
+| 叶 | oracle:- bronze:Y seal:Y | `叶.bronze.svg`<br>`叶.seal.svg` |
+| 伊 | oracle:Y bronze:Y seal:Y | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
+| 义 | oracle:Y bronze:Y seal:Y | `义.bronze.svg`<br>`义.oracle.svg`<br>`义.seal.svg` |
+| 易 | oracle:Y bronze:Y seal:Y | `易.bronze.svg`<br>`易.oracle.svg`<br>`易.seal.svg` |
+| 印 | oracle:Y bronze:Y seal:Y | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
+| 英 | oracle:- bronze:Y seal:Y | `英.bronze.svg`<br>`英.seal.svg` |
+| 永 | oracle:Y bronze:Y seal:Y | `永.bronze.svg`<br>`永.oracle.svg`<br>`永.seal.svg` |
+| 用 | oracle:Y bronze:Y seal:Y | `用.bronze.svg`<br>`用.oracle.svg`<br>`用.seal.svg` |
+| 语 | oracle:- bronze:Y seal:Y | `语.bronze.svg`<br>`语.seal.svg` |
+| 员 | oracle:Y bronze:Y seal:Y | `员.bronze.svg`<br>`员.oracle.svg`<br>`员.seal.svg` |
+| 缘 | oracle:- bronze:- seal:Y | `缘.seal.svg` |
+| 约 | oracle:- bronze:- seal:Y | `约.seal.svg` |
+| 越 | oracle:- bronze:Y seal:Y | `越.bronze.svg`<br>`越.seal.svg` |
+| 运 | oracle:- bronze:- seal:Y | `运.seal.svg` |
+| 造 | oracle:- bronze:Y seal:Y | `造.bronze.svg`<br>`造.seal.svg` |
+| 则 | oracle:- bronze:Y seal:Y | `则.bronze.svg`<br>`则.seal.svg` |
+| 旃 | oracle:- bronze:Y seal:Y | `旃.bronze.svg`<br>`旃.seal.svg` |
+| 占 | oracle:Y bronze:- seal:Y | `占.oracle.svg`<br>`占.seal.svg` |
+| 战 | oracle:- bronze:Y seal:Y | `战.bronze.svg`<br>`战.seal.svg` |
+| 张 | oracle:- bronze:Y seal:Y | `张.bronze.svg`<br>`张.seal.svg` |
+| 真 | oracle:- bronze:Y seal:Y | `真.bronze.svg`<br>`真.seal.svg` |
+| 争 | oracle:Y bronze:- seal:Y | `争.oracle.svg`<br>`争.seal.svg` |
+| 制 | oracle:- bronze:Y seal:Y | `制.bronze.svg`<br>`制.seal.svg` |
+| 朱 | oracle:Y bronze:Y seal:Y | `朱.bronze.svg`<br>`朱.oracle.svg`<br>`朱.seal.svg` |
+| 主 | oracle:Y bronze:- seal:Y | `主.oracle.svg`<br>`主.seal.svg` |
+| 准 | oracle:- bronze:- seal:Y | `准.seal.svg` |
+| 兹 | oracle:Y bronze:Y seal:Y | `兹.bronze.svg`<br>`兹.oracle.svg`<br>`兹.seal.svg` |
+| 宗 | oracle:Y bronze:Y seal:Y | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
 
 ## mappins
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 标 | oracle:- bronze:- seal:Y legacy:- | `标.seal.svg` |
+| 标 | oracle:- bronze:- seal:Y | `标.seal.svg` |
 
 ## notifications
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 埃 | oracle:- bronze:- seal:Y legacy:- | `埃.seal.svg` |
-| 挨 | oracle:- bronze:- seal:Y legacy:- | `挨.seal.svg` |
-| 碍 | oracle:- bronze:- seal:Y legacy:- | `碍.seal.svg` |
-| 傲 | oracle:- bronze:- seal:Y legacy:- | `傲.seal.svg` |
-| 巴 | oracle:Y bronze:- seal:Y legacy:- | `巴.oracle.svg`<br>`巴.seal.svg` |
-| 坝 | oracle:- bronze:- seal:Y legacy:- | `坝.seal.svg` |
-| 败 | oracle:Y bronze:Y seal:Y legacy:- | `败.bronze.svg`<br>`败.oracle.svg`<br>`败.seal.svg` |
-| 斑 | oracle:- bronze:- seal:Y legacy:- | `斑.seal.svg` |
-| 邦 | oracle:Y bronze:Y seal:Y legacy:- | `邦.bronze.svg`<br>`邦.oracle.svg`<br>`邦.seal.svg` |
-| 暴 | oracle:Y bronze:Y seal:Y legacy:- | `暴.bronze.svg`<br>`暴.oracle.svg`<br>`暴.seal.svg` |
-| 本 | oracle:- bronze:Y seal:Y legacy:- | `本.bronze.svg`<br>`本.seal.svg` |
-| 比 | oracle:Y bronze:Y seal:Y legacy:- | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
-| 币 | oracle:- bronze:- seal:Y legacy:- | `币.seal.svg` |
-| 避 | oracle:- bronze:- seal:Y legacy:- | `避.seal.svg` |
-| 边 | oracle:Y bronze:Y seal:Y legacy:- | `边.bronze.svg`<br>`边.oracle.svg`<br>`边.seal.svg` |
-| 变 | oracle:- bronze:Y seal:Y legacy:- | `变.bronze.svg`<br>`变.seal.svg` |
-| 便 | oracle:- bronze:Y seal:Y legacy:- | `便.bronze.svg`<br>`便.seal.svg` |
-| 标 | oracle:- bronze:- seal:Y legacy:- | `标.seal.svg` |
-| 别 | oracle:Y bronze:- seal:Y legacy:- | `别.oracle.svg`<br>`别.seal.svg` |
-| 捕 | oracle:- bronze:- seal:Y legacy:- | `捕.seal.svg` |
-| 布 | oracle:- bronze:Y seal:Y legacy:- | `布.bronze.svg`<br>`布.seal.svg` |
-| 步 | oracle:Y bronze:Y seal:Y legacy:- | `步.bronze.svg`<br>`步.oracle.svg`<br>`步.seal.svg` |
-| 部 | oracle:- bronze:- seal:Y legacy:- | `部.seal.svg` |
-| 产 | oracle:- bronze:Y seal:Y legacy:- | `产.bronze.svg`<br>`产.seal.svg` |
-| 称 | oracle:- bronze:- seal:Y legacy:- | `称.seal.svg` |
-| 成 | oracle:Y bronze:Y seal:Y legacy:- | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
-| 承 | oracle:Y bronze:Y seal:Y legacy:- | `承.bronze.svg`<br>`承.oracle.svg`<br>`承.seal.svg` |
-| 诚 | oracle:- bronze:- seal:Y legacy:- | `诚.seal.svg` |
-| 城 | oracle:- bronze:Y seal:Y legacy:- | `城.bronze.svg`<br>`城.seal.svg` |
-| 程 | oracle:- bronze:Y seal:Y legacy:- | `程.bronze.svg`<br>`程.seal.svg` |
-| 充 | oracle:- bronze:- seal:Y legacy:- | `充.seal.svg` |
-| 丑 | oracle:Y bronze:Y seal:Y legacy:- | `丑.bronze.svg`<br>`丑.oracle.svg`<br>`丑.seal.svg` |
-| 出 | oracle:Y bronze:Y seal:Y legacy:- | `出.bronze.svg`<br>`出.oracle.svg`<br>`出.seal.svg` |
-| 除 | oracle:- bronze:- seal:Y legacy:- | `除.seal.svg` |
-| 窗 | oracle:- bronze:- seal:Y legacy:- | `窗.seal.svg` |
-| 创 | oracle:- bronze:Y seal:Y legacy:- | `创.bronze.svg`<br>`创.seal.svg` |
-| 瓷 | oracle:- bronze:- seal:Y legacy:- | `瓷.seal.svg` |
-| 丛 | oracle:- bronze:Y seal:Y legacy:- | `丛.bronze.svg`<br>`丛.seal.svg` |
-| 促 | oracle:- bronze:- seal:Y legacy:- | `促.seal.svg` |
-| 篡 | oracle:- bronze:- seal:Y legacy:- | `篡.seal.svg` |
-| 打 | oracle:- bronze:- seal:Y legacy:- | `打.seal.svg` |
-| 大 | oracle:Y bronze:Y seal:Y legacy:- | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
-| 代 | oracle:- bronze:- seal:Y legacy:- | `代.seal.svg` |
-| 单 | oracle:Y bronze:Y seal:Y legacy:- | `单.bronze.svg`<br>`单.oracle.svg`<br>`单.seal.svg` |
-| 弹 | oracle:Y bronze:- seal:Y legacy:- | `弹.oracle.svg`<br>`弹.seal.svg` |
-| 导 | oracle:- bronze:- seal:Y legacy:- | `导.seal.svg` |
-| 盗 | oracle:Y bronze:Y seal:Y legacy:- | `盗.bronze.svg`<br>`盗.oracle.svg`<br>`盗.seal.svg` |
-| 道 | oracle:- bronze:Y seal:Y legacy:- | `道.bronze.svg`<br>`道.seal.svg` |
-| 得 | oracle:Y bronze:Y seal:Y legacy:- | `得.bronze.svg`<br>`得.oracle.svg`<br>`得.seal.svg` |
-| 地 | oracle:- bronze:Y seal:Y legacy:- | `地.bronze.svg`<br>`地.seal.svg` |
-| 等 | oracle:- bronze:- seal:Y legacy:- | `等.seal.svg` |
-| 低 | oracle:- bronze:- seal:Y legacy:- | `低.seal.svg` |
-| 敌 | oracle:- bronze:Y seal:Y legacy:- | `敌.bronze.svg`<br>`敌.seal.svg` |
-| 点 | oracle:- bronze:- seal:Y legacy:- | `点.seal.svg` |
-| 电 | oracle:- bronze:Y seal:Y legacy:- | `电.bronze.svg`<br>`电.seal.svg` |
-| 殿 | oracle:- bronze:Y seal:Y legacy:- | `殿.bronze.svg`<br>`殿.seal.svg` |
-| 调 | oracle:- bronze:- seal:Y legacy:- | `调.seal.svg` |
-| 谍 | oracle:- bronze:- seal:Y legacy:- | `谍.seal.svg` |
-| 定 | oracle:Y bronze:Y seal:Y legacy:- | `定.bronze.svg`<br>`定.oracle.svg`<br>`定.seal.svg` |
-| 丢 | oracle:- bronze:Y seal:Y legacy:- | `丢.bronze.svg`<br>`丢.seal.svg` |
-| 东 | oracle:Y bronze:Y seal:Y legacy:- | `东.bronze.svg`<br>`东.oracle.svg`<br>`东.seal.svg` |
-| 动 | oracle:- bronze:Y seal:Y legacy:- | `动.bronze.svg`<br>`动.seal.svg` |
-| 度 | oracle:Y bronze:Y seal:Y legacy:- | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
-| 端 | oracle:- bronze:- seal:Y legacy:- | `端.seal.svg` |
-| 断 | oracle:- bronze:Y seal:Y legacy:- | `断.bronze.svg`<br>`断.seal.svg` |
-| 队 | oracle:Y bronze:Y seal:Y legacy:- | `队.bronze.svg`<br>`队.oracle.svg`<br>`队.seal.svg` |
-| 夺 | oracle:- bronze:Y seal:Y legacy:- | `夺.bronze.svg`<br>`夺.seal.svg` |
-| 俄 | oracle:- bronze:- seal:Y legacy:- | `俄.seal.svg` |
-| 饿 | oracle:- bronze:- seal:Y legacy:- | `饿.seal.svg` |
-| 发 | oracle:Y bronze:Y seal:Y legacy:- | `发.bronze.svg`<br>`发.oracle.svg`<br>`发.seal.svg` |
-| 反 | oracle:Y bronze:Y seal:Y legacy:- | `反.bronze.svg`<br>`反.oracle.svg`<br>`反.seal.svg` |
-| 范 | oracle:- bronze:Y seal:Y legacy:- | `范.bronze.svg`<br>`范.seal.svg` |
-| 方 | oracle:Y bronze:Y seal:Y legacy:- | `方.bronze.svg`<br>`方.oracle.svg`<br>`方.seal.svg` |
-| 房 | oracle:- bronze:- seal:Y legacy:- | `房.seal.svg` |
-| 放 | oracle:- bronze:Y seal:Y legacy:- | `放.bronze.svg`<br>`放.seal.svg` |
-| 非 | oracle:Y bronze:Y seal:Y legacy:- | `非.bronze.svg`<br>`非.oracle.svg`<br>`非.seal.svg` |
-| 分 | oracle:Y bronze:Y seal:Y legacy:- | `分.bronze.svg`<br>`分.oracle.svg`<br>`分.seal.svg` |
-| 份 | oracle:- bronze:- seal:Y legacy:- | `份.seal.svg` |
-| 风 | oracle:Y bronze:Y seal:Y legacy:- | `风.bronze.svg`<br>`风.oracle.svg`<br>`风.seal.svg` |
-| 服 | oracle:Y bronze:Y seal:Y legacy:- | `服.bronze.svg`<br>`服.oracle.svg`<br>`服.seal.svg` |
-| 俘 | oracle:Y bronze:Y seal:Y legacy:- | `俘.bronze.svg`<br>`俘.oracle.svg`<br>`俘.seal.svg` |
-| 府 | oracle:- bronze:Y seal:Y legacy:- | `府.bronze.svg`<br>`府.seal.svg` |
-| 付 | oracle:- bronze:Y seal:Y legacy:- | `付.bronze.svg`<br>`付.seal.svg` |
-| 复 | oracle:Y bronze:Y seal:Y legacy:- | `复.bronze.svg`<br>`复.oracle.svg`<br>`复.seal.svg` |
-| 改 | oracle:Y bronze:Y seal:Y legacy:- | `改.bronze.svg`<br>`改.oracle.svg`<br>`改.seal.svg` |
-| 干 | oracle:Y bronze:Y seal:Y legacy:- | `干.bronze.svg`<br>`干.oracle.svg`<br>`干.seal.svg` |
-| 告 | oracle:Y bronze:Y seal:Y legacy:- | `告.bronze.svg`<br>`告.oracle.svg`<br>`告.seal.svg` |
-| 革 | oracle:Y bronze:Y seal:Y legacy:- | `革.bronze.svg`<br>`革.oracle.svg`<br>`革.seal.svg` |
-| 格 | oracle:- bronze:Y seal:Y legacy:- | `格.bronze.svg`<br>`格.seal.svg` |
-| 给 | oracle:- bronze:- seal:Y legacy:- | `给.seal.svg` |
-| 更 | oracle:Y bronze:Y seal:Y legacy:- | `更.bronze.svg`<br>`更.oracle.svg`<br>`更.seal.svg` |
-| 工 | oracle:Y bronze:Y seal:Y legacy:- | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
-| 公 | oracle:Y bronze:Y seal:Y legacy:- | `公.bronze.svg`<br>`公.oracle.svg`<br>`公.seal.svg` |
-| 功 | oracle:- bronze:Y seal:Y legacy:- | `功.bronze.svg`<br>`功.seal.svg` |
-| 攻 | oracle:- bronze:Y seal:Y legacy:- | `攻.bronze.svg`<br>`攻.seal.svg` |
-| 购 | oracle:- bronze:- seal:Y legacy:- | `购.seal.svg` |
-| 媾 | oracle:- bronze:Y seal:Y legacy:- | `媾.bronze.svg`<br>`媾.seal.svg` |
-| 古 | oracle:Y bronze:Y seal:Y legacy:- | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
-| 故 | oracle:- bronze:Y seal:Y legacy:- | `故.bronze.svg`<br>`故.seal.svg` |
-| 雇 | oracle:Y bronze:- seal:Y legacy:- | `雇.oracle.svg`<br>`雇.seal.svg` |
-| 观 | oracle:Y bronze:Y seal:Y legacy:- | `观.bronze.svg`<br>`观.oracle.svg`<br>`观.seal.svg` |
-| 滚 | oracle:- bronze:- seal:Y legacy:- | `滚.seal.svg` |
-| 国 | oracle:- bronze:Y seal:Y legacy:- | `国.bronze.svg`<br>`国.seal.svg` |
-| 过 | oracle:- bronze:Y seal:Y legacy:- | `过.bronze.svg`<br>`过.seal.svg` |
-| 海 | oracle:- bronze:Y seal:Y legacy:- | `海.bronze.svg`<br>`海.seal.svg` |
-| 旱 | oracle:- bronze:- seal:Y legacy:- | `旱.seal.svg` |
-| 好 | oracle:Y bronze:Y seal:Y legacy:- | `好.bronze.svg`<br>`好.oracle.svg`<br>`好.seal.svg` |
-| 合 | oracle:Y bronze:Y seal:Y legacy:- | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
-| 河 | oracle:Y bronze:Y seal:Y legacy:- | `河.bronze.svg`<br>`河.oracle.svg`<br>`河.seal.svg` |
-| 核 | oracle:- bronze:- seal:Y legacy:- | `核.seal.svg` |
-| 很 | oracle:- bronze:- seal:Y legacy:- | `很.seal.svg` |
-| 红 | oracle:- bronze:- seal:Y legacy:- | `红.seal.svg` |
-| 洪 | oracle:- bronze:- seal:Y legacy:- | `洪.seal.svg` |
-| 户 | oracle:Y bronze:Y seal:Y legacy:- | `户.bronze.svg`<br>`户.oracle.svg`<br>`户.seal.svg` |
-| 化 | oracle:Y bronze:Y seal:Y legacy:- | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
-| 坏 | oracle:- bronze:Y seal:Y legacy:- | `坏.bronze.svg`<br>`坏.seal.svg` |
-| 换 | oracle:- bronze:- seal:Y legacy:- | `换.seal.svg` |
-| 恢 | oracle:- bronze:- seal:Y legacy:- | `恢.seal.svg` |
-| 挥 | oracle:- bronze:Y seal:Y legacy:- | `挥.bronze.svg`<br>`挥.seal.svg` |
-| 回 | oracle:Y bronze:Y seal:Y legacy:- | `回.bronze.svg`<br>`回.oracle.svg`<br>`回.seal.svg` |
-| 会 | oracle:Y bronze:Y seal:Y legacy:- | `会.bronze.svg`<br>`会.oracle.svg`<br>`会.seal.svg` |
-| 贿 | oracle:- bronze:- seal:Y legacy:- | `贿.seal.svg` |
-| 彗 | oracle:Y bronze:- seal:Y legacy:- | `彗.oracle.svg`<br>`彗.seal.svg` |
-| 活 | oracle:- bronze:- seal:Y legacy:- | `活.seal.svg` |
-| 火 | oracle:Y bronze:- seal:Y legacy:- | `火.oracle.svg`<br>`火.seal.svg` |
-| 获 | oracle:Y bronze:Y seal:Y legacy:- | `获.bronze.svg`<br>`获.oracle.svg`<br>`获.seal.svg` |
-| 击 | oracle:- bronze:- seal:Y legacy:- | `击.seal.svg` |
-| 机 | oracle:- bronze:- seal:Y legacy:- | `机.seal.svg` |
-| 级 | oracle:- bronze:- seal:Y legacy:- | `级.seal.svg` |
-| 急 | oracle:- bronze:- seal:Y legacy:- | `急.seal.svg` |
-| 计 | oracle:- bronze:- seal:Y legacy:- | `计.seal.svg` |
-| 记 | oracle:- bronze:Y seal:Y legacy:- | `记.bronze.svg`<br>`记.seal.svg` |
-| 纪 | oracle:- bronze:Y seal:Y legacy:- | `纪.bronze.svg`<br>`纪.seal.svg` |
-| 技 | oracle:- bronze:- seal:Y legacy:- | `技.seal.svg` |
-| 迹 | oracle:- bronze:Y seal:Y legacy:- | `迹.bronze.svg`<br>`迹.seal.svg` |
-| 加 | oracle:- bronze:Y seal:Y legacy:- | `加.bronze.svg`<br>`加.seal.svg` |
-| 间 | oracle:- bronze:Y seal:Y legacy:- | `间.bronze.svg`<br>`间.seal.svg` |
-| 监 | oracle:Y bronze:Y seal:Y legacy:- | `监.bronze.svg`<br>`监.oracle.svg`<br>`监.seal.svg` |
-| 减 | oracle:- bronze:Y seal:Y legacy:- | `减.bronze.svg`<br>`减.seal.svg` |
-| 见 | oracle:Y bronze:Y seal:Y legacy:- | `见.bronze.svg`<br>`见.oracle.svg`<br>`见.seal.svg` |
-| 件 | oracle:- bronze:- seal:Y legacy:- | `件.seal.svg` |
-| 建 | oracle:Y bronze:Y seal:Y legacy:- | `建.bronze.svg`<br>`建.oracle.svg`<br>`建.seal.svg` |
-| 箭 | oracle:- bronze:Y seal:Y legacy:- | `箭.bronze.svg`<br>`箭.seal.svg` |
-| 僵 | oracle:- bronze:- seal:Y legacy:- | `僵.seal.svg` |
-| 交 | oracle:- bronze:- seal:Y legacy:- | `交.seal.svg` |
-| 骄 | oracle:- bronze:Y seal:Y legacy:- | `骄.bronze.svg`<br>`骄.seal.svg` |
-| 焦 | oracle:- bronze:Y seal:Y legacy:- | `焦.bronze.svg`<br>`焦.seal.svg` |
-| 教 | oracle:Y bronze:Y seal:Y legacy:- | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
-| 接 | oracle:- bronze:- seal:Y legacy:- | `接.seal.svg` |
-| 劫 | oracle:- bronze:- seal:Y legacy:- | `劫.seal.svg` |
-| 结 | oracle:- bronze:- seal:Y legacy:- | `结.seal.svg` |
-| 解 | oracle:Y bronze:Y seal:Y legacy:- | `解.bronze.svg`<br>`解.oracle.svg`<br>`解.seal.svg` |
-| 界 | oracle:- bronze:- seal:Y legacy:- | `界.seal.svg` |
-| 金 | oracle:- bronze:Y seal:Y legacy:- | `金.bronze.svg`<br>`金.seal.svg` |
-| 紧 | oracle:- bronze:- seal:Y legacy:- | `紧.seal.svg` |
-| 晋 | oracle:Y bronze:Y seal:Y legacy:- | `晋.bronze.svg`<br>`晋.oracle.svg`<br>`晋.seal.svg` |
-| 禁 | oracle:- bronze:- seal:Y legacy:- | `禁.seal.svg` |
-| 竞 | oracle:Y bronze:Y seal:Y legacy:- | `竞.bronze.svg`<br>`竞.oracle.svg`<br>`竞.seal.svg` |
-| 就 | oracle:Y bronze:Y seal:Y legacy:- | `就.bronze.svg`<br>`就.oracle.svg`<br>`就.seal.svg` |
-| 剧 | oracle:- bronze:- seal:Y legacy:- | `剧.seal.svg` |
-| 开 | oracle:- bronze:- seal:Y legacy:- | `开.seal.svg` |
-| 看 | oracle:- bronze:- seal:Y legacy:- | `看.seal.svg` |
-| 考 | oracle:Y bronze:Y seal:Y legacy:- | `考.bronze.svg`<br>`考.oracle.svg`<br>`考.seal.svg` |
-| 科 | oracle:- bronze:- seal:Y legacy:- | `科.seal.svg` |
-| 刻 | oracle:- bronze:- seal:Y legacy:- | `刻.seal.svg` |
-| 口 | oracle:Y bronze:Y seal:Y legacy:- | `口.bronze.svg`<br>`口.oracle.svg`<br>`口.seal.svg` |
-| 库 | oracle:- bronze:Y seal:Y legacy:- | `库.bronze.svg`<br>`库.seal.svg` |
-| 快 | oracle:- bronze:- seal:Y legacy:- | `快.seal.svg` |
-| 况 | oracle:Y bronze:- seal:Y legacy:- | `况.oracle.svg`<br>`况.seal.svg` |
-| 困 | oracle:Y bronze:- seal:Y legacy:- | `困.oracle.svg`<br>`困.seal.svg` |
-| 扩 | oracle:- bronze:- seal:Y legacy:- | `扩.seal.svg` |
-| 拉 | oracle:- bronze:- seal:Y legacy:- | `拉.seal.svg` |
-| 来 | oracle:Y bronze:Y seal:Y legacy:- | `来.bronze.svg`<br>`来.oracle.svg`<br>`来.seal.svg` |
-| 兰 | oracle:- bronze:- seal:Y legacy:- | `兰.seal.svg` |
-| 乐 | oracle:Y bronze:Y seal:Y legacy:- | `乐.bronze.svg`<br>`乐.oracle.svg`<br>`乐.seal.svg` |
-| 离 | oracle:- bronze:Y seal:Y legacy:- | `离.bronze.svg`<br>`离.seal.svg` |
-| 理 | oracle:- bronze:Y seal:Y legacy:- | `理.bronze.svg`<br>`理.seal.svg` |
-| 力 | oracle:Y bronze:Y seal:Y legacy:- | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
-| 立 | oracle:Y bronze:Y seal:Y legacy:- | `立.bronze.svg`<br>`立.oracle.svg`<br>`立.seal.svg` |
-| 利 | oracle:Y bronze:Y seal:Y legacy:- | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
-| 连 | oracle:- bronze:Y seal:Y legacy:- | `连.bronze.svg`<br>`连.seal.svg` |
-| 联 | oracle:Y bronze:Y seal:Y legacy:- | `联.bronze.svg`<br>`联.oracle.svg`<br>`联.seal.svg` |
-| 量 | oracle:Y bronze:Y seal:Y legacy:- | `量.bronze.svg`<br>`量.oracle.svg`<br>`量.seal.svg` |
-| 林 | oracle:Y bronze:Y seal:Y legacy:- | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
-| 临 | oracle:Y bronze:Y seal:Y legacy:- | `临.bronze.svg`<br>`临.oracle.svg`<br>`临.seal.svg` |
-| 领 | oracle:- bronze:- seal:Y legacy:- | `领.seal.svg` |
-| 流 | oracle:- bronze:Y seal:Y legacy:- | `流.bronze.svg`<br>`流.seal.svg` |
-| 隆 | oracle:- bronze:- seal:Y legacy:- | `隆.seal.svg` |
-| 陆 | oracle:Y bronze:Y seal:Y legacy:- | `陆.bronze.svg`<br>`陆.oracle.svg`<br>`陆.seal.svg` |
-| 录 | oracle:Y bronze:Y seal:Y legacy:- | `录.bronze.svg`<br>`录.oracle.svg`<br>`录.seal.svg` |
-| 赂 | oracle:- bronze:- seal:Y legacy:- | `赂.seal.svg` |
-| 路 | oracle:- bronze:Y seal:Y legacy:- | `路.bronze.svg`<br>`路.seal.svg` |
-| 虑 | oracle:- bronze:Y seal:Y legacy:- | `虑.bronze.svg`<br>`虑.seal.svg` |
-| 乱 | oracle:- bronze:Y seal:Y legacy:- | `乱.bronze.svg`<br>`乱.seal.svg` |
-| 掠 | oracle:- bronze:- seal:Y legacy:- | `掠.seal.svg` |
-| 轮 | oracle:- bronze:Y seal:Y legacy:- | `轮.bronze.svg`<br>`轮.seal.svg` |
-| 罗 | oracle:Y bronze:Y seal:Y legacy:- | `罗.bronze.svg`<br>`罗.oracle.svg`<br>`罗.seal.svg` |
-| 落 | oracle:- bronze:- seal:Y legacy:- | `落.seal.svg` |
-| 玛 | oracle:Y bronze:Y seal:Y legacy:- | `玛.bronze.svg`<br>`玛.oracle.svg`<br>`玛.seal.svg` |
-| 买 | oracle:Y bronze:Y seal:Y legacy:- | `买.bronze.svg`<br>`买.oracle.svg`<br>`买.seal.svg` |
-| 蛮 | oracle:- bronze:Y seal:Y legacy:- | `蛮.bronze.svg`<br>`蛮.seal.svg` |
-| 贸 | oracle:- bronze:Y seal:Y legacy:- | `贸.bronze.svg`<br>`贸.seal.svg` |
-| 没 | oracle:- bronze:- seal:Y legacy:- | `没.seal.svg` |
-| 美 | oracle:Y bronze:Y seal:Y legacy:- | `美.bronze.svg`<br>`美.oracle.svg`<br>`美.seal.svg` |
-| 盟 | oracle:Y bronze:Y seal:Y legacy:- | `盟.bronze.svg`<br>`盟.oracle.svg`<br>`盟.seal.svg` |
-| 秘 | oracle:- bronze:- seal:Y legacy:- | `秘.seal.svg` |
-| 密 | oracle:- bronze:Y seal:Y legacy:- | `密.bronze.svg`<br>`密.seal.svg` |
-| 免 | oracle:Y bronze:Y seal:- legacy:- | `免.bronze.svg`<br>`免.oracle.svg` |
-| 面 | oracle:Y bronze:- seal:Y legacy:- | `面.oracle.svg`<br>`面.seal.svg` |
-| 民 | oracle:Y bronze:Y seal:Y legacy:- | `民.bronze.svg`<br>`民.oracle.svg`<br>`民.seal.svg` |
-| 命 | oracle:Y bronze:Y seal:Y legacy:- | `命.bronze.svg`<br>`命.oracle.svg`<br>`命.seal.svg` |
-| 模 | oracle:- bronze:- seal:Y legacy:- | `模.seal.svg` |
-| 目 | oracle:Y bronze:Y seal:Y legacy:- | `目.bronze.svg`<br>`目.oracle.svg`<br>`目.seal.svg` |
-| 募 | oracle:- bronze:- seal:Y legacy:- | `募.seal.svg` |
-| 你 | oracle:- bronze:Y seal:- legacy:- | `你.bronze.svg` |
-| 念 | oracle:Y bronze:Y seal:Y legacy:- | `念.bronze.svg`<br>`念.oracle.svg`<br>`念.seal.svg` |
-| 捏 | oracle:- bronze:- seal:Y legacy:- | `捏.seal.svg` |
-| 挪 | oracle:- bronze:- seal:Y legacy:- | `挪.seal.svg` |
-| 诺 | oracle:- bronze:Y seal:Y legacy:- | `诺.bronze.svg`<br>`诺.seal.svg` |
-| 叛 | oracle:- bronze:- seal:Y legacy:- | `叛.seal.svg` |
-| 跑 | oracle:- bronze:Y seal:Y legacy:- | `跑.bronze.svg`<br>`跑.seal.svg` |
-| 喷 | oracle:- bronze:- seal:Y legacy:- | `喷.seal.svg` |
-| 品 | oracle:Y bronze:Y seal:Y legacy:- | `品.bronze.svg`<br>`品.oracle.svg`<br>`品.seal.svg` |
-| 平 | oracle:- bronze:Y seal:Y legacy:- | `平.bronze.svg`<br>`平.seal.svg` |
-| 凭 | oracle:- bronze:- seal:Y legacy:- | `凭.seal.svg` |
-| 迫 | oracle:- bronze:- seal:Y legacy:- | `迫.seal.svg` |
-| 破 | oracle:- bronze:- seal:Y legacy:- | `破.seal.svg` |
-| 期 | oracle:- bronze:Y seal:Y legacy:- | `期.bronze.svg`<br>`期.seal.svg` |
-| 其 | oracle:Y bronze:Y seal:Y legacy:- | `其.bronze.svg`<br>`其.oracle.svg`<br>`其.seal.svg` |
-| 奇 | oracle:- bronze:- seal:Y legacy:- | `奇.seal.svg` |
-| 企 | oracle:Y bronze:Y seal:Y legacy:- | `企.bronze.svg`<br>`企.oracle.svg`<br>`企.seal.svg` |
-| 器 | oracle:- bronze:Y seal:Y legacy:- | `器.bronze.svg`<br>`器.seal.svg` |
-| 迁 | oracle:- bronze:- seal:Y legacy:- | `迁.seal.svg` |
-| 谴 | oracle:- bronze:Y seal:Y legacy:- | `谴.bronze.svg`<br>`谴.seal.svg` |
-| 强 | oracle:- bronze:- seal:Y legacy:- | `强.seal.svg` |
-| 墙 | oracle:Y bronze:Y seal:Y legacy:- | `墙.bronze.svg`<br>`墙.oracle.svg`<br>`墙.seal.svg` |
-| 抢 | oracle:- bronze:Y seal:Y legacy:- | `抢.bronze.svg`<br>`抢.seal.svg` |
-| 窃 | oracle:- bronze:- seal:Y legacy:- | `窃.seal.svg` |
-| 轻 | oracle:- bronze:- seal:Y legacy:- | `轻.seal.svg` |
-| 情 | oracle:- bronze:- seal:Y legacy:- | `情.seal.svg` |
-| 请 | oracle:- bronze:Y seal:Y legacy:- | `请.bronze.svg`<br>`请.seal.svg` |
-| 求 | oracle:Y bronze:Y seal:Y legacy:- | `求.bronze.svg`<br>`求.oracle.svg`<br>`求.seal.svg` |
-| 屈 | oracle:- bronze:Y seal:Y legacy:- | `屈.bronze.svg`<br>`屈.seal.svg` |
-| 取 | oracle:Y bronze:Y seal:Y legacy:- | `取.bronze.svg`<br>`取.oracle.svg`<br>`取.seal.svg` |
-| 去 | oracle:Y bronze:Y seal:Y legacy:- | `去.bronze.svg`<br>`去.oracle.svg`<br>`去.seal.svg` |
-| 然 | oracle:- bronze:Y seal:Y legacy:- | `然.bronze.svg`<br>`然.seal.svg` |
-| 扰 | oracle:- bronze:Y seal:Y legacy:- | `扰.bronze.svg`<br>`扰.seal.svg` |
-| 人 | oracle:Y bronze:Y seal:Y legacy:- | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
-| 认 | oracle:- bronze:- seal:Y legacy:- | `认.seal.svg` |
-| 任 | oracle:Y bronze:Y seal:Y legacy:- | `任.bronze.svg`<br>`任.oracle.svg`<br>`任.seal.svg` |
-| 容 | oracle:- bronze:Y seal:Y legacy:- | `容.bronze.svg`<br>`容.seal.svg` |
-| 入 | oracle:Y bronze:Y seal:Y legacy:- | `入.bronze.svg`<br>`入.oracle.svg`<br>`入.seal.svg` |
-| 塞 | oracle:Y bronze:- seal:Y legacy:- | `塞.oracle.svg`<br>`塞.seal.svg` |
-| 赛 | oracle:- bronze:- seal:Y legacy:- | `赛.seal.svg` |
-| 散 | oracle:Y bronze:Y seal:Y legacy:- | `散.bronze.svg`<br>`散.oracle.svg`<br>`散.seal.svg` |
-| 骚 | oracle:- bronze:- seal:Y legacy:- | `骚.seal.svg` |
-| 色 | oracle:- bronze:Y seal:Y legacy:- | `色.bronze.svg`<br>`色.seal.svg` |
-| 森 | oracle:Y bronze:- seal:Y legacy:- | `森.oracle.svg`<br>`森.seal.svg` |
-| 杀 | oracle:- bronze:Y seal:Y legacy:- | `杀.bronze.svg`<br>`杀.seal.svg` |
-| 山 | oracle:Y bronze:Y seal:Y legacy:- | `山.bronze.svg`<br>`山.oracle.svg`<br>`山.seal.svg` |
-| 煽 | oracle:- bronze:- seal:Y legacy:- | `煽.seal.svg` |
-| 设 | oracle:- bronze:- seal:Y legacy:- | `设.seal.svg` |
-| 社 | oracle:- bronze:Y seal:Y legacy:- | `社.bronze.svg`<br>`社.seal.svg` |
-| 身 | oracle:Y bronze:Y seal:Y legacy:- | `身.bronze.svg`<br>`身.oracle.svg`<br>`身.seal.svg` |
-| 神 | oracle:- bronze:Y seal:Y legacy:- | `神.bronze.svg`<br>`神.seal.svg` |
-| 升 | oracle:Y bronze:Y seal:Y legacy:- | `升.bronze.svg`<br>`升.oracle.svg`<br>`升.seal.svg` |
-| 生 | oracle:Y bronze:Y seal:Y legacy:- | `生.bronze.svg`<br>`生.oracle.svg`<br>`生.seal.svg` |
-| 声 | oracle:Y bronze:- seal:Y legacy:- | `声.oracle.svg`<br>`声.seal.svg` |
-| 胜 | oracle:- bronze:- seal:Y legacy:- | `胜.seal.svg` |
-| 尸 | oracle:Y bronze:Y seal:Y legacy:- | `尸.bronze.svg`<br>`尸.oracle.svg`<br>`尸.seal.svg` |
-| 失 | oracle:- bronze:Y seal:Y legacy:- | `失.bronze.svg`<br>`失.seal.svg` |
-| 施 | oracle:- bronze:- seal:Y legacy:- | `施.seal.svg` |
-| 时 | oracle:- bronze:Y seal:Y legacy:- | `时.bronze.svg`<br>`时.seal.svg` |
-| 食 | oracle:Y bronze:Y seal:Y legacy:- | `食.bronze.svg`<br>`食.oracle.svg`<br>`食.seal.svg` |
-| 始 | oracle:- bronze:Y seal:Y legacy:- | `始.bronze.svg`<br>`始.seal.svg` |
-| 氏 | oracle:Y bronze:Y seal:Y legacy:- | `氏.bronze.svg`<br>`氏.oracle.svg`<br>`氏.seal.svg` |
-| 世 | oracle:- bronze:Y seal:Y legacy:- | `世.bronze.svg`<br>`世.seal.svg` |
-| 市 | oracle:Y bronze:Y seal:Y legacy:- | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
-| 式 | oracle:- bronze:- seal:Y legacy:- | `式.seal.svg` |
-| 事 | oracle:Y bronze:Y seal:Y legacy:- | `事.bronze.svg`<br>`事.oracle.svg`<br>`事.seal.svg` |
-| 收 | oracle:- bronze:- seal:Y legacy:- | `收.seal.svg` |
-| 守 | oracle:Y bronze:Y seal:Y legacy:- | `守.bronze.svg`<br>`守.oracle.svg`<br>`守.seal.svg` |
-| 首 | oracle:Y bronze:Y seal:Y legacy:- | `首.bronze.svg`<br>`首.oracle.svg`<br>`首.seal.svg` |
-| 寿 | oracle:- bronze:Y seal:Y legacy:- | `寿.bronze.svg`<br>`寿.seal.svg` |
-| 受 | oracle:Y bronze:Y seal:Y legacy:- | `受.bronze.svg`<br>`受.oracle.svg`<br>`受.seal.svg` |
-| 赎 | oracle:- bronze:Y seal:Y legacy:- | `赎.bronze.svg`<br>`赎.seal.svg` |
-| 术 | oracle:Y bronze:- seal:Y legacy:- | `术.oracle.svg`<br>`术.seal.svg` |
-| 束 | oracle:Y bronze:Y seal:Y legacy:- | `束.bronze.svg`<br>`束.oracle.svg`<br>`束.seal.svg` |
-| 数 | oracle:- bronze:Y seal:Y legacy:- | `数.bronze.svg`<br>`数.seal.svg` |
-| 水 | oracle:Y bronze:Y seal:Y legacy:- | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
-| 顺 | oracle:Y bronze:Y seal:Y legacy:- | `顺.bronze.svg`<br>`顺.oracle.svg`<br>`顺.seal.svg` |
-| 司 | oracle:Y bronze:Y seal:Y legacy:- | `司.bronze.svg`<br>`司.oracle.svg`<br>`司.seal.svg` |
-| 死 | oracle:Y bronze:Y seal:Y legacy:- | `死.bronze.svg`<br>`死.oracle.svg`<br>`死.seal.svg` |
-| 速 | oracle:Y bronze:Y seal:Y legacy:- | `速.bronze.svg`<br>`速.oracle.svg`<br>`速.seal.svg` |
-| 碎 | oracle:- bronze:- seal:Y legacy:- | `碎.seal.svg` |
-| 损 | oracle:- bronze:- seal:Y legacy:- | `损.seal.svg` |
-| 他 | oracle:- bronze:- seal:Y legacy:- | `他.seal.svg` |
-| 态 | oracle:- bronze:- seal:Y legacy:- | `态.seal.svg` |
-| 逃 | oracle:- bronze:Y seal:Y legacy:- | `逃.bronze.svg`<br>`逃.seal.svg` |
-| 特 | oracle:- bronze:- seal:Y legacy:- | `特.seal.svg` |
-| 踢 | oracle:- bronze:- seal:Y legacy:- | `踢.seal.svg` |
-| 提 | oracle:- bronze:- seal:Y legacy:- | `提.seal.svg` |
-| 天 | oracle:Y bronze:Y seal:Y legacy:- | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
-| 填 | oracle:- bronze:- seal:Y legacy:- | `填.seal.svg` |
-| 听 | oracle:Y bronze:Y seal:Y legacy:- | `听.bronze.svg`<br>`听.oracle.svg`<br>`听.seal.svg` |
-| 通 | oracle:Y bronze:Y seal:Y legacy:- | `通.bronze.svg`<br>`通.oracle.svg`<br>`通.seal.svg` |
-| 同 | oracle:Y bronze:Y seal:Y legacy:- | `同.bronze.svg`<br>`同.oracle.svg`<br>`同.seal.svg` |
-| 偷 | oracle:- bronze:- seal:Y legacy:- | `偷.seal.svg` |
-| 突 | oracle:Y bronze:- seal:Y legacy:- | `突.oracle.svg`<br>`突.seal.svg` |
-| 土 | oracle:Y bronze:Y seal:Y legacy:- | `土.bronze.svg`<br>`土.oracle.svg`<br>`土.seal.svg` |
-| 推 | oracle:- bronze:- seal:Y legacy:- | `推.seal.svg` |
-| 脱 | oracle:- bronze:- seal:Y legacy:- | `脱.seal.svg` |
-| 弯 | oracle:- bronze:- seal:Y legacy:- | `弯.seal.svg` |
-| 完 | oracle:- bronze:- seal:Y legacy:- | `完.seal.svg` |
-| 玩 | oracle:- bronze:- seal:Y legacy:- | `玩.seal.svg` |
-| 万 | oracle:Y bronze:Y seal:Y legacy:- | `万.bronze.svg`<br>`万.oracle.svg`<br>`万.seal.svg` |
-| 亡 | oracle:Y bronze:Y seal:Y legacy:- | `亡.bronze.svg`<br>`亡.oracle.svg`<br>`亡.seal.svg` |
-| 网 | oracle:Y bronze:- seal:Y legacy:- | `网.oracle.svg`<br>`网.seal.svg` |
-| 围 | oracle:- bronze:Y seal:Y legacy:- | `围.bronze.svg`<br>`围.seal.svg` |
-| 伟 | oracle:- bronze:- seal:Y legacy:- | `伟.seal.svg` |
-| 委 | oracle:Y bronze:Y seal:Y legacy:- | `委.bronze.svg`<br>`委.oracle.svg`<br>`委.seal.svg` |
-| 未 | oracle:Y bronze:Y seal:Y legacy:- | `未.bronze.svg`<br>`未.oracle.svg`<br>`未.seal.svg` |
-| 位 | oracle:- bronze:Y seal:Y legacy:- | `位.bronze.svg`<br>`位.seal.svg` |
-| 文 | oracle:Y bronze:Y seal:Y legacy:- | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
-| 闻 | oracle:Y bronze:Y seal:Y legacy:- | `闻.bronze.svg`<br>`闻.oracle.svg`<br>`闻.seal.svg` |
-| 我 | oracle:Y bronze:Y seal:Y legacy:- | `我.bronze.svg`<br>`我.oracle.svg`<br>`我.seal.svg` |
-| 屋 | oracle:- bronze:- seal:Y legacy:- | `屋.seal.svg` |
-| 务 | oracle:- bronze:Y seal:Y legacy:- | `务.bronze.svg`<br>`务.seal.svg` |
-| 物 | oracle:Y bronze:- seal:Y legacy:- | `物.oracle.svg`<br>`物.seal.svg` |
-| 西 | oracle:Y bronze:Y seal:Y legacy:- | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
-| 戏 | oracle:- bronze:Y seal:Y legacy:- | `戏.bronze.svg`<br>`戏.seal.svg` |
-| 系 | oracle:Y bronze:- seal:Y legacy:- | `系.oracle.svg`<br>`系.seal.svg` |
-| 先 | oracle:Y bronze:Y seal:Y legacy:- | `先.bronze.svg`<br>`先.oracle.svg`<br>`先.seal.svg` |
-| 闲 | oracle:- bronze:Y seal:Y legacy:- | `闲.bronze.svg`<br>`闲.seal.svg` |
-| 现 | oracle:Y bronze:Y seal:Y legacy:- | `现.bronze.svg`<br>`现.oracle.svg`<br>`现.seal.svg` |
-| 线 | oracle:- bronze:- seal:Y legacy:- | `线.seal.svg` |
-| 相 | oracle:Y bronze:Y seal:Y legacy:- | `相.bronze.svg`<br>`相.oracle.svg`<br>`相.seal.svg` |
-| 响 | oracle:- bronze:- seal:Y legacy:- | `响.seal.svg` |
-| 消 | oracle:- bronze:- seal:Y legacy:- | `消.seal.svg` |
-| 销 | oracle:- bronze:- seal:Y legacy:- | `销.seal.svg` |
-| 小 | oracle:Y bronze:Y seal:Y legacy:- | `小.bronze.svg`<br>`小.oracle.svg`<br>`小.seal.svg` |
-| 协 | oracle:- bronze:Y seal:Y legacy:- | `协.bronze.svg`<br>`协.seal.svg` |
-| 心 | oracle:Y bronze:Y seal:Y legacy:- | `心.bronze.svg`<br>`心.oracle.svg`<br>`心.seal.svg` |
-| 新 | oracle:Y bronze:Y seal:Y legacy:- | `新.bronze.svg`<br>`新.oracle.svg`<br>`新.seal.svg` |
-| 信 | oracle:- bronze:Y seal:Y legacy:- | `信.bronze.svg`<br>`信.seal.svg` |
-| 星 | oracle:Y bronze:Y seal:Y legacy:- | `星.bronze.svg`<br>`星.oracle.svg`<br>`星.seal.svg` |
-| 行 | oracle:Y bronze:Y seal:Y legacy:- | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
-| 雄 | oracle:- bronze:- seal:Y legacy:- | `雄.seal.svg` |
-| 袖 | oracle:- bronze:- seal:Y legacy:- | `袖.seal.svg` |
-| 需 | oracle:- bronze:Y seal:Y legacy:- | `需.bronze.svg`<br>`需.seal.svg` |
-| 序 | oracle:- bronze:Y seal:Y legacy:- | `序.bronze.svg`<br>`序.seal.svg` |
-| 宣 | oracle:Y bronze:Y seal:Y legacy:- | `宣.bronze.svg`<br>`宣.oracle.svg`<br>`宣.seal.svg` |
-| 选 | oracle:Y bronze:Y seal:Y legacy:- | `选.bronze.svg`<br>`选.oracle.svg`<br>`选.seal.svg` |
-| 学 | oracle:Y bronze:Y seal:Y legacy:- | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
-| 压 | oracle:- bronze:- seal:Y legacy:- | `压.seal.svg` |
-| 雅 | oracle:- bronze:- seal:Y legacy:- | `雅.seal.svg` |
-| 亚 | oracle:Y bronze:Y seal:Y legacy:- | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
-| 淹 | oracle:- bronze:- seal:Y legacy:- | `淹.seal.svg` |
-| 严 | oracle:- bronze:Y seal:Y legacy:- | `严.bronze.svg`<br>`严.seal.svg` |
-| 仰 | oracle:- bronze:- seal:Y legacy:- | `仰.seal.svg` |
-| 摇 | oracle:- bronze:- seal:Y legacy:- | `摇.seal.svg` |
-| 要 | oracle:- bronze:- seal:Y legacy:- | `要.seal.svg` |
-| 耀 | oracle:- bronze:- seal:Y legacy:- | `耀.seal.svg` |
-| 野 | oracle:Y bronze:Y seal:Y legacy:- | `野.bronze.svg`<br>`野.oracle.svg`<br>`野.seal.svg` |
-| 业 | oracle:- bronze:Y seal:Y legacy:- | `业.bronze.svg`<br>`业.seal.svg` |
-| 一 | oracle:Y bronze:Y seal:Y legacy:- | `一.bronze.svg`<br>`一.oracle.svg`<br>`一.seal.svg` |
-| 移 | oracle:- bronze:- seal:Y legacy:- | `移.seal.svg` |
-| 遗 | oracle:- bronze:Y seal:Y legacy:- | `遗.bronze.svg`<br>`遗.seal.svg` |
-| 已 | oracle:- bronze:Y seal:- legacy:- | `已.bronze.svg` |
-| 以 | oracle:Y bronze:Y seal:Y legacy:- | `以.bronze.svg`<br>`以.oracle.svg`<br>`以.seal.svg` |
-| 义 | oracle:Y bronze:Y seal:Y legacy:- | `义.bronze.svg`<br>`义.oracle.svg`<br>`义.seal.svg` |
-| 忆 | oracle:- bronze:Y seal:Y legacy:- | `忆.bronze.svg`<br>`忆.seal.svg` |
-| 议 | oracle:- bronze:Y seal:Y legacy:- | `议.bronze.svg`<br>`议.seal.svg` |
-| 易 | oracle:Y bronze:Y seal:Y legacy:- | `易.bronze.svg`<br>`易.oracle.svg`<br>`易.seal.svg` |
-| 谊 | oracle:- bronze:- seal:Y legacy:- | `谊.seal.svg` |
-| 意 | oracle:- bronze:- seal:Y legacy:- | `意.seal.svg` |
-| 英 | oracle:- bronze:Y seal:Y legacy:- | `英.bronze.svg`<br>`英.seal.svg` |
-| 营 | oracle:- bronze:Y seal:Y legacy:- | `营.bronze.svg`<br>`营.seal.svg` |
-| 影 | oracle:- bronze:- seal:Y legacy:- | `影.seal.svg` |
-| 用 | oracle:Y bronze:Y seal:Y legacy:- | `用.bronze.svg`<br>`用.oracle.svg`<br>`用.seal.svg` |
-| 优 | oracle:- bronze:- seal:Y legacy:- | `优.seal.svg` |
-| 由 | oracle:Y bronze:Y seal:- legacy:- | `由.bronze.svg`<br>`由.oracle.svg` |
-| 游 | oracle:Y bronze:Y seal:Y legacy:- | `游.bronze.svg`<br>`游.oracle.svg`<br>`游.seal.svg` |
-| 友 | oracle:Y bronze:Y seal:Y legacy:- | `友.bronze.svg`<br>`友.oracle.svg`<br>`友.seal.svg` |
-| 予 | oracle:- bronze:Y seal:Y legacy:- | `予.bronze.svg`<br>`予.seal.svg` |
-| 雨 | oracle:Y bronze:Y seal:Y legacy:- | `雨.bronze.svg`<br>`雨.oracle.svg`<br>`雨.seal.svg` |
-| 遇 | oracle:- bronze:Y seal:Y legacy:- | `遇.bronze.svg`<br>`遇.seal.svg` |
-| 员 | oracle:Y bronze:Y seal:Y legacy:- | `员.bronze.svg`<br>`员.oracle.svg`<br>`员.seal.svg` |
-| 援 | oracle:- bronze:- seal:Y legacy:- | `援.seal.svg` |
-| 源 | oracle:- bronze:- seal:Y legacy:- | `源.seal.svg` |
-| 跃 | oracle:- bronze:- seal:Y legacy:- | `跃.seal.svg` |
-| 灾 | oracle:Y bronze:- seal:Y legacy:- | `灾.oracle.svg`<br>`灾.seal.svg` |
-| 造 | oracle:- bronze:Y seal:Y legacy:- | `造.bronze.svg`<br>`造.seal.svg` |
-| 择 | oracle:- bronze:Y seal:Y legacy:- | `择.bronze.svg`<br>`择.seal.svg` |
-| 责 | oracle:Y bronze:Y seal:Y legacy:- | `责.bronze.svg`<br>`责.oracle.svg`<br>`责.seal.svg` |
-| 增 | oracle:- bronze:Y seal:Y legacy:- | `增.bronze.svg`<br>`增.seal.svg` |
-| 炸 | oracle:- bronze:Y seal:Y legacy:- | `炸.bronze.svg`<br>`炸.seal.svg` |
-| 展 | oracle:- bronze:- seal:Y legacy:- | `展.seal.svg` |
-| 战 | oracle:- bronze:Y seal:Y legacy:- | `战.bronze.svg`<br>`战.seal.svg` |
-| 站 | oracle:- bronze:- seal:Y legacy:- | `站.seal.svg` |
-| 长 | oracle:Y bronze:Y seal:Y legacy:- | `长.bronze.svg`<br>`长.oracle.svg`<br>`长.seal.svg` |
-| 招 | oracle:- bronze:- seal:Y legacy:- | `招.seal.svg` |
-| 召 | oracle:Y bronze:Y seal:Y legacy:- | `召.bronze.svg`<br>`召.oracle.svg`<br>`召.seal.svg` |
-| 整 | oracle:- bronze:Y seal:Y legacy:- | `整.bronze.svg`<br>`整.seal.svg` |
-| 政 | oracle:Y bronze:Y seal:Y legacy:- | `政.bronze.svg`<br>`政.oracle.svg`<br>`政.seal.svg` |
-| 之 | oracle:Y bronze:Y seal:Y legacy:- | `之.bronze.svg`<br>`之.oracle.svg`<br>`之.seal.svg` |
-| 支 | oracle:- bronze:- seal:Y legacy:- | `支.seal.svg` |
-| 知 | oracle:- bronze:Y seal:Y legacy:- | `知.bronze.svg`<br>`知.seal.svg` |
-| 织 | oracle:- bronze:Y seal:Y legacy:- | `织.bronze.svg`<br>`织.seal.svg` |
-| 执 | oracle:Y bronze:Y seal:Y legacy:- | `执.bronze.svg`<br>`执.oracle.svg`<br>`执.seal.svg` |
-| 职 | oracle:- bronze:Y seal:Y legacy:- | `职.bronze.svg`<br>`职.seal.svg` |
-| 止 | oracle:Y bronze:Y seal:Y legacy:- | `止.bronze.svg`<br>`止.oracle.svg`<br>`止.seal.svg` |
-| 址 | oracle:- bronze:- seal:Y legacy:- | `址.seal.svg` |
-| 指 | oracle:- bronze:- seal:Y legacy:- | `指.seal.svg` |
-| 制 | oracle:- bronze:Y seal:Y legacy:- | `制.bronze.svg`<br>`制.seal.svg` |
-| 置 | oracle:Y bronze:- seal:Y legacy:- | `置.oracle.svg`<br>`置.seal.svg` |
-| 忠 | oracle:- bronze:Y seal:Y legacy:- | `忠.bronze.svg`<br>`忠.seal.svg` |
-| 重 | oracle:Y bronze:Y seal:Y legacy:- | `重.bronze.svg`<br>`重.oracle.svg`<br>`重.seal.svg` |
-| 州 | oracle:Y bronze:Y seal:Y legacy:- | `州.bronze.svg`<br>`州.oracle.svg`<br>`州.seal.svg` |
-| 主 | oracle:Y bronze:- seal:Y legacy:- | `主.oracle.svg`<br>`主.seal.svg` |
-| 住 | oracle:- bronze:- seal:Y legacy:- | `住.seal.svg` |
-| 助 | oracle:- bronze:- seal:Y legacy:- | `助.seal.svg` |
-| 注 | oracle:Y bronze:- seal:Y legacy:- | `注.oracle.svg`<br>`注.seal.svg` |
-| 抓 | oracle:- bronze:- seal:Y legacy:- | `抓.seal.svg` |
-| 砖 | oracle:- bronze:Y seal:- legacy:- | `砖.bronze.svg` |
-| 转 | oracle:- bronze:- seal:Y legacy:- | `转.seal.svg` |
-| 状 | oracle:- bronze:- seal:Y legacy:- | `状.seal.svg` |
-| 撞 | oracle:- bronze:- seal:Y legacy:- | `撞.seal.svg` |
-| 兹 | oracle:Y bronze:Y seal:Y legacy:- | `兹.bronze.svg`<br>`兹.oracle.svg`<br>`兹.seal.svg` |
-| 资 | oracle:- bronze:- seal:Y legacy:- | `资.seal.svg` |
-| 自 | oracle:Y bronze:Y seal:Y legacy:- | `自.bronze.svg`<br>`自.oracle.svg`<br>`自.seal.svg` |
-| 宗 | oracle:Y bronze:Y seal:Y legacy:- | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
-| 走 | oracle:Y bronze:Y seal:Y legacy:- | `走.bronze.svg`<br>`走.oracle.svg`<br>`走.seal.svg` |
-| 族 | oracle:Y bronze:Y seal:Y legacy:- | `族.bronze.svg`<br>`族.oracle.svg`<br>`族.seal.svg` |
-| 阻 | oracle:- bronze:- seal:Y legacy:- | `阻.seal.svg` |
-| 组 | oracle:- bronze:Y seal:Y legacy:- | `组.bronze.svg`<br>`组.seal.svg` |
-| 遵 | oracle:- bronze:- seal:Y legacy:- | `遵.seal.svg` |
-| 作 | oracle:Y bronze:Y seal:Y legacy:- | `作.bronze.svg`<br>`作.oracle.svg`<br>`作.seal.svg` |
+| 埃 | oracle:- bronze:- seal:Y | `埃.seal.svg` |
+| 挨 | oracle:- bronze:- seal:Y | `挨.seal.svg` |
+| 碍 | oracle:- bronze:- seal:Y | `碍.seal.svg` |
+| 傲 | oracle:- bronze:- seal:Y | `傲.seal.svg` |
+| 巴 | oracle:Y bronze:- seal:Y | `巴.oracle.svg`<br>`巴.seal.svg` |
+| 坝 | oracle:- bronze:- seal:Y | `坝.seal.svg` |
+| 败 | oracle:Y bronze:Y seal:Y | `败.bronze.svg`<br>`败.oracle.svg`<br>`败.seal.svg` |
+| 斑 | oracle:- bronze:- seal:Y | `斑.seal.svg` |
+| 邦 | oracle:Y bronze:Y seal:Y | `邦.bronze.svg`<br>`邦.oracle.svg`<br>`邦.seal.svg` |
+| 暴 | oracle:Y bronze:Y seal:Y | `暴.bronze.svg`<br>`暴.oracle.svg`<br>`暴.seal.svg` |
+| 本 | oracle:- bronze:Y seal:Y | `本.bronze.svg`<br>`本.seal.svg` |
+| 比 | oracle:Y bronze:Y seal:Y | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
+| 币 | oracle:- bronze:- seal:Y | `币.seal.svg` |
+| 避 | oracle:- bronze:- seal:Y | `避.seal.svg` |
+| 边 | oracle:Y bronze:Y seal:Y | `边.bronze.svg`<br>`边.oracle.svg`<br>`边.seal.svg` |
+| 变 | oracle:- bronze:Y seal:Y | `变.bronze.svg`<br>`变.seal.svg` |
+| 便 | oracle:- bronze:Y seal:Y | `便.bronze.svg`<br>`便.seal.svg` |
+| 标 | oracle:- bronze:- seal:Y | `标.seal.svg` |
+| 别 | oracle:Y bronze:- seal:Y | `别.oracle.svg`<br>`别.seal.svg` |
+| 捕 | oracle:- bronze:- seal:Y | `捕.seal.svg` |
+| 布 | oracle:- bronze:Y seal:Y | `布.bronze.svg`<br>`布.seal.svg` |
+| 步 | oracle:Y bronze:Y seal:Y | `步.bronze.svg`<br>`步.oracle.svg`<br>`步.seal.svg` |
+| 部 | oracle:- bronze:- seal:Y | `部.seal.svg` |
+| 产 | oracle:- bronze:Y seal:Y | `产.bronze.svg`<br>`产.seal.svg` |
+| 称 | oracle:- bronze:- seal:Y | `称.seal.svg` |
+| 成 | oracle:Y bronze:Y seal:Y | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
+| 承 | oracle:Y bronze:Y seal:Y | `承.bronze.svg`<br>`承.oracle.svg`<br>`承.seal.svg` |
+| 诚 | oracle:- bronze:- seal:Y | `诚.seal.svg` |
+| 城 | oracle:- bronze:Y seal:Y | `城.bronze.svg`<br>`城.seal.svg` |
+| 程 | oracle:- bronze:Y seal:Y | `程.bronze.svg`<br>`程.seal.svg` |
+| 充 | oracle:- bronze:- seal:Y | `充.seal.svg` |
+| 丑 | oracle:Y bronze:Y seal:Y | `丑.bronze.svg`<br>`丑.oracle.svg`<br>`丑.seal.svg` |
+| 出 | oracle:Y bronze:Y seal:Y | `出.bronze.svg`<br>`出.oracle.svg`<br>`出.seal.svg` |
+| 除 | oracle:- bronze:- seal:Y | `除.seal.svg` |
+| 窗 | oracle:- bronze:- seal:Y | `窗.seal.svg` |
+| 创 | oracle:- bronze:Y seal:Y | `创.bronze.svg`<br>`创.seal.svg` |
+| 瓷 | oracle:- bronze:- seal:Y | `瓷.seal.svg` |
+| 丛 | oracle:- bronze:Y seal:Y | `丛.bronze.svg`<br>`丛.seal.svg` |
+| 促 | oracle:- bronze:- seal:Y | `促.seal.svg` |
+| 篡 | oracle:- bronze:- seal:Y | `篡.seal.svg` |
+| 打 | oracle:- bronze:- seal:Y | `打.seal.svg` |
+| 大 | oracle:Y bronze:Y seal:Y | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
+| 代 | oracle:- bronze:- seal:Y | `代.seal.svg` |
+| 单 | oracle:Y bronze:Y seal:Y | `单.bronze.svg`<br>`单.oracle.svg`<br>`单.seal.svg` |
+| 弹 | oracle:Y bronze:- seal:Y | `弹.oracle.svg`<br>`弹.seal.svg` |
+| 导 | oracle:- bronze:- seal:Y | `导.seal.svg` |
+| 盗 | oracle:Y bronze:Y seal:Y | `盗.bronze.svg`<br>`盗.oracle.svg`<br>`盗.seal.svg` |
+| 道 | oracle:- bronze:Y seal:Y | `道.bronze.svg`<br>`道.seal.svg` |
+| 得 | oracle:Y bronze:Y seal:Y | `得.bronze.svg`<br>`得.oracle.svg`<br>`得.seal.svg` |
+| 地 | oracle:- bronze:Y seal:Y | `地.bronze.svg`<br>`地.seal.svg` |
+| 等 | oracle:- bronze:- seal:Y | `等.seal.svg` |
+| 低 | oracle:- bronze:- seal:Y | `低.seal.svg` |
+| 敌 | oracle:- bronze:Y seal:Y | `敌.bronze.svg`<br>`敌.seal.svg` |
+| 点 | oracle:- bronze:- seal:Y | `点.seal.svg` |
+| 电 | oracle:- bronze:Y seal:Y | `电.bronze.svg`<br>`电.seal.svg` |
+| 殿 | oracle:- bronze:Y seal:Y | `殿.bronze.svg`<br>`殿.seal.svg` |
+| 调 | oracle:- bronze:- seal:Y | `调.seal.svg` |
+| 谍 | oracle:- bronze:- seal:Y | `谍.seal.svg` |
+| 定 | oracle:Y bronze:Y seal:Y | `定.bronze.svg`<br>`定.oracle.svg`<br>`定.seal.svg` |
+| 丢 | oracle:- bronze:Y seal:Y | `丢.bronze.svg`<br>`丢.seal.svg` |
+| 东 | oracle:Y bronze:Y seal:Y | `东.bronze.svg`<br>`东.oracle.svg`<br>`东.seal.svg` |
+| 动 | oracle:- bronze:Y seal:Y | `动.bronze.svg`<br>`动.seal.svg` |
+| 度 | oracle:Y bronze:Y seal:Y | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
+| 端 | oracle:- bronze:- seal:Y | `端.seal.svg` |
+| 断 | oracle:- bronze:Y seal:Y | `断.bronze.svg`<br>`断.seal.svg` |
+| 队 | oracle:Y bronze:Y seal:Y | `队.bronze.svg`<br>`队.oracle.svg`<br>`队.seal.svg` |
+| 夺 | oracle:- bronze:Y seal:Y | `夺.bronze.svg`<br>`夺.seal.svg` |
+| 俄 | oracle:- bronze:- seal:Y | `俄.seal.svg` |
+| 饿 | oracle:- bronze:- seal:Y | `饿.seal.svg` |
+| 发 | oracle:Y bronze:Y seal:Y | `发.bronze.svg`<br>`发.oracle.svg`<br>`发.seal.svg` |
+| 反 | oracle:Y bronze:Y seal:Y | `反.bronze.svg`<br>`反.oracle.svg`<br>`反.seal.svg` |
+| 范 | oracle:- bronze:Y seal:Y | `范.bronze.svg`<br>`范.seal.svg` |
+| 方 | oracle:Y bronze:Y seal:Y | `方.bronze.svg`<br>`方.oracle.svg`<br>`方.seal.svg` |
+| 房 | oracle:- bronze:- seal:Y | `房.seal.svg` |
+| 放 | oracle:- bronze:Y seal:Y | `放.bronze.svg`<br>`放.seal.svg` |
+| 非 | oracle:Y bronze:Y seal:Y | `非.bronze.svg`<br>`非.oracle.svg`<br>`非.seal.svg` |
+| 分 | oracle:Y bronze:Y seal:Y | `分.bronze.svg`<br>`分.oracle.svg`<br>`分.seal.svg` |
+| 份 | oracle:- bronze:- seal:Y | `份.seal.svg` |
+| 风 | oracle:Y bronze:Y seal:Y | `风.bronze.svg`<br>`风.oracle.svg`<br>`风.seal.svg` |
+| 服 | oracle:Y bronze:Y seal:Y | `服.bronze.svg`<br>`服.oracle.svg`<br>`服.seal.svg` |
+| 俘 | oracle:Y bronze:Y seal:Y | `俘.bronze.svg`<br>`俘.oracle.svg`<br>`俘.seal.svg` |
+| 府 | oracle:- bronze:Y seal:Y | `府.bronze.svg`<br>`府.seal.svg` |
+| 付 | oracle:- bronze:Y seal:Y | `付.bronze.svg`<br>`付.seal.svg` |
+| 复 | oracle:Y bronze:Y seal:Y | `复.bronze.svg`<br>`复.oracle.svg`<br>`复.seal.svg` |
+| 改 | oracle:Y bronze:Y seal:Y | `改.bronze.svg`<br>`改.oracle.svg`<br>`改.seal.svg` |
+| 干 | oracle:Y bronze:Y seal:Y | `干.bronze.svg`<br>`干.oracle.svg`<br>`干.seal.svg` |
+| 告 | oracle:Y bronze:Y seal:Y | `告.bronze.svg`<br>`告.oracle.svg`<br>`告.seal.svg` |
+| 革 | oracle:Y bronze:Y seal:Y | `革.bronze.svg`<br>`革.oracle.svg`<br>`革.seal.svg` |
+| 格 | oracle:- bronze:Y seal:Y | `格.bronze.svg`<br>`格.seal.svg` |
+| 给 | oracle:- bronze:- seal:Y | `给.seal.svg` |
+| 更 | oracle:Y bronze:Y seal:Y | `更.bronze.svg`<br>`更.oracle.svg`<br>`更.seal.svg` |
+| 工 | oracle:Y bronze:Y seal:Y | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
+| 公 | oracle:Y bronze:Y seal:Y | `公.bronze.svg`<br>`公.oracle.svg`<br>`公.seal.svg` |
+| 功 | oracle:- bronze:Y seal:Y | `功.bronze.svg`<br>`功.seal.svg` |
+| 攻 | oracle:- bronze:Y seal:Y | `攻.bronze.svg`<br>`攻.seal.svg` |
+| 购 | oracle:- bronze:- seal:Y | `购.seal.svg` |
+| 媾 | oracle:- bronze:Y seal:Y | `媾.bronze.svg`<br>`媾.seal.svg` |
+| 古 | oracle:Y bronze:Y seal:Y | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
+| 故 | oracle:- bronze:Y seal:Y | `故.bronze.svg`<br>`故.seal.svg` |
+| 雇 | oracle:Y bronze:- seal:Y | `雇.oracle.svg`<br>`雇.seal.svg` |
+| 观 | oracle:Y bronze:Y seal:Y | `观.bronze.svg`<br>`观.oracle.svg`<br>`观.seal.svg` |
+| 滚 | oracle:- bronze:- seal:Y | `滚.seal.svg` |
+| 国 | oracle:- bronze:Y seal:Y | `国.bronze.svg`<br>`国.seal.svg` |
+| 过 | oracle:- bronze:Y seal:Y | `过.bronze.svg`<br>`过.seal.svg` |
+| 海 | oracle:- bronze:Y seal:Y | `海.bronze.svg`<br>`海.seal.svg` |
+| 旱 | oracle:- bronze:- seal:Y | `旱.seal.svg` |
+| 好 | oracle:Y bronze:Y seal:Y | `好.bronze.svg`<br>`好.oracle.svg`<br>`好.seal.svg` |
+| 合 | oracle:Y bronze:Y seal:Y | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
+| 河 | oracle:Y bronze:Y seal:Y | `河.bronze.svg`<br>`河.oracle.svg`<br>`河.seal.svg` |
+| 核 | oracle:- bronze:- seal:Y | `核.seal.svg` |
+| 很 | oracle:- bronze:- seal:Y | `很.seal.svg` |
+| 红 | oracle:- bronze:- seal:Y | `红.seal.svg` |
+| 洪 | oracle:- bronze:- seal:Y | `洪.seal.svg` |
+| 户 | oracle:Y bronze:Y seal:Y | `户.bronze.svg`<br>`户.oracle.svg`<br>`户.seal.svg` |
+| 化 | oracle:Y bronze:Y seal:Y | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
+| 坏 | oracle:- bronze:Y seal:Y | `坏.bronze.svg`<br>`坏.seal.svg` |
+| 换 | oracle:- bronze:- seal:Y | `换.seal.svg` |
+| 恢 | oracle:- bronze:- seal:Y | `恢.seal.svg` |
+| 挥 | oracle:- bronze:Y seal:Y | `挥.bronze.svg`<br>`挥.seal.svg` |
+| 回 | oracle:Y bronze:Y seal:Y | `回.bronze.svg`<br>`回.oracle.svg`<br>`回.seal.svg` |
+| 会 | oracle:Y bronze:Y seal:Y | `会.bronze.svg`<br>`会.oracle.svg`<br>`会.seal.svg` |
+| 贿 | oracle:- bronze:- seal:Y | `贿.seal.svg` |
+| 彗 | oracle:Y bronze:- seal:Y | `彗.oracle.svg`<br>`彗.seal.svg` |
+| 活 | oracle:- bronze:- seal:Y | `活.seal.svg` |
+| 火 | oracle:Y bronze:- seal:Y | `火.oracle.svg`<br>`火.seal.svg` |
+| 获 | oracle:Y bronze:Y seal:Y | `获.bronze.svg`<br>`获.oracle.svg`<br>`获.seal.svg` |
+| 击 | oracle:- bronze:- seal:Y | `击.seal.svg` |
+| 机 | oracle:- bronze:- seal:Y | `机.seal.svg` |
+| 级 | oracle:- bronze:- seal:Y | `级.seal.svg` |
+| 急 | oracle:- bronze:- seal:Y | `急.seal.svg` |
+| 计 | oracle:- bronze:- seal:Y | `计.seal.svg` |
+| 记 | oracle:- bronze:Y seal:Y | `记.bronze.svg`<br>`记.seal.svg` |
+| 纪 | oracle:- bronze:Y seal:Y | `纪.bronze.svg`<br>`纪.seal.svg` |
+| 技 | oracle:- bronze:- seal:Y | `技.seal.svg` |
+| 迹 | oracle:- bronze:Y seal:Y | `迹.bronze.svg`<br>`迹.seal.svg` |
+| 加 | oracle:- bronze:Y seal:Y | `加.bronze.svg`<br>`加.seal.svg` |
+| 间 | oracle:- bronze:Y seal:Y | `间.bronze.svg`<br>`间.seal.svg` |
+| 监 | oracle:Y bronze:Y seal:Y | `监.bronze.svg`<br>`监.oracle.svg`<br>`监.seal.svg` |
+| 减 | oracle:- bronze:Y seal:Y | `减.bronze.svg`<br>`减.seal.svg` |
+| 见 | oracle:Y bronze:Y seal:Y | `见.bronze.svg`<br>`见.oracle.svg`<br>`见.seal.svg` |
+| 件 | oracle:- bronze:- seal:Y | `件.seal.svg` |
+| 建 | oracle:Y bronze:Y seal:Y | `建.bronze.svg`<br>`建.oracle.svg`<br>`建.seal.svg` |
+| 箭 | oracle:- bronze:Y seal:Y | `箭.bronze.svg`<br>`箭.seal.svg` |
+| 僵 | oracle:- bronze:- seal:Y | `僵.seal.svg` |
+| 交 | oracle:- bronze:- seal:Y | `交.seal.svg` |
+| 骄 | oracle:- bronze:Y seal:Y | `骄.bronze.svg`<br>`骄.seal.svg` |
+| 焦 | oracle:- bronze:Y seal:Y | `焦.bronze.svg`<br>`焦.seal.svg` |
+| 教 | oracle:Y bronze:Y seal:Y | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
+| 接 | oracle:- bronze:- seal:Y | `接.seal.svg` |
+| 劫 | oracle:- bronze:- seal:Y | `劫.seal.svg` |
+| 结 | oracle:- bronze:- seal:Y | `结.seal.svg` |
+| 解 | oracle:Y bronze:Y seal:Y | `解.bronze.svg`<br>`解.oracle.svg`<br>`解.seal.svg` |
+| 界 | oracle:- bronze:- seal:Y | `界.seal.svg` |
+| 金 | oracle:- bronze:Y seal:Y | `金.bronze.svg`<br>`金.seal.svg` |
+| 紧 | oracle:- bronze:- seal:Y | `紧.seal.svg` |
+| 晋 | oracle:Y bronze:Y seal:Y | `晋.bronze.svg`<br>`晋.oracle.svg`<br>`晋.seal.svg` |
+| 禁 | oracle:- bronze:- seal:Y | `禁.seal.svg` |
+| 竞 | oracle:Y bronze:Y seal:Y | `竞.bronze.svg`<br>`竞.oracle.svg`<br>`竞.seal.svg` |
+| 就 | oracle:Y bronze:Y seal:Y | `就.bronze.svg`<br>`就.oracle.svg`<br>`就.seal.svg` |
+| 剧 | oracle:- bronze:- seal:Y | `剧.seal.svg` |
+| 开 | oracle:- bronze:- seal:Y | `开.seal.svg` |
+| 看 | oracle:- bronze:- seal:Y | `看.seal.svg` |
+| 考 | oracle:Y bronze:Y seal:Y | `考.bronze.svg`<br>`考.oracle.svg`<br>`考.seal.svg` |
+| 科 | oracle:- bronze:- seal:Y | `科.seal.svg` |
+| 刻 | oracle:- bronze:- seal:Y | `刻.seal.svg` |
+| 口 | oracle:Y bronze:Y seal:Y | `口.bronze.svg`<br>`口.oracle.svg`<br>`口.seal.svg` |
+| 库 | oracle:- bronze:Y seal:Y | `库.bronze.svg`<br>`库.seal.svg` |
+| 快 | oracle:- bronze:- seal:Y | `快.seal.svg` |
+| 况 | oracle:Y bronze:- seal:Y | `况.oracle.svg`<br>`况.seal.svg` |
+| 困 | oracle:Y bronze:- seal:Y | `困.oracle.svg`<br>`困.seal.svg` |
+| 扩 | oracle:- bronze:- seal:Y | `扩.seal.svg` |
+| 拉 | oracle:- bronze:- seal:Y | `拉.seal.svg` |
+| 来 | oracle:Y bronze:Y seal:Y | `来.bronze.svg`<br>`来.oracle.svg`<br>`来.seal.svg` |
+| 兰 | oracle:- bronze:- seal:Y | `兰.seal.svg` |
+| 乐 | oracle:Y bronze:Y seal:Y | `乐.bronze.svg`<br>`乐.oracle.svg`<br>`乐.seal.svg` |
+| 离 | oracle:- bronze:Y seal:Y | `离.bronze.svg`<br>`离.seal.svg` |
+| 理 | oracle:- bronze:Y seal:Y | `理.bronze.svg`<br>`理.seal.svg` |
+| 力 | oracle:Y bronze:Y seal:Y | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
+| 立 | oracle:Y bronze:Y seal:Y | `立.bronze.svg`<br>`立.oracle.svg`<br>`立.seal.svg` |
+| 利 | oracle:Y bronze:Y seal:Y | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
+| 连 | oracle:- bronze:Y seal:Y | `连.bronze.svg`<br>`连.seal.svg` |
+| 联 | oracle:Y bronze:Y seal:Y | `联.bronze.svg`<br>`联.oracle.svg`<br>`联.seal.svg` |
+| 量 | oracle:Y bronze:Y seal:Y | `量.bronze.svg`<br>`量.oracle.svg`<br>`量.seal.svg` |
+| 林 | oracle:Y bronze:Y seal:Y | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
+| 临 | oracle:Y bronze:Y seal:Y | `临.bronze.svg`<br>`临.oracle.svg`<br>`临.seal.svg` |
+| 领 | oracle:- bronze:- seal:Y | `领.seal.svg` |
+| 流 | oracle:- bronze:Y seal:Y | `流.bronze.svg`<br>`流.seal.svg` |
+| 隆 | oracle:- bronze:- seal:Y | `隆.seal.svg` |
+| 陆 | oracle:Y bronze:Y seal:Y | `陆.bronze.svg`<br>`陆.oracle.svg`<br>`陆.seal.svg` |
+| 录 | oracle:Y bronze:Y seal:Y | `录.bronze.svg`<br>`录.oracle.svg`<br>`录.seal.svg` |
+| 赂 | oracle:- bronze:- seal:Y | `赂.seal.svg` |
+| 路 | oracle:- bronze:Y seal:Y | `路.bronze.svg`<br>`路.seal.svg` |
+| 虑 | oracle:- bronze:Y seal:Y | `虑.bronze.svg`<br>`虑.seal.svg` |
+| 乱 | oracle:- bronze:Y seal:Y | `乱.bronze.svg`<br>`乱.seal.svg` |
+| 掠 | oracle:- bronze:- seal:Y | `掠.seal.svg` |
+| 轮 | oracle:- bronze:Y seal:Y | `轮.bronze.svg`<br>`轮.seal.svg` |
+| 罗 | oracle:Y bronze:Y seal:Y | `罗.bronze.svg`<br>`罗.oracle.svg`<br>`罗.seal.svg` |
+| 落 | oracle:- bronze:- seal:Y | `落.seal.svg` |
+| 玛 | oracle:Y bronze:Y seal:Y | `玛.bronze.svg`<br>`玛.oracle.svg`<br>`玛.seal.svg` |
+| 买 | oracle:Y bronze:Y seal:Y | `买.bronze.svg`<br>`买.oracle.svg`<br>`买.seal.svg` |
+| 蛮 | oracle:- bronze:Y seal:Y | `蛮.bronze.svg`<br>`蛮.seal.svg` |
+| 贸 | oracle:- bronze:Y seal:Y | `贸.bronze.svg`<br>`贸.seal.svg` |
+| 没 | oracle:- bronze:- seal:Y | `没.seal.svg` |
+| 美 | oracle:Y bronze:Y seal:Y | `美.bronze.svg`<br>`美.oracle.svg`<br>`美.seal.svg` |
+| 盟 | oracle:Y bronze:Y seal:Y | `盟.bronze.svg`<br>`盟.oracle.svg`<br>`盟.seal.svg` |
+| 秘 | oracle:- bronze:- seal:Y | `秘.seal.svg` |
+| 密 | oracle:- bronze:Y seal:Y | `密.bronze.svg`<br>`密.seal.svg` |
+| 免 | oracle:Y bronze:Y seal:- | `免.bronze.svg`<br>`免.oracle.svg` |
+| 面 | oracle:Y bronze:- seal:Y | `面.oracle.svg`<br>`面.seal.svg` |
+| 民 | oracle:Y bronze:Y seal:Y | `民.bronze.svg`<br>`民.oracle.svg`<br>`民.seal.svg` |
+| 命 | oracle:Y bronze:Y seal:Y | `命.bronze.svg`<br>`命.oracle.svg`<br>`命.seal.svg` |
+| 模 | oracle:- bronze:- seal:Y | `模.seal.svg` |
+| 目 | oracle:Y bronze:Y seal:Y | `目.bronze.svg`<br>`目.oracle.svg`<br>`目.seal.svg` |
+| 募 | oracle:- bronze:- seal:Y | `募.seal.svg` |
+| 你 | oracle:- bronze:Y seal:- | `你.bronze.svg` |
+| 念 | oracle:Y bronze:Y seal:Y | `念.bronze.svg`<br>`念.oracle.svg`<br>`念.seal.svg` |
+| 捏 | oracle:- bronze:- seal:Y | `捏.seal.svg` |
+| 挪 | oracle:- bronze:- seal:Y | `挪.seal.svg` |
+| 诺 | oracle:- bronze:Y seal:Y | `诺.bronze.svg`<br>`诺.seal.svg` |
+| 叛 | oracle:- bronze:- seal:Y | `叛.seal.svg` |
+| 跑 | oracle:- bronze:Y seal:Y | `跑.bronze.svg`<br>`跑.seal.svg` |
+| 喷 | oracle:- bronze:- seal:Y | `喷.seal.svg` |
+| 品 | oracle:Y bronze:Y seal:Y | `品.bronze.svg`<br>`品.oracle.svg`<br>`品.seal.svg` |
+| 平 | oracle:- bronze:Y seal:Y | `平.bronze.svg`<br>`平.seal.svg` |
+| 凭 | oracle:- bronze:- seal:Y | `凭.seal.svg` |
+| 迫 | oracle:- bronze:- seal:Y | `迫.seal.svg` |
+| 破 | oracle:- bronze:- seal:Y | `破.seal.svg` |
+| 期 | oracle:- bronze:Y seal:Y | `期.bronze.svg`<br>`期.seal.svg` |
+| 其 | oracle:Y bronze:Y seal:Y | `其.bronze.svg`<br>`其.oracle.svg`<br>`其.seal.svg` |
+| 奇 | oracle:- bronze:- seal:Y | `奇.seal.svg` |
+| 企 | oracle:Y bronze:Y seal:Y | `企.bronze.svg`<br>`企.oracle.svg`<br>`企.seal.svg` |
+| 器 | oracle:- bronze:Y seal:Y | `器.bronze.svg`<br>`器.seal.svg` |
+| 迁 | oracle:- bronze:- seal:Y | `迁.seal.svg` |
+| 谴 | oracle:- bronze:Y seal:Y | `谴.bronze.svg`<br>`谴.seal.svg` |
+| 强 | oracle:- bronze:- seal:Y | `强.seal.svg` |
+| 墙 | oracle:Y bronze:Y seal:Y | `墙.bronze.svg`<br>`墙.oracle.svg`<br>`墙.seal.svg` |
+| 抢 | oracle:- bronze:Y seal:Y | `抢.bronze.svg`<br>`抢.seal.svg` |
+| 窃 | oracle:- bronze:- seal:Y | `窃.seal.svg` |
+| 轻 | oracle:- bronze:- seal:Y | `轻.seal.svg` |
+| 情 | oracle:- bronze:- seal:Y | `情.seal.svg` |
+| 请 | oracle:- bronze:Y seal:Y | `请.bronze.svg`<br>`请.seal.svg` |
+| 求 | oracle:Y bronze:Y seal:Y | `求.bronze.svg`<br>`求.oracle.svg`<br>`求.seal.svg` |
+| 屈 | oracle:- bronze:Y seal:Y | `屈.bronze.svg`<br>`屈.seal.svg` |
+| 取 | oracle:Y bronze:Y seal:Y | `取.bronze.svg`<br>`取.oracle.svg`<br>`取.seal.svg` |
+| 去 | oracle:Y bronze:Y seal:Y | `去.bronze.svg`<br>`去.oracle.svg`<br>`去.seal.svg` |
+| 然 | oracle:- bronze:Y seal:Y | `然.bronze.svg`<br>`然.seal.svg` |
+| 扰 | oracle:- bronze:Y seal:Y | `扰.bronze.svg`<br>`扰.seal.svg` |
+| 人 | oracle:Y bronze:Y seal:Y | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
+| 认 | oracle:- bronze:- seal:Y | `认.seal.svg` |
+| 任 | oracle:Y bronze:Y seal:Y | `任.bronze.svg`<br>`任.oracle.svg`<br>`任.seal.svg` |
+| 容 | oracle:- bronze:Y seal:Y | `容.bronze.svg`<br>`容.seal.svg` |
+| 入 | oracle:Y bronze:Y seal:Y | `入.bronze.svg`<br>`入.oracle.svg`<br>`入.seal.svg` |
+| 塞 | oracle:Y bronze:- seal:Y | `塞.oracle.svg`<br>`塞.seal.svg` |
+| 赛 | oracle:- bronze:- seal:Y | `赛.seal.svg` |
+| 散 | oracle:Y bronze:Y seal:Y | `散.bronze.svg`<br>`散.oracle.svg`<br>`散.seal.svg` |
+| 骚 | oracle:- bronze:- seal:Y | `骚.seal.svg` |
+| 色 | oracle:- bronze:Y seal:Y | `色.bronze.svg`<br>`色.seal.svg` |
+| 森 | oracle:Y bronze:- seal:Y | `森.oracle.svg`<br>`森.seal.svg` |
+| 杀 | oracle:- bronze:Y seal:Y | `杀.bronze.svg`<br>`杀.seal.svg` |
+| 山 | oracle:Y bronze:Y seal:Y | `山.bronze.svg`<br>`山.oracle.svg`<br>`山.seal.svg` |
+| 煽 | oracle:- bronze:- seal:Y | `煽.seal.svg` |
+| 设 | oracle:- bronze:- seal:Y | `设.seal.svg` |
+| 社 | oracle:- bronze:Y seal:Y | `社.bronze.svg`<br>`社.seal.svg` |
+| 身 | oracle:Y bronze:Y seal:Y | `身.bronze.svg`<br>`身.oracle.svg`<br>`身.seal.svg` |
+| 神 | oracle:- bronze:Y seal:Y | `神.bronze.svg`<br>`神.seal.svg` |
+| 升 | oracle:Y bronze:Y seal:Y | `升.bronze.svg`<br>`升.oracle.svg`<br>`升.seal.svg` |
+| 生 | oracle:Y bronze:Y seal:Y | `生.bronze.svg`<br>`生.oracle.svg`<br>`生.seal.svg` |
+| 声 | oracle:Y bronze:- seal:Y | `声.oracle.svg`<br>`声.seal.svg` |
+| 胜 | oracle:- bronze:- seal:Y | `胜.seal.svg` |
+| 尸 | oracle:Y bronze:Y seal:Y | `尸.bronze.svg`<br>`尸.oracle.svg`<br>`尸.seal.svg` |
+| 失 | oracle:- bronze:Y seal:Y | `失.bronze.svg`<br>`失.seal.svg` |
+| 施 | oracle:- bronze:- seal:Y | `施.seal.svg` |
+| 时 | oracle:- bronze:Y seal:Y | `时.bronze.svg`<br>`时.seal.svg` |
+| 食 | oracle:Y bronze:Y seal:Y | `食.bronze.svg`<br>`食.oracle.svg`<br>`食.seal.svg` |
+| 始 | oracle:- bronze:Y seal:Y | `始.bronze.svg`<br>`始.seal.svg` |
+| 氏 | oracle:Y bronze:Y seal:Y | `氏.bronze.svg`<br>`氏.oracle.svg`<br>`氏.seal.svg` |
+| 世 | oracle:- bronze:Y seal:Y | `世.bronze.svg`<br>`世.seal.svg` |
+| 市 | oracle:Y bronze:Y seal:Y | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
+| 式 | oracle:- bronze:- seal:Y | `式.seal.svg` |
+| 事 | oracle:Y bronze:Y seal:Y | `事.bronze.svg`<br>`事.oracle.svg`<br>`事.seal.svg` |
+| 收 | oracle:- bronze:- seal:Y | `收.seal.svg` |
+| 守 | oracle:Y bronze:Y seal:Y | `守.bronze.svg`<br>`守.oracle.svg`<br>`守.seal.svg` |
+| 首 | oracle:Y bronze:Y seal:Y | `首.bronze.svg`<br>`首.oracle.svg`<br>`首.seal.svg` |
+| 寿 | oracle:- bronze:Y seal:Y | `寿.bronze.svg`<br>`寿.seal.svg` |
+| 受 | oracle:Y bronze:Y seal:Y | `受.bronze.svg`<br>`受.oracle.svg`<br>`受.seal.svg` |
+| 赎 | oracle:- bronze:Y seal:Y | `赎.bronze.svg`<br>`赎.seal.svg` |
+| 术 | oracle:Y bronze:- seal:Y | `术.oracle.svg`<br>`术.seal.svg` |
+| 束 | oracle:Y bronze:Y seal:Y | `束.bronze.svg`<br>`束.oracle.svg`<br>`束.seal.svg` |
+| 数 | oracle:- bronze:Y seal:Y | `数.bronze.svg`<br>`数.seal.svg` |
+| 水 | oracle:Y bronze:Y seal:Y | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
+| 顺 | oracle:Y bronze:Y seal:Y | `顺.bronze.svg`<br>`顺.oracle.svg`<br>`顺.seal.svg` |
+| 司 | oracle:Y bronze:Y seal:Y | `司.bronze.svg`<br>`司.oracle.svg`<br>`司.seal.svg` |
+| 死 | oracle:Y bronze:Y seal:Y | `死.bronze.svg`<br>`死.oracle.svg`<br>`死.seal.svg` |
+| 速 | oracle:Y bronze:Y seal:Y | `速.bronze.svg`<br>`速.oracle.svg`<br>`速.seal.svg` |
+| 碎 | oracle:- bronze:- seal:Y | `碎.seal.svg` |
+| 损 | oracle:- bronze:- seal:Y | `损.seal.svg` |
+| 他 | oracle:- bronze:- seal:Y | `他.seal.svg` |
+| 态 | oracle:- bronze:- seal:Y | `态.seal.svg` |
+| 逃 | oracle:- bronze:Y seal:Y | `逃.bronze.svg`<br>`逃.seal.svg` |
+| 特 | oracle:- bronze:- seal:Y | `特.seal.svg` |
+| 踢 | oracle:- bronze:- seal:Y | `踢.seal.svg` |
+| 提 | oracle:- bronze:- seal:Y | `提.seal.svg` |
+| 天 | oracle:Y bronze:Y seal:Y | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
+| 填 | oracle:- bronze:- seal:Y | `填.seal.svg` |
+| 听 | oracle:Y bronze:Y seal:Y | `听.bronze.svg`<br>`听.oracle.svg`<br>`听.seal.svg` |
+| 通 | oracle:Y bronze:Y seal:Y | `通.bronze.svg`<br>`通.oracle.svg`<br>`通.seal.svg` |
+| 同 | oracle:Y bronze:Y seal:Y | `同.bronze.svg`<br>`同.oracle.svg`<br>`同.seal.svg` |
+| 偷 | oracle:- bronze:- seal:Y | `偷.seal.svg` |
+| 突 | oracle:Y bronze:- seal:Y | `突.oracle.svg`<br>`突.seal.svg` |
+| 土 | oracle:Y bronze:Y seal:Y | `土.bronze.svg`<br>`土.oracle.svg`<br>`土.seal.svg` |
+| 推 | oracle:- bronze:- seal:Y | `推.seal.svg` |
+| 脱 | oracle:- bronze:- seal:Y | `脱.seal.svg` |
+| 弯 | oracle:- bronze:- seal:Y | `弯.seal.svg` |
+| 完 | oracle:- bronze:- seal:Y | `完.seal.svg` |
+| 玩 | oracle:- bronze:- seal:Y | `玩.seal.svg` |
+| 万 | oracle:Y bronze:Y seal:Y | `万.bronze.svg`<br>`万.oracle.svg`<br>`万.seal.svg` |
+| 亡 | oracle:Y bronze:Y seal:Y | `亡.bronze.svg`<br>`亡.oracle.svg`<br>`亡.seal.svg` |
+| 网 | oracle:Y bronze:- seal:Y | `网.oracle.svg`<br>`网.seal.svg` |
+| 围 | oracle:- bronze:Y seal:Y | `围.bronze.svg`<br>`围.seal.svg` |
+| 伟 | oracle:- bronze:- seal:Y | `伟.seal.svg` |
+| 委 | oracle:Y bronze:Y seal:Y | `委.bronze.svg`<br>`委.oracle.svg`<br>`委.seal.svg` |
+| 未 | oracle:Y bronze:Y seal:Y | `未.bronze.svg`<br>`未.oracle.svg`<br>`未.seal.svg` |
+| 位 | oracle:- bronze:Y seal:Y | `位.bronze.svg`<br>`位.seal.svg` |
+| 文 | oracle:Y bronze:Y seal:Y | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
+| 闻 | oracle:Y bronze:Y seal:Y | `闻.bronze.svg`<br>`闻.oracle.svg`<br>`闻.seal.svg` |
+| 我 | oracle:Y bronze:Y seal:Y | `我.bronze.svg`<br>`我.oracle.svg`<br>`我.seal.svg` |
+| 屋 | oracle:- bronze:- seal:Y | `屋.seal.svg` |
+| 务 | oracle:- bronze:Y seal:Y | `务.bronze.svg`<br>`务.seal.svg` |
+| 物 | oracle:Y bronze:- seal:Y | `物.oracle.svg`<br>`物.seal.svg` |
+| 西 | oracle:Y bronze:Y seal:Y | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
+| 戏 | oracle:- bronze:Y seal:Y | `戏.bronze.svg`<br>`戏.seal.svg` |
+| 系 | oracle:Y bronze:- seal:Y | `系.oracle.svg`<br>`系.seal.svg` |
+| 先 | oracle:Y bronze:Y seal:Y | `先.bronze.svg`<br>`先.oracle.svg`<br>`先.seal.svg` |
+| 闲 | oracle:- bronze:Y seal:Y | `闲.bronze.svg`<br>`闲.seal.svg` |
+| 现 | oracle:Y bronze:Y seal:Y | `现.bronze.svg`<br>`现.oracle.svg`<br>`现.seal.svg` |
+| 线 | oracle:- bronze:- seal:Y | `线.seal.svg` |
+| 相 | oracle:Y bronze:Y seal:Y | `相.bronze.svg`<br>`相.oracle.svg`<br>`相.seal.svg` |
+| 响 | oracle:- bronze:- seal:Y | `响.seal.svg` |
+| 消 | oracle:- bronze:- seal:Y | `消.seal.svg` |
+| 销 | oracle:- bronze:- seal:Y | `销.seal.svg` |
+| 小 | oracle:Y bronze:Y seal:Y | `小.bronze.svg`<br>`小.oracle.svg`<br>`小.seal.svg` |
+| 协 | oracle:- bronze:Y seal:Y | `协.bronze.svg`<br>`协.seal.svg` |
+| 心 | oracle:Y bronze:Y seal:Y | `心.bronze.svg`<br>`心.oracle.svg`<br>`心.seal.svg` |
+| 新 | oracle:Y bronze:Y seal:Y | `新.bronze.svg`<br>`新.oracle.svg`<br>`新.seal.svg` |
+| 信 | oracle:- bronze:Y seal:Y | `信.bronze.svg`<br>`信.seal.svg` |
+| 星 | oracle:Y bronze:Y seal:Y | `星.bronze.svg`<br>`星.oracle.svg`<br>`星.seal.svg` |
+| 行 | oracle:Y bronze:Y seal:Y | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
+| 雄 | oracle:- bronze:- seal:Y | `雄.seal.svg` |
+| 袖 | oracle:- bronze:- seal:Y | `袖.seal.svg` |
+| 需 | oracle:- bronze:Y seal:Y | `需.bronze.svg`<br>`需.seal.svg` |
+| 序 | oracle:- bronze:Y seal:Y | `序.bronze.svg`<br>`序.seal.svg` |
+| 宣 | oracle:Y bronze:Y seal:Y | `宣.bronze.svg`<br>`宣.oracle.svg`<br>`宣.seal.svg` |
+| 选 | oracle:Y bronze:Y seal:Y | `选.bronze.svg`<br>`选.oracle.svg`<br>`选.seal.svg` |
+| 学 | oracle:Y bronze:Y seal:Y | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
+| 压 | oracle:- bronze:- seal:Y | `压.seal.svg` |
+| 雅 | oracle:- bronze:- seal:Y | `雅.seal.svg` |
+| 亚 | oracle:Y bronze:Y seal:Y | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
+| 淹 | oracle:- bronze:- seal:Y | `淹.seal.svg` |
+| 严 | oracle:- bronze:Y seal:Y | `严.bronze.svg`<br>`严.seal.svg` |
+| 仰 | oracle:- bronze:- seal:Y | `仰.seal.svg` |
+| 摇 | oracle:- bronze:- seal:Y | `摇.seal.svg` |
+| 要 | oracle:- bronze:- seal:Y | `要.seal.svg` |
+| 耀 | oracle:- bronze:- seal:Y | `耀.seal.svg` |
+| 野 | oracle:Y bronze:Y seal:Y | `野.bronze.svg`<br>`野.oracle.svg`<br>`野.seal.svg` |
+| 业 | oracle:- bronze:Y seal:Y | `业.bronze.svg`<br>`业.seal.svg` |
+| 一 | oracle:Y bronze:Y seal:Y | `一.bronze.svg`<br>`一.oracle.svg`<br>`一.seal.svg` |
+| 移 | oracle:- bronze:- seal:Y | `移.seal.svg` |
+| 遗 | oracle:- bronze:Y seal:Y | `遗.bronze.svg`<br>`遗.seal.svg` |
+| 已 | oracle:- bronze:Y seal:- | `已.bronze.svg` |
+| 以 | oracle:Y bronze:Y seal:Y | `以.bronze.svg`<br>`以.oracle.svg`<br>`以.seal.svg` |
+| 义 | oracle:Y bronze:Y seal:Y | `义.bronze.svg`<br>`义.oracle.svg`<br>`义.seal.svg` |
+| 忆 | oracle:- bronze:Y seal:Y | `忆.bronze.svg`<br>`忆.seal.svg` |
+| 议 | oracle:- bronze:Y seal:Y | `议.bronze.svg`<br>`议.seal.svg` |
+| 易 | oracle:Y bronze:Y seal:Y | `易.bronze.svg`<br>`易.oracle.svg`<br>`易.seal.svg` |
+| 谊 | oracle:- bronze:- seal:Y | `谊.seal.svg` |
+| 意 | oracle:- bronze:- seal:Y | `意.seal.svg` |
+| 英 | oracle:- bronze:Y seal:Y | `英.bronze.svg`<br>`英.seal.svg` |
+| 营 | oracle:- bronze:Y seal:Y | `营.bronze.svg`<br>`营.seal.svg` |
+| 影 | oracle:- bronze:- seal:Y | `影.seal.svg` |
+| 用 | oracle:Y bronze:Y seal:Y | `用.bronze.svg`<br>`用.oracle.svg`<br>`用.seal.svg` |
+| 优 | oracle:- bronze:- seal:Y | `优.seal.svg` |
+| 由 | oracle:Y bronze:Y seal:- | `由.bronze.svg`<br>`由.oracle.svg` |
+| 游 | oracle:Y bronze:Y seal:Y | `游.bronze.svg`<br>`游.oracle.svg`<br>`游.seal.svg` |
+| 友 | oracle:Y bronze:Y seal:Y | `友.bronze.svg`<br>`友.oracle.svg`<br>`友.seal.svg` |
+| 予 | oracle:- bronze:Y seal:Y | `予.bronze.svg`<br>`予.seal.svg` |
+| 雨 | oracle:Y bronze:Y seal:Y | `雨.bronze.svg`<br>`雨.oracle.svg`<br>`雨.seal.svg` |
+| 遇 | oracle:- bronze:Y seal:Y | `遇.bronze.svg`<br>`遇.seal.svg` |
+| 员 | oracle:Y bronze:Y seal:Y | `员.bronze.svg`<br>`员.oracle.svg`<br>`员.seal.svg` |
+| 援 | oracle:- bronze:- seal:Y | `援.seal.svg` |
+| 源 | oracle:- bronze:- seal:Y | `源.seal.svg` |
+| 跃 | oracle:- bronze:- seal:Y | `跃.seal.svg` |
+| 灾 | oracle:Y bronze:- seal:Y | `灾.oracle.svg`<br>`灾.seal.svg` |
+| 造 | oracle:- bronze:Y seal:Y | `造.bronze.svg`<br>`造.seal.svg` |
+| 择 | oracle:- bronze:Y seal:Y | `择.bronze.svg`<br>`择.seal.svg` |
+| 责 | oracle:Y bronze:Y seal:Y | `责.bronze.svg`<br>`责.oracle.svg`<br>`责.seal.svg` |
+| 增 | oracle:- bronze:Y seal:Y | `增.bronze.svg`<br>`增.seal.svg` |
+| 炸 | oracle:- bronze:Y seal:Y | `炸.bronze.svg`<br>`炸.seal.svg` |
+| 展 | oracle:- bronze:- seal:Y | `展.seal.svg` |
+| 战 | oracle:- bronze:Y seal:Y | `战.bronze.svg`<br>`战.seal.svg` |
+| 站 | oracle:- bronze:- seal:Y | `站.seal.svg` |
+| 长 | oracle:Y bronze:Y seal:Y | `长.bronze.svg`<br>`长.oracle.svg`<br>`长.seal.svg` |
+| 招 | oracle:- bronze:- seal:Y | `招.seal.svg` |
+| 召 | oracle:Y bronze:Y seal:Y | `召.bronze.svg`<br>`召.oracle.svg`<br>`召.seal.svg` |
+| 整 | oracle:- bronze:Y seal:Y | `整.bronze.svg`<br>`整.seal.svg` |
+| 政 | oracle:Y bronze:Y seal:Y | `政.bronze.svg`<br>`政.oracle.svg`<br>`政.seal.svg` |
+| 之 | oracle:Y bronze:Y seal:Y | `之.bronze.svg`<br>`之.oracle.svg`<br>`之.seal.svg` |
+| 支 | oracle:- bronze:- seal:Y | `支.seal.svg` |
+| 知 | oracle:- bronze:Y seal:Y | `知.bronze.svg`<br>`知.seal.svg` |
+| 织 | oracle:- bronze:Y seal:Y | `织.bronze.svg`<br>`织.seal.svg` |
+| 执 | oracle:Y bronze:Y seal:Y | `执.bronze.svg`<br>`执.oracle.svg`<br>`执.seal.svg` |
+| 职 | oracle:- bronze:Y seal:Y | `职.bronze.svg`<br>`职.seal.svg` |
+| 止 | oracle:Y bronze:Y seal:Y | `止.bronze.svg`<br>`止.oracle.svg`<br>`止.seal.svg` |
+| 址 | oracle:- bronze:- seal:Y | `址.seal.svg` |
+| 指 | oracle:- bronze:- seal:Y | `指.seal.svg` |
+| 制 | oracle:- bronze:Y seal:Y | `制.bronze.svg`<br>`制.seal.svg` |
+| 置 | oracle:Y bronze:- seal:Y | `置.oracle.svg`<br>`置.seal.svg` |
+| 忠 | oracle:- bronze:Y seal:Y | `忠.bronze.svg`<br>`忠.seal.svg` |
+| 重 | oracle:Y bronze:Y seal:Y | `重.bronze.svg`<br>`重.oracle.svg`<br>`重.seal.svg` |
+| 州 | oracle:Y bronze:Y seal:Y | `州.bronze.svg`<br>`州.oracle.svg`<br>`州.seal.svg` |
+| 主 | oracle:Y bronze:- seal:Y | `主.oracle.svg`<br>`主.seal.svg` |
+| 住 | oracle:- bronze:- seal:Y | `住.seal.svg` |
+| 助 | oracle:- bronze:- seal:Y | `助.seal.svg` |
+| 注 | oracle:Y bronze:- seal:Y | `注.oracle.svg`<br>`注.seal.svg` |
+| 抓 | oracle:- bronze:- seal:Y | `抓.seal.svg` |
+| 砖 | oracle:- bronze:Y seal:- | `砖.bronze.svg` |
+| 转 | oracle:- bronze:- seal:Y | `转.seal.svg` |
+| 状 | oracle:- bronze:- seal:Y | `状.seal.svg` |
+| 撞 | oracle:- bronze:- seal:Y | `撞.seal.svg` |
+| 兹 | oracle:Y bronze:Y seal:Y | `兹.bronze.svg`<br>`兹.oracle.svg`<br>`兹.seal.svg` |
+| 资 | oracle:- bronze:- seal:Y | `资.seal.svg` |
+| 自 | oracle:Y bronze:Y seal:Y | `自.bronze.svg`<br>`自.oracle.svg`<br>`自.seal.svg` |
+| 宗 | oracle:Y bronze:Y seal:Y | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
+| 走 | oracle:Y bronze:Y seal:Y | `走.bronze.svg`<br>`走.oracle.svg`<br>`走.seal.svg` |
+| 族 | oracle:Y bronze:Y seal:Y | `族.bronze.svg`<br>`族.oracle.svg`<br>`族.seal.svg` |
+| 阻 | oracle:- bronze:- seal:Y | `阻.seal.svg` |
+| 组 | oracle:- bronze:Y seal:Y | `组.bronze.svg`<br>`组.seal.svg` |
+| 遵 | oracle:- bronze:- seal:Y | `遵.seal.svg` |
+| 作 | oracle:Y bronze:Y seal:Y | `作.bronze.svg`<br>`作.oracle.svg`<br>`作.seal.svg` |
 
 ## policies
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 阿 | oracle:- bronze:Y seal:Y legacy:- | `阿.bronze.svg`<br>`阿.seal.svg` |
-| 暗 | oracle:- bronze:- seal:Y legacy:- | `暗.seal.svg` |
-| 澳 | oracle:- bronze:- seal:Y legacy:- | `澳.seal.svg` |
-| 坝 | oracle:- bronze:- seal:Y legacy:- | `坝.seal.svg` |
-| 办 | oracle:- bronze:- seal:Y legacy:- | `办.seal.svg` |
-| 保 | oracle:Y bronze:Y seal:Y legacy:- | `保.bronze.svg`<br>`保.oracle.svg`<br>`保.seal.svg` |
-| 堡 | oracle:Y bronze:Y seal:Y legacy:- | `堡.bronze.svg`<br>`堡.oracle.svg`<br>`堡.seal.svg` |
-| 报 | oracle:- bronze:Y seal:Y legacy:- | `报.bronze.svg`<br>`报.seal.svg` |
-| 贝 | oracle:Y bronze:Y seal:Y legacy:- | `贝.bronze.svg`<br>`贝.oracle.svg`<br>`贝.seal.svg` |
-| 本 | oracle:- bronze:Y seal:Y legacy:- | `本.bronze.svg`<br>`本.seal.svg` |
-| 币 | oracle:- bronze:- seal:Y legacy:- | `币.seal.svg` |
-| 壁 | oracle:- bronze:- seal:Y legacy:- | `壁.seal.svg` |
-| 边 | oracle:Y bronze:Y seal:Y legacy:- | `边.bronze.svg`<br>`边.oracle.svg`<br>`边.seal.svg` |
-| 标 | oracle:- bronze:- seal:Y legacy:- | `标.seal.svg` |
-| 镖 | oracle:- bronze:- seal:Y legacy:- | `镖.seal.svg` |
-| 兵 | oracle:Y bronze:Y seal:Y legacy:- | `兵.bronze.svg`<br>`兵.oracle.svg`<br>`兵.seal.svg` |
-| 波 | oracle:- bronze:- seal:Y legacy:- | `波.seal.svg` |
-| 播 | oracle:- bronze:Y seal:Y legacy:- | `播.bronze.svg`<br>`播.seal.svg` |
-| 博 | oracle:- bronze:Y seal:Y legacy:- | `博.bronze.svg`<br>`博.seal.svg` |
-| 布 | oracle:- bronze:Y seal:Y legacy:- | `布.bronze.svg`<br>`布.seal.svg` |
-| 部 | oracle:- bronze:- seal:Y legacy:- | `部.seal.svg` |
-| 裁 | oracle:- bronze:- seal:Y legacy:- | `裁.seal.svg` |
-| 册 | oracle:Y bronze:Y seal:Y legacy:- | `册.bronze.svg`<br>`册.oracle.svg`<br>`册.seal.svg` |
-| 测 | oracle:- bronze:Y seal:Y legacy:- | `测.bronze.svg`<br>`测.seal.svg` |
-| 策 | oracle:- bronze:Y seal:Y legacy:- | `策.bronze.svg`<br>`策.seal.svg` |
-| 层 | oracle:- bronze:- seal:Y legacy:- | `层.seal.svg` |
-| 查 | oracle:- bronze:- seal:Y legacy:- | `查.seal.svg` |
-| 察 | oracle:- bronze:Y seal:Y legacy:- | `察.bronze.svg`<br>`察.seal.svg` |
-| 产 | oracle:- bronze:Y seal:Y legacy:- | `产.bronze.svg`<br>`产.seal.svg` |
-| 场 | oracle:- bronze:- seal:Y legacy:- | `场.seal.svg` |
-| 成 | oracle:Y bronze:Y seal:Y legacy:- | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
-| 诚 | oracle:- bronze:- seal:Y legacy:- | `诚.seal.svg` |
-| 城 | oracle:- bronze:Y seal:Y legacy:- | `城.bronze.svg`<br>`城.seal.svg` |
-| 乘 | oracle:Y bronze:Y seal:Y legacy:- | `乘.bronze.svg`<br>`乘.oracle.svg`<br>`乘.seal.svg` |
-| 程 | oracle:- bronze:Y seal:Y legacy:- | `程.bronze.svg`<br>`程.seal.svg` |
-| 橙 | oracle:- bronze:- seal:Y legacy:- | `橙.seal.svg` |
-| 出 | oracle:Y bronze:Y seal:Y legacy:- | `出.bronze.svg`<br>`出.oracle.svg`<br>`出.seal.svg` |
-| 础 | oracle:- bronze:- seal:Y legacy:- | `础.seal.svg` |
-| 处 | oracle:Y bronze:Y seal:Y legacy:- | `处.bronze.svg`<br>`处.oracle.svg`<br>`处.seal.svg` |
-| 畜 | oracle:Y bronze:Y seal:Y legacy:- | `畜.bronze.svg`<br>`畜.oracle.svg`<br>`畜.seal.svg` |
-| 传 | oracle:Y bronze:Y seal:Y legacy:- | `传.bronze.svg`<br>`传.oracle.svg`<br>`传.seal.svg` |
-| 次 | oracle:Y bronze:Y seal:Y legacy:- | `次.bronze.svg`<br>`次.oracle.svg`<br>`次.seal.svg` |
-| 存 | oracle:- bronze:- seal:Y legacy:- | `存.seal.svg` |
-| 打 | oracle:- bronze:- seal:Y legacy:- | `打.seal.svg` |
-| 大 | oracle:Y bronze:Y seal:Y legacy:- | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
-| 代 | oracle:- bronze:- seal:Y legacy:- | `代.seal.svg` |
-| 单 | oracle:Y bronze:Y seal:Y legacy:- | `单.bronze.svg`<br>`单.oracle.svg`<br>`单.seal.svg` |
-| 导 | oracle:- bronze:- seal:Y legacy:- | `导.seal.svg` |
-| 岛 | oracle:- bronze:- seal:Y legacy:- | `岛.seal.svg` |
-| 盗 | oracle:Y bronze:Y seal:Y legacy:- | `盗.bronze.svg`<br>`盗.oracle.svg`<br>`盗.seal.svg` |
-| 道 | oracle:- bronze:Y seal:Y legacy:- | `道.bronze.svg`<br>`道.seal.svg` |
-| 地 | oracle:- bronze:Y seal:Y legacy:- | `地.bronze.svg`<br>`地.seal.svg` |
-| 堤 | oracle:- bronze:- seal:Y legacy:- | `堤.seal.svg` |
-| 迪 | oracle:- bronze:- seal:Y legacy:- | `迪.seal.svg` |
-| 帝 | oracle:Y bronze:Y seal:Y legacy:- | `帝.bronze.svg`<br>`帝.oracle.svg`<br>`帝.seal.svg` |
-| 第 | oracle:Y bronze:Y seal:Y legacy:- | `第.bronze.svg`<br>`第.oracle.svg`<br>`第.seal.svg` |
-| 典 | oracle:Y bronze:Y seal:Y legacy:- | `典.bronze.svg`<br>`典.oracle.svg`<br>`典.seal.svg` |
-| 电 | oracle:- bronze:Y seal:Y legacy:- | `电.bronze.svg`<br>`电.seal.svg` |
-| 调 | oracle:- bronze:- seal:Y legacy:- | `调.seal.svg` |
-| 谍 | oracle:- bronze:- seal:Y legacy:- | `谍.seal.svg` |
-| 定 | oracle:Y bronze:Y seal:Y legacy:- | `定.bronze.svg`<br>`定.oracle.svg`<br>`定.seal.svg` |
-| 动 | oracle:- bronze:Y seal:Y legacy:- | `动.bronze.svg`<br>`动.seal.svg` |
-| 独 | oracle:- bronze:- seal:Y legacy:- | `独.seal.svg` |
-| 度 | oracle:Y bronze:Y seal:Y legacy:- | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
-| 队 | oracle:Y bronze:Y seal:Y legacy:- | `队.bronze.svg`<br>`队.oracle.svg`<br>`队.seal.svg` |
-| 遏 | oracle:- bronze:- seal:Y legacy:- | `遏.seal.svg` |
-| 尔 | oracle:- bronze:Y seal:Y legacy:- | `尔.bronze.svg`<br>`尔.seal.svg` |
-| 二 | oracle:Y bronze:Y seal:Y legacy:- | `二.bronze.svg`<br>`二.oracle.svg`<br>`二.seal.svg` |
-| 发 | oracle:Y bronze:Y seal:Y legacy:- | `发.bronze.svg`<br>`发.oracle.svg`<br>`发.seal.svg` |
-| 法 | oracle:- bronze:Y seal:Y legacy:- | `法.bronze.svg`<br>`法.seal.svg` |
-| 反 | oracle:Y bronze:Y seal:Y legacy:- | `反.bronze.svg`<br>`反.oracle.svg`<br>`反.seal.svg` |
-| 放 | oracle:- bronze:Y seal:Y legacy:- | `放.bronze.svg`<br>`放.seal.svg` |
-| 飞 | oracle:- bronze:- seal:Y legacy:- | `飞.seal.svg` |
-| 费 | oracle:- bronze:Y seal:Y legacy:- | `费.bronze.svg`<br>`费.seal.svg` |
-| 风 | oracle:Y bronze:Y seal:Y legacy:- | `风.bronze.svg`<br>`风.oracle.svg`<br>`风.seal.svg` |
-| 封 | oracle:Y bronze:Y seal:Y legacy:- | `封.bronze.svg`<br>`封.oracle.svg`<br>`封.seal.svg` |
-| 奉 | oracle:- bronze:Y seal:Y legacy:- | `奉.bronze.svg`<br>`奉.seal.svg` |
-| 服 | oracle:Y bronze:Y seal:Y legacy:- | `服.bronze.svg`<br>`服.oracle.svg`<br>`服.seal.svg` |
-| 符 | oracle:- bronze:Y seal:Y legacy:- | `符.bronze.svg`<br>`符.seal.svg` |
-| 福 | oracle:- bronze:Y seal:Y legacy:- | `福.bronze.svg`<br>`福.seal.svg` |
-| 府 | oracle:- bronze:Y seal:Y legacy:- | `府.bronze.svg`<br>`府.seal.svg` |
-| 改 | oracle:Y bronze:Y seal:Y legacy:- | `改.bronze.svg`<br>`改.oracle.svg`<br>`改.seal.svg` |
-| 感 | oracle:- bronze:Y seal:Y legacy:- | `感.bronze.svg`<br>`感.seal.svg` |
-| 高 | oracle:Y bronze:Y seal:Y legacy:- | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
-| 告 | oracle:Y bronze:Y seal:Y legacy:- | `告.bronze.svg`<br>`告.oracle.svg`<br>`告.seal.svg` |
-| 哥 | oracle:- bronze:- seal:Y legacy:- | `哥.seal.svg` |
-| 歌 | oracle:- bronze:Y seal:Y legacy:- | `歌.bronze.svg`<br>`歌.seal.svg` |
-| 革 | oracle:Y bronze:Y seal:Y legacy:- | `革.bronze.svg`<br>`革.oracle.svg`<br>`革.seal.svg` |
-| 格 | oracle:- bronze:Y seal:Y legacy:- | `格.bronze.svg`<br>`格.seal.svg` |
-| 工 | oracle:Y bronze:Y seal:Y legacy:- | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
-| 公 | oracle:Y bronze:Y seal:Y legacy:- | `公.bronze.svg`<br>`公.oracle.svg`<br>`公.seal.svg` |
-| 攻 | oracle:- bronze:Y seal:Y legacy:- | `攻.bronze.svg`<br>`攻.seal.svg` |
-| 供 | oracle:- bronze:- seal:Y legacy:- | `供.seal.svg` |
-| 共 | oracle:- bronze:Y seal:Y legacy:- | `共.bronze.svg`<br>`共.seal.svg` |
-| 孤 | oracle:- bronze:Y seal:Y legacy:- | `孤.bronze.svg`<br>`孤.seal.svg` |
-| 古 | oracle:Y bronze:Y seal:Y legacy:- | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
-| 谷 | oracle:Y bronze:Y seal:Y legacy:- | `谷.bronze.svg`<br>`谷.oracle.svg`<br>`谷.seal.svg` |
-| 雇 | oracle:Y bronze:- seal:Y legacy:- | `雇.oracle.svg`<br>`雇.seal.svg` |
-| 寡 | oracle:- bronze:Y seal:Y legacy:- | `寡.bronze.svg`<br>`寡.seal.svg` |
-| 馆 | oracle:- bronze:- seal:Y legacy:- | `馆.seal.svg` |
-| 管 | oracle:- bronze:- seal:Y legacy:- | `管.seal.svg` |
-| 贯 | oracle:- bronze:- seal:Y legacy:- | `贯.seal.svg` |
-| 光 | oracle:Y bronze:Y seal:Y legacy:- | `光.bronze.svg`<br>`光.oracle.svg`<br>`光.seal.svg` |
-| 广 | oracle:Y bronze:Y seal:Y legacy:- | `广.bronze.svg`<br>`广.oracle.svg`<br>`广.seal.svg` |
-| 规 | oracle:- bronze:Y seal:Y legacy:- | `规.bronze.svg`<br>`规.seal.svg` |
-| 贵 | oracle:- bronze:Y seal:Y legacy:- | `贵.bronze.svg`<br>`贵.seal.svg` |
-| 国 | oracle:- bronze:Y seal:Y legacy:- | `国.bronze.svg`<br>`国.seal.svg` |
-| 海 | oracle:- bronze:Y seal:Y legacy:- | `海.bronze.svg`<br>`海.seal.svg` |
-| 航 | oracle:- bronze:- seal:Y legacy:- | `航.seal.svg` |
-| 好 | oracle:Y bronze:Y seal:Y legacy:- | `好.bronze.svg`<br>`好.oracle.svg`<br>`好.seal.svg` |
-| 合 | oracle:Y bronze:Y seal:Y legacy:- | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
-| 核 | oracle:- bronze:- seal:Y legacy:- | `核.seal.svg` |
-| 黑 | oracle:Y bronze:Y seal:Y legacy:- | `黑.bronze.svg`<br>`黑.oracle.svg`<br>`黑.seal.svg` |
-| 横 | oracle:- bronze:- seal:Y legacy:- | `横.seal.svg` |
-| 洪 | oracle:- bronze:- seal:Y legacy:- | `洪.seal.svg` |
-| 护 | oracle:- bronze:- seal:Y legacy:- | `护.seal.svg` |
-| 花 | oracle:- bronze:- seal:Y legacy:- | `花.seal.svg` |
-| 化 | oracle:Y bronze:Y seal:Y legacy:- | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
-| 划 | oracle:- bronze:- seal:Y legacy:- | `划.seal.svg` |
-| 画 | oracle:- bronze:Y seal:Y legacy:- | `画.bronze.svg`<br>`画.seal.svg` |
-| 皇 | oracle:Y bronze:Y seal:Y legacy:- | `皇.bronze.svg`<br>`皇.oracle.svg`<br>`皇.seal.svg` |
-| 黄 | oracle:Y bronze:Y seal:Y legacy:- | `黄.bronze.svg`<br>`黄.oracle.svg`<br>`黄.seal.svg` |
-| 会 | oracle:Y bronze:Y seal:Y legacy:- | `会.bronze.svg`<br>`会.oracle.svg`<br>`会.seal.svg` |
-| 活 | oracle:- bronze:- seal:Y legacy:- | `活.seal.svg` |
-| 伙 | oracle:- bronze:- seal:Y legacy:- | `伙.seal.svg` |
-| 击 | oracle:- bronze:- seal:Y legacy:- | `击.seal.svg` |
-| 圾 | oracle:- bronze:- seal:Y legacy:- | `圾.seal.svg` |
-| 机 | oracle:- bronze:- seal:Y legacy:- | `机.seal.svg` |
-| 基 | oracle:Y bronze:Y seal:Y legacy:- | `基.bronze.svg`<br>`基.oracle.svg`<br>`基.seal.svg` |
-| 级 | oracle:- bronze:- seal:Y legacy:- | `级.seal.svg` |
-| 集 | oracle:Y bronze:Y seal:Y legacy:- | `集.bronze.svg`<br>`集.oracle.svg`<br>`集.seal.svg` |
-| 计 | oracle:- bronze:- seal:Y legacy:- | `计.seal.svg` |
-| 记 | oracle:- bronze:Y seal:Y legacy:- | `记.bronze.svg`<br>`记.seal.svg` |
-| 纪 | oracle:- bronze:Y seal:Y legacy:- | `纪.bronze.svg`<br>`纪.seal.svg` |
-| 技 | oracle:- bronze:- seal:Y legacy:- | `技.seal.svg` |
-| 际 | oracle:- bronze:- seal:Y legacy:- | `际.seal.svg` |
-| 济 | oracle:- bronze:Y seal:Y legacy:- | `济.bronze.svg`<br>`济.seal.svg` |
-| 加 | oracle:- bronze:Y seal:Y legacy:- | `加.bronze.svg`<br>`加.seal.svg` |
-| 家 | oracle:Y bronze:Y seal:Y legacy:- | `家.bronze.svg`<br>`家.oracle.svg`<br>`家.seal.svg` |
-| 假 | oracle:- bronze:- seal:Y legacy:- | `假.seal.svg` |
-| 间 | oracle:- bronze:Y seal:Y legacy:- | `间.bronze.svg`<br>`间.seal.svg` |
-| 检 | oracle:- bronze:- seal:Y legacy:- | `检.seal.svg` |
-| 建 | oracle:Y bronze:Y seal:Y legacy:- | `建.bronze.svg`<br>`建.oracle.svg`<br>`建.seal.svg` |
-| 舰 | oracle:- bronze:- seal:Y legacy:- | `舰.seal.svg` |
-| 奖 | oracle:- bronze:- seal:Y legacy:- | `奖.seal.svg` |
-| 匠 | oracle:- bronze:- seal:Y legacy:- | `匠.seal.svg` |
-| 交 | oracle:- bronze:- seal:Y legacy:- | `交.seal.svg` |
-| 角 | oracle:Y bronze:Y seal:Y legacy:- | `角.bronze.svg`<br>`角.oracle.svg`<br>`角.seal.svg` |
-| 教 | oracle:Y bronze:Y seal:Y legacy:- | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
-| 阶 | oracle:Y bronze:Y seal:Y legacy:- | `阶.bronze.svg`<br>`阶.oracle.svg`<br>`阶.seal.svg` |
-| 杰 | oracle:- bronze:- seal:Y legacy:- | `杰.seal.svg` |
-| 结 | oracle:- bronze:- seal:Y legacy:- | `结.seal.svg` |
-| 截 | oracle:- bronze:- seal:Y legacy:- | `截.seal.svg` |
-| 解 | oracle:Y bronze:Y seal:Y legacy:- | `解.bronze.svg`<br>`解.oracle.svg`<br>`解.seal.svg` |
-| 戒 | oracle:Y bronze:Y seal:Y legacy:- | `戒.bronze.svg`<br>`戒.oracle.svg`<br>`戒.seal.svg` |
-| 金 | oracle:- bronze:Y seal:Y legacy:- | `金.bronze.svg`<br>`金.seal.svg` |
-| 禁 | oracle:- bronze:- seal:Y legacy:- | `禁.seal.svg` |
-| 经 | oracle:- bronze:Y seal:Y legacy:- | `经.bronze.svg`<br>`经.seal.svg` |
-| 精 | oracle:- bronze:- seal:Y legacy:- | `精.seal.svg` |
-| 警 | oracle:- bronze:- seal:Y legacy:- | `警.seal.svg` |
-| 究 | oracle:- bronze:Y seal:Y legacy:- | `究.bronze.svg`<br>`究.seal.svg` |
-| 局 | oracle:- bronze:- seal:Y legacy:- | `局.seal.svg` |
-| 剧 | oracle:- bronze:- seal:Y legacy:- | `剧.seal.svg` |
-| 军 | oracle:- bronze:Y seal:Y legacy:- | `军.bronze.svg`<br>`军.seal.svg` |
-| 君 | oracle:Y bronze:Y seal:Y legacy:- | `君.bronze.svg`<br>`君.oracle.svg`<br>`君.seal.svg` |
-| 科 | oracle:- bronze:- seal:Y legacy:- | `科.seal.svg` |
-| 克 | oracle:Y bronze:Y seal:Y legacy:- | `克.bronze.svg`<br>`克.oracle.svg`<br>`克.seal.svg` |
-| 刻 | oracle:- bronze:- seal:Y legacy:- | `刻.seal.svg` |
-| 空 | oracle:- bronze:Y seal:Y legacy:- | `空.bronze.svg`<br>`空.seal.svg` |
-| 库 | oracle:- bronze:Y seal:Y legacy:- | `库.bronze.svg`<br>`库.seal.svg` |
-| 扩 | oracle:- bronze:- seal:Y legacy:- | `扩.seal.svg` |
-| 垃 | oracle:- bronze:- seal:Y legacy:- | `垃.seal.svg` |
-| 拉 | oracle:- bronze:- seal:Y legacy:- | `拉.seal.svg` |
-| 来 | oracle:Y bronze:Y seal:Y legacy:- | `来.bronze.svg`<br>`来.oracle.svg`<br>`来.seal.svg` |
-| 劳 | oracle:Y bronze:Y seal:Y legacy:- | `劳.bronze.svg`<br>`劳.oracle.svg`<br>`劳.seal.svg` |
-| 老 | oracle:Y bronze:Y seal:Y legacy:- | `老.bronze.svg`<br>`老.oracle.svg`<br>`老.seal.svg` |
-| 乐 | oracle:Y bronze:Y seal:Y legacy:- | `乐.bronze.svg`<br>`乐.oracle.svg`<br>`乐.seal.svg` |
-| 勒 | oracle:- bronze:Y seal:Y legacy:- | `勒.bronze.svg`<br>`勒.seal.svg` |
-| 垒 | oracle:- bronze:- seal:Y legacy:- | `垒.seal.svg` |
-| 里 | oracle:- bronze:Y seal:Y legacy:- | `里.bronze.svg`<br>`里.seal.svg` |
-| 理 | oracle:- bronze:Y seal:Y legacy:- | `理.bronze.svg`<br>`理.seal.svg` |
-| 力 | oracle:Y bronze:Y seal:Y legacy:- | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
-| 历 | oracle:- bronze:- seal:Y legacy:- | `历.seal.svg` |
-| 立 | oracle:Y bronze:Y seal:Y legacy:- | `立.bronze.svg`<br>`立.oracle.svg`<br>`立.seal.svg` |
-| 利 | oracle:Y bronze:Y seal:Y legacy:- | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
-| 励 | oracle:- bronze:Y seal:Y legacy:- | `励.bronze.svg`<br>`励.seal.svg` |
-| 联 | oracle:Y bronze:Y seal:Y legacy:- | `联.bronze.svg`<br>`联.oracle.svg`<br>`联.seal.svg` |
-| 练 | oracle:- bronze:- seal:Y legacy:- | `练.seal.svg` |
-| 量 | oracle:Y bronze:Y seal:Y legacy:- | `量.bronze.svg`<br>`量.oracle.svg`<br>`量.seal.svg` |
-| 林 | oracle:Y bronze:Y seal:Y legacy:- | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
-| 灵 | oracle:- bronze:Y seal:Y legacy:- | `灵.bronze.svg`<br>`灵.seal.svg` |
-| 领 | oracle:- bronze:- seal:Y legacy:- | `领.seal.svg` |
-| 令 | oracle:Y bronze:Y seal:Y legacy:- | `令.bronze.svg`<br>`令.oracle.svg`<br>`令.seal.svg` |
-| 流 | oracle:- bronze:Y seal:Y legacy:- | `流.bronze.svg`<br>`流.seal.svg` |
-| 留 | oracle:- bronze:Y seal:Y legacy:- | `留.bronze.svg`<br>`留.seal.svg` |
-| 楼 | oracle:- bronze:- seal:Y legacy:- | `楼.seal.svg` |
-| 录 | oracle:Y bronze:Y seal:Y legacy:- | `录.bronze.svg`<br>`录.oracle.svg`<br>`录.seal.svg` |
-| 路 | oracle:- bronze:Y seal:Y legacy:- | `路.bronze.svg`<br>`路.seal.svg` |
-| 旅 | oracle:Y bronze:Y seal:Y legacy:- | `旅.bronze.svg`<br>`旅.oracle.svg`<br>`旅.seal.svg` |
-| 律 | oracle:Y bronze:Y seal:Y legacy:- | `律.bronze.svg`<br>`律.oracle.svg`<br>`律.seal.svg` |
-| 掠 | oracle:- bronze:- seal:Y legacy:- | `掠.seal.svg` |
-| 略 | oracle:- bronze:- seal:Y legacy:- | `略.seal.svg` |
-| 罗 | oracle:Y bronze:Y seal:Y legacy:- | `罗.bronze.svg`<br>`罗.oracle.svg`<br>`罗.seal.svg` |
-| 络 | oracle:- bronze:- seal:Y legacy:- | `络.seal.svg` |
-| 马 | oracle:Y bronze:Y seal:Y legacy:- | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
-| 码 | oracle:- bronze:- seal:Y legacy:- | `码.seal.svg` |
-| 麦 | oracle:Y bronze:Y seal:Y legacy:- | `麦.bronze.svg`<br>`麦.oracle.svg`<br>`麦.seal.svg` |
-| 曼 | oracle:Y bronze:Y seal:Y legacy:- | `曼.bronze.svg`<br>`曼.oracle.svg`<br>`曼.seal.svg` |
-| 氓 | oracle:- bronze:- seal:Y legacy:- | `氓.seal.svg` |
-| 贸 | oracle:- bronze:Y seal:Y legacy:- | `贸.bronze.svg`<br>`贸.seal.svg` |
-| 媒 | oracle:- bronze:- seal:Y legacy:- | `媒.seal.svg` |
-| 美 | oracle:Y bronze:Y seal:Y legacy:- | `美.bronze.svg`<br>`美.oracle.svg`<br>`美.seal.svg` |
-| 魅 | oracle:Y bronze:- seal:Y legacy:- | `魅.oracle.svg`<br>`魅.seal.svg` |
-| 门 | oracle:Y bronze:Y seal:Y legacy:- | `门.bronze.svg`<br>`门.oracle.svg`<br>`门.seal.svg` |
-| 们 | oracle:- bronze:- seal:Y legacy:- | `们.seal.svg` |
-| 盟 | oracle:Y bronze:Y seal:Y legacy:- | `盟.bronze.svg`<br>`盟.oracle.svg`<br>`盟.seal.svg` |
-| 密 | oracle:- bronze:Y seal:Y legacy:- | `密.bronze.svg`<br>`密.seal.svg` |
-| 免 | oracle:Y bronze:Y seal:- legacy:- | `免.bronze.svg`<br>`免.oracle.svg` |
-| 面 | oracle:Y bronze:- seal:Y legacy:- | `面.oracle.svg`<br>`面.seal.svg` |
-| 民 | oracle:Y bronze:Y seal:Y legacy:- | `民.bronze.svg`<br>`民.oracle.svg`<br>`民.seal.svg` |
-| 明 | oracle:Y bronze:Y seal:Y legacy:- | `明.bronze.svg`<br>`明.oracle.svg`<br>`明.seal.svg` |
-| 命 | oracle:Y bronze:Y seal:Y legacy:- | `命.bronze.svg`<br>`命.oracle.svg`<br>`命.seal.svg` |
-| 摩 | oracle:- bronze:- seal:Y legacy:- | `摩.seal.svg` |
-| 莫 | oracle:Y bronze:Y seal:Y legacy:- | `莫.bronze.svg`<br>`莫.oracle.svg`<br>`莫.seal.svg` |
-| 姆 | oracle:- bronze:Y seal:Y legacy:- | `姆.bronze.svg`<br>`姆.seal.svg` |
-| 目 | oracle:Y bronze:Y seal:Y legacy:- | `目.bronze.svg`<br>`目.oracle.svg`<br>`目.seal.svg` |
-| 牧 | oracle:Y bronze:Y seal:Y legacy:- | `牧.bronze.svg`<br>`牧.oracle.svg`<br>`牧.seal.svg` |
-| 暮 | oracle:Y bronze:Y seal:Y legacy:- | `暮.bronze.svg`<br>`暮.oracle.svg`<br>`暮.seal.svg` |
-| 那 | oracle:- bronze:- seal:Y legacy:- | `那.seal.svg` |
-| 纳 | oracle:- bronze:Y seal:Y legacy:- | `纳.bronze.svg`<br>`纳.seal.svg` |
-| 能 | oracle:- bronze:Y seal:Y legacy:- | `能.bronze.svg`<br>`能.seal.svg` |
-| 你 | oracle:- bronze:Y seal:- legacy:- | `你.bronze.svg` |
-| 年 | oracle:Y bronze:Y seal:Y legacy:- | `年.bronze.svg`<br>`年.oracle.svg`<br>`年.seal.svg` |
-| 念 | oracle:Y bronze:Y seal:Y legacy:- | `念.bronze.svg`<br>`念.oracle.svg`<br>`念.seal.svg` |
-| 农 | oracle:Y bronze:Y seal:Y legacy:- | `农.bronze.svg`<br>`农.oracle.svg`<br>`农.seal.svg` |
-| 奴 | oracle:Y bronze:Y seal:Y legacy:- | `奴.bronze.svg`<br>`奴.oracle.svg`<br>`奴.seal.svg` |
-| 诺 | oracle:- bronze:Y seal:Y legacy:- | `诺.bronze.svg`<br>`诺.seal.svg` |
-| 帕 | oracle:- bronze:- seal:Y legacy:- | `帕.seal.svg` |
-| 判 | oracle:- bronze:- seal:Y legacy:- | `判.seal.svg` |
-| 炮 | oracle:- bronze:- seal:Y legacy:- | `炮.seal.svg` |
-| 配 | oracle:Y bronze:Y seal:Y legacy:- | `配.bronze.svg`<br>`配.oracle.svg`<br>`配.seal.svg` |
-| 骑 | oracle:- bronze:Y seal:Y legacy:- | `骑.bronze.svg`<br>`骑.seal.svg` |
-| 启 | oracle:Y bronze:- seal:Y legacy:- | `启.oracle.svg`<br>`启.seal.svg` |
-| 汽 | oracle:- bronze:- seal:Y legacy:- | `汽.seal.svg` |
-| 契 | oracle:- bronze:Y seal:Y legacy:- | `契.bronze.svg`<br>`契.seal.svg` |
-| 器 | oracle:- bronze:Y seal:Y legacy:- | `器.bronze.svg`<br>`器.seal.svg` |
-| 强 | oracle:- bronze:- seal:Y legacy:- | `强.seal.svg` |
-| 侵 | oracle:Y bronze:Y seal:Y legacy:- | `侵.bronze.svg`<br>`侵.oracle.svg`<br>`侵.seal.svg` |
-| 勤 | oracle:- bronze:Y seal:Y legacy:- | `勤.bronze.svg`<br>`勤.seal.svg` |
-| 请 | oracle:- bronze:Y seal:Y legacy:- | `请.bronze.svg`<br>`请.seal.svg` |
-| 区 | oracle:Y bronze:Y seal:Y legacy:- | `区.bronze.svg`<br>`区.oracle.svg`<br>`区.seal.svg` |
-| 全 | oracle:- bronze:- seal:Y legacy:- | `全.seal.svg` |
-| 权 | oracle:Y bronze:Y seal:Y legacy:- | `权.bronze.svg`<br>`权.oracle.svg`<br>`权.seal.svg` |
-| 却 | oracle:- bronze:- seal:Y legacy:- | `却.seal.svg` |
-| 然 | oracle:- bronze:Y seal:Y legacy:- | `然.bronze.svg`<br>`然.seal.svg` |
-| 人 | oracle:Y bronze:Y seal:Y legacy:- | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
-| 认 | oracle:- bronze:- seal:Y legacy:- | `认.seal.svg` |
-| 任 | oracle:Y bronze:Y seal:Y legacy:- | `任.bronze.svg`<br>`任.oracle.svg`<br>`任.seal.svg` |
-| 日 | oracle:Y bronze:Y seal:Y legacy:- | `日.bronze.svg`<br>`日.oracle.svg`<br>`日.seal.svg` |
-| 入 | oracle:Y bronze:Y seal:Y legacy:- | `入.bronze.svg`<br>`入.oracle.svg`<br>`入.seal.svg` |
-| 软 | oracle:- bronze:- seal:Y legacy:- | `软.seal.svg` |
-| 锐 | oracle:- bronze:- seal:Y legacy:- | `锐.seal.svg` |
-| 萨 | oracle:- bronze:- seal:Y legacy:- | `萨.seal.svg` |
-| 塞 | oracle:Y bronze:- seal:Y legacy:- | `塞.oracle.svg`<br>`塞.seal.svg` |
-| 三 | oracle:Y bronze:Y seal:Y legacy:- | `三.bronze.svg`<br>`三.oracle.svg`<br>`三.seal.svg` |
-| 僧 | oracle:- bronze:- seal:Y legacy:- | `僧.seal.svg` |
-| 杀 | oracle:- bronze:Y seal:Y legacy:- | `杀.bronze.svg`<br>`杀.seal.svg` |
-| 闪 | oracle:- bronze:- seal:Y legacy:- | `闪.seal.svg` |
-| 商 | oracle:Y bronze:Y seal:Y legacy:- | `商.bronze.svg`<br>`商.oracle.svg`<br>`商.seal.svg` |
-| 设 | oracle:- bronze:- seal:Y legacy:- | `设.seal.svg` |
-| 社 | oracle:- bronze:Y seal:Y legacy:- | `社.bronze.svg`<br>`社.seal.svg` |
-| 神 | oracle:- bronze:Y seal:Y legacy:- | `神.bronze.svg`<br>`神.seal.svg` |
-| 审 | oracle:- bronze:Y seal:Y legacy:- | `审.bronze.svg`<br>`审.seal.svg` |
-| 生 | oracle:Y bronze:Y seal:Y legacy:- | `生.bronze.svg`<br>`生.oracle.svg`<br>`生.seal.svg` |
-| 圣 | oracle:Y bronze:Y seal:Y legacy:- | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
-| 胜 | oracle:- bronze:- seal:Y legacy:- | `胜.seal.svg` |
-| 师 | oracle:Y bronze:Y seal:Y legacy:- | `师.bronze.svg`<br>`师.oracle.svg`<br>`师.seal.svg` |
-| 施 | oracle:- bronze:- seal:Y legacy:- | `施.seal.svg` |
-| 时 | oracle:- bronze:Y seal:Y legacy:- | `时.bronze.svg`<br>`时.seal.svg` |
-| 士 | oracle:- bronze:Y seal:Y legacy:- | `士.bronze.svg`<br>`士.seal.svg` |
-| 市 | oracle:Y bronze:Y seal:Y legacy:- | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
-| 示 | oracle:Y bronze:Y seal:Y legacy:- | `示.bronze.svg`<br>`示.oracle.svg`<br>`示.seal.svg` |
-| 式 | oracle:- bronze:- seal:Y legacy:- | `式.seal.svg` |
-| 事 | oracle:Y bronze:Y seal:Y legacy:- | `事.bronze.svg`<br>`事.oracle.svg`<br>`事.seal.svg` |
-| 室 | oracle:Y bronze:Y seal:Y legacy:- | `室.bronze.svg`<br>`室.oracle.svg`<br>`室.seal.svg` |
-| 手 | oracle:- bronze:Y seal:Y legacy:- | `手.bronze.svg`<br>`手.seal.svg` |
-| 术 | oracle:Y bronze:- seal:Y legacy:- | `术.oracle.svg`<br>`术.seal.svg` |
-| 水 | oracle:Y bronze:Y seal:Y legacy:- | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
-| 税 | oracle:- bronze:- seal:Y legacy:- | `税.seal.svg` |
-| 私 | oracle:- bronze:Y seal:Y legacy:- | `私.bronze.svg`<br>`私.seal.svg` |
-| 斯 | oracle:- bronze:Y seal:Y legacy:- | `斯.bronze.svg`<br>`斯.seal.svg` |
-| 酸 | oracle:- bronze:Y seal:Y legacy:- | `酸.bronze.svg`<br>`酸.seal.svg` |
-| 随 | oracle:- bronze:- seal:Y legacy:- | `随.seal.svg` |
-| 所 | oracle:- bronze:Y seal:Y legacy:- | `所.bronze.svg`<br>`所.seal.svg` |
-| 他 | oracle:- bronze:- seal:Y legacy:- | `他.seal.svg` |
-| 塔 | oracle:- bronze:- seal:Y legacy:- | `塔.seal.svg` |
-| 态 | oracle:- bronze:- seal:Y legacy:- | `态.seal.svg` |
-| 特 | oracle:- bronze:- seal:Y legacy:- | `特.seal.svg` |
-| 提 | oracle:- bronze:- seal:Y legacy:- | `提.seal.svg` |
-| 体 | oracle:- bronze:Y seal:Y legacy:- | `体.bronze.svg`<br>`体.seal.svg` |
-| 天 | oracle:Y bronze:Y seal:Y legacy:- | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
-| 跳 | oracle:- bronze:- seal:Y legacy:- | `跳.seal.svg` |
-| 铁 | oracle:- bronze:- seal:Y legacy:- | `铁.seal.svg` |
-| 庭 | oracle:- bronze:Y seal:Y legacy:- | `庭.bronze.svg`<br>`庭.seal.svg` |
-| 通 | oracle:Y bronze:Y seal:Y legacy:- | `通.bronze.svg`<br>`通.oracle.svg`<br>`通.seal.svg` |
-| 同 | oracle:Y bronze:Y seal:Y legacy:- | `同.bronze.svg`<br>`同.oracle.svg`<br>`同.seal.svg` |
-| 统 | oracle:- bronze:- seal:Y legacy:- | `统.seal.svg` |
-| 头 | oracle:- bronze:Y seal:Y legacy:- | `头.bronze.svg`<br>`头.seal.svg` |
-| 屠 | oracle:- bronze:- seal:Y legacy:- | `屠.seal.svg` |
-| 土 | oracle:Y bronze:Y seal:Y legacy:- | `土.bronze.svg`<br>`土.oracle.svg`<br>`土.seal.svg` |
-| 团 | oracle:- bronze:Y seal:Y legacy:- | `团.bronze.svg`<br>`团.seal.svg` |
-| 陀 | oracle:- bronze:Y seal:Y legacy:- | `陀.bronze.svg`<br>`陀.seal.svg` |
-| 王 | oracle:Y bronze:Y seal:Y legacy:- | `王.bronze.svg`<br>`王.oracle.svg`<br>`王.seal.svg` |
-| 网 | oracle:Y bronze:- seal:Y legacy:- | `网.oracle.svg`<br>`网.seal.svg` |
-| 望 | oracle:Y bronze:Y seal:Y legacy:- | `望.bronze.svg`<br>`望.oracle.svg`<br>`望.seal.svg` |
-| 威 | oracle:- bronze:Y seal:Y legacy:- | `威.bronze.svg`<br>`威.seal.svg` |
-| 维 | oracle:- bronze:Y seal:Y legacy:- | `维.bronze.svg`<br>`维.seal.svg` |
-| 伟 | oracle:- bronze:- seal:Y legacy:- | `伟.seal.svg` |
-| 卫 | oracle:Y bronze:Y seal:Y legacy:- | `卫.bronze.svg`<br>`卫.oracle.svg`<br>`卫.seal.svg` |
-| 未 | oracle:Y bronze:Y seal:Y legacy:- | `未.bronze.svg`<br>`未.oracle.svg`<br>`未.seal.svg` |
-| 文 | oracle:Y bronze:Y seal:Y legacy:- | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
-| 闻 | oracle:Y bronze:Y seal:Y legacy:- | `闻.bronze.svg`<br>`闻.oracle.svg`<br>`闻.seal.svg` |
-| 问 | oracle:Y bronze:Y seal:Y legacy:- | `问.bronze.svg`<br>`问.oracle.svg`<br>`问.seal.svg` |
-| 五 | oracle:Y bronze:Y seal:Y legacy:- | `五.bronze.svg`<br>`五.oracle.svg`<br>`五.seal.svg` |
-| 武 | oracle:Y bronze:Y seal:Y legacy:- | `武.bronze.svg`<br>`武.oracle.svg`<br>`武.seal.svg` |
-| 务 | oracle:- bronze:Y seal:Y legacy:- | `务.bronze.svg`<br>`务.seal.svg` |
-| 物 | oracle:Y bronze:- seal:Y legacy:- | `物.oracle.svg`<br>`物.seal.svg` |
-| 西 | oracle:Y bronze:Y seal:Y legacy:- | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
-| 希 | oracle:- bronze:- seal:Y legacy:- | `希.seal.svg` |
-| 息 | oracle:- bronze:Y seal:Y legacy:- | `息.bronze.svg`<br>`息.seal.svg` |
-| 习 | oracle:Y bronze:Y seal:Y legacy:- | `习.bronze.svg`<br>`习.oracle.svg`<br>`习.seal.svg` |
-| 袭 | oracle:- bronze:Y seal:Y legacy:- | `袭.bronze.svg`<br>`袭.seal.svg` |
-| 戏 | oracle:- bronze:Y seal:Y legacy:- | `戏.bronze.svg`<br>`戏.seal.svg` |
-| 鲜 | oracle:- bronze:Y seal:Y legacy:- | `鲜.bronze.svg`<br>`鲜.seal.svg` |
-| 现 | oracle:Y bronze:Y seal:Y legacy:- | `现.bronze.svg`<br>`现.oracle.svg`<br>`现.seal.svg` |
-| 线 | oracle:- bronze:- seal:Y legacy:- | `线.seal.svg` |
-| 限 | oracle:- bronze:Y seal:Y legacy:- | `限.bronze.svg`<br>`限.seal.svg` |
-| 宪 | oracle:Y bronze:Y seal:Y legacy:- | `宪.bronze.svg`<br>`宪.oracle.svg`<br>`宪.seal.svg` |
-| 献 | oracle:Y bronze:Y seal:Y legacy:- | `献.bronze.svg`<br>`献.oracle.svg`<br>`献.seal.svg` |
-| 响 | oracle:- bronze:- seal:Y legacy:- | `响.seal.svg` |
-| 校 | oracle:- bronze:Y seal:Y legacy:- | `校.bronze.svg`<br>`校.seal.svg` |
-| 蝎 | oracle:- bronze:- seal:Y legacy:- | `蝎.seal.svg` |
-| 协 | oracle:- bronze:Y seal:Y legacy:- | `协.bronze.svg`<br>`协.seal.svg` |
-| 胁 | oracle:- bronze:- seal:Y legacy:- | `胁.seal.svg` |
-| 心 | oracle:Y bronze:Y seal:Y legacy:- | `心.bronze.svg`<br>`心.oracle.svg`<br>`心.seal.svg` |
-| 辛 | oracle:Y bronze:Y seal:Y legacy:- | `辛.bronze.svg`<br>`辛.oracle.svg`<br>`辛.seal.svg` |
-| 新 | oracle:Y bronze:Y seal:Y legacy:- | `新.bronze.svg`<br>`新.oracle.svg`<br>`新.seal.svg` |
-| 信 | oracle:- bronze:Y seal:Y legacy:- | `信.bronze.svg`<br>`信.seal.svg` |
-| 星 | oracle:Y bronze:Y seal:Y legacy:- | `星.bronze.svg`<br>`星.oracle.svg`<br>`星.seal.svg` |
-| 行 | oracle:Y bronze:Y seal:Y legacy:- | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
-| 性 | oracle:- bronze:Y seal:Y legacy:- | `性.bronze.svg`<br>`性.seal.svg` |
-| 修 | oracle:- bronze:- seal:Y legacy:- | `修.seal.svg` |
-| 虚 | oracle:- bronze:- seal:Y legacy:- | `虚.seal.svg` |
-| 许 | oracle:- bronze:Y seal:Y legacy:- | `许.bronze.svg`<br>`许.seal.svg` |
-| 宣 | oracle:Y bronze:Y seal:Y legacy:- | `宣.bronze.svg`<br>`宣.oracle.svg`<br>`宣.seal.svg` |
-| 选 | oracle:Y bronze:Y seal:Y legacy:- | `选.bronze.svg`<br>`选.oracle.svg`<br>`选.seal.svg` |
-| 学 | oracle:Y bronze:Y seal:Y legacy:- | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
-| 询 | oracle:- bronze:- seal:Y legacy:- | `询.seal.svg` |
-| 讯 | oracle:Y bronze:Y seal:Y legacy:- | `讯.bronze.svg`<br>`讯.oracle.svg`<br>`讯.seal.svg` |
-| 衙 | oracle:- bronze:- seal:Y legacy:- | `衙.seal.svg` |
-| 雅 | oracle:- bronze:- seal:Y legacy:- | `雅.seal.svg` |
-| 亚 | oracle:Y bronze:Y seal:Y legacy:- | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
-| 严 | oracle:- bronze:Y seal:Y legacy:- | `严.bronze.svg`<br>`严.seal.svg` |
-| 研 | oracle:- bronze:- seal:Y legacy:- | `研.seal.svg` |
-| 演 | oracle:- bronze:- seal:Y legacy:- | `演.seal.svg` |
-| 养 | oracle:Y bronze:Y seal:Y legacy:- | `养.bronze.svg`<br>`养.oracle.svg`<br>`养.seal.svg` |
-| 徭 | oracle:- bronze:Y seal:Y legacy:- | `徭.bronze.svg`<br>`徭.seal.svg` |
-| 耶 | oracle:- bronze:Y seal:Y legacy:- | `耶.bronze.svg`<br>`耶.seal.svg` |
-| 业 | oracle:- bronze:Y seal:Y legacy:- | `业.bronze.svg`<br>`业.seal.svg` |
-| 叶 | oracle:- bronze:Y seal:Y legacy:- | `叶.bronze.svg`<br>`叶.seal.svg` |
-| 一 | oracle:Y bronze:Y seal:Y legacy:- | `一.bronze.svg`<br>`一.oracle.svg`<br>`一.seal.svg` |
-| 伊 | oracle:Y bronze:Y seal:Y legacy:- | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
-| 医 | oracle:- bronze:- seal:Y legacy:- | `医.seal.svg` |
-| 遗 | oracle:- bronze:Y seal:Y legacy:- | `遗.bronze.svg`<br>`遗.seal.svg` |
-| 义 | oracle:Y bronze:Y seal:Y legacy:- | `义.bronze.svg`<br>`义.oracle.svg`<br>`义.seal.svg` |
-| 役 | oracle:Y bronze:Y seal:Y legacy:- | `役.bronze.svg`<br>`役.oracle.svg`<br>`役.seal.svg` |
-| 易 | oracle:Y bronze:Y seal:Y legacy:- | `易.bronze.svg`<br>`易.oracle.svg`<br>`易.seal.svg` |
-| 疫 | oracle:- bronze:- seal:Y legacy:- | `疫.seal.svg` |
-| 意 | oracle:- bronze:- seal:Y legacy:- | `意.seal.svg` |
-| 音 | oracle:- bronze:Y seal:Y legacy:- | `音.bronze.svg`<br>`音.seal.svg` |
-| 银 | oracle:- bronze:- seal:Y legacy:- | `银.seal.svg` |
-| 英 | oracle:- bronze:Y seal:Y legacy:- | `英.bronze.svg`<br>`英.seal.svg` |
-| 佣 | oracle:- bronze:- seal:Y legacy:- | `佣.seal.svg` |
-| 勇 | oracle:- bronze:Y seal:Y legacy:- | `勇.bronze.svg`<br>`勇.seal.svg` |
-| 用 | oracle:Y bronze:Y seal:Y legacy:- | `用.bronze.svg`<br>`用.oracle.svg`<br>`用.seal.svg` |
-| 由 | oracle:Y bronze:Y seal:- legacy:- | `由.bronze.svg`<br>`由.oracle.svg` |
-| 游 | oracle:Y bronze:Y seal:Y legacy:- | `游.bronze.svg`<br>`游.oracle.svg`<br>`游.seal.svg` |
-| 育 | oracle:Y bronze:Y seal:Y legacy:- | `育.bronze.svg`<br>`育.oracle.svg`<br>`育.seal.svg` |
-| 域 | oracle:- bronze:Y seal:Y legacy:- | `域.bronze.svg`<br>`域.seal.svg` |
-| 元 | oracle:Y bronze:Y seal:Y legacy:- | `元.bronze.svg`<br>`元.oracle.svg`<br>`元.seal.svg` |
-| 员 | oracle:Y bronze:Y seal:Y legacy:- | `员.bronze.svg`<br>`员.oracle.svg`<br>`员.seal.svg` |
-| 园 | oracle:- bronze:- seal:Y legacy:- | `园.seal.svg` |
-| 源 | oracle:- bronze:- seal:Y legacy:- | `源.seal.svg` |
-| 约 | oracle:- bronze:- seal:Y legacy:- | `约.seal.svg` |
-| 运 | oracle:- bronze:- seal:Y legacy:- | `运.seal.svg` |
-| 宰 | oracle:Y bronze:Y seal:Y legacy:- | `宰.bronze.svg`<br>`宰.oracle.svg`<br>`宰.seal.svg` |
-| 赞 | oracle:- bronze:- seal:Y legacy:- | `赞.seal.svg` |
-| 择 | oracle:- bronze:Y seal:Y legacy:- | `择.bronze.svg`<br>`择.seal.svg` |
-| 赠 | oracle:- bronze:- seal:Y legacy:- | `赠.seal.svg` |
-| 扎 | oracle:- bronze:- seal:Y legacy:- | `扎.seal.svg` |
-| 战 | oracle:- bronze:Y seal:Y legacy:- | `战.bronze.svg`<br>`战.seal.svg` |
-| 张 | oracle:- bronze:Y seal:Y legacy:- | `张.bronze.svg`<br>`张.seal.svg` |
-| 章 | oracle:- bronze:Y seal:Y legacy:- | `章.bronze.svg`<br>`章.seal.svg` |
-| 长 | oracle:Y bronze:Y seal:Y legacy:- | `长.bronze.svg`<br>`长.oracle.svg`<br>`长.seal.svg` |
-| 哲 | oracle:- bronze:Y seal:Y legacy:- | `哲.bronze.svg`<br>`哲.seal.svg` |
-| 这 | oracle:- bronze:- seal:Y legacy:- | `这.seal.svg` |
-| 阵 | oracle:Y bronze:- seal:Y legacy:- | `阵.oracle.svg`<br>`阵.seal.svg` |
-| 镇 | oracle:- bronze:- seal:Y legacy:- | `镇.seal.svg` |
-| 争 | oracle:Y bronze:- seal:Y legacy:- | `争.oracle.svg`<br>`争.seal.svg` |
-| 征 | oracle:Y bronze:Y seal:Y legacy:- | `征.bronze.svg`<br>`征.oracle.svg`<br>`征.seal.svg` |
-| 蒸 | oracle:- bronze:- seal:Y legacy:- | `蒸.seal.svg` |
-| 证 | oracle:- bronze:- seal:Y legacy:- | `证.seal.svg` |
-| 政 | oracle:Y bronze:Y seal:Y legacy:- | `政.bronze.svg`<br>`政.oracle.svg`<br>`政.seal.svg` |
-| 之 | oracle:Y bronze:Y seal:Y legacy:- | `之.bronze.svg`<br>`之.oracle.svg`<br>`之.seal.svg` |
-| 织 | oracle:- bronze:Y seal:Y legacy:- | `织.bronze.svg`<br>`织.seal.svg` |
-| 职 | oracle:- bronze:Y seal:Y legacy:- | `职.bronze.svg`<br>`职.seal.svg` |
-| 殖 | oracle:- bronze:- seal:Y legacy:- | `殖.seal.svg` |
-| 制 | oracle:- bronze:Y seal:Y legacy:- | `制.bronze.svg`<br>`制.seal.svg` |
-| 治 | oracle:- bronze:- seal:Y legacy:- | `治.seal.svg` |
-| 忠 | oracle:- bronze:Y seal:Y legacy:- | `忠.bronze.svg`<br>`忠.seal.svg` |
-| 主 | oracle:Y bronze:- seal:Y legacy:- | `主.oracle.svg`<br>`主.seal.svg` |
-| 助 | oracle:- bronze:- seal:Y legacy:- | `助.seal.svg` |
-| 筑 | oracle:- bronze:- seal:Y legacy:- | `筑.seal.svg` |
-| 铸 | oracle:Y bronze:Y seal:Y legacy:- | `铸.bronze.svg`<br>`铸.oracle.svg`<br>`铸.seal.svg` |
-| 专 | oracle:Y bronze:Y seal:Y legacy:- | `专.bronze.svg`<br>`专.oracle.svg`<br>`专.seal.svg` |
-| 状 | oracle:- bronze:- seal:Y legacy:- | `状.seal.svg` |
-| 资 | oracle:- bronze:- seal:Y legacy:- | `资.seal.svg` |
-| 子 | oracle:Y bronze:Y seal:Y legacy:- | `子.bronze.svg`<br>`子.oracle.svg`<br>`子.seal.svg` |
-| 自 | oracle:Y bronze:Y seal:Y legacy:- | `自.bronze.svg`<br>`自.oracle.svg`<br>`自.seal.svg` |
-| 宗 | oracle:Y bronze:Y seal:Y legacy:- | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
-| 综 | oracle:- bronze:- seal:Y legacy:- | `综.seal.svg` |
-| 走 | oracle:Y bronze:Y seal:Y legacy:- | `走.bronze.svg`<br>`走.oracle.svg`<br>`走.seal.svg` |
-| 族 | oracle:Y bronze:Y seal:Y legacy:- | `族.bronze.svg`<br>`族.oracle.svg`<br>`族.seal.svg` |
-| 组 | oracle:- bronze:Y seal:Y legacy:- | `组.bronze.svg`<br>`组.seal.svg` |
-| 祖 | oracle:Y bronze:Y seal:Y legacy:- | `祖.bronze.svg`<br>`祖.oracle.svg`<br>`祖.seal.svg` |
-| 钻 | oracle:- bronze:- seal:Y legacy:- | `钻.seal.svg` |
-| 最 | oracle:- bronze:- seal:Y legacy:- | `最.seal.svg` |
-| 作 | oracle:Y bronze:Y seal:Y legacy:- | `作.bronze.svg`<br>`作.oracle.svg`<br>`作.seal.svg` |
+| 阿 | oracle:- bronze:Y seal:Y | `阿.bronze.svg`<br>`阿.seal.svg` |
+| 暗 | oracle:- bronze:- seal:Y | `暗.seal.svg` |
+| 澳 | oracle:- bronze:- seal:Y | `澳.seal.svg` |
+| 坝 | oracle:- bronze:- seal:Y | `坝.seal.svg` |
+| 办 | oracle:- bronze:- seal:Y | `办.seal.svg` |
+| 保 | oracle:Y bronze:Y seal:Y | `保.bronze.svg`<br>`保.oracle.svg`<br>`保.seal.svg` |
+| 堡 | oracle:Y bronze:Y seal:Y | `堡.bronze.svg`<br>`堡.oracle.svg`<br>`堡.seal.svg` |
+| 报 | oracle:- bronze:Y seal:Y | `报.bronze.svg`<br>`报.seal.svg` |
+| 贝 | oracle:Y bronze:Y seal:Y | `贝.bronze.svg`<br>`贝.oracle.svg`<br>`贝.seal.svg` |
+| 本 | oracle:- bronze:Y seal:Y | `本.bronze.svg`<br>`本.seal.svg` |
+| 币 | oracle:- bronze:- seal:Y | `币.seal.svg` |
+| 壁 | oracle:- bronze:- seal:Y | `壁.seal.svg` |
+| 边 | oracle:Y bronze:Y seal:Y | `边.bronze.svg`<br>`边.oracle.svg`<br>`边.seal.svg` |
+| 标 | oracle:- bronze:- seal:Y | `标.seal.svg` |
+| 镖 | oracle:- bronze:- seal:Y | `镖.seal.svg` |
+| 兵 | oracle:Y bronze:Y seal:Y | `兵.bronze.svg`<br>`兵.oracle.svg`<br>`兵.seal.svg` |
+| 波 | oracle:- bronze:- seal:Y | `波.seal.svg` |
+| 播 | oracle:- bronze:Y seal:Y | `播.bronze.svg`<br>`播.seal.svg` |
+| 博 | oracle:- bronze:Y seal:Y | `博.bronze.svg`<br>`博.seal.svg` |
+| 布 | oracle:- bronze:Y seal:Y | `布.bronze.svg`<br>`布.seal.svg` |
+| 部 | oracle:- bronze:- seal:Y | `部.seal.svg` |
+| 裁 | oracle:- bronze:- seal:Y | `裁.seal.svg` |
+| 册 | oracle:Y bronze:Y seal:Y | `册.bronze.svg`<br>`册.oracle.svg`<br>`册.seal.svg` |
+| 测 | oracle:- bronze:Y seal:Y | `测.bronze.svg`<br>`测.seal.svg` |
+| 策 | oracle:- bronze:Y seal:Y | `策.bronze.svg`<br>`策.seal.svg` |
+| 层 | oracle:- bronze:- seal:Y | `层.seal.svg` |
+| 查 | oracle:- bronze:- seal:Y | `查.seal.svg` |
+| 察 | oracle:- bronze:Y seal:Y | `察.bronze.svg`<br>`察.seal.svg` |
+| 产 | oracle:- bronze:Y seal:Y | `产.bronze.svg`<br>`产.seal.svg` |
+| 场 | oracle:- bronze:- seal:Y | `场.seal.svg` |
+| 成 | oracle:Y bronze:Y seal:Y | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
+| 诚 | oracle:- bronze:- seal:Y | `诚.seal.svg` |
+| 城 | oracle:- bronze:Y seal:Y | `城.bronze.svg`<br>`城.seal.svg` |
+| 乘 | oracle:Y bronze:Y seal:Y | `乘.bronze.svg`<br>`乘.oracle.svg`<br>`乘.seal.svg` |
+| 程 | oracle:- bronze:Y seal:Y | `程.bronze.svg`<br>`程.seal.svg` |
+| 橙 | oracle:- bronze:- seal:Y | `橙.seal.svg` |
+| 出 | oracle:Y bronze:Y seal:Y | `出.bronze.svg`<br>`出.oracle.svg`<br>`出.seal.svg` |
+| 础 | oracle:- bronze:- seal:Y | `础.seal.svg` |
+| 处 | oracle:Y bronze:Y seal:Y | `处.bronze.svg`<br>`处.oracle.svg`<br>`处.seal.svg` |
+| 畜 | oracle:Y bronze:Y seal:Y | `畜.bronze.svg`<br>`畜.oracle.svg`<br>`畜.seal.svg` |
+| 传 | oracle:Y bronze:Y seal:Y | `传.bronze.svg`<br>`传.oracle.svg`<br>`传.seal.svg` |
+| 次 | oracle:Y bronze:Y seal:Y | `次.bronze.svg`<br>`次.oracle.svg`<br>`次.seal.svg` |
+| 存 | oracle:- bronze:- seal:Y | `存.seal.svg` |
+| 打 | oracle:- bronze:- seal:Y | `打.seal.svg` |
+| 大 | oracle:Y bronze:Y seal:Y | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
+| 代 | oracle:- bronze:- seal:Y | `代.seal.svg` |
+| 单 | oracle:Y bronze:Y seal:Y | `单.bronze.svg`<br>`单.oracle.svg`<br>`单.seal.svg` |
+| 导 | oracle:- bronze:- seal:Y | `导.seal.svg` |
+| 岛 | oracle:- bronze:- seal:Y | `岛.seal.svg` |
+| 盗 | oracle:Y bronze:Y seal:Y | `盗.bronze.svg`<br>`盗.oracle.svg`<br>`盗.seal.svg` |
+| 道 | oracle:- bronze:Y seal:Y | `道.bronze.svg`<br>`道.seal.svg` |
+| 地 | oracle:- bronze:Y seal:Y | `地.bronze.svg`<br>`地.seal.svg` |
+| 堤 | oracle:- bronze:- seal:Y | `堤.seal.svg` |
+| 迪 | oracle:- bronze:- seal:Y | `迪.seal.svg` |
+| 帝 | oracle:Y bronze:Y seal:Y | `帝.bronze.svg`<br>`帝.oracle.svg`<br>`帝.seal.svg` |
+| 第 | oracle:Y bronze:Y seal:Y | `第.bronze.svg`<br>`第.oracle.svg`<br>`第.seal.svg` |
+| 典 | oracle:Y bronze:Y seal:Y | `典.bronze.svg`<br>`典.oracle.svg`<br>`典.seal.svg` |
+| 电 | oracle:- bronze:Y seal:Y | `电.bronze.svg`<br>`电.seal.svg` |
+| 调 | oracle:- bronze:- seal:Y | `调.seal.svg` |
+| 谍 | oracle:- bronze:- seal:Y | `谍.seal.svg` |
+| 定 | oracle:Y bronze:Y seal:Y | `定.bronze.svg`<br>`定.oracle.svg`<br>`定.seal.svg` |
+| 动 | oracle:- bronze:Y seal:Y | `动.bronze.svg`<br>`动.seal.svg` |
+| 独 | oracle:- bronze:- seal:Y | `独.seal.svg` |
+| 度 | oracle:Y bronze:Y seal:Y | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
+| 队 | oracle:Y bronze:Y seal:Y | `队.bronze.svg`<br>`队.oracle.svg`<br>`队.seal.svg` |
+| 遏 | oracle:- bronze:- seal:Y | `遏.seal.svg` |
+| 尔 | oracle:- bronze:Y seal:Y | `尔.bronze.svg`<br>`尔.seal.svg` |
+| 二 | oracle:Y bronze:Y seal:Y | `二.bronze.svg`<br>`二.oracle.svg`<br>`二.seal.svg` |
+| 发 | oracle:Y bronze:Y seal:Y | `发.bronze.svg`<br>`发.oracle.svg`<br>`发.seal.svg` |
+| 法 | oracle:- bronze:Y seal:Y | `法.bronze.svg`<br>`法.seal.svg` |
+| 反 | oracle:Y bronze:Y seal:Y | `反.bronze.svg`<br>`反.oracle.svg`<br>`反.seal.svg` |
+| 放 | oracle:- bronze:Y seal:Y | `放.bronze.svg`<br>`放.seal.svg` |
+| 飞 | oracle:- bronze:- seal:Y | `飞.seal.svg` |
+| 费 | oracle:- bronze:Y seal:Y | `费.bronze.svg`<br>`费.seal.svg` |
+| 风 | oracle:Y bronze:Y seal:Y | `风.bronze.svg`<br>`风.oracle.svg`<br>`风.seal.svg` |
+| 封 | oracle:Y bronze:Y seal:Y | `封.bronze.svg`<br>`封.oracle.svg`<br>`封.seal.svg` |
+| 奉 | oracle:- bronze:Y seal:Y | `奉.bronze.svg`<br>`奉.seal.svg` |
+| 服 | oracle:Y bronze:Y seal:Y | `服.bronze.svg`<br>`服.oracle.svg`<br>`服.seal.svg` |
+| 符 | oracle:- bronze:Y seal:Y | `符.bronze.svg`<br>`符.seal.svg` |
+| 福 | oracle:- bronze:Y seal:Y | `福.bronze.svg`<br>`福.seal.svg` |
+| 府 | oracle:- bronze:Y seal:Y | `府.bronze.svg`<br>`府.seal.svg` |
+| 改 | oracle:Y bronze:Y seal:Y | `改.bronze.svg`<br>`改.oracle.svg`<br>`改.seal.svg` |
+| 感 | oracle:- bronze:Y seal:Y | `感.bronze.svg`<br>`感.seal.svg` |
+| 高 | oracle:Y bronze:Y seal:Y | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
+| 告 | oracle:Y bronze:Y seal:Y | `告.bronze.svg`<br>`告.oracle.svg`<br>`告.seal.svg` |
+| 哥 | oracle:- bronze:- seal:Y | `哥.seal.svg` |
+| 歌 | oracle:- bronze:Y seal:Y | `歌.bronze.svg`<br>`歌.seal.svg` |
+| 革 | oracle:Y bronze:Y seal:Y | `革.bronze.svg`<br>`革.oracle.svg`<br>`革.seal.svg` |
+| 格 | oracle:- bronze:Y seal:Y | `格.bronze.svg`<br>`格.seal.svg` |
+| 工 | oracle:Y bronze:Y seal:Y | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
+| 公 | oracle:Y bronze:Y seal:Y | `公.bronze.svg`<br>`公.oracle.svg`<br>`公.seal.svg` |
+| 攻 | oracle:- bronze:Y seal:Y | `攻.bronze.svg`<br>`攻.seal.svg` |
+| 供 | oracle:- bronze:- seal:Y | `供.seal.svg` |
+| 共 | oracle:- bronze:Y seal:Y | `共.bronze.svg`<br>`共.seal.svg` |
+| 孤 | oracle:- bronze:Y seal:Y | `孤.bronze.svg`<br>`孤.seal.svg` |
+| 古 | oracle:Y bronze:Y seal:Y | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
+| 谷 | oracle:Y bronze:Y seal:Y | `谷.bronze.svg`<br>`谷.oracle.svg`<br>`谷.seal.svg` |
+| 雇 | oracle:Y bronze:- seal:Y | `雇.oracle.svg`<br>`雇.seal.svg` |
+| 寡 | oracle:- bronze:Y seal:Y | `寡.bronze.svg`<br>`寡.seal.svg` |
+| 馆 | oracle:- bronze:- seal:Y | `馆.seal.svg` |
+| 管 | oracle:- bronze:- seal:Y | `管.seal.svg` |
+| 贯 | oracle:- bronze:- seal:Y | `贯.seal.svg` |
+| 光 | oracle:Y bronze:Y seal:Y | `光.bronze.svg`<br>`光.oracle.svg`<br>`光.seal.svg` |
+| 广 | oracle:Y bronze:Y seal:Y | `广.bronze.svg`<br>`广.oracle.svg`<br>`广.seal.svg` |
+| 规 | oracle:- bronze:Y seal:Y | `规.bronze.svg`<br>`规.seal.svg` |
+| 贵 | oracle:- bronze:Y seal:Y | `贵.bronze.svg`<br>`贵.seal.svg` |
+| 国 | oracle:- bronze:Y seal:Y | `国.bronze.svg`<br>`国.seal.svg` |
+| 海 | oracle:- bronze:Y seal:Y | `海.bronze.svg`<br>`海.seal.svg` |
+| 航 | oracle:- bronze:- seal:Y | `航.seal.svg` |
+| 好 | oracle:Y bronze:Y seal:Y | `好.bronze.svg`<br>`好.oracle.svg`<br>`好.seal.svg` |
+| 合 | oracle:Y bronze:Y seal:Y | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
+| 核 | oracle:- bronze:- seal:Y | `核.seal.svg` |
+| 黑 | oracle:Y bronze:Y seal:Y | `黑.bronze.svg`<br>`黑.oracle.svg`<br>`黑.seal.svg` |
+| 横 | oracle:- bronze:- seal:Y | `横.seal.svg` |
+| 洪 | oracle:- bronze:- seal:Y | `洪.seal.svg` |
+| 护 | oracle:- bronze:- seal:Y | `护.seal.svg` |
+| 花 | oracle:- bronze:- seal:Y | `花.seal.svg` |
+| 化 | oracle:Y bronze:Y seal:Y | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
+| 划 | oracle:- bronze:- seal:Y | `划.seal.svg` |
+| 画 | oracle:- bronze:Y seal:Y | `画.bronze.svg`<br>`画.seal.svg` |
+| 皇 | oracle:Y bronze:Y seal:Y | `皇.bronze.svg`<br>`皇.oracle.svg`<br>`皇.seal.svg` |
+| 黄 | oracle:Y bronze:Y seal:Y | `黄.bronze.svg`<br>`黄.oracle.svg`<br>`黄.seal.svg` |
+| 会 | oracle:Y bronze:Y seal:Y | `会.bronze.svg`<br>`会.oracle.svg`<br>`会.seal.svg` |
+| 活 | oracle:- bronze:- seal:Y | `活.seal.svg` |
+| 伙 | oracle:- bronze:- seal:Y | `伙.seal.svg` |
+| 击 | oracle:- bronze:- seal:Y | `击.seal.svg` |
+| 圾 | oracle:- bronze:- seal:Y | `圾.seal.svg` |
+| 机 | oracle:- bronze:- seal:Y | `机.seal.svg` |
+| 基 | oracle:Y bronze:Y seal:Y | `基.bronze.svg`<br>`基.oracle.svg`<br>`基.seal.svg` |
+| 级 | oracle:- bronze:- seal:Y | `级.seal.svg` |
+| 集 | oracle:Y bronze:Y seal:Y | `集.bronze.svg`<br>`集.oracle.svg`<br>`集.seal.svg` |
+| 计 | oracle:- bronze:- seal:Y | `计.seal.svg` |
+| 记 | oracle:- bronze:Y seal:Y | `记.bronze.svg`<br>`记.seal.svg` |
+| 纪 | oracle:- bronze:Y seal:Y | `纪.bronze.svg`<br>`纪.seal.svg` |
+| 技 | oracle:- bronze:- seal:Y | `技.seal.svg` |
+| 际 | oracle:- bronze:- seal:Y | `际.seal.svg` |
+| 济 | oracle:- bronze:Y seal:Y | `济.bronze.svg`<br>`济.seal.svg` |
+| 加 | oracle:- bronze:Y seal:Y | `加.bronze.svg`<br>`加.seal.svg` |
+| 家 | oracle:Y bronze:Y seal:Y | `家.bronze.svg`<br>`家.oracle.svg`<br>`家.seal.svg` |
+| 假 | oracle:- bronze:- seal:Y | `假.seal.svg` |
+| 间 | oracle:- bronze:Y seal:Y | `间.bronze.svg`<br>`间.seal.svg` |
+| 检 | oracle:- bronze:- seal:Y | `检.seal.svg` |
+| 建 | oracle:Y bronze:Y seal:Y | `建.bronze.svg`<br>`建.oracle.svg`<br>`建.seal.svg` |
+| 舰 | oracle:- bronze:- seal:Y | `舰.seal.svg` |
+| 奖 | oracle:- bronze:- seal:Y | `奖.seal.svg` |
+| 匠 | oracle:- bronze:- seal:Y | `匠.seal.svg` |
+| 交 | oracle:- bronze:- seal:Y | `交.seal.svg` |
+| 角 | oracle:Y bronze:Y seal:Y | `角.bronze.svg`<br>`角.oracle.svg`<br>`角.seal.svg` |
+| 教 | oracle:Y bronze:Y seal:Y | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
+| 阶 | oracle:Y bronze:Y seal:Y | `阶.bronze.svg`<br>`阶.oracle.svg`<br>`阶.seal.svg` |
+| 杰 | oracle:- bronze:- seal:Y | `杰.seal.svg` |
+| 结 | oracle:- bronze:- seal:Y | `结.seal.svg` |
+| 截 | oracle:- bronze:- seal:Y | `截.seal.svg` |
+| 解 | oracle:Y bronze:Y seal:Y | `解.bronze.svg`<br>`解.oracle.svg`<br>`解.seal.svg` |
+| 戒 | oracle:Y bronze:Y seal:Y | `戒.bronze.svg`<br>`戒.oracle.svg`<br>`戒.seal.svg` |
+| 金 | oracle:- bronze:Y seal:Y | `金.bronze.svg`<br>`金.seal.svg` |
+| 禁 | oracle:- bronze:- seal:Y | `禁.seal.svg` |
+| 经 | oracle:- bronze:Y seal:Y | `经.bronze.svg`<br>`经.seal.svg` |
+| 精 | oracle:- bronze:- seal:Y | `精.seal.svg` |
+| 警 | oracle:- bronze:- seal:Y | `警.seal.svg` |
+| 究 | oracle:- bronze:Y seal:Y | `究.bronze.svg`<br>`究.seal.svg` |
+| 局 | oracle:- bronze:- seal:Y | `局.seal.svg` |
+| 剧 | oracle:- bronze:- seal:Y | `剧.seal.svg` |
+| 军 | oracle:- bronze:Y seal:Y | `军.bronze.svg`<br>`军.seal.svg` |
+| 君 | oracle:Y bronze:Y seal:Y | `君.bronze.svg`<br>`君.oracle.svg`<br>`君.seal.svg` |
+| 科 | oracle:- bronze:- seal:Y | `科.seal.svg` |
+| 克 | oracle:Y bronze:Y seal:Y | `克.bronze.svg`<br>`克.oracle.svg`<br>`克.seal.svg` |
+| 刻 | oracle:- bronze:- seal:Y | `刻.seal.svg` |
+| 空 | oracle:- bronze:Y seal:Y | `空.bronze.svg`<br>`空.seal.svg` |
+| 库 | oracle:- bronze:Y seal:Y | `库.bronze.svg`<br>`库.seal.svg` |
+| 扩 | oracle:- bronze:- seal:Y | `扩.seal.svg` |
+| 垃 | oracle:- bronze:- seal:Y | `垃.seal.svg` |
+| 拉 | oracle:- bronze:- seal:Y | `拉.seal.svg` |
+| 来 | oracle:Y bronze:Y seal:Y | `来.bronze.svg`<br>`来.oracle.svg`<br>`来.seal.svg` |
+| 劳 | oracle:Y bronze:Y seal:Y | `劳.bronze.svg`<br>`劳.oracle.svg`<br>`劳.seal.svg` |
+| 老 | oracle:Y bronze:Y seal:Y | `老.bronze.svg`<br>`老.oracle.svg`<br>`老.seal.svg` |
+| 乐 | oracle:Y bronze:Y seal:Y | `乐.bronze.svg`<br>`乐.oracle.svg`<br>`乐.seal.svg` |
+| 勒 | oracle:- bronze:Y seal:Y | `勒.bronze.svg`<br>`勒.seal.svg` |
+| 垒 | oracle:- bronze:- seal:Y | `垒.seal.svg` |
+| 里 | oracle:- bronze:Y seal:Y | `里.bronze.svg`<br>`里.seal.svg` |
+| 理 | oracle:- bronze:Y seal:Y | `理.bronze.svg`<br>`理.seal.svg` |
+| 力 | oracle:Y bronze:Y seal:Y | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
+| 历 | oracle:- bronze:- seal:Y | `历.seal.svg` |
+| 立 | oracle:Y bronze:Y seal:Y | `立.bronze.svg`<br>`立.oracle.svg`<br>`立.seal.svg` |
+| 利 | oracle:Y bronze:Y seal:Y | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
+| 励 | oracle:- bronze:Y seal:Y | `励.bronze.svg`<br>`励.seal.svg` |
+| 联 | oracle:Y bronze:Y seal:Y | `联.bronze.svg`<br>`联.oracle.svg`<br>`联.seal.svg` |
+| 练 | oracle:- bronze:- seal:Y | `练.seal.svg` |
+| 量 | oracle:Y bronze:Y seal:Y | `量.bronze.svg`<br>`量.oracle.svg`<br>`量.seal.svg` |
+| 林 | oracle:Y bronze:Y seal:Y | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
+| 灵 | oracle:- bronze:Y seal:Y | `灵.bronze.svg`<br>`灵.seal.svg` |
+| 领 | oracle:- bronze:- seal:Y | `领.seal.svg` |
+| 令 | oracle:Y bronze:Y seal:Y | `令.bronze.svg`<br>`令.oracle.svg`<br>`令.seal.svg` |
+| 流 | oracle:- bronze:Y seal:Y | `流.bronze.svg`<br>`流.seal.svg` |
+| 留 | oracle:- bronze:Y seal:Y | `留.bronze.svg`<br>`留.seal.svg` |
+| 楼 | oracle:- bronze:- seal:Y | `楼.seal.svg` |
+| 录 | oracle:Y bronze:Y seal:Y | `录.bronze.svg`<br>`录.oracle.svg`<br>`录.seal.svg` |
+| 路 | oracle:- bronze:Y seal:Y | `路.bronze.svg`<br>`路.seal.svg` |
+| 旅 | oracle:Y bronze:Y seal:Y | `旅.bronze.svg`<br>`旅.oracle.svg`<br>`旅.seal.svg` |
+| 律 | oracle:Y bronze:Y seal:Y | `律.bronze.svg`<br>`律.oracle.svg`<br>`律.seal.svg` |
+| 掠 | oracle:- bronze:- seal:Y | `掠.seal.svg` |
+| 略 | oracle:- bronze:- seal:Y | `略.seal.svg` |
+| 罗 | oracle:Y bronze:Y seal:Y | `罗.bronze.svg`<br>`罗.oracle.svg`<br>`罗.seal.svg` |
+| 络 | oracle:- bronze:- seal:Y | `络.seal.svg` |
+| 马 | oracle:Y bronze:Y seal:Y | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
+| 码 | oracle:- bronze:- seal:Y | `码.seal.svg` |
+| 麦 | oracle:Y bronze:Y seal:Y | `麦.bronze.svg`<br>`麦.oracle.svg`<br>`麦.seal.svg` |
+| 曼 | oracle:Y bronze:Y seal:Y | `曼.bronze.svg`<br>`曼.oracle.svg`<br>`曼.seal.svg` |
+| 氓 | oracle:- bronze:- seal:Y | `氓.seal.svg` |
+| 贸 | oracle:- bronze:Y seal:Y | `贸.bronze.svg`<br>`贸.seal.svg` |
+| 媒 | oracle:- bronze:- seal:Y | `媒.seal.svg` |
+| 美 | oracle:Y bronze:Y seal:Y | `美.bronze.svg`<br>`美.oracle.svg`<br>`美.seal.svg` |
+| 魅 | oracle:Y bronze:- seal:Y | `魅.oracle.svg`<br>`魅.seal.svg` |
+| 门 | oracle:Y bronze:Y seal:Y | `门.bronze.svg`<br>`门.oracle.svg`<br>`门.seal.svg` |
+| 们 | oracle:- bronze:- seal:Y | `们.seal.svg` |
+| 盟 | oracle:Y bronze:Y seal:Y | `盟.bronze.svg`<br>`盟.oracle.svg`<br>`盟.seal.svg` |
+| 密 | oracle:- bronze:Y seal:Y | `密.bronze.svg`<br>`密.seal.svg` |
+| 免 | oracle:Y bronze:Y seal:- | `免.bronze.svg`<br>`免.oracle.svg` |
+| 面 | oracle:Y bronze:- seal:Y | `面.oracle.svg`<br>`面.seal.svg` |
+| 民 | oracle:Y bronze:Y seal:Y | `民.bronze.svg`<br>`民.oracle.svg`<br>`民.seal.svg` |
+| 明 | oracle:Y bronze:Y seal:Y | `明.bronze.svg`<br>`明.oracle.svg`<br>`明.seal.svg` |
+| 命 | oracle:Y bronze:Y seal:Y | `命.bronze.svg`<br>`命.oracle.svg`<br>`命.seal.svg` |
+| 摩 | oracle:- bronze:- seal:Y | `摩.seal.svg` |
+| 莫 | oracle:Y bronze:Y seal:Y | `莫.bronze.svg`<br>`莫.oracle.svg`<br>`莫.seal.svg` |
+| 姆 | oracle:- bronze:Y seal:Y | `姆.bronze.svg`<br>`姆.seal.svg` |
+| 目 | oracle:Y bronze:Y seal:Y | `目.bronze.svg`<br>`目.oracle.svg`<br>`目.seal.svg` |
+| 牧 | oracle:Y bronze:Y seal:Y | `牧.bronze.svg`<br>`牧.oracle.svg`<br>`牧.seal.svg` |
+| 暮 | oracle:Y bronze:Y seal:Y | `暮.bronze.svg`<br>`暮.oracle.svg`<br>`暮.seal.svg` |
+| 那 | oracle:- bronze:- seal:Y | `那.seal.svg` |
+| 纳 | oracle:- bronze:Y seal:Y | `纳.bronze.svg`<br>`纳.seal.svg` |
+| 能 | oracle:- bronze:Y seal:Y | `能.bronze.svg`<br>`能.seal.svg` |
+| 你 | oracle:- bronze:Y seal:- | `你.bronze.svg` |
+| 年 | oracle:Y bronze:Y seal:Y | `年.bronze.svg`<br>`年.oracle.svg`<br>`年.seal.svg` |
+| 念 | oracle:Y bronze:Y seal:Y | `念.bronze.svg`<br>`念.oracle.svg`<br>`念.seal.svg` |
+| 农 | oracle:Y bronze:Y seal:Y | `农.bronze.svg`<br>`农.oracle.svg`<br>`农.seal.svg` |
+| 奴 | oracle:Y bronze:Y seal:Y | `奴.bronze.svg`<br>`奴.oracle.svg`<br>`奴.seal.svg` |
+| 诺 | oracle:- bronze:Y seal:Y | `诺.bronze.svg`<br>`诺.seal.svg` |
+| 帕 | oracle:- bronze:- seal:Y | `帕.seal.svg` |
+| 判 | oracle:- bronze:- seal:Y | `判.seal.svg` |
+| 炮 | oracle:- bronze:- seal:Y | `炮.seal.svg` |
+| 配 | oracle:Y bronze:Y seal:Y | `配.bronze.svg`<br>`配.oracle.svg`<br>`配.seal.svg` |
+| 骑 | oracle:- bronze:Y seal:Y | `骑.bronze.svg`<br>`骑.seal.svg` |
+| 启 | oracle:Y bronze:- seal:Y | `启.oracle.svg`<br>`启.seal.svg` |
+| 汽 | oracle:- bronze:- seal:Y | `汽.seal.svg` |
+| 契 | oracle:- bronze:Y seal:Y | `契.bronze.svg`<br>`契.seal.svg` |
+| 器 | oracle:- bronze:Y seal:Y | `器.bronze.svg`<br>`器.seal.svg` |
+| 强 | oracle:- bronze:- seal:Y | `强.seal.svg` |
+| 侵 | oracle:Y bronze:Y seal:Y | `侵.bronze.svg`<br>`侵.oracle.svg`<br>`侵.seal.svg` |
+| 勤 | oracle:- bronze:Y seal:Y | `勤.bronze.svg`<br>`勤.seal.svg` |
+| 请 | oracle:- bronze:Y seal:Y | `请.bronze.svg`<br>`请.seal.svg` |
+| 区 | oracle:Y bronze:Y seal:Y | `区.bronze.svg`<br>`区.oracle.svg`<br>`区.seal.svg` |
+| 全 | oracle:- bronze:- seal:Y | `全.seal.svg` |
+| 权 | oracle:Y bronze:Y seal:Y | `权.bronze.svg`<br>`权.oracle.svg`<br>`权.seal.svg` |
+| 却 | oracle:- bronze:- seal:Y | `却.seal.svg` |
+| 然 | oracle:- bronze:Y seal:Y | `然.bronze.svg`<br>`然.seal.svg` |
+| 人 | oracle:Y bronze:Y seal:Y | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
+| 认 | oracle:- bronze:- seal:Y | `认.seal.svg` |
+| 任 | oracle:Y bronze:Y seal:Y | `任.bronze.svg`<br>`任.oracle.svg`<br>`任.seal.svg` |
+| 日 | oracle:Y bronze:Y seal:Y | `日.bronze.svg`<br>`日.oracle.svg`<br>`日.seal.svg` |
+| 入 | oracle:Y bronze:Y seal:Y | `入.bronze.svg`<br>`入.oracle.svg`<br>`入.seal.svg` |
+| 软 | oracle:- bronze:- seal:Y | `软.seal.svg` |
+| 锐 | oracle:- bronze:- seal:Y | `锐.seal.svg` |
+| 萨 | oracle:- bronze:- seal:Y | `萨.seal.svg` |
+| 塞 | oracle:Y bronze:- seal:Y | `塞.oracle.svg`<br>`塞.seal.svg` |
+| 三 | oracle:Y bronze:Y seal:Y | `三.bronze.svg`<br>`三.oracle.svg`<br>`三.seal.svg` |
+| 僧 | oracle:- bronze:- seal:Y | `僧.seal.svg` |
+| 杀 | oracle:- bronze:Y seal:Y | `杀.bronze.svg`<br>`杀.seal.svg` |
+| 闪 | oracle:- bronze:- seal:Y | `闪.seal.svg` |
+| 商 | oracle:Y bronze:Y seal:Y | `商.bronze.svg`<br>`商.oracle.svg`<br>`商.seal.svg` |
+| 设 | oracle:- bronze:- seal:Y | `设.seal.svg` |
+| 社 | oracle:- bronze:Y seal:Y | `社.bronze.svg`<br>`社.seal.svg` |
+| 神 | oracle:- bronze:Y seal:Y | `神.bronze.svg`<br>`神.seal.svg` |
+| 审 | oracle:- bronze:Y seal:Y | `审.bronze.svg`<br>`审.seal.svg` |
+| 生 | oracle:Y bronze:Y seal:Y | `生.bronze.svg`<br>`生.oracle.svg`<br>`生.seal.svg` |
+| 圣 | oracle:Y bronze:Y seal:Y | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
+| 胜 | oracle:- bronze:- seal:Y | `胜.seal.svg` |
+| 师 | oracle:Y bronze:Y seal:Y | `师.bronze.svg`<br>`师.oracle.svg`<br>`师.seal.svg` |
+| 施 | oracle:- bronze:- seal:Y | `施.seal.svg` |
+| 时 | oracle:- bronze:Y seal:Y | `时.bronze.svg`<br>`时.seal.svg` |
+| 士 | oracle:- bronze:Y seal:Y | `士.bronze.svg`<br>`士.seal.svg` |
+| 市 | oracle:Y bronze:Y seal:Y | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
+| 示 | oracle:Y bronze:Y seal:Y | `示.bronze.svg`<br>`示.oracle.svg`<br>`示.seal.svg` |
+| 式 | oracle:- bronze:- seal:Y | `式.seal.svg` |
+| 事 | oracle:Y bronze:Y seal:Y | `事.bronze.svg`<br>`事.oracle.svg`<br>`事.seal.svg` |
+| 室 | oracle:Y bronze:Y seal:Y | `室.bronze.svg`<br>`室.oracle.svg`<br>`室.seal.svg` |
+| 手 | oracle:- bronze:Y seal:Y | `手.bronze.svg`<br>`手.seal.svg` |
+| 术 | oracle:Y bronze:- seal:Y | `术.oracle.svg`<br>`术.seal.svg` |
+| 水 | oracle:Y bronze:Y seal:Y | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
+| 税 | oracle:- bronze:- seal:Y | `税.seal.svg` |
+| 私 | oracle:- bronze:Y seal:Y | `私.bronze.svg`<br>`私.seal.svg` |
+| 斯 | oracle:- bronze:Y seal:Y | `斯.bronze.svg`<br>`斯.seal.svg` |
+| 酸 | oracle:- bronze:Y seal:Y | `酸.bronze.svg`<br>`酸.seal.svg` |
+| 随 | oracle:- bronze:- seal:Y | `随.seal.svg` |
+| 所 | oracle:- bronze:Y seal:Y | `所.bronze.svg`<br>`所.seal.svg` |
+| 他 | oracle:- bronze:- seal:Y | `他.seal.svg` |
+| 塔 | oracle:- bronze:- seal:Y | `塔.seal.svg` |
+| 态 | oracle:- bronze:- seal:Y | `态.seal.svg` |
+| 特 | oracle:- bronze:- seal:Y | `特.seal.svg` |
+| 提 | oracle:- bronze:- seal:Y | `提.seal.svg` |
+| 体 | oracle:- bronze:Y seal:Y | `体.bronze.svg`<br>`体.seal.svg` |
+| 天 | oracle:Y bronze:Y seal:Y | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
+| 跳 | oracle:- bronze:- seal:Y | `跳.seal.svg` |
+| 铁 | oracle:- bronze:- seal:Y | `铁.seal.svg` |
+| 庭 | oracle:- bronze:Y seal:Y | `庭.bronze.svg`<br>`庭.seal.svg` |
+| 通 | oracle:Y bronze:Y seal:Y | `通.bronze.svg`<br>`通.oracle.svg`<br>`通.seal.svg` |
+| 同 | oracle:Y bronze:Y seal:Y | `同.bronze.svg`<br>`同.oracle.svg`<br>`同.seal.svg` |
+| 统 | oracle:- bronze:- seal:Y | `统.seal.svg` |
+| 头 | oracle:- bronze:Y seal:Y | `头.bronze.svg`<br>`头.seal.svg` |
+| 屠 | oracle:- bronze:- seal:Y | `屠.seal.svg` |
+| 土 | oracle:Y bronze:Y seal:Y | `土.bronze.svg`<br>`土.oracle.svg`<br>`土.seal.svg` |
+| 团 | oracle:- bronze:Y seal:Y | `团.bronze.svg`<br>`团.seal.svg` |
+| 陀 | oracle:- bronze:Y seal:Y | `陀.bronze.svg`<br>`陀.seal.svg` |
+| 王 | oracle:Y bronze:Y seal:Y | `王.bronze.svg`<br>`王.oracle.svg`<br>`王.seal.svg` |
+| 网 | oracle:Y bronze:- seal:Y | `网.oracle.svg`<br>`网.seal.svg` |
+| 望 | oracle:Y bronze:Y seal:Y | `望.bronze.svg`<br>`望.oracle.svg`<br>`望.seal.svg` |
+| 威 | oracle:- bronze:Y seal:Y | `威.bronze.svg`<br>`威.seal.svg` |
+| 维 | oracle:- bronze:Y seal:Y | `维.bronze.svg`<br>`维.seal.svg` |
+| 伟 | oracle:- bronze:- seal:Y | `伟.seal.svg` |
+| 卫 | oracle:Y bronze:Y seal:Y | `卫.bronze.svg`<br>`卫.oracle.svg`<br>`卫.seal.svg` |
+| 未 | oracle:Y bronze:Y seal:Y | `未.bronze.svg`<br>`未.oracle.svg`<br>`未.seal.svg` |
+| 文 | oracle:Y bronze:Y seal:Y | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
+| 闻 | oracle:Y bronze:Y seal:Y | `闻.bronze.svg`<br>`闻.oracle.svg`<br>`闻.seal.svg` |
+| 问 | oracle:Y bronze:Y seal:Y | `问.bronze.svg`<br>`问.oracle.svg`<br>`问.seal.svg` |
+| 五 | oracle:Y bronze:Y seal:Y | `五.bronze.svg`<br>`五.oracle.svg`<br>`五.seal.svg` |
+| 武 | oracle:Y bronze:Y seal:Y | `武.bronze.svg`<br>`武.oracle.svg`<br>`武.seal.svg` |
+| 务 | oracle:- bronze:Y seal:Y | `务.bronze.svg`<br>`务.seal.svg` |
+| 物 | oracle:Y bronze:- seal:Y | `物.oracle.svg`<br>`物.seal.svg` |
+| 西 | oracle:Y bronze:Y seal:Y | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
+| 希 | oracle:- bronze:- seal:Y | `希.seal.svg` |
+| 息 | oracle:- bronze:Y seal:Y | `息.bronze.svg`<br>`息.seal.svg` |
+| 习 | oracle:Y bronze:Y seal:Y | `习.bronze.svg`<br>`习.oracle.svg`<br>`习.seal.svg` |
+| 袭 | oracle:- bronze:Y seal:Y | `袭.bronze.svg`<br>`袭.seal.svg` |
+| 戏 | oracle:- bronze:Y seal:Y | `戏.bronze.svg`<br>`戏.seal.svg` |
+| 鲜 | oracle:- bronze:Y seal:Y | `鲜.bronze.svg`<br>`鲜.seal.svg` |
+| 现 | oracle:Y bronze:Y seal:Y | `现.bronze.svg`<br>`现.oracle.svg`<br>`现.seal.svg` |
+| 线 | oracle:- bronze:- seal:Y | `线.seal.svg` |
+| 限 | oracle:- bronze:Y seal:Y | `限.bronze.svg`<br>`限.seal.svg` |
+| 宪 | oracle:Y bronze:Y seal:Y | `宪.bronze.svg`<br>`宪.oracle.svg`<br>`宪.seal.svg` |
+| 献 | oracle:Y bronze:Y seal:Y | `献.bronze.svg`<br>`献.oracle.svg`<br>`献.seal.svg` |
+| 响 | oracle:- bronze:- seal:Y | `响.seal.svg` |
+| 校 | oracle:- bronze:Y seal:Y | `校.bronze.svg`<br>`校.seal.svg` |
+| 蝎 | oracle:- bronze:- seal:Y | `蝎.seal.svg` |
+| 协 | oracle:- bronze:Y seal:Y | `协.bronze.svg`<br>`协.seal.svg` |
+| 胁 | oracle:- bronze:- seal:Y | `胁.seal.svg` |
+| 心 | oracle:Y bronze:Y seal:Y | `心.bronze.svg`<br>`心.oracle.svg`<br>`心.seal.svg` |
+| 辛 | oracle:Y bronze:Y seal:Y | `辛.bronze.svg`<br>`辛.oracle.svg`<br>`辛.seal.svg` |
+| 新 | oracle:Y bronze:Y seal:Y | `新.bronze.svg`<br>`新.oracle.svg`<br>`新.seal.svg` |
+| 信 | oracle:- bronze:Y seal:Y | `信.bronze.svg`<br>`信.seal.svg` |
+| 星 | oracle:Y bronze:Y seal:Y | `星.bronze.svg`<br>`星.oracle.svg`<br>`星.seal.svg` |
+| 行 | oracle:Y bronze:Y seal:Y | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
+| 性 | oracle:- bronze:Y seal:Y | `性.bronze.svg`<br>`性.seal.svg` |
+| 修 | oracle:- bronze:- seal:Y | `修.seal.svg` |
+| 虚 | oracle:- bronze:- seal:Y | `虚.seal.svg` |
+| 许 | oracle:- bronze:Y seal:Y | `许.bronze.svg`<br>`许.seal.svg` |
+| 宣 | oracle:Y bronze:Y seal:Y | `宣.bronze.svg`<br>`宣.oracle.svg`<br>`宣.seal.svg` |
+| 选 | oracle:Y bronze:Y seal:Y | `选.bronze.svg`<br>`选.oracle.svg`<br>`选.seal.svg` |
+| 学 | oracle:Y bronze:Y seal:Y | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
+| 询 | oracle:- bronze:- seal:Y | `询.seal.svg` |
+| 讯 | oracle:Y bronze:Y seal:Y | `讯.bronze.svg`<br>`讯.oracle.svg`<br>`讯.seal.svg` |
+| 衙 | oracle:- bronze:- seal:Y | `衙.seal.svg` |
+| 雅 | oracle:- bronze:- seal:Y | `雅.seal.svg` |
+| 亚 | oracle:Y bronze:Y seal:Y | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
+| 严 | oracle:- bronze:Y seal:Y | `严.bronze.svg`<br>`严.seal.svg` |
+| 研 | oracle:- bronze:- seal:Y | `研.seal.svg` |
+| 演 | oracle:- bronze:- seal:Y | `演.seal.svg` |
+| 养 | oracle:Y bronze:Y seal:Y | `养.bronze.svg`<br>`养.oracle.svg`<br>`养.seal.svg` |
+| 徭 | oracle:- bronze:Y seal:Y | `徭.bronze.svg`<br>`徭.seal.svg` |
+| 耶 | oracle:- bronze:Y seal:Y | `耶.bronze.svg`<br>`耶.seal.svg` |
+| 业 | oracle:- bronze:Y seal:Y | `业.bronze.svg`<br>`业.seal.svg` |
+| 叶 | oracle:- bronze:Y seal:Y | `叶.bronze.svg`<br>`叶.seal.svg` |
+| 一 | oracle:Y bronze:Y seal:Y | `一.bronze.svg`<br>`一.oracle.svg`<br>`一.seal.svg` |
+| 伊 | oracle:Y bronze:Y seal:Y | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
+| 医 | oracle:- bronze:- seal:Y | `医.seal.svg` |
+| 遗 | oracle:- bronze:Y seal:Y | `遗.bronze.svg`<br>`遗.seal.svg` |
+| 义 | oracle:Y bronze:Y seal:Y | `义.bronze.svg`<br>`义.oracle.svg`<br>`义.seal.svg` |
+| 役 | oracle:Y bronze:Y seal:Y | `役.bronze.svg`<br>`役.oracle.svg`<br>`役.seal.svg` |
+| 易 | oracle:Y bronze:Y seal:Y | `易.bronze.svg`<br>`易.oracle.svg`<br>`易.seal.svg` |
+| 疫 | oracle:- bronze:- seal:Y | `疫.seal.svg` |
+| 意 | oracle:- bronze:- seal:Y | `意.seal.svg` |
+| 音 | oracle:- bronze:Y seal:Y | `音.bronze.svg`<br>`音.seal.svg` |
+| 银 | oracle:- bronze:- seal:Y | `银.seal.svg` |
+| 英 | oracle:- bronze:Y seal:Y | `英.bronze.svg`<br>`英.seal.svg` |
+| 佣 | oracle:- bronze:- seal:Y | `佣.seal.svg` |
+| 勇 | oracle:- bronze:Y seal:Y | `勇.bronze.svg`<br>`勇.seal.svg` |
+| 用 | oracle:Y bronze:Y seal:Y | `用.bronze.svg`<br>`用.oracle.svg`<br>`用.seal.svg` |
+| 由 | oracle:Y bronze:Y seal:- | `由.bronze.svg`<br>`由.oracle.svg` |
+| 游 | oracle:Y bronze:Y seal:Y | `游.bronze.svg`<br>`游.oracle.svg`<br>`游.seal.svg` |
+| 育 | oracle:Y bronze:Y seal:Y | `育.bronze.svg`<br>`育.oracle.svg`<br>`育.seal.svg` |
+| 域 | oracle:- bronze:Y seal:Y | `域.bronze.svg`<br>`域.seal.svg` |
+| 元 | oracle:Y bronze:Y seal:Y | `元.bronze.svg`<br>`元.oracle.svg`<br>`元.seal.svg` |
+| 员 | oracle:Y bronze:Y seal:Y | `员.bronze.svg`<br>`员.oracle.svg`<br>`员.seal.svg` |
+| 园 | oracle:- bronze:- seal:Y | `园.seal.svg` |
+| 源 | oracle:- bronze:- seal:Y | `源.seal.svg` |
+| 约 | oracle:- bronze:- seal:Y | `约.seal.svg` |
+| 运 | oracle:- bronze:- seal:Y | `运.seal.svg` |
+| 宰 | oracle:Y bronze:Y seal:Y | `宰.bronze.svg`<br>`宰.oracle.svg`<br>`宰.seal.svg` |
+| 赞 | oracle:- bronze:- seal:Y | `赞.seal.svg` |
+| 择 | oracle:- bronze:Y seal:Y | `择.bronze.svg`<br>`择.seal.svg` |
+| 赠 | oracle:- bronze:- seal:Y | `赠.seal.svg` |
+| 扎 | oracle:- bronze:- seal:Y | `扎.seal.svg` |
+| 战 | oracle:- bronze:Y seal:Y | `战.bronze.svg`<br>`战.seal.svg` |
+| 张 | oracle:- bronze:Y seal:Y | `张.bronze.svg`<br>`张.seal.svg` |
+| 章 | oracle:- bronze:Y seal:Y | `章.bronze.svg`<br>`章.seal.svg` |
+| 长 | oracle:Y bronze:Y seal:Y | `长.bronze.svg`<br>`长.oracle.svg`<br>`长.seal.svg` |
+| 哲 | oracle:- bronze:Y seal:Y | `哲.bronze.svg`<br>`哲.seal.svg` |
+| 这 | oracle:- bronze:- seal:Y | `这.seal.svg` |
+| 阵 | oracle:Y bronze:- seal:Y | `阵.oracle.svg`<br>`阵.seal.svg` |
+| 镇 | oracle:- bronze:- seal:Y | `镇.seal.svg` |
+| 争 | oracle:Y bronze:- seal:Y | `争.oracle.svg`<br>`争.seal.svg` |
+| 征 | oracle:Y bronze:Y seal:Y | `征.bronze.svg`<br>`征.oracle.svg`<br>`征.seal.svg` |
+| 蒸 | oracle:- bronze:- seal:Y | `蒸.seal.svg` |
+| 证 | oracle:- bronze:- seal:Y | `证.seal.svg` |
+| 政 | oracle:Y bronze:Y seal:Y | `政.bronze.svg`<br>`政.oracle.svg`<br>`政.seal.svg` |
+| 之 | oracle:Y bronze:Y seal:Y | `之.bronze.svg`<br>`之.oracle.svg`<br>`之.seal.svg` |
+| 织 | oracle:- bronze:Y seal:Y | `织.bronze.svg`<br>`织.seal.svg` |
+| 职 | oracle:- bronze:Y seal:Y | `职.bronze.svg`<br>`职.seal.svg` |
+| 殖 | oracle:- bronze:- seal:Y | `殖.seal.svg` |
+| 制 | oracle:- bronze:Y seal:Y | `制.bronze.svg`<br>`制.seal.svg` |
+| 治 | oracle:- bronze:- seal:Y | `治.seal.svg` |
+| 忠 | oracle:- bronze:Y seal:Y | `忠.bronze.svg`<br>`忠.seal.svg` |
+| 主 | oracle:Y bronze:- seal:Y | `主.oracle.svg`<br>`主.seal.svg` |
+| 助 | oracle:- bronze:- seal:Y | `助.seal.svg` |
+| 筑 | oracle:- bronze:- seal:Y | `筑.seal.svg` |
+| 铸 | oracle:Y bronze:Y seal:Y | `铸.bronze.svg`<br>`铸.oracle.svg`<br>`铸.seal.svg` |
+| 专 | oracle:Y bronze:Y seal:Y | `专.bronze.svg`<br>`专.oracle.svg`<br>`专.seal.svg` |
+| 状 | oracle:- bronze:- seal:Y | `状.seal.svg` |
+| 资 | oracle:- bronze:- seal:Y | `资.seal.svg` |
+| 子 | oracle:Y bronze:Y seal:Y | `子.bronze.svg`<br>`子.oracle.svg`<br>`子.seal.svg` |
+| 自 | oracle:Y bronze:Y seal:Y | `自.bronze.svg`<br>`自.oracle.svg`<br>`自.seal.svg` |
+| 宗 | oracle:Y bronze:Y seal:Y | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
+| 综 | oracle:- bronze:- seal:Y | `综.seal.svg` |
+| 走 | oracle:Y bronze:Y seal:Y | `走.bronze.svg`<br>`走.oracle.svg`<br>`走.seal.svg` |
+| 族 | oracle:Y bronze:Y seal:Y | `族.bronze.svg`<br>`族.oracle.svg`<br>`族.seal.svg` |
+| 组 | oracle:- bronze:Y seal:Y | `组.bronze.svg`<br>`组.seal.svg` |
+| 祖 | oracle:Y bronze:Y seal:Y | `祖.bronze.svg`<br>`祖.oracle.svg`<br>`祖.seal.svg` |
+| 钻 | oracle:- bronze:- seal:Y | `钻.seal.svg` |
+| 最 | oracle:- bronze:- seal:Y | `最.seal.svg` |
+| 作 | oracle:Y bronze:Y seal:Y | `作.bronze.svg`<br>`作.oracle.svg`<br>`作.seal.svg` |
 
 ## projects
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 阿 | oracle:- bronze:Y seal:Y legacy:- | `阿.bronze.svg`<br>`阿.seal.svg` |
-| 埃 | oracle:- bronze:- seal:Y legacy:- | `埃.seal.svg` |
-| 爱 | oracle:- bronze:- seal:Y legacy:- | `爱.seal.svg` |
-| 暗 | oracle:- bronze:- seal:Y legacy:- | `暗.seal.svg` |
-| 奥 | oracle:- bronze:- seal:Y legacy:- | `奥.seal.svg` |
-| 澳 | oracle:- bronze:- seal:Y legacy:- | `澳.seal.svg` |
-| 巴 | oracle:Y bronze:- seal:Y legacy:- | `巴.oracle.svg`<br>`巴.seal.svg` |
-| 包 | oracle:- bronze:- seal:Y legacy:- | `包.seal.svg` |
-| 卑 | oracle:- bronze:Y seal:Y legacy:- | `卑.bronze.svg`<br>`卑.seal.svg` |
-| 贝 | oracle:Y bronze:Y seal:Y legacy:- | `贝.bronze.svg`<br>`贝.oracle.svg`<br>`贝.seal.svg` |
-| 本 | oracle:- bronze:Y seal:Y legacy:- | `本.bronze.svg`<br>`本.seal.svg` |
-| 比 | oracle:Y bronze:Y seal:Y legacy:- | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
-| 变 | oracle:- bronze:Y seal:Y legacy:- | `变.bronze.svg`<br>`变.seal.svg` |
-| 波 | oracle:- bronze:- seal:Y legacy:- | `波.seal.svg` |
-| 部 | oracle:- bronze:- seal:Y legacy:- | `部.seal.svg` |
-| 草 | oracle:- bronze:- seal:Y legacy:- | `草.seal.svg` |
-| 茶 | oracle:- bronze:- seal:Y legacy:- | `茶.seal.svg` |
-| 产 | oracle:- bronze:Y seal:Y legacy:- | `产.bronze.svg`<br>`产.seal.svg` |
-| 常 | oracle:- bronze:Y seal:Y legacy:- | `常.bronze.svg`<br>`常.seal.svg` |
-| 厂 | oracle:- bronze:Y seal:Y legacy:- | `厂.bronze.svg`<br>`厂.seal.svg` |
-| 成 | oracle:Y bronze:Y seal:Y legacy:- | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
-| 绸 | oracle:- bronze:- seal:Y legacy:- | `绸.seal.svg` |
-| 传 | oracle:Y bronze:Y seal:Y legacy:- | `传.bronze.svg`<br>`传.oracle.svg`<br>`传.seal.svg` |
-| 创 | oracle:- bronze:Y seal:Y legacy:- | `创.bronze.svg`<br>`创.seal.svg` |
-| 春 | oracle:Y bronze:Y seal:Y legacy:- | `春.bronze.svg`<br>`春.oracle.svg`<br>`春.seal.svg` |
-| 达 | oracle:Y bronze:- seal:- legacy:- | `达.oracle.svg` |
-| 打 | oracle:- bronze:- seal:Y legacy:- | `打.seal.svg` |
-| 大 | oracle:Y bronze:Y seal:Y legacy:- | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
-| 代 | oracle:- bronze:- seal:Y legacy:- | `代.seal.svg` |
-| 岛 | oracle:- bronze:- seal:Y legacy:- | `岛.seal.svg` |
-| 道 | oracle:- bronze:Y seal:Y legacy:- | `道.bronze.svg`<br>`道.seal.svg` |
-| 地 | oracle:- bronze:Y seal:Y legacy:- | `地.bronze.svg`<br>`地.seal.svg` |
-| 登 | oracle:Y bronze:Y seal:Y legacy:- | `登.bronze.svg`<br>`登.oracle.svg`<br>`登.seal.svg` |
-| 电 | oracle:- bronze:Y seal:Y legacy:- | `电.bronze.svg`<br>`电.seal.svg` |
-| 调 | oracle:- bronze:- seal:Y legacy:- | `调.seal.svg` |
-| 动 | oracle:- bronze:Y seal:Y legacy:- | `动.bronze.svg`<br>`动.seal.svg` |
-| 堆 | oracle:- bronze:- seal:Y legacy:- | `堆.seal.svg` |
-| 顿 | oracle:- bronze:- seal:Y legacy:- | `顿.seal.svg` |
-| 俄 | oracle:- bronze:- seal:Y legacy:- | `俄.seal.svg` |
-| 发 | oracle:Y bronze:Y seal:Y legacy:- | `发.bronze.svg`<br>`发.oracle.svg`<br>`发.seal.svg` |
-| 反 | oracle:Y bronze:Y seal:Y legacy:- | `反.bronze.svg`<br>`反.oracle.svg`<br>`反.seal.svg` |
-| 防 | oracle:- bronze:- seal:Y legacy:- | `防.seal.svg` |
-| 啡 | oracle:- bronze:- seal:Y legacy:- | `啡.seal.svg` |
-| 蜂 | oracle:- bronze:- seal:Y legacy:- | `蜂.seal.svg` |
-| 夫 | oracle:Y bronze:Y seal:Y legacy:- | `夫.bronze.svg`<br>`夫.oracle.svg`<br>`夫.seal.svg` |
-| 复 | oracle:Y bronze:Y seal:Y legacy:- | `复.bronze.svg`<br>`复.oracle.svg`<br>`复.seal.svg` |
-| 柑 | oracle:Y bronze:Y seal:Y legacy:- | `柑.bronze.svg`<br>`柑.oracle.svg`<br>`柑.seal.svg` |
-| 橄 | oracle:- bronze:- seal:Y legacy:- | `橄.seal.svg` |
-| 港 | oracle:- bronze:- seal:Y legacy:- | `港.seal.svg` |
-| 膏 | oracle:Y bronze:- seal:Y legacy:- | `膏.oracle.svg`<br>`膏.seal.svg` |
-| 工 | oracle:Y bronze:Y seal:Y legacy:- | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
-| 公 | oracle:Y bronze:Y seal:Y legacy:- | `公.bronze.svg`<br>`公.oracle.svg`<br>`公.seal.svg` |
-| 宫 | oracle:Y bronze:Y seal:Y legacy:- | `宫.bronze.svg`<br>`宫.oracle.svg`<br>`宫.seal.svg` |
-| 汞 | oracle:- bronze:- seal:Y legacy:- | `汞.seal.svg` |
-| 光 | oracle:Y bronze:Y seal:Y legacy:- | `光.bronze.svg`<br>`光.oracle.svg`<br>`光.seal.svg` |
-| 龟 | oracle:Y bronze:Y seal:Y legacy:- | `龟.bronze.svg`<br>`龟.oracle.svg`<br>`龟.seal.svg` |
-| 皈 | oracle:Y bronze:Y seal:Y legacy:- | `皈.bronze.svg`<br>`皈.oracle.svg`<br>`皈.seal.svg` |
-| 轨 | oracle:- bronze:Y seal:Y legacy:- | `轨.bronze.svg`<br>`轨.seal.svg` |
-| 哈 | oracle:- bronze:- seal:Y legacy:- | `哈.seal.svg` |
-| 海 | oracle:- bronze:Y seal:Y legacy:- | `海.bronze.svg`<br>`海.seal.svg` |
-| 航 | oracle:- bronze:- seal:Y legacy:- | `航.seal.svg` |
-| 核 | oracle:- bronze:- seal:Y legacy:- | `核.seal.svg` |
-| 黑 | oracle:Y bronze:Y seal:Y legacy:- | `黑.bronze.svg`<br>`黑.oracle.svg`<br>`黑.seal.svg` |
-| 呼 | oracle:- bronze:Y seal:Y legacy:- | `呼.bronze.svg`<br>`呼.seal.svg` |
-| 胡 | oracle:- bronze:Y seal:Y legacy:- | `胡.bronze.svg`<br>`胡.seal.svg` |
-| 琥 | oracle:- bronze:- seal:Y legacy:- | `琥.seal.svg` |
-| 花 | oracle:- bronze:- seal:Y legacy:- | `花.seal.svg` |
-| 华 | oracle:- bronze:- seal:Y legacy:- | `华.seal.svg` |
-| 化 | oracle:Y bronze:Y seal:Y legacy:- | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
-| 划 | oracle:- bronze:- seal:Y legacy:- | `划.seal.svg` |
-| 欢 | oracle:- bronze:- seal:Y legacy:- | `欢.seal.svg` |
-| 唤 | oracle:- bronze:- seal:Y legacy:- | `唤.seal.svg` |
-| 黄 | oracle:Y bronze:Y seal:Y legacy:- | `黄.bronze.svg`<br>`黄.oracle.svg`<br>`黄.seal.svg` |
-| 回 | oracle:Y bronze:Y seal:Y legacy:- | `回.bronze.svg`<br>`回.oracle.svg`<br>`回.seal.svg` |
-| 火 | oracle:Y bronze:- seal:Y legacy:- | `火.oracle.svg`<br>`火.seal.svg` |
-| 基 | oracle:Y bronze:Y seal:Y legacy:- | `基.bronze.svg`<br>`基.oracle.svg`<br>`基.seal.svg` |
-| 激 | oracle:- bronze:- seal:Y legacy:- | `激.seal.svg` |
-| 计 | oracle:- bronze:- seal:Y legacy:- | `计.seal.svg` |
-| 纪 | oracle:- bronze:Y seal:Y legacy:- | `纪.bronze.svg`<br>`纪.seal.svg` |
-| 加 | oracle:- bronze:Y seal:Y legacy:- | `加.bronze.svg`<br>`加.seal.svg` |
-| 嘉 | oracle:- bronze:Y seal:Y legacy:- | `嘉.bronze.svg`<br>`嘉.seal.svg` |
-| 建 | oracle:Y bronze:Y seal:Y legacy:- | `建.bronze.svg`<br>`建.oracle.svg`<br>`建.seal.svg` |
-| 僵 | oracle:- bronze:- seal:Y legacy:- | `僵.seal.svg` |
-| 教 | oracle:Y bronze:Y seal:Y legacy:- | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
-| 节 | oracle:- bronze:Y seal:Y legacy:- | `节.bronze.svg`<br>`节.seal.svg` |
-| 金 | oracle:- bronze:Y seal:Y legacy:- | `金.bronze.svg`<br>`金.seal.svg` |
-| 鲸 | oracle:- bronze:- seal:Y legacy:- | `鲸.seal.svg` |
-| 景 | oracle:- bronze:- seal:Y legacy:- | `景.seal.svg` |
-| 究 | oracle:- bronze:Y seal:Y legacy:- | `究.bronze.svg`<br>`究.seal.svg` |
-| 酒 | oracle:Y bronze:Y seal:Y legacy:- | `酒.bronze.svg`<br>`酒.oracle.svg`<br>`酒.seal.svg` |
-| 居 | oracle:- bronze:Y seal:Y legacy:- | `居.bronze.svg`<br>`居.seal.svg` |
-| 橘 | oracle:- bronze:- seal:Y legacy:- | `橘.seal.svg` |
-| 剧 | oracle:- bronze:- seal:Y legacy:- | `剧.seal.svg` |
-| 咖 | oracle:- bronze:- seal:Y legacy:- | `咖.seal.svg` |
-| 科 | oracle:- bronze:- seal:Y legacy:- | `科.seal.svg` |
-| 空 | oracle:- bronze:Y seal:Y legacy:- | `空.bronze.svg`<br>`空.seal.svg` |
-| 口 | oracle:Y bronze:Y seal:Y legacy:- | `口.bronze.svg`<br>`口.oracle.svg`<br>`口.seal.svg` |
-| 狂 | oracle:Y bronze:Y seal:Y legacy:- | `狂.bronze.svg`<br>`狂.oracle.svg`<br>`狂.seal.svg` |
-| 兰 | oracle:- bronze:- seal:Y legacy:- | `兰.seal.svg` |
-| 榄 | oracle:- bronze:- seal:Y legacy:- | `榄.seal.svg` |
-| 礼 | oracle:Y bronze:Y seal:Y legacy:- | `礼.bronze.svg`<br>`礼.oracle.svg`<br>`礼.seal.svg` |
-| 理 | oracle:- bronze:Y seal:Y legacy:- | `理.bronze.svg`<br>`理.seal.svg` |
-| 力 | oracle:Y bronze:Y seal:Y legacy:- | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
-| 利 | oracle:Y bronze:Y seal:Y legacy:- | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
-| 练 | oracle:- bronze:- seal:Y legacy:- | `练.seal.svg` |
-| 料 | oracle:- bronze:Y seal:Y legacy:- | `料.bronze.svg`<br>`料.seal.svg` |
-| 路 | oracle:- bronze:Y seal:Y legacy:- | `路.bronze.svg`<br>`路.seal.svg` |
-| 露 | oracle:- bronze:- seal:Y legacy:- | `露.seal.svg` |
-| 吕 | oracle:Y bronze:Y seal:Y legacy:- | `吕.bronze.svg`<br>`吕.oracle.svg`<br>`吕.seal.svg` |
-| 伦 | oracle:- bronze:- seal:Y legacy:- | `伦.seal.svg` |
-| 马 | oracle:Y bronze:Y seal:Y legacy:- | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
-| 曼 | oracle:Y bronze:Y seal:Y legacy:- | `曼.bronze.svg`<br>`曼.oracle.svg`<br>`曼.seal.svg` |
-| 毛 | oracle:- bronze:Y seal:Y legacy:- | `毛.bronze.svg`<br>`毛.seal.svg` |
-| 煤 | oracle:- bronze:- seal:Y legacy:- | `煤.seal.svg` |
-| 弥 | oracle:- bronze:Y seal:Y legacy:- | `弥.bronze.svg`<br>`弥.seal.svg` |
-| 秘 | oracle:- bronze:- seal:Y legacy:- | `秘.seal.svg` |
-| 蜜 | oracle:- bronze:- seal:Y legacy:- | `蜜.seal.svg` |
-| 棉 | oracle:- bronze:- seal:Y legacy:- | `棉.seal.svg` |
-| 面 | oracle:Y bronze:- seal:Y legacy:- | `面.oracle.svg`<br>`面.seal.svg` |
-| 木 | oracle:Y bronze:Y seal:Y legacy:- | `木.bronze.svg`<br>`木.oracle.svg`<br>`木.seal.svg` |
-| 目 | oracle:Y bronze:Y seal:Y legacy:- | `目.bronze.svg`<br>`目.oracle.svg`<br>`目.seal.svg` |
-| 纳 | oracle:- bronze:Y seal:Y legacy:- | `纳.bronze.svg`<br>`纳.seal.svg` |
-| 年 | oracle:Y bronze:Y seal:Y legacy:- | `年.bronze.svg`<br>`年.oracle.svg`<br>`年.seal.svg` |
-| 纽 | oracle:- bronze:- seal:Y legacy:- | `纽.seal.svg` |
-| 牌 | oracle:- bronze:- seal:Y legacy:- | `牌.seal.svg` |
-| 培 | oracle:- bronze:- seal:Y legacy:- | `培.seal.svg` |
-| 皮 | oracle:- bronze:Y seal:Y legacy:- | `皮.bronze.svg`<br>`皮.seal.svg` |
-| 品 | oracle:Y bronze:Y seal:Y legacy:- | `品.bronze.svg`<br>`品.oracle.svg`<br>`品.seal.svg` |
-| 珀 | oracle:- bronze:- seal:Y legacy:- | `珀.seal.svg` |
-| 普 | oracle:- bronze:- seal:Y legacy:- | `普.seal.svg` |
-| 企 | oracle:Y bronze:Y seal:Y legacy:- | `企.bronze.svg`<br>`企.oracle.svg`<br>`企.seal.svg` |
-| 强 | oracle:- bronze:- seal:Y legacy:- | `强.seal.svg` |
-| 情 | oracle:- bronze:- seal:Y legacy:- | `情.seal.svg` |
-| 球 | oracle:- bronze:- seal:Y legacy:- | `球.seal.svg` |
-| 区 | oracle:Y bronze:Y seal:Y legacy:- | `区.bronze.svg`<br>`区.oracle.svg`<br>`区.seal.svg` |
-| 燃 | oracle:- bronze:Y seal:Y legacy:- | `燃.bronze.svg`<br>`燃.seal.svg` |
-| 染 | oracle:- bronze:- seal:Y legacy:- | `染.seal.svg` |
-| 让 | oracle:- bronze:- seal:Y legacy:- | `让.seal.svg` |
-| 热 | oracle:- bronze:- seal:Y legacy:- | `热.seal.svg` |
-| 塞 | oracle:Y bronze:- seal:Y legacy:- | `塞.oracle.svg`<br>`塞.seal.svg` |
-| 瑟 | oracle:- bronze:- seal:Y legacy:- | `瑟.seal.svg` |
-| 商 | oracle:Y bronze:Y seal:Y legacy:- | `商.bronze.svg`<br>`商.oracle.svg`<br>`商.seal.svg` |
-| 射 | oracle:Y bronze:Y seal:Y legacy:- | `射.bronze.svg`<br>`射.oracle.svg`<br>`射.seal.svg` |
-| 神 | oracle:- bronze:Y seal:Y legacy:- | `神.bronze.svg`<br>`神.seal.svg` |
-| 升 | oracle:Y bronze:Y seal:Y legacy:- | `升.bronze.svg`<br>`升.oracle.svg`<br>`升.seal.svg` |
-| 圣 | oracle:Y bronze:Y seal:Y legacy:- | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
-| 尸 | oracle:Y bronze:Y seal:Y legacy:- | `尸.bronze.svg`<br>`尸.oracle.svg`<br>`尸.seal.svg` |
-| 石 | oracle:Y bronze:Y seal:Y legacy:- | `石.bronze.svg`<br>`石.oracle.svg`<br>`石.seal.svg` |
-| 食 | oracle:Y bronze:Y seal:Y legacy:- | `食.bronze.svg`<br>`食.oracle.svg`<br>`食.seal.svg` |
-| 使 | oracle:Y bronze:Y seal:Y legacy:- | `使.bronze.svg`<br>`使.oracle.svg`<br>`使.seal.svg` |
-| 士 | oracle:- bronze:Y seal:Y legacy:- | `士.bronze.svg`<br>`士.seal.svg` |
-| 世 | oracle:- bronze:Y seal:Y legacy:- | `世.bronze.svg`<br>`世.seal.svg` |
-| 试 | oracle:- bronze:- seal:Y legacy:- | `试.seal.svg` |
-| 收 | oracle:- bronze:- seal:Y legacy:- | `收.seal.svg` |
-| 枢 | oracle:- bronze:- seal:Y legacy:- | `枢.seal.svg` |
-| 水 | oracle:Y bronze:Y seal:Y legacy:- | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
-| 丝 | oracle:Y bronze:Y seal:Y legacy:- | `丝.bronze.svg`<br>`丝.oracle.svg`<br>`丝.seal.svg` |
-| 司 | oracle:Y bronze:Y seal:Y legacy:- | `司.bronze.svg`<br>`司.oracle.svg`<br>`司.seal.svg` |
-| 松 | oracle:- bronze:Y seal:Y legacy:- | `松.bronze.svg`<br>`松.seal.svg` |
-| 送 | oracle:- bronze:Y seal:Y legacy:- | `送.bronze.svg`<br>`送.seal.svg` |
-| 炭 | oracle:- bronze:- seal:Y legacy:- | `炭.seal.svg` |
-| 探 | oracle:- bronze:- seal:Y legacy:- | `探.seal.svg` |
-| 碳 | oracle:- bronze:- seal:Y legacy:- | `碳.seal.svg` |
-| 糖 | oracle:- bronze:- seal:Y legacy:- | `糖.seal.svg` |
-| 忒 | oracle:- bronze:- seal:Y legacy:- | `忒.seal.svg` |
-| 藤 | oracle:- bronze:Y seal:Y legacy:- | `藤.bronze.svg`<br>`藤.seal.svg` |
-| 提 | oracle:- bronze:- seal:Y legacy:- | `提.seal.svg` |
-| 廷 | oracle:- bronze:Y seal:Y legacy:- | `廷.bronze.svg`<br>`廷.seal.svg` |
-| 团 | oracle:- bronze:Y seal:Y legacy:- | `团.bronze.svg`<br>`团.seal.svg` |
-| 退 | oracle:Y bronze:Y seal:Y legacy:- | `退.bronze.svg`<br>`退.oracle.svg`<br>`退.seal.svg` |
-| 卫 | oracle:Y bronze:Y seal:Y legacy:- | `卫.bronze.svg`<br>`卫.oracle.svg`<br>`卫.seal.svg` |
-| 未 | oracle:Y bronze:Y seal:Y legacy:- | `未.bronze.svg`<br>`未.oracle.svg`<br>`未.seal.svg` |
-| 武 | oracle:Y bronze:Y seal:Y legacy:- | `武.bronze.svg`<br>`武.oracle.svg`<br>`武.seal.svg` |
-| 悟 | oracle:- bronze:- seal:Y legacy:- | `悟.seal.svg` |
-| 西 | oracle:Y bronze:Y seal:Y legacy:- | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
-| 希 | oracle:- bronze:- seal:Y legacy:- | `希.seal.svg` |
-| 戏 | oracle:- bronze:Y seal:Y legacy:- | `戏.bronze.svg`<br>`戏.seal.svg` |
-| 系 | oracle:Y bronze:- seal:Y legacy:- | `系.oracle.svg`<br>`系.seal.svg` |
-| 险 | oracle:- bronze:- seal:Y legacy:- | `险.seal.svg` |
-| 现 | oracle:Y bronze:Y seal:Y legacy:- | `现.bronze.svg`<br>`现.oracle.svg`<br>`现.seal.svg` |
-| 线 | oracle:- bronze:- seal:Y legacy:- | `线.seal.svg` |
-| 香 | oracle:Y bronze:Y seal:Y legacy:- | `香.bronze.svg`<br>`香.oracle.svg`<br>`香.seal.svg` |
-| 项 | oracle:- bronze:- seal:Y legacy:- | `项.seal.svg` |
-| 象 | oracle:Y bronze:Y seal:Y legacy:- | `象.bronze.svg`<br>`象.oracle.svg`<br>`象.seal.svg` |
-| 校 | oracle:- bronze:Y seal:Y legacy:- | `校.bronze.svg`<br>`校.seal.svg` |
-| 辛 | oracle:Y bronze:Y seal:Y legacy:- | `辛.bronze.svg`<br>`辛.oracle.svg`<br>`辛.seal.svg` |
-| 新 | oracle:Y bronze:Y seal:Y legacy:- | `新.bronze.svg`<br>`新.oracle.svg`<br>`新.seal.svg` |
-| 信 | oracle:- bronze:Y seal:Y legacy:- | `信.bronze.svg`<br>`信.seal.svg` |
-| 星 | oracle:Y bronze:Y seal:Y legacy:- | `星.bronze.svg`<br>`星.oracle.svg`<br>`星.seal.svg` |
-| 行 | oracle:Y bronze:Y seal:Y legacy:- | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
-| 雄 | oracle:- bronze:- seal:Y legacy:- | `雄.seal.svg` |
-| 修 | oracle:- bronze:- seal:Y legacy:- | `修.seal.svg` |
-| 宣 | oracle:Y bronze:Y seal:Y legacy:- | `宣.bronze.svg`<br>`宣.oracle.svg`<br>`宣.seal.svg` |
-| 学 | oracle:Y bronze:Y seal:Y legacy:- | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
-| 训 | oracle:- bronze:Y seal:Y legacy:- | `训.bronze.svg`<br>`训.seal.svg` |
-| 牙 | oracle:- bronze:Y seal:Y legacy:- | `牙.bronze.svg`<br>`牙.seal.svg` |
-| 亚 | oracle:Y bronze:Y seal:Y legacy:- | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
-| 烟 | oracle:- bronze:Y seal:Y legacy:- | `烟.bronze.svg`<br>`烟.seal.svg` |
-| 研 | oracle:- bronze:- seal:Y legacy:- | `研.seal.svg` |
-| 盐 | oracle:- bronze:Y seal:Y legacy:- | `盐.bronze.svg`<br>`盐.seal.svg` |
-| 仰 | oracle:- bronze:- seal:Y legacy:- | `仰.seal.svg` |
-| 业 | oracle:- bronze:Y seal:Y legacy:- | `业.bronze.svg`<br>`业.seal.svg` |
-| 一 | oracle:Y bronze:Y seal:Y legacy:- | `一.bronze.svg`<br>`一.oracle.svg`<br>`一.seal.svg` |
-| 伊 | oracle:Y bronze:Y seal:Y legacy:- | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
-| 依 | oracle:Y bronze:- seal:Y legacy:- | `依.oracle.svg`<br>`依.seal.svg` |
-| 移 | oracle:- bronze:- seal:Y legacy:- | `移.seal.svg` |
-| 役 | oracle:Y bronze:Y seal:Y legacy:- | `役.bronze.svg`<br>`役.oracle.svg`<br>`役.seal.svg` |
-| 银 | oracle:- bronze:- seal:Y legacy:- | `银.seal.svg` |
-| 应 | oracle:- bronze:Y seal:Y legacy:- | `应.bronze.svg`<br>`应.seal.svg` |
-| 英 | oracle:- bronze:Y seal:Y legacy:- | `英.bronze.svg`<br>`英.seal.svg` |
-| 营 | oracle:- bronze:Y seal:Y legacy:- | `营.bronze.svg`<br>`营.seal.svg` |
-| 用 | oracle:Y bronze:Y seal:Y legacy:- | `用.bronze.svg`<br>`用.oracle.svg`<br>`用.seal.svg` |
-| 油 | oracle:- bronze:Y seal:Y legacy:- | `油.bronze.svg`<br>`油.seal.svg` |
-| 铀 | oracle:- bronze:- seal:Y legacy:- | `铀.seal.svg` |
-| 鱼 | oracle:Y bronze:Y seal:Y legacy:- | `鱼.bronze.svg`<br>`鱼.oracle.svg`<br>`鱼.seal.svg` |
-| 宇 | oracle:- bronze:Y seal:Y legacy:- | `宇.bronze.svg`<br>`宇.seal.svg` |
-| 玉 | oracle:Y bronze:Y seal:Y legacy:- | `玉.bronze.svg`<br>`玉.oracle.svg`<br>`玉.seal.svg` |
-| 域 | oracle:- bronze:Y seal:Y legacy:- | `域.bronze.svg`<br>`域.seal.svg` |
-| 御 | oracle:Y bronze:Y seal:Y legacy:- | `御.bronze.svg`<br>`御.oracle.svg`<br>`御.seal.svg` |
-| 员 | oracle:Y bronze:Y seal:Y legacy:- | `员.bronze.svg`<br>`员.oracle.svg`<br>`员.seal.svg` |
-| 园 | oracle:- bronze:- seal:Y legacy:- | `园.seal.svg` |
-| 援 | oracle:- bronze:- seal:Y legacy:- | `援.seal.svg` |
-| 院 | oracle:- bronze:- seal:Y legacy:- | `院.seal.svg` |
-| 月 | oracle:Y bronze:Y seal:Y legacy:- | `月.bronze.svg`<br>`月.oracle.svg`<br>`月.seal.svg` |
-| 运 | oracle:- bronze:- seal:Y legacy:- | `运.seal.svg` |
-| 造 | oracle:- bronze:Y seal:Y legacy:- | `造.bronze.svg`<br>`造.seal.svg` |
-| 站 | oracle:- bronze:- seal:Y legacy:- | `站.seal.svg` |
-| 召 | oracle:Y bronze:Y seal:Y legacy:- | `召.bronze.svg`<br>`召.oracle.svg`<br>`召.seal.svg` |
-| 珍 | oracle:- bronze:- seal:Y legacy:- | `珍.seal.svg` |
-| 置 | oracle:Y bronze:- seal:Y legacy:- | `置.oracle.svg`<br>`置.seal.svg` |
-| 重 | oracle:Y bronze:Y seal:Y legacy:- | `重.bronze.svg`<br>`重.oracle.svg`<br>`重.seal.svg` |
-| 珠 | oracle:- bronze:- seal:Y legacy:- | `珠.seal.svg` |
-| 住 | oracle:- bronze:- seal:Y legacy:- | `住.seal.svg` |
-| 助 | oracle:- bronze:- seal:Y legacy:- | `助.seal.svg` |
-| 转 | oracle:- bronze:- seal:Y legacy:- | `转.seal.svg` |
-| 装 | oracle:- bronze:- seal:Y legacy:- | `装.seal.svg` |
-| 资 | oracle:- bronze:- seal:Y legacy:- | `资.seal.svg` |
-| 宗 | oracle:Y bronze:Y seal:Y legacy:- | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
-| 钻 | oracle:- bronze:- seal:Y legacy:- | `钻.seal.svg` |
-| 作 | oracle:Y bronze:Y seal:Y legacy:- | `作.bronze.svg`<br>`作.oracle.svg`<br>`作.seal.svg` |
+| 阿 | oracle:- bronze:Y seal:Y | `阿.bronze.svg`<br>`阿.seal.svg` |
+| 埃 | oracle:- bronze:- seal:Y | `埃.seal.svg` |
+| 爱 | oracle:- bronze:- seal:Y | `爱.seal.svg` |
+| 暗 | oracle:- bronze:- seal:Y | `暗.seal.svg` |
+| 奥 | oracle:- bronze:- seal:Y | `奥.seal.svg` |
+| 澳 | oracle:- bronze:- seal:Y | `澳.seal.svg` |
+| 巴 | oracle:Y bronze:- seal:Y | `巴.oracle.svg`<br>`巴.seal.svg` |
+| 包 | oracle:- bronze:- seal:Y | `包.seal.svg` |
+| 卑 | oracle:- bronze:Y seal:Y | `卑.bronze.svg`<br>`卑.seal.svg` |
+| 贝 | oracle:Y bronze:Y seal:Y | `贝.bronze.svg`<br>`贝.oracle.svg`<br>`贝.seal.svg` |
+| 本 | oracle:- bronze:Y seal:Y | `本.bronze.svg`<br>`本.seal.svg` |
+| 比 | oracle:Y bronze:Y seal:Y | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
+| 变 | oracle:- bronze:Y seal:Y | `变.bronze.svg`<br>`变.seal.svg` |
+| 波 | oracle:- bronze:- seal:Y | `波.seal.svg` |
+| 部 | oracle:- bronze:- seal:Y | `部.seal.svg` |
+| 草 | oracle:- bronze:- seal:Y | `草.seal.svg` |
+| 茶 | oracle:- bronze:- seal:Y | `茶.seal.svg` |
+| 产 | oracle:- bronze:Y seal:Y | `产.bronze.svg`<br>`产.seal.svg` |
+| 常 | oracle:- bronze:Y seal:Y | `常.bronze.svg`<br>`常.seal.svg` |
+| 厂 | oracle:- bronze:Y seal:Y | `厂.bronze.svg`<br>`厂.seal.svg` |
+| 成 | oracle:Y bronze:Y seal:Y | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
+| 绸 | oracle:- bronze:- seal:Y | `绸.seal.svg` |
+| 传 | oracle:Y bronze:Y seal:Y | `传.bronze.svg`<br>`传.oracle.svg`<br>`传.seal.svg` |
+| 创 | oracle:- bronze:Y seal:Y | `创.bronze.svg`<br>`创.seal.svg` |
+| 春 | oracle:Y bronze:Y seal:Y | `春.bronze.svg`<br>`春.oracle.svg`<br>`春.seal.svg` |
+| 达 | oracle:Y bronze:- seal:- | `达.oracle.svg` |
+| 打 | oracle:- bronze:- seal:Y | `打.seal.svg` |
+| 大 | oracle:Y bronze:Y seal:Y | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
+| 代 | oracle:- bronze:- seal:Y | `代.seal.svg` |
+| 岛 | oracle:- bronze:- seal:Y | `岛.seal.svg` |
+| 道 | oracle:- bronze:Y seal:Y | `道.bronze.svg`<br>`道.seal.svg` |
+| 地 | oracle:- bronze:Y seal:Y | `地.bronze.svg`<br>`地.seal.svg` |
+| 登 | oracle:Y bronze:Y seal:Y | `登.bronze.svg`<br>`登.oracle.svg`<br>`登.seal.svg` |
+| 电 | oracle:- bronze:Y seal:Y | `电.bronze.svg`<br>`电.seal.svg` |
+| 调 | oracle:- bronze:- seal:Y | `调.seal.svg` |
+| 动 | oracle:- bronze:Y seal:Y | `动.bronze.svg`<br>`动.seal.svg` |
+| 堆 | oracle:- bronze:- seal:Y | `堆.seal.svg` |
+| 顿 | oracle:- bronze:- seal:Y | `顿.seal.svg` |
+| 俄 | oracle:- bronze:- seal:Y | `俄.seal.svg` |
+| 发 | oracle:Y bronze:Y seal:Y | `发.bronze.svg`<br>`发.oracle.svg`<br>`发.seal.svg` |
+| 反 | oracle:Y bronze:Y seal:Y | `反.bronze.svg`<br>`反.oracle.svg`<br>`反.seal.svg` |
+| 防 | oracle:- bronze:- seal:Y | `防.seal.svg` |
+| 啡 | oracle:- bronze:- seal:Y | `啡.seal.svg` |
+| 蜂 | oracle:- bronze:- seal:Y | `蜂.seal.svg` |
+| 夫 | oracle:Y bronze:Y seal:Y | `夫.bronze.svg`<br>`夫.oracle.svg`<br>`夫.seal.svg` |
+| 复 | oracle:Y bronze:Y seal:Y | `复.bronze.svg`<br>`复.oracle.svg`<br>`复.seal.svg` |
+| 柑 | oracle:Y bronze:Y seal:Y | `柑.bronze.svg`<br>`柑.oracle.svg`<br>`柑.seal.svg` |
+| 橄 | oracle:- bronze:- seal:Y | `橄.seal.svg` |
+| 港 | oracle:- bronze:- seal:Y | `港.seal.svg` |
+| 膏 | oracle:Y bronze:- seal:Y | `膏.oracle.svg`<br>`膏.seal.svg` |
+| 工 | oracle:Y bronze:Y seal:Y | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
+| 公 | oracle:Y bronze:Y seal:Y | `公.bronze.svg`<br>`公.oracle.svg`<br>`公.seal.svg` |
+| 宫 | oracle:Y bronze:Y seal:Y | `宫.bronze.svg`<br>`宫.oracle.svg`<br>`宫.seal.svg` |
+| 汞 | oracle:- bronze:- seal:Y | `汞.seal.svg` |
+| 光 | oracle:Y bronze:Y seal:Y | `光.bronze.svg`<br>`光.oracle.svg`<br>`光.seal.svg` |
+| 龟 | oracle:Y bronze:Y seal:Y | `龟.bronze.svg`<br>`龟.oracle.svg`<br>`龟.seal.svg` |
+| 皈 | oracle:Y bronze:Y seal:Y | `皈.bronze.svg`<br>`皈.oracle.svg`<br>`皈.seal.svg` |
+| 轨 | oracle:- bronze:Y seal:Y | `轨.bronze.svg`<br>`轨.seal.svg` |
+| 哈 | oracle:- bronze:- seal:Y | `哈.seal.svg` |
+| 海 | oracle:- bronze:Y seal:Y | `海.bronze.svg`<br>`海.seal.svg` |
+| 航 | oracle:- bronze:- seal:Y | `航.seal.svg` |
+| 核 | oracle:- bronze:- seal:Y | `核.seal.svg` |
+| 黑 | oracle:Y bronze:Y seal:Y | `黑.bronze.svg`<br>`黑.oracle.svg`<br>`黑.seal.svg` |
+| 呼 | oracle:- bronze:Y seal:Y | `呼.bronze.svg`<br>`呼.seal.svg` |
+| 胡 | oracle:- bronze:Y seal:Y | `胡.bronze.svg`<br>`胡.seal.svg` |
+| 琥 | oracle:- bronze:- seal:Y | `琥.seal.svg` |
+| 花 | oracle:- bronze:- seal:Y | `花.seal.svg` |
+| 华 | oracle:- bronze:- seal:Y | `华.seal.svg` |
+| 化 | oracle:Y bronze:Y seal:Y | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
+| 划 | oracle:- bronze:- seal:Y | `划.seal.svg` |
+| 欢 | oracle:- bronze:- seal:Y | `欢.seal.svg` |
+| 唤 | oracle:- bronze:- seal:Y | `唤.seal.svg` |
+| 黄 | oracle:Y bronze:Y seal:Y | `黄.bronze.svg`<br>`黄.oracle.svg`<br>`黄.seal.svg` |
+| 回 | oracle:Y bronze:Y seal:Y | `回.bronze.svg`<br>`回.oracle.svg`<br>`回.seal.svg` |
+| 火 | oracle:Y bronze:- seal:Y | `火.oracle.svg`<br>`火.seal.svg` |
+| 基 | oracle:Y bronze:Y seal:Y | `基.bronze.svg`<br>`基.oracle.svg`<br>`基.seal.svg` |
+| 激 | oracle:- bronze:- seal:Y | `激.seal.svg` |
+| 计 | oracle:- bronze:- seal:Y | `计.seal.svg` |
+| 纪 | oracle:- bronze:Y seal:Y | `纪.bronze.svg`<br>`纪.seal.svg` |
+| 加 | oracle:- bronze:Y seal:Y | `加.bronze.svg`<br>`加.seal.svg` |
+| 嘉 | oracle:- bronze:Y seal:Y | `嘉.bronze.svg`<br>`嘉.seal.svg` |
+| 建 | oracle:Y bronze:Y seal:Y | `建.bronze.svg`<br>`建.oracle.svg`<br>`建.seal.svg` |
+| 僵 | oracle:- bronze:- seal:Y | `僵.seal.svg` |
+| 教 | oracle:Y bronze:Y seal:Y | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
+| 节 | oracle:- bronze:Y seal:Y | `节.bronze.svg`<br>`节.seal.svg` |
+| 金 | oracle:- bronze:Y seal:Y | `金.bronze.svg`<br>`金.seal.svg` |
+| 鲸 | oracle:- bronze:- seal:Y | `鲸.seal.svg` |
+| 景 | oracle:- bronze:- seal:Y | `景.seal.svg` |
+| 究 | oracle:- bronze:Y seal:Y | `究.bronze.svg`<br>`究.seal.svg` |
+| 酒 | oracle:Y bronze:Y seal:Y | `酒.bronze.svg`<br>`酒.oracle.svg`<br>`酒.seal.svg` |
+| 居 | oracle:- bronze:Y seal:Y | `居.bronze.svg`<br>`居.seal.svg` |
+| 橘 | oracle:- bronze:- seal:Y | `橘.seal.svg` |
+| 剧 | oracle:- bronze:- seal:Y | `剧.seal.svg` |
+| 咖 | oracle:- bronze:- seal:Y | `咖.seal.svg` |
+| 科 | oracle:- bronze:- seal:Y | `科.seal.svg` |
+| 空 | oracle:- bronze:Y seal:Y | `空.bronze.svg`<br>`空.seal.svg` |
+| 口 | oracle:Y bronze:Y seal:Y | `口.bronze.svg`<br>`口.oracle.svg`<br>`口.seal.svg` |
+| 狂 | oracle:Y bronze:Y seal:Y | `狂.bronze.svg`<br>`狂.oracle.svg`<br>`狂.seal.svg` |
+| 兰 | oracle:- bronze:- seal:Y | `兰.seal.svg` |
+| 榄 | oracle:- bronze:- seal:Y | `榄.seal.svg` |
+| 礼 | oracle:Y bronze:Y seal:Y | `礼.bronze.svg`<br>`礼.oracle.svg`<br>`礼.seal.svg` |
+| 理 | oracle:- bronze:Y seal:Y | `理.bronze.svg`<br>`理.seal.svg` |
+| 力 | oracle:Y bronze:Y seal:Y | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
+| 利 | oracle:Y bronze:Y seal:Y | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
+| 练 | oracle:- bronze:- seal:Y | `练.seal.svg` |
+| 料 | oracle:- bronze:Y seal:Y | `料.bronze.svg`<br>`料.seal.svg` |
+| 路 | oracle:- bronze:Y seal:Y | `路.bronze.svg`<br>`路.seal.svg` |
+| 露 | oracle:- bronze:- seal:Y | `露.seal.svg` |
+| 吕 | oracle:Y bronze:Y seal:Y | `吕.bronze.svg`<br>`吕.oracle.svg`<br>`吕.seal.svg` |
+| 伦 | oracle:- bronze:- seal:Y | `伦.seal.svg` |
+| 马 | oracle:Y bronze:Y seal:Y | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
+| 曼 | oracle:Y bronze:Y seal:Y | `曼.bronze.svg`<br>`曼.oracle.svg`<br>`曼.seal.svg` |
+| 毛 | oracle:- bronze:Y seal:Y | `毛.bronze.svg`<br>`毛.seal.svg` |
+| 煤 | oracle:- bronze:- seal:Y | `煤.seal.svg` |
+| 弥 | oracle:- bronze:Y seal:Y | `弥.bronze.svg`<br>`弥.seal.svg` |
+| 秘 | oracle:- bronze:- seal:Y | `秘.seal.svg` |
+| 蜜 | oracle:- bronze:- seal:Y | `蜜.seal.svg` |
+| 棉 | oracle:- bronze:- seal:Y | `棉.seal.svg` |
+| 面 | oracle:Y bronze:- seal:Y | `面.oracle.svg`<br>`面.seal.svg` |
+| 木 | oracle:Y bronze:Y seal:Y | `木.bronze.svg`<br>`木.oracle.svg`<br>`木.seal.svg` |
+| 目 | oracle:Y bronze:Y seal:Y | `目.bronze.svg`<br>`目.oracle.svg`<br>`目.seal.svg` |
+| 纳 | oracle:- bronze:Y seal:Y | `纳.bronze.svg`<br>`纳.seal.svg` |
+| 年 | oracle:Y bronze:Y seal:Y | `年.bronze.svg`<br>`年.oracle.svg`<br>`年.seal.svg` |
+| 纽 | oracle:- bronze:- seal:Y | `纽.seal.svg` |
+| 牌 | oracle:- bronze:- seal:Y | `牌.seal.svg` |
+| 培 | oracle:- bronze:- seal:Y | `培.seal.svg` |
+| 皮 | oracle:- bronze:Y seal:Y | `皮.bronze.svg`<br>`皮.seal.svg` |
+| 品 | oracle:Y bronze:Y seal:Y | `品.bronze.svg`<br>`品.oracle.svg`<br>`品.seal.svg` |
+| 珀 | oracle:- bronze:- seal:Y | `珀.seal.svg` |
+| 普 | oracle:- bronze:- seal:Y | `普.seal.svg` |
+| 企 | oracle:Y bronze:Y seal:Y | `企.bronze.svg`<br>`企.oracle.svg`<br>`企.seal.svg` |
+| 强 | oracle:- bronze:- seal:Y | `强.seal.svg` |
+| 情 | oracle:- bronze:- seal:Y | `情.seal.svg` |
+| 球 | oracle:- bronze:- seal:Y | `球.seal.svg` |
+| 区 | oracle:Y bronze:Y seal:Y | `区.bronze.svg`<br>`区.oracle.svg`<br>`区.seal.svg` |
+| 燃 | oracle:- bronze:Y seal:Y | `燃.bronze.svg`<br>`燃.seal.svg` |
+| 染 | oracle:- bronze:- seal:Y | `染.seal.svg` |
+| 让 | oracle:- bronze:- seal:Y | `让.seal.svg` |
+| 热 | oracle:- bronze:- seal:Y | `热.seal.svg` |
+| 塞 | oracle:Y bronze:- seal:Y | `塞.oracle.svg`<br>`塞.seal.svg` |
+| 瑟 | oracle:- bronze:- seal:Y | `瑟.seal.svg` |
+| 商 | oracle:Y bronze:Y seal:Y | `商.bronze.svg`<br>`商.oracle.svg`<br>`商.seal.svg` |
+| 射 | oracle:Y bronze:Y seal:Y | `射.bronze.svg`<br>`射.oracle.svg`<br>`射.seal.svg` |
+| 神 | oracle:- bronze:Y seal:Y | `神.bronze.svg`<br>`神.seal.svg` |
+| 升 | oracle:Y bronze:Y seal:Y | `升.bronze.svg`<br>`升.oracle.svg`<br>`升.seal.svg` |
+| 圣 | oracle:Y bronze:Y seal:Y | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
+| 尸 | oracle:Y bronze:Y seal:Y | `尸.bronze.svg`<br>`尸.oracle.svg`<br>`尸.seal.svg` |
+| 石 | oracle:Y bronze:Y seal:Y | `石.bronze.svg`<br>`石.oracle.svg`<br>`石.seal.svg` |
+| 食 | oracle:Y bronze:Y seal:Y | `食.bronze.svg`<br>`食.oracle.svg`<br>`食.seal.svg` |
+| 使 | oracle:Y bronze:Y seal:Y | `使.bronze.svg`<br>`使.oracle.svg`<br>`使.seal.svg` |
+| 士 | oracle:- bronze:Y seal:Y | `士.bronze.svg`<br>`士.seal.svg` |
+| 世 | oracle:- bronze:Y seal:Y | `世.bronze.svg`<br>`世.seal.svg` |
+| 试 | oracle:- bronze:- seal:Y | `试.seal.svg` |
+| 收 | oracle:- bronze:- seal:Y | `收.seal.svg` |
+| 枢 | oracle:- bronze:- seal:Y | `枢.seal.svg` |
+| 水 | oracle:Y bronze:Y seal:Y | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
+| 丝 | oracle:Y bronze:Y seal:Y | `丝.bronze.svg`<br>`丝.oracle.svg`<br>`丝.seal.svg` |
+| 司 | oracle:Y bronze:Y seal:Y | `司.bronze.svg`<br>`司.oracle.svg`<br>`司.seal.svg` |
+| 松 | oracle:- bronze:Y seal:Y | `松.bronze.svg`<br>`松.seal.svg` |
+| 送 | oracle:- bronze:Y seal:Y | `送.bronze.svg`<br>`送.seal.svg` |
+| 炭 | oracle:- bronze:- seal:Y | `炭.seal.svg` |
+| 探 | oracle:- bronze:- seal:Y | `探.seal.svg` |
+| 碳 | oracle:- bronze:- seal:Y | `碳.seal.svg` |
+| 糖 | oracle:- bronze:- seal:Y | `糖.seal.svg` |
+| 忒 | oracle:- bronze:- seal:Y | `忒.seal.svg` |
+| 藤 | oracle:- bronze:Y seal:Y | `藤.bronze.svg`<br>`藤.seal.svg` |
+| 提 | oracle:- bronze:- seal:Y | `提.seal.svg` |
+| 廷 | oracle:- bronze:Y seal:Y | `廷.bronze.svg`<br>`廷.seal.svg` |
+| 团 | oracle:- bronze:Y seal:Y | `团.bronze.svg`<br>`团.seal.svg` |
+| 退 | oracle:Y bronze:Y seal:Y | `退.bronze.svg`<br>`退.oracle.svg`<br>`退.seal.svg` |
+| 卫 | oracle:Y bronze:Y seal:Y | `卫.bronze.svg`<br>`卫.oracle.svg`<br>`卫.seal.svg` |
+| 未 | oracle:Y bronze:Y seal:Y | `未.bronze.svg`<br>`未.oracle.svg`<br>`未.seal.svg` |
+| 武 | oracle:Y bronze:Y seal:Y | `武.bronze.svg`<br>`武.oracle.svg`<br>`武.seal.svg` |
+| 悟 | oracle:- bronze:- seal:Y | `悟.seal.svg` |
+| 西 | oracle:Y bronze:Y seal:Y | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
+| 希 | oracle:- bronze:- seal:Y | `希.seal.svg` |
+| 戏 | oracle:- bronze:Y seal:Y | `戏.bronze.svg`<br>`戏.seal.svg` |
+| 系 | oracle:Y bronze:- seal:Y | `系.oracle.svg`<br>`系.seal.svg` |
+| 险 | oracle:- bronze:- seal:Y | `险.seal.svg` |
+| 现 | oracle:Y bronze:Y seal:Y | `现.bronze.svg`<br>`现.oracle.svg`<br>`现.seal.svg` |
+| 线 | oracle:- bronze:- seal:Y | `线.seal.svg` |
+| 香 | oracle:Y bronze:Y seal:Y | `香.bronze.svg`<br>`香.oracle.svg`<br>`香.seal.svg` |
+| 项 | oracle:- bronze:- seal:Y | `项.seal.svg` |
+| 象 | oracle:Y bronze:Y seal:Y | `象.bronze.svg`<br>`象.oracle.svg`<br>`象.seal.svg` |
+| 校 | oracle:- bronze:Y seal:Y | `校.bronze.svg`<br>`校.seal.svg` |
+| 辛 | oracle:Y bronze:Y seal:Y | `辛.bronze.svg`<br>`辛.oracle.svg`<br>`辛.seal.svg` |
+| 新 | oracle:Y bronze:Y seal:Y | `新.bronze.svg`<br>`新.oracle.svg`<br>`新.seal.svg` |
+| 信 | oracle:- bronze:Y seal:Y | `信.bronze.svg`<br>`信.seal.svg` |
+| 星 | oracle:Y bronze:Y seal:Y | `星.bronze.svg`<br>`星.oracle.svg`<br>`星.seal.svg` |
+| 行 | oracle:Y bronze:Y seal:Y | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
+| 雄 | oracle:- bronze:- seal:Y | `雄.seal.svg` |
+| 修 | oracle:- bronze:- seal:Y | `修.seal.svg` |
+| 宣 | oracle:Y bronze:Y seal:Y | `宣.bronze.svg`<br>`宣.oracle.svg`<br>`宣.seal.svg` |
+| 学 | oracle:Y bronze:Y seal:Y | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
+| 训 | oracle:- bronze:Y seal:Y | `训.bronze.svg`<br>`训.seal.svg` |
+| 牙 | oracle:- bronze:Y seal:Y | `牙.bronze.svg`<br>`牙.seal.svg` |
+| 亚 | oracle:Y bronze:Y seal:Y | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
+| 烟 | oracle:- bronze:Y seal:Y | `烟.bronze.svg`<br>`烟.seal.svg` |
+| 研 | oracle:- bronze:- seal:Y | `研.seal.svg` |
+| 盐 | oracle:- bronze:Y seal:Y | `盐.bronze.svg`<br>`盐.seal.svg` |
+| 仰 | oracle:- bronze:- seal:Y | `仰.seal.svg` |
+| 业 | oracle:- bronze:Y seal:Y | `业.bronze.svg`<br>`业.seal.svg` |
+| 一 | oracle:Y bronze:Y seal:Y | `一.bronze.svg`<br>`一.oracle.svg`<br>`一.seal.svg` |
+| 伊 | oracle:Y bronze:Y seal:Y | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
+| 依 | oracle:Y bronze:- seal:Y | `依.oracle.svg`<br>`依.seal.svg` |
+| 移 | oracle:- bronze:- seal:Y | `移.seal.svg` |
+| 役 | oracle:Y bronze:Y seal:Y | `役.bronze.svg`<br>`役.oracle.svg`<br>`役.seal.svg` |
+| 银 | oracle:- bronze:- seal:Y | `银.seal.svg` |
+| 应 | oracle:- bronze:Y seal:Y | `应.bronze.svg`<br>`应.seal.svg` |
+| 英 | oracle:- bronze:Y seal:Y | `英.bronze.svg`<br>`英.seal.svg` |
+| 营 | oracle:- bronze:Y seal:Y | `营.bronze.svg`<br>`营.seal.svg` |
+| 用 | oracle:Y bronze:Y seal:Y | `用.bronze.svg`<br>`用.oracle.svg`<br>`用.seal.svg` |
+| 油 | oracle:- bronze:Y seal:Y | `油.bronze.svg`<br>`油.seal.svg` |
+| 铀 | oracle:- bronze:- seal:Y | `铀.seal.svg` |
+| 鱼 | oracle:Y bronze:Y seal:Y | `鱼.bronze.svg`<br>`鱼.oracle.svg`<br>`鱼.seal.svg` |
+| 宇 | oracle:- bronze:Y seal:Y | `宇.bronze.svg`<br>`宇.seal.svg` |
+| 玉 | oracle:Y bronze:Y seal:Y | `玉.bronze.svg`<br>`玉.oracle.svg`<br>`玉.seal.svg` |
+| 域 | oracle:- bronze:Y seal:Y | `域.bronze.svg`<br>`域.seal.svg` |
+| 御 | oracle:Y bronze:Y seal:Y | `御.bronze.svg`<br>`御.oracle.svg`<br>`御.seal.svg` |
+| 员 | oracle:Y bronze:Y seal:Y | `员.bronze.svg`<br>`员.oracle.svg`<br>`员.seal.svg` |
+| 园 | oracle:- bronze:- seal:Y | `园.seal.svg` |
+| 援 | oracle:- bronze:- seal:Y | `援.seal.svg` |
+| 院 | oracle:- bronze:- seal:Y | `院.seal.svg` |
+| 月 | oracle:Y bronze:Y seal:Y | `月.bronze.svg`<br>`月.oracle.svg`<br>`月.seal.svg` |
+| 运 | oracle:- bronze:- seal:Y | `运.seal.svg` |
+| 造 | oracle:- bronze:Y seal:Y | `造.bronze.svg`<br>`造.seal.svg` |
+| 站 | oracle:- bronze:- seal:Y | `站.seal.svg` |
+| 召 | oracle:Y bronze:Y seal:Y | `召.bronze.svg`<br>`召.oracle.svg`<br>`召.seal.svg` |
+| 珍 | oracle:- bronze:- seal:Y | `珍.seal.svg` |
+| 置 | oracle:Y bronze:- seal:Y | `置.oracle.svg`<br>`置.seal.svg` |
+| 重 | oracle:Y bronze:Y seal:Y | `重.bronze.svg`<br>`重.oracle.svg`<br>`重.seal.svg` |
+| 珠 | oracle:- bronze:- seal:Y | `珠.seal.svg` |
+| 住 | oracle:- bronze:- seal:Y | `住.seal.svg` |
+| 助 | oracle:- bronze:- seal:Y | `助.seal.svg` |
+| 转 | oracle:- bronze:- seal:Y | `转.seal.svg` |
+| 装 | oracle:- bronze:- seal:Y | `装.seal.svg` |
+| 资 | oracle:- bronze:- seal:Y | `资.seal.svg` |
+| 宗 | oracle:Y bronze:Y seal:Y | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
+| 钻 | oracle:- bronze:- seal:Y | `钻.seal.svg` |
+| 作 | oracle:Y bronze:Y seal:Y | `作.bronze.svg`<br>`作.oracle.svg`<br>`作.seal.svg` |
 
 ## promotions
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 安 | oracle:Y bronze:Y seal:Y legacy:- | `安.bronze.svg`<br>`安.oracle.svg`<br>`安.seal.svg` |
-| 白 | oracle:Y bronze:Y seal:Y legacy:- | `白.bronze.svg`<br>`白.oracle.svg`<br>`白.seal.svg` |
-| 败 | oracle:Y bronze:Y seal:Y legacy:- | `败.bronze.svg`<br>`败.oracle.svg`<br>`败.seal.svg` |
-| 板 | oracle:- bronze:- seal:Y legacy:- | `板.seal.svg` |
-| 包 | oracle:- bronze:- seal:Y legacy:- | `包.seal.svg` |
-| 堡 | oracle:Y bronze:Y seal:Y legacy:- | `堡.bronze.svg`<br>`堡.oracle.svg`<br>`堡.seal.svg` |
-| 暴 | oracle:Y bronze:Y seal:Y legacy:- | `暴.bronze.svg`<br>`暴.oracle.svg`<br>`暴.seal.svg` |
-| 爆 | oracle:- bronze:- seal:Y legacy:- | `爆.seal.svg` |
-| 贝 | oracle:Y bronze:Y seal:Y legacy:- | `贝.bronze.svg`<br>`贝.oracle.svg`<br>`贝.seal.svg` |
-| 备 | oracle:Y bronze:Y seal:Y legacy:- | `备.bronze.svg`<br>`备.oracle.svg`<br>`备.seal.svg` |
-| 避 | oracle:- bronze:- seal:Y legacy:- | `避.seal.svg` |
-| 辩 | oracle:- bronze:- seal:Y legacy:- | `辩.seal.svg` |
-| 兵 | oracle:Y bronze:Y seal:Y legacy:- | `兵.bronze.svg`<br>`兵.oracle.svg`<br>`兵.seal.svg` |
-| 铂 | oracle:- bronze:- seal:Y legacy:- | `铂.seal.svg` |
-| 补 | oracle:- bronze:- seal:Y legacy:- | `补.seal.svg` |
-| 部 | oracle:- bronze:- seal:Y legacy:- | `部.seal.svg` |
-| 舱 | oracle:Y bronze:Y seal:Y legacy:- | `舱.bronze.svg`<br>`舱.oracle.svg`<br>`舱.seal.svg` |
-| 藏 | oracle:- bronze:Y seal:Y legacy:- | `藏.bronze.svg`<br>`藏.seal.svg` |
-| 侧 | oracle:- bronze:Y seal:Y legacy:- | `侧.bronze.svg`<br>`侧.seal.svg` |
-| 测 | oracle:- bronze:Y seal:Y legacy:- | `测.bronze.svg`<br>`测.seal.svg` |
-| 察 | oracle:- bronze:Y seal:Y legacy:- | `察.bronze.svg`<br>`察.seal.svg` |
-| 超 | oracle:- bronze:- seal:Y legacy:- | `超.seal.svg` |
-| 朝 | oracle:Y bronze:Y seal:Y legacy:- | `朝.bronze.svg`<br>`朝.oracle.svg`<br>`朝.seal.svg` |
-| 撤 | oracle:- bronze:- seal:Y legacy:- | `撤.seal.svg` |
-| 成 | oracle:Y bronze:Y seal:Y legacy:- | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
-| 城 | oracle:- bronze:Y seal:Y legacy:- | `城.bronze.svg`<br>`城.seal.svg` |
-| 惩 | oracle:- bronze:- seal:Y legacy:- | `惩.seal.svg` |
-| 程 | oracle:- bronze:Y seal:Y legacy:- | `程.bronze.svg`<br>`程.seal.svg` |
-| 穿 | oracle:- bronze:- seal:Y legacy:- | `穿.seal.svg` |
-| 传 | oracle:Y bronze:Y seal:Y legacy:- | `传.bronze.svg`<br>`传.oracle.svg`<br>`传.seal.svg` |
-| 船 | oracle:- bronze:Y seal:Y legacy:- | `船.bronze.svg`<br>`船.seal.svg` |
-| 茨 | oracle:- bronze:- seal:Y legacy:- | `茨.seal.svg` |
-| 促 | oracle:- bronze:- seal:Y legacy:- | `促.seal.svg` |
-| 摧 | oracle:- bronze:- seal:Y legacy:- | `摧.seal.svg` |
-| 弹 | oracle:Y bronze:- seal:Y legacy:- | `弹.oracle.svg`<br>`弹.seal.svg` |
-| 导 | oracle:- bronze:- seal:Y legacy:- | `导.seal.svg` |
-| 德 | oracle:Y bronze:Y seal:Y legacy:- | `德.bronze.svg`<br>`德.oracle.svg`<br>`德.seal.svg` |
-| 地 | oracle:- bronze:Y seal:Y legacy:- | `地.bronze.svg`<br>`地.seal.svg` |
-| 登 | oracle:Y bronze:Y seal:Y legacy:- | `登.bronze.svg`<br>`登.oracle.svg`<br>`登.seal.svg` |
-| 点 | oracle:- bronze:- seal:Y legacy:- | `点.seal.svg` |
-| 谍 | oracle:- bronze:- seal:Y legacy:- | `谍.seal.svg` |
-| 叠 | oracle:- bronze:Y seal:Y legacy:- | `叠.bronze.svg`<br>`叠.seal.svg` |
-| 钉 | oracle:- bronze:- seal:Y legacy:- | `钉.seal.svg` |
-| 动 | oracle:- bronze:Y seal:Y legacy:- | `动.bronze.svg`<br>`动.seal.svg` |
-| 斗 | oracle:Y bronze:Y seal:Y legacy:- | `斗.bronze.svg`<br>`斗.oracle.svg`<br>`斗.seal.svg` |
-| 断 | oracle:- bronze:Y seal:Y legacy:- | `断.bronze.svg`<br>`断.seal.svg` |
-| 队 | oracle:Y bronze:Y seal:Y legacy:- | `队.bronze.svg`<br>`队.oracle.svg`<br>`队.seal.svg` |
-| 夺 | oracle:- bronze:Y seal:Y legacy:- | `夺.bronze.svg`<br>`夺.seal.svg` |
-| 舵 | oracle:Y bronze:Y seal:Y legacy:- | `舵.bronze.svg`<br>`舵.oracle.svg`<br>`舵.seal.svg` |
-| 尔 | oracle:- bronze:Y seal:Y legacy:- | `尔.bronze.svg`<br>`尔.seal.svg` |
-| 发 | oracle:Y bronze:Y seal:Y legacy:- | `发.bronze.svg`<br>`发.oracle.svg`<br>`发.seal.svg` |
-| 罚 | oracle:- bronze:Y seal:Y legacy:- | `罚.bronze.svg`<br>`罚.seal.svg` |
-| 翻 | oracle:- bronze:- seal:Y legacy:- | `翻.seal.svg` |
-| 反 | oracle:Y bronze:Y seal:Y legacy:- | `反.bronze.svg`<br>`反.oracle.svg`<br>`反.seal.svg` |
-| 贩 | oracle:- bronze:- seal:Y legacy:- | `贩.seal.svg` |
-| 方 | oracle:Y bronze:Y seal:Y legacy:- | `方.bronze.svg`<br>`方.oracle.svg`<br>`方.seal.svg` |
-| 防 | oracle:- bronze:- seal:Y legacy:- | `防.seal.svg` |
-| 放 | oracle:- bronze:Y seal:Y legacy:- | `放.bronze.svg`<br>`放.seal.svg` |
-| 飞 | oracle:- bronze:- seal:Y legacy:- | `飞.seal.svg` |
-| 费 | oracle:- bronze:Y seal:Y legacy:- | `费.bronze.svg`<br>`费.seal.svg` |
-| 风 | oracle:Y bronze:Y seal:Y legacy:- | `风.bronze.svg`<br>`风.oracle.svg`<br>`风.seal.svg` |
-| 伏 | oracle:- bronze:Y seal:Y legacy:- | `伏.bronze.svg`<br>`伏.seal.svg` |
-| 辅 | oracle:- bronze:Y seal:Y legacy:- | `辅.bronze.svg`<br>`辅.seal.svg` |
-| 副 | oracle:- bronze:- seal:Y legacy:- | `副.seal.svg` |
-| 高 | oracle:Y bronze:Y seal:Y legacy:- | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
-| 给 | oracle:- bronze:- seal:Y legacy:- | `给.seal.svg` |
-| 攻 | oracle:- bronze:Y seal:Y legacy:- | `攻.bronze.svg`<br>`攻.seal.svg` |
-| 狗 | oracle:- bronze:Y seal:Y legacy:- | `狗.bronze.svg`<br>`狗.seal.svg` |
-| 骨 | oracle:Y bronze:Y seal:Y legacy:- | `骨.bronze.svg`<br>`骨.oracle.svg`<br>`骨.seal.svg` |
-| 固 | oracle:- bronze:Y seal:Y legacy:- | `固.bronze.svg`<br>`固.seal.svg` |
-| 观 | oracle:Y bronze:Y seal:Y legacy:- | `观.bronze.svg`<br>`观.oracle.svg`<br>`观.seal.svg` |
-| 官 | oracle:Y bronze:Y seal:Y legacy:- | `官.bronze.svg`<br>`官.oracle.svg`<br>`官.seal.svg` |
-| 龟 | oracle:Y bronze:Y seal:Y legacy:- | `龟.bronze.svg`<br>`龟.oracle.svg`<br>`龟.seal.svg` |
-| 规 | oracle:- bronze:Y seal:Y legacy:- | `规.bronze.svg`<br>`规.seal.svg` |
-| 皈 | oracle:Y bronze:Y seal:Y legacy:- | `皈.bronze.svg`<br>`皈.oracle.svg`<br>`皈.seal.svg` |
-| 滚 | oracle:- bronze:- seal:Y legacy:- | `滚.seal.svg` |
-| 汉 | oracle:- bronze:Y seal:Y legacy:- | `汉.bronze.svg`<br>`汉.seal.svg` |
-| 航 | oracle:- bronze:- seal:Y legacy:- | `航.seal.svg` |
-| 合 | oracle:Y bronze:Y seal:Y legacy:- | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
-| 盒 | oracle:Y bronze:Y seal:Y legacy:- | `盒.bronze.svg`<br>`盒.oracle.svg`<br>`盒.seal.svg` |
-| 轰 | oracle:- bronze:- seal:Y legacy:- | `轰.seal.svg` |
-| 吼 | oracle:- bronze:- seal:Y legacy:- | `吼.seal.svg` |
-| 护 | oracle:- bronze:- seal:Y legacy:- | `护.seal.svg` |
-| 华 | oracle:- bronze:- seal:Y legacy:- | `华.seal.svg` |
-| 坏 | oracle:- bronze:Y seal:Y legacy:- | `坏.bronze.svg`<br>`坏.seal.svg` |
-| 黄 | oracle:Y bronze:Y seal:Y legacy:- | `黄.bronze.svg`<br>`黄.oracle.svg`<br>`黄.seal.svg` |
-| 毁 | oracle:- bronze:Y seal:Y legacy:- | `毁.bronze.svg`<br>`毁.seal.svg` |
-| 活 | oracle:- bronze:- seal:Y legacy:- | `活.seal.svg` |
-| 火 | oracle:Y bronze:- seal:Y legacy:- | `火.oracle.svg`<br>`火.seal.svg` |
-| 惑 | oracle:- bronze:Y seal:Y legacy:- | `惑.bronze.svg`<br>`惑.seal.svg` |
-| 击 | oracle:- bronze:- seal:Y legacy:- | `击.seal.svg` |
-| 机 | oracle:- bronze:- seal:Y legacy:- | `机.seal.svg` |
-| 级 | oracle:- bronze:- seal:Y legacy:- | `级.seal.svg` |
-| 技 | oracle:- bronze:- seal:Y legacy:- | `技.seal.svg` |
-| 加 | oracle:- bronze:Y seal:Y legacy:- | `加.bronze.svg`<br>`加.seal.svg` |
-| 家 | oracle:Y bronze:Y seal:Y legacy:- | `家.bronze.svg`<br>`家.oracle.svg`<br>`家.seal.svg` |
-| 甲 | oracle:Y bronze:Y seal:Y legacy:- | `甲.bronze.svg`<br>`甲.oracle.svg`<br>`甲.seal.svg` |
-| 驾 | oracle:- bronze:- seal:Y legacy:- | `驾.seal.svg` |
-| 坚 | oracle:- bronze:- seal:Y legacy:- | `坚.seal.svg` |
-| 间 | oracle:- bronze:Y seal:Y legacy:- | `间.bronze.svg`<br>`间.seal.svg` |
-| 舰 | oracle:- bronze:- seal:Y legacy:- | `舰.seal.svg` |
-| 箭 | oracle:- bronze:Y seal:Y legacy:- | `箭.bronze.svg`<br>`箭.seal.svg` |
-| 奖 | oracle:- bronze:- seal:Y legacy:- | `奖.seal.svg` |
-| 教 | oracle:Y bronze:Y seal:Y legacy:- | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
-| 接 | oracle:- bronze:- seal:Y legacy:- | `接.seal.svg` |
-| 劫 | oracle:- bronze:- seal:Y legacy:- | `劫.seal.svg` |
-| 截 | oracle:- bronze:- seal:Y legacy:- | `截.seal.svg` |
-| 金 | oracle:- bronze:Y seal:Y legacy:- | `金.bronze.svg`<br>`金.seal.svg` |
-| 近 | oracle:- bronze:- seal:Y legacy:- | `近.seal.svg` |
-| 进 | oracle:Y bronze:Y seal:Y legacy:- | `进.bronze.svg`<br>`进.oracle.svg`<br>`进.seal.svg` |
-| 精 | oracle:- bronze:- seal:Y legacy:- | `精.seal.svg` |
-| 静 | oracle:- bronze:Y seal:Y legacy:- | `静.bronze.svg`<br>`静.seal.svg` |
-| 镜 | oracle:- bronze:- seal:Y legacy:- | `镜.seal.svg` |
-| 距 | oracle:- bronze:Y seal:Y legacy:- | `距.bronze.svg`<br>`距.seal.svg` |
-| 军 | oracle:- bronze:Y seal:Y legacy:- | `军.bronze.svg`<br>`军.seal.svg` |
-| 科 | oracle:- bronze:- seal:Y legacy:- | `科.seal.svg` |
-| 壳 | oracle:Y bronze:Y seal:Y legacy:- | `壳.bronze.svg`<br>`壳.oracle.svg`<br>`壳.seal.svg` |
-| 克 | oracle:Y bronze:Y seal:Y legacy:- | `克.bronze.svg`<br>`克.oracle.svg`<br>`克.seal.svg` |
-| 空 | oracle:- bronze:Y seal:Y legacy:- | `空.bronze.svg`<br>`空.seal.svg` |
-| 控 | oracle:- bronze:- seal:Y legacy:- | `控.seal.svg` |
-| 库 | oracle:- bronze:Y seal:Y legacy:- | `库.bronze.svg`<br>`库.seal.svg` |
-| 快 | oracle:- bronze:- seal:Y legacy:- | `快.seal.svg` |
-| 溃 | oracle:- bronze:- seal:Y legacy:- | `溃.seal.svg` |
-| 拉 | oracle:- bronze:- seal:Y legacy:- | `拉.seal.svg` |
-| 拦 | oracle:- bronze:- seal:Y legacy:- | `拦.seal.svg` |
-| 狼 | oracle:- bronze:- seal:Y legacy:- | `狼.seal.svg` |
-| 雷 | oracle:Y bronze:Y seal:Y legacy:- | `雷.bronze.svg`<br>`雷.oracle.svg`<br>`雷.seal.svg` |
-| 垒 | oracle:- bronze:- seal:Y legacy:- | `垒.seal.svg` |
-| 离 | oracle:- bronze:Y seal:Y legacy:- | `离.bronze.svg`<br>`离.seal.svg` |
-| 力 | oracle:Y bronze:Y seal:Y legacy:- | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
-| 丽 | oracle:Y bronze:Y seal:Y legacy:- | `丽.bronze.svg`<br>`丽.oracle.svg`<br>`丽.seal.svg` |
-| 励 | oracle:- bronze:Y seal:Y legacy:- | `励.bronze.svg`<br>`励.seal.svg` |
-| 两 | oracle:- bronze:Y seal:Y legacy:- | `两.bronze.svg`<br>`两.seal.svg` |
-| 烈 | oracle:- bronze:- seal:Y legacy:- | `烈.seal.svg` |
-| 林 | oracle:Y bronze:Y seal:Y legacy:- | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
-| 领 | oracle:- bronze:- seal:Y legacy:- | `领.seal.svg` |
-| 龙 | oracle:Y bronze:Y seal:Y legacy:- | `龙.bronze.svg`<br>`龙.oracle.svg`<br>`龙.seal.svg` |
-| 陆 | oracle:Y bronze:Y seal:Y legacy:- | `陆.bronze.svg`<br>`陆.oracle.svg`<br>`陆.seal.svg` |
-| 掠 | oracle:- bronze:- seal:Y legacy:- | `掠.seal.svg` |
-| 马 | oracle:Y bronze:Y seal:Y legacy:- | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
-| 猫 | oracle:- bronze:- seal:Y legacy:- | `猫.seal.svg` |
-| 母 | oracle:Y bronze:Y seal:Y legacy:- | `母.bronze.svg`<br>`母.oracle.svg`<br>`母.seal.svg` |
-| 牧 | oracle:Y bronze:Y seal:Y legacy:- | `牧.bronze.svg`<br>`牧.oracle.svg`<br>`牧.seal.svg` |
-| 幕 | oracle:- bronze:- seal:Y legacy:- | `幕.seal.svg` |
-| 牌 | oracle:- bronze:- seal:Y legacy:- | `牌.seal.svg` |
-| 跑 | oracle:- bronze:Y seal:Y legacy:- | `跑.bronze.svg`<br>`跑.seal.svg` |
-| 片 | oracle:- bronze:- seal:Y legacy:- | `片.seal.svg` |
-| 骗 | oracle:- bronze:- seal:Y legacy:- | `骗.seal.svg` |
-| 破 | oracle:- bronze:- seal:Y legacy:- | `破.seal.svg` |
-| 葡 | oracle:Y bronze:Y seal:Y legacy:- | `葡.bronze.svg`<br>`葡.oracle.svg`<br>`葡.seal.svg` |
-| 骑 | oracle:- bronze:Y seal:Y legacy:- | `骑.bronze.svg`<br>`骑.seal.svg` |
-| 器 | oracle:- bronze:Y seal:Y legacy:- | `器.bronze.svg`<br>`器.seal.svg` |
-| 枪 | oracle:- bronze:- seal:Y legacy:- | `枪.seal.svg` |
-| 抢 | oracle:- bronze:Y seal:Y legacy:- | `抢.bronze.svg`<br>`抢.seal.svg` |
-| 窃 | oracle:- bronze:- seal:Y legacy:- | `窃.seal.svg` |
-| 勤 | oracle:- bronze:Y seal:Y legacy:- | `勤.bronze.svg`<br>`勤.seal.svg` |
-| 青 | oracle:- bronze:Y seal:Y legacy:- | `青.bronze.svg`<br>`青.seal.svg` |
-| 求 | oracle:Y bronze:Y seal:Y legacy:- | `求.bronze.svg`<br>`求.oracle.svg`<br>`求.seal.svg` |
-| 区 | oracle:Y bronze:Y seal:Y legacy:- | `区.bronze.svg`<br>`区.oracle.svg`<br>`区.seal.svg` |
-| 群 | oracle:- bronze:Y seal:Y legacy:- | `群.bronze.svg`<br>`群.seal.svg` |
-| 燃 | oracle:- bronze:Y seal:Y legacy:- | `燃.bronze.svg`<br>`燃.seal.svg` |
-| 人 | oracle:Y bronze:Y seal:Y legacy:- | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
-| 熔 | oracle:- bronze:- seal:Y legacy:- | `熔.seal.svg` |
-| 蠕 | oracle:- bronze:- seal:Y legacy:- | `蠕.seal.svg` |
-| 塞 | oracle:Y bronze:- seal:Y legacy:- | `塞.oracle.svg`<br>`塞.seal.svg` |
-| 赛 | oracle:- bronze:- seal:Y legacy:- | `赛.seal.svg` |
-| 扫 | oracle:- bronze:Y seal:- legacy:- | `扫.bronze.svg` |
-| 色 | oracle:- bronze:Y seal:Y legacy:- | `色.bronze.svg`<br>`色.seal.svg` |
-| 山 | oracle:Y bronze:Y seal:Y legacy:- | `山.bronze.svg`<br>`山.oracle.svg`<br>`山.seal.svg` |
-| 烧 | oracle:- bronze:- seal:Y legacy:- | `烧.seal.svg` |
-| 哨 | oracle:- bronze:- seal:Y legacy:- | `哨.seal.svg` |
-| 射 | oracle:Y bronze:Y seal:Y legacy:- | `射.bronze.svg`<br>`射.oracle.svg`<br>`射.seal.svg` |
-| 升 | oracle:Y bronze:Y seal:Y legacy:- | `升.bronze.svg`<br>`升.oracle.svg`<br>`升.seal.svg` |
-| 圣 | oracle:Y bronze:Y seal:Y legacy:- | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
-| 师 | oracle:Y bronze:Y seal:Y legacy:- | `师.bronze.svg`<br>`师.oracle.svg`<br>`师.seal.svg` |
-| 驶 | oracle:Y bronze:- seal:- legacy:- | `驶.oracle.svg` |
-| 士 | oracle:- bronze:Y seal:Y legacy:- | `士.bronze.svg`<br>`士.seal.svg` |
-| 市 | oracle:Y bronze:Y seal:Y legacy:- | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
-| 视 | oracle:Y bronze:Y seal:Y legacy:- | `视.bronze.svg`<br>`视.oracle.svg`<br>`视.seal.svg` |
-| 收 | oracle:- bronze:- seal:Y legacy:- | `收.seal.svg` |
-| 手 | oracle:- bronze:Y seal:Y legacy:- | `手.bronze.svg`<br>`手.seal.svg` |
-| 守 | oracle:Y bronze:Y seal:Y legacy:- | `守.bronze.svg`<br>`守.oracle.svg`<br>`守.seal.svg` |
-| 署 | oracle:- bronze:- seal:Y legacy:- | `署.seal.svg` |
-| 术 | oracle:Y bronze:- seal:Y legacy:- | `术.oracle.svg`<br>`术.seal.svg` |
-| 栓 | oracle:- bronze:- seal:Y legacy:- | `栓.seal.svg` |
-| 双 | oracle:Y bronze:Y seal:Y legacy:- | `双.bronze.svg`<br>`双.oracle.svg`<br>`双.seal.svg` |
-| 水 | oracle:Y bronze:Y seal:Y legacy:- | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
-| 说 | oracle:- bronze:- seal:Y legacy:- | `说.seal.svg` |
-| 司 | oracle:Y bronze:Y seal:Y legacy:- | `司.bronze.svg`<br>`司.oracle.svg`<br>`司.seal.svg` |
-| 速 | oracle:Y bronze:Y seal:Y legacy:- | `速.bronze.svg`<br>`速.oracle.svg`<br>`速.seal.svg` |
-| 坦 | oracle:- bronze:- seal:Y legacy:- | `坦.seal.svg` |
-| 萄 | oracle:- bronze:- seal:Y legacy:- | `萄.seal.svg` |
-| 特 | oracle:- bronze:- seal:Y legacy:- | `特.seal.svg` |
-| 梯 | oracle:- bronze:- seal:Y legacy:- | `梯.seal.svg` |
-| 体 | oracle:- bronze:Y seal:Y legacy:- | `体.bronze.svg`<br>`体.seal.svg` |
-| 铜 | oracle:- bronze:Y seal:Y legacy:- | `铜.bronze.svg`<br>`铜.seal.svg` |
-| 突 | oracle:Y bronze:- seal:Y legacy:- | `突.oracle.svg`<br>`突.seal.svg` |
-| 徒 | oracle:Y bronze:Y seal:Y legacy:- | `徒.bronze.svg`<br>`徒.oracle.svg`<br>`徒.seal.svg` |
-| 团 | oracle:- bronze:Y seal:Y legacy:- | `团.bronze.svg`<br>`团.seal.svg` |
-| 推 | oracle:- bronze:- seal:Y legacy:- | `推.seal.svg` |
-| 退 | oracle:Y bronze:Y seal:Y legacy:- | `退.bronze.svg`<br>`退.oracle.svg`<br>`退.seal.svg` |
-| 王 | oracle:Y bronze:Y seal:Y legacy:- | `王.bronze.svg`<br>`王.oracle.svg`<br>`王.seal.svg` |
-| 望 | oracle:Y bronze:Y seal:Y legacy:- | `望.bronze.svg`<br>`望.oracle.svg`<br>`望.seal.svg` |
-| 韦 | oracle:Y bronze:Y seal:Y legacy:- | `韦.bronze.svg`<br>`韦.oracle.svg`<br>`韦.seal.svg` |
-| 围 | oracle:- bronze:Y seal:Y legacy:- | `围.bronze.svg`<br>`围.seal.svg` |
-| 维 | oracle:- bronze:Y seal:Y legacy:- | `维.bronze.svg`<br>`维.seal.svg` |
-| 伪 | oracle:- bronze:- seal:Y legacy:- | `伪.seal.svg` |
-| 卫 | oracle:Y bronze:Y seal:Y legacy:- | `卫.bronze.svg`<br>`卫.oracle.svg`<br>`卫.seal.svg` |
-| 武 | oracle:Y bronze:Y seal:Y legacy:- | `武.bronze.svg`<br>`武.oracle.svg`<br>`武.seal.svg` |
-| 席 | oracle:- bronze:Y seal:Y legacy:- | `席.bronze.svg`<br>`席.seal.svg` |
-| 先 | oracle:Y bronze:Y seal:Y legacy:- | `先.bronze.svg`<br>`先.oracle.svg`<br>`先.seal.svg` |
-| 线 | oracle:- bronze:- seal:Y legacy:- | `线.seal.svg` |
-| 销 | oracle:- bronze:- seal:Y legacy:- | `销.seal.svg` |
-| 小 | oracle:Y bronze:Y seal:Y legacy:- | `小.bronze.svg`<br>`小.oracle.svg`<br>`小.seal.svg` |
-| 芯 | oracle:Y bronze:Y seal:Y legacy:- | `芯.bronze.svg`<br>`芯.oracle.svg`<br>`芯.seal.svg` |
-| 新 | oracle:Y bronze:Y seal:Y legacy:- | `新.bronze.svg`<br>`新.oracle.svg`<br>`新.seal.svg` |
-| 行 | oracle:Y bronze:Y seal:Y legacy:- | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
-| 形 | oracle:- bronze:- seal:Y legacy:- | `形.seal.svg` |
-| 性 | oracle:- bronze:Y seal:Y legacy:- | `性.bronze.svg`<br>`性.seal.svg` |
-| 袖 | oracle:- bronze:- seal:Y legacy:- | `袖.seal.svg` |
-| 需 | oracle:- bronze:Y seal:Y legacy:- | `需.bronze.svg`<br>`需.seal.svg` |
-| 学 | oracle:Y bronze:Y seal:Y legacy:- | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
-| 言 | oracle:Y bronze:Y seal:Y legacy:- | `言.bronze.svg`<br>`言.oracle.svg`<br>`言.seal.svg` |
-| 演 | oracle:- bronze:- seal:Y legacy:- | `演.seal.svg` |
-| 一 | oracle:Y bronze:Y seal:Y legacy:- | `一.bronze.svg`<br>`一.oracle.svg`<br>`一.seal.svg` |
-| 依 | oracle:Y bronze:- seal:Y legacy:- | `依.oracle.svg`<br>`依.seal.svg` |
-| 异 | oracle:- bronze:- seal:Y legacy:- | `异.seal.svg` |
-| 抑 | oracle:Y bronze:Y seal:Y legacy:- | `抑.bronze.svg`<br>`抑.oracle.svg`<br>`抑.seal.svg` |
-| 译 | oracle:- bronze:- seal:Y legacy:- | `译.seal.svg` |
-| 翼 | oracle:Y bronze:Y seal:Y legacy:- | `翼.bronze.svg`<br>`翼.oracle.svg`<br>`翼.seal.svg` |
-| 音 | oracle:- bronze:Y seal:Y legacy:- | `音.bronze.svg`<br>`音.seal.svg` |
-| 银 | oracle:- bronze:- seal:Y legacy:- | `银.seal.svg` |
-| 隐 | oracle:- bronze:- seal:Y legacy:- | `隐.seal.svg` |
-| 应 | oracle:- bronze:Y seal:Y legacy:- | `应.bronze.svg`<br>`应.seal.svg` |
-| 英 | oracle:- bronze:Y seal:Y legacy:- | `英.bronze.svg`<br>`英.seal.svg` |
-| 用 | oracle:Y bronze:Y seal:Y legacy:- | `用.bronze.svg`<br>`用.oracle.svg`<br>`用.seal.svg` |
-| 游 | oracle:Y bronze:Y seal:Y legacy:- | `游.bronze.svg`<br>`游.oracle.svg`<br>`游.seal.svg` |
-| 诱 | oracle:- bronze:- seal:Y legacy:- | `诱.seal.svg` |
-| 鱼 | oracle:Y bronze:Y seal:Y legacy:- | `鱼.bronze.svg`<br>`鱼.oracle.svg`<br>`鱼.seal.svg` |
-| 雨 | oracle:Y bronze:Y seal:Y legacy:- | `雨.bronze.svg`<br>`雨.oracle.svg`<br>`雨.seal.svg` |
-| 语 | oracle:- bronze:Y seal:Y legacy:- | `语.bronze.svg`<br>`语.seal.svg` |
-| 预 | oracle:- bronze:- seal:Y legacy:- | `预.seal.svg` |
-| 御 | oracle:Y bronze:Y seal:Y legacy:- | `御.bronze.svg`<br>`御.oracle.svg`<br>`御.seal.svg` |
-| 愈 | oracle:- bronze:Y seal:Y legacy:- | `愈.bronze.svg`<br>`愈.seal.svg` |
-| 员 | oracle:Y bronze:Y seal:Y legacy:- | `员.bronze.svg`<br>`员.oracle.svg`<br>`员.seal.svg` |
-| 援 | oracle:- bronze:- seal:Y legacy:- | `援.seal.svg` |
-| 远 | oracle:Y bronze:Y seal:Y legacy:- | `远.bronze.svg`<br>`远.oracle.svg`<br>`远.seal.svg` |
-| 运 | oracle:- bronze:- seal:Y legacy:- | `运.seal.svg` |
-| 贼 | oracle:- bronze:Y seal:Y legacy:- | `贼.bronze.svg`<br>`贼.seal.svg` |
-| 炸 | oracle:- bronze:Y seal:Y legacy:- | `炸.bronze.svg`<br>`炸.seal.svg` |
-| 战 | oracle:- bronze:Y seal:Y legacy:- | `战.bronze.svg`<br>`战.seal.svg` |
-| 折 | oracle:Y bronze:Y seal:Y legacy:- | `折.bronze.svg`<br>`折.oracle.svg`<br>`折.seal.svg` |
-| 侦 | oracle:- bronze:- seal:Y legacy:- | `侦.seal.svg` |
-| 阵 | oracle:Y bronze:- seal:Y legacy:- | `阵.oracle.svg`<br>`阵.seal.svg` |
-| 正 | oracle:Y bronze:Y seal:Y legacy:- | `正.bronze.svg`<br>`正.oracle.svg`<br>`正.seal.svg` |
-| 支 | oracle:- bronze:- seal:Y legacy:- | `支.seal.svg` |
-| 制 | oracle:- bronze:Y seal:Y legacy:- | `制.bronze.svg`<br>`制.seal.svg` |
-| 治 | oracle:- bronze:- seal:Y legacy:- | `治.seal.svg` |
-| 置 | oracle:Y bronze:- seal:Y legacy:- | `置.oracle.svg`<br>`置.seal.svg` |
-| 重 | oracle:Y bronze:Y seal:Y legacy:- | `重.bronze.svg`<br>`重.oracle.svg`<br>`重.seal.svg` |
-| 助 | oracle:- bronze:- seal:Y legacy:- | `助.seal.svg` |
-| 驻 | oracle:- bronze:- seal:Y legacy:- | `驻.seal.svg` |
-| 专 | oracle:Y bronze:Y seal:Y legacy:- | `专.bronze.svg`<br>`专.oracle.svg`<br>`专.seal.svg` |
-| 装 | oracle:- bronze:- seal:Y legacy:- | `装.seal.svg` |
-| 追 | oracle:Y bronze:Y seal:Y legacy:- | `追.bronze.svg`<br>`追.oracle.svg`<br>`追.seal.svg` |
-| 子 | oracle:Y bronze:Y seal:Y legacy:- | `子.bronze.svg`<br>`子.oracle.svg`<br>`子.seal.svg` |
-| 自 | oracle:Y bronze:Y seal:Y legacy:- | `自.bronze.svg`<br>`自.oracle.svg`<br>`自.seal.svg` |
-| 纵 | oracle:- bronze:- seal:Y legacy:- | `纵.seal.svg` |
-| 阻 | oracle:- bronze:- seal:Y legacy:- | `阻.seal.svg` |
-| 作 | oracle:Y bronze:Y seal:Y legacy:- | `作.bronze.svg`<br>`作.oracle.svg`<br>`作.seal.svg` |
+| 安 | oracle:Y bronze:Y seal:Y | `安.bronze.svg`<br>`安.oracle.svg`<br>`安.seal.svg` |
+| 白 | oracle:Y bronze:Y seal:Y | `白.bronze.svg`<br>`白.oracle.svg`<br>`白.seal.svg` |
+| 败 | oracle:Y bronze:Y seal:Y | `败.bronze.svg`<br>`败.oracle.svg`<br>`败.seal.svg` |
+| 板 | oracle:- bronze:- seal:Y | `板.seal.svg` |
+| 包 | oracle:- bronze:- seal:Y | `包.seal.svg` |
+| 堡 | oracle:Y bronze:Y seal:Y | `堡.bronze.svg`<br>`堡.oracle.svg`<br>`堡.seal.svg` |
+| 暴 | oracle:Y bronze:Y seal:Y | `暴.bronze.svg`<br>`暴.oracle.svg`<br>`暴.seal.svg` |
+| 爆 | oracle:- bronze:- seal:Y | `爆.seal.svg` |
+| 贝 | oracle:Y bronze:Y seal:Y | `贝.bronze.svg`<br>`贝.oracle.svg`<br>`贝.seal.svg` |
+| 备 | oracle:Y bronze:Y seal:Y | `备.bronze.svg`<br>`备.oracle.svg`<br>`备.seal.svg` |
+| 避 | oracle:- bronze:- seal:Y | `避.seal.svg` |
+| 辩 | oracle:- bronze:- seal:Y | `辩.seal.svg` |
+| 兵 | oracle:Y bronze:Y seal:Y | `兵.bronze.svg`<br>`兵.oracle.svg`<br>`兵.seal.svg` |
+| 铂 | oracle:- bronze:- seal:Y | `铂.seal.svg` |
+| 补 | oracle:- bronze:- seal:Y | `补.seal.svg` |
+| 部 | oracle:- bronze:- seal:Y | `部.seal.svg` |
+| 舱 | oracle:Y bronze:Y seal:Y | `舱.bronze.svg`<br>`舱.oracle.svg`<br>`舱.seal.svg` |
+| 藏 | oracle:- bronze:Y seal:Y | `藏.bronze.svg`<br>`藏.seal.svg` |
+| 侧 | oracle:- bronze:Y seal:Y | `侧.bronze.svg`<br>`侧.seal.svg` |
+| 测 | oracle:- bronze:Y seal:Y | `测.bronze.svg`<br>`测.seal.svg` |
+| 察 | oracle:- bronze:Y seal:Y | `察.bronze.svg`<br>`察.seal.svg` |
+| 超 | oracle:- bronze:- seal:Y | `超.seal.svg` |
+| 朝 | oracle:Y bronze:Y seal:Y | `朝.bronze.svg`<br>`朝.oracle.svg`<br>`朝.seal.svg` |
+| 撤 | oracle:- bronze:- seal:Y | `撤.seal.svg` |
+| 成 | oracle:Y bronze:Y seal:Y | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
+| 城 | oracle:- bronze:Y seal:Y | `城.bronze.svg`<br>`城.seal.svg` |
+| 惩 | oracle:- bronze:- seal:Y | `惩.seal.svg` |
+| 程 | oracle:- bronze:Y seal:Y | `程.bronze.svg`<br>`程.seal.svg` |
+| 穿 | oracle:- bronze:- seal:Y | `穿.seal.svg` |
+| 传 | oracle:Y bronze:Y seal:Y | `传.bronze.svg`<br>`传.oracle.svg`<br>`传.seal.svg` |
+| 船 | oracle:- bronze:Y seal:Y | `船.bronze.svg`<br>`船.seal.svg` |
+| 茨 | oracle:- bronze:- seal:Y | `茨.seal.svg` |
+| 促 | oracle:- bronze:- seal:Y | `促.seal.svg` |
+| 摧 | oracle:- bronze:- seal:Y | `摧.seal.svg` |
+| 弹 | oracle:Y bronze:- seal:Y | `弹.oracle.svg`<br>`弹.seal.svg` |
+| 导 | oracle:- bronze:- seal:Y | `导.seal.svg` |
+| 德 | oracle:Y bronze:Y seal:Y | `德.bronze.svg`<br>`德.oracle.svg`<br>`德.seal.svg` |
+| 地 | oracle:- bronze:Y seal:Y | `地.bronze.svg`<br>`地.seal.svg` |
+| 登 | oracle:Y bronze:Y seal:Y | `登.bronze.svg`<br>`登.oracle.svg`<br>`登.seal.svg` |
+| 点 | oracle:- bronze:- seal:Y | `点.seal.svg` |
+| 谍 | oracle:- bronze:- seal:Y | `谍.seal.svg` |
+| 叠 | oracle:- bronze:Y seal:Y | `叠.bronze.svg`<br>`叠.seal.svg` |
+| 钉 | oracle:- bronze:- seal:Y | `钉.seal.svg` |
+| 动 | oracle:- bronze:Y seal:Y | `动.bronze.svg`<br>`动.seal.svg` |
+| 斗 | oracle:Y bronze:Y seal:Y | `斗.bronze.svg`<br>`斗.oracle.svg`<br>`斗.seal.svg` |
+| 断 | oracle:- bronze:Y seal:Y | `断.bronze.svg`<br>`断.seal.svg` |
+| 队 | oracle:Y bronze:Y seal:Y | `队.bronze.svg`<br>`队.oracle.svg`<br>`队.seal.svg` |
+| 夺 | oracle:- bronze:Y seal:Y | `夺.bronze.svg`<br>`夺.seal.svg` |
+| 舵 | oracle:Y bronze:Y seal:Y | `舵.bronze.svg`<br>`舵.oracle.svg`<br>`舵.seal.svg` |
+| 尔 | oracle:- bronze:Y seal:Y | `尔.bronze.svg`<br>`尔.seal.svg` |
+| 发 | oracle:Y bronze:Y seal:Y | `发.bronze.svg`<br>`发.oracle.svg`<br>`发.seal.svg` |
+| 罚 | oracle:- bronze:Y seal:Y | `罚.bronze.svg`<br>`罚.seal.svg` |
+| 翻 | oracle:- bronze:- seal:Y | `翻.seal.svg` |
+| 反 | oracle:Y bronze:Y seal:Y | `反.bronze.svg`<br>`反.oracle.svg`<br>`反.seal.svg` |
+| 贩 | oracle:- bronze:- seal:Y | `贩.seal.svg` |
+| 方 | oracle:Y bronze:Y seal:Y | `方.bronze.svg`<br>`方.oracle.svg`<br>`方.seal.svg` |
+| 防 | oracle:- bronze:- seal:Y | `防.seal.svg` |
+| 放 | oracle:- bronze:Y seal:Y | `放.bronze.svg`<br>`放.seal.svg` |
+| 飞 | oracle:- bronze:- seal:Y | `飞.seal.svg` |
+| 费 | oracle:- bronze:Y seal:Y | `费.bronze.svg`<br>`费.seal.svg` |
+| 风 | oracle:Y bronze:Y seal:Y | `风.bronze.svg`<br>`风.oracle.svg`<br>`风.seal.svg` |
+| 伏 | oracle:- bronze:Y seal:Y | `伏.bronze.svg`<br>`伏.seal.svg` |
+| 辅 | oracle:- bronze:Y seal:Y | `辅.bronze.svg`<br>`辅.seal.svg` |
+| 副 | oracle:- bronze:- seal:Y | `副.seal.svg` |
+| 高 | oracle:Y bronze:Y seal:Y | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
+| 给 | oracle:- bronze:- seal:Y | `给.seal.svg` |
+| 攻 | oracle:- bronze:Y seal:Y | `攻.bronze.svg`<br>`攻.seal.svg` |
+| 狗 | oracle:- bronze:Y seal:Y | `狗.bronze.svg`<br>`狗.seal.svg` |
+| 骨 | oracle:Y bronze:Y seal:Y | `骨.bronze.svg`<br>`骨.oracle.svg`<br>`骨.seal.svg` |
+| 固 | oracle:- bronze:Y seal:Y | `固.bronze.svg`<br>`固.seal.svg` |
+| 观 | oracle:Y bronze:Y seal:Y | `观.bronze.svg`<br>`观.oracle.svg`<br>`观.seal.svg` |
+| 官 | oracle:Y bronze:Y seal:Y | `官.bronze.svg`<br>`官.oracle.svg`<br>`官.seal.svg` |
+| 龟 | oracle:Y bronze:Y seal:Y | `龟.bronze.svg`<br>`龟.oracle.svg`<br>`龟.seal.svg` |
+| 规 | oracle:- bronze:Y seal:Y | `规.bronze.svg`<br>`规.seal.svg` |
+| 皈 | oracle:Y bronze:Y seal:Y | `皈.bronze.svg`<br>`皈.oracle.svg`<br>`皈.seal.svg` |
+| 滚 | oracle:- bronze:- seal:Y | `滚.seal.svg` |
+| 汉 | oracle:- bronze:Y seal:Y | `汉.bronze.svg`<br>`汉.seal.svg` |
+| 航 | oracle:- bronze:- seal:Y | `航.seal.svg` |
+| 合 | oracle:Y bronze:Y seal:Y | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
+| 盒 | oracle:Y bronze:Y seal:Y | `盒.bronze.svg`<br>`盒.oracle.svg`<br>`盒.seal.svg` |
+| 轰 | oracle:- bronze:- seal:Y | `轰.seal.svg` |
+| 吼 | oracle:- bronze:- seal:Y | `吼.seal.svg` |
+| 护 | oracle:- bronze:- seal:Y | `护.seal.svg` |
+| 华 | oracle:- bronze:- seal:Y | `华.seal.svg` |
+| 坏 | oracle:- bronze:Y seal:Y | `坏.bronze.svg`<br>`坏.seal.svg` |
+| 黄 | oracle:Y bronze:Y seal:Y | `黄.bronze.svg`<br>`黄.oracle.svg`<br>`黄.seal.svg` |
+| 毁 | oracle:- bronze:Y seal:Y | `毁.bronze.svg`<br>`毁.seal.svg` |
+| 活 | oracle:- bronze:- seal:Y | `活.seal.svg` |
+| 火 | oracle:Y bronze:- seal:Y | `火.oracle.svg`<br>`火.seal.svg` |
+| 惑 | oracle:- bronze:Y seal:Y | `惑.bronze.svg`<br>`惑.seal.svg` |
+| 击 | oracle:- bronze:- seal:Y | `击.seal.svg` |
+| 机 | oracle:- bronze:- seal:Y | `机.seal.svg` |
+| 级 | oracle:- bronze:- seal:Y | `级.seal.svg` |
+| 技 | oracle:- bronze:- seal:Y | `技.seal.svg` |
+| 加 | oracle:- bronze:Y seal:Y | `加.bronze.svg`<br>`加.seal.svg` |
+| 家 | oracle:Y bronze:Y seal:Y | `家.bronze.svg`<br>`家.oracle.svg`<br>`家.seal.svg` |
+| 甲 | oracle:Y bronze:Y seal:Y | `甲.bronze.svg`<br>`甲.oracle.svg`<br>`甲.seal.svg` |
+| 驾 | oracle:- bronze:- seal:Y | `驾.seal.svg` |
+| 坚 | oracle:- bronze:- seal:Y | `坚.seal.svg` |
+| 间 | oracle:- bronze:Y seal:Y | `间.bronze.svg`<br>`间.seal.svg` |
+| 舰 | oracle:- bronze:- seal:Y | `舰.seal.svg` |
+| 箭 | oracle:- bronze:Y seal:Y | `箭.bronze.svg`<br>`箭.seal.svg` |
+| 奖 | oracle:- bronze:- seal:Y | `奖.seal.svg` |
+| 教 | oracle:Y bronze:Y seal:Y | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
+| 接 | oracle:- bronze:- seal:Y | `接.seal.svg` |
+| 劫 | oracle:- bronze:- seal:Y | `劫.seal.svg` |
+| 截 | oracle:- bronze:- seal:Y | `截.seal.svg` |
+| 金 | oracle:- bronze:Y seal:Y | `金.bronze.svg`<br>`金.seal.svg` |
+| 近 | oracle:- bronze:- seal:Y | `近.seal.svg` |
+| 进 | oracle:Y bronze:Y seal:Y | `进.bronze.svg`<br>`进.oracle.svg`<br>`进.seal.svg` |
+| 精 | oracle:- bronze:- seal:Y | `精.seal.svg` |
+| 静 | oracle:- bronze:Y seal:Y | `静.bronze.svg`<br>`静.seal.svg` |
+| 镜 | oracle:- bronze:- seal:Y | `镜.seal.svg` |
+| 距 | oracle:- bronze:Y seal:Y | `距.bronze.svg`<br>`距.seal.svg` |
+| 军 | oracle:- bronze:Y seal:Y | `军.bronze.svg`<br>`军.seal.svg` |
+| 科 | oracle:- bronze:- seal:Y | `科.seal.svg` |
+| 壳 | oracle:Y bronze:Y seal:Y | `壳.bronze.svg`<br>`壳.oracle.svg`<br>`壳.seal.svg` |
+| 克 | oracle:Y bronze:Y seal:Y | `克.bronze.svg`<br>`克.oracle.svg`<br>`克.seal.svg` |
+| 空 | oracle:- bronze:Y seal:Y | `空.bronze.svg`<br>`空.seal.svg` |
+| 控 | oracle:- bronze:- seal:Y | `控.seal.svg` |
+| 库 | oracle:- bronze:Y seal:Y | `库.bronze.svg`<br>`库.seal.svg` |
+| 快 | oracle:- bronze:- seal:Y | `快.seal.svg` |
+| 溃 | oracle:- bronze:- seal:Y | `溃.seal.svg` |
+| 拉 | oracle:- bronze:- seal:Y | `拉.seal.svg` |
+| 拦 | oracle:- bronze:- seal:Y | `拦.seal.svg` |
+| 狼 | oracle:- bronze:- seal:Y | `狼.seal.svg` |
+| 雷 | oracle:Y bronze:Y seal:Y | `雷.bronze.svg`<br>`雷.oracle.svg`<br>`雷.seal.svg` |
+| 垒 | oracle:- bronze:- seal:Y | `垒.seal.svg` |
+| 离 | oracle:- bronze:Y seal:Y | `离.bronze.svg`<br>`离.seal.svg` |
+| 力 | oracle:Y bronze:Y seal:Y | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
+| 丽 | oracle:Y bronze:Y seal:Y | `丽.bronze.svg`<br>`丽.oracle.svg`<br>`丽.seal.svg` |
+| 励 | oracle:- bronze:Y seal:Y | `励.bronze.svg`<br>`励.seal.svg` |
+| 两 | oracle:- bronze:Y seal:Y | `两.bronze.svg`<br>`两.seal.svg` |
+| 烈 | oracle:- bronze:- seal:Y | `烈.seal.svg` |
+| 林 | oracle:Y bronze:Y seal:Y | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
+| 领 | oracle:- bronze:- seal:Y | `领.seal.svg` |
+| 龙 | oracle:Y bronze:Y seal:Y | `龙.bronze.svg`<br>`龙.oracle.svg`<br>`龙.seal.svg` |
+| 陆 | oracle:Y bronze:Y seal:Y | `陆.bronze.svg`<br>`陆.oracle.svg`<br>`陆.seal.svg` |
+| 掠 | oracle:- bronze:- seal:Y | `掠.seal.svg` |
+| 马 | oracle:Y bronze:Y seal:Y | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
+| 猫 | oracle:- bronze:- seal:Y | `猫.seal.svg` |
+| 母 | oracle:Y bronze:Y seal:Y | `母.bronze.svg`<br>`母.oracle.svg`<br>`母.seal.svg` |
+| 牧 | oracle:Y bronze:Y seal:Y | `牧.bronze.svg`<br>`牧.oracle.svg`<br>`牧.seal.svg` |
+| 幕 | oracle:- bronze:- seal:Y | `幕.seal.svg` |
+| 牌 | oracle:- bronze:- seal:Y | `牌.seal.svg` |
+| 跑 | oracle:- bronze:Y seal:Y | `跑.bronze.svg`<br>`跑.seal.svg` |
+| 片 | oracle:- bronze:- seal:Y | `片.seal.svg` |
+| 骗 | oracle:- bronze:- seal:Y | `骗.seal.svg` |
+| 破 | oracle:- bronze:- seal:Y | `破.seal.svg` |
+| 葡 | oracle:Y bronze:Y seal:Y | `葡.bronze.svg`<br>`葡.oracle.svg`<br>`葡.seal.svg` |
+| 骑 | oracle:- bronze:Y seal:Y | `骑.bronze.svg`<br>`骑.seal.svg` |
+| 器 | oracle:- bronze:Y seal:Y | `器.bronze.svg`<br>`器.seal.svg` |
+| 枪 | oracle:- bronze:- seal:Y | `枪.seal.svg` |
+| 抢 | oracle:- bronze:Y seal:Y | `抢.bronze.svg`<br>`抢.seal.svg` |
+| 窃 | oracle:- bronze:- seal:Y | `窃.seal.svg` |
+| 勤 | oracle:- bronze:Y seal:Y | `勤.bronze.svg`<br>`勤.seal.svg` |
+| 青 | oracle:- bronze:Y seal:Y | `青.bronze.svg`<br>`青.seal.svg` |
+| 求 | oracle:Y bronze:Y seal:Y | `求.bronze.svg`<br>`求.oracle.svg`<br>`求.seal.svg` |
+| 区 | oracle:Y bronze:Y seal:Y | `区.bronze.svg`<br>`区.oracle.svg`<br>`区.seal.svg` |
+| 群 | oracle:- bronze:Y seal:Y | `群.bronze.svg`<br>`群.seal.svg` |
+| 燃 | oracle:- bronze:Y seal:Y | `燃.bronze.svg`<br>`燃.seal.svg` |
+| 人 | oracle:Y bronze:Y seal:Y | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
+| 熔 | oracle:- bronze:- seal:Y | `熔.seal.svg` |
+| 蠕 | oracle:- bronze:- seal:Y | `蠕.seal.svg` |
+| 塞 | oracle:Y bronze:- seal:Y | `塞.oracle.svg`<br>`塞.seal.svg` |
+| 赛 | oracle:- bronze:- seal:Y | `赛.seal.svg` |
+| 扫 | oracle:- bronze:Y seal:- | `扫.bronze.svg` |
+| 色 | oracle:- bronze:Y seal:Y | `色.bronze.svg`<br>`色.seal.svg` |
+| 山 | oracle:Y bronze:Y seal:Y | `山.bronze.svg`<br>`山.oracle.svg`<br>`山.seal.svg` |
+| 烧 | oracle:- bronze:- seal:Y | `烧.seal.svg` |
+| 哨 | oracle:- bronze:- seal:Y | `哨.seal.svg` |
+| 射 | oracle:Y bronze:Y seal:Y | `射.bronze.svg`<br>`射.oracle.svg`<br>`射.seal.svg` |
+| 升 | oracle:Y bronze:Y seal:Y | `升.bronze.svg`<br>`升.oracle.svg`<br>`升.seal.svg` |
+| 圣 | oracle:Y bronze:Y seal:Y | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
+| 师 | oracle:Y bronze:Y seal:Y | `师.bronze.svg`<br>`师.oracle.svg`<br>`师.seal.svg` |
+| 驶 | oracle:Y bronze:- seal:- | `驶.oracle.svg` |
+| 士 | oracle:- bronze:Y seal:Y | `士.bronze.svg`<br>`士.seal.svg` |
+| 市 | oracle:Y bronze:Y seal:Y | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
+| 视 | oracle:Y bronze:Y seal:Y | `视.bronze.svg`<br>`视.oracle.svg`<br>`视.seal.svg` |
+| 收 | oracle:- bronze:- seal:Y | `收.seal.svg` |
+| 手 | oracle:- bronze:Y seal:Y | `手.bronze.svg`<br>`手.seal.svg` |
+| 守 | oracle:Y bronze:Y seal:Y | `守.bronze.svg`<br>`守.oracle.svg`<br>`守.seal.svg` |
+| 署 | oracle:- bronze:- seal:Y | `署.seal.svg` |
+| 术 | oracle:Y bronze:- seal:Y | `术.oracle.svg`<br>`术.seal.svg` |
+| 栓 | oracle:- bronze:- seal:Y | `栓.seal.svg` |
+| 双 | oracle:Y bronze:Y seal:Y | `双.bronze.svg`<br>`双.oracle.svg`<br>`双.seal.svg` |
+| 水 | oracle:Y bronze:Y seal:Y | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
+| 说 | oracle:- bronze:- seal:Y | `说.seal.svg` |
+| 司 | oracle:Y bronze:Y seal:Y | `司.bronze.svg`<br>`司.oracle.svg`<br>`司.seal.svg` |
+| 速 | oracle:Y bronze:Y seal:Y | `速.bronze.svg`<br>`速.oracle.svg`<br>`速.seal.svg` |
+| 坦 | oracle:- bronze:- seal:Y | `坦.seal.svg` |
+| 萄 | oracle:- bronze:- seal:Y | `萄.seal.svg` |
+| 特 | oracle:- bronze:- seal:Y | `特.seal.svg` |
+| 梯 | oracle:- bronze:- seal:Y | `梯.seal.svg` |
+| 体 | oracle:- bronze:Y seal:Y | `体.bronze.svg`<br>`体.seal.svg` |
+| 铜 | oracle:- bronze:Y seal:Y | `铜.bronze.svg`<br>`铜.seal.svg` |
+| 突 | oracle:Y bronze:- seal:Y | `突.oracle.svg`<br>`突.seal.svg` |
+| 徒 | oracle:Y bronze:Y seal:Y | `徒.bronze.svg`<br>`徒.oracle.svg`<br>`徒.seal.svg` |
+| 团 | oracle:- bronze:Y seal:Y | `团.bronze.svg`<br>`团.seal.svg` |
+| 推 | oracle:- bronze:- seal:Y | `推.seal.svg` |
+| 退 | oracle:Y bronze:Y seal:Y | `退.bronze.svg`<br>`退.oracle.svg`<br>`退.seal.svg` |
+| 王 | oracle:Y bronze:Y seal:Y | `王.bronze.svg`<br>`王.oracle.svg`<br>`王.seal.svg` |
+| 望 | oracle:Y bronze:Y seal:Y | `望.bronze.svg`<br>`望.oracle.svg`<br>`望.seal.svg` |
+| 韦 | oracle:Y bronze:Y seal:Y | `韦.bronze.svg`<br>`韦.oracle.svg`<br>`韦.seal.svg` |
+| 围 | oracle:- bronze:Y seal:Y | `围.bronze.svg`<br>`围.seal.svg` |
+| 维 | oracle:- bronze:Y seal:Y | `维.bronze.svg`<br>`维.seal.svg` |
+| 伪 | oracle:- bronze:- seal:Y | `伪.seal.svg` |
+| 卫 | oracle:Y bronze:Y seal:Y | `卫.bronze.svg`<br>`卫.oracle.svg`<br>`卫.seal.svg` |
+| 武 | oracle:Y bronze:Y seal:Y | `武.bronze.svg`<br>`武.oracle.svg`<br>`武.seal.svg` |
+| 席 | oracle:- bronze:Y seal:Y | `席.bronze.svg`<br>`席.seal.svg` |
+| 先 | oracle:Y bronze:Y seal:Y | `先.bronze.svg`<br>`先.oracle.svg`<br>`先.seal.svg` |
+| 线 | oracle:- bronze:- seal:Y | `线.seal.svg` |
+| 销 | oracle:- bronze:- seal:Y | `销.seal.svg` |
+| 小 | oracle:Y bronze:Y seal:Y | `小.bronze.svg`<br>`小.oracle.svg`<br>`小.seal.svg` |
+| 芯 | oracle:Y bronze:Y seal:Y | `芯.bronze.svg`<br>`芯.oracle.svg`<br>`芯.seal.svg` |
+| 新 | oracle:Y bronze:Y seal:Y | `新.bronze.svg`<br>`新.oracle.svg`<br>`新.seal.svg` |
+| 行 | oracle:Y bronze:Y seal:Y | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
+| 形 | oracle:- bronze:- seal:Y | `形.seal.svg` |
+| 性 | oracle:- bronze:Y seal:Y | `性.bronze.svg`<br>`性.seal.svg` |
+| 袖 | oracle:- bronze:- seal:Y | `袖.seal.svg` |
+| 需 | oracle:- bronze:Y seal:Y | `需.bronze.svg`<br>`需.seal.svg` |
+| 学 | oracle:Y bronze:Y seal:Y | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
+| 言 | oracle:Y bronze:Y seal:Y | `言.bronze.svg`<br>`言.oracle.svg`<br>`言.seal.svg` |
+| 演 | oracle:- bronze:- seal:Y | `演.seal.svg` |
+| 一 | oracle:Y bronze:Y seal:Y | `一.bronze.svg`<br>`一.oracle.svg`<br>`一.seal.svg` |
+| 依 | oracle:Y bronze:- seal:Y | `依.oracle.svg`<br>`依.seal.svg` |
+| 异 | oracle:- bronze:- seal:Y | `异.seal.svg` |
+| 抑 | oracle:Y bronze:Y seal:Y | `抑.bronze.svg`<br>`抑.oracle.svg`<br>`抑.seal.svg` |
+| 译 | oracle:- bronze:- seal:Y | `译.seal.svg` |
+| 翼 | oracle:Y bronze:Y seal:Y | `翼.bronze.svg`<br>`翼.oracle.svg`<br>`翼.seal.svg` |
+| 音 | oracle:- bronze:Y seal:Y | `音.bronze.svg`<br>`音.seal.svg` |
+| 银 | oracle:- bronze:- seal:Y | `银.seal.svg` |
+| 隐 | oracle:- bronze:- seal:Y | `隐.seal.svg` |
+| 应 | oracle:- bronze:Y seal:Y | `应.bronze.svg`<br>`应.seal.svg` |
+| 英 | oracle:- bronze:Y seal:Y | `英.bronze.svg`<br>`英.seal.svg` |
+| 用 | oracle:Y bronze:Y seal:Y | `用.bronze.svg`<br>`用.oracle.svg`<br>`用.seal.svg` |
+| 游 | oracle:Y bronze:Y seal:Y | `游.bronze.svg`<br>`游.oracle.svg`<br>`游.seal.svg` |
+| 诱 | oracle:- bronze:- seal:Y | `诱.seal.svg` |
+| 鱼 | oracle:Y bronze:Y seal:Y | `鱼.bronze.svg`<br>`鱼.oracle.svg`<br>`鱼.seal.svg` |
+| 雨 | oracle:Y bronze:Y seal:Y | `雨.bronze.svg`<br>`雨.oracle.svg`<br>`雨.seal.svg` |
+| 语 | oracle:- bronze:Y seal:Y | `语.bronze.svg`<br>`语.seal.svg` |
+| 预 | oracle:- bronze:- seal:Y | `预.seal.svg` |
+| 御 | oracle:Y bronze:Y seal:Y | `御.bronze.svg`<br>`御.oracle.svg`<br>`御.seal.svg` |
+| 愈 | oracle:- bronze:Y seal:Y | `愈.bronze.svg`<br>`愈.seal.svg` |
+| 员 | oracle:Y bronze:Y seal:Y | `员.bronze.svg`<br>`员.oracle.svg`<br>`员.seal.svg` |
+| 援 | oracle:- bronze:- seal:Y | `援.seal.svg` |
+| 远 | oracle:Y bronze:Y seal:Y | `远.bronze.svg`<br>`远.oracle.svg`<br>`远.seal.svg` |
+| 运 | oracle:- bronze:- seal:Y | `运.seal.svg` |
+| 贼 | oracle:- bronze:Y seal:Y | `贼.bronze.svg`<br>`贼.seal.svg` |
+| 炸 | oracle:- bronze:Y seal:Y | `炸.bronze.svg`<br>`炸.seal.svg` |
+| 战 | oracle:- bronze:Y seal:Y | `战.bronze.svg`<br>`战.seal.svg` |
+| 折 | oracle:Y bronze:Y seal:Y | `折.bronze.svg`<br>`折.oracle.svg`<br>`折.seal.svg` |
+| 侦 | oracle:- bronze:- seal:Y | `侦.seal.svg` |
+| 阵 | oracle:Y bronze:- seal:Y | `阵.oracle.svg`<br>`阵.seal.svg` |
+| 正 | oracle:Y bronze:Y seal:Y | `正.bronze.svg`<br>`正.oracle.svg`<br>`正.seal.svg` |
+| 支 | oracle:- bronze:- seal:Y | `支.seal.svg` |
+| 制 | oracle:- bronze:Y seal:Y | `制.bronze.svg`<br>`制.seal.svg` |
+| 治 | oracle:- bronze:- seal:Y | `治.seal.svg` |
+| 置 | oracle:Y bronze:- seal:Y | `置.oracle.svg`<br>`置.seal.svg` |
+| 重 | oracle:Y bronze:Y seal:Y | `重.bronze.svg`<br>`重.oracle.svg`<br>`重.seal.svg` |
+| 助 | oracle:- bronze:- seal:Y | `助.seal.svg` |
+| 驻 | oracle:- bronze:- seal:Y | `驻.seal.svg` |
+| 专 | oracle:Y bronze:Y seal:Y | `专.bronze.svg`<br>`专.oracle.svg`<br>`专.seal.svg` |
+| 装 | oracle:- bronze:- seal:Y | `装.seal.svg` |
+| 追 | oracle:Y bronze:Y seal:Y | `追.bronze.svg`<br>`追.oracle.svg`<br>`追.seal.svg` |
+| 子 | oracle:Y bronze:Y seal:Y | `子.bronze.svg`<br>`子.oracle.svg`<br>`子.seal.svg` |
+| 自 | oracle:Y bronze:Y seal:Y | `自.bronze.svg`<br>`自.oracle.svg`<br>`自.seal.svg` |
+| 纵 | oracle:- bronze:- seal:Y | `纵.seal.svg` |
+| 阻 | oracle:- bronze:- seal:Y | `阻.seal.svg` |
+| 作 | oracle:Y bronze:Y seal:Y | `作.bronze.svg`<br>`作.oracle.svg`<br>`作.seal.svg` |
 
 ## proposals
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 议 | oracle:- bronze:Y seal:Y legacy:- | `议.bronze.svg`<br>`议.seal.svg` |
+| 议 | oracle:- bronze:Y seal:Y | `议.bronze.svg`<br>`议.seal.svg` |
 
 ## resources
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 埃 | oracle:- bronze:- seal:Y legacy:- | `埃.seal.svg` |
-| 澳 | oracle:- bronze:- seal:Y legacy:- | `澳.seal.svg` |
-| 白 | oracle:Y bronze:Y seal:Y legacy:- | `白.bronze.svg`<br>`白.oracle.svg`<br>`白.seal.svg` |
-| 比 | oracle:Y bronze:Y seal:Y legacy:- | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
-| 布 | oracle:- bronze:Y seal:Y legacy:- | `布.bronze.svg`<br>`布.seal.svg` |
-| 草 | oracle:- bronze:- seal:Y legacy:- | `草.seal.svg` |
-| 茶 | oracle:- bronze:- seal:Y legacy:- | `茶.seal.svg` |
-| 场 | oracle:- bronze:- seal:Y legacy:- | `场.seal.svg` |
-| 绸 | oracle:- bronze:- seal:Y legacy:- | `绸.seal.svg` |
-| 大 | oracle:Y bronze:Y seal:Y legacy:- | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
-| 代 | oracle:- bronze:- seal:Y legacy:- | `代.seal.svg` |
-| 地 | oracle:- bronze:Y seal:Y legacy:- | `地.bronze.svg`<br>`地.seal.svg` |
-| 丁 | oracle:Y bronze:Y seal:Y legacy:- | `丁.bronze.svg`<br>`丁.oracle.svg`<br>`丁.seal.svg` |
-| 断 | oracle:- bronze:Y seal:Y legacy:- | `断.bronze.svg`<br>`断.seal.svg` |
-| 俄 | oracle:- bronze:- seal:Y legacy:- | `俄.seal.svg` |
-| 啡 | oracle:- bronze:- seal:Y legacy:- | `啡.seal.svg` |
-| 蜂 | oracle:- bronze:- seal:Y legacy:- | `蜂.seal.svg` |
-| 柑 | oracle:Y bronze:Y seal:Y legacy:- | `柑.bronze.svg`<br>`柑.oracle.svg`<br>`柑.seal.svg` |
-| 橄 | oracle:- bronze:- seal:Y legacy:- | `橄.seal.svg` |
-| 膏 | oracle:Y bronze:- seal:Y legacy:- | `膏.oracle.svg`<br>`膏.seal.svg` |
-| 哥 | oracle:- bronze:- seal:Y legacy:- | `哥.seal.svg` |
-| 汞 | oracle:- bronze:- seal:Y legacy:- | `汞.seal.svg` |
-| 古 | oracle:Y bronze:Y seal:Y legacy:- | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
-| 龟 | oracle:Y bronze:Y seal:Y legacy:- | `龟.bronze.svg`<br>`龟.oracle.svg`<br>`龟.seal.svg` |
-| 桂 | oracle:- bronze:- seal:Y legacy:- | `桂.seal.svg` |
-| 海 | oracle:- bronze:Y seal:Y legacy:- | `海.bronze.svg`<br>`海.seal.svg` |
-| 琥 | oracle:- bronze:- seal:Y legacy:- | `琥.seal.svg` |
-| 花 | oracle:- bronze:- seal:Y legacy:- | `花.seal.svg` |
-| 化 | oracle:Y bronze:Y seal:Y legacy:- | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
-| 蕉 | oracle:- bronze:- seal:Y legacy:- | `蕉.seal.svg` |
-| 金 | oracle:- bronze:Y seal:Y legacy:- | `金.bronze.svg`<br>`金.seal.svg` |
-| 鲸 | oracle:- bronze:- seal:Y legacy:- | `鲸.seal.svg` |
-| 景 | oracle:- bronze:- seal:Y legacy:- | `景.seal.svg` |
-| 酒 | oracle:Y bronze:Y seal:Y legacy:- | `酒.bronze.svg`<br>`酒.oracle.svg`<br>`酒.seal.svg` |
-| 橘 | oracle:- bronze:- seal:Y legacy:- | `橘.seal.svg` |
-| 具 | oracle:Y bronze:Y seal:Y legacy:- | `具.bronze.svg`<br>`具.oracle.svg`<br>`具.seal.svg` |
-| 军 | oracle:- bronze:Y seal:Y legacy:- | `军.bronze.svg`<br>`军.seal.svg` |
-| 咖 | oracle:- bronze:- seal:Y legacy:- | `咖.seal.svg` |
-| 裤 | oracle:- bronze:- seal:Y legacy:- | `裤.seal.svg` |
-| 扩 | oracle:- bronze:- seal:Y legacy:- | `扩.seal.svg` |
-| 榄 | oracle:- bronze:- seal:Y legacy:- | `榄.seal.svg` |
-| 雷 | oracle:Y bronze:Y seal:Y legacy:- | `雷.bronze.svg`<br>`雷.oracle.svg`<br>`雷.seal.svg` |
-| 理 | oracle:- bronze:Y seal:Y legacy:- | `理.bronze.svg`<br>`理.seal.svg` |
-| 利 | oracle:Y bronze:Y seal:Y legacy:- | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
-| 料 | oracle:- bronze:Y seal:Y legacy:- | `料.bronze.svg`<br>`料.seal.svg` |
-| 垄 | oracle:- bronze:Y seal:Y legacy:- | `垄.bronze.svg`<br>`垄.seal.svg` |
-| 鹿 | oracle:Y bronze:Y seal:Y legacy:- | `鹿.bronze.svg`<br>`鹿.oracle.svg`<br>`鹿.seal.svg` |
-| 露 | oracle:- bronze:- seal:Y legacy:- | `露.seal.svg` |
-| 铝 | oracle:- bronze:Y seal:- legacy:- | `铝.bronze.svg` |
-| 伦 | oracle:- bronze:- seal:Y legacy:- | `伦.seal.svg` |
-| 马 | oracle:Y bronze:Y seal:Y legacy:- | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
-| 玛 | oracle:Y bronze:Y seal:Y legacy:- | `玛.bronze.svg`<br>`玛.oracle.svg`<br>`玛.seal.svg` |
-| 麦 | oracle:Y bronze:Y seal:Y legacy:- | `麦.bronze.svg`<br>`麦.oracle.svg`<br>`麦.seal.svg` |
-| 毛 | oracle:- bronze:Y seal:Y legacy:- | `毛.bronze.svg`<br>`毛.seal.svg` |
-| 煤 | oracle:- bronze:- seal:Y legacy:- | `煤.seal.svg` |
-| 米 | oracle:Y bronze:- seal:Y legacy:- | `米.oracle.svg`<br>`米.seal.svg` |
-| 蜜 | oracle:- bronze:- seal:Y legacy:- | `蜜.seal.svg` |
-| 棉 | oracle:- bronze:- seal:Y legacy:- | `棉.seal.svg` |
-| 木 | oracle:Y bronze:Y seal:Y legacy:- | `木.bronze.svg`<br>`木.oracle.svg`<br>`木.seal.svg` |
-| 难 | oracle:- bronze:Y seal:Y legacy:- | `难.bronze.svg`<br>`难.seal.svg` |
-| 牛 | oracle:Y bronze:Y seal:Y legacy:- | `牛.bronze.svg`<br>`牛.oracle.svg`<br>`牛.seal.svg` |
-| 螃 | oracle:- bronze:- seal:Y legacy:- | `螃.seal.svg` |
-| 皮 | oracle:- bronze:Y seal:Y legacy:- | `皮.bronze.svg`<br>`皮.seal.svg` |
-| 匹 | oracle:- bronze:Y seal:Y legacy:- | `匹.bronze.svg`<br>`匹.seal.svg` |
-| 品 | oracle:Y bronze:Y seal:Y legacy:- | `品.bronze.svg`<br>`品.oracle.svg`<br>`品.seal.svg` |
-| 珀 | oracle:- bronze:- seal:Y legacy:- | `珀.seal.svg` |
-| 葡 | oracle:Y bronze:Y seal:Y legacy:- | `葡.bronze.svg`<br>`葡.oracle.svg`<br>`葡.seal.svg` |
-| 漆 | oracle:- bronze:Y seal:Y legacy:- | `漆.bronze.svg`<br>`漆.seal.svg` |
-| 企 | oracle:Y bronze:Y seal:Y legacy:- | `企.bronze.svg`<br>`企.oracle.svg`<br>`企.seal.svg` |
-| 情 | oracle:- bronze:- seal:Y legacy:- | `情.seal.svg` |
-| 染 | oracle:- bronze:- seal:Y legacy:- | `染.seal.svg` |
-| 肉 | oracle:Y bronze:- seal:Y legacy:- | `肉.oracle.svg`<br>`肉.seal.svg` |
-| 塞 | oracle:Y bronze:- seal:Y legacy:- | `塞.oracle.svg`<br>`塞.seal.svg` |
-| 色 | oracle:- bronze:Y seal:Y legacy:- | `色.bronze.svg`<br>`色.seal.svg` |
-| 石 | oracle:Y bronze:Y seal:Y legacy:- | `石.bronze.svg`<br>`石.oracle.svg`<br>`石.seal.svg` |
-| 水 | oracle:Y bronze:Y seal:Y legacy:- | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
-| 丝 | oracle:Y bronze:Y seal:Y legacy:- | `丝.bronze.svg`<br>`丝.oracle.svg`<br>`丝.seal.svg` |
-| 松 | oracle:- bronze:Y seal:Y legacy:- | `松.bronze.svg`<br>`松.seal.svg` |
-| 炭 | oracle:- bronze:- seal:Y legacy:- | `炭.seal.svg` |
-| 糖 | oracle:- bronze:- seal:Y legacy:- | `糖.seal.svg` |
-| 萄 | oracle:- bronze:- seal:Y legacy:- | `萄.seal.svg` |
-| 铁 | oracle:- bronze:- seal:Y legacy:- | `铁.seal.svg` |
-| 铜 | oracle:- bronze:Y seal:Y legacy:- | `铜.bronze.svg`<br>`铜.seal.svg` |
-| 头 | oracle:- bronze:Y seal:Y legacy:- | `头.bronze.svg`<br>`头.seal.svg` |
-| 团 | oracle:- bronze:Y seal:Y legacy:- | `团.bronze.svg`<br>`团.seal.svg` |
-| 瓦 | oracle:- bronze:- seal:Y legacy:- | `瓦.seal.svg` |
-| 玩 | oracle:- bronze:- seal:Y legacy:- | `玩.seal.svg` |
-| 线 | oracle:- bronze:- seal:Y legacy:- | `线.seal.svg` |
-| 香 | oracle:Y bronze:Y seal:Y legacy:- | `香.bronze.svg`<br>`香.oracle.svg`<br>`香.seal.svg` |
-| 象 | oracle:Y bronze:Y seal:Y legacy:- | `象.bronze.svg`<br>`象.oracle.svg`<br>`象.seal.svg` |
-| 硝 | oracle:- bronze:- seal:Y legacy:- | `硝.seal.svg` |
-| 小 | oracle:Y bronze:Y seal:Y legacy:- | `小.bronze.svg`<br>`小.oracle.svg`<br>`小.seal.svg` |
-| 蟹 | oracle:- bronze:- seal:Y legacy:- | `蟹.seal.svg` |
-| 牙 | oracle:- bronze:Y seal:Y legacy:- | `牙.bronze.svg`<br>`牙.seal.svg` |
-| 雅 | oracle:- bronze:- seal:Y legacy:- | `雅.seal.svg` |
-| 亚 | oracle:Y bronze:Y seal:Y legacy:- | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
-| 烟 | oracle:- bronze:Y seal:Y legacy:- | `烟.bronze.svg`<br>`烟.seal.svg` |
-| 盐 | oracle:- bronze:Y seal:Y legacy:- | `盐.bronze.svg`<br>`盐.seal.svg` |
-| 羊 | oracle:Y bronze:Y seal:Y legacy:- | `羊.bronze.svg`<br>`羊.oracle.svg`<br>`羊.seal.svg` |
-| 业 | oracle:- bronze:Y seal:Y legacy:- | `业.bronze.svg`<br>`业.seal.svg` |
-| 遗 | oracle:- bronze:Y seal:Y legacy:- | `遗.bronze.svg`<br>`遗.seal.svg` |
-| 银 | oracle:- bronze:- seal:Y legacy:- | `银.seal.svg` |
-| 油 | oracle:- bronze:Y seal:Y legacy:- | `油.bronze.svg`<br>`油.seal.svg` |
-| 铀 | oracle:- bronze:- seal:Y legacy:- | `铀.seal.svg` |
-| 鱼 | oracle:Y bronze:Y seal:Y legacy:- | `鱼.bronze.svg`<br>`鱼.oracle.svg`<br>`鱼.seal.svg` |
-| 玉 | oracle:Y bronze:Y seal:Y legacy:- | `玉.bronze.svg`<br>`玉.oracle.svg`<br>`玉.seal.svg` |
-| 源 | oracle:- bronze:- seal:Y legacy:- | `源.seal.svg` |
-| 展 | oracle:- bronze:- seal:Y legacy:- | `展.seal.svg` |
-| 珍 | oracle:- bronze:- seal:Y legacy:- | `珍.seal.svg` |
-| 址 | oracle:- bronze:- seal:Y legacy:- | `址.seal.svg` |
-| 珠 | oracle:- bronze:- seal:Y legacy:- | `珠.seal.svg` |
-| 妆 | oracle:Y bronze:Y seal:Y legacy:- | `妆.bronze.svg`<br>`妆.oracle.svg`<br>`妆.seal.svg` |
-| 资 | oracle:- bronze:- seal:Y legacy:- | `资.seal.svg` |
-| 子 | oracle:Y bronze:Y seal:Y legacy:- | `子.bronze.svg`<br>`子.oracle.svg`<br>`子.seal.svg` |
-| 仔 | oracle:- bronze:- seal:Y legacy:- | `仔.seal.svg` |
-| 钻 | oracle:- bronze:- seal:Y legacy:- | `钻.seal.svg` |
+| 埃 | oracle:- bronze:- seal:Y | `埃.seal.svg` |
+| 澳 | oracle:- bronze:- seal:Y | `澳.seal.svg` |
+| 白 | oracle:Y bronze:Y seal:Y | `白.bronze.svg`<br>`白.oracle.svg`<br>`白.seal.svg` |
+| 比 | oracle:Y bronze:Y seal:Y | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
+| 布 | oracle:- bronze:Y seal:Y | `布.bronze.svg`<br>`布.seal.svg` |
+| 草 | oracle:- bronze:- seal:Y | `草.seal.svg` |
+| 茶 | oracle:- bronze:- seal:Y | `茶.seal.svg` |
+| 场 | oracle:- bronze:- seal:Y | `场.seal.svg` |
+| 绸 | oracle:- bronze:- seal:Y | `绸.seal.svg` |
+| 大 | oracle:Y bronze:Y seal:Y | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
+| 代 | oracle:- bronze:- seal:Y | `代.seal.svg` |
+| 地 | oracle:- bronze:Y seal:Y | `地.bronze.svg`<br>`地.seal.svg` |
+| 丁 | oracle:Y bronze:Y seal:Y | `丁.bronze.svg`<br>`丁.oracle.svg`<br>`丁.seal.svg` |
+| 断 | oracle:- bronze:Y seal:Y | `断.bronze.svg`<br>`断.seal.svg` |
+| 俄 | oracle:- bronze:- seal:Y | `俄.seal.svg` |
+| 啡 | oracle:- bronze:- seal:Y | `啡.seal.svg` |
+| 蜂 | oracle:- bronze:- seal:Y | `蜂.seal.svg` |
+| 柑 | oracle:Y bronze:Y seal:Y | `柑.bronze.svg`<br>`柑.oracle.svg`<br>`柑.seal.svg` |
+| 橄 | oracle:- bronze:- seal:Y | `橄.seal.svg` |
+| 膏 | oracle:Y bronze:- seal:Y | `膏.oracle.svg`<br>`膏.seal.svg` |
+| 哥 | oracle:- bronze:- seal:Y | `哥.seal.svg` |
+| 汞 | oracle:- bronze:- seal:Y | `汞.seal.svg` |
+| 古 | oracle:Y bronze:Y seal:Y | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
+| 龟 | oracle:Y bronze:Y seal:Y | `龟.bronze.svg`<br>`龟.oracle.svg`<br>`龟.seal.svg` |
+| 桂 | oracle:- bronze:- seal:Y | `桂.seal.svg` |
+| 海 | oracle:- bronze:Y seal:Y | `海.bronze.svg`<br>`海.seal.svg` |
+| 琥 | oracle:- bronze:- seal:Y | `琥.seal.svg` |
+| 花 | oracle:- bronze:- seal:Y | `花.seal.svg` |
+| 化 | oracle:Y bronze:Y seal:Y | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
+| 蕉 | oracle:- bronze:- seal:Y | `蕉.seal.svg` |
+| 金 | oracle:- bronze:Y seal:Y | `金.bronze.svg`<br>`金.seal.svg` |
+| 鲸 | oracle:- bronze:- seal:Y | `鲸.seal.svg` |
+| 景 | oracle:- bronze:- seal:Y | `景.seal.svg` |
+| 酒 | oracle:Y bronze:Y seal:Y | `酒.bronze.svg`<br>`酒.oracle.svg`<br>`酒.seal.svg` |
+| 橘 | oracle:- bronze:- seal:Y | `橘.seal.svg` |
+| 具 | oracle:Y bronze:Y seal:Y | `具.bronze.svg`<br>`具.oracle.svg`<br>`具.seal.svg` |
+| 军 | oracle:- bronze:Y seal:Y | `军.bronze.svg`<br>`军.seal.svg` |
+| 咖 | oracle:- bronze:- seal:Y | `咖.seal.svg` |
+| 裤 | oracle:- bronze:- seal:Y | `裤.seal.svg` |
+| 扩 | oracle:- bronze:- seal:Y | `扩.seal.svg` |
+| 榄 | oracle:- bronze:- seal:Y | `榄.seal.svg` |
+| 雷 | oracle:Y bronze:Y seal:Y | `雷.bronze.svg`<br>`雷.oracle.svg`<br>`雷.seal.svg` |
+| 理 | oracle:- bronze:Y seal:Y | `理.bronze.svg`<br>`理.seal.svg` |
+| 利 | oracle:Y bronze:Y seal:Y | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
+| 料 | oracle:- bronze:Y seal:Y | `料.bronze.svg`<br>`料.seal.svg` |
+| 垄 | oracle:- bronze:Y seal:Y | `垄.bronze.svg`<br>`垄.seal.svg` |
+| 鹿 | oracle:Y bronze:Y seal:Y | `鹿.bronze.svg`<br>`鹿.oracle.svg`<br>`鹿.seal.svg` |
+| 露 | oracle:- bronze:- seal:Y | `露.seal.svg` |
+| 铝 | oracle:- bronze:Y seal:- | `铝.bronze.svg` |
+| 伦 | oracle:- bronze:- seal:Y | `伦.seal.svg` |
+| 马 | oracle:Y bronze:Y seal:Y | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
+| 玛 | oracle:Y bronze:Y seal:Y | `玛.bronze.svg`<br>`玛.oracle.svg`<br>`玛.seal.svg` |
+| 麦 | oracle:Y bronze:Y seal:Y | `麦.bronze.svg`<br>`麦.oracle.svg`<br>`麦.seal.svg` |
+| 毛 | oracle:- bronze:Y seal:Y | `毛.bronze.svg`<br>`毛.seal.svg` |
+| 煤 | oracle:- bronze:- seal:Y | `煤.seal.svg` |
+| 米 | oracle:Y bronze:- seal:Y | `米.oracle.svg`<br>`米.seal.svg` |
+| 蜜 | oracle:- bronze:- seal:Y | `蜜.seal.svg` |
+| 棉 | oracle:- bronze:- seal:Y | `棉.seal.svg` |
+| 木 | oracle:Y bronze:Y seal:Y | `木.bronze.svg`<br>`木.oracle.svg`<br>`木.seal.svg` |
+| 难 | oracle:- bronze:Y seal:Y | `难.bronze.svg`<br>`难.seal.svg` |
+| 牛 | oracle:Y bronze:Y seal:Y | `牛.bronze.svg`<br>`牛.oracle.svg`<br>`牛.seal.svg` |
+| 螃 | oracle:- bronze:- seal:Y | `螃.seal.svg` |
+| 皮 | oracle:- bronze:Y seal:Y | `皮.bronze.svg`<br>`皮.seal.svg` |
+| 匹 | oracle:- bronze:Y seal:Y | `匹.bronze.svg`<br>`匹.seal.svg` |
+| 品 | oracle:Y bronze:Y seal:Y | `品.bronze.svg`<br>`品.oracle.svg`<br>`品.seal.svg` |
+| 珀 | oracle:- bronze:- seal:Y | `珀.seal.svg` |
+| 葡 | oracle:Y bronze:Y seal:Y | `葡.bronze.svg`<br>`葡.oracle.svg`<br>`葡.seal.svg` |
+| 漆 | oracle:- bronze:Y seal:Y | `漆.bronze.svg`<br>`漆.seal.svg` |
+| 企 | oracle:Y bronze:Y seal:Y | `企.bronze.svg`<br>`企.oracle.svg`<br>`企.seal.svg` |
+| 情 | oracle:- bronze:- seal:Y | `情.seal.svg` |
+| 染 | oracle:- bronze:- seal:Y | `染.seal.svg` |
+| 肉 | oracle:Y bronze:- seal:Y | `肉.oracle.svg`<br>`肉.seal.svg` |
+| 塞 | oracle:Y bronze:- seal:Y | `塞.oracle.svg`<br>`塞.seal.svg` |
+| 色 | oracle:- bronze:Y seal:Y | `色.bronze.svg`<br>`色.seal.svg` |
+| 石 | oracle:Y bronze:Y seal:Y | `石.bronze.svg`<br>`石.oracle.svg`<br>`石.seal.svg` |
+| 水 | oracle:Y bronze:Y seal:Y | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
+| 丝 | oracle:Y bronze:Y seal:Y | `丝.bronze.svg`<br>`丝.oracle.svg`<br>`丝.seal.svg` |
+| 松 | oracle:- bronze:Y seal:Y | `松.bronze.svg`<br>`松.seal.svg` |
+| 炭 | oracle:- bronze:- seal:Y | `炭.seal.svg` |
+| 糖 | oracle:- bronze:- seal:Y | `糖.seal.svg` |
+| 萄 | oracle:- bronze:- seal:Y | `萄.seal.svg` |
+| 铁 | oracle:- bronze:- seal:Y | `铁.seal.svg` |
+| 铜 | oracle:- bronze:Y seal:Y | `铜.bronze.svg`<br>`铜.seal.svg` |
+| 头 | oracle:- bronze:Y seal:Y | `头.bronze.svg`<br>`头.seal.svg` |
+| 团 | oracle:- bronze:Y seal:Y | `团.bronze.svg`<br>`团.seal.svg` |
+| 瓦 | oracle:- bronze:- seal:Y | `瓦.seal.svg` |
+| 玩 | oracle:- bronze:- seal:Y | `玩.seal.svg` |
+| 线 | oracle:- bronze:- seal:Y | `线.seal.svg` |
+| 香 | oracle:Y bronze:Y seal:Y | `香.bronze.svg`<br>`香.oracle.svg`<br>`香.seal.svg` |
+| 象 | oracle:Y bronze:Y seal:Y | `象.bronze.svg`<br>`象.oracle.svg`<br>`象.seal.svg` |
+| 硝 | oracle:- bronze:- seal:Y | `硝.seal.svg` |
+| 小 | oracle:Y bronze:Y seal:Y | `小.bronze.svg`<br>`小.oracle.svg`<br>`小.seal.svg` |
+| 蟹 | oracle:- bronze:- seal:Y | `蟹.seal.svg` |
+| 牙 | oracle:- bronze:Y seal:Y | `牙.bronze.svg`<br>`牙.seal.svg` |
+| 雅 | oracle:- bronze:- seal:Y | `雅.seal.svg` |
+| 亚 | oracle:Y bronze:Y seal:Y | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
+| 烟 | oracle:- bronze:Y seal:Y | `烟.bronze.svg`<br>`烟.seal.svg` |
+| 盐 | oracle:- bronze:Y seal:Y | `盐.bronze.svg`<br>`盐.seal.svg` |
+| 羊 | oracle:Y bronze:Y seal:Y | `羊.bronze.svg`<br>`羊.oracle.svg`<br>`羊.seal.svg` |
+| 业 | oracle:- bronze:Y seal:Y | `业.bronze.svg`<br>`业.seal.svg` |
+| 遗 | oracle:- bronze:Y seal:Y | `遗.bronze.svg`<br>`遗.seal.svg` |
+| 银 | oracle:- bronze:- seal:Y | `银.seal.svg` |
+| 油 | oracle:- bronze:Y seal:Y | `油.bronze.svg`<br>`油.seal.svg` |
+| 铀 | oracle:- bronze:- seal:Y | `铀.seal.svg` |
+| 鱼 | oracle:Y bronze:Y seal:Y | `鱼.bronze.svg`<br>`鱼.oracle.svg`<br>`鱼.seal.svg` |
+| 玉 | oracle:Y bronze:Y seal:Y | `玉.bronze.svg`<br>`玉.oracle.svg`<br>`玉.seal.svg` |
+| 源 | oracle:- bronze:- seal:Y | `源.seal.svg` |
+| 展 | oracle:- bronze:- seal:Y | `展.seal.svg` |
+| 珍 | oracle:- bronze:- seal:Y | `珍.seal.svg` |
+| 址 | oracle:- bronze:- seal:Y | `址.seal.svg` |
+| 珠 | oracle:- bronze:- seal:Y | `珠.seal.svg` |
+| 妆 | oracle:Y bronze:Y seal:Y | `妆.bronze.svg`<br>`妆.oracle.svg`<br>`妆.seal.svg` |
+| 资 | oracle:- bronze:- seal:Y | `资.seal.svg` |
+| 子 | oracle:Y bronze:Y seal:Y | `子.bronze.svg`<br>`子.oracle.svg`<br>`子.seal.svg` |
+| 仔 | oracle:- bronze:- seal:Y | `仔.seal.svg` |
+| 钻 | oracle:- bronze:- seal:Y | `钻.seal.svg` |
 
 ## routes
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 商 | oracle:Y bronze:Y seal:Y legacy:- | `商.bronze.svg`<br>`商.oracle.svg`<br>`商.seal.svg` |
+| 商 | oracle:Y bronze:Y seal:Y | `商.bronze.svg`<br>`商.oracle.svg`<br>`商.seal.svg` |
 
 ## stats
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 案 | oracle:- bronze:- seal:Y legacy:- | `案.seal.svg` |
-| 巴 | oracle:Y bronze:- seal:Y legacy:- | `巴.oracle.svg`<br>`巴.seal.svg` |
-| 比 | oracle:Y bronze:Y seal:Y legacy:- | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
-| 便 | oracle:- bronze:Y seal:Y legacy:- | `便.bronze.svg`<br>`便.seal.svg` |
-| 别 | oracle:Y bronze:- seal:Y legacy:- | `别.oracle.svg`<br>`别.seal.svg` |
-| 厕 | oracle:- bronze:- seal:Y legacy:- | `厕.seal.svg` |
-| 策 | oracle:- bronze:Y seal:Y legacy:- | `策.bronze.svg`<br>`策.seal.svg` |
-| 差 | oracle:- bronze:Y seal:Y legacy:- | `差.bronze.svg`<br>`差.seal.svg` |
-| 成 | oracle:Y bronze:Y seal:Y legacy:- | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
-| 城 | oracle:- bronze:Y seal:Y legacy:- | `城.bronze.svg`<br>`城.seal.svg` |
-| 程 | oracle:- bronze:Y seal:Y legacy:- | `程.bronze.svg`<br>`程.seal.svg` |
-| 大 | oracle:Y bronze:Y seal:Y legacy:- | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
-| 单 | oracle:Y bronze:Y seal:Y legacy:- | `单.bronze.svg`<br>`单.oracle.svg`<br>`单.seal.svg` |
-| 地 | oracle:- bronze:Y seal:Y legacy:- | `地.bronze.svg`<br>`地.seal.svg` |
-| 点 | oracle:- bronze:- seal:Y legacy:- | `点.seal.svg` |
-| 动 | oracle:- bronze:Y seal:Y legacy:- | `动.bronze.svg`<br>`动.seal.svg` |
-| 独 | oracle:- bronze:- seal:Y legacy:- | `独.seal.svg` |
-| 度 | oracle:Y bronze:Y seal:Y legacy:- | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
-| 队 | oracle:Y bronze:Y seal:Y legacy:- | `队.bronze.svg`<br>`队.oracle.svg`<br>`队.seal.svg` |
-| 范 | oracle:- bronze:Y seal:Y legacy:- | `范.bronze.svg`<br>`范.seal.svg` |
-| 防 | oracle:- bronze:- seal:Y legacy:- | `防.seal.svg` |
-| 房 | oracle:- bronze:- seal:Y legacy:- | `房.seal.svg` |
-| 访 | oracle:- bronze:- seal:Y legacy:- | `访.seal.svg` |
-| 费 | oracle:- bronze:Y seal:Y legacy:- | `费.bronze.svg`<br>`费.seal.svg` |
-| 否 | oracle:- bronze:Y seal:Y legacy:- | `否.bronze.svg`<br>`否.seal.svg` |
-| 府 | oracle:- bronze:Y seal:Y legacy:- | `府.bronze.svg`<br>`府.seal.svg` |
-| 改 | oracle:Y bronze:Y seal:Y legacy:- | `改.bronze.svg`<br>`改.oracle.svg`<br>`改.seal.svg` |
-| 概 | oracle:- bronze:- seal:Y legacy:- | `概.seal.svg` |
-| 工 | oracle:Y bronze:Y seal:Y legacy:- | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
-| 公 | oracle:Y bronze:Y seal:Y legacy:- | `公.bronze.svg`<br>`公.oracle.svg`<br>`公.seal.svg` |
-| 关 | oracle:Y bronze:Y seal:- legacy:- | `关.bronze.svg`<br>`关.oracle.svg` |
-| 滚 | oracle:- bronze:- seal:Y legacy:- | `滚.seal.svg` |
-| 过 | oracle:- bronze:Y seal:Y legacy:- | `过.bronze.svg`<br>`过.seal.svg` |
-| 海 | oracle:- bronze:Y seal:Y legacy:- | `海.bronze.svg`<br>`海.seal.svg` |
-| 害 | oracle:- bronze:Y seal:Y legacy:- | `害.bronze.svg`<br>`害.seal.svg` |
-| 轰 | oracle:- bronze:- seal:Y legacy:- | `轰.seal.svg` |
-| 化 | oracle:Y bronze:Y seal:Y legacy:- | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
-| 话 | oracle:- bronze:Y seal:Y legacy:- | `话.bronze.svg`<br>`话.seal.svg` |
-| 击 | oracle:- bronze:- seal:Y legacy:- | `击.seal.svg` |
-| 级 | oracle:- bronze:- seal:Y legacy:- | `级.seal.svg` |
-| 急 | oracle:- bronze:- seal:Y legacy:- | `急.seal.svg` |
-| 计 | oracle:- bronze:- seal:Y legacy:- | `计.seal.svg` |
-| 记 | oracle:- bronze:Y seal:Y legacy:- | `记.bronze.svg`<br>`记.seal.svg` |
-| 迹 | oracle:- bronze:Y seal:Y legacy:- | `迹.bronze.svg`<br>`迹.seal.svg` |
-| 建 | oracle:Y bronze:Y seal:Y legacy:- | `建.bronze.svg`<br>`建.oracle.svg`<br>`建.seal.svg` |
-| 交 | oracle:- bronze:- seal:Y legacy:- | `交.seal.svg` |
-| 教 | oracle:Y bronze:Y seal:Y legacy:- | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
-| 截 | oracle:- bronze:- seal:Y legacy:- | `截.seal.svg` |
-| 界 | oracle:- bronze:- seal:Y legacy:- | `界.seal.svg` |
-| 紧 | oracle:- bronze:- seal:Y legacy:- | `紧.seal.svg` |
-| 晋 | oracle:Y bronze:Y seal:Y legacy:- | `晋.bronze.svg`<br>`晋.oracle.svg`<br>`晋.seal.svg` |
-| 竞 | oracle:Y bronze:Y seal:Y legacy:- | `竞.bronze.svg`<br>`竞.oracle.svg`<br>`竞.seal.svg` |
-| 据 | oracle:- bronze:- seal:Y legacy:- | `据.seal.svg` |
-| 决 | oracle:- bronze:- seal:Y legacy:- | `决.seal.svg` |
-| 空 | oracle:- bronze:Y seal:Y legacy:- | `空.bronze.svg`<br>`空.seal.svg` |
-| 况 | oracle:Y bronze:- seal:Y legacy:- | `况.oracle.svg`<br>`况.seal.svg` |
-| 扩 | oracle:- bronze:- seal:Y legacy:- | `扩.seal.svg` |
-| 拦 | oracle:- bronze:- seal:Y legacy:- | `拦.seal.svg` |
-| 乐 | oracle:Y bronze:Y seal:Y legacy:- | `乐.bronze.svg`<br>`乐.oracle.svg`<br>`乐.seal.svg` |
-| 理 | oracle:- bronze:Y seal:Y legacy:- | `理.bronze.svg`<br>`理.seal.svg` |
-| 力 | oracle:Y bronze:Y seal:Y legacy:- | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
-| 立 | oracle:Y bronze:Y seal:Y legacy:- | `立.bronze.svg`<br>`立.oracle.svg`<br>`立.seal.svg` |
-| 利 | oracle:Y bronze:Y seal:Y legacy:- | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
-| 联 | oracle:Y bronze:Y seal:Y legacy:- | `联.bronze.svg`<br>`联.oracle.svg`<br>`联.seal.svg` |
-| 量 | oracle:Y bronze:Y seal:Y legacy:- | `量.bronze.svg`<br>`量.oracle.svg`<br>`量.seal.svg` |
-| 列 | oracle:- bronze:Y seal:Y legacy:- | `列.bronze.svg`<br>`列.seal.svg` |
-| 录 | oracle:Y bronze:Y seal:Y legacy:- | `录.bronze.svg`<br>`录.oracle.svg`<br>`录.seal.svg` |
-| 伦 | oracle:- bronze:- seal:Y legacy:- | `伦.seal.svg` |
-| 贸 | oracle:- bronze:Y seal:Y legacy:- | `贸.bronze.svg`<br>`贸.seal.svg` |
-| 们 | oracle:- bronze:- seal:Y legacy:- | `们.seal.svg` |
-| 盟 | oracle:Y bronze:Y seal:Y legacy:- | `盟.bronze.svg`<br>`盟.oracle.svg`<br>`盟.seal.svg` |
-| 眠 | oracle:- bronze:- seal:Y legacy:- | `眠.seal.svg` |
-| 民 | oracle:Y bronze:Y seal:Y legacy:- | `民.bronze.svg`<br>`民.oracle.svg`<br>`民.seal.svg` |
-| 命 | oracle:Y bronze:Y seal:Y legacy:- | `命.bronze.svg`<br>`命.oracle.svg`<br>`命.seal.svg` |
-| 目 | oracle:Y bronze:Y seal:Y legacy:- | `目.bronze.svg`<br>`目.oracle.svg`<br>`目.seal.svg` |
-| 票 | oracle:- bronze:- seal:Y legacy:- | `票.seal.svg` |
-| 品 | oracle:Y bronze:Y seal:Y legacy:- | `品.bronze.svg`<br>`品.oracle.svg`<br>`品.seal.svg` |
-| 平 | oracle:- bronze:Y seal:Y legacy:- | `平.bronze.svg`<br>`平.seal.svg` |
-| 其 | oracle:Y bronze:Y seal:Y legacy:- | `其.bronze.svg`<br>`其.oracle.svg`<br>`其.seal.svg` |
-| 奇 | oracle:- bronze:- seal:Y legacy:- | `奇.seal.svg` |
-| 器 | oracle:- bronze:Y seal:Y legacy:- | `器.bronze.svg`<br>`器.seal.svg` |
-| 强 | oracle:- bronze:- seal:Y legacy:- | `强.seal.svg` |
-| 情 | oracle:- bronze:- seal:Y legacy:- | `情.seal.svg` |
-| 请 | oracle:- bronze:Y seal:Y legacy:- | `请.bronze.svg`<br>`请.seal.svg` |
-| 求 | oracle:Y bronze:Y seal:Y legacy:- | `求.bronze.svg`<br>`求.oracle.svg`<br>`求.seal.svg` |
-| 区 | oracle:Y bronze:Y seal:Y legacy:- | `区.bronze.svg`<br>`区.oracle.svg`<br>`区.seal.svg` |
-| 屈 | oracle:- bronze:Y seal:Y legacy:- | `屈.bronze.svg`<br>`屈.seal.svg` |
-| 人 | oracle:Y bronze:Y seal:Y legacy:- | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
-| 赛 | oracle:- bronze:- seal:Y legacy:- | `赛.seal.svg` |
-| 设 | oracle:- bronze:- seal:Y legacy:- | `设.seal.svg` |
-| 升 | oracle:Y bronze:Y seal:Y legacy:- | `升.bronze.svg`<br>`升.oracle.svg`<br>`升.seal.svg` |
-| 胜 | oracle:- bronze:- seal:Y legacy:- | `胜.seal.svg` |
-| 施 | oracle:- bronze:- seal:Y legacy:- | `施.seal.svg` |
-| 世 | oracle:- bronze:Y seal:Y legacy:- | `世.bronze.svg`<br>`世.seal.svg` |
-| 市 | oracle:Y bronze:Y seal:Y legacy:- | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
-| 寿 | oracle:- bronze:Y seal:Y legacy:- | `寿.bronze.svg`<br>`寿.seal.svg` |
-| 售 | oracle:- bronze:- seal:Y legacy:- | `售.seal.svg` |
-| 述 | oracle:- bronze:Y seal:Y legacy:- | `述.bronze.svg`<br>`述.seal.svg` |
-| 数 | oracle:- bronze:Y seal:Y legacy:- | `数.bronze.svg`<br>`数.seal.svg` |
-| 水 | oracle:Y bronze:Y seal:Y legacy:- | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
-| 睡 | oracle:- bronze:- seal:Y legacy:- | `睡.seal.svg` |
-| 损 | oracle:- bronze:- seal:Y legacy:- | `损.seal.svg` |
-| 所 | oracle:- bronze:Y seal:Y legacy:- | `所.bronze.svg`<br>`所.seal.svg` |
-| 他 | oracle:- bronze:- seal:Y legacy:- | `他.seal.svg` |
-| 藤 | oracle:- bronze:Y seal:Y legacy:- | `藤.bronze.svg`<br>`藤.seal.svg` |
-| 提 | oracle:- bronze:- seal:Y legacy:- | `提.seal.svg` |
-| 跳 | oracle:- bronze:- seal:Y legacy:- | `跳.seal.svg` |
-| 统 | oracle:- bronze:- seal:Y legacy:- | `统.seal.svg` |
-| 投 | oracle:- bronze:- seal:Y legacy:- | `投.seal.svg` |
-| 土 | oracle:Y bronze:Y seal:Y legacy:- | `土.bronze.svg`<br>`土.oracle.svg`<br>`土.seal.svg` |
-| 围 | oracle:- bronze:Y seal:Y legacy:- | `围.bronze.svg`<br>`围.seal.svg` |
-| 伟 | oracle:- bronze:- seal:Y legacy:- | `伟.seal.svg` |
-| 委 | oracle:Y bronze:Y seal:Y legacy:- | `委.bronze.svg`<br>`委.oracle.svg`<br>`委.seal.svg` |
-| 位 | oracle:- bronze:Y seal:Y legacy:- | `位.bronze.svg`<br>`位.seal.svg` |
-| 文 | oracle:Y bronze:Y seal:Y legacy:- | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
-| 问 | oracle:Y bronze:Y seal:Y legacy:- | `问.bronze.svg`<br>`问.oracle.svg`<br>`问.seal.svg` |
-| 我 | oracle:Y bronze:Y seal:Y legacy:- | `我.bronze.svg`<br>`我.oracle.svg`<br>`我.seal.svg` |
-| 物 | oracle:Y bronze:- seal:Y legacy:- | `物.oracle.svg`<br>`物.seal.svg` |
-| 系 | oracle:Y bronze:- seal:Y legacy:- | `系.oracle.svg`<br>`系.seal.svg` |
-| 闲 | oracle:- bronze:Y seal:Y legacy:- | `闲.bronze.svg`<br>`闲.seal.svg` |
-| 项 | oracle:- bronze:- seal:Y legacy:- | `项.seal.svg` |
-| 销 | oracle:- bronze:- seal:Y legacy:- | `销.seal.svg` |
-| 协 | oracle:- bronze:Y seal:Y legacy:- | `协.bronze.svg`<br>`协.seal.svg` |
-| 形 | oracle:- bronze:- seal:Y legacy:- | `形.seal.svg` |
-| 修 | oracle:- bronze:- seal:Y legacy:- | `修.seal.svg` |
-| 宣 | oracle:Y bronze:Y seal:Y legacy:- | `宣.bronze.svg`<br>`宣.oracle.svg`<br>`宣.seal.svg` |
-| 压 | oracle:- bronze:- seal:Y legacy:- | `压.seal.svg` |
-| 摇 | oracle:- bronze:- seal:Y legacy:- | `摇.seal.svg` |
-| 议 | oracle:- bronze:Y seal:Y legacy:- | `议.bronze.svg`<br>`议.seal.svg` |
-| 易 | oracle:Y bronze:Y seal:Y legacy:- | `易.bronze.svg`<br>`易.oracle.svg`<br>`易.seal.svg` |
-| 用 | oracle:Y bronze:Y seal:Y legacy:- | `用.bronze.svg`<br>`用.oracle.svg`<br>`用.seal.svg` |
-| 由 | oracle:Y bronze:Y seal:- legacy:- | `由.bronze.svg`<br>`由.oracle.svg` |
-| 御 | oracle:Y bronze:Y seal:Y legacy:- | `御.bronze.svg`<br>`御.oracle.svg`<br>`御.seal.svg` |
-| 援 | oracle:- bronze:- seal:Y legacy:- | `援.seal.svg` |
-| 源 | oracle:- bronze:- seal:Y legacy:- | `源.seal.svg` |
-| 赞 | oracle:- bronze:- seal:Y legacy:- | `赞.seal.svg` |
-| 造 | oracle:- bronze:Y seal:Y legacy:- | `造.bronze.svg`<br>`造.seal.svg` |
-| 展 | oracle:- bronze:- seal:Y legacy:- | `展.seal.svg` |
-| 战 | oracle:- bronze:Y seal:Y legacy:- | `战.bronze.svg`<br>`战.seal.svg` |
-| 长 | oracle:Y bronze:Y seal:Y legacy:- | `长.bronze.svg`<br>`长.oracle.svg`<br>`长.seal.svg` |
-| 政 | oracle:Y bronze:Y seal:Y legacy:- | `政.bronze.svg`<br>`政.oracle.svg`<br>`政.seal.svg` |
-| 置 | oracle:Y bronze:- seal:Y legacy:- | `置.oracle.svg`<br>`置.seal.svg` |
-| 州 | oracle:Y bronze:Y seal:Y legacy:- | `州.bronze.svg`<br>`州.oracle.svg`<br>`州.seal.svg` |
-| 住 | oracle:- bronze:- seal:Y legacy:- | `住.seal.svg` |
-| 助 | oracle:- bronze:- seal:Y legacy:- | `助.seal.svg` |
-| 筑 | oracle:- bronze:- seal:Y legacy:- | `筑.seal.svg` |
-| 资 | oracle:- bronze:- seal:Y legacy:- | `资.seal.svg` |
-| 宗 | oracle:Y bronze:Y seal:Y legacy:- | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
-| 作 | oracle:Y bronze:Y seal:Y legacy:- | `作.bronze.svg`<br>`作.oracle.svg`<br>`作.seal.svg` |
+| 案 | oracle:- bronze:- seal:Y | `案.seal.svg` |
+| 巴 | oracle:Y bronze:- seal:Y | `巴.oracle.svg`<br>`巴.seal.svg` |
+| 比 | oracle:Y bronze:Y seal:Y | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
+| 便 | oracle:- bronze:Y seal:Y | `便.bronze.svg`<br>`便.seal.svg` |
+| 别 | oracle:Y bronze:- seal:Y | `别.oracle.svg`<br>`别.seal.svg` |
+| 厕 | oracle:- bronze:- seal:Y | `厕.seal.svg` |
+| 策 | oracle:- bronze:Y seal:Y | `策.bronze.svg`<br>`策.seal.svg` |
+| 差 | oracle:- bronze:Y seal:Y | `差.bronze.svg`<br>`差.seal.svg` |
+| 成 | oracle:Y bronze:Y seal:Y | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
+| 城 | oracle:- bronze:Y seal:Y | `城.bronze.svg`<br>`城.seal.svg` |
+| 程 | oracle:- bronze:Y seal:Y | `程.bronze.svg`<br>`程.seal.svg` |
+| 大 | oracle:Y bronze:Y seal:Y | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
+| 单 | oracle:Y bronze:Y seal:Y | `单.bronze.svg`<br>`单.oracle.svg`<br>`单.seal.svg` |
+| 地 | oracle:- bronze:Y seal:Y | `地.bronze.svg`<br>`地.seal.svg` |
+| 点 | oracle:- bronze:- seal:Y | `点.seal.svg` |
+| 动 | oracle:- bronze:Y seal:Y | `动.bronze.svg`<br>`动.seal.svg` |
+| 独 | oracle:- bronze:- seal:Y | `独.seal.svg` |
+| 度 | oracle:Y bronze:Y seal:Y | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
+| 队 | oracle:Y bronze:Y seal:Y | `队.bronze.svg`<br>`队.oracle.svg`<br>`队.seal.svg` |
+| 范 | oracle:- bronze:Y seal:Y | `范.bronze.svg`<br>`范.seal.svg` |
+| 防 | oracle:- bronze:- seal:Y | `防.seal.svg` |
+| 房 | oracle:- bronze:- seal:Y | `房.seal.svg` |
+| 访 | oracle:- bronze:- seal:Y | `访.seal.svg` |
+| 费 | oracle:- bronze:Y seal:Y | `费.bronze.svg`<br>`费.seal.svg` |
+| 否 | oracle:- bronze:Y seal:Y | `否.bronze.svg`<br>`否.seal.svg` |
+| 府 | oracle:- bronze:Y seal:Y | `府.bronze.svg`<br>`府.seal.svg` |
+| 改 | oracle:Y bronze:Y seal:Y | `改.bronze.svg`<br>`改.oracle.svg`<br>`改.seal.svg` |
+| 概 | oracle:- bronze:- seal:Y | `概.seal.svg` |
+| 工 | oracle:Y bronze:Y seal:Y | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
+| 公 | oracle:Y bronze:Y seal:Y | `公.bronze.svg`<br>`公.oracle.svg`<br>`公.seal.svg` |
+| 关 | oracle:Y bronze:Y seal:- | `关.bronze.svg`<br>`关.oracle.svg` |
+| 滚 | oracle:- bronze:- seal:Y | `滚.seal.svg` |
+| 过 | oracle:- bronze:Y seal:Y | `过.bronze.svg`<br>`过.seal.svg` |
+| 海 | oracle:- bronze:Y seal:Y | `海.bronze.svg`<br>`海.seal.svg` |
+| 害 | oracle:- bronze:Y seal:Y | `害.bronze.svg`<br>`害.seal.svg` |
+| 轰 | oracle:- bronze:- seal:Y | `轰.seal.svg` |
+| 化 | oracle:Y bronze:Y seal:Y | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
+| 话 | oracle:- bronze:Y seal:Y | `话.bronze.svg`<br>`话.seal.svg` |
+| 击 | oracle:- bronze:- seal:Y | `击.seal.svg` |
+| 级 | oracle:- bronze:- seal:Y | `级.seal.svg` |
+| 急 | oracle:- bronze:- seal:Y | `急.seal.svg` |
+| 计 | oracle:- bronze:- seal:Y | `计.seal.svg` |
+| 记 | oracle:- bronze:Y seal:Y | `记.bronze.svg`<br>`记.seal.svg` |
+| 迹 | oracle:- bronze:Y seal:Y | `迹.bronze.svg`<br>`迹.seal.svg` |
+| 建 | oracle:Y bronze:Y seal:Y | `建.bronze.svg`<br>`建.oracle.svg`<br>`建.seal.svg` |
+| 交 | oracle:- bronze:- seal:Y | `交.seal.svg` |
+| 教 | oracle:Y bronze:Y seal:Y | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
+| 截 | oracle:- bronze:- seal:Y | `截.seal.svg` |
+| 界 | oracle:- bronze:- seal:Y | `界.seal.svg` |
+| 紧 | oracle:- bronze:- seal:Y | `紧.seal.svg` |
+| 晋 | oracle:Y bronze:Y seal:Y | `晋.bronze.svg`<br>`晋.oracle.svg`<br>`晋.seal.svg` |
+| 竞 | oracle:Y bronze:Y seal:Y | `竞.bronze.svg`<br>`竞.oracle.svg`<br>`竞.seal.svg` |
+| 据 | oracle:- bronze:- seal:Y | `据.seal.svg` |
+| 决 | oracle:- bronze:- seal:Y | `决.seal.svg` |
+| 空 | oracle:- bronze:Y seal:Y | `空.bronze.svg`<br>`空.seal.svg` |
+| 况 | oracle:Y bronze:- seal:Y | `况.oracle.svg`<br>`况.seal.svg` |
+| 扩 | oracle:- bronze:- seal:Y | `扩.seal.svg` |
+| 拦 | oracle:- bronze:- seal:Y | `拦.seal.svg` |
+| 乐 | oracle:Y bronze:Y seal:Y | `乐.bronze.svg`<br>`乐.oracle.svg`<br>`乐.seal.svg` |
+| 理 | oracle:- bronze:Y seal:Y | `理.bronze.svg`<br>`理.seal.svg` |
+| 力 | oracle:Y bronze:Y seal:Y | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
+| 立 | oracle:Y bronze:Y seal:Y | `立.bronze.svg`<br>`立.oracle.svg`<br>`立.seal.svg` |
+| 利 | oracle:Y bronze:Y seal:Y | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
+| 联 | oracle:Y bronze:Y seal:Y | `联.bronze.svg`<br>`联.oracle.svg`<br>`联.seal.svg` |
+| 量 | oracle:Y bronze:Y seal:Y | `量.bronze.svg`<br>`量.oracle.svg`<br>`量.seal.svg` |
+| 列 | oracle:- bronze:Y seal:Y | `列.bronze.svg`<br>`列.seal.svg` |
+| 录 | oracle:Y bronze:Y seal:Y | `录.bronze.svg`<br>`录.oracle.svg`<br>`录.seal.svg` |
+| 伦 | oracle:- bronze:- seal:Y | `伦.seal.svg` |
+| 贸 | oracle:- bronze:Y seal:Y | `贸.bronze.svg`<br>`贸.seal.svg` |
+| 们 | oracle:- bronze:- seal:Y | `们.seal.svg` |
+| 盟 | oracle:Y bronze:Y seal:Y | `盟.bronze.svg`<br>`盟.oracle.svg`<br>`盟.seal.svg` |
+| 眠 | oracle:- bronze:- seal:Y | `眠.seal.svg` |
+| 民 | oracle:Y bronze:Y seal:Y | `民.bronze.svg`<br>`民.oracle.svg`<br>`民.seal.svg` |
+| 命 | oracle:Y bronze:Y seal:Y | `命.bronze.svg`<br>`命.oracle.svg`<br>`命.seal.svg` |
+| 目 | oracle:Y bronze:Y seal:Y | `目.bronze.svg`<br>`目.oracle.svg`<br>`目.seal.svg` |
+| 票 | oracle:- bronze:- seal:Y | `票.seal.svg` |
+| 品 | oracle:Y bronze:Y seal:Y | `品.bronze.svg`<br>`品.oracle.svg`<br>`品.seal.svg` |
+| 平 | oracle:- bronze:Y seal:Y | `平.bronze.svg`<br>`平.seal.svg` |
+| 其 | oracle:Y bronze:Y seal:Y | `其.bronze.svg`<br>`其.oracle.svg`<br>`其.seal.svg` |
+| 奇 | oracle:- bronze:- seal:Y | `奇.seal.svg` |
+| 器 | oracle:- bronze:Y seal:Y | `器.bronze.svg`<br>`器.seal.svg` |
+| 强 | oracle:- bronze:- seal:Y | `强.seal.svg` |
+| 情 | oracle:- bronze:- seal:Y | `情.seal.svg` |
+| 请 | oracle:- bronze:Y seal:Y | `请.bronze.svg`<br>`请.seal.svg` |
+| 求 | oracle:Y bronze:Y seal:Y | `求.bronze.svg`<br>`求.oracle.svg`<br>`求.seal.svg` |
+| 区 | oracle:Y bronze:Y seal:Y | `区.bronze.svg`<br>`区.oracle.svg`<br>`区.seal.svg` |
+| 屈 | oracle:- bronze:Y seal:Y | `屈.bronze.svg`<br>`屈.seal.svg` |
+| 人 | oracle:Y bronze:Y seal:Y | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
+| 赛 | oracle:- bronze:- seal:Y | `赛.seal.svg` |
+| 设 | oracle:- bronze:- seal:Y | `设.seal.svg` |
+| 升 | oracle:Y bronze:Y seal:Y | `升.bronze.svg`<br>`升.oracle.svg`<br>`升.seal.svg` |
+| 胜 | oracle:- bronze:- seal:Y | `胜.seal.svg` |
+| 施 | oracle:- bronze:- seal:Y | `施.seal.svg` |
+| 世 | oracle:- bronze:Y seal:Y | `世.bronze.svg`<br>`世.seal.svg` |
+| 市 | oracle:Y bronze:Y seal:Y | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
+| 寿 | oracle:- bronze:Y seal:Y | `寿.bronze.svg`<br>`寿.seal.svg` |
+| 售 | oracle:- bronze:- seal:Y | `售.seal.svg` |
+| 述 | oracle:- bronze:Y seal:Y | `述.bronze.svg`<br>`述.seal.svg` |
+| 数 | oracle:- bronze:Y seal:Y | `数.bronze.svg`<br>`数.seal.svg` |
+| 水 | oracle:Y bronze:Y seal:Y | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
+| 睡 | oracle:- bronze:- seal:Y | `睡.seal.svg` |
+| 损 | oracle:- bronze:- seal:Y | `损.seal.svg` |
+| 所 | oracle:- bronze:Y seal:Y | `所.bronze.svg`<br>`所.seal.svg` |
+| 他 | oracle:- bronze:- seal:Y | `他.seal.svg` |
+| 藤 | oracle:- bronze:Y seal:Y | `藤.bronze.svg`<br>`藤.seal.svg` |
+| 提 | oracle:- bronze:- seal:Y | `提.seal.svg` |
+| 跳 | oracle:- bronze:- seal:Y | `跳.seal.svg` |
+| 统 | oracle:- bronze:- seal:Y | `统.seal.svg` |
+| 投 | oracle:- bronze:- seal:Y | `投.seal.svg` |
+| 土 | oracle:Y bronze:Y seal:Y | `土.bronze.svg`<br>`土.oracle.svg`<br>`土.seal.svg` |
+| 围 | oracle:- bronze:Y seal:Y | `围.bronze.svg`<br>`围.seal.svg` |
+| 伟 | oracle:- bronze:- seal:Y | `伟.seal.svg` |
+| 委 | oracle:Y bronze:Y seal:Y | `委.bronze.svg`<br>`委.oracle.svg`<br>`委.seal.svg` |
+| 位 | oracle:- bronze:Y seal:Y | `位.bronze.svg`<br>`位.seal.svg` |
+| 文 | oracle:Y bronze:Y seal:Y | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
+| 问 | oracle:Y bronze:Y seal:Y | `问.bronze.svg`<br>`问.oracle.svg`<br>`问.seal.svg` |
+| 我 | oracle:Y bronze:Y seal:Y | `我.bronze.svg`<br>`我.oracle.svg`<br>`我.seal.svg` |
+| 物 | oracle:Y bronze:- seal:Y | `物.oracle.svg`<br>`物.seal.svg` |
+| 系 | oracle:Y bronze:- seal:Y | `系.oracle.svg`<br>`系.seal.svg` |
+| 闲 | oracle:- bronze:Y seal:Y | `闲.bronze.svg`<br>`闲.seal.svg` |
+| 项 | oracle:- bronze:- seal:Y | `项.seal.svg` |
+| 销 | oracle:- bronze:- seal:Y | `销.seal.svg` |
+| 协 | oracle:- bronze:Y seal:Y | `协.bronze.svg`<br>`协.seal.svg` |
+| 形 | oracle:- bronze:- seal:Y | `形.seal.svg` |
+| 修 | oracle:- bronze:- seal:Y | `修.seal.svg` |
+| 宣 | oracle:Y bronze:Y seal:Y | `宣.bronze.svg`<br>`宣.oracle.svg`<br>`宣.seal.svg` |
+| 压 | oracle:- bronze:- seal:Y | `压.seal.svg` |
+| 摇 | oracle:- bronze:- seal:Y | `摇.seal.svg` |
+| 议 | oracle:- bronze:Y seal:Y | `议.bronze.svg`<br>`议.seal.svg` |
+| 易 | oracle:Y bronze:Y seal:Y | `易.bronze.svg`<br>`易.oracle.svg`<br>`易.seal.svg` |
+| 用 | oracle:Y bronze:Y seal:Y | `用.bronze.svg`<br>`用.oracle.svg`<br>`用.seal.svg` |
+| 由 | oracle:Y bronze:Y seal:- | `由.bronze.svg`<br>`由.oracle.svg` |
+| 御 | oracle:Y bronze:Y seal:Y | `御.bronze.svg`<br>`御.oracle.svg`<br>`御.seal.svg` |
+| 援 | oracle:- bronze:- seal:Y | `援.seal.svg` |
+| 源 | oracle:- bronze:- seal:Y | `源.seal.svg` |
+| 赞 | oracle:- bronze:- seal:Y | `赞.seal.svg` |
+| 造 | oracle:- bronze:Y seal:Y | `造.bronze.svg`<br>`造.seal.svg` |
+| 展 | oracle:- bronze:- seal:Y | `展.seal.svg` |
+| 战 | oracle:- bronze:Y seal:Y | `战.bronze.svg`<br>`战.seal.svg` |
+| 长 | oracle:Y bronze:Y seal:Y | `长.bronze.svg`<br>`长.oracle.svg`<br>`长.seal.svg` |
+| 政 | oracle:Y bronze:Y seal:Y | `政.bronze.svg`<br>`政.oracle.svg`<br>`政.seal.svg` |
+| 置 | oracle:Y bronze:- seal:Y | `置.oracle.svg`<br>`置.seal.svg` |
+| 州 | oracle:Y bronze:Y seal:Y | `州.bronze.svg`<br>`州.oracle.svg`<br>`州.seal.svg` |
+| 住 | oracle:- bronze:- seal:Y | `住.seal.svg` |
+| 助 | oracle:- bronze:- seal:Y | `助.seal.svg` |
+| 筑 | oracle:- bronze:- seal:Y | `筑.seal.svg` |
+| 资 | oracle:- bronze:- seal:Y | `资.seal.svg` |
+| 宗 | oracle:Y bronze:Y seal:Y | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
+| 作 | oracle:Y bronze:Y seal:Y | `作.bronze.svg`<br>`作.oracle.svg`<br>`作.seal.svg` |
 
 ## status
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 败 | oracle:Y bronze:Y seal:Y legacy:- | `败.bronze.svg`<br>`败.oracle.svg`<br>`败.seal.svg` |
-| 成 | oracle:Y bronze:Y seal:Y legacy:- | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
-| 谍 | oracle:- bronze:- seal:Y legacy:- | `谍.seal.svg` |
-| 盾 | oracle:Y bronze:Y seal:Y legacy:- | `盾.bronze.svg`<br>`盾.oracle.svg`<br>`盾.seal.svg` |
-| 功 | oracle:- bronze:Y seal:Y legacy:- | `功.bronze.svg`<br>`功.seal.svg` |
-| 果 | oracle:- bronze:Y seal:Y legacy:- | `果.bronze.svg`<br>`果.seal.svg` |
-| 和 | oracle:- bronze:Y seal:Y legacy:- | `和.bronze.svg`<br>`和.seal.svg` |
-| 毁 | oracle:- bronze:Y seal:Y legacy:- | `毁.bronze.svg`<br>`毁.seal.svg` |
-| 获 | oracle:Y bronze:Y seal:Y legacy:- | `获.bronze.svg`<br>`获.oracle.svg`<br>`获.seal.svg` |
-| 击 | oracle:- bronze:- seal:Y legacy:- | `击.seal.svg` |
-| 级 | oracle:- bronze:- seal:Y legacy:- | `级.seal.svg` |
-| 间 | oracle:- bronze:Y seal:Y legacy:- | `间.bronze.svg`<br>`间.seal.svg` |
-| 降 | oracle:Y bronze:Y seal:Y legacy:- | `降.bronze.svg`<br>`降.oracle.svg`<br>`降.seal.svg` |
-| 结 | oracle:- bronze:- seal:Y legacy:- | `结.seal.svg` |
-| 戎 | oracle:Y bronze:Y seal:Y legacy:- | `戎.bronze.svg`<br>`戎.oracle.svg`<br>`戎.seal.svg` |
-| 升 | oracle:Y bronze:Y seal:Y legacy:- | `升.bronze.svg`<br>`升.oracle.svg`<br>`升.seal.svg` |
-| 失 | oracle:- bronze:Y seal:Y legacy:- | `失.bronze.svg`<br>`失.seal.svg` |
-| 提 | oracle:- bronze:- seal:Y legacy:- | `提.seal.svg` |
-| 医 | oracle:- bronze:- seal:Y legacy:- | `医.seal.svg` |
-| 造 | oracle:- bronze:Y seal:Y legacy:- | `造.bronze.svg`<br>`造.seal.svg` |
-| 止 | oracle:Y bronze:Y seal:Y legacy:- | `止.bronze.svg`<br>`止.oracle.svg`<br>`止.seal.svg` |
-| 抓 | oracle:- bronze:- seal:Y legacy:- | `抓.seal.svg` |
-| 踪 | oracle:- bronze:Y seal:Y legacy:- | `踪.bronze.svg`<br>`踪.seal.svg` |
-| 足 | oracle:Y bronze:Y seal:Y legacy:- | `足.bronze.svg`<br>`足.oracle.svg`<br>`足.seal.svg` |
+| 败 | oracle:Y bronze:Y seal:Y | `败.bronze.svg`<br>`败.oracle.svg`<br>`败.seal.svg` |
+| 成 | oracle:Y bronze:Y seal:Y | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
+| 谍 | oracle:- bronze:- seal:Y | `谍.seal.svg` |
+| 盾 | oracle:Y bronze:Y seal:Y | `盾.bronze.svg`<br>`盾.oracle.svg`<br>`盾.seal.svg` |
+| 功 | oracle:- bronze:Y seal:Y | `功.bronze.svg`<br>`功.seal.svg` |
+| 果 | oracle:- bronze:Y seal:Y | `果.bronze.svg`<br>`果.seal.svg` |
+| 和 | oracle:- bronze:Y seal:Y | `和.bronze.svg`<br>`和.seal.svg` |
+| 毁 | oracle:- bronze:Y seal:Y | `毁.bronze.svg`<br>`毁.seal.svg` |
+| 获 | oracle:Y bronze:Y seal:Y | `获.bronze.svg`<br>`获.oracle.svg`<br>`获.seal.svg` |
+| 击 | oracle:- bronze:- seal:Y | `击.seal.svg` |
+| 级 | oracle:- bronze:- seal:Y | `级.seal.svg` |
+| 间 | oracle:- bronze:Y seal:Y | `间.bronze.svg`<br>`间.seal.svg` |
+| 降 | oracle:Y bronze:Y seal:Y | `降.bronze.svg`<br>`降.oracle.svg`<br>`降.seal.svg` |
+| 结 | oracle:- bronze:- seal:Y | `结.seal.svg` |
+| 戎 | oracle:Y bronze:Y seal:Y | `戎.bronze.svg`<br>`戎.oracle.svg`<br>`戎.seal.svg` |
+| 升 | oracle:Y bronze:Y seal:Y | `升.bronze.svg`<br>`升.oracle.svg`<br>`升.seal.svg` |
+| 失 | oracle:- bronze:Y seal:Y | `失.bronze.svg`<br>`失.seal.svg` |
+| 提 | oracle:- bronze:- seal:Y | `提.seal.svg` |
+| 医 | oracle:- bronze:- seal:Y | `医.seal.svg` |
+| 造 | oracle:- bronze:Y seal:Y | `造.bronze.svg`<br>`造.seal.svg` |
+| 止 | oracle:Y bronze:Y seal:Y | `止.bronze.svg`<br>`止.oracle.svg`<br>`止.seal.svg` |
+| 抓 | oracle:- bronze:- seal:Y | `抓.seal.svg` |
+| 踪 | oracle:- bronze:Y seal:Y | `踪.bronze.svg`<br>`踪.seal.svg` |
+| 足 | oracle:Y bronze:Y seal:Y | `足.bronze.svg`<br>`足.oracle.svg`<br>`足.seal.svg` |
 
 ## teams
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 标 | oracle:- bronze:- seal:Y legacy:- | `标.seal.svg` |
-| 带 | oracle:Y bronze:Y seal:Y legacy:- | `带.bronze.svg`<br>`带.oracle.svg`<br>`带.seal.svg` |
-| 队 | oracle:Y bronze:Y seal:Y legacy:- | `队.bronze.svg`<br>`队.oracle.svg`<br>`队.seal.svg` |
-| 丝 | oracle:Y bronze:Y seal:Y legacy:- | `丝.bronze.svg`<br>`丝.oracle.svg`<br>`丝.seal.svg` |
-| 图 | oracle:- bronze:Y seal:Y legacy:- | `图.bronze.svg`<br>`图.seal.svg` |
-| 团 | oracle:- bronze:Y seal:Y legacy:- | `团.bronze.svg`<br>`团.seal.svg` |
+| 标 | oracle:- bronze:- seal:Y | `标.seal.svg` |
+| 带 | oracle:Y bronze:Y seal:Y | `带.bronze.svg`<br>`带.oracle.svg`<br>`带.seal.svg` |
+| 队 | oracle:Y bronze:Y seal:Y | `队.bronze.svg`<br>`队.oracle.svg`<br>`队.seal.svg` |
+| 丝 | oracle:Y bronze:Y seal:Y | `丝.bronze.svg`<br>`丝.oracle.svg`<br>`丝.seal.svg` |
+| 图 | oracle:- bronze:Y seal:Y | `图.bronze.svg`<br>`图.seal.svg` |
+| 团 | oracle:- bronze:Y seal:Y | `团.bronze.svg`<br>`团.seal.svg` |
 
 ## technologies
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 班 | oracle:- bronze:Y seal:Y legacy:- | `班.bronze.svg`<br>`班.seal.svg` |
-| 搬 | oracle:- bronze:- seal:Y legacy:- | `搬.seal.svg` |
-| 堡 | oracle:Y bronze:Y seal:Y legacy:- | `堡.bronze.svg`<br>`堡.oracle.svg`<br>`堡.seal.svg` |
-| 币 | oracle:- bronze:- seal:Y legacy:- | `币.seal.svg` |
-| 变 | oracle:- bronze:Y seal:Y legacy:- | `变.bronze.svg`<br>`变.seal.svg` |
-| 兵 | oracle:Y bronze:Y seal:Y legacy:- | `兵.bronze.svg`<br>`兵.oracle.svg`<br>`兵.seal.svg` |
-| 材 | oracle:- bronze:- seal:Y legacy:- | `材.seal.svg` |
-| 测 | oracle:- bronze:Y seal:Y legacy:- | `测.bronze.svg`<br>`测.seal.svg` |
-| 产 | oracle:- bronze:Y seal:Y legacy:- | `产.bronze.svg`<br>`产.seal.svg` |
-| 场 | oracle:- bronze:- seal:Y legacy:- | `场.seal.svg` |
-| 成 | oracle:Y bronze:Y seal:Y legacy:- | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
-| 城 | oracle:- bronze:Y seal:Y legacy:- | `城.bronze.svg`<br>`城.seal.svg` |
-| 程 | oracle:- bronze:Y seal:Y legacy:- | `程.bronze.svg`<br>`程.seal.svg` |
-| 池 | oracle:- bronze:Y seal:- legacy:- | `池.bronze.svg` |
-| 持 | oracle:- bronze:Y seal:Y legacy:- | `持.bronze.svg`<br>`持.seal.svg` |
-| 畜 | oracle:Y bronze:Y seal:Y legacy:- | `畜.bronze.svg`<br>`畜.oracle.svg`<br>`畜.seal.svg` |
-| 船 | oracle:- bronze:Y seal:Y legacy:- | `船.bronze.svg`<br>`船.seal.svg` |
-| 大 | oracle:Y bronze:Y seal:Y legacy:- | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
-| 弹 | oracle:Y bronze:- seal:Y legacy:- | `弹.oracle.svg`<br>`弹.seal.svg` |
-| 导 | oracle:- bronze:- seal:Y legacy:- | `导.seal.svg` |
-| 道 | oracle:- bronze:Y seal:Y legacy:- | `道.bronze.svg`<br>`道.seal.svg` |
-| 德 | oracle:Y bronze:Y seal:Y legacy:- | `德.bronze.svg`<br>`德.oracle.svg`<br>`德.seal.svg` |
-| 镫 | oracle:- bronze:- seal:Y legacy:- | `镫.seal.svg` |
-| 电 | oracle:- bronze:Y seal:Y legacy:- | `电.bronze.svg`<br>`电.seal.svg` |
-| 钓 | oracle:- bronze:Y seal:Y legacy:- | `钓.bronze.svg`<br>`钓.seal.svg` |
-| 动 | oracle:- bronze:Y seal:Y legacy:- | `动.bronze.svg`<br>`动.seal.svg` |
-| 队 | oracle:Y bronze:Y seal:Y legacy:- | `队.bronze.svg`<br>`队.oracle.svg`<br>`队.seal.svg` |
-| 盾 | oracle:Y bronze:Y seal:Y legacy:- | `盾.bronze.svg`<br>`盾.oracle.svg`<br>`盾.seal.svg` |
-| 尔 | oracle:- bronze:Y seal:Y legacy:- | `尔.bronze.svg`<br>`尔.seal.svg` |
-| 发 | oracle:Y bronze:Y seal:Y legacy:- | `发.bronze.svg`<br>`发.oracle.svg`<br>`发.seal.svg` |
-| 方 | oracle:Y bronze:Y seal:Y legacy:- | `方.bronze.svg`<br>`方.oracle.svg`<br>`方.seal.svg` |
-| 防 | oracle:- bronze:- seal:Y legacy:- | `防.seal.svg` |
-| 飞 | oracle:- bronze:- seal:Y legacy:- | `飞.seal.svg` |
-| 复 | oracle:Y bronze:Y seal:Y legacy:- | `复.bronze.svg`<br>`复.oracle.svg`<br>`复.seal.svg` |
-| 溉 | oracle:- bronze:Y seal:Y legacy:- | `溉.bronze.svg`<br>`溉.seal.svg` |
-| 钢 | oracle:Y bronze:Y seal:Y legacy:- | `钢.bronze.svg`<br>`钢.oracle.svg`<br>`钢.seal.svg` |
-| 高 | oracle:Y bronze:Y seal:Y legacy:- | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
-| 更 | oracle:Y bronze:Y seal:Y legacy:- | `更.bronze.svg`<br>`更.oracle.svg`<br>`更.seal.svg` |
-| 工 | oracle:Y bronze:Y seal:Y legacy:- | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
-| 攻 | oracle:- bronze:Y seal:Y legacy:- | `攻.bronze.svg`<br>`攻.seal.svg` |
-| 灌 | oracle:- bronze:- seal:Y legacy:- | `灌.seal.svg` |
-| 光 | oracle:Y bronze:Y seal:Y legacy:- | `光.bronze.svg`<br>`光.oracle.svg`<br>`光.seal.svg` |
-| 海 | oracle:- bronze:Y seal:Y legacy:- | `海.bronze.svg`<br>`海.seal.svg` |
-| 航 | oracle:- bronze:- seal:Y legacy:- | `航.seal.svg` |
-| 合 | oracle:Y bronze:Y seal:Y legacy:- | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
-| 核 | oracle:- bronze:- seal:Y legacy:- | `核.seal.svg` |
-| 黑 | oracle:Y bronze:Y seal:Y legacy:- | `黑.bronze.svg`<br>`黑.oracle.svg`<br>`黑.seal.svg` |
-| 化 | oracle:Y bronze:Y seal:Y legacy:- | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
-| 换 | oracle:- bronze:- seal:Y legacy:- | `换.seal.svg` |
-| 火 | oracle:Y bronze:- seal:Y legacy:- | `火.oracle.svg`<br>`火.seal.svg` |
-| 货 | oracle:- bronze:- seal:Y legacy:- | `货.seal.svg` |
-| 霍 | oracle:Y bronze:Y seal:Y legacy:- | `霍.bronze.svg`<br>`霍.oracle.svg`<br>`霍.seal.svg` |
-| 机 | oracle:- bronze:- seal:Y legacy:- | `机.seal.svg` |
-| 激 | oracle:- bronze:- seal:Y legacy:- | `激.seal.svg` |
-| 级 | oracle:- bronze:- seal:Y legacy:- | `级.seal.svg` |
-| 集 | oracle:Y bronze:Y seal:Y legacy:- | `集.bronze.svg`<br>`集.oracle.svg`<br>`集.seal.svg` |
-| 纪 | oracle:- bronze:Y seal:Y legacy:- | `纪.bronze.svg`<br>`纪.seal.svg` |
-| 技 | oracle:- bronze:- seal:Y legacy:- | `技.seal.svg` |
-| 济 | oracle:- bronze:Y seal:Y legacy:- | `济.bronze.svg`<br>`济.seal.svg` |
-| 加 | oracle:- bronze:Y seal:Y legacy:- | `加.bronze.svg`<br>`加.seal.svg` |
-| 件 | oracle:- bronze:- seal:Y legacy:- | `件.seal.svg` |
-| 建 | oracle:Y bronze:Y seal:Y legacy:- | `建.bronze.svg`<br>`建.oracle.svg`<br>`建.seal.svg` |
-| 箭 | oracle:- bronze:Y seal:Y legacy:- | `箭.bronze.svg`<br>`箭.seal.svg` |
-| 教 | oracle:Y bronze:Y seal:Y legacy:- | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
-| 解 | oracle:Y bronze:Y seal:Y legacy:- | `解.bronze.svg`<br>`解.oracle.svg`<br>`解.seal.svg` |
-| 金 | oracle:- bronze:Y seal:Y legacy:- | `金.bronze.svg`<br>`金.seal.svg` |
-| 进 | oracle:Y bronze:Y seal:Y legacy:- | `进.bronze.svg`<br>`进.oracle.svg`<br>`进.seal.svg` |
-| 京 | oracle:Y bronze:Y seal:Y legacy:- | `京.bronze.svg`<br>`京.oracle.svg`<br>`京.seal.svg` |
-| 经 | oracle:- bronze:Y seal:Y legacy:- | `经.bronze.svg`<br>`经.seal.svg` |
-| 精 | oracle:- bronze:- seal:Y legacy:- | `精.seal.svg` |
-| 景 | oracle:- bronze:- seal:Y legacy:- | `景.seal.svg` |
-| 具 | oracle:Y bronze:Y seal:Y legacy:- | `具.bronze.svg`<br>`具.oracle.svg`<br>`具.seal.svg` |
-| 聚 | oracle:- bronze:- seal:Y legacy:- | `聚.seal.svg` |
-| 军 | oracle:- bronze:Y seal:Y legacy:- | `军.bronze.svg`<br>`军.seal.svg` |
-| 科 | oracle:- bronze:- seal:Y legacy:- | `科.seal.svg` |
-| 客 | oracle:- bronze:Y seal:Y legacy:- | `客.bronze.svg`<br>`客.seal.svg` |
-| 控 | oracle:- bronze:- seal:Y legacy:- | `控.seal.svg` |
-| 矿 | oracle:- bronze:- seal:Y legacy:- | `矿.seal.svg` |
-| 扩 | oracle:- bronze:- seal:Y legacy:- | `扩.seal.svg` |
-| 来 | oracle:Y bronze:Y seal:Y legacy:- | `来.bronze.svg`<br>`来.oracle.svg`<br>`来.seal.svg` |
-| 黎 | oracle:- bronze:- seal:Y legacy:- | `黎.seal.svg` |
-| 理 | oracle:- bronze:Y seal:Y legacy:- | `理.bronze.svg`<br>`理.seal.svg` |
-| 力 | oracle:Y bronze:Y seal:Y legacy:- | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
-| 联 | oracle:Y bronze:Y seal:Y legacy:- | `联.bronze.svg`<br>`联.oracle.svg`<br>`联.seal.svg` |
-| 量 | oracle:Y bronze:Y seal:Y legacy:- | `量.bronze.svg`<br>`量.oracle.svg`<br>`量.seal.svg` |
-| 料 | oracle:- bronze:Y seal:Y legacy:- | `料.bronze.svg`<br>`料.seal.svg` |
-| 裂 | oracle:- bronze:- seal:Y legacy:- | `裂.seal.svg` |
-| 零 | oracle:- bronze:- seal:Y legacy:- | `零.seal.svg` |
-| 令 | oracle:Y bronze:Y seal:Y legacy:- | `令.bronze.svg`<br>`令.oracle.svg`<br>`令.seal.svg` |
-| 露 | oracle:- bronze:- seal:Y legacy:- | `露.seal.svg` |
-| 轮 | oracle:- bronze:Y seal:Y legacy:- | `轮.bronze.svg`<br>`轮.seal.svg` |
-| 论 | oracle:- bronze:Y seal:Y legacy:- | `论.bronze.svg`<br>`论.seal.svg` |
-| 马 | oracle:Y bronze:Y seal:Y legacy:- | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
-| 矛 | oracle:- bronze:Y seal:Y legacy:- | `矛.bronze.svg`<br>`矛.seal.svg` |
-| 米 | oracle:Y bronze:- seal:Y legacy:- | `米.oracle.svg`<br>`米.seal.svg` |
-| 明 | oracle:Y bronze:Y seal:Y legacy:- | `明.bronze.svg`<br>`明.oracle.svg`<br>`明.seal.svg` |
-| 命 | oracle:Y bronze:Y seal:Y legacy:- | `命.bronze.svg`<br>`命.oracle.svg`<br>`命.seal.svg` |
-| 木 | oracle:Y bronze:Y seal:Y legacy:- | `木.bronze.svg`<br>`木.oracle.svg`<br>`木.seal.svg` |
-| 牧 | oracle:Y bronze:Y seal:Y legacy:- | `牧.bronze.svg`<br>`牧.oracle.svg`<br>`牧.seal.svg` |
-| 墓 | oracle:- bronze:- seal:Y legacy:- | `墓.seal.svg` |
-| 纳 | oracle:- bronze:Y seal:Y legacy:- | `纳.bronze.svg`<br>`纳.seal.svg` |
-| 脑 | oracle:- bronze:- seal:Y legacy:- | `脑.seal.svg` |
-| 能 | oracle:- bronze:Y seal:Y legacy:- | `能.bronze.svg`<br>`能.seal.svg` |
-| 炮 | oracle:- bronze:- seal:Y legacy:- | `炮.seal.svg` |
-| 批 | oracle:- bronze:Y seal:Y legacy:- | `批.bronze.svg`<br>`批.seal.svg` |
-| 品 | oracle:Y bronze:Y seal:Y legacy:- | `品.bronze.svg`<br>`品.oracle.svg`<br>`品.seal.svg` |
-| 骑 | oracle:- bronze:Y seal:Y legacy:- | `骑.bronze.svg`<br>`骑.seal.svg` |
-| 汽 | oracle:- bronze:- seal:Y legacy:- | `汽.seal.svg` |
-| 器 | oracle:- bronze:Y seal:Y legacy:- | `器.bronze.svg`<br>`器.seal.svg` |
-| 墙 | oracle:Y bronze:Y seal:Y legacy:- | `墙.bronze.svg`<br>`墙.oracle.svg`<br>`墙.seal.svg` |
-| 勤 | oracle:- bronze:Y seal:Y legacy:- | `勤.bronze.svg`<br>`勤.seal.svg` |
-| 青 | oracle:- bronze:Y seal:Y legacy:- | `青.bronze.svg`<br>`青.seal.svg` |
-| 燃 | oracle:- bronze:Y seal:Y legacy:- | `燃.bronze.svg`<br>`燃.seal.svg` |
-| 人 | oracle:Y bronze:Y seal:Y legacy:- | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
-| 任 | oracle:Y bronze:Y seal:Y legacy:- | `任.bronze.svg`<br>`任.oracle.svg`<br>`任.seal.svg` |
-| 烧 | oracle:- bronze:- seal:Y legacy:- | `烧.seal.svg` |
-| 射 | oracle:Y bronze:Y seal:Y legacy:- | `射.bronze.svg`<br>`射.oracle.svg`<br>`射.seal.svg` |
-| 生 | oracle:Y bronze:Y seal:Y legacy:- | `生.bronze.svg`<br>`生.oracle.svg`<br>`生.seal.svg` |
-| 石 | oracle:Y bronze:Y seal:Y legacy:- | `石.bronze.svg`<br>`石.oracle.svg`<br>`石.seal.svg` |
-| 世 | oracle:- bronze:Y seal:Y legacy:- | `世.bronze.svg`<br>`世.seal.svg` |
-| 市 | oracle:Y bronze:Y seal:Y legacy:- | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
-| 事 | oracle:Y bronze:Y seal:Y legacy:- | `事.bronze.svg`<br>`事.oracle.svg`<br>`事.seal.svg` |
-| 收 | oracle:- bronze:- seal:Y legacy:- | `收.seal.svg` |
-| 属 | oracle:- bronze:Y seal:Y legacy:- | `属.bronze.svg`<br>`属.seal.svg` |
-| 术 | oracle:Y bronze:- seal:Y legacy:- | `术.oracle.svg`<br>`术.seal.svg` |
-| 数 | oracle:- bronze:Y seal:Y legacy:- | `数.bronze.svg`<br>`数.seal.svg` |
-| 刷 | oracle:- bronze:- seal:Y legacy:- | `刷.seal.svg` |
-| 斯 | oracle:- bronze:Y seal:Y legacy:- | `斯.bronze.svg`<br>`斯.seal.svg` |
-| 塑 | oracle:Y bronze:Y seal:Y legacy:- | `塑.bronze.svg`<br>`塑.oracle.svg`<br>`塑.seal.svg` |
-| 索 | oracle:Y bronze:Y seal:Y legacy:- | `索.bronze.svg`<br>`索.oracle.svg`<br>`索.seal.svg` |
-| 锁 | oracle:- bronze:- seal:Y legacy:- | `锁.seal.svg` |
-| 膛 | oracle:- bronze:Y seal:Y legacy:- | `膛.bronze.svg`<br>`膛.seal.svg` |
-| 陶 | oracle:- bronze:Y seal:Y legacy:- | `陶.bronze.svg`<br>`陶.seal.svg` |
-| 特 | oracle:- bronze:- seal:Y legacy:- | `特.seal.svg` |
-| 天 | oracle:Y bronze:Y seal:Y legacy:- | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
-| 铁 | oracle:- bronze:- seal:Y legacy:- | `铁.seal.svg` |
-| 铜 | oracle:- bronze:Y seal:Y legacy:- | `铜.bronze.svg`<br>`铜.seal.svg` |
-| 统 | oracle:- bronze:- seal:Y legacy:- | `统.seal.svg` |
-| 透 | oracle:- bronze:- seal:Y legacy:- | `透.seal.svg` |
-| 图 | oracle:- bronze:Y seal:Y legacy:- | `图.bronze.svg`<br>`图.seal.svg` |
-| 徒 | oracle:Y bronze:Y seal:Y legacy:- | `徒.bronze.svg`<br>`徒.oracle.svg`<br>`徒.seal.svg` |
-| 土 | oracle:Y bronze:Y seal:Y legacy:- | `土.bronze.svg`<br>`土.oracle.svg`<br>`土.seal.svg` |
-| 维 | oracle:- bronze:Y seal:Y legacy:- | `维.bronze.svg`<br>`维.seal.svg` |
-| 伟 | oracle:- bronze:- seal:Y legacy:- | `伟.seal.svg` |
-| 卫 | oracle:Y bronze:Y seal:Y legacy:- | `卫.bronze.svg`<br>`卫.oracle.svg`<br>`卫.seal.svg` |
-| 未 | oracle:Y bronze:Y seal:Y legacy:- | `未.bronze.svg`<br>`未.oracle.svg`<br>`未.seal.svg` |
-| 文 | oracle:Y bronze:Y seal:Y legacy:- | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
-| 务 | oracle:- bronze:Y seal:Y legacy:- | `务.bronze.svg`<br>`务.seal.svg` |
-| 系 | oracle:Y bronze:- seal:Y legacy:- | `系.oracle.svg`<br>`系.seal.svg` |
-| 先 | oracle:Y bronze:Y seal:Y legacy:- | `先.bronze.svg`<br>`先.oracle.svg`<br>`先.seal.svg` |
-| 线 | oracle:- bronze:- seal:Y legacy:- | `线.seal.svg` |
-| 写 | oracle:- bronze:- seal:Y legacy:- | `写.seal.svg` |
-| 械 | oracle:- bronze:- seal:Y legacy:- | `械.seal.svg` |
-| 信 | oracle:- bronze:Y seal:Y legacy:- | `信.bronze.svg`<br>`信.seal.svg` |
-| 星 | oracle:Y bronze:Y seal:Y legacy:- | `星.bronze.svg`<br>`星.oracle.svg`<br>`星.seal.svg` |
-| 行 | oracle:Y bronze:Y seal:Y legacy:- | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
-| 形 | oracle:- bronze:- seal:Y legacy:- | `形.seal.svg` |
-| 学 | oracle:Y bronze:Y seal:Y legacy:- | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
-| 药 | oracle:- bronze:Y seal:Y legacy:- | `药.bronze.svg`<br>`药.seal.svg` |
-| 业 | oracle:- bronze:Y seal:Y legacy:- | `业.bronze.svg`<br>`业.seal.svg` |
-| 异 | oracle:- bronze:- seal:Y legacy:- | `异.seal.svg` |
-| 音 | oracle:- bronze:Y seal:Y legacy:- | `音.bronze.svg`<br>`音.seal.svg` |
-| 银 | oracle:- bronze:- seal:Y legacy:- | `银.seal.svg` |
-| 隐 | oracle:- bronze:- seal:Y legacy:- | `隐.seal.svg` |
-| 印 | oracle:Y bronze:Y seal:Y legacy:- | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
-| 鱼 | oracle:Y bronze:Y seal:Y legacy:- | `鱼.bronze.svg`<br>`鱼.oracle.svg`<br>`鱼.seal.svg` |
-| 育 | oracle:Y bronze:Y seal:Y legacy:- | `育.bronze.svg`<br>`育.oracle.svg`<br>`育.seal.svg` |
-| 预 | oracle:- bronze:- seal:Y legacy:- | `预.seal.svg` |
-| 御 | oracle:Y bronze:Y seal:Y legacy:- | `御.bronze.svg`<br>`御.oracle.svg`<br>`御.seal.svg` |
-| 运 | oracle:- bronze:- seal:Y legacy:- | `运.seal.svg` |
-| 葬 | oracle:Y bronze:Y seal:Y legacy:- | `葬.bronze.svg`<br>`葬.oracle.svg`<br>`葬.seal.svg` |
-| 造 | oracle:- bronze:Y seal:Y legacy:- | `造.bronze.svg`<br>`造.seal.svg` |
-| 展 | oracle:- bronze:- seal:Y legacy:- | `展.seal.svg` |
-| 占 | oracle:Y bronze:- seal:Y legacy:- | `占.oracle.svg`<br>`占.seal.svg` |
-| 战 | oracle:- bronze:Y seal:Y legacy:- | `战.bronze.svg`<br>`战.seal.svg` |
-| 长 | oracle:Y bronze:Y seal:Y legacy:- | `长.bronze.svg`<br>`长.oracle.svg`<br>`长.seal.svg` |
-| 蒸 | oracle:- bronze:- seal:Y legacy:- | `蒸.seal.svg` |
-| 支 | oracle:- bronze:- seal:Y legacy:- | `支.seal.svg` |
-| 制 | oracle:- bronze:Y seal:Y legacy:- | `制.bronze.svg`<br>`制.seal.svg` |
-| 智 | oracle:Y bronze:Y seal:Y legacy:- | `智.bronze.svg`<br>`智.oracle.svg`<br>`智.seal.svg` |
-| 重 | oracle:Y bronze:Y seal:Y legacy:- | `重.bronze.svg`<br>`重.oracle.svg`<br>`重.seal.svg` |
-| 筑 | oracle:- bronze:- seal:Y legacy:- | `筑.seal.svg` |
-| 铸 | oracle:Y bronze:Y seal:Y legacy:- | `铸.bronze.svg`<br>`铸.oracle.svg`<br>`铸.seal.svg` |
-| 子 | oracle:Y bronze:Y seal:Y legacy:- | `子.bronze.svg`<br>`子.oracle.svg`<br>`子.seal.svg` |
-| 作 | oracle:Y bronze:Y seal:Y legacy:- | `作.bronze.svg`<br>`作.oracle.svg`<br>`作.seal.svg` |
+| 班 | oracle:- bronze:Y seal:Y | `班.bronze.svg`<br>`班.seal.svg` |
+| 搬 | oracle:- bronze:- seal:Y | `搬.seal.svg` |
+| 堡 | oracle:Y bronze:Y seal:Y | `堡.bronze.svg`<br>`堡.oracle.svg`<br>`堡.seal.svg` |
+| 币 | oracle:- bronze:- seal:Y | `币.seal.svg` |
+| 变 | oracle:- bronze:Y seal:Y | `变.bronze.svg`<br>`变.seal.svg` |
+| 兵 | oracle:Y bronze:Y seal:Y | `兵.bronze.svg`<br>`兵.oracle.svg`<br>`兵.seal.svg` |
+| 材 | oracle:- bronze:- seal:Y | `材.seal.svg` |
+| 测 | oracle:- bronze:Y seal:Y | `测.bronze.svg`<br>`测.seal.svg` |
+| 产 | oracle:- bronze:Y seal:Y | `产.bronze.svg`<br>`产.seal.svg` |
+| 场 | oracle:- bronze:- seal:Y | `场.seal.svg` |
+| 成 | oracle:Y bronze:Y seal:Y | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
+| 城 | oracle:- bronze:Y seal:Y | `城.bronze.svg`<br>`城.seal.svg` |
+| 程 | oracle:- bronze:Y seal:Y | `程.bronze.svg`<br>`程.seal.svg` |
+| 池 | oracle:- bronze:Y seal:- | `池.bronze.svg` |
+| 持 | oracle:- bronze:Y seal:Y | `持.bronze.svg`<br>`持.seal.svg` |
+| 畜 | oracle:Y bronze:Y seal:Y | `畜.bronze.svg`<br>`畜.oracle.svg`<br>`畜.seal.svg` |
+| 船 | oracle:- bronze:Y seal:Y | `船.bronze.svg`<br>`船.seal.svg` |
+| 大 | oracle:Y bronze:Y seal:Y | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
+| 弹 | oracle:Y bronze:- seal:Y | `弹.oracle.svg`<br>`弹.seal.svg` |
+| 导 | oracle:- bronze:- seal:Y | `导.seal.svg` |
+| 道 | oracle:- bronze:Y seal:Y | `道.bronze.svg`<br>`道.seal.svg` |
+| 德 | oracle:Y bronze:Y seal:Y | `德.bronze.svg`<br>`德.oracle.svg`<br>`德.seal.svg` |
+| 镫 | oracle:- bronze:- seal:Y | `镫.seal.svg` |
+| 电 | oracle:- bronze:Y seal:Y | `电.bronze.svg`<br>`电.seal.svg` |
+| 钓 | oracle:- bronze:Y seal:Y | `钓.bronze.svg`<br>`钓.seal.svg` |
+| 动 | oracle:- bronze:Y seal:Y | `动.bronze.svg`<br>`动.seal.svg` |
+| 队 | oracle:Y bronze:Y seal:Y | `队.bronze.svg`<br>`队.oracle.svg`<br>`队.seal.svg` |
+| 盾 | oracle:Y bronze:Y seal:Y | `盾.bronze.svg`<br>`盾.oracle.svg`<br>`盾.seal.svg` |
+| 尔 | oracle:- bronze:Y seal:Y | `尔.bronze.svg`<br>`尔.seal.svg` |
+| 发 | oracle:Y bronze:Y seal:Y | `发.bronze.svg`<br>`发.oracle.svg`<br>`发.seal.svg` |
+| 方 | oracle:Y bronze:Y seal:Y | `方.bronze.svg`<br>`方.oracle.svg`<br>`方.seal.svg` |
+| 防 | oracle:- bronze:- seal:Y | `防.seal.svg` |
+| 飞 | oracle:- bronze:- seal:Y | `飞.seal.svg` |
+| 复 | oracle:Y bronze:Y seal:Y | `复.bronze.svg`<br>`复.oracle.svg`<br>`复.seal.svg` |
+| 溉 | oracle:- bronze:Y seal:Y | `溉.bronze.svg`<br>`溉.seal.svg` |
+| 钢 | oracle:Y bronze:Y seal:Y | `钢.bronze.svg`<br>`钢.oracle.svg`<br>`钢.seal.svg` |
+| 高 | oracle:Y bronze:Y seal:Y | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
+| 更 | oracle:Y bronze:Y seal:Y | `更.bronze.svg`<br>`更.oracle.svg`<br>`更.seal.svg` |
+| 工 | oracle:Y bronze:Y seal:Y | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
+| 攻 | oracle:- bronze:Y seal:Y | `攻.bronze.svg`<br>`攻.seal.svg` |
+| 灌 | oracle:- bronze:- seal:Y | `灌.seal.svg` |
+| 光 | oracle:Y bronze:Y seal:Y | `光.bronze.svg`<br>`光.oracle.svg`<br>`光.seal.svg` |
+| 海 | oracle:- bronze:Y seal:Y | `海.bronze.svg`<br>`海.seal.svg` |
+| 航 | oracle:- bronze:- seal:Y | `航.seal.svg` |
+| 合 | oracle:Y bronze:Y seal:Y | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
+| 核 | oracle:- bronze:- seal:Y | `核.seal.svg` |
+| 黑 | oracle:Y bronze:Y seal:Y | `黑.bronze.svg`<br>`黑.oracle.svg`<br>`黑.seal.svg` |
+| 化 | oracle:Y bronze:Y seal:Y | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
+| 换 | oracle:- bronze:- seal:Y | `换.seal.svg` |
+| 火 | oracle:Y bronze:- seal:Y | `火.oracle.svg`<br>`火.seal.svg` |
+| 货 | oracle:- bronze:- seal:Y | `货.seal.svg` |
+| 霍 | oracle:Y bronze:Y seal:Y | `霍.bronze.svg`<br>`霍.oracle.svg`<br>`霍.seal.svg` |
+| 机 | oracle:- bronze:- seal:Y | `机.seal.svg` |
+| 激 | oracle:- bronze:- seal:Y | `激.seal.svg` |
+| 级 | oracle:- bronze:- seal:Y | `级.seal.svg` |
+| 集 | oracle:Y bronze:Y seal:Y | `集.bronze.svg`<br>`集.oracle.svg`<br>`集.seal.svg` |
+| 纪 | oracle:- bronze:Y seal:Y | `纪.bronze.svg`<br>`纪.seal.svg` |
+| 技 | oracle:- bronze:- seal:Y | `技.seal.svg` |
+| 济 | oracle:- bronze:Y seal:Y | `济.bronze.svg`<br>`济.seal.svg` |
+| 加 | oracle:- bronze:Y seal:Y | `加.bronze.svg`<br>`加.seal.svg` |
+| 件 | oracle:- bronze:- seal:Y | `件.seal.svg` |
+| 建 | oracle:Y bronze:Y seal:Y | `建.bronze.svg`<br>`建.oracle.svg`<br>`建.seal.svg` |
+| 箭 | oracle:- bronze:Y seal:Y | `箭.bronze.svg`<br>`箭.seal.svg` |
+| 教 | oracle:Y bronze:Y seal:Y | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
+| 解 | oracle:Y bronze:Y seal:Y | `解.bronze.svg`<br>`解.oracle.svg`<br>`解.seal.svg` |
+| 金 | oracle:- bronze:Y seal:Y | `金.bronze.svg`<br>`金.seal.svg` |
+| 进 | oracle:Y bronze:Y seal:Y | `进.bronze.svg`<br>`进.oracle.svg`<br>`进.seal.svg` |
+| 京 | oracle:Y bronze:Y seal:Y | `京.bronze.svg`<br>`京.oracle.svg`<br>`京.seal.svg` |
+| 经 | oracle:- bronze:Y seal:Y | `经.bronze.svg`<br>`经.seal.svg` |
+| 精 | oracle:- bronze:- seal:Y | `精.seal.svg` |
+| 景 | oracle:- bronze:- seal:Y | `景.seal.svg` |
+| 具 | oracle:Y bronze:Y seal:Y | `具.bronze.svg`<br>`具.oracle.svg`<br>`具.seal.svg` |
+| 聚 | oracle:- bronze:- seal:Y | `聚.seal.svg` |
+| 军 | oracle:- bronze:Y seal:Y | `军.bronze.svg`<br>`军.seal.svg` |
+| 科 | oracle:- bronze:- seal:Y | `科.seal.svg` |
+| 客 | oracle:- bronze:Y seal:Y | `客.bronze.svg`<br>`客.seal.svg` |
+| 控 | oracle:- bronze:- seal:Y | `控.seal.svg` |
+| 矿 | oracle:- bronze:- seal:Y | `矿.seal.svg` |
+| 扩 | oracle:- bronze:- seal:Y | `扩.seal.svg` |
+| 来 | oracle:Y bronze:Y seal:Y | `来.bronze.svg`<br>`来.oracle.svg`<br>`来.seal.svg` |
+| 黎 | oracle:- bronze:- seal:Y | `黎.seal.svg` |
+| 理 | oracle:- bronze:Y seal:Y | `理.bronze.svg`<br>`理.seal.svg` |
+| 力 | oracle:Y bronze:Y seal:Y | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
+| 联 | oracle:Y bronze:Y seal:Y | `联.bronze.svg`<br>`联.oracle.svg`<br>`联.seal.svg` |
+| 量 | oracle:Y bronze:Y seal:Y | `量.bronze.svg`<br>`量.oracle.svg`<br>`量.seal.svg` |
+| 料 | oracle:- bronze:Y seal:Y | `料.bronze.svg`<br>`料.seal.svg` |
+| 裂 | oracle:- bronze:- seal:Y | `裂.seal.svg` |
+| 零 | oracle:- bronze:- seal:Y | `零.seal.svg` |
+| 令 | oracle:Y bronze:Y seal:Y | `令.bronze.svg`<br>`令.oracle.svg`<br>`令.seal.svg` |
+| 露 | oracle:- bronze:- seal:Y | `露.seal.svg` |
+| 轮 | oracle:- bronze:Y seal:Y | `轮.bronze.svg`<br>`轮.seal.svg` |
+| 论 | oracle:- bronze:Y seal:Y | `论.bronze.svg`<br>`论.seal.svg` |
+| 马 | oracle:Y bronze:Y seal:Y | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
+| 矛 | oracle:- bronze:Y seal:Y | `矛.bronze.svg`<br>`矛.seal.svg` |
+| 米 | oracle:Y bronze:- seal:Y | `米.oracle.svg`<br>`米.seal.svg` |
+| 明 | oracle:Y bronze:Y seal:Y | `明.bronze.svg`<br>`明.oracle.svg`<br>`明.seal.svg` |
+| 命 | oracle:Y bronze:Y seal:Y | `命.bronze.svg`<br>`命.oracle.svg`<br>`命.seal.svg` |
+| 木 | oracle:Y bronze:Y seal:Y | `木.bronze.svg`<br>`木.oracle.svg`<br>`木.seal.svg` |
+| 牧 | oracle:Y bronze:Y seal:Y | `牧.bronze.svg`<br>`牧.oracle.svg`<br>`牧.seal.svg` |
+| 墓 | oracle:- bronze:- seal:Y | `墓.seal.svg` |
+| 纳 | oracle:- bronze:Y seal:Y | `纳.bronze.svg`<br>`纳.seal.svg` |
+| 脑 | oracle:- bronze:- seal:Y | `脑.seal.svg` |
+| 能 | oracle:- bronze:Y seal:Y | `能.bronze.svg`<br>`能.seal.svg` |
+| 炮 | oracle:- bronze:- seal:Y | `炮.seal.svg` |
+| 批 | oracle:- bronze:Y seal:Y | `批.bronze.svg`<br>`批.seal.svg` |
+| 品 | oracle:Y bronze:Y seal:Y | `品.bronze.svg`<br>`品.oracle.svg`<br>`品.seal.svg` |
+| 骑 | oracle:- bronze:Y seal:Y | `骑.bronze.svg`<br>`骑.seal.svg` |
+| 汽 | oracle:- bronze:- seal:Y | `汽.seal.svg` |
+| 器 | oracle:- bronze:Y seal:Y | `器.bronze.svg`<br>`器.seal.svg` |
+| 墙 | oracle:Y bronze:Y seal:Y | `墙.bronze.svg`<br>`墙.oracle.svg`<br>`墙.seal.svg` |
+| 勤 | oracle:- bronze:Y seal:Y | `勤.bronze.svg`<br>`勤.seal.svg` |
+| 青 | oracle:- bronze:Y seal:Y | `青.bronze.svg`<br>`青.seal.svg` |
+| 燃 | oracle:- bronze:Y seal:Y | `燃.bronze.svg`<br>`燃.seal.svg` |
+| 人 | oracle:Y bronze:Y seal:Y | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
+| 任 | oracle:Y bronze:Y seal:Y | `任.bronze.svg`<br>`任.oracle.svg`<br>`任.seal.svg` |
+| 烧 | oracle:- bronze:- seal:Y | `烧.seal.svg` |
+| 射 | oracle:Y bronze:Y seal:Y | `射.bronze.svg`<br>`射.oracle.svg`<br>`射.seal.svg` |
+| 生 | oracle:Y bronze:Y seal:Y | `生.bronze.svg`<br>`生.oracle.svg`<br>`生.seal.svg` |
+| 石 | oracle:Y bronze:Y seal:Y | `石.bronze.svg`<br>`石.oracle.svg`<br>`石.seal.svg` |
+| 世 | oracle:- bronze:Y seal:Y | `世.bronze.svg`<br>`世.seal.svg` |
+| 市 | oracle:Y bronze:Y seal:Y | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
+| 事 | oracle:Y bronze:Y seal:Y | `事.bronze.svg`<br>`事.oracle.svg`<br>`事.seal.svg` |
+| 收 | oracle:- bronze:- seal:Y | `收.seal.svg` |
+| 属 | oracle:- bronze:Y seal:Y | `属.bronze.svg`<br>`属.seal.svg` |
+| 术 | oracle:Y bronze:- seal:Y | `术.oracle.svg`<br>`术.seal.svg` |
+| 数 | oracle:- bronze:Y seal:Y | `数.bronze.svg`<br>`数.seal.svg` |
+| 刷 | oracle:- bronze:- seal:Y | `刷.seal.svg` |
+| 斯 | oracle:- bronze:Y seal:Y | `斯.bronze.svg`<br>`斯.seal.svg` |
+| 塑 | oracle:Y bronze:Y seal:Y | `塑.bronze.svg`<br>`塑.oracle.svg`<br>`塑.seal.svg` |
+| 索 | oracle:Y bronze:Y seal:Y | `索.bronze.svg`<br>`索.oracle.svg`<br>`索.seal.svg` |
+| 锁 | oracle:- bronze:- seal:Y | `锁.seal.svg` |
+| 膛 | oracle:- bronze:Y seal:Y | `膛.bronze.svg`<br>`膛.seal.svg` |
+| 陶 | oracle:- bronze:Y seal:Y | `陶.bronze.svg`<br>`陶.seal.svg` |
+| 特 | oracle:- bronze:- seal:Y | `特.seal.svg` |
+| 天 | oracle:Y bronze:Y seal:Y | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
+| 铁 | oracle:- bronze:- seal:Y | `铁.seal.svg` |
+| 铜 | oracle:- bronze:Y seal:Y | `铜.bronze.svg`<br>`铜.seal.svg` |
+| 统 | oracle:- bronze:- seal:Y | `统.seal.svg` |
+| 透 | oracle:- bronze:- seal:Y | `透.seal.svg` |
+| 图 | oracle:- bronze:Y seal:Y | `图.bronze.svg`<br>`图.seal.svg` |
+| 徒 | oracle:Y bronze:Y seal:Y | `徒.bronze.svg`<br>`徒.oracle.svg`<br>`徒.seal.svg` |
+| 土 | oracle:Y bronze:Y seal:Y | `土.bronze.svg`<br>`土.oracle.svg`<br>`土.seal.svg` |
+| 维 | oracle:- bronze:Y seal:Y | `维.bronze.svg`<br>`维.seal.svg` |
+| 伟 | oracle:- bronze:- seal:Y | `伟.seal.svg` |
+| 卫 | oracle:Y bronze:Y seal:Y | `卫.bronze.svg`<br>`卫.oracle.svg`<br>`卫.seal.svg` |
+| 未 | oracle:Y bronze:Y seal:Y | `未.bronze.svg`<br>`未.oracle.svg`<br>`未.seal.svg` |
+| 文 | oracle:Y bronze:Y seal:Y | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
+| 务 | oracle:- bronze:Y seal:Y | `务.bronze.svg`<br>`务.seal.svg` |
+| 系 | oracle:Y bronze:- seal:Y | `系.oracle.svg`<br>`系.seal.svg` |
+| 先 | oracle:Y bronze:Y seal:Y | `先.bronze.svg`<br>`先.oracle.svg`<br>`先.seal.svg` |
+| 线 | oracle:- bronze:- seal:Y | `线.seal.svg` |
+| 写 | oracle:- bronze:- seal:Y | `写.seal.svg` |
+| 械 | oracle:- bronze:- seal:Y | `械.seal.svg` |
+| 信 | oracle:- bronze:Y seal:Y | `信.bronze.svg`<br>`信.seal.svg` |
+| 星 | oracle:Y bronze:Y seal:Y | `星.bronze.svg`<br>`星.oracle.svg`<br>`星.seal.svg` |
+| 行 | oracle:Y bronze:Y seal:Y | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
+| 形 | oracle:- bronze:- seal:Y | `形.seal.svg` |
+| 学 | oracle:Y bronze:Y seal:Y | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
+| 药 | oracle:- bronze:Y seal:Y | `药.bronze.svg`<br>`药.seal.svg` |
+| 业 | oracle:- bronze:Y seal:Y | `业.bronze.svg`<br>`业.seal.svg` |
+| 异 | oracle:- bronze:- seal:Y | `异.seal.svg` |
+| 音 | oracle:- bronze:Y seal:Y | `音.bronze.svg`<br>`音.seal.svg` |
+| 银 | oracle:- bronze:- seal:Y | `银.seal.svg` |
+| 隐 | oracle:- bronze:- seal:Y | `隐.seal.svg` |
+| 印 | oracle:Y bronze:Y seal:Y | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
+| 鱼 | oracle:Y bronze:Y seal:Y | `鱼.bronze.svg`<br>`鱼.oracle.svg`<br>`鱼.seal.svg` |
+| 育 | oracle:Y bronze:Y seal:Y | `育.bronze.svg`<br>`育.oracle.svg`<br>`育.seal.svg` |
+| 预 | oracle:- bronze:- seal:Y | `预.seal.svg` |
+| 御 | oracle:Y bronze:Y seal:Y | `御.bronze.svg`<br>`御.oracle.svg`<br>`御.seal.svg` |
+| 运 | oracle:- bronze:- seal:Y | `运.seal.svg` |
+| 葬 | oracle:Y bronze:Y seal:Y | `葬.bronze.svg`<br>`葬.oracle.svg`<br>`葬.seal.svg` |
+| 造 | oracle:- bronze:Y seal:Y | `造.bronze.svg`<br>`造.seal.svg` |
+| 展 | oracle:- bronze:- seal:Y | `展.seal.svg` |
+| 占 | oracle:Y bronze:- seal:Y | `占.oracle.svg`<br>`占.seal.svg` |
+| 战 | oracle:- bronze:Y seal:Y | `战.bronze.svg`<br>`战.seal.svg` |
+| 长 | oracle:Y bronze:Y seal:Y | `长.bronze.svg`<br>`长.oracle.svg`<br>`长.seal.svg` |
+| 蒸 | oracle:- bronze:- seal:Y | `蒸.seal.svg` |
+| 支 | oracle:- bronze:- seal:Y | `支.seal.svg` |
+| 制 | oracle:- bronze:Y seal:Y | `制.bronze.svg`<br>`制.seal.svg` |
+| 智 | oracle:Y bronze:Y seal:Y | `智.bronze.svg`<br>`智.oracle.svg`<br>`智.seal.svg` |
+| 重 | oracle:Y bronze:Y seal:Y | `重.bronze.svg`<br>`重.oracle.svg`<br>`重.seal.svg` |
+| 筑 | oracle:- bronze:- seal:Y | `筑.seal.svg` |
+| 铸 | oracle:Y bronze:Y seal:Y | `铸.bronze.svg`<br>`铸.oracle.svg`<br>`铸.seal.svg` |
+| 子 | oracle:Y bronze:Y seal:Y | `子.bronze.svg`<br>`子.oracle.svg`<br>`子.seal.svg` |
+| 作 | oracle:Y bronze:Y seal:Y | `作.bronze.svg`<br>`作.oracle.svg`<br>`作.seal.svg` |
 
 ## terrain
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 埃 | oracle:- bronze:- seal:Y legacy:- | `埃.seal.svg` |
-| 岸 | oracle:- bronze:- seal:Y legacy:- | `岸.seal.svg` |
-| 奥 | oracle:- bronze:- seal:Y legacy:- | `奥.seal.svg` |
-| 澳 | oracle:- bronze:- seal:Y legacy:- | `澳.seal.svg` |
-| 巴 | oracle:Y bronze:- seal:Y legacy:- | `巴.oracle.svg`<br>`巴.seal.svg` |
-| 白 | oracle:Y bronze:Y seal:Y legacy:- | `白.bronze.svg`<br>`白.oracle.svg`<br>`白.seal.svg` |
-| 百 | oracle:Y bronze:Y seal:Y legacy:- | `百.bronze.svg`<br>`百.oracle.svg`<br>`百.seal.svg` |
-| 堡 | oracle:Y bronze:Y seal:Y legacy:- | `堡.bronze.svg`<br>`堡.oracle.svg`<br>`堡.seal.svg` |
-| 比 | oracle:Y bronze:Y seal:Y legacy:- | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
-| 标 | oracle:- bronze:- seal:Y legacy:- | `标.seal.svg` |
-| 冰 | oracle:- bronze:Y seal:Y legacy:- | `冰.bronze.svg`<br>`冰.seal.svg` |
-| 布 | oracle:- bronze:Y seal:Y legacy:- | `布.bronze.svg`<br>`布.seal.svg` |
-| 草 | oracle:- bronze:- seal:Y legacy:- | `草.seal.svg` |
-| 场 | oracle:- bronze:- seal:Y legacy:- | `场.seal.svg` |
-| 出 | oracle:Y bronze:Y seal:Y legacy:- | `出.bronze.svg`<br>`出.oracle.svg`<br>`出.seal.svg` |
-| 川 | oracle:Y bronze:Y seal:Y legacy:- | `川.bronze.svg`<br>`川.oracle.svg`<br>`川.seal.svg` |
-| 春 | oracle:Y bronze:Y seal:Y legacy:- | `春.bronze.svg`<br>`春.oracle.svg`<br>`春.seal.svg` |
-| 丛 | oracle:- bronze:Y seal:Y legacy:- | `丛.bronze.svg`<br>`丛.seal.svg` |
-| 大 | oracle:Y bronze:Y seal:Y legacy:- | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
-| 丹 | oracle:Y bronze:Y seal:Y legacy:- | `丹.bronze.svg`<br>`丹.oracle.svg`<br>`丹.seal.svg` |
-| 岛 | oracle:- bronze:- seal:Y legacy:- | `岛.seal.svg` |
-| 道 | oracle:- bronze:Y seal:Y legacy:- | `道.bronze.svg`<br>`道.seal.svg` |
-| 德 | oracle:Y bronze:Y seal:Y legacy:- | `德.bronze.svg`<br>`德.oracle.svg`<br>`德.seal.svg` |
-| 地 | oracle:- bronze:Y seal:Y legacy:- | `地.bronze.svg`<br>`地.seal.svg` |
-| 堤 | oracle:- bronze:- seal:Y legacy:- | `堤.seal.svg` |
-| 蒂 | oracle:- bronze:- seal:Y legacy:- | `蒂.seal.svg` |
-| 点 | oracle:- bronze:- seal:Y legacy:- | `点.seal.svg` |
-| 度 | oracle:Y bronze:Y seal:Y legacy:- | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
-| 多 | oracle:Y bronze:Y seal:Y legacy:- | `多.bronze.svg`<br>`多.oracle.svg`<br>`多.seal.svg` |
-| 恩 | oracle:- bronze:- seal:Y legacy:- | `恩.seal.svg` |
-| 尔 | oracle:- bronze:Y seal:Y legacy:- | `尔.bronze.svg`<br>`尔.seal.svg` |
-| 泛 | oracle:- bronze:- seal:Y legacy:- | `泛.seal.svg` |
-| 菲 | oracle:- bronze:- seal:Y legacy:- | `菲.seal.svg` |
-| 峰 | oracle:- bronze:- seal:Y legacy:- | `峰.seal.svg` |
-| 佛 | oracle:- bronze:- seal:Y legacy:- | `佛.seal.svg` |
-| 阜 | oracle:Y bronze:- seal:Y legacy:- | `阜.oracle.svg`<br>`阜.seal.svg` |
-| 盖 | oracle:Y bronze:Y seal:Y legacy:- | `盖.bronze.svg`<br>`盖.oracle.svg`<br>`盖.seal.svg` |
-| 戈 | oracle:Y bronze:Y seal:Y legacy:- | `戈.bronze.svg`<br>`戈.oracle.svg`<br>`戈.seal.svg` |
-| 哥 | oracle:- bronze:- seal:Y legacy:- | `哥.seal.svg` |
-| 功 | oracle:- bronze:Y seal:Y legacy:- | `功.bronze.svg`<br>`功.seal.svg` |
-| 拱 | oracle:- bronze:- seal:Y legacy:- | `拱.seal.svg` |
-| 鬼 | oracle:Y bronze:Y seal:Y legacy:- | `鬼.bronze.svg`<br>`鬼.oracle.svg`<br>`鬼.seal.svg` |
-| 哈 | oracle:- bronze:- seal:Y legacy:- | `哈.seal.svg` |
-| 海 | oracle:- bronze:Y seal:Y legacy:- | `海.bronze.svg`<br>`海.seal.svg` |
-| 河 | oracle:Y bronze:Y seal:Y legacy:- | `河.bronze.svg`<br>`河.oracle.svg`<br>`河.seal.svg` |
-| 宏 | oracle:- bronze:- seal:Y legacy:- | `宏.seal.svg` |
-| 洪 | oracle:- bronze:- seal:Y legacy:- | `洪.seal.svg` |
-| 湖 | oracle:- bronze:Y seal:Y legacy:- | `湖.bronze.svg`<br>`湖.seal.svg` |
-| 花 | oracle:- bronze:- seal:Y legacy:- | `花.seal.svg` |
-| 毁 | oracle:- bronze:Y seal:Y legacy:- | `毁.bronze.svg`<br>`毁.seal.svg` |
-| 彗 | oracle:Y bronze:- seal:Y legacy:- | `彗.oracle.svg`<br>`彗.seal.svg` |
-| 火 | oracle:Y bronze:- seal:Y legacy:- | `火.oracle.svg`<br>`火.seal.svg` |
-| 基 | oracle:Y bronze:Y seal:Y legacy:- | `基.bronze.svg`<br>`基.oracle.svg`<br>`基.seal.svg` |
-| 吉 | oracle:Y bronze:Y seal:Y legacy:- | `吉.bronze.svg`<br>`吉.oracle.svg`<br>`吉.seal.svg` |
-| 加 | oracle:- bronze:Y seal:Y legacy:- | `加.bronze.svg`<br>`加.seal.svg` |
-| 礁 | oracle:- bronze:Y seal:Y legacy:- | `礁.bronze.svg`<br>`礁.seal.svg` |
-| 角 | oracle:Y bronze:Y seal:Y legacy:- | `角.bronze.svg`<br>`角.oracle.svg`<br>`角.seal.svg` |
-| 京 | oracle:Y bronze:Y seal:Y legacy:- | `京.bronze.svg`<br>`京.oracle.svg`<br>`京.seal.svg` |
-| 精 | oracle:- bronze:- seal:Y legacy:- | `精.seal.svg` |
-| 景 | oracle:- bronze:- seal:Y legacy:- | `景.seal.svg` |
-| 局 | oracle:- bronze:- seal:Y legacy:- | `局.seal.svg` |
-| 巨 | oracle:- bronze:Y seal:Y legacy:- | `巨.bronze.svg`<br>`巨.seal.svg` |
-| 具 | oracle:Y bronze:Y seal:Y legacy:- | `具.bronze.svg`<br>`具.oracle.svg`<br>`具.seal.svg` |
-| 克 | oracle:Y bronze:Y seal:Y legacy:- | `克.bronze.svg`<br>`克.oracle.svg`<br>`克.seal.svg` |
-| 空 | oracle:- bronze:Y seal:Y legacy:- | `空.bronze.svg`<br>`空.seal.svg` |
-| 口 | oracle:Y bronze:Y seal:Y legacy:- | `口.bronze.svg`<br>`口.oracle.svg`<br>`口.seal.svg` |
-| 扩 | oracle:- bronze:- seal:Y legacy:- | `扩.seal.svg` |
-| 拉 | oracle:- bronze:- seal:Y legacy:- | `拉.seal.svg` |
-| 赖 | oracle:- bronze:- seal:Y legacy:- | `赖.seal.svg` |
-| 朗 | oracle:- bronze:- seal:Y legacy:- | `朗.seal.svg` |
-| 雷 | oracle:Y bronze:Y seal:Y legacy:- | `雷.bronze.svg`<br>`雷.oracle.svg`<br>`雷.seal.svg` |
-| 力 | oracle:Y bronze:Y seal:Y legacy:- | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
-| 利 | oracle:Y bronze:Y seal:Y legacy:- | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
-| 裂 | oracle:- bronze:- seal:Y legacy:- | `裂.seal.svg` |
-| 林 | oracle:Y bronze:Y seal:Y legacy:- | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
-| 陵 | oracle:- bronze:Y seal:Y legacy:- | `陵.bronze.svg`<br>`陵.seal.svg` |
-| 龙 | oracle:Y bronze:Y seal:Y legacy:- | `龙.bronze.svg`<br>`龙.oracle.svg`<br>`龙.seal.svg` |
-| 鲁 | oracle:Y bronze:Y seal:Y legacy:- | `鲁.bronze.svg`<br>`鲁.oracle.svg`<br>`鲁.seal.svg` |
-| 吕 | oracle:Y bronze:Y seal:Y legacy:- | `吕.bronze.svg`<br>`吕.oracle.svg`<br>`吕.seal.svg` |
-| 绿 | oracle:Y bronze:- seal:Y legacy:- | `绿.oracle.svg`<br>`绿.seal.svg` |
-| 伦 | oracle:- bronze:- seal:Y legacy:- | `伦.seal.svg` |
-| 罗 | oracle:Y bronze:Y seal:Y legacy:- | `罗.bronze.svg`<br>`罗.oracle.svg`<br>`罗.seal.svg` |
-| 马 | oracle:Y bronze:Y seal:Y legacy:- | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
-| 玛 | oracle:Y bronze:Y seal:Y legacy:- | `玛.bronze.svg`<br>`玛.oracle.svg`<br>`玛.seal.svg` |
-| 美 | oracle:Y bronze:Y seal:Y legacy:- | `美.bronze.svg`<br>`美.oracle.svg`<br>`美.seal.svg` |
-| 门 | oracle:Y bronze:Y seal:Y legacy:- | `门.bronze.svg`<br>`门.oracle.svg`<br>`门.seal.svg` |
-| 棉 | oracle:- bronze:- seal:Y legacy:- | `棉.seal.svg` |
-| 魔 | oracle:- bronze:- seal:Y legacy:- | `魔.seal.svg` |
-| 漠 | oracle:- bronze:- seal:Y legacy:- | `漠.seal.svg` |
-| 慕 | oracle:- bronze:Y seal:Y legacy:- | `慕.bronze.svg`<br>`慕.seal.svg` |
-| 穆 | oracle:Y bronze:Y seal:Y legacy:- | `穆.bronze.svg`<br>`穆.oracle.svg`<br>`穆.seal.svg` |
-| 纳 | oracle:- bronze:Y seal:Y legacy:- | `纳.bronze.svg`<br>`纳.seal.svg` |
-| 能 | oracle:- bronze:Y seal:Y legacy:- | `能.bronze.svg`<br>`能.seal.svg` |
-| 尼 | oracle:- bronze:- seal:Y legacy:- | `尼.seal.svg` |
-| 泥 | oracle:- bronze:- seal:Y legacy:- | `泥.seal.svg` |
-| 努 | oracle:- bronze:- seal:Y legacy:- | `努.seal.svg` |
-| 帕 | oracle:- bronze:- seal:Y legacy:- | `帕.seal.svg` |
-| 派 | oracle:- bronze:- seal:Y legacy:- | `派.seal.svg` |
-| 潘 | oracle:- bronze:Y seal:Y legacy:- | `潘.bronze.svg`<br>`潘.seal.svg` |
-| 皮 | oracle:- bronze:Y seal:Y legacy:- | `皮.bronze.svg`<br>`皮.seal.svg` |
-| 平 | oracle:- bronze:Y seal:Y legacy:- | `平.bronze.svg`<br>`平.seal.svg` |
-| 乞 | oracle:Y bronze:Y seal:Y legacy:- | `乞.bronze.svg`<br>`乞.oracle.svg`<br>`乞.seal.svg` |
-| 巧 | oracle:- bronze:- seal:Y legacy:- | `巧.seal.svg` |
-| 青 | oracle:- bronze:Y seal:Y legacy:- | `青.bronze.svg`<br>`青.seal.svg` |
-| 丘 | oracle:Y bronze:Y seal:Y legacy:- | `丘.bronze.svg`<br>`丘.oracle.svg`<br>`丘.seal.svg` |
-| 区 | oracle:Y bronze:Y seal:Y legacy:- | `区.bronze.svg`<br>`区.oracle.svg`<br>`区.seal.svg` |
-| 泉 | oracle:Y bronze:Y seal:Y legacy:- | `泉.bronze.svg`<br>`泉.oracle.svg`<br>`泉.seal.svg` |
-| 群 | oracle:- bronze:Y seal:Y legacy:- | `群.bronze.svg`<br>`群.seal.svg` |
-| 燃 | oracle:- bronze:Y seal:Y legacy:- | `燃.bronze.svg`<br>`燃.seal.svg` |
-| 热 | oracle:- bronze:- seal:Y legacy:- | `热.seal.svg` |
-| 人 | oracle:Y bronze:Y seal:Y legacy:- | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
-| 撒 | oracle:- bronze:- seal:Y legacy:- | `撒.seal.svg` |
-| 三 | oracle:Y bronze:Y seal:Y legacy:- | `三.bronze.svg`<br>`三.oracle.svg`<br>`三.seal.svg` |
-| 色 | oracle:- bronze:Y seal:Y legacy:- | `色.bronze.svg`<br>`色.seal.svg` |
-| 瑟 | oracle:- bronze:- seal:Y legacy:- | `瑟.seal.svg` |
-| 森 | oracle:Y bronze:- seal:Y legacy:- | `森.oracle.svg`<br>`森.seal.svg` |
-| 沙 | oracle:- bronze:Y seal:Y legacy:- | `沙.bronze.svg`<br>`沙.seal.svg` |
-| 山 | oracle:Y bronze:Y seal:Y legacy:- | `山.bronze.svg`<br>`山.oracle.svg`<br>`山.seal.svg` |
-| 烧 | oracle:- bronze:- seal:Y legacy:- | `烧.seal.svg` |
-| 胜 | oracle:- bronze:- seal:Y legacy:- | `胜.seal.svg` |
-| 湿 | oracle:- bronze:- seal:Y legacy:- | `湿.seal.svg` |
-| 石 | oracle:Y bronze:Y seal:Y legacy:- | `石.bronze.svg`<br>`石.oracle.svg`<br>`石.seal.svg` |
-| 是 | oracle:- bronze:Y seal:Y legacy:- | `是.bronze.svg`<br>`是.seal.svg` |
-| 水 | oracle:Y bronze:Y seal:Y legacy:- | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
-| 斯 | oracle:- bronze:Y seal:Y legacy:- | `斯.bronze.svg`<br>`斯.seal.svg` |
-| 死 | oracle:Y bronze:Y seal:Y legacy:- | `死.bronze.svg`<br>`死.oracle.svg`<br>`死.seal.svg` |
-| 苏 | oracle:- bronze:Y seal:Y legacy:- | `苏.bronze.svg`<br>`苏.seal.svg` |
-| 塔 | oracle:- bronze:- seal:Y legacy:- | `塔.seal.svg` |
-| 苔 | oracle:- bronze:- seal:Y legacy:- | `苔.seal.svg` |
-| 坦 | oracle:- bronze:- seal:Y legacy:- | `坦.seal.svg` |
-| 特 | oracle:- bronze:- seal:Y legacy:- | `特.seal.svg` |
-| 田 | oracle:Y bronze:Y seal:Y legacy:- | `田.bronze.svg`<br>`田.oracle.svg`<br>`田.seal.svg` |
-| 土 | oracle:Y bronze:Y seal:Y legacy:- | `土.bronze.svg`<br>`土.oracle.svg`<br>`土.seal.svg` |
-| 托 | oracle:Y bronze:Y seal:Y legacy:- | `托.bronze.svg`<br>`托.oracle.svg`<br>`托.seal.svg` |
-| 湾 | oracle:- bronze:- seal:Y legacy:- | `湾.seal.svg` |
-| 威 | oracle:- bronze:Y seal:Y legacy:- | `威.bronze.svg`<br>`威.seal.svg` |
-| 维 | oracle:- bronze:Y seal:Y legacy:- | `维.bronze.svg`<br>`维.seal.svg` |
-| 乌 | oracle:- bronze:Y seal:Y legacy:- | `乌.bronze.svg`<br>`乌.seal.svg` |
-| 西 | oracle:Y bronze:Y seal:Y legacy:- | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
-| 希 | oracle:- bronze:- seal:Y legacy:- | `希.seal.svg` |
-| 隙 | oracle:- bronze:- seal:Y legacy:- | `隙.seal.svg` |
-| 峡 | oracle:- bronze:- seal:Y legacy:- | `峡.seal.svg` |
-| 霞 | oracle:- bronze:- seal:Y legacy:- | `霞.seal.svg` |
-| 心 | oracle:Y bronze:Y seal:Y legacy:- | `心.bronze.svg`<br>`心.oracle.svg`<br>`心.seal.svg` |
-| 辛 | oracle:Y bronze:Y seal:Y legacy:- | `辛.bronze.svg`<br>`辛.oracle.svg`<br>`辛.seal.svg` |
-| 星 | oracle:Y bronze:Y seal:Y legacy:- | `星.bronze.svg`<br>`星.oracle.svg`<br>`星.seal.svg` |
-| 形 | oracle:- bronze:- seal:Y legacy:- | `形.seal.svg` |
-| 性 | oracle:- bronze:Y seal:Y legacy:- | `性.bronze.svg`<br>`性.seal.svg` |
-| 悬 | oracle:- bronze:Y seal:Y legacy:- | `悬.bronze.svg`<br>`悬.seal.svg` |
-| 雪 | oracle:Y bronze:Y seal:Y legacy:- | `雪.bronze.svg`<br>`雪.oracle.svg`<br>`雪.seal.svg` |
-| 崖 | oracle:- bronze:- seal:Y legacy:- | `崖.seal.svg` |
-| 雅 | oracle:- bronze:- seal:Y legacy:- | `雅.seal.svg` |
-| 亚 | oracle:Y bronze:Y seal:Y legacy:- | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
-| 眼 | oracle:- bronze:- seal:Y legacy:- | `眼.seal.svg` |
-| 洋 | oracle:- bronze:- seal:Y legacy:- | `洋.seal.svg` |
-| 掖 | oracle:- bronze:- seal:Y legacy:- | `掖.seal.svg` |
-| 伊 | oracle:Y bronze:Y seal:Y legacy:- | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
-| 以 | oracle:Y bronze:Y seal:Y legacy:- | `以.bronze.svg`<br>`以.oracle.svg`<br>`以.seal.svg` |
-| 印 | oracle:Y bronze:Y seal:Y legacy:- | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
-| 优 | oracle:- bronze:- seal:Y legacy:- | `优.seal.svg` |
-| 原 | oracle:- bronze:Y seal:Y legacy:- | `原.bronze.svg`<br>`原.seal.svg` |
-| 泽 | oracle:- bronze:- seal:Y legacy:- | `泽.seal.svg` |
-| 扎 | oracle:- bronze:- seal:Y legacy:- | `扎.seal.svg` |
-| 展 | oracle:- bronze:- seal:Y legacy:- | `展.seal.svg` |
-| 张 | oracle:- bronze:Y seal:Y legacy:- | `张.bronze.svg`<br>`张.seal.svg` |
-| 障 | oracle:- bronze:- seal:Y legacy:- | `障.seal.svg` |
-| 沼 | oracle:- bronze:- seal:Y legacy:- | `沼.seal.svg` |
-| 征 | oracle:Y bronze:Y seal:Y legacy:- | `征.bronze.svg`<br>`征.oracle.svg`<br>`征.seal.svg` |
-| 之 | oracle:Y bronze:Y seal:Y legacy:- | `之.bronze.svg`<br>`之.oracle.svg`<br>`之.seal.svg` |
-| 致 | oracle:- bronze:Y seal:Y legacy:- | `致.bronze.svg`<br>`致.seal.svg` |
-| 州 | oracle:Y bronze:Y seal:Y legacy:- | `州.bronze.svg`<br>`州.oracle.svg`<br>`州.seal.svg` |
-| 洲 | oracle:Y bronze:Y seal:Y legacy:- | `洲.bronze.svg`<br>`洲.oracle.svg`<br>`洲.seal.svg` |
-| 珠 | oracle:- bronze:- seal:Y legacy:- | `珠.seal.svg` |
+| 埃 | oracle:- bronze:- seal:Y | `埃.seal.svg` |
+| 岸 | oracle:- bronze:- seal:Y | `岸.seal.svg` |
+| 奥 | oracle:- bronze:- seal:Y | `奥.seal.svg` |
+| 澳 | oracle:- bronze:- seal:Y | `澳.seal.svg` |
+| 巴 | oracle:Y bronze:- seal:Y | `巴.oracle.svg`<br>`巴.seal.svg` |
+| 白 | oracle:Y bronze:Y seal:Y | `白.bronze.svg`<br>`白.oracle.svg`<br>`白.seal.svg` |
+| 百 | oracle:Y bronze:Y seal:Y | `百.bronze.svg`<br>`百.oracle.svg`<br>`百.seal.svg` |
+| 堡 | oracle:Y bronze:Y seal:Y | `堡.bronze.svg`<br>`堡.oracle.svg`<br>`堡.seal.svg` |
+| 比 | oracle:Y bronze:Y seal:Y | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
+| 标 | oracle:- bronze:- seal:Y | `标.seal.svg` |
+| 冰 | oracle:- bronze:Y seal:Y | `冰.bronze.svg`<br>`冰.seal.svg` |
+| 布 | oracle:- bronze:Y seal:Y | `布.bronze.svg`<br>`布.seal.svg` |
+| 草 | oracle:- bronze:- seal:Y | `草.seal.svg` |
+| 场 | oracle:- bronze:- seal:Y | `场.seal.svg` |
+| 出 | oracle:Y bronze:Y seal:Y | `出.bronze.svg`<br>`出.oracle.svg`<br>`出.seal.svg` |
+| 川 | oracle:Y bronze:Y seal:Y | `川.bronze.svg`<br>`川.oracle.svg`<br>`川.seal.svg` |
+| 春 | oracle:Y bronze:Y seal:Y | `春.bronze.svg`<br>`春.oracle.svg`<br>`春.seal.svg` |
+| 丛 | oracle:- bronze:Y seal:Y | `丛.bronze.svg`<br>`丛.seal.svg` |
+| 大 | oracle:Y bronze:Y seal:Y | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
+| 丹 | oracle:Y bronze:Y seal:Y | `丹.bronze.svg`<br>`丹.oracle.svg`<br>`丹.seal.svg` |
+| 岛 | oracle:- bronze:- seal:Y | `岛.seal.svg` |
+| 道 | oracle:- bronze:Y seal:Y | `道.bronze.svg`<br>`道.seal.svg` |
+| 德 | oracle:Y bronze:Y seal:Y | `德.bronze.svg`<br>`德.oracle.svg`<br>`德.seal.svg` |
+| 地 | oracle:- bronze:Y seal:Y | `地.bronze.svg`<br>`地.seal.svg` |
+| 堤 | oracle:- bronze:- seal:Y | `堤.seal.svg` |
+| 蒂 | oracle:- bronze:- seal:Y | `蒂.seal.svg` |
+| 点 | oracle:- bronze:- seal:Y | `点.seal.svg` |
+| 度 | oracle:Y bronze:Y seal:Y | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
+| 多 | oracle:Y bronze:Y seal:Y | `多.bronze.svg`<br>`多.oracle.svg`<br>`多.seal.svg` |
+| 恩 | oracle:- bronze:- seal:Y | `恩.seal.svg` |
+| 尔 | oracle:- bronze:Y seal:Y | `尔.bronze.svg`<br>`尔.seal.svg` |
+| 泛 | oracle:- bronze:- seal:Y | `泛.seal.svg` |
+| 菲 | oracle:- bronze:- seal:Y | `菲.seal.svg` |
+| 峰 | oracle:- bronze:- seal:Y | `峰.seal.svg` |
+| 佛 | oracle:- bronze:- seal:Y | `佛.seal.svg` |
+| 阜 | oracle:Y bronze:- seal:Y | `阜.oracle.svg`<br>`阜.seal.svg` |
+| 盖 | oracle:Y bronze:Y seal:Y | `盖.bronze.svg`<br>`盖.oracle.svg`<br>`盖.seal.svg` |
+| 戈 | oracle:Y bronze:Y seal:Y | `戈.bronze.svg`<br>`戈.oracle.svg`<br>`戈.seal.svg` |
+| 哥 | oracle:- bronze:- seal:Y | `哥.seal.svg` |
+| 功 | oracle:- bronze:Y seal:Y | `功.bronze.svg`<br>`功.seal.svg` |
+| 拱 | oracle:- bronze:- seal:Y | `拱.seal.svg` |
+| 鬼 | oracle:Y bronze:Y seal:Y | `鬼.bronze.svg`<br>`鬼.oracle.svg`<br>`鬼.seal.svg` |
+| 哈 | oracle:- bronze:- seal:Y | `哈.seal.svg` |
+| 海 | oracle:- bronze:Y seal:Y | `海.bronze.svg`<br>`海.seal.svg` |
+| 河 | oracle:Y bronze:Y seal:Y | `河.bronze.svg`<br>`河.oracle.svg`<br>`河.seal.svg` |
+| 宏 | oracle:- bronze:- seal:Y | `宏.seal.svg` |
+| 洪 | oracle:- bronze:- seal:Y | `洪.seal.svg` |
+| 湖 | oracle:- bronze:Y seal:Y | `湖.bronze.svg`<br>`湖.seal.svg` |
+| 花 | oracle:- bronze:- seal:Y | `花.seal.svg` |
+| 毁 | oracle:- bronze:Y seal:Y | `毁.bronze.svg`<br>`毁.seal.svg` |
+| 彗 | oracle:Y bronze:- seal:Y | `彗.oracle.svg`<br>`彗.seal.svg` |
+| 火 | oracle:Y bronze:- seal:Y | `火.oracle.svg`<br>`火.seal.svg` |
+| 基 | oracle:Y bronze:Y seal:Y | `基.bronze.svg`<br>`基.oracle.svg`<br>`基.seal.svg` |
+| 吉 | oracle:Y bronze:Y seal:Y | `吉.bronze.svg`<br>`吉.oracle.svg`<br>`吉.seal.svg` |
+| 加 | oracle:- bronze:Y seal:Y | `加.bronze.svg`<br>`加.seal.svg` |
+| 礁 | oracle:- bronze:Y seal:Y | `礁.bronze.svg`<br>`礁.seal.svg` |
+| 角 | oracle:Y bronze:Y seal:Y | `角.bronze.svg`<br>`角.oracle.svg`<br>`角.seal.svg` |
+| 京 | oracle:Y bronze:Y seal:Y | `京.bronze.svg`<br>`京.oracle.svg`<br>`京.seal.svg` |
+| 精 | oracle:- bronze:- seal:Y | `精.seal.svg` |
+| 景 | oracle:- bronze:- seal:Y | `景.seal.svg` |
+| 局 | oracle:- bronze:- seal:Y | `局.seal.svg` |
+| 巨 | oracle:- bronze:Y seal:Y | `巨.bronze.svg`<br>`巨.seal.svg` |
+| 具 | oracle:Y bronze:Y seal:Y | `具.bronze.svg`<br>`具.oracle.svg`<br>`具.seal.svg` |
+| 克 | oracle:Y bronze:Y seal:Y | `克.bronze.svg`<br>`克.oracle.svg`<br>`克.seal.svg` |
+| 空 | oracle:- bronze:Y seal:Y | `空.bronze.svg`<br>`空.seal.svg` |
+| 口 | oracle:Y bronze:Y seal:Y | `口.bronze.svg`<br>`口.oracle.svg`<br>`口.seal.svg` |
+| 扩 | oracle:- bronze:- seal:Y | `扩.seal.svg` |
+| 拉 | oracle:- bronze:- seal:Y | `拉.seal.svg` |
+| 赖 | oracle:- bronze:- seal:Y | `赖.seal.svg` |
+| 朗 | oracle:- bronze:- seal:Y | `朗.seal.svg` |
+| 雷 | oracle:Y bronze:Y seal:Y | `雷.bronze.svg`<br>`雷.oracle.svg`<br>`雷.seal.svg` |
+| 力 | oracle:Y bronze:Y seal:Y | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
+| 利 | oracle:Y bronze:Y seal:Y | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
+| 裂 | oracle:- bronze:- seal:Y | `裂.seal.svg` |
+| 林 | oracle:Y bronze:Y seal:Y | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
+| 陵 | oracle:- bronze:Y seal:Y | `陵.bronze.svg`<br>`陵.seal.svg` |
+| 龙 | oracle:Y bronze:Y seal:Y | `龙.bronze.svg`<br>`龙.oracle.svg`<br>`龙.seal.svg` |
+| 鲁 | oracle:Y bronze:Y seal:Y | `鲁.bronze.svg`<br>`鲁.oracle.svg`<br>`鲁.seal.svg` |
+| 吕 | oracle:Y bronze:Y seal:Y | `吕.bronze.svg`<br>`吕.oracle.svg`<br>`吕.seal.svg` |
+| 绿 | oracle:Y bronze:- seal:Y | `绿.oracle.svg`<br>`绿.seal.svg` |
+| 伦 | oracle:- bronze:- seal:Y | `伦.seal.svg` |
+| 罗 | oracle:Y bronze:Y seal:Y | `罗.bronze.svg`<br>`罗.oracle.svg`<br>`罗.seal.svg` |
+| 马 | oracle:Y bronze:Y seal:Y | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
+| 玛 | oracle:Y bronze:Y seal:Y | `玛.bronze.svg`<br>`玛.oracle.svg`<br>`玛.seal.svg` |
+| 美 | oracle:Y bronze:Y seal:Y | `美.bronze.svg`<br>`美.oracle.svg`<br>`美.seal.svg` |
+| 门 | oracle:Y bronze:Y seal:Y | `门.bronze.svg`<br>`门.oracle.svg`<br>`门.seal.svg` |
+| 棉 | oracle:- bronze:- seal:Y | `棉.seal.svg` |
+| 魔 | oracle:- bronze:- seal:Y | `魔.seal.svg` |
+| 漠 | oracle:- bronze:- seal:Y | `漠.seal.svg` |
+| 慕 | oracle:- bronze:Y seal:Y | `慕.bronze.svg`<br>`慕.seal.svg` |
+| 穆 | oracle:Y bronze:Y seal:Y | `穆.bronze.svg`<br>`穆.oracle.svg`<br>`穆.seal.svg` |
+| 纳 | oracle:- bronze:Y seal:Y | `纳.bronze.svg`<br>`纳.seal.svg` |
+| 能 | oracle:- bronze:Y seal:Y | `能.bronze.svg`<br>`能.seal.svg` |
+| 尼 | oracle:- bronze:- seal:Y | `尼.seal.svg` |
+| 泥 | oracle:- bronze:- seal:Y | `泥.seal.svg` |
+| 努 | oracle:- bronze:- seal:Y | `努.seal.svg` |
+| 帕 | oracle:- bronze:- seal:Y | `帕.seal.svg` |
+| 派 | oracle:- bronze:- seal:Y | `派.seal.svg` |
+| 潘 | oracle:- bronze:Y seal:Y | `潘.bronze.svg`<br>`潘.seal.svg` |
+| 皮 | oracle:- bronze:Y seal:Y | `皮.bronze.svg`<br>`皮.seal.svg` |
+| 平 | oracle:- bronze:Y seal:Y | `平.bronze.svg`<br>`平.seal.svg` |
+| 乞 | oracle:Y bronze:Y seal:Y | `乞.bronze.svg`<br>`乞.oracle.svg`<br>`乞.seal.svg` |
+| 巧 | oracle:- bronze:- seal:Y | `巧.seal.svg` |
+| 青 | oracle:- bronze:Y seal:Y | `青.bronze.svg`<br>`青.seal.svg` |
+| 丘 | oracle:Y bronze:Y seal:Y | `丘.bronze.svg`<br>`丘.oracle.svg`<br>`丘.seal.svg` |
+| 区 | oracle:Y bronze:Y seal:Y | `区.bronze.svg`<br>`区.oracle.svg`<br>`区.seal.svg` |
+| 泉 | oracle:Y bronze:Y seal:Y | `泉.bronze.svg`<br>`泉.oracle.svg`<br>`泉.seal.svg` |
+| 群 | oracle:- bronze:Y seal:Y | `群.bronze.svg`<br>`群.seal.svg` |
+| 燃 | oracle:- bronze:Y seal:Y | `燃.bronze.svg`<br>`燃.seal.svg` |
+| 热 | oracle:- bronze:- seal:Y | `热.seal.svg` |
+| 人 | oracle:Y bronze:Y seal:Y | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
+| 撒 | oracle:- bronze:- seal:Y | `撒.seal.svg` |
+| 三 | oracle:Y bronze:Y seal:Y | `三.bronze.svg`<br>`三.oracle.svg`<br>`三.seal.svg` |
+| 色 | oracle:- bronze:Y seal:Y | `色.bronze.svg`<br>`色.seal.svg` |
+| 瑟 | oracle:- bronze:- seal:Y | `瑟.seal.svg` |
+| 森 | oracle:Y bronze:- seal:Y | `森.oracle.svg`<br>`森.seal.svg` |
+| 沙 | oracle:- bronze:Y seal:Y | `沙.bronze.svg`<br>`沙.seal.svg` |
+| 山 | oracle:Y bronze:Y seal:Y | `山.bronze.svg`<br>`山.oracle.svg`<br>`山.seal.svg` |
+| 烧 | oracle:- bronze:- seal:Y | `烧.seal.svg` |
+| 胜 | oracle:- bronze:- seal:Y | `胜.seal.svg` |
+| 湿 | oracle:- bronze:- seal:Y | `湿.seal.svg` |
+| 石 | oracle:Y bronze:Y seal:Y | `石.bronze.svg`<br>`石.oracle.svg`<br>`石.seal.svg` |
+| 是 | oracle:- bronze:Y seal:Y | `是.bronze.svg`<br>`是.seal.svg` |
+| 水 | oracle:Y bronze:Y seal:Y | `水.bronze.svg`<br>`水.oracle.svg`<br>`水.seal.svg` |
+| 斯 | oracle:- bronze:Y seal:Y | `斯.bronze.svg`<br>`斯.seal.svg` |
+| 死 | oracle:Y bronze:Y seal:Y | `死.bronze.svg`<br>`死.oracle.svg`<br>`死.seal.svg` |
+| 苏 | oracle:- bronze:Y seal:Y | `苏.bronze.svg`<br>`苏.seal.svg` |
+| 塔 | oracle:- bronze:- seal:Y | `塔.seal.svg` |
+| 苔 | oracle:- bronze:- seal:Y | `苔.seal.svg` |
+| 坦 | oracle:- bronze:- seal:Y | `坦.seal.svg` |
+| 特 | oracle:- bronze:- seal:Y | `特.seal.svg` |
+| 田 | oracle:Y bronze:Y seal:Y | `田.bronze.svg`<br>`田.oracle.svg`<br>`田.seal.svg` |
+| 土 | oracle:Y bronze:Y seal:Y | `土.bronze.svg`<br>`土.oracle.svg`<br>`土.seal.svg` |
+| 托 | oracle:Y bronze:Y seal:Y | `托.bronze.svg`<br>`托.oracle.svg`<br>`托.seal.svg` |
+| 湾 | oracle:- bronze:- seal:Y | `湾.seal.svg` |
+| 威 | oracle:- bronze:Y seal:Y | `威.bronze.svg`<br>`威.seal.svg` |
+| 维 | oracle:- bronze:Y seal:Y | `维.bronze.svg`<br>`维.seal.svg` |
+| 乌 | oracle:- bronze:Y seal:Y | `乌.bronze.svg`<br>`乌.seal.svg` |
+| 西 | oracle:Y bronze:Y seal:Y | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
+| 希 | oracle:- bronze:- seal:Y | `希.seal.svg` |
+| 隙 | oracle:- bronze:- seal:Y | `隙.seal.svg` |
+| 峡 | oracle:- bronze:- seal:Y | `峡.seal.svg` |
+| 霞 | oracle:- bronze:- seal:Y | `霞.seal.svg` |
+| 心 | oracle:Y bronze:Y seal:Y | `心.bronze.svg`<br>`心.oracle.svg`<br>`心.seal.svg` |
+| 辛 | oracle:Y bronze:Y seal:Y | `辛.bronze.svg`<br>`辛.oracle.svg`<br>`辛.seal.svg` |
+| 星 | oracle:Y bronze:Y seal:Y | `星.bronze.svg`<br>`星.oracle.svg`<br>`星.seal.svg` |
+| 形 | oracle:- bronze:- seal:Y | `形.seal.svg` |
+| 性 | oracle:- bronze:Y seal:Y | `性.bronze.svg`<br>`性.seal.svg` |
+| 悬 | oracle:- bronze:Y seal:Y | `悬.bronze.svg`<br>`悬.seal.svg` |
+| 雪 | oracle:Y bronze:Y seal:Y | `雪.bronze.svg`<br>`雪.oracle.svg`<br>`雪.seal.svg` |
+| 崖 | oracle:- bronze:- seal:Y | `崖.seal.svg` |
+| 雅 | oracle:- bronze:- seal:Y | `雅.seal.svg` |
+| 亚 | oracle:Y bronze:Y seal:Y | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
+| 眼 | oracle:- bronze:- seal:Y | `眼.seal.svg` |
+| 洋 | oracle:- bronze:- seal:Y | `洋.seal.svg` |
+| 掖 | oracle:- bronze:- seal:Y | `掖.seal.svg` |
+| 伊 | oracle:Y bronze:Y seal:Y | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
+| 以 | oracle:Y bronze:Y seal:Y | `以.bronze.svg`<br>`以.oracle.svg`<br>`以.seal.svg` |
+| 印 | oracle:Y bronze:Y seal:Y | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
+| 优 | oracle:- bronze:- seal:Y | `优.seal.svg` |
+| 原 | oracle:- bronze:Y seal:Y | `原.bronze.svg`<br>`原.seal.svg` |
+| 泽 | oracle:- bronze:- seal:Y | `泽.seal.svg` |
+| 扎 | oracle:- bronze:- seal:Y | `扎.seal.svg` |
+| 展 | oracle:- bronze:- seal:Y | `展.seal.svg` |
+| 张 | oracle:- bronze:Y seal:Y | `张.bronze.svg`<br>`张.seal.svg` |
+| 障 | oracle:- bronze:- seal:Y | `障.seal.svg` |
+| 沼 | oracle:- bronze:- seal:Y | `沼.seal.svg` |
+| 征 | oracle:Y bronze:Y seal:Y | `征.bronze.svg`<br>`征.oracle.svg`<br>`征.seal.svg` |
+| 之 | oracle:Y bronze:Y seal:Y | `之.bronze.svg`<br>`之.oracle.svg`<br>`之.seal.svg` |
+| 致 | oracle:- bronze:Y seal:Y | `致.bronze.svg`<br>`致.seal.svg` |
+| 州 | oracle:Y bronze:Y seal:Y | `州.bronze.svg`<br>`州.oracle.svg`<br>`州.seal.svg` |
+| 洲 | oracle:Y bronze:Y seal:Y | `洲.bronze.svg`<br>`洲.oracle.svg`<br>`洲.seal.svg` |
+| 珠 | oracle:- bronze:- seal:Y | `珠.seal.svg` |
 
 ## ui
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 齿 | oracle:Y bronze:Y seal:Y legacy:- | `齿.bronze.svg`<br>`齿.oracle.svg`<br>`齿.seal.svg` |
-| 旦 | oracle:Y bronze:Y seal:Y legacy:- | `旦.bronze.svg`<br>`旦.oracle.svg`<br>`旦.seal.svg` |
-| 否 | oracle:- bronze:Y seal:Y legacy:- | `否.bronze.svg`<br>`否.seal.svg` |
-| 戒 | oracle:Y bronze:Y seal:Y legacy:- | `戒.bronze.svg`<br>`戒.oracle.svg`<br>`戒.seal.svg` |
-| 可 | oracle:Y bronze:Y seal:Y legacy:- | `可.bronze.svg`<br>`可.oracle.svg`<br>`可.seal.svg` |
-| 日 | oracle:Y bronze:Y seal:Y legacy:- | `日.bronze.svg`<br>`日.oracle.svg`<br>`日.seal.svg` |
-| 讯 | oracle:Y bronze:Y seal:Y legacy:- | `讯.bronze.svg`<br>`讯.oracle.svg`<br>`讯.seal.svg` |
-| 乂 | oracle:Y bronze:Y seal:Y legacy:- | `乂.bronze.svg`<br>`乂.oracle.svg`<br>`乂.seal.svg` |
+| 齿 | oracle:Y bronze:Y seal:Y | `齿.bronze.svg`<br>`齿.oracle.svg`<br>`齿.seal.svg` |
+| 旦 | oracle:Y bronze:Y seal:Y | `旦.bronze.svg`<br>`旦.oracle.svg`<br>`旦.seal.svg` |
+| 否 | oracle:- bronze:Y seal:Y | `否.bronze.svg`<br>`否.seal.svg` |
+| 戒 | oracle:Y bronze:Y seal:Y | `戒.bronze.svg`<br>`戒.oracle.svg`<br>`戒.seal.svg` |
+| 可 | oracle:Y bronze:Y seal:Y | `可.bronze.svg`<br>`可.oracle.svg`<br>`可.seal.svg` |
+| 日 | oracle:Y bronze:Y seal:Y | `日.bronze.svg`<br>`日.oracle.svg`<br>`日.seal.svg` |
+| 讯 | oracle:Y bronze:Y seal:Y | `讯.bronze.svg`<br>`讯.oracle.svg`<br>`讯.seal.svg` |
+| 乂 | oracle:Y bronze:Y seal:Y | `乂.bronze.svg`<br>`乂.oracle.svg`<br>`乂.seal.svg` |
 
 ## unitabilities
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 能 | oracle:- bronze:Y seal:Y legacy:- | `能.bronze.svg`<br>`能.seal.svg` |
+| 能 | oracle:- bronze:Y seal:Y | `能.bronze.svg`<br>`能.seal.svg` |
 
 ## units
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 阿 | oracle:- bronze:Y seal:Y legacy:- | `阿.bronze.svg`<br>`阿.seal.svg` |
-| 埃 | oracle:- bronze:- seal:Y legacy:- | `埃.seal.svg` |
-| 艾 | oracle:- bronze:- seal:Y legacy:- | `艾.seal.svg` |
-| 安 | oracle:Y bronze:Y seal:Y legacy:- | `安.bronze.svg`<br>`安.oracle.svg`<br>`安.seal.svg` |
-| 暗 | oracle:- bronze:- seal:Y legacy:- | `暗.seal.svg` |
-| 奥 | oracle:- bronze:- seal:Y legacy:- | `奥.seal.svg` |
-| 澳 | oracle:- bronze:- seal:Y legacy:- | `澳.seal.svg` |
-| 巴 | oracle:Y bronze:- seal:Y legacy:- | `巴.oracle.svg`<br>`巴.seal.svg` |
-| 白 | oracle:Y bronze:Y seal:Y legacy:- | `白.bronze.svg`<br>`白.oracle.svg`<br>`白.seal.svg` |
-| 拜 | oracle:- bronze:Y seal:Y legacy:- | `拜.bronze.svg`<br>`拜.seal.svg` |
-| 班 | oracle:- bronze:Y seal:Y legacy:- | `班.bronze.svg`<br>`班.seal.svg` |
-| 板 | oracle:- bronze:- seal:Y legacy:- | `板.seal.svg` |
-| 榜 | oracle:- bronze:- seal:Y legacy:- | `榜.seal.svg` |
-| 雹 | oracle:Y bronze:- seal:Y legacy:- | `雹.oracle.svg`<br>`雹.seal.svg` |
-| 宝 | oracle:Y bronze:Y seal:Y legacy:- | `宝.bronze.svg`<br>`宝.oracle.svg`<br>`宝.seal.svg` |
-| 堡 | oracle:Y bronze:Y seal:Y legacy:- | `堡.bronze.svg`<br>`堡.oracle.svg`<br>`堡.seal.svg` |
-| 报 | oracle:- bronze:Y seal:Y legacy:- | `报.bronze.svg`<br>`报.seal.svg` |
-| 卑 | oracle:- bronze:Y seal:Y legacy:- | `卑.bronze.svg`<br>`卑.seal.svg` |
-| 悲 | oracle:- bronze:- seal:Y legacy:- | `悲.seal.svg` |
-| 贝 | oracle:Y bronze:Y seal:Y legacy:- | `贝.bronze.svg`<br>`贝.oracle.svg`<br>`贝.seal.svg` |
-| 备 | oracle:Y bronze:Y seal:Y legacy:- | `备.bronze.svg`<br>`备.oracle.svg`<br>`备.seal.svg` |
-| 本 | oracle:- bronze:Y seal:Y legacy:- | `本.bronze.svg`<br>`本.seal.svg` |
-| 比 | oracle:Y bronze:Y seal:Y legacy:- | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
-| 必 | oracle:Y bronze:Y seal:Y legacy:- | `必.bronze.svg`<br>`必.oracle.svg`<br>`必.seal.svg` |
-| 蔽 | oracle:- bronze:- seal:Y legacy:- | `蔽.seal.svg` |
-| 壁 | oracle:- bronze:- seal:Y legacy:- | `壁.seal.svg` |
-| 边 | oracle:Y bronze:Y seal:Y legacy:- | `边.bronze.svg`<br>`边.oracle.svg`<br>`边.seal.svg` |
-| 编 | oracle:- bronze:- seal:Y legacy:- | `编.seal.svg` |
-| 鞭 | oracle:- bronze:Y seal:Y legacy:- | `鞭.bronze.svg`<br>`鞭.seal.svg` |
-| 变 | oracle:- bronze:Y seal:Y legacy:- | `变.bronze.svg`<br>`变.seal.svg` |
-| 标 | oracle:- bronze:- seal:Y legacy:- | `标.seal.svg` |
-| 骠 | oracle:- bronze:- seal:Y legacy:- | `骠.seal.svg` |
-| 滨 | oracle:- bronze:Y seal:Y legacy:- | `滨.bronze.svg`<br>`滨.seal.svg` |
-| 冰 | oracle:- bronze:Y seal:Y legacy:- | `冰.bronze.svg`<br>`冰.seal.svg` |
-| 兵 | oracle:Y bronze:Y seal:Y legacy:- | `兵.bronze.svg`<br>`兵.oracle.svg`<br>`兵.seal.svg` |
-| 病 | oracle:- bronze:- seal:Y legacy:- | `病.seal.svg` |
-| 波 | oracle:- bronze:- seal:Y legacy:- | `波.seal.svg` |
-| 播 | oracle:- bronze:Y seal:Y legacy:- | `播.bronze.svg`<br>`播.seal.svg` |
-| 伯 | oracle:Y bronze:Y seal:Y legacy:- | `伯.bronze.svg`<br>`伯.oracle.svg`<br>`伯.seal.svg` |
-| 博 | oracle:- bronze:Y seal:Y legacy:- | `博.bronze.svg`<br>`博.seal.svg` |
-| 卜 | oracle:Y bronze:Y seal:Y legacy:- | `卜.bronze.svg`<br>`卜.oracle.svg`<br>`卜.seal.svg` |
-| 补 | oracle:- bronze:- seal:Y legacy:- | `补.seal.svg` |
-| 捕 | oracle:- bronze:- seal:Y legacy:- | `捕.seal.svg` |
-| 布 | oracle:- bronze:Y seal:Y legacy:- | `布.bronze.svg`<br>`布.seal.svg` |
-| 步 | oracle:Y bronze:Y seal:Y legacy:- | `步.bronze.svg`<br>`步.oracle.svg`<br>`步.seal.svg` |
-| 部 | oracle:- bronze:- seal:Y legacy:- | `部.seal.svg` |
-| 材 | oracle:- bronze:- seal:Y legacy:- | `材.seal.svg` |
-| 采 | oracle:Y bronze:Y seal:Y legacy:- | `采.bronze.svg`<br>`采.oracle.svg`<br>`采.seal.svg` |
-| 彩 | oracle:- bronze:- seal:Y legacy:- | `彩.seal.svg` |
-| 参 | oracle:- bronze:Y seal:Y legacy:- | `参.bronze.svg`<br>`参.seal.svg` |
-| 藏 | oracle:- bronze:Y seal:Y legacy:- | `藏.bronze.svg`<br>`藏.seal.svg` |
-| 操 | oracle:- bronze:- seal:Y legacy:- | `操.seal.svg` |
-| 测 | oracle:- bronze:Y seal:Y legacy:- | `测.bronze.svg`<br>`测.seal.svg` |
-| 查 | oracle:- bronze:- seal:Y legacy:- | `查.seal.svg` |
-| 茶 | oracle:- bronze:- seal:Y legacy:- | `茶.seal.svg` |
-| 察 | oracle:- bronze:Y seal:Y legacy:- | `察.bronze.svg`<br>`察.seal.svg` |
-| 差 | oracle:- bronze:Y seal:Y legacy:- | `差.bronze.svg`<br>`差.seal.svg` |
-| 产 | oracle:- bronze:Y seal:Y legacy:- | `产.bronze.svg`<br>`产.seal.svg` |
-| 厂 | oracle:- bronze:Y seal:Y legacy:- | `厂.bronze.svg`<br>`厂.seal.svg` |
-| 场 | oracle:- bronze:- seal:Y legacy:- | `场.seal.svg` |
-| 朝 | oracle:Y bronze:Y seal:Y legacy:- | `朝.bronze.svg`<br>`朝.oracle.svg`<br>`朝.seal.svg` |
-| 车 | oracle:Y bronze:Y seal:Y legacy:- | `车.bronze.svg`<br>`车.oracle.svg`<br>`车.seal.svg` |
-| 称 | oracle:- bronze:- seal:Y legacy:- | `称.seal.svg` |
-| 成 | oracle:Y bronze:Y seal:Y legacy:- | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
-| 城 | oracle:- bronze:Y seal:Y legacy:- | `城.bronze.svg`<br>`城.seal.svg` |
-| 程 | oracle:- bronze:Y seal:Y legacy:- | `程.bronze.svg`<br>`程.seal.svg` |
-| 持 | oracle:- bronze:Y seal:Y legacy:- | `持.bronze.svg`<br>`持.seal.svg` |
-| 崇 | oracle:- bronze:- seal:Y legacy:- | `崇.seal.svg` |
-| 宠 | oracle:- bronze:Y seal:Y legacy:- | `宠.bronze.svg`<br>`宠.seal.svg` |
-| 出 | oracle:Y bronze:Y seal:Y legacy:- | `出.bronze.svg`<br>`出.oracle.svg`<br>`出.seal.svg` |
-| 除 | oracle:- bronze:- seal:Y legacy:- | `除.seal.svg` |
-| 厨 | oracle:- bronze:Y seal:Y legacy:- | `厨.bronze.svg`<br>`厨.seal.svg` |
-| 处 | oracle:Y bronze:Y seal:Y legacy:- | `处.bronze.svg`<br>`处.oracle.svg`<br>`处.seal.svg` |
-| 传 | oracle:Y bronze:Y seal:Y legacy:- | `传.bronze.svg`<br>`传.oracle.svg`<br>`传.seal.svg` |
-| 船 | oracle:- bronze:Y seal:Y legacy:- | `船.bronze.svg`<br>`船.seal.svg` |
-| 创 | oracle:- bronze:Y seal:Y legacy:- | `创.bronze.svg`<br>`创.seal.svg` |
-| 槌 | oracle:- bronze:- seal:Y legacy:- | `槌.seal.svg` |
-| 锤 | oracle:- bronze:- seal:Y legacy:- | `锤.seal.svg` |
-| 粗 | oracle:- bronze:- seal:Y legacy:- | `粗.seal.svg` |
-| 村 | oracle:- bronze:Y seal:Y legacy:- | `村.bronze.svg`<br>`村.seal.svg` |
-| 达 | oracle:Y bronze:- seal:- legacy:- | `达.oracle.svg` |
-| 打 | oracle:- bronze:- seal:Y legacy:- | `打.seal.svg` |
-| 大 | oracle:Y bronze:Y seal:Y legacy:- | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
-| 代 | oracle:- bronze:- seal:Y legacy:- | `代.seal.svg` |
-| 待 | oracle:- bronze:Y seal:Y legacy:- | `待.bronze.svg`<br>`待.seal.svg` |
-| 单 | oracle:Y bronze:Y seal:Y legacy:- | `单.bronze.svg`<br>`单.oracle.svg`<br>`单.seal.svg` |
-| 弹 | oracle:Y bronze:- seal:Y legacy:- | `弹.oracle.svg`<br>`弹.seal.svg` |
-| 导 | oracle:- bronze:- seal:Y legacy:- | `导.seal.svg` |
-| 岛 | oracle:- bronze:- seal:Y legacy:- | `岛.seal.svg` |
-| 盗 | oracle:Y bronze:Y seal:Y legacy:- | `盗.bronze.svg`<br>`盗.oracle.svg`<br>`盗.seal.svg` |
-| 道 | oracle:- bronze:Y seal:Y legacy:- | `道.bronze.svg`<br>`道.seal.svg` |
-| 德 | oracle:Y bronze:Y seal:Y legacy:- | `德.bronze.svg`<br>`德.oracle.svg`<br>`德.seal.svg` |
-| 地 | oracle:- bronze:Y seal:Y legacy:- | `地.bronze.svg`<br>`地.seal.svg` |
-| 等 | oracle:- bronze:- seal:Y legacy:- | `等.seal.svg` |
-| 帝 | oracle:Y bronze:Y seal:Y legacy:- | `帝.bronze.svg`<br>`帝.oracle.svg`<br>`帝.seal.svg` |
-| 第 | oracle:Y bronze:Y seal:Y legacy:- | `第.bronze.svg`<br>`第.oracle.svg`<br>`第.seal.svg` |
-| 蒂 | oracle:- bronze:- seal:Y legacy:- | `蒂.seal.svg` |
-| 典 | oracle:Y bronze:Y seal:Y legacy:- | `典.bronze.svg`<br>`典.oracle.svg`<br>`典.seal.svg` |
-| 电 | oracle:- bronze:Y seal:Y legacy:- | `电.bronze.svg`<br>`电.seal.svg` |
-| 调 | oracle:- bronze:- seal:Y legacy:- | `调.seal.svg` |
-| 谍 | oracle:- bronze:- seal:Y legacy:- | `谍.seal.svg` |
-| 顶 | oracle:- bronze:Y seal:Y legacy:- | `顶.bronze.svg`<br>`顶.seal.svg` |
-| 定 | oracle:Y bronze:Y seal:Y legacy:- | `定.bronze.svg`<br>`定.oracle.svg`<br>`定.seal.svg` |
-| 动 | oracle:- bronze:Y seal:Y legacy:- | `动.bronze.svg`<br>`动.seal.svg` |
-| 斗 | oracle:Y bronze:Y seal:Y legacy:- | `斗.bronze.svg`<br>`斗.oracle.svg`<br>`斗.seal.svg` |
-| 度 | oracle:Y bronze:Y seal:Y legacy:- | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
-| 端 | oracle:- bronze:- seal:Y legacy:- | `端.seal.svg` |
-| 队 | oracle:Y bronze:Y seal:Y legacy:- | `队.bronze.svg`<br>`队.oracle.svg`<br>`队.seal.svg` |
-| 囤 | oracle:- bronze:- seal:Y legacy:- | `囤.seal.svg` |
-| 盾 | oracle:Y bronze:Y seal:Y legacy:- | `盾.bronze.svg`<br>`盾.oracle.svg`<br>`盾.seal.svg` |
-| 顿 | oracle:- bronze:- seal:Y legacy:- | `顿.seal.svg` |
-| 多 | oracle:Y bronze:Y seal:Y legacy:- | `多.bronze.svg`<br>`多.oracle.svg`<br>`多.seal.svg` |
-| 夺 | oracle:- bronze:Y seal:Y legacy:- | `夺.bronze.svg`<br>`夺.seal.svg` |
-| 俄 | oracle:- bronze:- seal:Y legacy:- | `俄.seal.svg` |
-| 饿 | oracle:- bronze:- seal:Y legacy:- | `饿.seal.svg` |
-| 尔 | oracle:- bronze:Y seal:Y legacy:- | `尔.bronze.svg`<br>`尔.seal.svg` |
-| 发 | oracle:Y bronze:Y seal:Y legacy:- | `发.bronze.svg`<br>`发.oracle.svg`<br>`发.seal.svg` |
-| 法 | oracle:- bronze:Y seal:Y legacy:- | `法.bronze.svg`<br>`法.seal.svg` |
-| 帆 | oracle:- bronze:- seal:Y legacy:- | `帆.seal.svg` |
-| 反 | oracle:Y bronze:Y seal:Y legacy:- | `反.bronze.svg`<br>`反.oracle.svg`<br>`反.seal.svg` |
-| 范 | oracle:- bronze:Y seal:Y legacy:- | `范.bronze.svg`<br>`范.seal.svg` |
-| 防 | oracle:- bronze:- seal:Y legacy:- | `防.seal.svg` |
-| 房 | oracle:- bronze:- seal:Y legacy:- | `房.seal.svg` |
-| 放 | oracle:- bronze:Y seal:Y legacy:- | `放.bronze.svg`<br>`放.seal.svg` |
-| 飞 | oracle:- bronze:- seal:Y legacy:- | `飞.seal.svg` |
-| 非 | oracle:Y bronze:Y seal:Y legacy:- | `非.bronze.svg`<br>`非.oracle.svg`<br>`非.seal.svg` |
-| 菲 | oracle:- bronze:- seal:Y legacy:- | `菲.seal.svg` |
-| 腓 | oracle:- bronze:- seal:Y legacy:- | `腓.seal.svg` |
-| 费 | oracle:- bronze:Y seal:Y legacy:- | `费.bronze.svg`<br>`费.seal.svg` |
-| 焚 | oracle:Y bronze:Y seal:Y legacy:- | `焚.bronze.svg`<br>`焚.oracle.svg`<br>`焚.seal.svg` |
-| 风 | oracle:Y bronze:Y seal:Y legacy:- | `风.bronze.svg`<br>`风.oracle.svg`<br>`风.seal.svg` |
-| 夫 | oracle:Y bronze:Y seal:Y legacy:- | `夫.bronze.svg`<br>`夫.oracle.svg`<br>`夫.seal.svg` |
-| 服 | oracle:Y bronze:Y seal:Y legacy:- | `服.bronze.svg`<br>`服.oracle.svg`<br>`服.seal.svg` |
-| 符 | oracle:- bronze:Y seal:Y legacy:- | `符.bronze.svg`<br>`符.seal.svg` |
-| 甫 | oracle:Y bronze:Y seal:Y legacy:- | `甫.bronze.svg`<br>`甫.oracle.svg`<br>`甫.seal.svg` |
-| 复 | oracle:Y bronze:Y seal:Y legacy:- | `复.bronze.svg`<br>`复.oracle.svg`<br>`复.seal.svg` |
-| 改 | oracle:Y bronze:Y seal:Y legacy:- | `改.bronze.svg`<br>`改.oracle.svg`<br>`改.seal.svg` |
-| 盖 | oracle:Y bronze:Y seal:Y legacy:- | `盖.bronze.svg`<br>`盖.oracle.svg`<br>`盖.seal.svg` |
-| 甘 | oracle:Y bronze:Y seal:Y legacy:- | `甘.bronze.svg`<br>`甘.oracle.svg`<br>`甘.seal.svg` |
-| 干 | oracle:Y bronze:Y seal:Y legacy:- | `干.bronze.svg`<br>`干.oracle.svg`<br>`干.seal.svg` |
-| 刚 | oracle:Y bronze:Y seal:Y legacy:- | `刚.bronze.svg`<br>`刚.oracle.svg`<br>`刚.seal.svg` |
-| 高 | oracle:Y bronze:Y seal:Y legacy:- | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
-| 戈 | oracle:Y bronze:Y seal:Y legacy:- | `戈.bronze.svg`<br>`戈.oracle.svg`<br>`戈.seal.svg` |
-| 哥 | oracle:- bronze:- seal:Y legacy:- | `哥.seal.svg` |
-| 格 | oracle:- bronze:Y seal:Y legacy:- | `格.bronze.svg`<br>`格.seal.svg` |
-| 给 | oracle:- bronze:- seal:Y legacy:- | `给.seal.svg` |
-| 工 | oracle:Y bronze:Y seal:Y legacy:- | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
-| 弓 | oracle:Y bronze:Y seal:Y legacy:- | `弓.bronze.svg`<br>`弓.oracle.svg`<br>`弓.seal.svg` |
-| 公 | oracle:Y bronze:Y seal:Y legacy:- | `公.bronze.svg`<br>`公.oracle.svg`<br>`公.seal.svg` |
-| 功 | oracle:- bronze:Y seal:Y legacy:- | `功.bronze.svg`<br>`功.seal.svg` |
-| 攻 | oracle:- bronze:Y seal:Y legacy:- | `攻.bronze.svg`<br>`攻.seal.svg` |
-| 供 | oracle:- bronze:- seal:Y legacy:- | `供.seal.svg` |
-| 狗 | oracle:- bronze:Y seal:Y legacy:- | `狗.bronze.svg`<br>`狗.seal.svg` |
-| 构 | oracle:- bronze:- seal:Y legacy:- | `构.seal.svg` |
-| 古 | oracle:Y bronze:Y seal:Y legacy:- | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
-| 股 | oracle:- bronze:Y seal:Y legacy:- | `股.bronze.svg`<br>`股.seal.svg` |
-| 观 | oracle:Y bronze:Y seal:Y legacy:- | `观.bronze.svg`<br>`观.oracle.svg`<br>`观.seal.svg` |
-| 官 | oracle:Y bronze:Y seal:Y legacy:- | `官.bronze.svg`<br>`官.oracle.svg`<br>`官.seal.svg` |
-| 馆 | oracle:- bronze:- seal:Y legacy:- | `馆.seal.svg` |
-| 规 | oracle:- bronze:Y seal:Y legacy:- | `规.bronze.svg`<br>`规.seal.svg` |
-| 轨 | oracle:- bronze:Y seal:Y legacy:- | `轨.bronze.svg`<br>`轨.seal.svg` |
-| 鬼 | oracle:Y bronze:Y seal:Y legacy:- | `鬼.bronze.svg`<br>`鬼.oracle.svg`<br>`鬼.seal.svg` |
-| 滚 | oracle:- bronze:- seal:Y legacy:- | `滚.seal.svg` |
-| 国 | oracle:- bronze:Y seal:Y legacy:- | `国.bronze.svg`<br>`国.seal.svg` |
-| 果 | oracle:- bronze:Y seal:Y legacy:- | `果.bronze.svg`<br>`果.seal.svg` |
-| 过 | oracle:- bronze:Y seal:Y legacy:- | `过.bronze.svg`<br>`过.seal.svg` |
-| 海 | oracle:- bronze:Y seal:Y legacy:- | `海.bronze.svg`<br>`海.seal.svg` |
-| 害 | oracle:- bronze:Y seal:Y legacy:- | `害.bronze.svg`<br>`害.seal.svg` |
-| 韩 | oracle:- bronze:Y seal:Y legacy:- | `韩.bronze.svg`<br>`韩.seal.svg` |
-| 杭 | oracle:- bronze:- seal:Y legacy:- | `杭.seal.svg` |
-| 航 | oracle:- bronze:- seal:Y legacy:- | `航.seal.svg` |
-| 好 | oracle:Y bronze:Y seal:Y legacy:- | `好.bronze.svg`<br>`好.oracle.svg`<br>`好.seal.svg` |
-| 号 | oracle:- bronze:Y seal:Y legacy:- | `号.bronze.svg`<br>`号.seal.svg` |
-| 合 | oracle:Y bronze:Y seal:Y legacy:- | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
-| 核 | oracle:- bronze:- seal:Y legacy:- | `核.seal.svg` |
-| 赫 | oracle:- bronze:- seal:Y legacy:- | `赫.seal.svg` |
-| 黑 | oracle:Y bronze:Y seal:Y legacy:- | `黑.bronze.svg`<br>`黑.oracle.svg`<br>`黑.seal.svg` |
-| 轰 | oracle:- bronze:- seal:Y legacy:- | `轰.seal.svg` |
-| 红 | oracle:- bronze:- seal:Y legacy:- | `红.seal.svg` |
-| 虹 | oracle:Y bronze:- seal:Y legacy:- | `虹.oracle.svg`<br>`虹.seal.svg` |
-| 忽 | oracle:- bronze:Y seal:Y legacy:- | `忽.bronze.svg`<br>`忽.seal.svg` |
-| 胡 | oracle:- bronze:Y seal:Y legacy:- | `胡.bronze.svg`<br>`胡.seal.svg` |
-| 虎 | oracle:Y bronze:Y seal:Y legacy:- | `虎.bronze.svg`<br>`虎.oracle.svg`<br>`虎.seal.svg` |
-| 户 | oracle:Y bronze:Y seal:Y legacy:- | `户.bronze.svg`<br>`户.oracle.svg`<br>`户.seal.svg` |
-| 护 | oracle:- bronze:- seal:Y legacy:- | `护.seal.svg` |
-| 花 | oracle:- bronze:- seal:Y legacy:- | `花.seal.svg` |
-| 华 | oracle:- bronze:- seal:Y legacy:- | `华.seal.svg` |
-| 滑 | oracle:- bronze:Y seal:Y legacy:- | `滑.bronze.svg`<br>`滑.seal.svg` |
-| 化 | oracle:Y bronze:Y seal:Y legacy:- | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
-| 怀 | oracle:- bronze:Y seal:Y legacy:- | `怀.bronze.svg`<br>`怀.seal.svg` |
-| 坏 | oracle:- bronze:Y seal:Y legacy:- | `坏.bronze.svg`<br>`坏.seal.svg` |
-| 唤 | oracle:- bronze:- seal:Y legacy:- | `唤.seal.svg` |
-| 换 | oracle:- bronze:- seal:Y legacy:- | `换.seal.svg` |
-| 痪 | oracle:- bronze:- seal:Y legacy:- | `痪.seal.svg` |
-| 皇 | oracle:Y bronze:Y seal:Y legacy:- | `皇.bronze.svg`<br>`皇.oracle.svg`<br>`皇.seal.svg` |
-| 黄 | oracle:Y bronze:Y seal:Y legacy:- | `黄.bronze.svg`<br>`黄.oracle.svg`<br>`黄.seal.svg` |
-| 恢 | oracle:- bronze:- seal:Y legacy:- | `恢.seal.svg` |
-| 挥 | oracle:- bronze:Y seal:Y legacy:- | `挥.bronze.svg`<br>`挥.seal.svg` |
-| 毁 | oracle:- bronze:Y seal:Y legacy:- | `毁.bronze.svg`<br>`毁.seal.svg` |
-| 活 | oracle:- bronze:- seal:Y legacy:- | `活.seal.svg` |
-| 火 | oracle:Y bronze:- seal:Y legacy:- | `火.oracle.svg`<br>`火.seal.svg` |
-| 获 | oracle:Y bronze:Y seal:Y legacy:- | `获.bronze.svg`<br>`获.oracle.svg`<br>`获.seal.svg` |
-| 击 | oracle:- bronze:- seal:Y legacy:- | `击.seal.svg` |
-| 饥 | oracle:- bronze:- seal:Y legacy:- | `饥.seal.svg` |
-| 机 | oracle:- bronze:- seal:Y legacy:- | `机.seal.svg` |
-| 积 | oracle:- bronze:Y seal:Y legacy:- | `积.bronze.svg`<br>`积.seal.svg` |
-| 基 | oracle:Y bronze:Y seal:Y legacy:- | `基.bronze.svg`<br>`基.oracle.svg`<br>`基.seal.svg` |
-| 激 | oracle:- bronze:- seal:Y legacy:- | `激.seal.svg` |
-| 吉 | oracle:Y bronze:Y seal:Y legacy:- | `吉.bronze.svg`<br>`吉.oracle.svg`<br>`吉.seal.svg` |
-| 级 | oracle:- bronze:- seal:Y legacy:- | `级.seal.svg` |
-| 计 | oracle:- bronze:- seal:Y legacy:- | `计.seal.svg` |
-| 纪 | oracle:- bronze:Y seal:Y legacy:- | `纪.bronze.svg`<br>`纪.seal.svg` |
-| 技 | oracle:- bronze:- seal:Y legacy:- | `技.seal.svg` |
-| 季 | oracle:Y bronze:Y seal:Y legacy:- | `季.bronze.svg`<br>`季.oracle.svg`<br>`季.seal.svg` |
-| 迹 | oracle:- bronze:Y seal:Y legacy:- | `迹.bronze.svg`<br>`迹.seal.svg` |
-| 祭 | oracle:Y bronze:Y seal:Y legacy:- | `祭.bronze.svg`<br>`祭.oracle.svg`<br>`祭.seal.svg` |
-| 加 | oracle:- bronze:Y seal:Y legacy:- | `加.bronze.svg`<br>`加.seal.svg` |
-| 家 | oracle:Y bronze:Y seal:Y legacy:- | `家.bronze.svg`<br>`家.oracle.svg`<br>`家.seal.svg` |
-| 甲 | oracle:Y bronze:Y seal:Y legacy:- | `甲.bronze.svg`<br>`甲.oracle.svg`<br>`甲.seal.svg` |
-| 假 | oracle:- bronze:- seal:Y legacy:- | `假.seal.svg` |
-| 间 | oracle:- bronze:Y seal:Y legacy:- | `间.bronze.svg`<br>`间.seal.svg` |
-| 监 | oracle:Y bronze:Y seal:Y legacy:- | `监.bronze.svg`<br>`监.oracle.svg`<br>`监.seal.svg` |
-| 简 | oracle:- bronze:Y seal:Y legacy:- | `简.bronze.svg`<br>`简.seal.svg` |
-| 建 | oracle:Y bronze:Y seal:Y legacy:- | `建.bronze.svg`<br>`建.oracle.svg`<br>`建.seal.svg` |
-| 剑 | oracle:- bronze:Y seal:Y legacy:- | `剑.bronze.svg`<br>`剑.seal.svg` |
-| 舰 | oracle:- bronze:- seal:Y legacy:- | `舰.seal.svg` |
-| 箭 | oracle:- bronze:Y seal:Y legacy:- | `箭.bronze.svg`<br>`箭.seal.svg` |
-| 僵 | oracle:- bronze:- seal:Y legacy:- | `僵.seal.svg` |
-| 疆 | oracle:Y bronze:Y seal:Y legacy:- | `疆.bronze.svg`<br>`疆.oracle.svg`<br>`疆.seal.svg` |
-| 交 | oracle:- bronze:- seal:Y legacy:- | `交.seal.svg` |
-| 较 | oracle:- bronze:Y seal:Y legacy:- | `较.bronze.svg`<br>`较.seal.svg` |
-| 教 | oracle:Y bronze:Y seal:Y legacy:- | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
-| 阶 | oracle:Y bronze:Y seal:Y legacy:- | `阶.bronze.svg`<br>`阶.oracle.svg`<br>`阶.seal.svg` |
-| 劫 | oracle:- bronze:- seal:Y legacy:- | `劫.seal.svg` |
-| 杰 | oracle:- bronze:- seal:Y legacy:- | `杰.seal.svg` |
-| 金 | oracle:- bronze:Y seal:Y legacy:- | `金.bronze.svg`<br>`金.seal.svg` |
-| 进 | oracle:Y bronze:Y seal:Y legacy:- | `进.bronze.svg`<br>`进.oracle.svg`<br>`进.seal.svg` |
-| 禁 | oracle:- bronze:- seal:Y legacy:- | `禁.seal.svg` |
-| 京 | oracle:Y bronze:Y seal:Y legacy:- | `京.bronze.svg`<br>`京.oracle.svg`<br>`京.seal.svg` |
-| 经 | oracle:- bronze:Y seal:Y legacy:- | `经.bronze.svg`<br>`经.seal.svg` |
-| 井 | oracle:Y bronze:Y seal:Y legacy:- | `井.bronze.svg`<br>`井.oracle.svg`<br>`井.seal.svg` |
-| 阱 | oracle:- bronze:- seal:Y legacy:- | `阱.seal.svg` |
-| 景 | oracle:- bronze:- seal:Y legacy:- | `景.seal.svg` |
-| 警 | oracle:- bronze:- seal:Y legacy:- | `警.seal.svg` |
-| 究 | oracle:- bronze:Y seal:Y legacy:- | `究.bronze.svg`<br>`究.seal.svg` |
-| 酒 | oracle:Y bronze:Y seal:Y legacy:- | `酒.bronze.svg`<br>`酒.oracle.svg`<br>`酒.seal.svg` |
-| 居 | oracle:- bronze:Y seal:Y legacy:- | `居.bronze.svg`<br>`居.seal.svg` |
-| 巨 | oracle:- bronze:Y seal:Y legacy:- | `巨.bronze.svg`<br>`巨.seal.svg` |
-| 惧 | oracle:- bronze:Y seal:Y legacy:- | `惧.bronze.svg`<br>`惧.seal.svg` |
-| 捐 | oracle:- bronze:- seal:Y legacy:- | `捐.seal.svg` |
-| 掘 | oracle:- bronze:- seal:Y legacy:- | `掘.seal.svg` |
-| 军 | oracle:- bronze:Y seal:Y legacy:- | `军.bronze.svg`<br>`军.seal.svg` |
-| 卡 | oracle:- bronze:- seal:Y legacy:- | `卡.seal.svg` |
-| 开 | oracle:- bronze:- seal:Y legacy:- | `开.seal.svg` |
-| 考 | oracle:Y bronze:Y seal:Y legacy:- | `考.bronze.svg`<br>`考.oracle.svg`<br>`考.seal.svg` |
-| 科 | oracle:- bronze:- seal:Y legacy:- | `科.seal.svg` |
-| 克 | oracle:Y bronze:Y seal:Y legacy:- | `克.bronze.svg`<br>`克.oracle.svg`<br>`克.seal.svg` |
-| 客 | oracle:- bronze:Y seal:Y legacy:- | `客.bronze.svg`<br>`客.seal.svg` |
-| 课 | oracle:- bronze:- seal:Y legacy:- | `课.seal.svg` |
-| 空 | oracle:- bronze:Y seal:Y legacy:- | `空.bronze.svg`<br>`空.seal.svg` |
-| 恐 | oracle:- bronze:Y seal:Y legacy:- | `恐.bronze.svg`<br>`恐.seal.svg` |
-| 库 | oracle:- bronze:Y seal:Y legacy:- | `库.bronze.svg`<br>`库.seal.svg` |
-| 狂 | oracle:Y bronze:Y seal:Y legacy:- | `狂.bronze.svg`<br>`狂.oracle.svg`<br>`狂.seal.svg` |
-| 矿 | oracle:- bronze:- seal:Y legacy:- | `矿.seal.svg` |
-| 盔 | oracle:Y bronze:Y seal:Y legacy:- | `盔.bronze.svg`<br>`盔.oracle.svg`<br>`盔.seal.svg` |
-| 扩 | oracle:- bronze:- seal:Y legacy:- | `扩.seal.svg` |
-| 阔 | oracle:- bronze:Y seal:Y legacy:- | `阔.bronze.svg`<br>`阔.seal.svg` |
-| 拉 | oracle:- bronze:- seal:Y legacy:- | `拉.seal.svg` |
-| 腊 | oracle:Y bronze:Y seal:Y legacy:- | `腊.bronze.svg`<br>`腊.oracle.svg`<br>`腊.seal.svg` |
-| 来 | oracle:Y bronze:Y seal:Y legacy:- | `来.bronze.svg`<br>`来.oracle.svg`<br>`来.seal.svg` |
-| 莱 | oracle:- bronze:- seal:Y legacy:- | `莱.seal.svg` |
-| 兰 | oracle:- bronze:- seal:Y legacy:- | `兰.seal.svg` |
-| 浪 | oracle:- bronze:- seal:Y legacy:- | `浪.seal.svg` |
-| 乐 | oracle:Y bronze:Y seal:Y legacy:- | `乐.bronze.svg`<br>`乐.oracle.svg`<br>`乐.seal.svg` |
-| 雷 | oracle:Y bronze:Y seal:Y legacy:- | `雷.bronze.svg`<br>`雷.oracle.svg`<br>`雷.seal.svg` |
-| 垒 | oracle:- bronze:- seal:Y legacy:- | `垒.seal.svg` |
-| 礼 | oracle:Y bronze:Y seal:Y legacy:- | `礼.bronze.svg`<br>`礼.oracle.svg`<br>`礼.seal.svg` |
-| 里 | oracle:- bronze:Y seal:Y legacy:- | `里.bronze.svg`<br>`里.seal.svg` |
-| 力 | oracle:Y bronze:Y seal:Y legacy:- | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
-| 历 | oracle:- bronze:- seal:Y legacy:- | `历.seal.svg` |
-| 丽 | oracle:Y bronze:Y seal:Y legacy:- | `丽.bronze.svg`<br>`丽.oracle.svg`<br>`丽.seal.svg` |
-| 利 | oracle:Y bronze:Y seal:Y legacy:- | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
-| 联 | oracle:Y bronze:Y seal:Y legacy:- | `联.bronze.svg`<br>`联.oracle.svg`<br>`联.seal.svg` |
-| 良 | oracle:Y bronze:Y seal:Y legacy:- | `良.bronze.svg`<br>`良.oracle.svg`<br>`良.seal.svg` |
-| 疗 | oracle:- bronze:- seal:Y legacy:- | `疗.seal.svg` |
-| 料 | oracle:- bronze:Y seal:Y legacy:- | `料.bronze.svg`<br>`料.seal.svg` |
-| 列 | oracle:- bronze:Y seal:Y legacy:- | `列.bronze.svg`<br>`列.seal.svg` |
-| 烈 | oracle:- bronze:- seal:Y legacy:- | `烈.seal.svg` |
-| 林 | oracle:Y bronze:Y seal:Y legacy:- | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
-| 琳 | oracle:- bronze:- seal:Y legacy:- | `琳.seal.svg` |
-| 领 | oracle:- bronze:- seal:Y legacy:- | `领.seal.svg` |
-| 令 | oracle:Y bronze:Y seal:Y legacy:- | `令.bronze.svg`<br>`令.oracle.svg`<br>`令.seal.svg` |
-| 流 | oracle:- bronze:Y seal:Y legacy:- | `流.bronze.svg`<br>`流.seal.svg` |
-| 龙 | oracle:Y bronze:Y seal:Y legacy:- | `龙.bronze.svg`<br>`龙.oracle.svg`<br>`龙.seal.svg` |
-| 卢 | oracle:Y bronze:Y seal:Y legacy:- | `卢.bronze.svg`<br>`卢.oracle.svg`<br>`卢.seal.svg` |
-| 鲁 | oracle:Y bronze:Y seal:Y legacy:- | `鲁.bronze.svg`<br>`鲁.oracle.svg`<br>`鲁.seal.svg` |
-| 陆 | oracle:Y bronze:Y seal:Y legacy:- | `陆.bronze.svg`<br>`陆.oracle.svg`<br>`陆.seal.svg` |
-| 路 | oracle:- bronze:Y seal:Y legacy:- | `路.bronze.svg`<br>`路.seal.svg` |
-| 露 | oracle:- bronze:- seal:Y legacy:- | `露.seal.svg` |
-| 吕 | oracle:Y bronze:Y seal:Y legacy:- | `吕.bronze.svg`<br>`吕.oracle.svg`<br>`吕.seal.svg` |
-| 旅 | oracle:Y bronze:Y seal:Y legacy:- | `旅.bronze.svg`<br>`旅.oracle.svg`<br>`旅.seal.svg` |
-| 乱 | oracle:- bronze:Y seal:Y legacy:- | `乱.bronze.svg`<br>`乱.seal.svg` |
-| 掠 | oracle:- bronze:- seal:Y legacy:- | `掠.seal.svg` |
-| 略 | oracle:- bronze:- seal:Y legacy:- | `略.seal.svg` |
-| 伦 | oracle:- bronze:- seal:Y legacy:- | `伦.seal.svg` |
-| 罗 | oracle:Y bronze:Y seal:Y legacy:- | `罗.bronze.svg`<br>`罗.oracle.svg`<br>`罗.seal.svg` |
-| 洛 | oracle:- bronze:Y seal:Y legacy:- | `洛.bronze.svg`<br>`洛.seal.svg` |
-| 马 | oracle:Y bronze:Y seal:Y legacy:- | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
-| 玛 | oracle:Y bronze:Y seal:Y legacy:- | `玛.bronze.svg`<br>`玛.oracle.svg`<br>`玛.seal.svg` |
-| 蛮 | oracle:- bronze:Y seal:Y legacy:- | `蛮.bronze.svg`<br>`蛮.seal.svg` |
-| 曼 | oracle:Y bronze:Y seal:Y legacy:- | `曼.bronze.svg`<br>`曼.oracle.svg`<br>`曼.seal.svg` |
-| 毛 | oracle:- bronze:Y seal:Y legacy:- | `毛.bronze.svg`<br>`毛.seal.svg` |
-| 矛 | oracle:- bronze:Y seal:Y legacy:- | `矛.bronze.svg`<br>`矛.seal.svg` |
-| 贸 | oracle:- bronze:Y seal:Y legacy:- | `贸.bronze.svg`<br>`贸.seal.svg` |
-| 没 | oracle:- bronze:- seal:Y legacy:- | `没.seal.svg` |
-| 梅 | oracle:- bronze:Y seal:Y legacy:- | `梅.bronze.svg`<br>`梅.seal.svg` |
-| 美 | oracle:Y bronze:Y seal:Y legacy:- | `美.bronze.svg`<br>`美.oracle.svg`<br>`美.seal.svg` |
-| 蒙 | oracle:- bronze:Y seal:Y legacy:- | `蒙.bronze.svg`<br>`蒙.seal.svg` |
-| 弥 | oracle:- bronze:Y seal:Y legacy:- | `弥.bronze.svg`<br>`弥.seal.svg` |
-| 迷 | oracle:- bronze:- seal:Y legacy:- | `迷.seal.svg` |
-| 米 | oracle:Y bronze:- seal:Y legacy:- | `米.oracle.svg`<br>`米.seal.svg` |
-| 眠 | oracle:- bronze:- seal:Y legacy:- | `眠.seal.svg` |
-| 棉 | oracle:- bronze:- seal:Y legacy:- | `棉.seal.svg` |
-| 面 | oracle:Y bronze:- seal:Y legacy:- | `面.oracle.svg`<br>`面.seal.svg` |
-| 灭 | oracle:- bronze:Y seal:Y legacy:- | `灭.bronze.svg`<br>`灭.seal.svg` |
-| 民 | oracle:Y bronze:Y seal:Y legacy:- | `民.bronze.svg`<br>`民.oracle.svg`<br>`民.seal.svg` |
-| 名 | oracle:Y bronze:Y seal:Y legacy:- | `名.bronze.svg`<br>`名.oracle.svg`<br>`名.seal.svg` |
-| 明 | oracle:Y bronze:Y seal:Y legacy:- | `明.bronze.svg`<br>`明.oracle.svg`<br>`明.seal.svg` |
-| 冥 | oracle:- bronze:- seal:Y legacy:- | `冥.seal.svg` |
-| 命 | oracle:Y bronze:Y seal:Y legacy:- | `命.bronze.svg`<br>`命.oracle.svg`<br>`命.seal.svg` |
-| 模 | oracle:- bronze:- seal:Y legacy:- | `模.seal.svg` |
-| 摩 | oracle:- bronze:- seal:Y legacy:- | `摩.seal.svg` |
-| 莫 | oracle:Y bronze:Y seal:Y legacy:- | `莫.bronze.svg`<br>`莫.oracle.svg`<br>`莫.seal.svg` |
-| 母 | oracle:Y bronze:Y seal:Y legacy:- | `母.bronze.svg`<br>`母.oracle.svg`<br>`母.seal.svg` |
-| 姆 | oracle:- bronze:Y seal:Y legacy:- | `姆.bronze.svg`<br>`姆.seal.svg` |
-| 木 | oracle:Y bronze:Y seal:Y legacy:- | `木.bronze.svg`<br>`木.oracle.svg`<br>`木.seal.svg` |
-| 目 | oracle:Y bronze:Y seal:Y legacy:- | `目.bronze.svg`<br>`目.oracle.svg`<br>`目.seal.svg` |
-| 牧 | oracle:Y bronze:Y seal:Y legacy:- | `牧.bronze.svg`<br>`牧.oracle.svg`<br>`牧.seal.svg` |
-| 募 | oracle:- bronze:- seal:Y legacy:- | `募.seal.svg` |
-| 穆 | oracle:Y bronze:Y seal:Y legacy:- | `穆.bronze.svg`<br>`穆.oracle.svg`<br>`穆.seal.svg` |
-| 拿 | oracle:- bronze:Y seal:Y legacy:- | `拿.bronze.svg`<br>`拿.seal.svg` |
-| 纳 | oracle:- bronze:Y seal:Y legacy:- | `纳.bronze.svg`<br>`纳.seal.svg` |
-| 男 | oracle:Y bronze:Y seal:Y legacy:- | `男.bronze.svg`<br>`男.oracle.svg`<br>`男.seal.svg` |
-| 南 | oracle:Y bronze:Y seal:Y legacy:- | `南.bronze.svg`<br>`南.oracle.svg`<br>`南.seal.svg` |
-| 难 | oracle:- bronze:Y seal:Y legacy:- | `难.bronze.svg`<br>`难.seal.svg` |
-| 瑙 | oracle:- bronze:- seal:Y legacy:- | `瑙.seal.svg` |
-| 能 | oracle:- bronze:Y seal:Y legacy:- | `能.bronze.svg`<br>`能.seal.svg` |
-| 尼 | oracle:- bronze:- seal:Y legacy:- | `尼.seal.svg` |
-| 农 | oracle:Y bronze:Y seal:Y legacy:- | `农.bronze.svg`<br>`农.oracle.svg`<br>`农.seal.svg` |
-| 努 | oracle:- bronze:- seal:Y legacy:- | `努.seal.svg` |
-| 弩 | oracle:- bronze:Y seal:Y legacy:- | `弩.bronze.svg`<br>`弩.seal.svg` |
-| 女 | oracle:Y bronze:Y seal:Y legacy:- | `女.bronze.svg`<br>`女.oracle.svg`<br>`女.seal.svg` |
-| 挪 | oracle:- bronze:- seal:Y legacy:- | `挪.seal.svg` |
-| 牌 | oracle:- bronze:- seal:Y legacy:- | `牌.seal.svg` |
-| 判 | oracle:- bronze:- seal:Y legacy:- | `判.seal.svg` |
-| 炮 | oracle:- bronze:- seal:Y legacy:- | `炮.seal.svg` |
-| 培 | oracle:- bronze:- seal:Y legacy:- | `培.seal.svg` |
-| 配 | oracle:Y bronze:Y seal:Y legacy:- | `配.bronze.svg`<br>`配.oracle.svg`<br>`配.seal.svg` |
-| 喷 | oracle:- bronze:- seal:Y legacy:- | `喷.seal.svg` |
-| 皮 | oracle:- bronze:Y seal:Y legacy:- | `皮.bronze.svg`<br>`皮.seal.svg` |
-| 辟 | oracle:Y bronze:Y seal:Y legacy:- | `辟.bronze.svg`<br>`辟.oracle.svg`<br>`辟.seal.svg` |
-| 平 | oracle:- bronze:Y seal:Y legacy:- | `平.bronze.svg`<br>`平.seal.svg` |
-| 屏 | oracle:- bronze:- seal:Y legacy:- | `屏.seal.svg` |
-| 破 | oracle:- bronze:- seal:Y legacy:- | `破.seal.svg` |
-| 葡 | oracle:Y bronze:Y seal:Y legacy:- | `葡.bronze.svg`<br>`葡.oracle.svg`<br>`葡.seal.svg` |
-| 普 | oracle:- bronze:- seal:Y legacy:- | `普.seal.svg` |
-| 期 | oracle:- bronze:Y seal:Y legacy:- | `期.bronze.svg`<br>`期.seal.svg` |
-| 其 | oracle:Y bronze:Y seal:Y legacy:- | `其.bronze.svg`<br>`其.oracle.svg`<br>`其.seal.svg` |
-| 奇 | oracle:- bronze:- seal:Y legacy:- | `奇.seal.svg` |
-| 骑 | oracle:- bronze:Y seal:Y legacy:- | `骑.bronze.svg`<br>`骑.seal.svg` |
-| 启 | oracle:Y bronze:- seal:Y legacy:- | `启.oracle.svg`<br>`启.seal.svg` |
-| 起 | oracle:- bronze:- seal:Y legacy:- | `起.seal.svg` |
-| 气 | oracle:Y bronze:Y seal:Y legacy:- | `气.bronze.svg`<br>`气.oracle.svg`<br>`气.seal.svg` |
-| 器 | oracle:- bronze:Y seal:Y legacy:- | `器.bronze.svg`<br>`器.seal.svg` |
-| 潜 | oracle:- bronze:- seal:Y legacy:- | `潜.seal.svg` |
-| 谴 | oracle:- bronze:Y seal:Y legacy:- | `谴.bronze.svg`<br>`谴.seal.svg` |
-| 枪 | oracle:- bronze:- seal:Y legacy:- | `枪.seal.svg` |
-| 强 | oracle:- bronze:- seal:Y legacy:- | `强.seal.svg` |
-| 墙 | oracle:Y bronze:Y seal:Y legacy:- | `墙.bronze.svg`<br>`墙.oracle.svg`<br>`墙.seal.svg` |
-| 抢 | oracle:- bronze:Y seal:Y legacy:- | `抢.bronze.svg`<br>`抢.seal.svg` |
-| 切 | oracle:- bronze:- seal:Y legacy:- | `切.seal.svg` |
-| 窃 | oracle:- bronze:- seal:Y legacy:- | `窃.seal.svg` |
-| 亲 | oracle:- bronze:Y seal:Y legacy:- | `亲.bronze.svg`<br>`亲.seal.svg` |
-| 轻 | oracle:- bronze:- seal:Y legacy:- | `轻.seal.svg` |
-| 清 | oracle:- bronze:Y seal:Y legacy:- | `清.bronze.svg`<br>`清.seal.svg` |
-| 情 | oracle:- bronze:- seal:Y legacy:- | `情.seal.svg` |
-| 丘 | oracle:Y bronze:Y seal:Y legacy:- | `丘.bronze.svg`<br>`丘.oracle.svg`<br>`丘.seal.svg` |
-| 球 | oracle:- bronze:- seal:Y legacy:- | `球.seal.svg` |
-| 区 | oracle:Y bronze:Y seal:Y legacy:- | `区.bronze.svg`<br>`区.oracle.svg`<br>`区.seal.svg` |
-| 驱 | oracle:- bronze:Y seal:Y legacy:- | `驱.bronze.svg`<br>`驱.seal.svg` |
-| 取 | oracle:Y bronze:Y seal:Y legacy:- | `取.bronze.svg`<br>`取.oracle.svg`<br>`取.seal.svg` |
-| 然 | oracle:- bronze:Y seal:Y legacy:- | `然.bronze.svg`<br>`然.seal.svg` |
-| 染 | oracle:- bronze:- seal:Y legacy:- | `染.seal.svg` |
-| 扰 | oracle:- bronze:Y seal:Y legacy:- | `扰.bronze.svg`<br>`扰.seal.svg` |
-| 绕 | oracle:- bronze:- seal:Y legacy:- | `绕.seal.svg` |
-| 热 | oracle:- bronze:- seal:Y legacy:- | `热.seal.svg` |
-| 人 | oracle:Y bronze:Y seal:Y legacy:- | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
-| 任 | oracle:Y bronze:Y seal:Y legacy:- | `任.bronze.svg`<br>`任.oracle.svg`<br>`任.seal.svg` |
-| 日 | oracle:Y bronze:Y seal:Y legacy:- | `日.bronze.svg`<br>`日.oracle.svg`<br>`日.seal.svg` |
-| 入 | oracle:Y bronze:Y seal:Y legacy:- | `入.bronze.svg`<br>`入.oracle.svg`<br>`入.seal.svg` |
-| 瑞 | oracle:- bronze:- seal:Y legacy:- | `瑞.seal.svg` |
-| 弱 | oracle:- bronze:- seal:Y legacy:- | `弱.seal.svg` |
-| 萨 | oracle:- bronze:- seal:Y legacy:- | `萨.seal.svg` |
-| 塞 | oracle:Y bronze:- seal:Y legacy:- | `塞.oracle.svg`<br>`塞.seal.svg` |
-| 赛 | oracle:- bronze:- seal:Y legacy:- | `赛.seal.svg` |
-| 散 | oracle:Y bronze:Y seal:Y legacy:- | `散.bronze.svg`<br>`散.oracle.svg`<br>`散.seal.svg` |
-| 色 | oracle:- bronze:Y seal:Y legacy:- | `色.bronze.svg`<br>`色.seal.svg` |
-| 瑟 | oracle:- bronze:- seal:Y legacy:- | `瑟.seal.svg` |
-| 僧 | oracle:- bronze:- seal:Y legacy:- | `僧.seal.svg` |
-| 杀 | oracle:- bronze:Y seal:Y legacy:- | `杀.bronze.svg`<br>`杀.seal.svg` |
-| 山 | oracle:Y bronze:Y seal:Y legacy:- | `山.bronze.svg`<br>`山.oracle.svg`<br>`山.seal.svg` |
-| 删 | oracle:- bronze:- seal:Y legacy:- | `删.seal.svg` |
-| 善 | oracle:- bronze:Y seal:Y legacy:- | `善.bronze.svg`<br>`善.seal.svg` |
-| 伤 | oracle:- bronze:- seal:Y legacy:- | `伤.seal.svg` |
-| 商 | oracle:Y bronze:Y seal:Y legacy:- | `商.bronze.svg`<br>`商.oracle.svg`<br>`商.seal.svg` |
-| 尚 | oracle:- bronze:Y seal:Y legacy:- | `尚.bronze.svg`<br>`尚.seal.svg` |
-| 烧 | oracle:- bronze:- seal:Y legacy:- | `烧.seal.svg` |
-| 舍 | oracle:- bronze:Y seal:Y legacy:- | `舍.bronze.svg`<br>`舍.seal.svg` |
-| 设 | oracle:- bronze:- seal:Y legacy:- | `设.seal.svg` |
-| 射 | oracle:Y bronze:Y seal:Y legacy:- | `射.bronze.svg`<br>`射.oracle.svg`<br>`射.seal.svg` |
-| 身 | oracle:Y bronze:Y seal:Y legacy:- | `身.bronze.svg`<br>`身.oracle.svg`<br>`身.seal.svg` |
-| 什 | oracle:- bronze:- seal:Y legacy:- | `什.seal.svg` |
-| 神 | oracle:- bronze:Y seal:Y legacy:- | `神.bronze.svg`<br>`神.seal.svg` |
-| 审 | oracle:- bronze:Y seal:Y legacy:- | `审.bronze.svg`<br>`审.seal.svg` |
-| 升 | oracle:Y bronze:Y seal:Y legacy:- | `升.bronze.svg`<br>`升.oracle.svg`<br>`升.seal.svg` |
-| 生 | oracle:Y bronze:Y seal:Y legacy:- | `生.bronze.svg`<br>`生.oracle.svg`<br>`生.seal.svg` |
-| 声 | oracle:Y bronze:- seal:Y legacy:- | `声.oracle.svg`<br>`声.seal.svg` |
-| 牲 | oracle:Y bronze:Y seal:Y legacy:- | `牲.bronze.svg`<br>`牲.oracle.svg`<br>`牲.seal.svg` |
-| 省 | oracle:Y bronze:Y seal:Y legacy:- | `省.bronze.svg`<br>`省.oracle.svg`<br>`省.seal.svg` |
-| 圣 | oracle:Y bronze:Y seal:Y legacy:- | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
-| 尸 | oracle:Y bronze:Y seal:Y legacy:- | `尸.bronze.svg`<br>`尸.oracle.svg`<br>`尸.seal.svg` |
-| 师 | oracle:Y bronze:Y seal:Y legacy:- | `师.bronze.svg`<br>`师.oracle.svg`<br>`师.seal.svg` |
-| 狮 | oracle:Y bronze:Y seal:Y legacy:- | `狮.bronze.svg`<br>`狮.oracle.svg`<br>`狮.seal.svg` |
-| 石 | oracle:Y bronze:Y seal:Y legacy:- | `石.bronze.svg`<br>`石.oracle.svg`<br>`石.seal.svg` |
-| 时 | oracle:- bronze:Y seal:Y legacy:- | `时.bronze.svg`<br>`时.seal.svg` |
-| 使 | oracle:Y bronze:Y seal:Y legacy:- | `使.bronze.svg`<br>`使.oracle.svg`<br>`使.seal.svg` |
-| 士 | oracle:- bronze:Y seal:Y legacy:- | `士.bronze.svg`<br>`士.seal.svg` |
-| 世 | oracle:- bronze:Y seal:Y legacy:- | `世.bronze.svg`<br>`世.seal.svg` |
-| 市 | oracle:Y bronze:Y seal:Y legacy:- | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
-| 式 | oracle:- bronze:- seal:Y legacy:- | `式.seal.svg` |
-| 事 | oracle:Y bronze:Y seal:Y legacy:- | `事.bronze.svg`<br>`事.oracle.svg`<br>`事.seal.svg` |
-| 势 | oracle:- bronze:- seal:Y legacy:- | `势.seal.svg` |
-| 视 | oracle:Y bronze:Y seal:Y legacy:- | `视.bronze.svg`<br>`视.oracle.svg`<br>`视.seal.svg` |
-| 释 | oracle:Y bronze:- seal:Y legacy:- | `释.oracle.svg`<br>`释.seal.svg` |
-| 收 | oracle:- bronze:- seal:Y legacy:- | `收.seal.svg` |
-| 手 | oracle:- bronze:Y seal:Y legacy:- | `手.bronze.svg`<br>`手.seal.svg` |
-| 首 | oracle:Y bronze:Y seal:Y legacy:- | `首.bronze.svg`<br>`首.oracle.svg`<br>`首.seal.svg` |
-| 授 | oracle:- bronze:- seal:Y legacy:- | `授.seal.svg` |
-| 殊 | oracle:Y bronze:- seal:Y legacy:- | `殊.oracle.svg`<br>`殊.seal.svg` |
-| 署 | oracle:- bronze:- seal:Y legacy:- | `署.seal.svg` |
-| 术 | oracle:Y bronze:- seal:Y legacy:- | `术.oracle.svg`<br>`术.seal.svg` |
-| 双 | oracle:Y bronze:Y seal:Y legacy:- | `双.bronze.svg`<br>`双.oracle.svg`<br>`双.seal.svg` |
-| 睡 | oracle:- bronze:- seal:Y legacy:- | `睡.seal.svg` |
-| 司 | oracle:Y bronze:Y seal:Y legacy:- | `司.bronze.svg`<br>`司.oracle.svg`<br>`司.seal.svg` |
-| 私 | oracle:- bronze:Y seal:Y legacy:- | `私.bronze.svg`<br>`私.seal.svg` |
-| 斯 | oracle:- bronze:Y seal:Y legacy:- | `斯.bronze.svg`<br>`斯.seal.svg` |
-| 死 | oracle:Y bronze:Y seal:Y legacy:- | `死.bronze.svg`<br>`死.oracle.svg`<br>`死.seal.svg` |
-| 四 | oracle:Y bronze:Y seal:Y legacy:- | `四.bronze.svg`<br>`四.oracle.svg`<br>`四.seal.svg` |
-| 送 | oracle:- bronze:Y seal:Y legacy:- | `送.bronze.svg`<br>`送.seal.svg` |
-| 苏 | oracle:- bronze:Y seal:Y legacy:- | `苏.bronze.svg`<br>`苏.seal.svg` |
-| 随 | oracle:- bronze:- seal:Y legacy:- | `随.seal.svg` |
-| 隧 | oracle:Y bronze:Y seal:Y legacy:- | `隧.bronze.svg`<br>`隧.oracle.svg`<br>`隧.seal.svg` |
-| 索 | oracle:Y bronze:Y seal:Y legacy:- | `索.bronze.svg`<br>`索.oracle.svg`<br>`索.seal.svg` |
-| 塔 | oracle:- bronze:- seal:Y legacy:- | `塔.seal.svg` |
-| 台 | oracle:- bronze:Y seal:Y legacy:- | `台.bronze.svg`<br>`台.seal.svg` |
-| 太 | oracle:- bronze:- seal:Y legacy:- | `太.seal.svg` |
-| 泰 | oracle:- bronze:- seal:Y legacy:- | `泰.seal.svg` |
-| 滩 | oracle:- bronze:Y seal:Y legacy:- | `滩.bronze.svg`<br>`滩.seal.svg` |
-| 瘫 | oracle:- bronze:- seal:Y legacy:- | `瘫.seal.svg` |
-| 坦 | oracle:- bronze:- seal:Y legacy:- | `坦.seal.svg` |
-| 探 | oracle:- bronze:- seal:Y legacy:- | `探.seal.svg` |
-| 堂 | oracle:- bronze:Y seal:Y legacy:- | `堂.bronze.svg`<br>`堂.seal.svg` |
-| 糖 | oracle:- bronze:- seal:Y legacy:- | `糖.seal.svg` |
-| 萄 | oracle:- bronze:- seal:Y legacy:- | `萄.seal.svg` |
-| 忒 | oracle:- bronze:- seal:Y legacy:- | `忒.seal.svg` |
-| 特 | oracle:- bronze:- seal:Y legacy:- | `特.seal.svg` |
-| 梯 | oracle:- bronze:- seal:Y legacy:- | `梯.seal.svg` |
-| 提 | oracle:- bronze:- seal:Y legacy:- | `提.seal.svg` |
-| 体 | oracle:- bronze:Y seal:Y legacy:- | `体.bronze.svg`<br>`体.seal.svg` |
-| 天 | oracle:Y bronze:Y seal:Y legacy:- | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
-| 田 | oracle:Y bronze:Y seal:Y legacy:- | `田.bronze.svg`<br>`田.oracle.svg`<br>`田.seal.svg` |
-| 条 | oracle:- bronze:- seal:Y legacy:- | `条.seal.svg` |
-| 跳 | oracle:- bronze:- seal:Y legacy:- | `跳.seal.svg` |
-| 铁 | oracle:- bronze:- seal:Y legacy:- | `铁.seal.svg` |
-| 听 | oracle:Y bronze:Y seal:Y legacy:- | `听.bronze.svg`<br>`听.oracle.svg`<br>`听.seal.svg` |
-| 庭 | oracle:- bronze:Y seal:Y legacy:- | `庭.bronze.svg`<br>`庭.seal.svg` |
-| 停 | oracle:- bronze:- seal:Y legacy:- | `停.seal.svg` |
-| 艇 | oracle:- bronze:- seal:Y legacy:- | `艇.seal.svg` |
-| 统 | oracle:- bronze:- seal:Y legacy:- | `统.seal.svg` |
-| 头 | oracle:- bronze:Y seal:Y legacy:- | `头.bronze.svg`<br>`头.seal.svg` |
-| 投 | oracle:- bronze:- seal:Y legacy:- | `投.seal.svg` |
-| 突 | oracle:Y bronze:- seal:Y legacy:- | `突.oracle.svg`<br>`突.seal.svg` |
-| 图 | oracle:- bronze:Y seal:Y legacy:- | `图.bronze.svg`<br>`图.seal.svg` |
-| 徒 | oracle:Y bronze:Y seal:Y legacy:- | `徒.bronze.svg`<br>`徒.oracle.svg`<br>`徒.seal.svg` |
-| 土 | oracle:Y bronze:Y seal:Y legacy:- | `土.bronze.svg`<br>`土.oracle.svg`<br>`土.seal.svg` |
-| 团 | oracle:- bronze:Y seal:Y legacy:- | `团.bronze.svg`<br>`团.seal.svg` |
-| 退 | oracle:Y bronze:Y seal:Y legacy:- | `退.bronze.svg`<br>`退.oracle.svg`<br>`退.seal.svg` |
-| 托 | oracle:Y bronze:Y seal:Y legacy:- | `托.bronze.svg`<br>`托.oracle.svg`<br>`托.seal.svg` |
-| 挖 | oracle:- bronze:- seal:Y legacy:- | `挖.seal.svg` |
-| 瓦 | oracle:- bronze:- seal:Y legacy:- | `瓦.seal.svg` |
-| 完 | oracle:- bronze:- seal:Y legacy:- | `完.seal.svg` |
-| 亡 | oracle:Y bronze:Y seal:Y legacy:- | `亡.bronze.svg`<br>`亡.oracle.svg`<br>`亡.seal.svg` |
-| 网 | oracle:Y bronze:- seal:Y legacy:- | `网.oracle.svg`<br>`网.seal.svg` |
-| 威 | oracle:- bronze:Y seal:Y legacy:- | `威.bronze.svg`<br>`威.seal.svg` |
-| 韦 | oracle:Y bronze:Y seal:Y legacy:- | `韦.bronze.svg`<br>`韦.oracle.svg`<br>`韦.seal.svg` |
-| 围 | oracle:- bronze:Y seal:Y legacy:- | `围.bronze.svg`<br>`围.seal.svg` |
-| 桅 | oracle:- bronze:- seal:Y legacy:- | `桅.seal.svg` |
-| 维 | oracle:- bronze:Y seal:Y legacy:- | `维.bronze.svg`<br>`维.seal.svg` |
-| 伟 | oracle:- bronze:- seal:Y legacy:- | `伟.seal.svg` |
-| 卫 | oracle:Y bronze:Y seal:Y legacy:- | `卫.bronze.svg`<br>`卫.oracle.svg`<br>`卫.seal.svg` |
-| 未 | oracle:Y bronze:Y seal:Y legacy:- | `未.bronze.svg`<br>`未.oracle.svg`<br>`未.seal.svg` |
-| 位 | oracle:- bronze:Y seal:Y legacy:- | `位.bronze.svg`<br>`位.seal.svg` |
-| 瘟 | oracle:- bronze:- seal:Y legacy:- | `瘟.seal.svg` |
-| 文 | oracle:Y bronze:Y seal:Y legacy:- | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
-| 卧 | oracle:- bronze:- seal:Y legacy:- | `卧.seal.svg` |
-| 污 | oracle:- bronze:Y seal:Y legacy:- | `污.bronze.svg`<br>`污.seal.svg` |
-| 巫 | oracle:Y bronze:Y seal:Y legacy:- | `巫.bronze.svg`<br>`巫.oracle.svg`<br>`巫.seal.svg` |
-| 屋 | oracle:- bronze:- seal:Y legacy:- | `屋.seal.svg` |
-| 武 | oracle:Y bronze:Y seal:Y legacy:- | `武.bronze.svg`<br>`武.oracle.svg`<br>`武.seal.svg` |
-| 务 | oracle:- bronze:Y seal:Y legacy:- | `务.bronze.svg`<br>`务.seal.svg` |
-| 物 | oracle:Y bronze:- seal:Y legacy:- | `物.oracle.svg`<br>`物.seal.svg` |
-| 悟 | oracle:- bronze:- seal:Y legacy:- | `悟.seal.svg` |
-| 吸 | oracle:- bronze:- seal:Y legacy:- | `吸.seal.svg` |
-| 西 | oracle:Y bronze:Y seal:Y legacy:- | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
-| 希 | oracle:- bronze:- seal:Y legacy:- | `希.seal.svg` |
-| 息 | oracle:- bronze:Y seal:Y legacy:- | `息.bronze.svg`<br>`息.seal.svg` |
-| 牺 | oracle:- bronze:- seal:Y legacy:- | `牺.seal.svg` |
-| 席 | oracle:- bronze:Y seal:Y legacy:- | `席.bronze.svg`<br>`席.seal.svg` |
-| 袭 | oracle:- bronze:Y seal:Y legacy:- | `袭.bronze.svg`<br>`袭.seal.svg` |
-| 洗 | oracle:- bronze:- seal:Y legacy:- | `洗.seal.svg` |
-| 侠 | oracle:- bronze:- seal:Y legacy:- | `侠.seal.svg` |
-| 先 | oracle:Y bronze:Y seal:Y legacy:- | `先.bronze.svg`<br>`先.oracle.svg`<br>`先.seal.svg` |
-| 鲜 | oracle:- bronze:Y seal:Y legacy:- | `鲜.bronze.svg`<br>`鲜.seal.svg` |
-| 险 | oracle:- bronze:- seal:Y legacy:- | `险.seal.svg` |
-| 现 | oracle:Y bronze:Y seal:Y legacy:- | `现.bronze.svg`<br>`现.oracle.svg`<br>`现.seal.svg` |
-| 线 | oracle:- bronze:- seal:Y legacy:- | `线.seal.svg` |
-| 陷 | oracle:Y bronze:- seal:Y legacy:- | `陷.oracle.svg`<br>`陷.seal.svg` |
-| 想 | oracle:- bronze:Y seal:Y legacy:- | `想.bronze.svg`<br>`想.seal.svg` |
-| 项 | oracle:- bronze:- seal:Y legacy:- | `项.seal.svg` |
-| 像 | oracle:- bronze:- seal:Y legacy:- | `像.seal.svg` |
-| 消 | oracle:- bronze:- seal:Y legacy:- | `消.seal.svg` |
-| 小 | oracle:Y bronze:Y seal:Y legacy:- | `小.bronze.svg`<br>`小.oracle.svg`<br>`小.seal.svg` |
-| 邪 | oracle:- bronze:Y seal:Y legacy:- | `邪.bronze.svg`<br>`邪.seal.svg` |
-| 写 | oracle:- bronze:- seal:Y legacy:- | `写.seal.svg` |
-| 械 | oracle:- bronze:- seal:Y legacy:- | `械.seal.svg` |
-| 辛 | oracle:Y bronze:Y seal:Y legacy:- | `辛.bronze.svg`<br>`辛.oracle.svg`<br>`辛.seal.svg` |
-| 新 | oracle:Y bronze:Y seal:Y legacy:- | `新.bronze.svg`<br>`新.oracle.svg`<br>`新.seal.svg` |
-| 信 | oracle:- bronze:Y seal:Y legacy:- | `信.bronze.svg`<br>`信.seal.svg` |
-| 星 | oracle:Y bronze:Y seal:Y legacy:- | `星.bronze.svg`<br>`星.oracle.svg`<br>`星.seal.svg` |
-| 行 | oracle:Y bronze:Y seal:Y legacy:- | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
-| 形 | oracle:- bronze:- seal:Y legacy:- | `形.seal.svg` |
-| 型 | oracle:- bronze:Y seal:Y legacy:- | `型.bronze.svg`<br>`型.seal.svg` |
-| 醒 | oracle:- bronze:- seal:Y legacy:- | `醒.seal.svg` |
-| 兴 | oracle:Y bronze:Y seal:Y legacy:- | `兴.bronze.svg`<br>`兴.oracle.svg`<br>`兴.seal.svg` |
-| 性 | oracle:- bronze:Y seal:Y legacy:- | `性.bronze.svg`<br>`性.seal.svg` |
-| 匈 | oracle:- bronze:- seal:Y legacy:- | `匈.seal.svg` |
-| 胸 | oracle:- bronze:- seal:Y legacy:- | `胸.seal.svg` |
-| 雄 | oracle:- bronze:- seal:Y legacy:- | `雄.seal.svg` |
-| 修 | oracle:- bronze:- seal:Y legacy:- | `修.seal.svg` |
-| 朽 | oracle:- bronze:Y seal:Y legacy:- | `朽.bronze.svg`<br>`朽.seal.svg` |
-| 虚 | oracle:- bronze:- seal:Y legacy:- | `虚.seal.svg` |
-| 选 | oracle:Y bronze:Y seal:Y legacy:- | `选.bronze.svg`<br>`选.oracle.svg`<br>`选.seal.svg` |
-| 学 | oracle:Y bronze:Y seal:Y legacy:- | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
-| 雪 | oracle:Y bronze:Y seal:Y legacy:- | `雪.bronze.svg`<br>`雪.oracle.svg`<br>`雪.seal.svg` |
-| 血 | oracle:Y bronze:- seal:Y legacy:- | `血.oracle.svg`<br>`血.seal.svg` |
-| 巡 | oracle:- bronze:Y seal:Y legacy:- | `巡.bronze.svg`<br>`巡.seal.svg` |
-| 训 | oracle:- bronze:Y seal:Y legacy:- | `训.bronze.svg`<br>`训.seal.svg` |
-| 讯 | oracle:Y bronze:Y seal:Y legacy:- | `讯.bronze.svg`<br>`讯.oracle.svg`<br>`讯.seal.svg` |
-| 牙 | oracle:- bronze:Y seal:Y legacy:- | `牙.bronze.svg`<br>`牙.seal.svg` |
-| 雅 | oracle:- bronze:- seal:Y legacy:- | `雅.seal.svg` |
-| 亚 | oracle:Y bronze:Y seal:Y legacy:- | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
-| 岩 | oracle:- bronze:- seal:Y legacy:- | `岩.seal.svg` |
-| 沿 | oracle:- bronze:- seal:Y legacy:- | `沿.seal.svg` |
-| 研 | oracle:- bronze:- seal:Y legacy:- | `研.seal.svg` |
-| 阳 | oracle:Y bronze:Y seal:Y legacy:- | `阳.bronze.svg`<br>`阳.oracle.svg`<br>`阳.seal.svg` |
-| 洋 | oracle:- bronze:- seal:Y legacy:- | `洋.seal.svg` |
-| 仰 | oracle:- bronze:- seal:Y legacy:- | `仰.seal.svg` |
-| 摇 | oracle:- bronze:- seal:Y legacy:- | `摇.seal.svg` |
-| 野 | oracle:Y bronze:Y seal:Y legacy:- | `野.bronze.svg`<br>`野.oracle.svg`<br>`野.seal.svg` |
-| 业 | oracle:- bronze:Y seal:Y legacy:- | `业.bronze.svg`<br>`业.seal.svg` |
-| 伊 | oracle:Y bronze:Y seal:Y legacy:- | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
-| 衣 | oracle:Y bronze:Y seal:Y legacy:- | `衣.bronze.svg`<br>`衣.oracle.svg`<br>`衣.seal.svg` |
-| 医 | oracle:- bronze:- seal:Y legacy:- | `医.seal.svg` |
-| 夷 | oracle:Y bronze:Y seal:Y legacy:- | `夷.bronze.svg`<br>`夷.oracle.svg`<br>`夷.seal.svg` |
-| 移 | oracle:- bronze:- seal:Y legacy:- | `移.seal.svg` |
-| 义 | oracle:Y bronze:Y seal:Y legacy:- | `义.bronze.svg`<br>`义.oracle.svg`<br>`义.seal.svg` |
-| 艺 | oracle:Y bronze:Y seal:Y legacy:- | `艺.bronze.svg`<br>`艺.oracle.svg`<br>`艺.seal.svg` |
-| 议 | oracle:- bronze:Y seal:Y legacy:- | `议.bronze.svg`<br>`议.seal.svg` |
-| 异 | oracle:- bronze:- seal:Y legacy:- | `异.seal.svg` |
-| 易 | oracle:Y bronze:Y seal:Y legacy:- | `易.bronze.svg`<br>`易.oracle.svg`<br>`易.seal.svg` |
-| 疫 | oracle:- bronze:- seal:Y legacy:- | `疫.seal.svg` |
-| 益 | oracle:Y bronze:Y seal:Y legacy:- | `益.bronze.svg`<br>`益.oracle.svg`<br>`益.seal.svg` |
-| 意 | oracle:- bronze:- seal:Y legacy:- | `意.seal.svg` |
-| 裔 | oracle:- bronze:Y seal:Y legacy:- | `裔.bronze.svg`<br>`裔.seal.svg` |
-| 翼 | oracle:Y bronze:Y seal:Y legacy:- | `翼.bronze.svg`<br>`翼.oracle.svg`<br>`翼.seal.svg` |
-| 因 | oracle:Y bronze:Y seal:Y legacy:- | `因.bronze.svg`<br>`因.oracle.svg`<br>`因.seal.svg` |
-| 音 | oracle:- bronze:Y seal:Y legacy:- | `音.bronze.svg`<br>`音.seal.svg` |
-| 印 | oracle:Y bronze:Y seal:Y legacy:- | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
-| 应 | oracle:- bronze:Y seal:Y legacy:- | `应.bronze.svg`<br>`应.seal.svg` |
-| 英 | oracle:- bronze:Y seal:Y legacy:- | `英.bronze.svg`<br>`英.seal.svg` |
-| 鹰 | oracle:- bronze:Y seal:Y legacy:- | `鹰.bronze.svg`<br>`鹰.seal.svg` |
-| 营 | oracle:- bronze:Y seal:Y legacy:- | `营.bronze.svg`<br>`营.seal.svg` |
-| 用 | oracle:Y bronze:Y seal:Y legacy:- | `用.bronze.svg`<br>`用.oracle.svg`<br>`用.seal.svg` |
-| 油 | oracle:- bronze:Y seal:Y legacy:- | `油.bronze.svg`<br>`油.seal.svg` |
-| 游 | oracle:Y bronze:Y seal:Y legacy:- | `游.bronze.svg`<br>`游.oracle.svg`<br>`游.seal.svg` |
-| 友 | oracle:Y bronze:Y seal:Y legacy:- | `友.bronze.svg`<br>`友.oracle.svg`<br>`友.seal.svg` |
-| 渔 | oracle:Y bronze:Y seal:Y legacy:- | `渔.bronze.svg`<br>`渔.oracle.svg`<br>`渔.seal.svg` |
-| 予 | oracle:- bronze:Y seal:Y legacy:- | `予.bronze.svg`<br>`予.seal.svg` |
-| 语 | oracle:- bronze:Y seal:Y legacy:- | `语.bronze.svg`<br>`语.seal.svg` |
-| 域 | oracle:- bronze:Y seal:Y legacy:- | `域.bronze.svg`<br>`域.seal.svg` |
-| 御 | oracle:Y bronze:Y seal:Y legacy:- | `御.bronze.svg`<br>`御.oracle.svg`<br>`御.seal.svg` |
-| 愈 | oracle:- bronze:Y seal:Y legacy:- | `愈.bronze.svg`<br>`愈.seal.svg` |
-| 元 | oracle:Y bronze:Y seal:Y legacy:- | `元.bronze.svg`<br>`元.oracle.svg`<br>`元.seal.svg` |
-| 员 | oracle:Y bronze:Y seal:Y legacy:- | `员.bronze.svg`<br>`员.oracle.svg`<br>`员.seal.svg` |
-| 园 | oracle:- bronze:- seal:Y legacy:- | `园.seal.svg` |
-| 原 | oracle:- bronze:Y seal:Y legacy:- | `原.bronze.svg`<br>`原.seal.svg` |
-| 圆 | oracle:- bronze:- seal:Y legacy:- | `圆.seal.svg` |
-| 源 | oracle:- bronze:- seal:Y legacy:- | `源.seal.svg` |
-| 院 | oracle:- bronze:- seal:Y legacy:- | `院.seal.svg` |
-| 愿 | oracle:- bronze:- seal:Y legacy:- | `愿.seal.svg` |
-| 跃 | oracle:- bronze:- seal:Y legacy:- | `跃.seal.svg` |
-| 越 | oracle:- bronze:Y seal:Y legacy:- | `越.bronze.svg`<br>`越.seal.svg` |
-| 运 | oracle:- bronze:- seal:Y legacy:- | `运.seal.svg` |
-| 灾 | oracle:Y bronze:- seal:Y legacy:- | `灾.oracle.svg`<br>`灾.seal.svg` |
-| 再 | oracle:Y bronze:Y seal:Y legacy:- | `再.bronze.svg`<br>`再.oracle.svg`<br>`再.seal.svg` |
-| 凿 | oracle:Y bronze:Y seal:Y legacy:- | `凿.bronze.svg`<br>`凿.oracle.svg`<br>`凿.seal.svg` |
-| 造 | oracle:- bronze:Y seal:Y legacy:- | `造.bronze.svg`<br>`造.seal.svg` |
-| 则 | oracle:- bronze:Y seal:Y legacy:- | `则.bronze.svg`<br>`则.seal.svg` |
-| 择 | oracle:- bronze:Y seal:Y legacy:- | `择.bronze.svg`<br>`择.seal.svg` |
-| 泽 | oracle:- bronze:- seal:Y legacy:- | `泽.seal.svg` |
-| 责 | oracle:Y bronze:Y seal:Y legacy:- | `责.bronze.svg`<br>`责.oracle.svg`<br>`责.seal.svg` |
-| 贼 | oracle:- bronze:Y seal:Y legacy:- | `贼.bronze.svg`<br>`贼.seal.svg` |
-| 增 | oracle:- bronze:Y seal:Y legacy:- | `增.bronze.svg`<br>`增.seal.svg` |
-| 赠 | oracle:- bronze:- seal:Y legacy:- | `赠.seal.svg` |
-| 炸 | oracle:- bronze:Y seal:Y legacy:- | `炸.bronze.svg`<br>`炸.seal.svg` |
-| 展 | oracle:- bronze:- seal:Y legacy:- | `展.seal.svg` |
-| 占 | oracle:Y bronze:- seal:Y legacy:- | `占.oracle.svg`<br>`占.seal.svg` |
-| 战 | oracle:- bronze:Y seal:Y legacy:- | `战.bronze.svg`<br>`战.seal.svg` |
-| 站 | oracle:- bronze:- seal:Y legacy:- | `站.seal.svg` |
-| 张 | oracle:- bronze:Y seal:Y legacy:- | `张.bronze.svg`<br>`张.seal.svg` |
-| 长 | oracle:Y bronze:Y seal:Y legacy:- | `长.bronze.svg`<br>`长.oracle.svg`<br>`长.seal.svg` |
-| 招 | oracle:- bronze:- seal:Y legacy:- | `招.seal.svg` |
-| 着 | oracle:- bronze:- seal:Y legacy:- | `着.seal.svg` |
-| 侦 | oracle:- bronze:- seal:Y legacy:- | `侦.seal.svg` |
-| 争 | oracle:Y bronze:- seal:Y legacy:- | `争.oracle.svg`<br>`争.seal.svg` |
-| 征 | oracle:Y bronze:Y seal:Y legacy:- | `征.bronze.svg`<br>`征.oracle.svg`<br>`征.seal.svg` |
-| 整 | oracle:- bronze:Y seal:Y legacy:- | `整.bronze.svg`<br>`整.seal.svg` |
-| 之 | oracle:Y bronze:Y seal:Y legacy:- | `之.bronze.svg`<br>`之.oracle.svg`<br>`之.seal.svg` |
-| 知 | oracle:- bronze:Y seal:Y legacy:- | `知.bronze.svg`<br>`知.seal.svg` |
-| 直 | oracle:Y bronze:Y seal:Y legacy:- | `直.bronze.svg`<br>`直.oracle.svg`<br>`直.seal.svg` |
-| 植 | oracle:- bronze:Y seal:Y legacy:- | `植.bronze.svg`<br>`植.seal.svg` |
-| 止 | oracle:Y bronze:Y seal:Y legacy:- | `止.bronze.svg`<br>`止.oracle.svg`<br>`止.seal.svg` |
-| 指 | oracle:- bronze:- seal:Y legacy:- | `指.seal.svg` |
-| 至 | oracle:Y bronze:Y seal:Y legacy:- | `至.bronze.svg`<br>`至.oracle.svg`<br>`至.seal.svg` |
-| 制 | oracle:- bronze:Y seal:Y legacy:- | `制.bronze.svg`<br>`制.seal.svg` |
-| 治 | oracle:- bronze:- seal:Y legacy:- | `治.seal.svg` |
-| 致 | oracle:- bronze:Y seal:Y legacy:- | `致.bronze.svg`<br>`致.seal.svg` |
-| 重 | oracle:Y bronze:Y seal:Y legacy:- | `重.bronze.svg`<br>`重.oracle.svg`<br>`重.seal.svg` |
-| 州 | oracle:Y bronze:Y seal:Y legacy:- | `州.bronze.svg`<br>`州.oracle.svg`<br>`州.seal.svg` |
-| 洲 | oracle:Y bronze:Y seal:Y legacy:- | `洲.bronze.svg`<br>`洲.oracle.svg`<br>`洲.seal.svg` |
-| 逐 | oracle:Y bronze:Y seal:Y legacy:- | `逐.bronze.svg`<br>`逐.oracle.svg`<br>`逐.seal.svg` |
-| 主 | oracle:Y bronze:- seal:Y legacy:- | `主.oracle.svg`<br>`主.seal.svg` |
-| 助 | oracle:- bronze:- seal:Y legacy:- | `助.seal.svg` |
-| 注 | oracle:Y bronze:- seal:Y legacy:- | `注.oracle.svg`<br>`注.seal.svg` |
-| 转 | oracle:- bronze:- seal:Y legacy:- | `转.seal.svg` |
-| 庄 | oracle:- bronze:Y seal:Y legacy:- | `庄.bronze.svg`<br>`庄.seal.svg` |
-| 装 | oracle:- bronze:- seal:Y legacy:- | `装.seal.svg` |
-| 准 | oracle:- bronze:- seal:Y legacy:- | `准.seal.svg` |
-| 兹 | oracle:Y bronze:Y seal:Y legacy:- | `兹.bronze.svg`<br>`兹.oracle.svg`<br>`兹.seal.svg` |
-| 资 | oracle:- bronze:- seal:Y legacy:- | `资.seal.svg` |
-| 子 | oracle:Y bronze:Y seal:Y legacy:- | `子.bronze.svg`<br>`子.oracle.svg`<br>`子.seal.svg` |
-| 字 | oracle:- bronze:Y seal:Y legacy:- | `字.bronze.svg`<br>`字.seal.svg` |
-| 自 | oracle:Y bronze:Y seal:Y legacy:- | `自.bronze.svg`<br>`自.oracle.svg`<br>`自.seal.svg` |
-| 宗 | oracle:Y bronze:Y seal:Y legacy:- | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
-| 总 | oracle:- bronze:- seal:Y legacy:- | `总.seal.svg` |
-| 族 | oracle:Y bronze:Y seal:Y legacy:- | `族.bronze.svg`<br>`族.oracle.svg`<br>`族.seal.svg` |
-| 组 | oracle:- bronze:Y seal:Y legacy:- | `组.bronze.svg`<br>`组.seal.svg` |
-| 祖 | oracle:Y bronze:Y seal:Y legacy:- | `祖.bronze.svg`<br>`祖.oracle.svg`<br>`祖.seal.svg` |
-| 钻 | oracle:- bronze:- seal:Y legacy:- | `钻.seal.svg` |
-| 佐 | oracle:Y bronze:Y seal:Y legacy:- | `佐.bronze.svg`<br>`佐.oracle.svg`<br>`佐.seal.svg` |
-| 作 | oracle:Y bronze:Y seal:Y legacy:- | `作.bronze.svg`<br>`作.oracle.svg`<br>`作.seal.svg` |
+| 阿 | oracle:- bronze:Y seal:Y | `阿.bronze.svg`<br>`阿.seal.svg` |
+| 埃 | oracle:- bronze:- seal:Y | `埃.seal.svg` |
+| 艾 | oracle:- bronze:- seal:Y | `艾.seal.svg` |
+| 安 | oracle:Y bronze:Y seal:Y | `安.bronze.svg`<br>`安.oracle.svg`<br>`安.seal.svg` |
+| 暗 | oracle:- bronze:- seal:Y | `暗.seal.svg` |
+| 奥 | oracle:- bronze:- seal:Y | `奥.seal.svg` |
+| 澳 | oracle:- bronze:- seal:Y | `澳.seal.svg` |
+| 巴 | oracle:Y bronze:- seal:Y | `巴.oracle.svg`<br>`巴.seal.svg` |
+| 白 | oracle:Y bronze:Y seal:Y | `白.bronze.svg`<br>`白.oracle.svg`<br>`白.seal.svg` |
+| 拜 | oracle:- bronze:Y seal:Y | `拜.bronze.svg`<br>`拜.seal.svg` |
+| 班 | oracle:- bronze:Y seal:Y | `班.bronze.svg`<br>`班.seal.svg` |
+| 板 | oracle:- bronze:- seal:Y | `板.seal.svg` |
+| 榜 | oracle:- bronze:- seal:Y | `榜.seal.svg` |
+| 雹 | oracle:Y bronze:- seal:Y | `雹.oracle.svg`<br>`雹.seal.svg` |
+| 宝 | oracle:Y bronze:Y seal:Y | `宝.bronze.svg`<br>`宝.oracle.svg`<br>`宝.seal.svg` |
+| 堡 | oracle:Y bronze:Y seal:Y | `堡.bronze.svg`<br>`堡.oracle.svg`<br>`堡.seal.svg` |
+| 报 | oracle:- bronze:Y seal:Y | `报.bronze.svg`<br>`报.seal.svg` |
+| 卑 | oracle:- bronze:Y seal:Y | `卑.bronze.svg`<br>`卑.seal.svg` |
+| 悲 | oracle:- bronze:- seal:Y | `悲.seal.svg` |
+| 贝 | oracle:Y bronze:Y seal:Y | `贝.bronze.svg`<br>`贝.oracle.svg`<br>`贝.seal.svg` |
+| 备 | oracle:Y bronze:Y seal:Y | `备.bronze.svg`<br>`备.oracle.svg`<br>`备.seal.svg` |
+| 本 | oracle:- bronze:Y seal:Y | `本.bronze.svg`<br>`本.seal.svg` |
+| 比 | oracle:Y bronze:Y seal:Y | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
+| 必 | oracle:Y bronze:Y seal:Y | `必.bronze.svg`<br>`必.oracle.svg`<br>`必.seal.svg` |
+| 蔽 | oracle:- bronze:- seal:Y | `蔽.seal.svg` |
+| 壁 | oracle:- bronze:- seal:Y | `壁.seal.svg` |
+| 边 | oracle:Y bronze:Y seal:Y | `边.bronze.svg`<br>`边.oracle.svg`<br>`边.seal.svg` |
+| 编 | oracle:- bronze:- seal:Y | `编.seal.svg` |
+| 鞭 | oracle:- bronze:Y seal:Y | `鞭.bronze.svg`<br>`鞭.seal.svg` |
+| 变 | oracle:- bronze:Y seal:Y | `变.bronze.svg`<br>`变.seal.svg` |
+| 标 | oracle:- bronze:- seal:Y | `标.seal.svg` |
+| 骠 | oracle:- bronze:- seal:Y | `骠.seal.svg` |
+| 滨 | oracle:- bronze:Y seal:Y | `滨.bronze.svg`<br>`滨.seal.svg` |
+| 冰 | oracle:- bronze:Y seal:Y | `冰.bronze.svg`<br>`冰.seal.svg` |
+| 兵 | oracle:Y bronze:Y seal:Y | `兵.bronze.svg`<br>`兵.oracle.svg`<br>`兵.seal.svg` |
+| 病 | oracle:- bronze:- seal:Y | `病.seal.svg` |
+| 波 | oracle:- bronze:- seal:Y | `波.seal.svg` |
+| 播 | oracle:- bronze:Y seal:Y | `播.bronze.svg`<br>`播.seal.svg` |
+| 伯 | oracle:Y bronze:Y seal:Y | `伯.bronze.svg`<br>`伯.oracle.svg`<br>`伯.seal.svg` |
+| 博 | oracle:- bronze:Y seal:Y | `博.bronze.svg`<br>`博.seal.svg` |
+| 卜 | oracle:Y bronze:Y seal:Y | `卜.bronze.svg`<br>`卜.oracle.svg`<br>`卜.seal.svg` |
+| 补 | oracle:- bronze:- seal:Y | `补.seal.svg` |
+| 捕 | oracle:- bronze:- seal:Y | `捕.seal.svg` |
+| 布 | oracle:- bronze:Y seal:Y | `布.bronze.svg`<br>`布.seal.svg` |
+| 步 | oracle:Y bronze:Y seal:Y | `步.bronze.svg`<br>`步.oracle.svg`<br>`步.seal.svg` |
+| 部 | oracle:- bronze:- seal:Y | `部.seal.svg` |
+| 材 | oracle:- bronze:- seal:Y | `材.seal.svg` |
+| 采 | oracle:Y bronze:Y seal:Y | `采.bronze.svg`<br>`采.oracle.svg`<br>`采.seal.svg` |
+| 彩 | oracle:- bronze:- seal:Y | `彩.seal.svg` |
+| 参 | oracle:- bronze:Y seal:Y | `参.bronze.svg`<br>`参.seal.svg` |
+| 藏 | oracle:- bronze:Y seal:Y | `藏.bronze.svg`<br>`藏.seal.svg` |
+| 操 | oracle:- bronze:- seal:Y | `操.seal.svg` |
+| 测 | oracle:- bronze:Y seal:Y | `测.bronze.svg`<br>`测.seal.svg` |
+| 查 | oracle:- bronze:- seal:Y | `查.seal.svg` |
+| 茶 | oracle:- bronze:- seal:Y | `茶.seal.svg` |
+| 察 | oracle:- bronze:Y seal:Y | `察.bronze.svg`<br>`察.seal.svg` |
+| 差 | oracle:- bronze:Y seal:Y | `差.bronze.svg`<br>`差.seal.svg` |
+| 产 | oracle:- bronze:Y seal:Y | `产.bronze.svg`<br>`产.seal.svg` |
+| 厂 | oracle:- bronze:Y seal:Y | `厂.bronze.svg`<br>`厂.seal.svg` |
+| 场 | oracle:- bronze:- seal:Y | `场.seal.svg` |
+| 朝 | oracle:Y bronze:Y seal:Y | `朝.bronze.svg`<br>`朝.oracle.svg`<br>`朝.seal.svg` |
+| 车 | oracle:Y bronze:Y seal:Y | `车.bronze.svg`<br>`车.oracle.svg`<br>`车.seal.svg` |
+| 称 | oracle:- bronze:- seal:Y | `称.seal.svg` |
+| 成 | oracle:Y bronze:Y seal:Y | `成.bronze.svg`<br>`成.oracle.svg`<br>`成.seal.svg` |
+| 城 | oracle:- bronze:Y seal:Y | `城.bronze.svg`<br>`城.seal.svg` |
+| 程 | oracle:- bronze:Y seal:Y | `程.bronze.svg`<br>`程.seal.svg` |
+| 持 | oracle:- bronze:Y seal:Y | `持.bronze.svg`<br>`持.seal.svg` |
+| 崇 | oracle:- bronze:- seal:Y | `崇.seal.svg` |
+| 宠 | oracle:- bronze:Y seal:Y | `宠.bronze.svg`<br>`宠.seal.svg` |
+| 出 | oracle:Y bronze:Y seal:Y | `出.bronze.svg`<br>`出.oracle.svg`<br>`出.seal.svg` |
+| 除 | oracle:- bronze:- seal:Y | `除.seal.svg` |
+| 厨 | oracle:- bronze:Y seal:Y | `厨.bronze.svg`<br>`厨.seal.svg` |
+| 处 | oracle:Y bronze:Y seal:Y | `处.bronze.svg`<br>`处.oracle.svg`<br>`处.seal.svg` |
+| 传 | oracle:Y bronze:Y seal:Y | `传.bronze.svg`<br>`传.oracle.svg`<br>`传.seal.svg` |
+| 船 | oracle:- bronze:Y seal:Y | `船.bronze.svg`<br>`船.seal.svg` |
+| 创 | oracle:- bronze:Y seal:Y | `创.bronze.svg`<br>`创.seal.svg` |
+| 槌 | oracle:- bronze:- seal:Y | `槌.seal.svg` |
+| 锤 | oracle:- bronze:- seal:Y | `锤.seal.svg` |
+| 粗 | oracle:- bronze:- seal:Y | `粗.seal.svg` |
+| 村 | oracle:- bronze:Y seal:Y | `村.bronze.svg`<br>`村.seal.svg` |
+| 达 | oracle:Y bronze:- seal:- | `达.oracle.svg` |
+| 打 | oracle:- bronze:- seal:Y | `打.seal.svg` |
+| 大 | oracle:Y bronze:Y seal:Y | `大.bronze.svg`<br>`大.oracle.svg`<br>`大.seal.svg` |
+| 代 | oracle:- bronze:- seal:Y | `代.seal.svg` |
+| 待 | oracle:- bronze:Y seal:Y | `待.bronze.svg`<br>`待.seal.svg` |
+| 单 | oracle:Y bronze:Y seal:Y | `单.bronze.svg`<br>`单.oracle.svg`<br>`单.seal.svg` |
+| 弹 | oracle:Y bronze:- seal:Y | `弹.oracle.svg`<br>`弹.seal.svg` |
+| 导 | oracle:- bronze:- seal:Y | `导.seal.svg` |
+| 岛 | oracle:- bronze:- seal:Y | `岛.seal.svg` |
+| 盗 | oracle:Y bronze:Y seal:Y | `盗.bronze.svg`<br>`盗.oracle.svg`<br>`盗.seal.svg` |
+| 道 | oracle:- bronze:Y seal:Y | `道.bronze.svg`<br>`道.seal.svg` |
+| 德 | oracle:Y bronze:Y seal:Y | `德.bronze.svg`<br>`德.oracle.svg`<br>`德.seal.svg` |
+| 地 | oracle:- bronze:Y seal:Y | `地.bronze.svg`<br>`地.seal.svg` |
+| 等 | oracle:- bronze:- seal:Y | `等.seal.svg` |
+| 帝 | oracle:Y bronze:Y seal:Y | `帝.bronze.svg`<br>`帝.oracle.svg`<br>`帝.seal.svg` |
+| 第 | oracle:Y bronze:Y seal:Y | `第.bronze.svg`<br>`第.oracle.svg`<br>`第.seal.svg` |
+| 蒂 | oracle:- bronze:- seal:Y | `蒂.seal.svg` |
+| 典 | oracle:Y bronze:Y seal:Y | `典.bronze.svg`<br>`典.oracle.svg`<br>`典.seal.svg` |
+| 电 | oracle:- bronze:Y seal:Y | `电.bronze.svg`<br>`电.seal.svg` |
+| 调 | oracle:- bronze:- seal:Y | `调.seal.svg` |
+| 谍 | oracle:- bronze:- seal:Y | `谍.seal.svg` |
+| 顶 | oracle:- bronze:Y seal:Y | `顶.bronze.svg`<br>`顶.seal.svg` |
+| 定 | oracle:Y bronze:Y seal:Y | `定.bronze.svg`<br>`定.oracle.svg`<br>`定.seal.svg` |
+| 动 | oracle:- bronze:Y seal:Y | `动.bronze.svg`<br>`动.seal.svg` |
+| 斗 | oracle:Y bronze:Y seal:Y | `斗.bronze.svg`<br>`斗.oracle.svg`<br>`斗.seal.svg` |
+| 度 | oracle:Y bronze:Y seal:Y | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
+| 端 | oracle:- bronze:- seal:Y | `端.seal.svg` |
+| 队 | oracle:Y bronze:Y seal:Y | `队.bronze.svg`<br>`队.oracle.svg`<br>`队.seal.svg` |
+| 囤 | oracle:- bronze:- seal:Y | `囤.seal.svg` |
+| 盾 | oracle:Y bronze:Y seal:Y | `盾.bronze.svg`<br>`盾.oracle.svg`<br>`盾.seal.svg` |
+| 顿 | oracle:- bronze:- seal:Y | `顿.seal.svg` |
+| 多 | oracle:Y bronze:Y seal:Y | `多.bronze.svg`<br>`多.oracle.svg`<br>`多.seal.svg` |
+| 夺 | oracle:- bronze:Y seal:Y | `夺.bronze.svg`<br>`夺.seal.svg` |
+| 俄 | oracle:- bronze:- seal:Y | `俄.seal.svg` |
+| 饿 | oracle:- bronze:- seal:Y | `饿.seal.svg` |
+| 尔 | oracle:- bronze:Y seal:Y | `尔.bronze.svg`<br>`尔.seal.svg` |
+| 发 | oracle:Y bronze:Y seal:Y | `发.bronze.svg`<br>`发.oracle.svg`<br>`发.seal.svg` |
+| 法 | oracle:- bronze:Y seal:Y | `法.bronze.svg`<br>`法.seal.svg` |
+| 帆 | oracle:- bronze:- seal:Y | `帆.seal.svg` |
+| 反 | oracle:Y bronze:Y seal:Y | `反.bronze.svg`<br>`反.oracle.svg`<br>`反.seal.svg` |
+| 范 | oracle:- bronze:Y seal:Y | `范.bronze.svg`<br>`范.seal.svg` |
+| 防 | oracle:- bronze:- seal:Y | `防.seal.svg` |
+| 房 | oracle:- bronze:- seal:Y | `房.seal.svg` |
+| 放 | oracle:- bronze:Y seal:Y | `放.bronze.svg`<br>`放.seal.svg` |
+| 飞 | oracle:- bronze:- seal:Y | `飞.seal.svg` |
+| 非 | oracle:Y bronze:Y seal:Y | `非.bronze.svg`<br>`非.oracle.svg`<br>`非.seal.svg` |
+| 菲 | oracle:- bronze:- seal:Y | `菲.seal.svg` |
+| 腓 | oracle:- bronze:- seal:Y | `腓.seal.svg` |
+| 费 | oracle:- bronze:Y seal:Y | `费.bronze.svg`<br>`费.seal.svg` |
+| 焚 | oracle:Y bronze:Y seal:Y | `焚.bronze.svg`<br>`焚.oracle.svg`<br>`焚.seal.svg` |
+| 风 | oracle:Y bronze:Y seal:Y | `风.bronze.svg`<br>`风.oracle.svg`<br>`风.seal.svg` |
+| 夫 | oracle:Y bronze:Y seal:Y | `夫.bronze.svg`<br>`夫.oracle.svg`<br>`夫.seal.svg` |
+| 服 | oracle:Y bronze:Y seal:Y | `服.bronze.svg`<br>`服.oracle.svg`<br>`服.seal.svg` |
+| 符 | oracle:- bronze:Y seal:Y | `符.bronze.svg`<br>`符.seal.svg` |
+| 甫 | oracle:Y bronze:Y seal:Y | `甫.bronze.svg`<br>`甫.oracle.svg`<br>`甫.seal.svg` |
+| 复 | oracle:Y bronze:Y seal:Y | `复.bronze.svg`<br>`复.oracle.svg`<br>`复.seal.svg` |
+| 改 | oracle:Y bronze:Y seal:Y | `改.bronze.svg`<br>`改.oracle.svg`<br>`改.seal.svg` |
+| 盖 | oracle:Y bronze:Y seal:Y | `盖.bronze.svg`<br>`盖.oracle.svg`<br>`盖.seal.svg` |
+| 甘 | oracle:Y bronze:Y seal:Y | `甘.bronze.svg`<br>`甘.oracle.svg`<br>`甘.seal.svg` |
+| 干 | oracle:Y bronze:Y seal:Y | `干.bronze.svg`<br>`干.oracle.svg`<br>`干.seal.svg` |
+| 刚 | oracle:Y bronze:Y seal:Y | `刚.bronze.svg`<br>`刚.oracle.svg`<br>`刚.seal.svg` |
+| 高 | oracle:Y bronze:Y seal:Y | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
+| 戈 | oracle:Y bronze:Y seal:Y | `戈.bronze.svg`<br>`戈.oracle.svg`<br>`戈.seal.svg` |
+| 哥 | oracle:- bronze:- seal:Y | `哥.seal.svg` |
+| 格 | oracle:- bronze:Y seal:Y | `格.bronze.svg`<br>`格.seal.svg` |
+| 给 | oracle:- bronze:- seal:Y | `给.seal.svg` |
+| 工 | oracle:Y bronze:Y seal:Y | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
+| 弓 | oracle:Y bronze:Y seal:Y | `弓.bronze.svg`<br>`弓.oracle.svg`<br>`弓.seal.svg` |
+| 公 | oracle:Y bronze:Y seal:Y | `公.bronze.svg`<br>`公.oracle.svg`<br>`公.seal.svg` |
+| 功 | oracle:- bronze:Y seal:Y | `功.bronze.svg`<br>`功.seal.svg` |
+| 攻 | oracle:- bronze:Y seal:Y | `攻.bronze.svg`<br>`攻.seal.svg` |
+| 供 | oracle:- bronze:- seal:Y | `供.seal.svg` |
+| 狗 | oracle:- bronze:Y seal:Y | `狗.bronze.svg`<br>`狗.seal.svg` |
+| 构 | oracle:- bronze:- seal:Y | `构.seal.svg` |
+| 古 | oracle:Y bronze:Y seal:Y | `古.bronze.svg`<br>`古.oracle.svg`<br>`古.seal.svg` |
+| 股 | oracle:- bronze:Y seal:Y | `股.bronze.svg`<br>`股.seal.svg` |
+| 观 | oracle:Y bronze:Y seal:Y | `观.bronze.svg`<br>`观.oracle.svg`<br>`观.seal.svg` |
+| 官 | oracle:Y bronze:Y seal:Y | `官.bronze.svg`<br>`官.oracle.svg`<br>`官.seal.svg` |
+| 馆 | oracle:- bronze:- seal:Y | `馆.seal.svg` |
+| 规 | oracle:- bronze:Y seal:Y | `规.bronze.svg`<br>`规.seal.svg` |
+| 轨 | oracle:- bronze:Y seal:Y | `轨.bronze.svg`<br>`轨.seal.svg` |
+| 鬼 | oracle:Y bronze:Y seal:Y | `鬼.bronze.svg`<br>`鬼.oracle.svg`<br>`鬼.seal.svg` |
+| 滚 | oracle:- bronze:- seal:Y | `滚.seal.svg` |
+| 国 | oracle:- bronze:Y seal:Y | `国.bronze.svg`<br>`国.seal.svg` |
+| 果 | oracle:- bronze:Y seal:Y | `果.bronze.svg`<br>`果.seal.svg` |
+| 过 | oracle:- bronze:Y seal:Y | `过.bronze.svg`<br>`过.seal.svg` |
+| 海 | oracle:- bronze:Y seal:Y | `海.bronze.svg`<br>`海.seal.svg` |
+| 害 | oracle:- bronze:Y seal:Y | `害.bronze.svg`<br>`害.seal.svg` |
+| 韩 | oracle:- bronze:Y seal:Y | `韩.bronze.svg`<br>`韩.seal.svg` |
+| 杭 | oracle:- bronze:- seal:Y | `杭.seal.svg` |
+| 航 | oracle:- bronze:- seal:Y | `航.seal.svg` |
+| 好 | oracle:Y bronze:Y seal:Y | `好.bronze.svg`<br>`好.oracle.svg`<br>`好.seal.svg` |
+| 号 | oracle:- bronze:Y seal:Y | `号.bronze.svg`<br>`号.seal.svg` |
+| 合 | oracle:Y bronze:Y seal:Y | `合.bronze.svg`<br>`合.oracle.svg`<br>`合.seal.svg` |
+| 核 | oracle:- bronze:- seal:Y | `核.seal.svg` |
+| 赫 | oracle:- bronze:- seal:Y | `赫.seal.svg` |
+| 黑 | oracle:Y bronze:Y seal:Y | `黑.bronze.svg`<br>`黑.oracle.svg`<br>`黑.seal.svg` |
+| 轰 | oracle:- bronze:- seal:Y | `轰.seal.svg` |
+| 红 | oracle:- bronze:- seal:Y | `红.seal.svg` |
+| 虹 | oracle:Y bronze:- seal:Y | `虹.oracle.svg`<br>`虹.seal.svg` |
+| 忽 | oracle:- bronze:Y seal:Y | `忽.bronze.svg`<br>`忽.seal.svg` |
+| 胡 | oracle:- bronze:Y seal:Y | `胡.bronze.svg`<br>`胡.seal.svg` |
+| 虎 | oracle:Y bronze:Y seal:Y | `虎.bronze.svg`<br>`虎.oracle.svg`<br>`虎.seal.svg` |
+| 户 | oracle:Y bronze:Y seal:Y | `户.bronze.svg`<br>`户.oracle.svg`<br>`户.seal.svg` |
+| 护 | oracle:- bronze:- seal:Y | `护.seal.svg` |
+| 花 | oracle:- bronze:- seal:Y | `花.seal.svg` |
+| 华 | oracle:- bronze:- seal:Y | `华.seal.svg` |
+| 滑 | oracle:- bronze:Y seal:Y | `滑.bronze.svg`<br>`滑.seal.svg` |
+| 化 | oracle:Y bronze:Y seal:Y | `化.bronze.svg`<br>`化.oracle.svg`<br>`化.seal.svg` |
+| 怀 | oracle:- bronze:Y seal:Y | `怀.bronze.svg`<br>`怀.seal.svg` |
+| 坏 | oracle:- bronze:Y seal:Y | `坏.bronze.svg`<br>`坏.seal.svg` |
+| 唤 | oracle:- bronze:- seal:Y | `唤.seal.svg` |
+| 换 | oracle:- bronze:- seal:Y | `换.seal.svg` |
+| 痪 | oracle:- bronze:- seal:Y | `痪.seal.svg` |
+| 皇 | oracle:Y bronze:Y seal:Y | `皇.bronze.svg`<br>`皇.oracle.svg`<br>`皇.seal.svg` |
+| 黄 | oracle:Y bronze:Y seal:Y | `黄.bronze.svg`<br>`黄.oracle.svg`<br>`黄.seal.svg` |
+| 恢 | oracle:- bronze:- seal:Y | `恢.seal.svg` |
+| 挥 | oracle:- bronze:Y seal:Y | `挥.bronze.svg`<br>`挥.seal.svg` |
+| 毁 | oracle:- bronze:Y seal:Y | `毁.bronze.svg`<br>`毁.seal.svg` |
+| 活 | oracle:- bronze:- seal:Y | `活.seal.svg` |
+| 火 | oracle:Y bronze:- seal:Y | `火.oracle.svg`<br>`火.seal.svg` |
+| 获 | oracle:Y bronze:Y seal:Y | `获.bronze.svg`<br>`获.oracle.svg`<br>`获.seal.svg` |
+| 击 | oracle:- bronze:- seal:Y | `击.seal.svg` |
+| 饥 | oracle:- bronze:- seal:Y | `饥.seal.svg` |
+| 机 | oracle:- bronze:- seal:Y | `机.seal.svg` |
+| 积 | oracle:- bronze:Y seal:Y | `积.bronze.svg`<br>`积.seal.svg` |
+| 基 | oracle:Y bronze:Y seal:Y | `基.bronze.svg`<br>`基.oracle.svg`<br>`基.seal.svg` |
+| 激 | oracle:- bronze:- seal:Y | `激.seal.svg` |
+| 吉 | oracle:Y bronze:Y seal:Y | `吉.bronze.svg`<br>`吉.oracle.svg`<br>`吉.seal.svg` |
+| 级 | oracle:- bronze:- seal:Y | `级.seal.svg` |
+| 计 | oracle:- bronze:- seal:Y | `计.seal.svg` |
+| 纪 | oracle:- bronze:Y seal:Y | `纪.bronze.svg`<br>`纪.seal.svg` |
+| 技 | oracle:- bronze:- seal:Y | `技.seal.svg` |
+| 季 | oracle:Y bronze:Y seal:Y | `季.bronze.svg`<br>`季.oracle.svg`<br>`季.seal.svg` |
+| 迹 | oracle:- bronze:Y seal:Y | `迹.bronze.svg`<br>`迹.seal.svg` |
+| 祭 | oracle:Y bronze:Y seal:Y | `祭.bronze.svg`<br>`祭.oracle.svg`<br>`祭.seal.svg` |
+| 加 | oracle:- bronze:Y seal:Y | `加.bronze.svg`<br>`加.seal.svg` |
+| 家 | oracle:Y bronze:Y seal:Y | `家.bronze.svg`<br>`家.oracle.svg`<br>`家.seal.svg` |
+| 甲 | oracle:Y bronze:Y seal:Y | `甲.bronze.svg`<br>`甲.oracle.svg`<br>`甲.seal.svg` |
+| 假 | oracle:- bronze:- seal:Y | `假.seal.svg` |
+| 间 | oracle:- bronze:Y seal:Y | `间.bronze.svg`<br>`间.seal.svg` |
+| 监 | oracle:Y bronze:Y seal:Y | `监.bronze.svg`<br>`监.oracle.svg`<br>`监.seal.svg` |
+| 简 | oracle:- bronze:Y seal:Y | `简.bronze.svg`<br>`简.seal.svg` |
+| 建 | oracle:Y bronze:Y seal:Y | `建.bronze.svg`<br>`建.oracle.svg`<br>`建.seal.svg` |
+| 剑 | oracle:- bronze:Y seal:Y | `剑.bronze.svg`<br>`剑.seal.svg` |
+| 舰 | oracle:- bronze:- seal:Y | `舰.seal.svg` |
+| 箭 | oracle:- bronze:Y seal:Y | `箭.bronze.svg`<br>`箭.seal.svg` |
+| 僵 | oracle:- bronze:- seal:Y | `僵.seal.svg` |
+| 疆 | oracle:Y bronze:Y seal:Y | `疆.bronze.svg`<br>`疆.oracle.svg`<br>`疆.seal.svg` |
+| 交 | oracle:- bronze:- seal:Y | `交.seal.svg` |
+| 较 | oracle:- bronze:Y seal:Y | `较.bronze.svg`<br>`较.seal.svg` |
+| 教 | oracle:Y bronze:Y seal:Y | `教.bronze.svg`<br>`教.oracle.svg`<br>`教.seal.svg` |
+| 阶 | oracle:Y bronze:Y seal:Y | `阶.bronze.svg`<br>`阶.oracle.svg`<br>`阶.seal.svg` |
+| 劫 | oracle:- bronze:- seal:Y | `劫.seal.svg` |
+| 杰 | oracle:- bronze:- seal:Y | `杰.seal.svg` |
+| 金 | oracle:- bronze:Y seal:Y | `金.bronze.svg`<br>`金.seal.svg` |
+| 进 | oracle:Y bronze:Y seal:Y | `进.bronze.svg`<br>`进.oracle.svg`<br>`进.seal.svg` |
+| 禁 | oracle:- bronze:- seal:Y | `禁.seal.svg` |
+| 京 | oracle:Y bronze:Y seal:Y | `京.bronze.svg`<br>`京.oracle.svg`<br>`京.seal.svg` |
+| 经 | oracle:- bronze:Y seal:Y | `经.bronze.svg`<br>`经.seal.svg` |
+| 井 | oracle:Y bronze:Y seal:Y | `井.bronze.svg`<br>`井.oracle.svg`<br>`井.seal.svg` |
+| 阱 | oracle:- bronze:- seal:Y | `阱.seal.svg` |
+| 景 | oracle:- bronze:- seal:Y | `景.seal.svg` |
+| 警 | oracle:- bronze:- seal:Y | `警.seal.svg` |
+| 究 | oracle:- bronze:Y seal:Y | `究.bronze.svg`<br>`究.seal.svg` |
+| 酒 | oracle:Y bronze:Y seal:Y | `酒.bronze.svg`<br>`酒.oracle.svg`<br>`酒.seal.svg` |
+| 居 | oracle:- bronze:Y seal:Y | `居.bronze.svg`<br>`居.seal.svg` |
+| 巨 | oracle:- bronze:Y seal:Y | `巨.bronze.svg`<br>`巨.seal.svg` |
+| 惧 | oracle:- bronze:Y seal:Y | `惧.bronze.svg`<br>`惧.seal.svg` |
+| 捐 | oracle:- bronze:- seal:Y | `捐.seal.svg` |
+| 掘 | oracle:- bronze:- seal:Y | `掘.seal.svg` |
+| 军 | oracle:- bronze:Y seal:Y | `军.bronze.svg`<br>`军.seal.svg` |
+| 卡 | oracle:- bronze:- seal:Y | `卡.seal.svg` |
+| 开 | oracle:- bronze:- seal:Y | `开.seal.svg` |
+| 考 | oracle:Y bronze:Y seal:Y | `考.bronze.svg`<br>`考.oracle.svg`<br>`考.seal.svg` |
+| 科 | oracle:- bronze:- seal:Y | `科.seal.svg` |
+| 克 | oracle:Y bronze:Y seal:Y | `克.bronze.svg`<br>`克.oracle.svg`<br>`克.seal.svg` |
+| 客 | oracle:- bronze:Y seal:Y | `客.bronze.svg`<br>`客.seal.svg` |
+| 课 | oracle:- bronze:- seal:Y | `课.seal.svg` |
+| 空 | oracle:- bronze:Y seal:Y | `空.bronze.svg`<br>`空.seal.svg` |
+| 恐 | oracle:- bronze:Y seal:Y | `恐.bronze.svg`<br>`恐.seal.svg` |
+| 库 | oracle:- bronze:Y seal:Y | `库.bronze.svg`<br>`库.seal.svg` |
+| 狂 | oracle:Y bronze:Y seal:Y | `狂.bronze.svg`<br>`狂.oracle.svg`<br>`狂.seal.svg` |
+| 矿 | oracle:- bronze:- seal:Y | `矿.seal.svg` |
+| 盔 | oracle:Y bronze:Y seal:Y | `盔.bronze.svg`<br>`盔.oracle.svg`<br>`盔.seal.svg` |
+| 扩 | oracle:- bronze:- seal:Y | `扩.seal.svg` |
+| 阔 | oracle:- bronze:Y seal:Y | `阔.bronze.svg`<br>`阔.seal.svg` |
+| 拉 | oracle:- bronze:- seal:Y | `拉.seal.svg` |
+| 腊 | oracle:Y bronze:Y seal:Y | `腊.bronze.svg`<br>`腊.oracle.svg`<br>`腊.seal.svg` |
+| 来 | oracle:Y bronze:Y seal:Y | `来.bronze.svg`<br>`来.oracle.svg`<br>`来.seal.svg` |
+| 莱 | oracle:- bronze:- seal:Y | `莱.seal.svg` |
+| 兰 | oracle:- bronze:- seal:Y | `兰.seal.svg` |
+| 浪 | oracle:- bronze:- seal:Y | `浪.seal.svg` |
+| 乐 | oracle:Y bronze:Y seal:Y | `乐.bronze.svg`<br>`乐.oracle.svg`<br>`乐.seal.svg` |
+| 雷 | oracle:Y bronze:Y seal:Y | `雷.bronze.svg`<br>`雷.oracle.svg`<br>`雷.seal.svg` |
+| 垒 | oracle:- bronze:- seal:Y | `垒.seal.svg` |
+| 礼 | oracle:Y bronze:Y seal:Y | `礼.bronze.svg`<br>`礼.oracle.svg`<br>`礼.seal.svg` |
+| 里 | oracle:- bronze:Y seal:Y | `里.bronze.svg`<br>`里.seal.svg` |
+| 力 | oracle:Y bronze:Y seal:Y | `力.bronze.svg`<br>`力.oracle.svg`<br>`力.seal.svg` |
+| 历 | oracle:- bronze:- seal:Y | `历.seal.svg` |
+| 丽 | oracle:Y bronze:Y seal:Y | `丽.bronze.svg`<br>`丽.oracle.svg`<br>`丽.seal.svg` |
+| 利 | oracle:Y bronze:Y seal:Y | `利.bronze.svg`<br>`利.oracle.svg`<br>`利.seal.svg` |
+| 联 | oracle:Y bronze:Y seal:Y | `联.bronze.svg`<br>`联.oracle.svg`<br>`联.seal.svg` |
+| 良 | oracle:Y bronze:Y seal:Y | `良.bronze.svg`<br>`良.oracle.svg`<br>`良.seal.svg` |
+| 疗 | oracle:- bronze:- seal:Y | `疗.seal.svg` |
+| 料 | oracle:- bronze:Y seal:Y | `料.bronze.svg`<br>`料.seal.svg` |
+| 列 | oracle:- bronze:Y seal:Y | `列.bronze.svg`<br>`列.seal.svg` |
+| 烈 | oracle:- bronze:- seal:Y | `烈.seal.svg` |
+| 林 | oracle:Y bronze:Y seal:Y | `林.bronze.svg`<br>`林.oracle.svg`<br>`林.seal.svg` |
+| 琳 | oracle:- bronze:- seal:Y | `琳.seal.svg` |
+| 领 | oracle:- bronze:- seal:Y | `领.seal.svg` |
+| 令 | oracle:Y bronze:Y seal:Y | `令.bronze.svg`<br>`令.oracle.svg`<br>`令.seal.svg` |
+| 流 | oracle:- bronze:Y seal:Y | `流.bronze.svg`<br>`流.seal.svg` |
+| 龙 | oracle:Y bronze:Y seal:Y | `龙.bronze.svg`<br>`龙.oracle.svg`<br>`龙.seal.svg` |
+| 卢 | oracle:Y bronze:Y seal:Y | `卢.bronze.svg`<br>`卢.oracle.svg`<br>`卢.seal.svg` |
+| 鲁 | oracle:Y bronze:Y seal:Y | `鲁.bronze.svg`<br>`鲁.oracle.svg`<br>`鲁.seal.svg` |
+| 陆 | oracle:Y bronze:Y seal:Y | `陆.bronze.svg`<br>`陆.oracle.svg`<br>`陆.seal.svg` |
+| 路 | oracle:- bronze:Y seal:Y | `路.bronze.svg`<br>`路.seal.svg` |
+| 露 | oracle:- bronze:- seal:Y | `露.seal.svg` |
+| 吕 | oracle:Y bronze:Y seal:Y | `吕.bronze.svg`<br>`吕.oracle.svg`<br>`吕.seal.svg` |
+| 旅 | oracle:Y bronze:Y seal:Y | `旅.bronze.svg`<br>`旅.oracle.svg`<br>`旅.seal.svg` |
+| 乱 | oracle:- bronze:Y seal:Y | `乱.bronze.svg`<br>`乱.seal.svg` |
+| 掠 | oracle:- bronze:- seal:Y | `掠.seal.svg` |
+| 略 | oracle:- bronze:- seal:Y | `略.seal.svg` |
+| 伦 | oracle:- bronze:- seal:Y | `伦.seal.svg` |
+| 罗 | oracle:Y bronze:Y seal:Y | `罗.bronze.svg`<br>`罗.oracle.svg`<br>`罗.seal.svg` |
+| 洛 | oracle:- bronze:Y seal:Y | `洛.bronze.svg`<br>`洛.seal.svg` |
+| 马 | oracle:Y bronze:Y seal:Y | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
+| 玛 | oracle:Y bronze:Y seal:Y | `玛.bronze.svg`<br>`玛.oracle.svg`<br>`玛.seal.svg` |
+| 蛮 | oracle:- bronze:Y seal:Y | `蛮.bronze.svg`<br>`蛮.seal.svg` |
+| 曼 | oracle:Y bronze:Y seal:Y | `曼.bronze.svg`<br>`曼.oracle.svg`<br>`曼.seal.svg` |
+| 毛 | oracle:- bronze:Y seal:Y | `毛.bronze.svg`<br>`毛.seal.svg` |
+| 矛 | oracle:- bronze:Y seal:Y | `矛.bronze.svg`<br>`矛.seal.svg` |
+| 贸 | oracle:- bronze:Y seal:Y | `贸.bronze.svg`<br>`贸.seal.svg` |
+| 没 | oracle:- bronze:- seal:Y | `没.seal.svg` |
+| 梅 | oracle:- bronze:Y seal:Y | `梅.bronze.svg`<br>`梅.seal.svg` |
+| 美 | oracle:Y bronze:Y seal:Y | `美.bronze.svg`<br>`美.oracle.svg`<br>`美.seal.svg` |
+| 蒙 | oracle:- bronze:Y seal:Y | `蒙.bronze.svg`<br>`蒙.seal.svg` |
+| 弥 | oracle:- bronze:Y seal:Y | `弥.bronze.svg`<br>`弥.seal.svg` |
+| 迷 | oracle:- bronze:- seal:Y | `迷.seal.svg` |
+| 米 | oracle:Y bronze:- seal:Y | `米.oracle.svg`<br>`米.seal.svg` |
+| 眠 | oracle:- bronze:- seal:Y | `眠.seal.svg` |
+| 棉 | oracle:- bronze:- seal:Y | `棉.seal.svg` |
+| 面 | oracle:Y bronze:- seal:Y | `面.oracle.svg`<br>`面.seal.svg` |
+| 灭 | oracle:- bronze:Y seal:Y | `灭.bronze.svg`<br>`灭.seal.svg` |
+| 民 | oracle:Y bronze:Y seal:Y | `民.bronze.svg`<br>`民.oracle.svg`<br>`民.seal.svg` |
+| 名 | oracle:Y bronze:Y seal:Y | `名.bronze.svg`<br>`名.oracle.svg`<br>`名.seal.svg` |
+| 明 | oracle:Y bronze:Y seal:Y | `明.bronze.svg`<br>`明.oracle.svg`<br>`明.seal.svg` |
+| 冥 | oracle:- bronze:- seal:Y | `冥.seal.svg` |
+| 命 | oracle:Y bronze:Y seal:Y | `命.bronze.svg`<br>`命.oracle.svg`<br>`命.seal.svg` |
+| 模 | oracle:- bronze:- seal:Y | `模.seal.svg` |
+| 摩 | oracle:- bronze:- seal:Y | `摩.seal.svg` |
+| 莫 | oracle:Y bronze:Y seal:Y | `莫.bronze.svg`<br>`莫.oracle.svg`<br>`莫.seal.svg` |
+| 母 | oracle:Y bronze:Y seal:Y | `母.bronze.svg`<br>`母.oracle.svg`<br>`母.seal.svg` |
+| 姆 | oracle:- bronze:Y seal:Y | `姆.bronze.svg`<br>`姆.seal.svg` |
+| 木 | oracle:Y bronze:Y seal:Y | `木.bronze.svg`<br>`木.oracle.svg`<br>`木.seal.svg` |
+| 目 | oracle:Y bronze:Y seal:Y | `目.bronze.svg`<br>`目.oracle.svg`<br>`目.seal.svg` |
+| 牧 | oracle:Y bronze:Y seal:Y | `牧.bronze.svg`<br>`牧.oracle.svg`<br>`牧.seal.svg` |
+| 募 | oracle:- bronze:- seal:Y | `募.seal.svg` |
+| 穆 | oracle:Y bronze:Y seal:Y | `穆.bronze.svg`<br>`穆.oracle.svg`<br>`穆.seal.svg` |
+| 拿 | oracle:- bronze:Y seal:Y | `拿.bronze.svg`<br>`拿.seal.svg` |
+| 纳 | oracle:- bronze:Y seal:Y | `纳.bronze.svg`<br>`纳.seal.svg` |
+| 男 | oracle:Y bronze:Y seal:Y | `男.bronze.svg`<br>`男.oracle.svg`<br>`男.seal.svg` |
+| 南 | oracle:Y bronze:Y seal:Y | `南.bronze.svg`<br>`南.oracle.svg`<br>`南.seal.svg` |
+| 难 | oracle:- bronze:Y seal:Y | `难.bronze.svg`<br>`难.seal.svg` |
+| 瑙 | oracle:- bronze:- seal:Y | `瑙.seal.svg` |
+| 能 | oracle:- bronze:Y seal:Y | `能.bronze.svg`<br>`能.seal.svg` |
+| 尼 | oracle:- bronze:- seal:Y | `尼.seal.svg` |
+| 农 | oracle:Y bronze:Y seal:Y | `农.bronze.svg`<br>`农.oracle.svg`<br>`农.seal.svg` |
+| 努 | oracle:- bronze:- seal:Y | `努.seal.svg` |
+| 弩 | oracle:- bronze:Y seal:Y | `弩.bronze.svg`<br>`弩.seal.svg` |
+| 女 | oracle:Y bronze:Y seal:Y | `女.bronze.svg`<br>`女.oracle.svg`<br>`女.seal.svg` |
+| 挪 | oracle:- bronze:- seal:Y | `挪.seal.svg` |
+| 牌 | oracle:- bronze:- seal:Y | `牌.seal.svg` |
+| 判 | oracle:- bronze:- seal:Y | `判.seal.svg` |
+| 炮 | oracle:- bronze:- seal:Y | `炮.seal.svg` |
+| 培 | oracle:- bronze:- seal:Y | `培.seal.svg` |
+| 配 | oracle:Y bronze:Y seal:Y | `配.bronze.svg`<br>`配.oracle.svg`<br>`配.seal.svg` |
+| 喷 | oracle:- bronze:- seal:Y | `喷.seal.svg` |
+| 皮 | oracle:- bronze:Y seal:Y | `皮.bronze.svg`<br>`皮.seal.svg` |
+| 辟 | oracle:Y bronze:Y seal:Y | `辟.bronze.svg`<br>`辟.oracle.svg`<br>`辟.seal.svg` |
+| 平 | oracle:- bronze:Y seal:Y | `平.bronze.svg`<br>`平.seal.svg` |
+| 屏 | oracle:- bronze:- seal:Y | `屏.seal.svg` |
+| 破 | oracle:- bronze:- seal:Y | `破.seal.svg` |
+| 葡 | oracle:Y bronze:Y seal:Y | `葡.bronze.svg`<br>`葡.oracle.svg`<br>`葡.seal.svg` |
+| 普 | oracle:- bronze:- seal:Y | `普.seal.svg` |
+| 期 | oracle:- bronze:Y seal:Y | `期.bronze.svg`<br>`期.seal.svg` |
+| 其 | oracle:Y bronze:Y seal:Y | `其.bronze.svg`<br>`其.oracle.svg`<br>`其.seal.svg` |
+| 奇 | oracle:- bronze:- seal:Y | `奇.seal.svg` |
+| 骑 | oracle:- bronze:Y seal:Y | `骑.bronze.svg`<br>`骑.seal.svg` |
+| 启 | oracle:Y bronze:- seal:Y | `启.oracle.svg`<br>`启.seal.svg` |
+| 起 | oracle:- bronze:- seal:Y | `起.seal.svg` |
+| 气 | oracle:Y bronze:Y seal:Y | `气.bronze.svg`<br>`气.oracle.svg`<br>`气.seal.svg` |
+| 器 | oracle:- bronze:Y seal:Y | `器.bronze.svg`<br>`器.seal.svg` |
+| 潜 | oracle:- bronze:- seal:Y | `潜.seal.svg` |
+| 谴 | oracle:- bronze:Y seal:Y | `谴.bronze.svg`<br>`谴.seal.svg` |
+| 枪 | oracle:- bronze:- seal:Y | `枪.seal.svg` |
+| 强 | oracle:- bronze:- seal:Y | `强.seal.svg` |
+| 墙 | oracle:Y bronze:Y seal:Y | `墙.bronze.svg`<br>`墙.oracle.svg`<br>`墙.seal.svg` |
+| 抢 | oracle:- bronze:Y seal:Y | `抢.bronze.svg`<br>`抢.seal.svg` |
+| 切 | oracle:- bronze:- seal:Y | `切.seal.svg` |
+| 窃 | oracle:- bronze:- seal:Y | `窃.seal.svg` |
+| 亲 | oracle:- bronze:Y seal:Y | `亲.bronze.svg`<br>`亲.seal.svg` |
+| 轻 | oracle:- bronze:- seal:Y | `轻.seal.svg` |
+| 清 | oracle:- bronze:Y seal:Y | `清.bronze.svg`<br>`清.seal.svg` |
+| 情 | oracle:- bronze:- seal:Y | `情.seal.svg` |
+| 丘 | oracle:Y bronze:Y seal:Y | `丘.bronze.svg`<br>`丘.oracle.svg`<br>`丘.seal.svg` |
+| 球 | oracle:- bronze:- seal:Y | `球.seal.svg` |
+| 区 | oracle:Y bronze:Y seal:Y | `区.bronze.svg`<br>`区.oracle.svg`<br>`区.seal.svg` |
+| 驱 | oracle:- bronze:Y seal:Y | `驱.bronze.svg`<br>`驱.seal.svg` |
+| 取 | oracle:Y bronze:Y seal:Y | `取.bronze.svg`<br>`取.oracle.svg`<br>`取.seal.svg` |
+| 然 | oracle:- bronze:Y seal:Y | `然.bronze.svg`<br>`然.seal.svg` |
+| 染 | oracle:- bronze:- seal:Y | `染.seal.svg` |
+| 扰 | oracle:- bronze:Y seal:Y | `扰.bronze.svg`<br>`扰.seal.svg` |
+| 绕 | oracle:- bronze:- seal:Y | `绕.seal.svg` |
+| 热 | oracle:- bronze:- seal:Y | `热.seal.svg` |
+| 人 | oracle:Y bronze:Y seal:Y | `人.bronze.svg`<br>`人.oracle.svg`<br>`人.seal.svg` |
+| 任 | oracle:Y bronze:Y seal:Y | `任.bronze.svg`<br>`任.oracle.svg`<br>`任.seal.svg` |
+| 日 | oracle:Y bronze:Y seal:Y | `日.bronze.svg`<br>`日.oracle.svg`<br>`日.seal.svg` |
+| 入 | oracle:Y bronze:Y seal:Y | `入.bronze.svg`<br>`入.oracle.svg`<br>`入.seal.svg` |
+| 瑞 | oracle:- bronze:- seal:Y | `瑞.seal.svg` |
+| 弱 | oracle:- bronze:- seal:Y | `弱.seal.svg` |
+| 萨 | oracle:- bronze:- seal:Y | `萨.seal.svg` |
+| 塞 | oracle:Y bronze:- seal:Y | `塞.oracle.svg`<br>`塞.seal.svg` |
+| 赛 | oracle:- bronze:- seal:Y | `赛.seal.svg` |
+| 散 | oracle:Y bronze:Y seal:Y | `散.bronze.svg`<br>`散.oracle.svg`<br>`散.seal.svg` |
+| 色 | oracle:- bronze:Y seal:Y | `色.bronze.svg`<br>`色.seal.svg` |
+| 瑟 | oracle:- bronze:- seal:Y | `瑟.seal.svg` |
+| 僧 | oracle:- bronze:- seal:Y | `僧.seal.svg` |
+| 杀 | oracle:- bronze:Y seal:Y | `杀.bronze.svg`<br>`杀.seal.svg` |
+| 山 | oracle:Y bronze:Y seal:Y | `山.bronze.svg`<br>`山.oracle.svg`<br>`山.seal.svg` |
+| 删 | oracle:- bronze:- seal:Y | `删.seal.svg` |
+| 善 | oracle:- bronze:Y seal:Y | `善.bronze.svg`<br>`善.seal.svg` |
+| 伤 | oracle:- bronze:- seal:Y | `伤.seal.svg` |
+| 商 | oracle:Y bronze:Y seal:Y | `商.bronze.svg`<br>`商.oracle.svg`<br>`商.seal.svg` |
+| 尚 | oracle:- bronze:Y seal:Y | `尚.bronze.svg`<br>`尚.seal.svg` |
+| 烧 | oracle:- bronze:- seal:Y | `烧.seal.svg` |
+| 舍 | oracle:- bronze:Y seal:Y | `舍.bronze.svg`<br>`舍.seal.svg` |
+| 设 | oracle:- bronze:- seal:Y | `设.seal.svg` |
+| 射 | oracle:Y bronze:Y seal:Y | `射.bronze.svg`<br>`射.oracle.svg`<br>`射.seal.svg` |
+| 身 | oracle:Y bronze:Y seal:Y | `身.bronze.svg`<br>`身.oracle.svg`<br>`身.seal.svg` |
+| 什 | oracle:- bronze:- seal:Y | `什.seal.svg` |
+| 神 | oracle:- bronze:Y seal:Y | `神.bronze.svg`<br>`神.seal.svg` |
+| 审 | oracle:- bronze:Y seal:Y | `审.bronze.svg`<br>`审.seal.svg` |
+| 升 | oracle:Y bronze:Y seal:Y | `升.bronze.svg`<br>`升.oracle.svg`<br>`升.seal.svg` |
+| 生 | oracle:Y bronze:Y seal:Y | `生.bronze.svg`<br>`生.oracle.svg`<br>`生.seal.svg` |
+| 声 | oracle:Y bronze:- seal:Y | `声.oracle.svg`<br>`声.seal.svg` |
+| 牲 | oracle:Y bronze:Y seal:Y | `牲.bronze.svg`<br>`牲.oracle.svg`<br>`牲.seal.svg` |
+| 省 | oracle:Y bronze:Y seal:Y | `省.bronze.svg`<br>`省.oracle.svg`<br>`省.seal.svg` |
+| 圣 | oracle:Y bronze:Y seal:Y | `圣.bronze.svg`<br>`圣.oracle.svg`<br>`圣.seal.svg` |
+| 尸 | oracle:Y bronze:Y seal:Y | `尸.bronze.svg`<br>`尸.oracle.svg`<br>`尸.seal.svg` |
+| 师 | oracle:Y bronze:Y seal:Y | `师.bronze.svg`<br>`师.oracle.svg`<br>`师.seal.svg` |
+| 狮 | oracle:Y bronze:Y seal:Y | `狮.bronze.svg`<br>`狮.oracle.svg`<br>`狮.seal.svg` |
+| 石 | oracle:Y bronze:Y seal:Y | `石.bronze.svg`<br>`石.oracle.svg`<br>`石.seal.svg` |
+| 时 | oracle:- bronze:Y seal:Y | `时.bronze.svg`<br>`时.seal.svg` |
+| 使 | oracle:Y bronze:Y seal:Y | `使.bronze.svg`<br>`使.oracle.svg`<br>`使.seal.svg` |
+| 士 | oracle:- bronze:Y seal:Y | `士.bronze.svg`<br>`士.seal.svg` |
+| 世 | oracle:- bronze:Y seal:Y | `世.bronze.svg`<br>`世.seal.svg` |
+| 市 | oracle:Y bronze:Y seal:Y | `市.bronze.svg`<br>`市.oracle.svg`<br>`市.seal.svg` |
+| 式 | oracle:- bronze:- seal:Y | `式.seal.svg` |
+| 事 | oracle:Y bronze:Y seal:Y | `事.bronze.svg`<br>`事.oracle.svg`<br>`事.seal.svg` |
+| 势 | oracle:- bronze:- seal:Y | `势.seal.svg` |
+| 视 | oracle:Y bronze:Y seal:Y | `视.bronze.svg`<br>`视.oracle.svg`<br>`视.seal.svg` |
+| 释 | oracle:Y bronze:- seal:Y | `释.oracle.svg`<br>`释.seal.svg` |
+| 收 | oracle:- bronze:- seal:Y | `收.seal.svg` |
+| 手 | oracle:- bronze:Y seal:Y | `手.bronze.svg`<br>`手.seal.svg` |
+| 首 | oracle:Y bronze:Y seal:Y | `首.bronze.svg`<br>`首.oracle.svg`<br>`首.seal.svg` |
+| 授 | oracle:- bronze:- seal:Y | `授.seal.svg` |
+| 殊 | oracle:Y bronze:- seal:Y | `殊.oracle.svg`<br>`殊.seal.svg` |
+| 署 | oracle:- bronze:- seal:Y | `署.seal.svg` |
+| 术 | oracle:Y bronze:- seal:Y | `术.oracle.svg`<br>`术.seal.svg` |
+| 双 | oracle:Y bronze:Y seal:Y | `双.bronze.svg`<br>`双.oracle.svg`<br>`双.seal.svg` |
+| 睡 | oracle:- bronze:- seal:Y | `睡.seal.svg` |
+| 司 | oracle:Y bronze:Y seal:Y | `司.bronze.svg`<br>`司.oracle.svg`<br>`司.seal.svg` |
+| 私 | oracle:- bronze:Y seal:Y | `私.bronze.svg`<br>`私.seal.svg` |
+| 斯 | oracle:- bronze:Y seal:Y | `斯.bronze.svg`<br>`斯.seal.svg` |
+| 死 | oracle:Y bronze:Y seal:Y | `死.bronze.svg`<br>`死.oracle.svg`<br>`死.seal.svg` |
+| 四 | oracle:Y bronze:Y seal:Y | `四.bronze.svg`<br>`四.oracle.svg`<br>`四.seal.svg` |
+| 送 | oracle:- bronze:Y seal:Y | `送.bronze.svg`<br>`送.seal.svg` |
+| 苏 | oracle:- bronze:Y seal:Y | `苏.bronze.svg`<br>`苏.seal.svg` |
+| 随 | oracle:- bronze:- seal:Y | `随.seal.svg` |
+| 隧 | oracle:Y bronze:Y seal:Y | `隧.bronze.svg`<br>`隧.oracle.svg`<br>`隧.seal.svg` |
+| 索 | oracle:Y bronze:Y seal:Y | `索.bronze.svg`<br>`索.oracle.svg`<br>`索.seal.svg` |
+| 塔 | oracle:- bronze:- seal:Y | `塔.seal.svg` |
+| 台 | oracle:- bronze:Y seal:Y | `台.bronze.svg`<br>`台.seal.svg` |
+| 太 | oracle:- bronze:- seal:Y | `太.seal.svg` |
+| 泰 | oracle:- bronze:- seal:Y | `泰.seal.svg` |
+| 滩 | oracle:- bronze:Y seal:Y | `滩.bronze.svg`<br>`滩.seal.svg` |
+| 瘫 | oracle:- bronze:- seal:Y | `瘫.seal.svg` |
+| 坦 | oracle:- bronze:- seal:Y | `坦.seal.svg` |
+| 探 | oracle:- bronze:- seal:Y | `探.seal.svg` |
+| 堂 | oracle:- bronze:Y seal:Y | `堂.bronze.svg`<br>`堂.seal.svg` |
+| 糖 | oracle:- bronze:- seal:Y | `糖.seal.svg` |
+| 萄 | oracle:- bronze:- seal:Y | `萄.seal.svg` |
+| 忒 | oracle:- bronze:- seal:Y | `忒.seal.svg` |
+| 特 | oracle:- bronze:- seal:Y | `特.seal.svg` |
+| 梯 | oracle:- bronze:- seal:Y | `梯.seal.svg` |
+| 提 | oracle:- bronze:- seal:Y | `提.seal.svg` |
+| 体 | oracle:- bronze:Y seal:Y | `体.bronze.svg`<br>`体.seal.svg` |
+| 天 | oracle:Y bronze:Y seal:Y | `天.bronze.svg`<br>`天.oracle.svg`<br>`天.seal.svg` |
+| 田 | oracle:Y bronze:Y seal:Y | `田.bronze.svg`<br>`田.oracle.svg`<br>`田.seal.svg` |
+| 条 | oracle:- bronze:- seal:Y | `条.seal.svg` |
+| 跳 | oracle:- bronze:- seal:Y | `跳.seal.svg` |
+| 铁 | oracle:- bronze:- seal:Y | `铁.seal.svg` |
+| 听 | oracle:Y bronze:Y seal:Y | `听.bronze.svg`<br>`听.oracle.svg`<br>`听.seal.svg` |
+| 庭 | oracle:- bronze:Y seal:Y | `庭.bronze.svg`<br>`庭.seal.svg` |
+| 停 | oracle:- bronze:- seal:Y | `停.seal.svg` |
+| 艇 | oracle:- bronze:- seal:Y | `艇.seal.svg` |
+| 统 | oracle:- bronze:- seal:Y | `统.seal.svg` |
+| 头 | oracle:- bronze:Y seal:Y | `头.bronze.svg`<br>`头.seal.svg` |
+| 投 | oracle:- bronze:- seal:Y | `投.seal.svg` |
+| 突 | oracle:Y bronze:- seal:Y | `突.oracle.svg`<br>`突.seal.svg` |
+| 图 | oracle:- bronze:Y seal:Y | `图.bronze.svg`<br>`图.seal.svg` |
+| 徒 | oracle:Y bronze:Y seal:Y | `徒.bronze.svg`<br>`徒.oracle.svg`<br>`徒.seal.svg` |
+| 土 | oracle:Y bronze:Y seal:Y | `土.bronze.svg`<br>`土.oracle.svg`<br>`土.seal.svg` |
+| 团 | oracle:- bronze:Y seal:Y | `团.bronze.svg`<br>`团.seal.svg` |
+| 退 | oracle:Y bronze:Y seal:Y | `退.bronze.svg`<br>`退.oracle.svg`<br>`退.seal.svg` |
+| 托 | oracle:Y bronze:Y seal:Y | `托.bronze.svg`<br>`托.oracle.svg`<br>`托.seal.svg` |
+| 挖 | oracle:- bronze:- seal:Y | `挖.seal.svg` |
+| 瓦 | oracle:- bronze:- seal:Y | `瓦.seal.svg` |
+| 完 | oracle:- bronze:- seal:Y | `完.seal.svg` |
+| 亡 | oracle:Y bronze:Y seal:Y | `亡.bronze.svg`<br>`亡.oracle.svg`<br>`亡.seal.svg` |
+| 网 | oracle:Y bronze:- seal:Y | `网.oracle.svg`<br>`网.seal.svg` |
+| 威 | oracle:- bronze:Y seal:Y | `威.bronze.svg`<br>`威.seal.svg` |
+| 韦 | oracle:Y bronze:Y seal:Y | `韦.bronze.svg`<br>`韦.oracle.svg`<br>`韦.seal.svg` |
+| 围 | oracle:- bronze:Y seal:Y | `围.bronze.svg`<br>`围.seal.svg` |
+| 桅 | oracle:- bronze:- seal:Y | `桅.seal.svg` |
+| 维 | oracle:- bronze:Y seal:Y | `维.bronze.svg`<br>`维.seal.svg` |
+| 伟 | oracle:- bronze:- seal:Y | `伟.seal.svg` |
+| 卫 | oracle:Y bronze:Y seal:Y | `卫.bronze.svg`<br>`卫.oracle.svg`<br>`卫.seal.svg` |
+| 未 | oracle:Y bronze:Y seal:Y | `未.bronze.svg`<br>`未.oracle.svg`<br>`未.seal.svg` |
+| 位 | oracle:- bronze:Y seal:Y | `位.bronze.svg`<br>`位.seal.svg` |
+| 瘟 | oracle:- bronze:- seal:Y | `瘟.seal.svg` |
+| 文 | oracle:Y bronze:Y seal:Y | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
+| 卧 | oracle:- bronze:- seal:Y | `卧.seal.svg` |
+| 污 | oracle:- bronze:Y seal:Y | `污.bronze.svg`<br>`污.seal.svg` |
+| 巫 | oracle:Y bronze:Y seal:Y | `巫.bronze.svg`<br>`巫.oracle.svg`<br>`巫.seal.svg` |
+| 屋 | oracle:- bronze:- seal:Y | `屋.seal.svg` |
+| 武 | oracle:Y bronze:Y seal:Y | `武.bronze.svg`<br>`武.oracle.svg`<br>`武.seal.svg` |
+| 务 | oracle:- bronze:Y seal:Y | `务.bronze.svg`<br>`务.seal.svg` |
+| 物 | oracle:Y bronze:- seal:Y | `物.oracle.svg`<br>`物.seal.svg` |
+| 悟 | oracle:- bronze:- seal:Y | `悟.seal.svg` |
+| 吸 | oracle:- bronze:- seal:Y | `吸.seal.svg` |
+| 西 | oracle:Y bronze:Y seal:Y | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
+| 希 | oracle:- bronze:- seal:Y | `希.seal.svg` |
+| 息 | oracle:- bronze:Y seal:Y | `息.bronze.svg`<br>`息.seal.svg` |
+| 牺 | oracle:- bronze:- seal:Y | `牺.seal.svg` |
+| 席 | oracle:- bronze:Y seal:Y | `席.bronze.svg`<br>`席.seal.svg` |
+| 袭 | oracle:- bronze:Y seal:Y | `袭.bronze.svg`<br>`袭.seal.svg` |
+| 洗 | oracle:- bronze:- seal:Y | `洗.seal.svg` |
+| 侠 | oracle:- bronze:- seal:Y | `侠.seal.svg` |
+| 先 | oracle:Y bronze:Y seal:Y | `先.bronze.svg`<br>`先.oracle.svg`<br>`先.seal.svg` |
+| 鲜 | oracle:- bronze:Y seal:Y | `鲜.bronze.svg`<br>`鲜.seal.svg` |
+| 险 | oracle:- bronze:- seal:Y | `险.seal.svg` |
+| 现 | oracle:Y bronze:Y seal:Y | `现.bronze.svg`<br>`现.oracle.svg`<br>`现.seal.svg` |
+| 线 | oracle:- bronze:- seal:Y | `线.seal.svg` |
+| 陷 | oracle:Y bronze:- seal:Y | `陷.oracle.svg`<br>`陷.seal.svg` |
+| 想 | oracle:- bronze:Y seal:Y | `想.bronze.svg`<br>`想.seal.svg` |
+| 项 | oracle:- bronze:- seal:Y | `项.seal.svg` |
+| 像 | oracle:- bronze:- seal:Y | `像.seal.svg` |
+| 消 | oracle:- bronze:- seal:Y | `消.seal.svg` |
+| 小 | oracle:Y bronze:Y seal:Y | `小.bronze.svg`<br>`小.oracle.svg`<br>`小.seal.svg` |
+| 邪 | oracle:- bronze:Y seal:Y | `邪.bronze.svg`<br>`邪.seal.svg` |
+| 写 | oracle:- bronze:- seal:Y | `写.seal.svg` |
+| 械 | oracle:- bronze:- seal:Y | `械.seal.svg` |
+| 辛 | oracle:Y bronze:Y seal:Y | `辛.bronze.svg`<br>`辛.oracle.svg`<br>`辛.seal.svg` |
+| 新 | oracle:Y bronze:Y seal:Y | `新.bronze.svg`<br>`新.oracle.svg`<br>`新.seal.svg` |
+| 信 | oracle:- bronze:Y seal:Y | `信.bronze.svg`<br>`信.seal.svg` |
+| 星 | oracle:Y bronze:Y seal:Y | `星.bronze.svg`<br>`星.oracle.svg`<br>`星.seal.svg` |
+| 行 | oracle:Y bronze:Y seal:Y | `行.bronze.svg`<br>`行.oracle.svg`<br>`行.seal.svg` |
+| 形 | oracle:- bronze:- seal:Y | `形.seal.svg` |
+| 型 | oracle:- bronze:Y seal:Y | `型.bronze.svg`<br>`型.seal.svg` |
+| 醒 | oracle:- bronze:- seal:Y | `醒.seal.svg` |
+| 兴 | oracle:Y bronze:Y seal:Y | `兴.bronze.svg`<br>`兴.oracle.svg`<br>`兴.seal.svg` |
+| 性 | oracle:- bronze:Y seal:Y | `性.bronze.svg`<br>`性.seal.svg` |
+| 匈 | oracle:- bronze:- seal:Y | `匈.seal.svg` |
+| 胸 | oracle:- bronze:- seal:Y | `胸.seal.svg` |
+| 雄 | oracle:- bronze:- seal:Y | `雄.seal.svg` |
+| 修 | oracle:- bronze:- seal:Y | `修.seal.svg` |
+| 朽 | oracle:- bronze:Y seal:Y | `朽.bronze.svg`<br>`朽.seal.svg` |
+| 虚 | oracle:- bronze:- seal:Y | `虚.seal.svg` |
+| 选 | oracle:Y bronze:Y seal:Y | `选.bronze.svg`<br>`选.oracle.svg`<br>`选.seal.svg` |
+| 学 | oracle:Y bronze:Y seal:Y | `学.bronze.svg`<br>`学.oracle.svg`<br>`学.seal.svg` |
+| 雪 | oracle:Y bronze:Y seal:Y | `雪.bronze.svg`<br>`雪.oracle.svg`<br>`雪.seal.svg` |
+| 血 | oracle:Y bronze:- seal:Y | `血.oracle.svg`<br>`血.seal.svg` |
+| 巡 | oracle:- bronze:Y seal:Y | `巡.bronze.svg`<br>`巡.seal.svg` |
+| 训 | oracle:- bronze:Y seal:Y | `训.bronze.svg`<br>`训.seal.svg` |
+| 讯 | oracle:Y bronze:Y seal:Y | `讯.bronze.svg`<br>`讯.oracle.svg`<br>`讯.seal.svg` |
+| 牙 | oracle:- bronze:Y seal:Y | `牙.bronze.svg`<br>`牙.seal.svg` |
+| 雅 | oracle:- bronze:- seal:Y | `雅.seal.svg` |
+| 亚 | oracle:Y bronze:Y seal:Y | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
+| 岩 | oracle:- bronze:- seal:Y | `岩.seal.svg` |
+| 沿 | oracle:- bronze:- seal:Y | `沿.seal.svg` |
+| 研 | oracle:- bronze:- seal:Y | `研.seal.svg` |
+| 阳 | oracle:Y bronze:Y seal:Y | `阳.bronze.svg`<br>`阳.oracle.svg`<br>`阳.seal.svg` |
+| 洋 | oracle:- bronze:- seal:Y | `洋.seal.svg` |
+| 仰 | oracle:- bronze:- seal:Y | `仰.seal.svg` |
+| 摇 | oracle:- bronze:- seal:Y | `摇.seal.svg` |
+| 野 | oracle:Y bronze:Y seal:Y | `野.bronze.svg`<br>`野.oracle.svg`<br>`野.seal.svg` |
+| 业 | oracle:- bronze:Y seal:Y | `业.bronze.svg`<br>`业.seal.svg` |
+| 伊 | oracle:Y bronze:Y seal:Y | `伊.bronze.svg`<br>`伊.oracle.svg`<br>`伊.seal.svg` |
+| 衣 | oracle:Y bronze:Y seal:Y | `衣.bronze.svg`<br>`衣.oracle.svg`<br>`衣.seal.svg` |
+| 医 | oracle:- bronze:- seal:Y | `医.seal.svg` |
+| 夷 | oracle:Y bronze:Y seal:Y | `夷.bronze.svg`<br>`夷.oracle.svg`<br>`夷.seal.svg` |
+| 移 | oracle:- bronze:- seal:Y | `移.seal.svg` |
+| 义 | oracle:Y bronze:Y seal:Y | `义.bronze.svg`<br>`义.oracle.svg`<br>`义.seal.svg` |
+| 艺 | oracle:Y bronze:Y seal:Y | `艺.bronze.svg`<br>`艺.oracle.svg`<br>`艺.seal.svg` |
+| 议 | oracle:- bronze:Y seal:Y | `议.bronze.svg`<br>`议.seal.svg` |
+| 异 | oracle:- bronze:- seal:Y | `异.seal.svg` |
+| 易 | oracle:Y bronze:Y seal:Y | `易.bronze.svg`<br>`易.oracle.svg`<br>`易.seal.svg` |
+| 疫 | oracle:- bronze:- seal:Y | `疫.seal.svg` |
+| 益 | oracle:Y bronze:Y seal:Y | `益.bronze.svg`<br>`益.oracle.svg`<br>`益.seal.svg` |
+| 意 | oracle:- bronze:- seal:Y | `意.seal.svg` |
+| 裔 | oracle:- bronze:Y seal:Y | `裔.bronze.svg`<br>`裔.seal.svg` |
+| 翼 | oracle:Y bronze:Y seal:Y | `翼.bronze.svg`<br>`翼.oracle.svg`<br>`翼.seal.svg` |
+| 因 | oracle:Y bronze:Y seal:Y | `因.bronze.svg`<br>`因.oracle.svg`<br>`因.seal.svg` |
+| 音 | oracle:- bronze:Y seal:Y | `音.bronze.svg`<br>`音.seal.svg` |
+| 印 | oracle:Y bronze:Y seal:Y | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
+| 应 | oracle:- bronze:Y seal:Y | `应.bronze.svg`<br>`应.seal.svg` |
+| 英 | oracle:- bronze:Y seal:Y | `英.bronze.svg`<br>`英.seal.svg` |
+| 鹰 | oracle:- bronze:Y seal:Y | `鹰.bronze.svg`<br>`鹰.seal.svg` |
+| 营 | oracle:- bronze:Y seal:Y | `营.bronze.svg`<br>`营.seal.svg` |
+| 用 | oracle:Y bronze:Y seal:Y | `用.bronze.svg`<br>`用.oracle.svg`<br>`用.seal.svg` |
+| 油 | oracle:- bronze:Y seal:Y | `油.bronze.svg`<br>`油.seal.svg` |
+| 游 | oracle:Y bronze:Y seal:Y | `游.bronze.svg`<br>`游.oracle.svg`<br>`游.seal.svg` |
+| 友 | oracle:Y bronze:Y seal:Y | `友.bronze.svg`<br>`友.oracle.svg`<br>`友.seal.svg` |
+| 渔 | oracle:Y bronze:Y seal:Y | `渔.bronze.svg`<br>`渔.oracle.svg`<br>`渔.seal.svg` |
+| 予 | oracle:- bronze:Y seal:Y | `予.bronze.svg`<br>`予.seal.svg` |
+| 语 | oracle:- bronze:Y seal:Y | `语.bronze.svg`<br>`语.seal.svg` |
+| 域 | oracle:- bronze:Y seal:Y | `域.bronze.svg`<br>`域.seal.svg` |
+| 御 | oracle:Y bronze:Y seal:Y | `御.bronze.svg`<br>`御.oracle.svg`<br>`御.seal.svg` |
+| 愈 | oracle:- bronze:Y seal:Y | `愈.bronze.svg`<br>`愈.seal.svg` |
+| 元 | oracle:Y bronze:Y seal:Y | `元.bronze.svg`<br>`元.oracle.svg`<br>`元.seal.svg` |
+| 员 | oracle:Y bronze:Y seal:Y | `员.bronze.svg`<br>`员.oracle.svg`<br>`员.seal.svg` |
+| 园 | oracle:- bronze:- seal:Y | `园.seal.svg` |
+| 原 | oracle:- bronze:Y seal:Y | `原.bronze.svg`<br>`原.seal.svg` |
+| 圆 | oracle:- bronze:- seal:Y | `圆.seal.svg` |
+| 源 | oracle:- bronze:- seal:Y | `源.seal.svg` |
+| 院 | oracle:- bronze:- seal:Y | `院.seal.svg` |
+| 愿 | oracle:- bronze:- seal:Y | `愿.seal.svg` |
+| 跃 | oracle:- bronze:- seal:Y | `跃.seal.svg` |
+| 越 | oracle:- bronze:Y seal:Y | `越.bronze.svg`<br>`越.seal.svg` |
+| 运 | oracle:- bronze:- seal:Y | `运.seal.svg` |
+| 灾 | oracle:Y bronze:- seal:Y | `灾.oracle.svg`<br>`灾.seal.svg` |
+| 再 | oracle:Y bronze:Y seal:Y | `再.bronze.svg`<br>`再.oracle.svg`<br>`再.seal.svg` |
+| 凿 | oracle:Y bronze:Y seal:Y | `凿.bronze.svg`<br>`凿.oracle.svg`<br>`凿.seal.svg` |
+| 造 | oracle:- bronze:Y seal:Y | `造.bronze.svg`<br>`造.seal.svg` |
+| 则 | oracle:- bronze:Y seal:Y | `则.bronze.svg`<br>`则.seal.svg` |
+| 择 | oracle:- bronze:Y seal:Y | `择.bronze.svg`<br>`择.seal.svg` |
+| 泽 | oracle:- bronze:- seal:Y | `泽.seal.svg` |
+| 责 | oracle:Y bronze:Y seal:Y | `责.bronze.svg`<br>`责.oracle.svg`<br>`责.seal.svg` |
+| 贼 | oracle:- bronze:Y seal:Y | `贼.bronze.svg`<br>`贼.seal.svg` |
+| 增 | oracle:- bronze:Y seal:Y | `增.bronze.svg`<br>`增.seal.svg` |
+| 赠 | oracle:- bronze:- seal:Y | `赠.seal.svg` |
+| 炸 | oracle:- bronze:Y seal:Y | `炸.bronze.svg`<br>`炸.seal.svg` |
+| 展 | oracle:- bronze:- seal:Y | `展.seal.svg` |
+| 占 | oracle:Y bronze:- seal:Y | `占.oracle.svg`<br>`占.seal.svg` |
+| 战 | oracle:- bronze:Y seal:Y | `战.bronze.svg`<br>`战.seal.svg` |
+| 站 | oracle:- bronze:- seal:Y | `站.seal.svg` |
+| 张 | oracle:- bronze:Y seal:Y | `张.bronze.svg`<br>`张.seal.svg` |
+| 长 | oracle:Y bronze:Y seal:Y | `长.bronze.svg`<br>`长.oracle.svg`<br>`长.seal.svg` |
+| 招 | oracle:- bronze:- seal:Y | `招.seal.svg` |
+| 着 | oracle:- bronze:- seal:Y | `着.seal.svg` |
+| 侦 | oracle:- bronze:- seal:Y | `侦.seal.svg` |
+| 争 | oracle:Y bronze:- seal:Y | `争.oracle.svg`<br>`争.seal.svg` |
+| 征 | oracle:Y bronze:Y seal:Y | `征.bronze.svg`<br>`征.oracle.svg`<br>`征.seal.svg` |
+| 整 | oracle:- bronze:Y seal:Y | `整.bronze.svg`<br>`整.seal.svg` |
+| 之 | oracle:Y bronze:Y seal:Y | `之.bronze.svg`<br>`之.oracle.svg`<br>`之.seal.svg` |
+| 知 | oracle:- bronze:Y seal:Y | `知.bronze.svg`<br>`知.seal.svg` |
+| 直 | oracle:Y bronze:Y seal:Y | `直.bronze.svg`<br>`直.oracle.svg`<br>`直.seal.svg` |
+| 植 | oracle:- bronze:Y seal:Y | `植.bronze.svg`<br>`植.seal.svg` |
+| 止 | oracle:Y bronze:Y seal:Y | `止.bronze.svg`<br>`止.oracle.svg`<br>`止.seal.svg` |
+| 指 | oracle:- bronze:- seal:Y | `指.seal.svg` |
+| 至 | oracle:Y bronze:Y seal:Y | `至.bronze.svg`<br>`至.oracle.svg`<br>`至.seal.svg` |
+| 制 | oracle:- bronze:Y seal:Y | `制.bronze.svg`<br>`制.seal.svg` |
+| 治 | oracle:- bronze:- seal:Y | `治.seal.svg` |
+| 致 | oracle:- bronze:Y seal:Y | `致.bronze.svg`<br>`致.seal.svg` |
+| 重 | oracle:Y bronze:Y seal:Y | `重.bronze.svg`<br>`重.oracle.svg`<br>`重.seal.svg` |
+| 州 | oracle:Y bronze:Y seal:Y | `州.bronze.svg`<br>`州.oracle.svg`<br>`州.seal.svg` |
+| 洲 | oracle:Y bronze:Y seal:Y | `洲.bronze.svg`<br>`洲.oracle.svg`<br>`洲.seal.svg` |
+| 逐 | oracle:Y bronze:Y seal:Y | `逐.bronze.svg`<br>`逐.oracle.svg`<br>`逐.seal.svg` |
+| 主 | oracle:Y bronze:- seal:Y | `主.oracle.svg`<br>`主.seal.svg` |
+| 助 | oracle:- bronze:- seal:Y | `助.seal.svg` |
+| 注 | oracle:Y bronze:- seal:Y | `注.oracle.svg`<br>`注.seal.svg` |
+| 转 | oracle:- bronze:- seal:Y | `转.seal.svg` |
+| 庄 | oracle:- bronze:Y seal:Y | `庄.bronze.svg`<br>`庄.seal.svg` |
+| 装 | oracle:- bronze:- seal:Y | `装.seal.svg` |
+| 准 | oracle:- bronze:- seal:Y | `准.seal.svg` |
+| 兹 | oracle:Y bronze:Y seal:Y | `兹.bronze.svg`<br>`兹.oracle.svg`<br>`兹.seal.svg` |
+| 资 | oracle:- bronze:- seal:Y | `资.seal.svg` |
+| 子 | oracle:Y bronze:Y seal:Y | `子.bronze.svg`<br>`子.oracle.svg`<br>`子.seal.svg` |
+| 字 | oracle:- bronze:Y seal:Y | `字.bronze.svg`<br>`字.seal.svg` |
+| 自 | oracle:Y bronze:Y seal:Y | `自.bronze.svg`<br>`自.oracle.svg`<br>`自.seal.svg` |
+| 宗 | oracle:Y bronze:Y seal:Y | `宗.bronze.svg`<br>`宗.oracle.svg`<br>`宗.seal.svg` |
+| 总 | oracle:- bronze:- seal:Y | `总.seal.svg` |
+| 族 | oracle:Y bronze:Y seal:Y | `族.bronze.svg`<br>`族.oracle.svg`<br>`族.seal.svg` |
+| 组 | oracle:- bronze:Y seal:Y | `组.bronze.svg`<br>`组.seal.svg` |
+| 祖 | oracle:Y bronze:Y seal:Y | `祖.bronze.svg`<br>`祖.oracle.svg`<br>`祖.seal.svg` |
+| 钻 | oracle:- bronze:- seal:Y | `钻.seal.svg` |
+| 佐 | oracle:Y bronze:Y seal:Y | `佐.bronze.svg`<br>`佐.oracle.svg`<br>`佐.seal.svg` |
+| 作 | oracle:Y bronze:Y seal:Y | `作.bronze.svg`<br>`作.oracle.svg`<br>`作.seal.svg` |
 
 ## victories
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 胜 | oracle:- bronze:- seal:Y legacy:- | `胜.seal.svg` |
+| 胜 | oracle:- bronze:- seal:Y | `胜.seal.svg` |
 
 ## wonders
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 拜 | oracle:- bronze:Y seal:Y legacy:- | `拜.bronze.svg`<br>`拜.seal.svg` |
-| 比 | oracle:Y bronze:Y seal:Y legacy:- | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
-| 波 | oracle:- bronze:- seal:Y legacy:- | `波.seal.svg` |
-| 度 | oracle:Y bronze:Y seal:Y legacy:- | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
-| 顿 | oracle:- bronze:- seal:Y legacy:- | `顿.seal.svg` |
-| 高 | oracle:Y bronze:Y seal:Y legacy:- | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
-| 观 | oracle:Y bronze:Y seal:Y legacy:- | `观.bronze.svg`<br>`观.oracle.svg`<br>`观.seal.svg` |
-| 迹 | oracle:- bronze:Y seal:Y legacy:- | `迹.bronze.svg`<br>`迹.seal.svg` |
-| 扩 | oracle:- bronze:- seal:Y legacy:- | `扩.seal.svg` |
-| 卢 | oracle:Y bronze:Y seal:Y legacy:- | `卢.bronze.svg`<br>`卢.oracle.svg`<br>`卢.seal.svg` |
-| 马 | oracle:Y bronze:Y seal:Y legacy:- | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
-| 尼 | oracle:- bronze:- seal:Y legacy:- | `尼.seal.svg` |
-| 努 | oracle:- bronze:- seal:Y legacy:- | `努.seal.svg` |
-| 葡 | oracle:Y bronze:Y seal:Y legacy:- | `葡.bronze.svg`<br>`葡.oracle.svg`<br>`葡.seal.svg` |
-| 其 | oracle:Y bronze:Y seal:Y legacy:- | `其.bronze.svg`<br>`其.oracle.svg`<br>`其.seal.svg` |
-| 奇 | oracle:- bronze:- seal:Y legacy:- | `奇.seal.svg` |
-| 斯 | oracle:- bronze:Y seal:Y legacy:- | `斯.bronze.svg`<br>`斯.seal.svg` |
-| 萄 | oracle:- bronze:- seal:Y legacy:- | `萄.seal.svg` |
-| 庭 | oracle:- bronze:Y seal:Y legacy:- | `庭.bronze.svg`<br>`庭.seal.svg` |
-| 西 | oracle:Y bronze:Y seal:Y legacy:- | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
-| 牙 | oracle:- bronze:Y seal:Y legacy:- | `牙.bronze.svg`<br>`牙.seal.svg` |
-| 亚 | oracle:Y bronze:Y seal:Y legacy:- | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
-| 印 | oracle:Y bronze:Y seal:Y legacy:- | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
-| 占 | oracle:Y bronze:- seal:Y legacy:- | `占.oracle.svg`<br>`占.seal.svg` |
-| 张 | oracle:- bronze:Y seal:Y legacy:- | `张.bronze.svg`<br>`张.seal.svg` |
+| 拜 | oracle:- bronze:Y seal:Y | `拜.bronze.svg`<br>`拜.seal.svg` |
+| 比 | oracle:Y bronze:Y seal:Y | `比.bronze.svg`<br>`比.oracle.svg`<br>`比.seal.svg` |
+| 波 | oracle:- bronze:- seal:Y | `波.seal.svg` |
+| 度 | oracle:Y bronze:Y seal:Y | `度.bronze.svg`<br>`度.oracle.svg`<br>`度.seal.svg` |
+| 顿 | oracle:- bronze:- seal:Y | `顿.seal.svg` |
+| 高 | oracle:Y bronze:Y seal:Y | `高.bronze.svg`<br>`高.oracle.svg`<br>`高.seal.svg` |
+| 观 | oracle:Y bronze:Y seal:Y | `观.bronze.svg`<br>`观.oracle.svg`<br>`观.seal.svg` |
+| 迹 | oracle:- bronze:Y seal:Y | `迹.bronze.svg`<br>`迹.seal.svg` |
+| 扩 | oracle:- bronze:- seal:Y | `扩.seal.svg` |
+| 卢 | oracle:Y bronze:Y seal:Y | `卢.bronze.svg`<br>`卢.oracle.svg`<br>`卢.seal.svg` |
+| 马 | oracle:Y bronze:Y seal:Y | `马.bronze.svg`<br>`马.oracle.svg`<br>`马.seal.svg` |
+| 尼 | oracle:- bronze:- seal:Y | `尼.seal.svg` |
+| 努 | oracle:- bronze:- seal:Y | `努.seal.svg` |
+| 葡 | oracle:Y bronze:Y seal:Y | `葡.bronze.svg`<br>`葡.oracle.svg`<br>`葡.seal.svg` |
+| 其 | oracle:Y bronze:Y seal:Y | `其.bronze.svg`<br>`其.oracle.svg`<br>`其.seal.svg` |
+| 奇 | oracle:- bronze:- seal:Y | `奇.seal.svg` |
+| 斯 | oracle:- bronze:Y seal:Y | `斯.bronze.svg`<br>`斯.seal.svg` |
+| 萄 | oracle:- bronze:- seal:Y | `萄.seal.svg` |
+| 庭 | oracle:- bronze:Y seal:Y | `庭.bronze.svg`<br>`庭.seal.svg` |
+| 西 | oracle:Y bronze:Y seal:Y | `西.bronze.svg`<br>`西.oracle.svg`<br>`西.seal.svg` |
+| 牙 | oracle:- bronze:Y seal:Y | `牙.bronze.svg`<br>`牙.seal.svg` |
+| 亚 | oracle:Y bronze:Y seal:Y | `亚.bronze.svg`<br>`亚.oracle.svg`<br>`亚.seal.svg` |
+| 印 | oracle:Y bronze:Y seal:Y | `印.bronze.svg`<br>`印.oracle.svg`<br>`印.seal.svg` |
+| 占 | oracle:Y bronze:- seal:Y | `占.oracle.svg`<br>`占.seal.svg` |
+| 张 | oracle:- bronze:Y seal:Y | `张.bronze.svg`<br>`张.seal.svg` |
 
 ## worldbuilder
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 造 | oracle:- bronze:Y seal:Y legacy:- | `造.bronze.svg`<br>`造.seal.svg` |
+| 造 | oracle:- bronze:Y seal:Y | `造.bronze.svg`<br>`造.seal.svg` |
 
 ## yields
 
 | 字 | 版本 | 文件 |
 |---|---|---|
-| 册 | oracle:Y bronze:Y seal:Y legacy:- | `册.bronze.svg`<br>`册.oracle.svg`<br>`册.seal.svg` |
-| 工 | oracle:Y bronze:Y seal:Y legacy:- | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
-| 禾 | oracle:Y bronze:Y seal:Y legacy:- | `禾.bronze.svg`<br>`禾.oracle.svg`<br>`禾.seal.svg` |
-| 金 | oracle:- bronze:Y seal:Y legacy:- | `金.bronze.svg`<br>`金.seal.svg` |
-| 令 | oracle:Y bronze:Y seal:Y legacy:- | `令.bronze.svg`<br>`令.oracle.svg`<br>`令.seal.svg` |
-| 祀 | oracle:Y bronze:Y seal:Y legacy:- | `祀.bronze.svg`<br>`祀.oracle.svg`<br>`祀.seal.svg` |
-| 文 | oracle:Y bronze:Y seal:Y legacy:- | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
-| 言 | oracle:Y bronze:Y seal:Y legacy:- | `言.bronze.svg`<br>`言.oracle.svg`<br>`言.seal.svg` |
+| 册 | oracle:Y bronze:Y seal:Y | `册.bronze.svg`<br>`册.oracle.svg`<br>`册.seal.svg` |
+| 工 | oracle:Y bronze:Y seal:Y | `工.bronze.svg`<br>`工.oracle.svg`<br>`工.seal.svg` |
+| 禾 | oracle:Y bronze:Y seal:Y | `禾.bronze.svg`<br>`禾.oracle.svg`<br>`禾.seal.svg` |
+| 金 | oracle:- bronze:Y seal:Y | `金.bronze.svg`<br>`金.seal.svg` |
+| 令 | oracle:Y bronze:Y seal:Y | `令.bronze.svg`<br>`令.oracle.svg`<br>`令.seal.svg` |
+| 祀 | oracle:Y bronze:Y seal:Y | `祀.bronze.svg`<br>`祀.oracle.svg`<br>`祀.seal.svg` |
+| 文 | oracle:Y bronze:Y seal:Y | `文.bronze.svg`<br>`文.oracle.svg`<br>`文.seal.svg` |
+| 言 | oracle:Y bronze:Y seal:Y | `言.bronze.svg`<br>`言.oracle.svg`<br>`言.seal.svg` |
