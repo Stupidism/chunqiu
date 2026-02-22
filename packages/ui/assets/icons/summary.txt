@@ -1,0 +1,8 @@
+files=4569
+categories=40
+orig_total=21802376
+out_total=3451205
+out_delta=-84.17%
+oracle=1773
+bronze=1220
+seal=1576
