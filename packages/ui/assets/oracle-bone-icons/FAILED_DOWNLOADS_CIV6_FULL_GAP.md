@@ -1,0 +1,134 @@
+# Civ6 全量补缺失败列表
+
+生成时间: 2026-02-21T10:24:17.429Z
+
+## 抓取失败字符
+
+- 佐 [units, civilizations] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E4%BD%90
+- 墙 [units, notifications, technologies, buildings, districts] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%A2%99
+- 矿 [units, technologies] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%9F%BF
+- 狮 [units] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%8B%AE
+- 板 [units, buildings, promotions] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%9D%BF
+- 挖 [units] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%8C%96
+- 现 [units, policies, notifications, projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%8E%B0
+- 源 [units, policies, notifications, resources, stats] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%BA%90
+- 查 [units, policies, greatworks, leaders] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%9F%A5
+- 眠 [units, stats] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%9C%A0
+- 艺 [units, greatworks, buildings, civics] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%89%BA
+- 站 [units, notifications, buildings, projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%AB%99
+- 抢 [units, notifications, promotions] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%8A%A2
+- 希 [units, policies, greatworks, beliefs, buildings, civilizations, leaders, terrain, projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%B8%8C
+- 卡 [units, greatworks, buildings, civilizations, leaders] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%8D%A1
+- 舰 [units, policies, promotions, leaders] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%88%B0
+- 盔 [units] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%9B%94
+- 炸 [units, notifications, promotions] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%82%B8
+- 萨 [units, policies, greatworks, buildings, civilizations, districts, leaders] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%90%A8
+- 牌 [units, promotions, projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%89%8C
+- 卧 [units] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%8D%A7
+- 航 [units, policies, technologies, buildings, promotions, civics, projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%88%AA
+- 较 [units] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%BE%83
+- 瘟 [units, buildings] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%98%9F
+- 玛 [units, notifications, resources, civilizations, districts, leaders, terrain] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%8E%9B
+- 瘫 [units] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%98%AB
+- 痪 [units] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%97%AA
+- 着 [units] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%9D%80
+- 扩 [units, policies, notifications, technologies, beliefs, buildings, civics, resources, wonders, civilizations, stats, districts, leaders, terrain, diplomacy] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%89%A9
+- 滨 [units] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%BB%A8
+- 拿 [units, buildings, civilizations] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%8B%BF
+- 滚 [units, notifications, promotions, stats] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%BB%9A
+- 蒂 [units, greatworks, civilizations, leaders, terrain] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%92%82
+- 棉 [units, beliefs, buildings, civics, resources, civilizations, districts, leaders, terrain, diplomacy, projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%A3%89
+- 囤 [units, civilizations, leaders] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%9B%A4
+- 帆 [units] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%B8%86
+- 瑙 [units] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%91%99
+- 徭 [policies] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%BE%AD
+- 码 [policies] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%A0%81
+- 坝 [policies, notifications, buildings, districts] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%9D%9D
+- 认 [policies, notifications] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%AE%A4
+- 奖 [policies, promotions, diplomacy] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%A5%96
+- 们 [policies, stats] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E4%BB%AC
+- 励 [policies, promotions] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%8A%B1
+- 你 [policies, notifications] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E4%BD%A0
+- 这 [policies] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%BF%99
+- 阵 [policies, buildings, promotions] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E9%98%B5
+- 软 [policies] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%BD%AF
+- 垃 [policies] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%9E%83
+- 佣 [policies, civics] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E4%BD%A3
+- 截 [policies, promotions, stats] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%88%AA
+- 塑 [greatworks, technologies] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%A1%91
+- 刘 [greatworks] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%88%98
+- 踢 [notifications] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%B8%A2
+- 跑 [notifications, promotions] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%B7%91
+- 抓 [notifications, status] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%8A%93
+- 偷 [notifications] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%81%B7
+- 丢 [notifications] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E4%B8%A2
+- 住 [notifications, buildings, stats, projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E4%BD%8F
+- 砖 [notifications] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%A0%96
+- 忆 [notifications] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%BF%86
+- 捏 [notifications] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%8D%8F
+- 耀 [notifications] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%80%80
+- 斑 [notifications] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%96%91
+- 批 [technologies] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%89%B9
+- 药 [technologies] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%8D%AF
+- 膛 [technologies] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%86%9B
+- 钢 [technologies] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E9%92%A2
+- 脑 [technologies] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%84%91
+- 搬 [technologies] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%90%AC
+- 盒 [beliefs, promotions] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%9B%92
+- 捍 [beliefs] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%8D%8D
+- 磨 [buildings] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%A3%A8
+- 灯 [buildings] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%81%AF
+- 棒 [buildings] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%A3%92
+- 镀 [buildings] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E9%95%80
+- 煤 [buildings, resources, projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%85%A4
+- 哈 [buildings, civilizations, leaders, terrain, projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%93%88
+- 芯 [promotions] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%8A%AF
+- 铂 [promotions] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E9%93%82
+- 撤 [promotions] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%92%A4
+- 吼 [promotions] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%90%BC
+- 舱 [promotions] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%88%B1
+- 拦 [promotions, stats] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%8B%A6
+- 栓 [promotions] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%A0%93
+- 舵 [promotions] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%88%B5
+- 蠕 [promotions] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%A0%95
+- 熔 [promotions] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%86%94
+- 骗 [promotions] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E9%AA%97
+- 芭 [civics] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%8A%AD
+- 蕾 [civics] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%95%BE
+- 淘 [civics] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%B7%98
+- 暖 [civics] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%9A%96
+- 踪 [status] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%B8%AA
+- 螃 [resources] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%9E%83
+- 咖 [resources, projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%92%96
+- 啡 [resources, projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%95%A1
+- 汞 [resources, projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%B1%9E
+- 裤 [resources] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%A3%A4
+- 妆 [resources] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%A6%86
+- 硝 [resources] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%A1%9D
+- 铀 [resources, projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E9%93%80
+- 橄 [resources, projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%A9%84
+- 榄 [resources, projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%A6%84
+- 珀 [resources, projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%8F%80
+- 迦 [civilizations] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%BF%A6
+- 撒 [civilizations, leaders, terrain] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%92%92
+- 喀 [civilizations] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%96%80
+- 凯 [civilizations, leaders] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%87%AF
+- 厕 [stats] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%8E%95
+- 藤 [stats, projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%97%A4
+- 纱 [districts] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%BA%B1
+- 笈 [leaders] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%AC%88
+- 娜 [leaders] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%A8%9C
+- 添 [leaders] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%B7%BB
+- 磅 [leaders] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%A3%85
+- 莉 [leaders] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%8E%89
+- 玻 [leaders] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%8E%BB
+- 另 [leaders] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%8F%A6
+- 悬 [terrain] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%82%AC
+- 苔 [terrain] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%8B%94
+- 湾 [terrain] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%B9%BE
+- 糕 [diplomacy] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%B3%95
+- 堆 [projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%A0%86
+- 碳 [projects] - 未找到甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%A2%B3
+
+## 翻译失败词组
+

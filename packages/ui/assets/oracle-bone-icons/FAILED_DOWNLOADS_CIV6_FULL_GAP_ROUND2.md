@@ -1,0 +1,112 @@
+# Civ6 全量补缺第二轮失败列表
+
+生成时间: 2026-02-21T11:24:42.521Z
+
+- 佐 [units, civilizations] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E4%BD%90
+- 板 [units, buildings, promotions] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%9D%BF
+- 挖 [units] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%8C%96
+- 源 [units, policies, notifications, resources, stats] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%BA%90
+- 查 [units, policies, greatworks, leaders] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%9F%A5
+- 眠 [units, stats] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%9C%A0
+- 站 [units, notifications, buildings, projects] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%AB%99
+- 抢 [units, notifications, promotions] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%90%B6
+- 希 [units, policies, greatworks, beliefs, buildings, civilizations, leaders, terrain, projects] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%B8%8C
+- 卡 [units, greatworks, buildings, civilizations, leaders] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%8D%A1
+- 舰 [units, policies, promotions, leaders] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%89%A6
+- 盔 [units] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%9B%94
+- 炸 [units, notifications, promotions] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%82%B8
+- 萨 [units, policies, greatworks, buildings, civilizations, districts, leaders] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%96%A9
+- 牌 [units, promotions, projects] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%89%8C
+- 航 [units, policies, technologies, buildings, promotions, civics, projects] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%88%AA
+- 较 [units] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%BC%83
+- 瘟 [units, buildings] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%98%9F
+- 玛 [units, notifications, resources, civilizations, districts, leaders, terrain] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%91%AA
+- 瘫 [units] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%98%AB
+- 痪 [units] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%97%AA
+- 着 [units] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%91%97
+- 扩 [units, policies, notifications, technologies, beliefs, buildings, civics, resources, wonders, civilizations, stats, districts, leaders, terrain, diplomacy] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%93%B4
+- 滨 [units] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%BF%B1
+- 拿 [units, buildings, civilizations] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%8B%BF
+- 滚 [units, notifications, promotions, stats] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%BB%BE
+- 蒂 [units, greatworks, civilizations, leaders, terrain] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%92%82
+- 棉 [units, beliefs, buildings, civics, resources, civilizations, districts, leaders, terrain, diplomacy, projects] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%A3%89
+- 囤 [units, civilizations, leaders] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%9B%A4
+- 帆 [units] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%B8%86
+- 瑙 [units] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%91%99
+- 徭 [policies] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%BE%AD
+- 码 [policies] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%A2%BC
+- 坝 [policies, notifications, buildings, districts] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%A3%A9
+- 认 [policies, notifications] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%AA%8D
+- 们 [policies, stats] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%80%91
+- 励 [policies, promotions] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%8B%B5
+- 你 [policies, notifications] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E4%BD%A0
+- 这 [policies] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E9%80%99
+- 阵 [policies, buildings, promotions] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E9%99%A3
+- 软 [policies] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%BB%9F
+- 垃 [policies] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%82%9A
+- 截 [policies, promotions, stats] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%88%AA
+- 塑 [greatworks, technologies] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%A1%91
+- 刘 [greatworks] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%8A%89
+- 踢 [notifications] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%B8%A2
+- 跑 [notifications, promotions] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%B7%91
+- 抓 [notifications, status] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%8A%93
+- 偷 [notifications] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%81%B7
+- 丢 [notifications] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E4%B8%9F
+- 住 [notifications, buildings, stats, projects] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E4%BD%8F
+- 砖 [notifications] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%A3%9A
+- 忆 [notifications] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%86%B6
+- 捏 [notifications] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%8D%8F
+- 耀 [notifications] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%80%80
+- 斑 [notifications] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%96%91
+- 批 [technologies] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%89%B9
+- 膛 [technologies] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%86%9B
+- 钢 [technologies] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E9%8B%BC
+- 脑 [technologies] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%85%A6
+- 搬 [technologies] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%90%AC
+- 盒 [beliefs, promotions] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%9B%92
+- 捍 [beliefs] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%82%9A
+- 磨 [buildings] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%A3%A8
+- 灯 [buildings] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%87%88
+- 棒 [buildings] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%A3%92
+- 煤 [buildings, resources, projects] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%85%A4
+- 哈 [buildings, civilizations, leaders, terrain, projects] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%93%88
+- 芯 [promotions] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%8A%AF
+- 铂 [promotions] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E9%89%91
+- 撤 [promotions] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%92%A4
+- 吼 [promotions] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%90%BC
+- 拦 [promotions, stats] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%94%94
+- 栓 [promotions] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%A0%93
+- 舵 [promotions] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%88%B5
+- 蠕 [promotions] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%A0%95
+- 熔 [promotions] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%86%94
+- 骗 [promotions] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E9%A8%99
+- 芭 [civics] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%8A%AD
+- 蕾 [civics] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%95%BE
+- 淘 [civics] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%B7%98
+- 暖 [civics] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%9A%96
+- 螃 [resources] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%9E%83
+- 咖 [resources, projects] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%92%96
+- 啡 [resources, projects] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%95%A1
+- 汞 [resources, projects] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%B1%9E
+- 硝 [resources] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%A1%9D
+- 铀 [resources, projects] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E9%88%BE
+- 橄 [resources, projects] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%A9%84
+- 榄 [resources, projects] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%AC%96
+- 珀 [resources, projects] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%8F%80
+- 迦 [civilizations] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%BF%A6
+- 撒 [civilizations, leaders, terrain] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%92%92
+- 喀 [civilizations] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%96%80
+- 厕 [stats] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%8E%95
+- 藤 [stats, projects] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%97%A4
+- 笈 [leaders] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%AC%88
+- 娜 [leaders] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%A8%9C
+- 添 [leaders] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%B7%BB
+- 磅 [leaders] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%A3%85
+- 莉 [leaders] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%8E%89
+- 玻 [leaders] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%8E%BB
+- 另 [leaders] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%8F%A6
+- 悬 [terrain] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E6%87%B8
+- 苔 [terrain] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E8%8B%94
+- 糕 [diplomacy] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%B3%95
+- 堆 [projects] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E5%A0%86
+- 碳 [projects] - 第二轮回退后仍无甲骨文/金文/小篆 - https://www.zdic.net/hans/%E7%A2%B3
